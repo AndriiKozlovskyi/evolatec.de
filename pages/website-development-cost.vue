@@ -6,8 +6,8 @@
       badge="Transparente Preise"
       title="Website erstellen lassen Kosten & Preise"
       description="Transparente Preise für Landingpages, Firmenwebsites und Online Shops. Professionelle Webentwicklung ohne versteckte Kosten."
-      primary-cta="Kostenloses Angebot erhalten"
-      secondary-cta="Preise ansehen"
+      primaryCTA="Kostenloses Angebot erhalten"
+      secondaryCTA="Preise ansehen"
       :stats="heroStats"
     />
 
