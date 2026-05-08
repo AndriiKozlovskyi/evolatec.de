@@ -4,7 +4,7 @@
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200">
         <img src="/logo.png" alt="EvolaTec Logo" class="h-5 w-5" />
-        <span class="font-display text-headline-md font-bold tracking-tighter text-primary hidden sm:inline">EvolaTec</span>
+        <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>
       </a>
 
       <!-- Desktop Navigation -->
@@ -50,12 +50,12 @@
 
       <!-- Mobile Menu Button -->
       <button
-        v-if="!mobileMenuOpen"
-        @click="mobileMenuOpen = true"
+        @click="mobileMenuOpen = !mobileMenuOpen"
         class="md:hidden p-2 text-on-surface hover:text-primary transition-colors h-12 w-12 flex items-center justify-center"
         aria-label="Menü öffnen"
       >
-        <span class="material-symbols-outlined text-2xl">menu</span>
+        <span class="material-symbols-outlined text-2xl" v-if="!mobileMenuOpen">menu</span>
+        <span class="material-symbols-outlined text-2xl" v-if="mobileMenuOpen">close</span>
       </button>
 
       <!-- Desktop CTA -->
@@ -65,56 +65,69 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
-    <div
-      v-if="mobileMenuOpen"
-      class="md:hidden fixed inset-0 top-20 bg-surface/95 backdrop-blur-md z-40 overflow-y-auto"
-    >
-      <div class="max-w-container-max mx-auto px-gutter py-6 space-y-2">
-        <a
-          v-for="link in navLinks"
-          :key="link.id"
-          :href="link.href"
-          @click="mobileMenuOpen = false"
-          class="block p-4 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target"
-        >
-          <div class="flex items-center gap-3 font-bold">
-            <span class="material-symbols-outlined">{{ link.icon }}</span>
-            {{ link.label }}
+<div
+  v-if="mobileMenuOpen"
+  class="md:hidden fixed top-20 left-0 right-0 bottom-0  backdrop-blur-md z-60 "
+>
+      <div class="max-w-container-max mx-auto px-gutter bg-surface py-4 pb-32">
+          <!-- Main Navigation Links -->
+          <div class="space-y-2 mb-6">
+            <a
+              v-for="link in navLinks"
+              v-show="!link.submenu"
+              :key="link.id"
+              :href="link.href"
+              @click="mobileMenuOpen = false"
+              class="flex items-center gap-4 p-4 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target font-semibold"
+            >
+              <span class="material-symbols-outlined text-xl">{{ link.icon }}</span>
+              <span>{{ link.label }}</span>
+            </a>
           </div>
-        </a>
 
-        <div
-          v-for="link in navLinks.filter(l => l.submenu)"
-          :key="`submenu-${link.id}`"
-          class="border-t border-outline-variant/20 pt-4 mt-4"
-        >
-          <div class="font-bold text-primary px-4 mb-2 text-sm">Services</div>
-          <a
-            v-for="sublink in link.submenu"
-            :key="sublink.id"
-            :href="sublink.href"
-            @click="mobileMenuOpen = false"
-            class="block p-3 pl-10 text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target text-sm"
+          <!-- Submenu Items -->
+          <div
+            v-for="link in navLinks.filter(l => l.submenu)"
+            :key="`submenu-${link.id}`"
+            class="border-t border-outline-variant/20 pt-6 mt-6"
           >
-            {{ sublink.label }}
-          </a>
-        </div>
+            <div class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider">📦 Services</div>
+            <div class="space-y-2">
+              <a
+                v-for="sublink in link.submenu"
+                :key="sublink.id"
+                :href="sublink.href"
+                @click="mobileMenuOpen = false"
+                class="flex items-center gap-3 p-4 pl-8 text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target text-sm rounded-lg"
+              >
+                <span class="material-symbols-outlined text-lg">arrow_right</span>
+                {{ sublink.label }}
+              </a>
+            </div>
+          </div>
 
-        <div class="border-t border-outline-variant/20 pt-6 mt-6">
-          <a href="/kontakt" @click="mobileMenuOpen = false" class="block">
-            <BaseButton variant="primary" size="lg" class="w-full">Projekt anfragen</BaseButton>
-          </a>
-        </div>
-      </div>
+          <!-- Divider -->
+          <div class="border-t border-outline-variant/20 my-6"></div>
 
-      <!-- Close Button -->
-      <button
-        @click="mobileMenuOpen = false"
-        class="fixed top-6 right-6 p-2 text-on-surface hover:text-primary transition-colors h-12 w-12 flex items-center justify-center"
-        aria-label="Menü schließen"
-      >
-        <span class="material-symbols-outlined text-2xl">close</span>
-      </button>
+          <!-- CTA Button -->
+          <div class="px-4 mb-4">
+            <a href="/kontakt" @click="mobileMenuOpen = false" class="block">
+              <BaseButton variant="primary" size="lg" class="w-full text-base font-bold">
+                🚀 Projekt anfragen
+              </BaseButton>
+            </a>
+          </div>
+
+          <!-- Secondary Links -->
+          <div class="px-4 space-y-2">
+            <a href="/pricing" @click="mobileMenuOpen = false" class="block p-3 text-sm text-on-surface-variant hover:text-primary transition-colors">
+              💰 Preise & Kosten
+            </a>
+            <a href="/seo" @click="mobileMenuOpen = false" class="block p-3 text-sm text-on-surface-variant hover:text-primary transition-colors">
+              🔍 SEO Services
+            </a>
+          </div>
+        </div>
     </div>
   </nav>
 </template>
@@ -150,5 +163,15 @@ const navLinks = [
   min-height: 44px;
   display: flex;
   align-items: center;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
