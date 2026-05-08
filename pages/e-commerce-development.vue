@@ -42,6 +42,38 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Online Shop erstellen lassen – E-Commerce & Webshop | EvolaTec Agentur',
+  meta: [
+    {
+      name: 'description',
+      content: 'E-Commerce Shops & Online Shops erstellen lassen. Professionelle Shopify und Custom Shop Entwicklung mit SEO-Optimierung und hohen Conversion-Raten.'
+    },
+    {
+      name: 'keywords',
+      content: 'online shop erstellen lassen, e-commerce shop, shopify shop erstellen, webshop erstellen lassen, online shop entwicklung'
+    },
+    {
+      property: 'og:title',
+      content: 'Online Shop erstellen lassen – E-Commerce & Webshop | EvolaTec'
+    },
+    {
+      property: 'og:description',
+      content: 'Professionelle E-Commerce Lösungen und Online Shops für Unternehmen.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://evolatec.de/e-commerce-development'
+    }
+  ]
+});
+
 const heroStats = [
   { value: '+340%', label: 'Conversion', icon: 'trending_up' },
   { value: '< 1.2s', label: 'Ladezeit', icon: 'flash_on' },

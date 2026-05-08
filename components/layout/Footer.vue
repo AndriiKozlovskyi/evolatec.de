@@ -3,7 +3,10 @@
     <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
       <!-- Brand Section -->
       <div class="space-y-4">
-        <span class="font-display text-headline-md font-bold text-primary">EvolaTec</span>
+        <div class="flex items-center gap-2">
+          <img src="/logo.png" alt="EvolaTec Logo" class="h-5 w-5" />
+          <span class="font-display text-headline-md font-bold text-primary">EvolaTec</span>
+        </div>
         <p class="text-on-surface-variant text-body-md pr-8">
           Wir bauen die digitalen Landmarks von morgen. Präzision in jeder Zeile Code.
         </p>

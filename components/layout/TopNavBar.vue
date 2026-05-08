@@ -1,8 +1,9 @@
 <template>
   <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
     <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
-      <a href="/" class="font-display text-headline-md font-bold tracking-tighter text-primary hover:opacity-80 transition-opacity duration-200">
-        EvolaTec
+      <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200">
+        <img src="/logo.png" alt="EvolaTec Logo" class="h-5 w-5" />
+        <span class="font-display text-headline-md font-bold tracking-tighter text-primary">EvolaTec</span>
       </a>
 
       <div class="hidden md:flex gap-8 items-center">
@@ -21,6 +22,7 @@
                 : 'text-on-surface-variant hover:text-primary',
             ]"
           >
+            <span v-if="link.icon" class="material-symbols-outlined text-lg">{{ link.icon }}</span>
             {{ link.label }}
             <span v-if="link.submenu" class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">
               expand_more
@@ -55,12 +57,13 @@
 
 <script setup lang="ts">
 const navLinks = [
-  { id: 1, label: 'Startseite', href: '/', isActive: false },
+  { id: 1, label: 'Startseite', href: '/', isActive: false, icon: 'home' },
   {
     id: 2,
     label: 'Website-Erstellung',
     href: '#',
     isActive: true,
+    icon: 'language',
     submenu: [
       { id: 2.1, label: 'E-Commerce Entwicklung', href: '/e-commerce-development' },
       { id: 2.2, label: 'Landingpage', href: '/landing-development' },
@@ -68,8 +71,8 @@ const navLinks = [
       { id: 2.4, label: 'Kosten & Preise', href: '/website-development-cost' },
     ],
   },
-  { id: 3, label: 'SEO', href: '/seo', isActive: false },
-  { id: 4, label: 'Preise', href: '/pricing', isActive: false },
-  { id: 5, label: 'Kontakt', href: '/kontakt', isActive: false },
+  { id: 3, label: 'SEO', href: '/seo', isActive: false, icon: 'search_insights' },
+  { id: 4, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
+  { id: 5, label: 'Kontakt', href: '/kontakt', isActive: false, icon: 'mail' },
 ];
 </script>

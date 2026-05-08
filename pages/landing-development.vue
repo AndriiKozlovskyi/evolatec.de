@@ -60,6 +60,38 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Landingpage erstellen lassen – One-Pager | EvolaTec Agentur',
+  meta: [
+    {
+      name: 'description',
+      content: 'Professionelle Landingpages & One-Pager erstellen lassen. Conversion-optimierte Landingpages für Werbung, Kampagnen und Lead-Generierung ab 350€.'
+    },
+    {
+      name: 'keywords',
+      content: 'landingpage erstellen lassen, landingpage design, one pager erstellen, conversion landingpage, werbung landingpage'
+    },
+    {
+      property: 'og:title',
+      content: 'Landingpage erstellen lassen – One-Pager | EvolaTec'
+    },
+    {
+      property: 'og:description',
+      content: 'Conversion-optimierte Landingpages für Werbung und Leadgenerierung.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://evolatec.de/landing-development'
+    }
+  ]
+});
+
 const heroStats = [
   { value: 'ab 3', label: 'Tagen', icon: 'flash_on' },
   { value: '100%', label: 'Conversion', icon: 'trending_up' },

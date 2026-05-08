@@ -63,6 +63,38 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Firmenwebsite erstellen lassen – Professionelle Unternehmenswebsite | EvolaTec',
+  meta: [
+    {
+      name: 'description',
+      content: 'Professionelle Firmenwebsites erstellen lassen. Moderne Unternehmenswebsites für KMU mit SEO, responsive Design und Festpreis-Angeboten ab 750€.'
+    },
+    {
+      name: 'keywords',
+      content: 'firmenwebsite erstellen lassen, unternehmenswebsite, website erstellen professionell, homepage erstellen lassen, website für unternehmen'
+    },
+    {
+      property: 'og:title',
+      content: 'Firmenwebsite erstellen lassen | EvolaTec'
+    },
+    {
+      property: 'og:description',
+      content: 'Professionelle Unternehmenswebsites für Unternehmen und lokale Firmen.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://evolatec.de/website-development'
+    }
+  ]
+});
+
 const heroStats = [
   { value: 'ab 7 Tagen', label: 'Lieferzeit', icon: 'flash_on' },
   { value: '100%', label: 'SEO-ready', icon: 'search_check' },

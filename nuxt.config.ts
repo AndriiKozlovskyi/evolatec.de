@@ -10,4 +10,29 @@ export default defineNuxtConfig({
       },
     ],
   },
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/logo.png?v=1',
+        },
+        {
+          rel: 'shortcut icon',
+          href: '/logo.png?v=1',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/logo.png?v=1',
+        },
+      ],
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#002c50',
+        },
+      ],
+    },
+  },
 });
