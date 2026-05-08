@@ -12,14 +12,14 @@
     />
 
     <!-- Intro Section -->
-    <section class="py-section-padding bg-surface-container-low">
+    <section class="py-8 md:py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl mx-auto text-center space-y-stack-md">
-          <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface">Was kostet es, eine Website erstellen zu lassen?</h2>
-          <p class="text-body-lg text-on-surface-variant leading-relaxed">
+        <div class="max-w-3xl mx-auto text-center space-y-3 md:space-y-stack-md">
+          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface leading-tight">Was kostet es, eine Website erstellen zu lassen?</h2>
+          <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
             Die Kosten einer Website hängen von Umfang, Funktionen und Design ab. Eine einfache Landingpage ist günstiger als ein komplexer Online Shop.
           </p>
-          <p class="text-body-lg text-on-surface-variant leading-relaxed">
+          <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
             Bei EvolaTec erhalten Sie transparente Festpreise und moderne Websites, die auf Ergebnisse optimiert sind.
           </p>
         </div>
@@ -27,29 +27,29 @@
     </section>
 
     <!-- Pricing Overview Table -->
-    <section class="py-section-padding bg-white">
+    <section class="py-8 md:py-section-padding bg-white">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center mb-stack-lg">
-          <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block">Preise</span>
-          <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-4">Website Preise im Überblick</h2>
-          <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Transparente Preise für professionelle Websites.</p>
+        <div class="text-center mb-6 md:mb-stack-lg">
+          <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block text-xs">Preise</span>
+          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-2 md:mb-4 leading-tight">Website Preise im Überblick</h2>
+          <p class="text-on-surface-variant text-sm sm:text-lg max-w-2xl mx-auto">Transparente Preise für professionelle Websites.</p>
         </div>
 
         <!-- Table -->
-        <div class="overflow-x-auto">
-          <table class="w-full">
+        <div class="overflow-x-auto rounded-lg">
+          <table class="w-full text-sm sm:text-base">
             <thead>
-              <tr class="border-b-2 border-primary/20">
-                <th class="text-left p-4 font-bold text-on-surface">Leistung</th>
-                <th class="text-left p-4 font-bold text-on-surface">Preis</th>
-                <th class="text-left p-4 font-bold text-on-surface">Lieferzeit</th>
+              <tr class="border-b-2 border-primary/20 bg-surface">
+                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Leistung</th>
+                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Preis</th>
+                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Lieferzeit</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(item, index) in pricingTable" :key="index" class="border-b border-surface-container hover:bg-surface-container-low transition-colors duration-200">
-                <td class="p-4 text-on-surface font-medium">{{ item.service }}</td>
-                <td class="p-4 text-primary font-bold text-lg">{{ item.price }}</td>
-                <td class="p-4 text-on-surface-variant">{{ item.delivery }}</td>
+              <tr v-for="(item, index) in pricingTable" :key="index" class="border-b border-surface-container hover:bg-surface transition-colors duration-200">
+                <td class="p-2 sm:p-4 text-on-surface font-medium text-xs sm:text-base">{{ item.service }}</td>
+                <td class="p-2 sm:p-4 text-primary font-bold text-sm sm:text-lg">{{ item.price }}</td>
+                <td class="p-2 sm:p-4 text-on-surface-variant text-xs sm:text-base">{{ item.delivery }}</td>
               </tr>
             </tbody>
           </table>
@@ -65,29 +65,29 @@
     />
 
     <!-- Landing Page Section -->
-    <section class="py-section-padding bg-white">
+    <section class="py-8 md:py-section-padding bg-white">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-stack-lg items-center">
           <!-- Content -->
           <div>
-            <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-stack-md">Landingpage erstellen lassen – Kosten</h2>
-            <p class="text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+            <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-stack-md leading-tight">Landingpage erstellen lassen – Kosten</h2>
+            <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
               Landingpages eignen sich perfekt für Werbung, lokale Dienstleistungen und schnelle Leadgenerierung.
             </p>
-            <div class="space-y-4 mb-8">
+            <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div v-for="feature in landingFeatures" :key="feature" class="flex items-start gap-3 group">
-                <span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span>
-                <span class="text-body-md text-on-surface">{{ feature }}</span>
+                <span class="material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
+                <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
             <BaseButton variant="primary" size="md">Mehr über Landingpages</BaseButton>
           </div>
 
           <!-- Price Card -->
-          <div class="bg-gradient-to-br from-primary-container to-primary rounded-2xl p-12 text-on-primary shadow-xl">
-            <p class="text-on-primary-container text-sm font-bold uppercase tracking-widest mb-2">Landingpage</p>
-            <p class="text-[3rem] font-black mb-4">ab 350€</p>
-            <p class="text-on-primary-container mb-6">Lieferung ab 3 Tagen</p>
+          <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl">
+            <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Landingpage</p>
+            <p class="text-2xl sm:text-[2.5rem] md:text-[3rem] font-black mb-3 md:mb-4 leading-tight">ab 350€</p>
+            <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 3 Tagen</p>
             <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
           </div>
         </div>
@@ -95,27 +95,27 @@
     </section>
 
     <!-- Website Section -->
-    <section class="py-section-padding bg-surface-container-low">
+    <section class="py-8 md:py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-stack-lg items-center">
           <!-- Price Card -->
-          <div class="bg-gradient-to-br from-primary-container to-primary rounded-2xl p-12 text-on-primary shadow-xl order-2 md:order-1">
-            <p class="text-on-primary-container text-sm font-bold uppercase tracking-widest mb-2">Firmenwebsite</p>
-            <p class="text-[3rem] font-black mb-4">ab 750€</p>
-            <p class="text-on-primary-container mb-6">Lieferung ab 7 Tagen</p>
+          <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl order-2 md:order-1">
+            <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Firmenwebsite</p>
+            <p class="text-2xl sm:text-[2.5rem] md:text-[3rem] font-black mb-3 md:mb-4 leading-tight">ab 750€</p>
+            <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 7 Tagen</p>
             <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
           </div>
 
           <!-- Content -->
           <div class="order-1 md:order-2">
-            <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-stack-md">Firmenwebsite erstellen lassen – Kosten</h2>
-            <p class="text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+            <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-stack-md leading-tight">Firmenwebsite erstellen lassen – Kosten</h2>
+            <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
               Professionelle Unternehmenswebsites für lokale Unternehmen, Agenturen und Dienstleister.
             </p>
-            <div class="space-y-4 mb-8">
+            <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div v-for="feature in websiteFeatures" :key="feature" class="flex items-start gap-3 group">
-                <span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span>
-                <span class="text-body-md text-on-surface">{{ feature }}</span>
+                <span class="material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
+                <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
             <BaseButton variant="primary" size="md">Mehr über Firmenwebsites</BaseButton>
@@ -125,29 +125,29 @@
     </section>
 
     <!-- E-Commerce Section -->
-    <section class="py-section-padding bg-white">
+    <section class="py-8 md:py-section-padding bg-white">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-stack-lg items-center">
           <!-- Content -->
           <div>
-            <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-stack-md">Online Shop erstellen lassen – Kosten</h2>
-            <p class="text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+            <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-stack-md leading-tight">Online Shop erstellen lassen – Kosten</h2>
+            <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
               Moderne E-Commerce Lösungen und Shopify Shops für Unternehmen und Marken.
             </p>
-            <div class="space-y-4 mb-8">
+            <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div v-for="feature in ecommerceFeatures" :key="feature" class="flex items-start gap-3 group">
-                <span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span>
-                <span class="text-body-md text-on-surface">{{ feature }}</span>
+                <span class="material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
+                <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
             <BaseButton variant="primary" size="md">Mehr über Online Shops</BaseButton>
           </div>
 
           <!-- Price Card -->
-          <div class="bg-gradient-to-br from-primary-container to-primary rounded-2xl p-12 text-on-primary shadow-xl">
-            <p class="text-on-primary-container text-sm font-bold uppercase tracking-widest mb-2">Online Shop</p>
-            <p class="text-[3rem] font-black mb-4">ab 1.200€</p>
-            <p class="text-on-primary-container mb-6">Lieferung ab 14 Tagen</p>
+          <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl">
+            <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Online Shop</p>
+            <p class="text-2xl sm:text-[2.5rem] md:text-[3rem] font-black mb-3 md:mb-4 leading-tight">ab 1.200€</p>
+            <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 14 Tagen</p>
             <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
           </div>
         </div>

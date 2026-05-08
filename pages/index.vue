@@ -12,35 +12,35 @@
     />
 
     <!-- Services Section -->
-    <section class="py-section-padding bg-surface">
+    <section class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center mb-stack-lg">
-          <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-4">Unsere Leistungen</h2>
+        <div class="text-center mb-6 md:mb-stack-lg">
+          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-2 md:mb-4 leading-tight">Unsere Leistungen</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-stack-md">
           <div
             v-for="(service, index) in services"
             :key="service.id"
-            class="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-surface-container-high animate-fade-in-up"
+            class="group relative bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-surface-container-high animate-fade-in-up"
             :style="{ animationDelay: `${index * 100}ms` }"
           >
             <!-- Icon -->
-            <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
-              <span class="material-symbols-outlined text-[2rem] text-primary group-hover:scale-110 transition-transform duration-300">{{ service.icon }}</span>
+            <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-lg md:rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-gradient-to-br group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
+              <span class="material-symbols-outlined text-xl sm:text-[2rem] text-primary group-hover:scale-110 transition-transform duration-300">{{ service.icon }}</span>
             </div>
 
             <!-- Content -->
-            <h3 class="text-headline-md font-bold text-on-surface mb-3">{{ service.title }}</h3>
-            <p class="text-body-md text-on-surface-variant mb-6">{{ service.description }}</p>
+            <h3 class="text-base sm:text-headline-md font-bold text-on-surface mb-2 sm:mb-3">{{ service.title }}</h3>
+            <p class="text-sm sm:text-body-md text-on-surface-variant mb-4 sm:mb-6 line-clamp-3">{{ service.description }}</p>
 
             <!-- Price -->
-            <p class="text-lg font-black text-primary mb-6">{{ service.price }}</p>
+            <p class="text-base sm:text-lg font-black text-primary mb-4 sm:mb-6">{{ service.price }}</p>
 
             <!-- Link -->
             <a
               :href="service.href"
-              class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all duration-300"
+              class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all duration-300 text-sm sm:text-base"
             >
               Mehr erfahren
               <span class="material-symbols-outlined text-lg">arrow_forward</span>
@@ -63,29 +63,29 @@
     />
 
     <!-- Pricing Overview -->
-    <section class="py-section-padding bg-surface-container-low">
+    <section class="py-8 md:py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center mb-stack-lg">
-          <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block">Preise</span>
-          <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-4">Website erstellen lassen – Preise</h2>
-          <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Transparente Preise für professionelle Webentwicklung.</p>
+        <div class="text-center mb-6 md:mb-stack-lg">
+          <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block text-xs">Preise</span>
+          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-2 md:mb-4 leading-tight">Website erstellen lassen – Preise</h2>
+          <p class="text-on-surface-variant text-sm sm:text-lg max-w-2xl mx-auto">Transparente Preise für professionelle Webentwicklung.</p>
         </div>
 
         <!-- Pricing Table -->
-        <div class="overflow-x-auto mb-stack-lg">
-          <table class="w-full">
+        <div class="overflow-x-auto mb-6 md:mb-stack-lg rounded-lg">
+          <table class="w-full text-sm sm:text-base">
             <thead>
-              <tr class="border-b-2 border-primary/20">
-                <th class="text-left p-4 font-bold text-on-surface">Leistung</th>
-                <th class="text-left p-4 font-bold text-on-surface">Preis</th>
-                <th class="text-left p-4 font-bold text-on-surface">Lieferzeit</th>
+              <tr class="border-b-2 border-primary/20 bg-surface">
+                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Leistung</th>
+                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Preis</th>
+                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Lieferzeit</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(item, index) in pricingTable" :key="index" class="border-b border-surface-container hover:bg-white transition-colors duration-200">
-                <td class="p-4 text-on-surface font-medium">{{ item.service }}</td>
-                <td class="p-4 text-primary font-bold text-lg">{{ item.price }}</td>
-                <td class="p-4 text-on-surface-variant">{{ item.delivery }}</td>
+                <td class="p-2 sm:p-4 text-on-surface font-medium text-xs sm:text-base">{{ item.service }}</td>
+                <td class="p-2 sm:p-4 text-primary font-bold text-sm sm:text-lg">{{ item.price }}</td>
+                <td class="p-2 sm:p-4 text-on-surface-variant text-xs sm:text-base">{{ item.delivery }}</td>
               </tr>
             </tbody>
           </table>
@@ -100,25 +100,25 @@
     </section>
 
     <!-- Results Section -->
-    <section class="py-section-padding bg-gradient-to-r from-primary/90 via-primary to-primary/90 text-on-primary relative overflow-hidden">
-      <!-- Background decoration -->
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <section class="py-8 md:py-section-padding bg-gradient-to-r from-primary/90 via-primary to-primary/90 text-on-primary relative overflow-hidden">
+      <!-- Background decoration - hidden on mobile -->
+      <div class="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute -top-40 -right-40 w-80 h-80 bg-on-primary-container/10 rounded-full blur-3xl"></div>
         <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-on-primary-container/10 rounded-full blur-3xl"></div>
       </div>
 
       <div class="relative z-10 max-w-container-max mx-auto px-gutter">
-        <h2 class="font-display text-[2.5rem] md:text-[3rem] text-center mb-stack-lg">Ergebnisse unserer Kunden</h2>
+        <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-center mb-6 md:mb-stack-lg leading-tight">Ergebnisse unserer Kunden</h2>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-stack-lg">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 md:gap-8 mb-6 md:mb-stack-lg">
           <div
             v-for="(result, index) in results"
             :key="index"
             class="text-center animate-fade-in-up"
             :style="{ animationDelay: `${index * 100}ms` }"
           >
-            <p class="text-5xl md:text-6xl font-black mb-3 text-on-primary">{{ result.value }}</p>
-            <p class="text-on-primary-container text-body-md">{{ result.label }}</p>
+            <p class="text-3xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-3 text-on-primary leading-tight">{{ result.value }}</p>
+            <p class="text-on-primary-container text-xs sm:text-body-md">{{ result.label }}</p>
           </div>
         </div>
 
@@ -131,28 +131,28 @@
     </section>
 
     <!-- SEO Text Section -->
-    <section class="py-section-padding bg-white">
+    <section class="py-8 md:py-section-padding bg-white">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl mx-auto space-y-stack-md">
-          <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-6">Professionelle Website erstellen lassen</h2>
+        <div class="max-w-3xl mx-auto space-y-4 md:space-y-stack-md">
+          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
 
-          <p class="text-body-lg text-on-surface-variant leading-relaxed">
+          <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
             Eine professionelle Website ist heute entscheidend für den Erfolg eines Unternehmens. Bei EvolaTec entwickeln wir moderne Firmenwebsites, Landingpages und Online Shops, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
           </p>
 
-          <p class="text-body-lg text-on-surface-variant leading-relaxed">
+          <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
             Unsere Websites sind SEO-optimiert, mobilfreundlich und auf Conversion ausgelegt. Ob kleine Firmenwebsite, Landingpage für Werbung oder komplexer Online Shop — wir entwickeln individuelle Lösungen für Unternehmen in Deutschland.
           </p>
 
-          <div class="pt-8 flex flex-wrap gap-4">
-            <a href="/website-development" class="inline-block">
-              <BaseButton variant="primary" size="md">Firmenwebsite</BaseButton>
+          <div class="pt-6 md:pt-8 flex flex-col sm:flex-wrap sm:flex-row gap-3 sm:gap-4">
+            <a href="/website-development" class="inline-block w-full sm:w-auto">
+              <BaseButton variant="primary" size="md" class="w-full sm:w-auto">Firmenwebsite</BaseButton>
             </a>
-            <a href="/landing-development" class="inline-block">
-              <BaseButton variant="outline" size="md">Landingpage</BaseButton>
+            <a href="/landing-development" class="inline-block w-full sm:w-auto">
+              <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Landingpage</BaseButton>
             </a>
-            <a href="/e-commerce-development" class="inline-block">
-              <BaseButton variant="outline" size="md">Online Shop</BaseButton>
+            <a href="/e-commerce-development" class="inline-block w-full sm:w-auto">
+              <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Online Shop</BaseButton>
             </a>
           </div>
         </div>
