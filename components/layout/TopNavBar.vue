@@ -1,7 +1,9 @@
 <template>
   <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
     <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
-      <span class="font-display text-headline-md font-bold tracking-tighter text-primary">EvolaTec</span>
+      <a href="/" class="font-display text-headline-md font-bold tracking-tighter text-primary hover:opacity-80 transition-opacity duration-200">
+        EvolaTec
+      </a>
 
       <div class="hidden md:flex gap-8 items-center">
         <div
@@ -44,7 +46,9 @@
         </div>
       </div>
 
-      <BaseButton variant="primary" size="sm">Projekt anfragen</BaseButton>
+      <a href="/kontakt" class="inline-block">
+        <BaseButton variant="primary" size="sm">Projekt anfragen</BaseButton>
+      </a>
     </div>
   </nav>
 </template>
