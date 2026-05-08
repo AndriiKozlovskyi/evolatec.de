@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass-card {
+  @apply bg-white/80 rounded-xl border border-outline-variant/20;
+  backdrop-filter: blur(20px);
+}
+
+.ambient-shadow {
+  box-shadow: 0 20px 40px rgba(0, 66, 117, 0.06);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
