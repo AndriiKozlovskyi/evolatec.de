@@ -152,7 +152,21 @@ const navLinks = [
       { id: 2.4, label: 'Kosten & Preise', href: '/website-development-cost' },
     ],
   },
-  { id: 3, label: 'SEO', href: '/seo', isActive: false, icon: 'search_insights' },
+  {
+    id: 3,
+    label: 'SEO',
+    href: '#',
+    isActive: false,
+    icon: 'search_insights',
+    submenu: [
+      { id: 3.1, label: 'SEO Strategie', href: '/seo' },
+      { id: 3.2, label: 'SEO Optimierung', href: '/seo-optimization' },
+      { id: 3.3, label: 'Local SEO', href: '/seo-local' },
+      { id: 3.4, label: 'Linkbuilding', href: '/seo-link-building' },
+      { id: 3.5, label: 'SEO Audit & Analyse', href: '/seo-audit' },
+    { id: 3.6, label: 'SEO Preise & Kosten', href: '/seo-pricing' },
+    ],
+  },
   { id: 4, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
   { id: 5, label: 'Kontakt', href: '/kontakt', isActive: false, icon: 'mail' },
 ];
