@@ -19,16 +19,25 @@
         </h2>
 
         <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-gutter mb-stack-lg">
-          <div class="glass-card ambient-shadow p-8 text-center">
-            <div class="text-headline-lg text-primary mb-4 font-bold">Mehr Autorität</div>
+          <div class="glass-card ambient-shadow p-8 text-center border-t-4 border-blue-500">
+            <div class="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-4">
+              <span class="material-symbols-outlined text-blue-600 text-2xl">verified</span>
+            </div>
+            <div class="text-headline-lg text-primary mb-4 font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Mehr Autorität</div>
             <p class="font-body-md text-on-surface-variant">Vertrauenswürdige Backlinks stärken Ihre Domain.</p>
           </div>
-          <div class="glass-card ambient-shadow p-8 text-center">
-            <div class="text-headline-lg text-primary mb-4 font-bold">Bessere Rankings</div>
+          <div class="glass-card ambient-shadow p-8 text-center border-t-4 border-emerald-500">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center mx-auto mb-4">
+              <span class="material-symbols-outlined text-emerald-600 text-2xl">trending_up</span>
+            </div>
+            <div class="text-headline-lg text-primary mb-4 font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent">Bessere Rankings</div>
             <p class="font-body-md text-on-surface-variant">OffPage SEO verbessert Ihre Google Positionen.</p>
           </div>
-          <div class="glass-card ambient-shadow p-8 text-center">
-            <div class="text-headline-lg text-primary mb-4 font-bold">Langfristige Wirkung</div>
+          <div class="glass-card ambient-shadow p-8 text-center border-t-4 border-orange-500">
+            <div class="w-12 h-12 rounded-2xl bg-orange-100 flex items-center justify-center mx-auto mb-4">
+              <span class="material-symbols-outlined text-orange-600 text-2xl">schedule</span>
+            </div>
+            <div class="text-headline-lg text-primary mb-4 font-bold bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent">Langfristige Wirkung</div>
             <p class="font-body-md text-on-surface-variant">Gute Backlinks wirken langfristig positiv.</p>
           </div>
         </div>
@@ -57,10 +66,14 @@
           <div
             v-for="service in linkBuildingServices"
             :key="service.title"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
+            :class="service.borderColor"
           >
-            <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-6">
-              <span class="material-symbols-outlined text-primary text-2xl">{{ service.icon }}</span>
+            <div
+              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
+              :class="service.iconBg"
+            >
+              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
             </div>
             <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
             <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
@@ -77,9 +90,22 @@
         </h2>
 
         <div class="grid md:grid-cols-4 gap-gutter">
-          <div v-for="(step, index) in linkBuildingProcess" :key="step.title" class="glass-card ambient-shadow p-8">
-            <div class="w-12 h-12 bg-primary text-white flex items-center justify-center font-bold rounded-full mb-4">
-              {{ index + 1 }}
+          <div
+            v-for="(step, index) in linkBuildingProcess"
+            :key="step.title"
+            class="glass-card ambient-shadow p-8 border-t-4 transition-all duration-300 hover:scale-105"
+            :class="step.borderColor"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-xl flex items-center justify-center"
+                :class="step.iconBg"
+              >
+                <span class="material-symbols-outlined text-xl" :class="step.iconColor">{{ step.icon }}</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-full" :class="[step.chipBg, step.iconColor]">
+                Schritt {{ index + 1 }}
+              </span>
             </div>
             <h3 class="font-headline-md text-primary mb-2">{{ step.title }}</h3>
             <p class="font-body-md text-on-surface-variant">{{ step.description }}</p>
@@ -101,10 +127,12 @@
           <div
             v-for="benefit in linkBuildingBenefits"
             :key="benefit.title"
-            class="glass-card ambient-shadow p-8 flex gap-6"
+            class="glass-card ambient-shadow p-8 flex gap-6 transition-all duration-300 hover:scale-105"
           >
             <div class="flex-shrink-0">
-              <span class="material-symbols-outlined text-[40px] text-primary">{{ benefit.icon }}</span>
+              <div class="w-16 h-16 rounded-2xl flex items-center justify-center" :class="benefit.iconBg">
+                <span class="material-symbols-outlined text-3xl" :class="benefit.iconColor">{{ benefit.icon }}</span>
+              </div>
             </div>
             <div>
               <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
@@ -116,17 +144,24 @@
     </section>
 
     <!-- Backlink Types Section -->
-    <section class="py-section-padding bg-surface">
+    <section class="py-section-padding bg-gradient-to-br from-slate-900 to-slate-800">
       <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
+        <h2 class="font-headline-lg text-headline-lg text-white text-center mb-stack-lg">
           Welche Backlinks bauen wir auf?
         </h2>
 
         <div class="max-w-3xl mx-auto">
-          <div class="grid md:grid-cols-2 gap-gutter">
-            <div v-for="backlinkType in backlinksTypes" :key="backlinkType" class="flex gap-4 items-start">
-              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0 mt-1">link</span>
-              <p class="font-body-md text-on-surface-variant">{{ backlinkType }}</p>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div
+              v-for="(backlinkType, index) in backlinksTypes"
+              :key="backlinkType"
+              class="flex gap-4 items-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10"
+            >
+              <span
+                class="material-symbols-outlined text-xl flex-shrink-0"
+                :class="backlinkColors[index % backlinkColors.length]"
+              >link</span>
+              <p class="font-body-md text-white/80">{{ backlinkType }}</p>
             </div>
           </div>
         </div>
@@ -172,31 +207,49 @@ const linkBuildingServices = [
     title: 'Linkbuilding Strategie',
     description: 'Entwicklung einer nachhaltigen OffPage SEO Strategie für Ihre Branche.',
     icon: 'map',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+    borderColor: 'border-blue-500',
   },
   {
     title: 'Hochwertiger Backlink Aufbau',
     description: 'Aufbau relevanter und vertrauenswürdiger Backlinks.',
     icon: 'link',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    borderColor: 'border-emerald-500',
   },
   {
     title: 'Outreach & Kooperationen',
     description: 'Kontaktaufbau mit passenden Websites und Medien.',
     icon: 'people',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+    borderColor: 'border-orange-500',
   },
   {
     title: 'Gastartikel & Content Links',
     description: 'Contentbasierter Linkaufbau über hochwertige Artikel.',
     icon: 'edit_document',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    borderColor: 'border-purple-500',
   },
   {
     title: 'Backlink Analyse',
     description: 'Analyse bestehender Backlinks und Identifikation toxischer Links.',
     icon: 'assessment',
+    iconBg: 'bg-rose-100',
+    iconColor: 'text-rose-600',
+    borderColor: 'border-rose-500',
   },
   {
     title: 'Link Monitoring',
     description: 'Laufende Kontrolle und Optimierung Ihres Linkprofils.',
     icon: 'visibility',
+    iconBg: 'bg-teal-100',
+    iconColor: 'text-teal-600',
+    borderColor: 'border-teal-500',
   },
 ];
 
@@ -204,18 +257,38 @@ const linkBuildingProcess = [
   {
     title: 'Analyse',
     description: 'Analyse Ihrer Domain, Konkurrenz und Backlinkstruktur.',
+    icon: 'search',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+    chipBg: 'bg-blue-50',
+    borderColor: 'border-blue-400',
   },
   {
     title: 'Strategie',
     description: 'Erstellung einer individuellen Linkbuilding Strategie.',
+    icon: 'map',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+    chipBg: 'bg-orange-50',
+    borderColor: 'border-orange-400',
   },
   {
     title: 'Linkaufbau',
     description: 'Aufbau hochwertiger und thematisch relevanter Backlinks.',
+    icon: 'link',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    chipBg: 'bg-emerald-50',
+    borderColor: 'border-emerald-400',
   },
   {
     title: 'Wachstum',
     description: 'Mehr Autorität, bessere Rankings und nachhaltiges SEO Wachstum.',
+    icon: 'trending_up',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    chipBg: 'bg-purple-50',
+    borderColor: 'border-purple-400',
   },
 ];
 
@@ -224,21 +297,29 @@ const linkBuildingBenefits = [
     title: 'Höhere Domain Autorität',
     description: 'Vertrauenswürdige Backlinks stärken Ihre Website.',
     icon: 'grade',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
   },
   {
     title: 'Mehr organischer Traffic',
     description: 'Bessere Rankings bringen mehr Besucher.',
     icon: 'trending_up',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
   },
   {
     title: 'Nachhaltige SEO Wirkung',
     description: 'Gute Links wirken langfristig positiv.',
     icon: 'schedule',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
   },
   {
     title: 'Wettbewerbsvorteil',
     description: 'Stärkeres Linkprofil gegenüber Konkurrenten.',
-    icon: 'competitive_outline',
+    icon: 'leaderboard',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
   },
 ];
 
@@ -251,6 +332,13 @@ const backlinksTypes = [
   'Thematisch relevante Links',
   'Internationale Backlinks',
   'Autoritätslinks',
+];
+
+const backlinkColors = [
+  'text-blue-400',
+  'text-emerald-400',
+  'text-orange-400',
+  'text-purple-400',
 ];
 
 const linkBuildingPricingPlans = [

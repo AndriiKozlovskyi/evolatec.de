@@ -138,7 +138,6 @@ import { ref } from 'vue';
 const mobileMenuOpen = ref(false);
 
 const navLinks = [
-  { id: 1, label: 'Startseite', href: '/', isActive: false, icon: 'home' },
   {
     id: 2,
     label: 'Website-Erstellung',
@@ -180,7 +179,6 @@ const navLinks = [
     ],
   },
   { id: 5, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
-  { id: 6, label: 'Kontakt', href: '/kontakt', isActive: false, icon: 'mail' },
 ];
 </script>
 
