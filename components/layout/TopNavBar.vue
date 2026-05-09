@@ -167,8 +167,20 @@ const navLinks = [
     { id: 3.6, label: 'SEO Preise & Kosten', href: '/seo-pricing' },
     ],
   },
-  { id: 4, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
-  { id: 5, label: 'Kontakt', href: '/kontakt', isActive: false, icon: 'mail' },
+  {
+    id: 4,
+    label: 'Design & Content',
+    href: '#',
+    isActive: false,
+    icon: 'edit_document',
+    submenu: [
+      { id: 4.1, label: 'Content & Copywriting', href: '/design-content' },
+      { id: 4.2, label: 'Branding & Corporate Design', href: '/design-branding' },
+      { id: 4.3, label: 'UI/UX Design', href: '/design-ui-ux' },
+    ],
+  },
+  { id: 5, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
+  { id: 6, label: 'Kontakt', href: '/kontakt', isActive: false, icon: 'mail' },
 ];
 </script>
 
