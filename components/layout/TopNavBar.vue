@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+  <nav class="fixed top-0 w-full z-50 bg-surface backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
     <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200">

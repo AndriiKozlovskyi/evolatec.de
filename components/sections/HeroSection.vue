@@ -1,60 +1,55 @@
 <template>
-  <section class="relative min-h-screen sm:min-h-[600px] md:min-h-[819px] flex items-center overflow-hidden bg-primary-container pt-20 md:pt-0">
-    <div class="absolute inset-0 z-0 opacity-40">
-      <img
-        :src="backgroundImage"
-        alt="Hero background"
-        class="w-full h-full object-cover"
-      />
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
-    <div class="relative z-20 max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-stack-lg items-center py-8 md:py-0">
-      <!-- Left Content -->
-      <div class="text-on-primary space-y-3 md:space-y-stack-md">
+  <section class="relative min-h-[600px] md:min-h-screen flex items-center overflow-hidden">
+    <!-- Background image — full opacity, cinematic crop -->
+    <img
+      :src="backgroundImage"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Dark gradient overlay: left-heavy, fades to transparent on the right -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/75 to-slate-900/20"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-32 pb-20 md:pt-40 md:pb-28">
+      <div class="max-w-2xl">
+
         <!-- Badge -->
-        <span class="font-label-md text-label-md uppercase tracking-widest text-on-primary-container inline-block text-xs md:text-sm">
+        <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] mb-5 bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
           {{ badge }}
         </span>
 
-        <!-- Title - Responsive -->
-        <h1 class="font-display text-3xl sm:text-5xl md:text-display leading-tight text-on-primary font-black">
+        <!-- Title -->
+        <h1 class="font-display text-4xl sm:text-5xl md:text-[3.75rem] font-black text-white leading-[1.1] mb-6">
           {{ title }}
         </h1>
 
         <!-- Description -->
-        <p class="text-sm sm:text-body-md md:text-body-lg opacity-90 max-w-lg text-on-primary leading-relaxed">
+        <p class="text-white/65 text-base md:text-lg leading-relaxed mb-10 max-w-xl">
           {{ description }}
         </p>
 
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4 md:pt-6">
-          <BaseButton variant="secondary" size="md" class="flex-1 sm:flex-initial text-sm md:text-base">
-            {{ primaryCTA }}
-          </BaseButton>
-          <BaseButton variant="outline" size="md" class="flex-1 sm:flex-initial text-sm md:text-base">
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row gap-3 mb-14">
+          <a href="/kontakt">
+            <BaseButton variant="secondary" size="lg">{{ primaryCTA }}</BaseButton>
+          </a>
+          <BaseButton variant="outline" size="lg" class="!border-white/25 !text-white hover:!bg-white/10">
             {{ secondaryCTA }}
           </BaseButton>
         </div>
-      </div>
 
-      <!-- Right Stats Card - Hidden on mobile -->
-      <div class="hidden md:block ml-20">
-        <div class="glass-card p-8 rounded-2xl ambient-shadow backdrop-blur-xl border border-on-primary-container/10">
-          <div class="grid grid-cols-2 gap-8">
-            <StatCard
-              v-for="(stat, index) in stats"
-              :key="stat.label"
-              :value="stat.value"
-              :label="stat.label"
-              :icon="stat.icon"
-              class="relative py-6"
-              :class="[
-                index < 2 && 'border-b border-on-primary-container/10 pb-8',
-                index % 2 === 0 && index < stats.length - 1 && 'border-r border-on-primary-container/10 pr-8'
-              ]"
-            />
+        <!-- Stats strip -->
+        <div class="pt-8 border-t border-white/[0.12] grid grid-cols-2 sm:grid-cols-4 gap-x-2 gap-y-6">
+          <div v-for="stat in stats" :key="stat.label" class="flex flex-col gap-1">
+            <span class="material-symbols-outlined text-xl mb-0.5 bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">{{ stat.icon }}</span>
+            <div class="font-black text-2xl leading-none bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">
+              {{ stat.value }}
+            </div>
+            <div class="text-white/45 text-xs uppercase tracking-wider font-semibold">{{ stat.label }}</div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -74,17 +69,3 @@ withDefaults(
   {}
 );
 </script>
-
-<style scoped>
-/* Smooth entrance animation for hero */
-@keyframes hero-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
