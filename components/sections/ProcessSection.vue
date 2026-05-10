@@ -5,30 +5,22 @@
       <!-- Header -->
       <div class="text-center mb-stack-lg max-w-2xl mx-auto">
         <span class="text-primary/60 font-semibold text-xs uppercase tracking-[0.25em] mb-3 block">Der Prozess</span>
-        <h2 class="font-display text-[2.25rem] md:text-[2.75rem] font-black text-on-surface">{{ title }}</h2>
+        <h2 class="font-display text-[2.25rem] md:text-[2.75rem] font-bold text-on-surface">{{ title }}</h2>
       </div>
 
       <!-- Process Card -->
-      <div class="bg-white/60 glass-card rounded-2xl p-8 md:p-14 shadow-sm border border-black/[0.04]">
+      <div class="glass-card rounded-2xl bg-white p-8 md:p-14 shadow-sm border border-black/[0.04]">
         <div class="flex flex-col sm:flex-col lg:flex-row gap-10 md:gap-12">
           <div
             v-for="(step, index) in steps"
             :key="step.title"
-            class="group animate-fade-in-up flex flex-col"
+            class="group animate-fade-in-up flex flex-col items-center text-center"
             :style="{ animationDelay: `${index * 70}ms` }"
           >
             <!-- Ghost number -->
-            <span class="text-[4rem] font-black leading-none select-none tracking-tight mb-1 text-on-surface/[0.06]">
+            <span class="text-[4rem] font-black leading-none select-none tracking-tight mb-4 text-on-surface/[0.06]">
               {{ String(index + 1).padStart(2, '0') }}
             </span>
-
-            <!-- Icon -->
-            <div
-              class="w-9 h-9 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300"
-              :class="col(index).iconBg"
-            >
-              <span class="material-symbols-outlined text-[1.1rem]" :class="col(index).iconColor">{{ step.icon }}</span>
-            </div>
 
             <!-- Short accent line -->
             <div class="h-[2px] w-8 mb-4 rounded-full" :class="col(index).accentColor"></div>
@@ -40,6 +32,14 @@
 
             <!-- Description -->
             <p class="text-on-surface-variant text-xs leading-relaxed">{{ step.description }}</p>
+                       <!-- Icon -->
+            <div
+              class="w-9 h-9 rounded-xl flex items-center justify-center mt-6 group-hover:scale-110 transition-transform duration-300"
+              :class="col(index).iconBg"
+            >
+              <span class="material-symbols-outlined text-[1.1rem]" :class="col(index).iconColor">{{ step.icon }}</span>
+            </div>
+
           </div>
         </div>
       </div>

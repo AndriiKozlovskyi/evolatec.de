@@ -15,7 +15,7 @@
       <div class="max-w-2xl">
 
         <!-- Badge -->
-        <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] mb-5 bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text text-transparent">
+        <span class="inline-block text-xs font-bold uppercase tracking-[0.2em] mb-5 font-black text-inverse-primary">
           {{ badge }}
         </span>
 
@@ -51,11 +51,11 @@
                 i < stats.length - 1 ? 'border-r border-white/[0.12]' : '',
               ]"
             >
-              <span class="material-symbols-outlined text-[1.1rem] leading-none bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">{{ stat.icon }}</span>
-              <div class="font-black text-[1rem] leading-none bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">
+              <span class="material-symbols-outlined text-[1.1rem] leading-none text-white">{{ stat.icon }}</span>
+              <div class="font-black text-[1rem] leading-none text-white">
                 {{ stat.value }}
               </div>
-              <div class="text-white/40 text-[0.65rem] uppercase tracking-widest font-bold">{{ stat.label }}</div>
+              <div class="text-white/40 text-[0.65rem] uppercase tracking-widest">{{ stat.label }}</div>
             </div>
           </div>
         </div>
