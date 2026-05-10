@@ -109,16 +109,22 @@ const benefits = [
     icon: 'design_services',
     title: 'Professionelles Unternehmensdesign',
     description: 'Moderne Firmenwebsites, die Vertrauen schaffen und professionell wirken.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop',
   },
   {
     icon: 'search_check',
     title: 'SEO-optimierte Struktur',
     description: 'Ihre Website wird suchmaschinenfreundlich aufgebaut, damit Kunden Sie leichter finden.',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
   },
   {
     icon: 'smartphone',
     title: 'Mobile Optimierung',
     description: 'Optimale Darstellung auf Smartphone, Tablet und Desktop.',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
   },
 ];
 

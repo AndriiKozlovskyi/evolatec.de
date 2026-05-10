@@ -71,16 +71,22 @@ const benefits = [
     icon: 'verified',
     title: 'Mehr Domain Autorität',
     description: 'Hochwertige Backlinks von relevanten und vertrauenswürdigen Websites stärken die Autorität Ihrer Domain dauerhaft.',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
   },
   {
     icon: 'trending_up',
     title: 'Bessere Google Rankings',
     description: 'Backlinks sind einer der stärksten Ranking-Faktoren. Mehr Autorität bedeutet bessere Positionen bei Google.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     icon: 'schedule',
     title: 'Langfristige Wirkung',
     description: 'Gute Backlinks wirken langfristig positiv und liefern kontinuierlich mehr organischen Traffic.',
+    bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
   },
 ];
 

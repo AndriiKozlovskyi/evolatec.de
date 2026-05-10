@@ -98,16 +98,22 @@ const benefits = [
     icon: 'speed',
     title: 'Schnellere Ladezeiten',
     description: 'Langsame Websites verlieren Rankings und Besucher. Wir optimieren Performance, Bilder, JavaScript und Servergeschwindigkeit.',
+    bg: 'bg-gradient-to-br from-orange-500 to-amber-600',
+    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop',
   },
   {
     icon: 'assessment',
     title: 'Bessere Core Web Vitals',
     description: 'Google bewertet Core Web Vitals direkt im Ranking. Wir optimieren LCP, FID und CLS für Top-Scores.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
   },
   {
     icon: 'smartphone',
     title: 'Mobile-First Optimierung',
     description: 'Über 60% aller Suchanfragen kommen vom Smartphone. Mobile Optimierung ist heute kein Optional mehr.',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
 ];
 

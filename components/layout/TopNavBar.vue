@@ -8,7 +8,7 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex gap-4 lg:gap-8 items-center">
+      <div class="hidden md:flex gap-4 lg:gap-2 items-center">
         <div
           v-for="link in navLinks"
           :key="link.id"
@@ -17,12 +17,16 @@
           <a
             :href="link.href"
             :class="[
-              'font-nav-link text-nav-link uppercase tracking-wider transition-colors flex items-center gap-2 py-2 px-3',
-              link.isActive
-                ? 'text-primary border-b-2 border-primary'
+              'font-nav-link text-nav-link uppercase tracking-wider transition-colors flex items-center gap-2 py-2 px-3 relative',
+              isLinkActive(link)
+                ? 'text-primary'
                 : 'text-on-surface-variant hover:text-primary',
             ]"
           >
+            <span
+              v-if="isLinkActive(link)"
+              class="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full"
+            />
             <span v-if="link.icon" class="material-symbols-outlined text-lg">{{ link.icon }}</span>
             <span class="hidden lg:inline text-xs">{{ link.label }}</span>
             <span v-if="link.submenu" class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">
@@ -39,7 +43,12 @@
                 v-for="sublink in link.submenu"
                 :key="sublink.id"
                 :href="sublink.href"
-                class="block px-6 py-3 text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors duration-200 font-nav-link text-sm"
+                :class="[
+                'block px-6 py-3 transition-colors duration-200 font-nav-link text-sm',
+                route.path === sublink.href
+                  ? 'text-primary font-semibold bg-primary/5'
+                  : 'text-on-surface hover:bg-surface-container-low hover:text-primary',
+              ]"
               >
                 {{ sublink.label }}
               </a>
@@ -139,6 +148,12 @@
 import { ref } from 'vue';
 
 const mobileMenuOpen = ref(false);
+const route = useRoute();
+
+function isLinkActive(link: (typeof navLinks)[number]) {
+  if (link.href !== '#' && route.path === link.href) return true;
+  return link.submenu?.some(s => route.path === s.href) ?? false;
+}
 
 const navLinks = [
   {

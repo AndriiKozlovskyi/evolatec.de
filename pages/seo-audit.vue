@@ -89,16 +89,22 @@ const benefits = [
     icon: 'engineering',
     title: 'Vollständiger technischer Check',
     description: 'Ladezeiten, Core Web Vitals, Indexierung, Crawling und technische Fehler werden systematisch analysiert.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
   },
   {
     icon: 'edit_document',
     title: 'OnPage & Content Analyse',
     description: 'Überschriften, Meta Tags, Keywords, interne Verlinkung und Content Struktur werden geprüft und bewertet.',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     icon: 'insights',
     title: 'Konkurrenzanalyse inklusive',
     description: 'Wir vergleichen Ihre Website mit den Wettbewerbern und zeigen konkrete Wachstumspotenziale auf.',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
   },
 ];
 

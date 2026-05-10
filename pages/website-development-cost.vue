@@ -261,16 +261,22 @@ const whyUs = [
     icon: 'verified_user',
     title: 'Transparente Preise',
     description: 'Klare Angebote ohne versteckte Kosten.',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
   },
   {
     icon: 'trending_up',
     title: 'Fokus auf Ergebnisse',
     description: 'Websites, die Kunden gewinnen und Umsatz steigern.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     icon: 'rocket_launch',
     title: 'Moderne Technologien',
     description: 'Schnelle, SEO-optimierte und responsive Websites.',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
   },
 ];
 

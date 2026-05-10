@@ -91,16 +91,22 @@ const benefits = [
     icon: 'trending_up',
     title: 'Langfristiger Traffic',
     description: 'SEO liefert nachhaltigen organischen Traffic ohne permanente Werbekosten — eine der besten Investitionen im Marketing.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     icon: 'people',
     title: 'Mehr Kunden',
     description: 'Bessere Google Rankings bringen mehr qualifizierte Anfragen von Kunden mit echter Kaufabsicht.',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
   },
   {
     icon: 'grade',
     title: 'Wettbewerbsvorteil',
     description: 'Unternehmen mit guter SEO setzen sich dauerhaft gegen Konkurrenten durch und gewinnen Marktanteile.',
+    bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
   },
 ];
 

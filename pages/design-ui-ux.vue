@@ -11,6 +11,9 @@
       :stats="uiuxStats"
     />
 
+    <!-- Trust Section -->
+    <TrustSection :companies="trustCompanies" />
+
     <!-- Intro Section -->
     <section class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -47,10 +50,14 @@
           <div
             v-for="service in uiuxServices"
             :key="service.title"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
+            :class="service.borderColor"
           >
-            <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-6">
-              <span class="material-symbols-outlined text-primary text-2xl">{{ service.icon }}</span>
+            <div
+              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
+              :class="service.iconBg"
+            >
+              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
             </div>
             <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
             <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
@@ -60,50 +67,10 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Vorteile professionellen UX & UI Designs
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
-          <div
-            v-for="benefit in uiuxBenefits"
-            :key="benefit.title"
-            class="glass-card ambient-shadow p-8 flex gap-6"
-          >
-            <div class="flex-shrink-0">
-              <span class="material-symbols-outlined text-[40px] text-primary">{{ benefit.icon }}</span>
-            </div>
-            <div>
-              <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
-              <p class="font-body-md text-on-surface-variant">{{ benefit.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <BenefitsSection title="Vorteile professionellen UX & UI Designs" :benefits="uiuxBenefits" />
 
     <!-- Process Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          Unser UI/UX Design Prozess
-        </h2>
-
-        <div class="grid md:grid-cols-4 gap-gutter">
-          <div v-for="(step, index) in uiuxProcess" :key="step.title" class="glass-card ambient-shadow p-8">
-            <div class="w-12 h-12 bg-primary text-white flex items-center justify-center font-bold rounded-full mb-4">
-              {{ index + 1 }}
-            </div>
-            <h3 class="font-headline-md text-primary mb-2">{{ step.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ step.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ProcessSection title="Unser UI/UX Design Prozess" :steps="uiuxProcess" />
 
     <!-- UX & UI Info Section -->
     <section class="py-section-padding bg-surface">
@@ -183,26 +150,40 @@
       :pricing-plans="uiuxPricingPlans"
     />
 
+    <!-- Features Section -->
+    <FeaturesSection
+      title="Modernes UI/UX Design für digitale Produkte"
+      :features="featuresData"
+      image-url="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
+    />
+
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zu UI/UX Design" :faqs="uiuxFaqs" />
 
     <!-- Final CTA -->
-    <section class="py-section-padding bg-primary text-on-primary">
-      <div class="max-w-container-max mx-auto px-gutter text-center space-y-stack-md">
-        <h2 class="font-display text-headline-lg">Professionelles UI/UX Design für moderne digitale Produkte</h2>
-        <p class="font-body-lg max-w-2xl mx-auto opacity-80">
-          EvolaTec entwickelt moderne Interfaces, starke Nutzererlebnisse und conversionstarke Designs für Unternehmen, Startups und digitale Plattformen.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <BaseButton variant="secondary" size="lg">UI/UX Projekt starten</BaseButton>
-          <BaseButton variant="outline" size="lg">Kostenlos beraten lassen</BaseButton>
-        </div>
-      </div>
-    </section>
+    <CTASection
+      title="Professionelles UI/UX Design für moderne digitale Produkte"
+      description="EvolaTec entwickelt moderne Interfaces, starke Nutzererlebnisse und conversionstarke Designs für Unternehmen, Startups und digitale Plattformen."
+      primary-cta="UI/UX Projekt starten"
+      secondary-cta="Kostenlos beraten lassen"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'UI/UX Design Agentur | EvolaTec',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Professionelle UI/UX Design Agentur für moderne Benutzeroberflächen, User Experience Design und digitale Nutzererlebnisse. EvolaTec steigert Conversion durch exzellentes Design.',
+    },
+  ],
+});
+
+const trustCompanies = ['UI DESIGN', 'UX RESEARCH', 'PROTOTYPING', 'CONVERSION'];
+
 const uiuxStats = [
   { value: 'Modern', label: 'UI Design', icon: 'design_services' },
   { value: 'Intuitiv', label: 'UX Focused', icon: 'touch_app' },
@@ -215,31 +196,49 @@ const uiuxServices = [
     title: 'UX Design',
     description: 'Benutzerfreundliche Nutzererlebnisse mit klarer Struktur, intuitiver Navigation und hoher Conversion.',
     icon: 'touch_app',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+    borderColor: 'border-blue-500',
   },
   {
     title: 'UI Design',
     description: 'Moderne Benutzeroberflächen mit professionellem Look und konsistentem Designsystem.',
     icon: 'design_services',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    borderColor: 'border-emerald-500',
   },
   {
     title: 'Wireframes & Prototyping',
     description: 'Strukturierte Konzepte und klickbare Prototypen für digitale Produkte.',
     icon: 'schema',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+    borderColor: 'border-orange-500',
   },
   {
     title: 'SaaS & Dashboard Design',
     description: 'UI/UX Lösungen für komplexe Plattformen, Admin Panels und SaaS Produkte.',
     icon: 'dashboard',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    borderColor: 'border-purple-500',
   },
   {
     title: 'Mobile UX Design',
     description: 'Responsive Interfaces und mobile Nutzererlebnisse für Smartphones und Tablets.',
     icon: 'smartphone',
+    iconBg: 'bg-teal-100',
+    iconColor: 'text-teal-600',
+    borderColor: 'border-teal-500',
   },
   {
     title: 'E-Commerce UX',
     description: 'Optimierte Shopping Experiences für höhere Verkäufe und bessere Nutzerführung.',
     icon: 'shopping_cart',
+    iconBg: 'bg-rose-100',
+    iconColor: 'text-rose-600',
+    borderColor: 'border-rose-500',
   },
 ];
 
@@ -248,21 +247,29 @@ const uiuxBenefits = [
     title: 'Höhere Conversion',
     description: 'Intuitive Interfaces steigern Leads, Verkäufe und Anfragen.',
     icon: 'trending_up',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     title: 'Bessere Nutzererfahrung',
     description: 'Klare Strukturen verbessern Navigation und Benutzerfreundlichkeit.',
     icon: 'sentiment_satisfied',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
   },
   {
     title: 'Professioneller Markenauftritt',
     description: 'Modernes UI Design stärkt Vertrauen und Markenwahrnehmung.',
     icon: 'verified_user',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
   },
   {
     title: 'Mobile Optimierung',
     description: 'Responsive UX Designs funktionieren perfekt auf allen Geräten.',
     icon: 'devices',
+    bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
   },
 ];
 
@@ -270,18 +277,22 @@ const uiuxProcess = [
   {
     title: 'Analyse & Research',
     description: 'Analyse von Zielgruppe, Konkurrenz und Nutzerverhalten.',
+    icon: 'search',
   },
   {
     title: 'UX Struktur',
     description: 'Entwicklung von User Flows, Seitenstruktur und Wireframes.',
+    icon: 'schema',
   },
   {
     title: 'UI Design',
     description: 'Gestaltung moderner Interfaces mit Fokus auf Conversion und Nutzerfreundlichkeit.',
+    icon: 'design_services',
   },
   {
     title: 'Optimierung & Testing',
     description: 'Verbesserung der Nutzererfahrung durch Feedback und UX Optimierung.',
+    icon: 'tune',
   },
 ];
 
@@ -316,6 +327,29 @@ const uiuxIndustries = [
     title: 'Landingpages',
     description: 'Performanceorientierte Designs für Leadgenerierung.',
     icon: 'target',
+  },
+];
+
+const featuresData = [
+  {
+    title: 'UX Design',
+    description: 'Benutzerfreundliche Nutzererlebnisse mit klarer Struktur und hoher Conversion.',
+    icon: 'touch_app',
+  },
+  {
+    title: 'UI Design',
+    description: 'Moderne Benutzeroberflächen mit professionellem Look und konsistentem Designsystem.',
+    icon: 'design_services',
+  },
+  {
+    title: 'Wireframes & Prototyping',
+    description: 'Strukturierte Konzepte und klickbare Prototypen für digitale Produkte.',
+    icon: 'schema',
+  },
+  {
+    title: 'Mobile UX Design',
+    description: 'Responsive Interfaces und mobile Nutzererlebnisse für alle Geräte.',
+    icon: 'smartphone',
   },
 ];
 

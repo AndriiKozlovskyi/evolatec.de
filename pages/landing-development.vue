@@ -104,16 +104,22 @@ const benefits = [
     icon: 'trending_up',
     title: 'Mehr Leads & Anfragen',
     description: 'Landingpages fokussieren Besucher auf eine einzige Aktion.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     icon: 'ads_click',
     title: 'Ideal für Werbung',
     description: 'Perfekt für Google Ads, Meta Ads und Marketingkampagnen.',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
   },
   {
     icon: 'speed',
     title: 'Schnell online',
     description: 'Professionelle One-Pager innerhalb weniger Tage.',
+    bg: 'bg-gradient-to-br from-orange-500 to-amber-600',
+    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop',
   },
 ];
 

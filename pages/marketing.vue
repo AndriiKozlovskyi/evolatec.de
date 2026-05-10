@@ -66,62 +66,10 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Vorteile einer professionellen Online Marketing Agentur
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-gutter">
-          <div
-            v-for="benefit in marketingBenefits"
-            :key="benefit.title"
-            class="glass-card ambient-shadow p-8 flex gap-6 transition-all duration-300 hover:scale-105"
-          >
-            <div class="flex-shrink-0">
-              <div class="w-16 h-16 rounded-2xl flex items-center justify-center" :class="benefit.iconBg">
-                <span class="material-symbols-outlined text-3xl" :class="benefit.iconColor">{{ benefit.icon }}</span>
-              </div>
-            </div>
-            <div>
-              <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
-              <p class="font-body-md text-on-surface-variant">{{ benefit.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <BenefitsSection title="Vorteile einer professionellen Online Marketing Agentur" :benefits="marketingBenefits" />
 
     <!-- Process Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          Unser Online Marketing Prozess
-        </h2>
-
-        <div class="grid md:grid-cols-4 gap-gutter">
-          <div
-            v-for="(step, index) in marketingProcess"
-            :key="step.title"
-            class="glass-card ambient-shadow p-8 border-t-4 transition-all duration-300 hover:scale-105"
-            :class="step.borderColor"
-          >
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-xl flex items-center justify-center" :class="step.iconBg">
-                <span class="material-symbols-outlined text-xl" :class="step.iconColor">{{ step.icon }}</span>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-full" :class="[step.chipBg, step.iconColor]">
-                Schritt {{ index + 1 }}
-              </span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-2">{{ step.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ step.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ProcessSection title="Unser Online Marketing Prozess" :steps="marketingProcess" />
 
     <!-- Channels Section -->
     <section class="py-section-padding bg-gradient-to-br from-slate-900 to-slate-800">
@@ -264,22 +212,12 @@
     <FAQSection title="Häufig gestellte Fragen zum Online Marketing" :faqs="marketingFaqs" />
 
     <!-- Final CTA -->
-    <section class="py-section-padding bg-primary text-on-primary">
-      <div class="max-w-container-max mx-auto px-gutter text-center space-y-stack-md">
-        <h2 class="font-display text-headline-lg">Mehr Sichtbarkeit, mehr Leads, mehr Wachstum</h2>
-        <p class="font-body-lg max-w-2xl mx-auto opacity-80">
-          EvolaTec entwickelt moderne Online Marketing Strategien für Unternehmen, die digital wachsen möchten.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <a href="/kontakt">
-            <BaseButton variant="secondary" size="lg">Marketing Projekt starten</BaseButton>
-          </a>
-          <a href="/kontakt">
-            <BaseButton variant="outline" size="lg">Kostenlos beraten lassen</BaseButton>
-          </a>
-        </div>
-      </div>
-    </section>
+    <CTASection
+      title="Mehr Sichtbarkeit, mehr Leads, mehr Wachstum"
+      description="EvolaTec entwickelt moderne Online Marketing Strategien für Unternehmen, die digital wachsen möchten."
+      primary-cta="Marketing Projekt starten"
+      secondary-cta="Kostenlos beraten lassen"
+    />
   </div>
 </template>
 
@@ -353,29 +291,29 @@ const marketingBenefits = [
     title: 'Mehr Reichweite',
     description: 'Professionelles Marketing bringt Ihre Marke vor die richtige Zielgruppe.',
     icon: 'public',
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-600',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     title: 'Mehr Leads',
     description: 'Conversion optimierte Strategien generieren qualifizierte Anfragen.',
     icon: 'person_add',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange-600',
+    bg: 'bg-gradient-to-br from-orange-500 to-amber-600',
+    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop',
   },
   {
     title: 'Mehr Umsatz',
     description: 'Datenbasierte Kampagnen steigern Verkäufe und Wachstum.',
     icon: 'trending_up',
-    iconBg: 'bg-emerald-100',
-    iconColor: 'text-emerald-600',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
   },
   {
     title: 'Nachhaltige Ergebnisse',
     description: 'Langfristige Strategien sorgen für stabile Sichtbarkeit.',
     icon: 'schedule',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
   },
 ];
 
@@ -384,37 +322,21 @@ const marketingProcess = [
     title: 'Analyse & Strategie',
     description: 'Analyse Ihrer Branche, Zielgruppe und Wettbewerber.',
     icon: 'analytics',
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-600',
-    chipBg: 'bg-blue-50',
-    borderColor: 'border-blue-400',
   },
   {
     title: 'Marketing Konzept',
     description: 'Entwicklung einer individuellen digitalen Wachstumsstrategie.',
     icon: 'lightbulb',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange-600',
-    chipBg: 'bg-orange-50',
-    borderColor: 'border-orange-400',
   },
   {
     title: 'Umsetzung & Kampagnen',
     description: 'Umsetzung von SEO, Ads, Content und Conversion Maßnahmen.',
     icon: 'rocket_launch',
-    iconBg: 'bg-emerald-100',
-    iconColor: 'text-emerald-600',
-    chipBg: 'bg-emerald-50',
-    borderColor: 'border-emerald-400',
   },
   {
     title: 'Optimierung & Skalierung',
     description: 'Kontinuierliche Verbesserung und datenbasierte Optimierung.',
     icon: 'tune',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-    chipBg: 'bg-purple-50',
-    borderColor: 'border-purple-400',
   },
 ];
 

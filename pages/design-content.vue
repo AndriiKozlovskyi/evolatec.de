@@ -11,6 +11,9 @@
       :stats="contentStats"
     />
 
+    <!-- Trust Section -->
+    <TrustSection :companies="trustCompanies" />
+
     <!-- Intro Section -->
     <section class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -47,10 +50,14 @@
           <div
             v-for="service in contentServices"
             :key="service.title"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
+            :class="service.borderColor"
           >
-            <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-6">
-              <span class="material-symbols-outlined text-primary text-2xl">{{ service.icon }}</span>
+            <div
+              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
+              :class="service.iconBg"
+            >
+              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
             </div>
             <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
             <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
@@ -60,50 +67,10 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Vorteile professioneller SEO Texte
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
-          <div
-            v-for="benefit in contentBenefits"
-            :key="benefit.title"
-            class="glass-card ambient-shadow p-8 flex gap-6"
-          >
-            <div class="flex-shrink-0">
-              <span class="material-symbols-outlined text-[40px] text-primary">{{ benefit.icon }}</span>
-            </div>
-            <div>
-              <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
-              <p class="font-body-md text-on-surface-variant">{{ benefit.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <BenefitsSection title="Vorteile professioneller SEO Texte" :benefits="contentBenefits" />
 
     <!-- Process Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          So entstehen professionelle Website Texte
-        </h2>
-
-        <div class="grid md:grid-cols-4 gap-gutter">
-          <div v-for="(step, index) in contentProcess" :key="step.title" class="glass-card ambient-shadow p-8">
-            <div class="w-12 h-12 bg-primary text-white flex items-center justify-center font-bold rounded-full mb-4">
-              {{ index + 1 }}
-            </div>
-            <h3 class="font-headline-md text-primary mb-2">{{ step.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ step.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ProcessSection title="So entstehen professionelle Website Texte" :steps="contentProcess" />
 
     <!-- Content Types Section -->
     <section class="py-section-padding bg-surface">
@@ -130,26 +97,40 @@
       :pricing-plans="contentPricingPlans"
     />
 
+    <!-- Features Section -->
+    <FeaturesSection
+      title="Professionelles Copywriting für Ihre digitale Präsenz"
+      :features="featuresData"
+      image-url="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+    />
+
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zu Webseiten Texten" :faqs="contentFaqs" />
 
     <!-- Final CTA -->
-    <section class="py-section-padding bg-primary text-on-primary">
-      <div class="max-w-container-max mx-auto px-gutter text-center space-y-stack-md">
-        <h2 class="font-display text-headline-lg">Professionelle Website Texte für mehr Kunden & bessere Rankings</h2>
-        <p class="font-body-lg max-w-2xl mx-auto opacity-80">
-          Lassen Sie professionelle Webseiten Texte erstellen, die verkaufen, Vertrauen aufbauen und bei Google ranken.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <BaseButton variant="secondary" size="lg">Content anfragen</BaseButton>
-          <BaseButton variant="outline" size="lg">Kostenlos beraten lassen</BaseButton>
-        </div>
-      </div>
-    </section>
+    <CTASection
+      title="Professionelle Website Texte für mehr Kunden & bessere Rankings"
+      description="Lassen Sie professionelle Webseiten Texte erstellen, die verkaufen, Vertrauen aufbauen und bei Google ranken."
+      primary-cta="Content anfragen"
+      secondary-cta="Kostenlos beraten lassen"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Webseiten Texte & SEO Copywriting | EvolaTec',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Professionelle Webseiten Texte, SEO Copywriting und Website Inhalte für Unternehmen, Landingpages und Onlineshops. Texte die ranken und verkaufen.',
+    },
+  ],
+});
+
+const trustCompanies = ['SEO CONTENT', 'COPYWRITING', 'WEB TEXTE', 'CONVERSION'];
+
 const contentStats = [
   { value: 'SEO +', label: 'Optimiert', icon: 'trending_up' },
   { value: 'Verkaufs-', label: 'fokussiert', icon: 'shopping_cart' },
@@ -158,6 +139,115 @@ const contentStats = [
 ];
 
 const contentServices = [
+  {
+    title: 'Webseiten Texte schreiben lassen',
+    description: 'Professionelle Texte für Unternehmenswebsites, Landingpages und Markenauftritte.',
+    icon: 'edit_document',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+    borderColor: 'border-blue-500',
+  },
+  {
+    title: 'SEO Texte schreiben lassen',
+    description: 'SEO optimierte Inhalte für bessere Rankings und mehr Sichtbarkeit.',
+    icon: 'search',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    borderColor: 'border-emerald-500',
+  },
+  {
+    title: 'Landingpage Copywriting',
+    description: 'Conversionstarke Texte für mehr Leads, Anfragen und Verkäufe.',
+    icon: 'target',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+    borderColor: 'border-orange-500',
+  },
+  {
+    title: 'Onlineshop Inhalte',
+    description: 'Produkttexte und Kategorieseiten für E-Commerce Projekte.',
+    icon: 'shopping_bag',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    borderColor: 'border-purple-500',
+  },
+  {
+    title: 'Content Strategie',
+    description: 'Strukturierte Inhalte für SEO, Branding und Marketing.',
+    icon: 'map',
+    iconBg: 'bg-teal-100',
+    iconColor: 'text-teal-600',
+    borderColor: 'border-teal-500',
+  },
+  {
+    title: 'SEO Blog Artikel',
+    description: 'Fachartikel und SEO Content für langfristigen Traffic.',
+    icon: 'article',
+    iconBg: 'bg-rose-100',
+    iconColor: 'text-rose-600',
+    borderColor: 'border-rose-500',
+  },
+];
+
+const contentBenefits = [
+  {
+    title: 'Mehr Google Rankings',
+    description: 'SEO optimierte Texte verbessern Ihre Sichtbarkeit.',
+    icon: 'trending_up',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+  },
+  {
+    title: 'Höhere Conversion',
+    description: 'Gute Texte überzeugen Besucher und steigern Anfragen.',
+    icon: 'shopping_cart',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+  },
+  {
+    title: 'Professioneller Markenauftritt',
+    description: 'Hochwertige Inhalte stärken Vertrauen und Markenwirkung.',
+    icon: 'verified_user',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+  },
+];
+
+const contentProcess = [
+  {
+    title: 'Analyse',
+    description: 'Zielgruppe, Branche und Konkurrenz analysieren.',
+    icon: 'analytics',
+  },
+  {
+    title: 'Keyword Recherche',
+    description: 'Relevante SEO Keywords für bessere Rankings identifizieren.',
+    icon: 'search',
+  },
+  {
+    title: 'Content Erstellung',
+    description: 'Professionelle, strukturierte und conversionstarke Inhalte schreiben.',
+    icon: 'edit_document',
+  },
+  {
+    title: 'SEO Optimierung',
+    description: 'Inhalte für Google und Nutzer optimieren.',
+    icon: 'search_insights',
+  },
+];
+
+const contentTypes = [
+  'Webseiten Texte',
+  'SEO Landingpages',
+  'Unternehmensbeschreibungen',
+  'Produktbeschreibungen',
+  'Blog Artikel',
+  'Google SEO Texte',
+  'Conversion Texte',
+  'Content für Werbeanzeigen',
+];
+
+const featuresData = [
   {
     title: 'Webseiten Texte schreiben lassen',
     description: 'Professionelle Texte für Unternehmenswebsites, Landingpages und Markenauftritte.',
@@ -174,73 +264,10 @@ const contentServices = [
     icon: 'target',
   },
   {
-    title: 'Onlineshop Inhalte',
-    description: 'Produkttexte und Kategorieseiten für E-Commerce Projekte.',
-    icon: 'shopping_bag',
-  },
-  {
     title: 'Content Strategie',
-    description: 'Strukturierte Inhalte für SEO, Branding und Marketing.',
+    description: 'Strukturierte Inhalte für SEO, Branding und nachhaltiges Marketing.',
     icon: 'map',
   },
-  {
-    title: 'SEO Blog Artikel',
-    description: 'Fachartikel und SEO Content für langfristigen Traffic.',
-    icon: 'article',
-  },
-];
-
-const contentBenefits = [
-  {
-    title: 'Mehr Google Rankings',
-    description: 'SEO optimierte Texte verbessern Ihre Sichtbarkeit.',
-    icon: 'trending_up',
-  },
-  {
-    title: 'Höhere Conversion',
-    description: 'Gute Texte überzeugen Besucher und steigern Anfragen.',
-    icon: 'shopping_cart',
-  },
-  {
-    title: 'Professioneller Markenauftritt',
-    description: 'Hochwertige Inhalte stärken Vertrauen und Markenwirkung.',
-    icon: 'verified_user',
-  },
-  {
-    title: 'Nachhaltiger Traffic',
-    description: 'SEO Content bringt langfristig Besucher.',
-    icon: 'schedule',
-  },
-];
-
-const contentProcess = [
-  {
-    title: 'Analyse',
-    description: 'Zielgruppe, Branche und Konkurrenz analysieren.',
-  },
-  {
-    title: 'Keyword Recherche',
-    description: 'Relevante SEO Keywords für bessere Rankings identifizieren.',
-  },
-  {
-    title: 'Content Erstellung',
-    description: 'Professionelle, strukturierte und conversionstarke Inhalte schreiben.',
-  },
-  {
-    title: 'SEO Optimierung',
-    description: 'Inhalte für Google und Nutzer optimieren.',
-  },
-];
-
-const contentTypes = [
-  'Webseiten Texte',
-  'SEO Landingpages',
-  'Unternehmensbeschreibungen',
-  'Produktbeschreibungen',
-  'Blog Artikel',
-  'Google SEO Texte',
-  'Conversion Texte',
-  'Content für Werbeanzeigen',
 ];
 
 const contentPricingPlans = [

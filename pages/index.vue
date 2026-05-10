@@ -231,21 +231,29 @@ const whyUs = [
     icon: 'target',
     title: 'Ergebnisse statt nur Design',
     description: 'Wir entwickeln Websites, die Leads generieren und verkaufen.',
+    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
   },
   {
     icon: 'search_check',
     title: 'SEO-ready Entwicklung',
     description: 'Technisch optimierte Websites für bessere Rankings bei Google.',
+    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
   },
   {
     icon: 'flash_on',
     title: 'Schnelle Umsetzung',
     description: 'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen.',
+    bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
   },
   {
     icon: 'verified_user',
     title: 'Transparente Preise',
     description: 'Klare Angebote ohne versteckte Kosten.',
+    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop',
   },
 ];
 

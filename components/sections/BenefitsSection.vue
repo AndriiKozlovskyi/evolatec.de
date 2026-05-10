@@ -2,7 +2,7 @@
   <section class="py-section-padding bg-white text-on-surface">
     <div class="max-w-container-max mx-auto px-gutter">
       <h2 class="font-display text-display text-[2.5rem] md:text-[3rem] mb-stack-lg text-center">{{ title }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+      <div class="grid grid-cols-1 gap-stack-md" :class="gridCols">
 
         <!-- Image card variant -->
         <template v-if="hasImages">
@@ -10,12 +10,11 @@
             v-for="benefit in benefits"
             :key="benefit.title"
             class="group relative rounded-3xl overflow-hidden h-72 cursor-pointer"
-            :class="benefit.bg"
           >
             <img
               :src="benefit.image"
               alt=""
-              class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <div class="relative h-full flex flex-col justify-between p-6">
@@ -61,4 +60,5 @@ const props = defineProps<{
 }>();
 
 const hasImages = computed(() => props.benefits.some(b => b.image));
+const gridCols = computed(() => props.benefits.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3');
 </script>
