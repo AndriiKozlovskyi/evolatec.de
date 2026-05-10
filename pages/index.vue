@@ -15,7 +15,7 @@
     <section class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-6 md:mb-stack-lg">
-          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-2 md:mb-4 leading-tight">Unsere Leistungen</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-2 md:mb-4 leading-tight">Unsere Leistungen</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-stack-md">
@@ -40,7 +40,7 @@
             <!-- Link -->
             <a
               :href="service.href"
-              class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all duration-300 text-sm sm:text-base"
+              class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all duration-300 text-sm sm:text-base py-2 min-h-[44px]"
             >
               Mehr erfahren
               <span class="material-symbols-outlined text-lg">arrow_forward</span>
@@ -67,25 +67,43 @@
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-6 md:mb-stack-lg">
           <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block text-xs">Preise</span>
-          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-2 md:mb-4 leading-tight">Website erstellen lassen – Preise</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-2 md:mb-4 leading-tight">Website erstellen lassen – Preise</h2>
           <p class="text-on-surface-variant text-sm sm:text-lg max-w-2xl mx-auto">Transparente Preise für professionelle Webentwicklung.</p>
         </div>
 
-        <!-- Pricing Table -->
-        <div class="overflow-x-auto mb-6 md:mb-stack-lg rounded-lg">
-          <table class="w-full text-sm sm:text-base">
+        <!-- Mobile: stacked cards -->
+        <div class="md:hidden space-y-3 mb-6">
+          <div
+            v-for="(item, index) in pricingTable"
+            :key="`m-${index}`"
+            class="bg-white rounded-xl border border-surface-container-high p-4 flex items-center justify-between gap-3"
+          >
+            <div class="min-w-0 flex-1">
+              <p class="font-bold text-on-surface text-base leading-tight">{{ item.service }}</p>
+              <p class="text-on-surface-variant text-xs mt-1 flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">schedule</span>
+                {{ item.delivery }}
+              </p>
+            </div>
+            <p class="text-primary font-black text-lg whitespace-nowrap">{{ item.price }}</p>
+          </div>
+        </div>
+
+        <!-- Desktop: table -->
+        <div class="hidden md:block mb-stack-lg rounded-lg overflow-hidden">
+          <table class="w-full text-base">
             <thead>
               <tr class="border-b-2 border-primary/20 bg-surface">
-                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Leistung</th>
-                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Preis</th>
-                <th class="text-left p-2 sm:p-4 font-bold text-on-surface text-xs sm:text-base">Lieferzeit</th>
+                <th class="text-left p-4 font-bold text-on-surface">Leistung</th>
+                <th class="text-left p-4 font-bold text-on-surface">Preis</th>
+                <th class="text-left p-4 font-bold text-on-surface">Lieferzeit</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(item, index) in pricingTable" :key="index" class="border-b border-surface-container hover:bg-white transition-colors duration-200">
-                <td class="p-2 sm:p-4 text-on-surface font-medium text-xs sm:text-base">{{ item.service }}</td>
-                <td class="p-2 sm:p-4 text-primary font-bold text-sm sm:text-lg">{{ item.price }}</td>
-                <td class="p-2 sm:p-4 text-on-surface-variant text-xs sm:text-base">{{ item.delivery }}</td>
+                <td class="p-4 text-on-surface font-medium">{{ item.service }}</td>
+                <td class="p-4 text-primary font-bold text-lg">{{ item.price }}</td>
+                <td class="p-4 text-on-surface-variant">{{ item.delivery }}</td>
               </tr>
             </tbody>
           </table>
@@ -108,7 +126,7 @@
       </div>
 
       <div class="relative z-10 max-w-container-max mx-auto px-gutter">
-        <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-center mb-6 md:mb-stack-lg leading-tight">Ergebnisse unserer Kunden</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-center mb-6 md:mb-stack-lg leading-tight">Ergebnisse unserer Kunden</h2>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 md:gap-8 mb-6 md:mb-stack-lg">
           <div
@@ -117,7 +135,16 @@
             class="text-center animate-fade-in-up"
             :style="{ animationDelay: `${index * 100}ms` }"
           >
-            <p class="text-3xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-3 text-on-primary leading-tight">{{ result.value }}</p>
+            <p
+              v-if="result.icon"
+              class="text-3xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-3 text-on-primary leading-none flex items-center justify-center"
+            >
+              <span class="material-symbols-outlined" style="font-size: 1em; line-height: 1;">{{ result.icon }}</span>
+            </p>
+            <p
+              v-else
+              class="text-3xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-3 text-on-primary leading-tight"
+            >{{ result.value }}</p>
             <p class="text-on-primary-container text-xs sm:text-body-md">{{ result.label }}</p>
           </div>
         </div>
@@ -134,7 +161,7 @@
     <section class="py-8 md:py-section-padding bg-white">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="max-w-3xl mx-auto space-y-4 md:space-y-stack-md">
-          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
 
           <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
             Eine professionelle Website ist heute entscheidend für den Erfolg eines Unternehmens. Bei EvolaTec entwickeln wir moderne Firmenwebsites, Landingpages und Online Shops, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
@@ -264,7 +291,7 @@ const processSteps = [
     description: 'Wir verstehen Ihre Anforderungen und Ziele genau.',
   },
   {
-    icon: 'architecture_2',
+    icon: 'design_services',
     title: 'Struktur & Design',
     description: 'Planung und Gestaltung Ihrer Website.',
   },
@@ -291,8 +318,8 @@ const pricingTable = [
 const results = [
   { value: '+230%', label: 'mehr Leads' },
   { value: '+180%', label: 'organischer Traffic' },
-  { value: '⚡', label: 'Schnellere Ladezeiten' },
-  { value: '📈', label: 'Mehr Verkäufe' },
+  { icon: 'bolt', label: 'Schnellere Ladezeiten' },
+  { icon: 'trending_up', label: 'Mehr Verkäufe' },
 ];
 
 const faqs = [
@@ -329,20 +356,3 @@ const faqs = [
 ];
 </script>
 
-<style scoped>
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out forwards;
-  opacity: 0;
-}
-</style>

@@ -7,13 +7,13 @@
     </div>
 
     <div class="relative z-10 max-w-container-max mx-auto px-gutter text-center">
-      <div class="space-y-stack-md animate-fade-in-up">
-        <h2 class="font-display text-[2.5rem] md:text-[3.5rem] leading-tight">{{ title }}</h2>
-        <p class="text-body-lg md:text-headline-md opacity-90 max-w-2xl mx-auto leading-relaxed">{{ description }}</p>
+      <div class="space-y-4 md:space-y-stack-md animate-fade-in-up">
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight">{{ title }}</h2>
+        <p class="text-base sm:text-lg md:text-headline-md opacity-90 max-w-2xl mx-auto leading-relaxed">{{ description }}</p>
 
-        <div class="flex flex-col md:flex-row gap-4 justify-center pt-8">
-          <BaseButton variant="secondary" size="lg">{{ primaryCta }}</BaseButton>
-          <BaseButton variant="outline" size="lg">{{ secondaryCta }}</BaseButton>
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-6 md:pt-8">
+          <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">{{ primaryCta }}</BaseButton>
+          <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/30 !text-white hover:!bg-white/10">{{ secondaryCta }}</BaseButton>
         </div>
       </div>
     </div>
@@ -29,19 +29,3 @@ defineProps<{
 }>();
 </script>
 
-<style scoped>
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out;
-}
-</style>

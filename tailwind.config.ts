@@ -71,7 +71,12 @@ export default {
         'stack-sm': '1rem',
         'stack-md': '2rem',
         'stack-lg': '4rem',
-        'section-padding': '8rem',
+        'section-padding': 'clamp(2.5rem, 6vw + 1rem, 8rem)',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        display: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        body: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       fontSize: {
         'body-md': ['0.875rem', { lineHeight: '1.5', fontWeight: '400' }],

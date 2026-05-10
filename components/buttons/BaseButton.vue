@@ -1,7 +1,7 @@
 <template>
   <button
     :class="[
-      'rounded-lg font-bold uppercase transition-transform duration-200 hover:scale-105',
+      'inline-flex items-center justify-center gap-2 rounded-lg font-bold uppercase tracking-wide transition-all duration-200 motion-safe:hover:scale-[1.03] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary',
       variantClasses,
       sizeClasses,
     ]"
@@ -25,18 +25,18 @@ const props = withDefaults(
 
 const variantClasses = computed(() => {
   const variants = {
-    primary: 'bg-primary text-on-primary hover:bg-opacity-90',
-    secondary: 'bg-surface text-primary shadow-lg hover:bg-surface/90',
-    outline: 'border border-on-primary-container/30 text-on-primary-container hover:bg-white/10',
+    primary: 'bg-primary text-on-primary hover:bg-primary/90 shadow-sm hover:shadow-md',
+    secondary: 'bg-white text-primary shadow-md hover:shadow-lg hover:bg-white/95',
+    outline: 'border-2 border-current text-primary bg-transparent hover:bg-primary/5',
   };
   return variants[props.variant];
 });
 
 const sizeClasses = computed(() => {
   const sizes = {
-    sm: 'px-4 py-2 text-sm',
-    md: 'px-8 py-4 text-base',
-    lg: 'px-12 py-4 text-lg',
+    sm: 'min-h-[40px] px-5 py-2 text-sm',
+    md: 'min-h-[48px] px-7 py-3 text-base',
+    lg: 'min-h-[56px] px-9 py-4 text-base sm:text-lg',
   };
   return sizes[props.size];
 });

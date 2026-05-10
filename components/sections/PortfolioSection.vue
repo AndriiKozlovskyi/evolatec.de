@@ -4,7 +4,7 @@
       <!-- Header -->
       <div class="text-center mb-stack-lg max-w-2xl mx-auto">
         <span class="text-primary font-label-md uppercase tracking-[0.2em] mb-4 block">{{ subtitle }}</span>
-        <h2 class="font-display text-headline-lg text-primary mb-6">{{ title }}</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-6 leading-tight">{{ title }}</h2>
       </div>
 
       <!-- Portfolio Grid -->

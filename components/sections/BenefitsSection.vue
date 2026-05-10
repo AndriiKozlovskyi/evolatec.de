@@ -1,7 +1,7 @@
 <template>
   <section class="py-section-padding bg-white text-on-surface">
     <div class="max-w-container-max mx-auto px-gutter">
-      <h2 class="font-display text-display text-[2.5rem] md:text-[3rem] mb-stack-lg text-center">{{ title }}</h2>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-stack-lg text-center leading-tight">{{ title }}</h2>
       <div class="grid grid-cols-1 gap-stack-md" :class="gridCols">
 
         <!-- Image card variant -->

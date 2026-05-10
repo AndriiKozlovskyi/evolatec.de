@@ -15,7 +15,7 @@
     <section class="py-8 md:py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="max-w-3xl mx-auto text-center space-y-3 md:space-y-stack-md">
-          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface leading-tight">Was kostet es, eine Website erstellen zu lassen?</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-on-surface leading-tight">Was kostet es, eine Website erstellen zu lassen?</h2>
           <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
             Die Kosten einer Website hängen von Umfang, Funktionen und Design ab. Eine einfache Landingpage ist günstiger als ein komplexer Online Shop.
           </p>
@@ -31,7 +31,7 @@
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-6 md:mb-stack-lg">
           <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block text-xs">Preise</span>
-          <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-2 md:mb-4 leading-tight">Website Preise im Überblick</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-on-surface mb-2 md:mb-4 leading-tight">Website Preise im Überblick</h2>
           <p class="text-on-surface-variant text-sm sm:text-lg max-w-2xl mx-auto">Transparente Preise für professionelle Websites.</p>
         </div>
 
@@ -70,7 +70,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-stack-lg items-center">
           <!-- Content -->
           <div>
-            <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-stack-md leading-tight">Landingpage erstellen lassen – Kosten</h2>
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-on-surface mb-4 md:mb-stack-md leading-tight">Landingpage erstellen lassen – Kosten</h2>
             <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
               Landingpages eignen sich perfekt für Werbung, lokale Dienstleistungen und schnelle Leadgenerierung.
             </p>
@@ -86,7 +86,7 @@
           <!-- Price Card -->
           <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl">
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Landingpage</p>
-            <p class="text-2xl sm:text-[2.5rem] md:text-[3rem] font-black mb-3 md:mb-4 leading-tight">ab 350€</p>
+            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 350€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 3 Tagen</p>
             <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
           </div>
@@ -101,14 +101,14 @@
           <!-- Price Card -->
           <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl order-2 md:order-1">
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Firmenwebsite</p>
-            <p class="text-2xl sm:text-[2.5rem] md:text-[3rem] font-black mb-3 md:mb-4 leading-tight">ab 750€</p>
+            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 750€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 7 Tagen</p>
             <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
           </div>
 
           <!-- Content -->
           <div class="order-1 md:order-2">
-            <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-stack-md leading-tight">Firmenwebsite erstellen lassen – Kosten</h2>
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-on-surface mb-4 md:mb-stack-md leading-tight">Firmenwebsite erstellen lassen – Kosten</h2>
             <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
               Professionelle Unternehmenswebsites für lokale Unternehmen, Agenturen und Dienstleister.
             </p>
@@ -130,7 +130,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-stack-lg items-center">
           <!-- Content -->
           <div>
-            <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-on-surface mb-4 md:mb-stack-md leading-tight">Online Shop erstellen lassen – Kosten</h2>
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-on-surface mb-4 md:mb-stack-md leading-tight">Online Shop erstellen lassen – Kosten</h2>
             <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant mb-4 md:mb-6 leading-relaxed">
               Moderne E-Commerce Lösungen und Shopify Shops für Unternehmen und Marken.
             </p>
@@ -146,7 +146,7 @@
           <!-- Price Card -->
           <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl">
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Online Shop</p>
-            <p class="text-2xl sm:text-[2.5rem] md:text-[3rem] font-black mb-3 md:mb-4 leading-tight">ab 1.200€</p>
+            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 1.200€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 14 Tagen</p>
             <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
           </div>

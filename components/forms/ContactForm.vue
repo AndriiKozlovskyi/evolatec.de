@@ -10,6 +10,7 @@
         v-model="form.name"
         type="text"
         required
+        autocomplete="name"
         placeholder="Ihr Name"
         class="w-full px-4 py-3 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant"
       />
@@ -25,6 +26,8 @@
         v-model="form.email"
         type="email"
         required
+        autocomplete="email"
+        inputmode="email"
         placeholder="ihre.email@beispiel.de"
         class="w-full px-4 py-3 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant"
       />
@@ -39,6 +42,8 @@
         id="phone"
         v-model="form.phone"
         type="tel"
+        autocomplete="tel"
+        inputmode="tel"
         placeholder="+49 (0) 123 456789"
         class="w-full px-4 py-3 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant"
       />
@@ -53,6 +58,7 @@
         id="company"
         v-model="form.company"
         type="text"
+        autocomplete="organization"
         placeholder="Ihre Firma"
         class="w-full px-4 py-3 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant"
       />
@@ -126,17 +132,21 @@
     <!-- Success Message -->
     <div
       v-if="submitSuccess"
-      class="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800"
+      role="status"
+      class="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 flex items-start gap-3"
     >
-      ✓ Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.
+      <span class="material-symbols-outlined text-xl flex-shrink-0">check_circle</span>
+      <span>Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.</span>
     </div>
 
     <!-- Error Message -->
     <div
       v-if="submitError"
-      class="p-4 bg-error/10 border border-error/30 rounded-lg text-error"
+      role="alert"
+      class="p-4 bg-error/10 border border-error/30 rounded-lg text-error flex items-start gap-3"
     >
-      × Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.
+      <span class="material-symbols-outlined text-xl flex-shrink-0">error</span>
+      <span>Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.</span>
     </div>
   </form>
 </template>

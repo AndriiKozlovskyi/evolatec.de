@@ -47,8 +47,10 @@
         >
           <a
             :href="link.href"
+            @click="link.href === '#' && $event.preventDefault()"
             :class="[
               'font-nav-link text-nav-link uppercase tracking-wider transition-colors flex items-center gap-2 py-2 px-3 relative',
+              link.href === '#' ? 'cursor-default' : '',
               isLinkActive(link)
                 ? 'text-primary'
                 : 'text-on-surface-variant hover:text-primary',
@@ -92,7 +94,9 @@
       <button
         @click="mobileMenuOpen = !mobileMenuOpen"
         class="md:hidden p-2 text-on-surface hover:text-primary transition-colors h-12 w-12 flex items-center justify-center"
-        aria-label="Menü öffnen"
+        :aria-label="mobileMenuOpen ? 'Menü schließen' : 'Menü öffnen'"
+        :aria-expanded="mobileMenuOpen"
+        aria-controls="mobile-menu"
       >
         <span class="material-symbols-outlined text-2xl" v-if="!mobileMenuOpen">menu</span>
         <span class="material-symbols-outlined text-2xl" v-if="mobileMenuOpen">close</span>
@@ -108,9 +112,10 @@
     <!-- Mobile Menu Overlay -->
 <div
   v-if="mobileMenuOpen"
-  class="md:hidden fixed top-20 left-0 right-0 bottom-0  backdrop-blur-md z-60 "
+  id="mobile-menu"
+  class="md:hidden fixed top-20 left-0 right-0 bottom-0 backdrop-blur-md z-50 overflow-y-auto overscroll-contain bg-surface"
 >
-      <div class="max-w-container-max mx-auto px-gutter bg-surface py-4 pb-32">
+      <div class="max-w-container-max mx-auto px-gutter py-4 pb-32">
           <!-- Main Navigation Links -->
           <div class="space-y-2 mb-6">
             <a
@@ -132,7 +137,10 @@
             :key="`submenu-${link.id}`"
             class="border-t border-outline-variant/20 pt-6 mt-6"
           >
-            <div class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider">📦 Services</div>
+            <div class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
+              <span class="material-symbols-outlined text-base">{{ link.icon }}</span>
+              {{ link.label }}
+            </div>
             <div class="space-y-2">
               <a
                 v-for="sublink in link.submenu"
@@ -151,24 +159,12 @@
           <div class="border-t border-outline-variant/20 my-6"></div>
 
           <!-- CTA Button -->
-          <div class="px-4 mb-4">
+          <div class="px-4">
             <a href="/kontakt" @click="mobileMenuOpen = false" class="block">
-              <BaseButton variant="primary" size="lg" class="w-full text-base font-bold">
-                🚀 Projekt anfragen
+              <BaseButton variant="primary" size="lg" class="w-full">
+                <span class="material-symbols-outlined text-xl">rocket_launch</span>
+                Projekt anfragen
               </BaseButton>
-            </a>
-          </div>
-
-          <!-- Secondary Links -->
-          <div class="px-4 space-y-2">
-            <a href="/marketing" @click="mobileMenuOpen = false" class="block p-3 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              📣 Online Marketing
-            </a>
-            <a href="/pricing" @click="mobileMenuOpen = false" class="block p-3 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              💰 Preise & Kosten
-            </a>
-            <a href="/seo" @click="mobileMenuOpen = false" class="block p-3 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              🔍 SEO Services
             </a>
           </div>
         </div>
@@ -177,10 +173,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch, onBeforeUnmount } from 'vue';
 
 const mobileMenuOpen = ref(false);
 const route = useRoute();
+
+if (import.meta.client) {
+  watch(mobileMenuOpen, (open) => {
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  watch(() => route.path, () => {
+    mobileMenuOpen.value = false;
+  });
+  onBeforeUnmount(() => {
+    document.body.style.overflow = '';
+  });
+}
 
 function isLinkActive(link: (typeof navLinks)[number]) {
   if (link.href !== '#' && route.path === link.href) return true;

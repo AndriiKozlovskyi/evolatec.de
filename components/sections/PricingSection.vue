@@ -11,7 +11,7 @@
         <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block">
           {{ title.split(' ').slice(0, 1).join(' ') }}
         </span>
-        <h2 class="font-display text-[2.5rem] md:text-[3rem] text-on-surface mb-6 leading-tight">{{ title }}</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-6 leading-tight">{{ title }}</h2>
         <p class="text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">{{ subtitle }}</p>
       </div>
 
@@ -34,24 +34,6 @@
     </div>
   </section>
 </template>
-
-<style scoped>
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out forwards;
-  opacity: 0;
-}
-</style>
 
 <script setup lang="ts">
 defineProps<{

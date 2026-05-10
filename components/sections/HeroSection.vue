@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-[600px] md:min-h-screen flex items-center overflow-hidden">
+  <section class="relative min-h-[calc(100svh-5rem)] md:min-h-screen flex items-center overflow-hidden">
     <!-- Background image — full opacity, cinematic crop -->
     <img
       :src="backgroundImage"
@@ -11,7 +11,7 @@
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/75 to-slate-900/20"></div>
 
     <!-- Content -->
-    <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-32 pb-20 md:pt-40 md:pb-28">
+    <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-40 md:pb-28">
       <div class="max-w-2xl">
 
         <!-- Badge -->
@@ -31,12 +31,14 @@
 
         <!-- CTAs -->
         <div class="flex flex-col sm:flex-row gap-3 mb-14">
-          <a href="/kontakt">
-            <BaseButton variant="secondary" size="lg">{{ primaryCTA }}</BaseButton>
+          <a href="/kontakt" class="w-full sm:w-auto">
+            <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">{{ primaryCTA }}</BaseButton>
           </a>
-          <BaseButton variant="outline" size="lg" class="!border-white/25 !text-white hover:!bg-white/10">
-            {{ secondaryCTA }}
-          </BaseButton>
+          <a href="/pricing" class="w-full sm:w-auto">
+            <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/30 !text-white hover:!bg-white/10">
+              {{ secondaryCTA }}
+            </BaseButton>
+          </a>
         </div>
 
         <!-- Stats strip -->
@@ -47,8 +49,8 @@
               v-for="(stat, i) in stats"
               :key="stat.label"
               :class="[
-                'flex flex-col gap-1.5 py-1 px-6 first:pl-0',
-                i < stats.length - 1 ? 'border-r border-white/[0.12]' : '',
+                'flex flex-col gap-1.5 py-2 px-3 sm:px-6 sm:first:pl-0',
+                i < stats.length - 1 ? 'sm:border-r sm:border-white/[0.12]' : '',
               ]"
             >
               <span class="material-symbols-outlined text-[1.1rem] leading-none text-white">{{ stat.icon }}</span>

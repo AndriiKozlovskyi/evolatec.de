@@ -4,8 +4,8 @@
 
       <!-- Header -->
       <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-        <h2 class="font-headline-lg text-headline-lg text-black mb-4">{{ title }}</h2>
-        <p v-if="subtitle" class="font-body-lg text-black/55">{{ subtitle }}</p>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 leading-tight">{{ title }}</h2>
+        <p v-if="subtitle" class="text-base sm:text-lg text-on-surface-variant">{{ subtitle }}</p>
       </div>
 
       <!-- Grid -->

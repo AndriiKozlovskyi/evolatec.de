@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
         <!-- Content -->
         <div class="space-y-stack-md">
-          <h2 class="font-display text-[2.5rem] md:text-[3rem] leading-tight">{{ title }}</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight">{{ title }}</h2>
           <p class="text-body-lg opacity-90 leading-relaxed mb-8">
             Unsere Landingpages sind technisch optimiert: schnelle Ladezeiten, mobile Optimierung, strukturierte Daten und moderne SEO-Standards.
           </p>

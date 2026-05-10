@@ -86,7 +86,7 @@
       </div>
 
       <div class="relative z-10 max-w-container-max mx-auto px-gutter">
-        <h2 class="font-display text-2xl sm:text-[2.5rem] md:text-[3rem] text-center mb-6 md:mb-stack-lg leading-tight">Warum mit EvolaTec arbeiten?</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-center mb-6 md:mb-stack-lg leading-tight">Warum mit EvolaTec arbeiten?</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           <div v-for="(benefit, index) in benefits" :key="index" class="text-center animate-fade-in-up" :style="{ animationDelay: `${index * 100}ms` }">
@@ -176,20 +176,3 @@ const faqs = [
 ];
 </script>
 
-<style scoped>
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out forwards;
-  opacity: 0;
-}
-</style>

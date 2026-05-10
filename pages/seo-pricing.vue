@@ -26,7 +26,7 @@
     <!-- Individual Services Pricing Table -->
     <section class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-display text-[2.5rem] md:text-[3rem] text-center mb-stack-lg">Einzelne SEO Leistungen & Preise</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-center mb-stack-lg leading-tight">Einzelne SEO Leistungen & Preise</h2>
         <div class="max-w-3xl mx-auto overflow-x-auto">
           <table class="w-full">
             <thead>

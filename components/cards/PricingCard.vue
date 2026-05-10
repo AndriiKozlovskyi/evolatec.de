@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'group relative p-10 rounded-2xl flex flex-col overflow-hidden transition-all duration-500 ease-out',
+      'group relative p-6 sm:p-8 md:p-10 rounded-2xl flex flex-col overflow-hidden transition-all duration-500 ease-out',
       'hover:shadow-2xl',
       isHighlighted
         ? 'bg-gradient-to-br from-primary to-primary/80 text-on-primary shadow-2xl z-10 md:scale-105 border border-on-primary-container/20'
@@ -22,7 +22,7 @@
         {{ tier }}
       </span>
 
-      <span :class="['text-display text-[2.5rem] mb-2 block font-bold transition-all duration-300', isHighlighted ? 'text-white' : 'text-primary']">
+      <span :class="['font-display text-4xl md:text-5xl mb-2 block font-black leading-none transition-all duration-300', isHighlighted ? 'text-white' : 'text-primary']">
         {{ price }}
       </span>
       <span :class="['text-sm mb-6 block transition-all duration-300', isHighlighted ? 'text-on-primary-container/80' : 'text-on-surface-variant']">
@@ -41,37 +41,16 @@
         </li>
       </ul>
 
-      <button
-        :class="[
-          'w-full py-3 px-6 font-bold rounded-xl transition-all duration-300 transform',
-          'hover:shadow-lg hover:scale-105 active:scale-95',
-          isHighlighted
-            ? 'bg-white text-primary hover:bg-white/95'
-            : 'border-2 border-primary text-primary bg-transparent hover:bg-primary/10 hover:border-primary',
-        ]"
+      <BaseButton
+        :variant="isHighlighted ? 'secondary' : 'outline'"
+        size="md"
+        class="w-full"
       >
         {{ buttonText }}
-      </button>
+      </BaseButton>
     </div>
   </div>
 </template>
-
-<style scoped>
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.5s ease-out forwards;
-}
-</style>
 
 <script setup lang="ts">
 withDefaults(

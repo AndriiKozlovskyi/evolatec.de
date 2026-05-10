@@ -5,7 +5,7 @@
       <!-- Header -->
       <div class="text-center mb-stack-lg max-w-2xl mx-auto">
         <span class="text-primary/60 font-semibold text-xs uppercase tracking-[0.25em] mb-3 block">Der Prozess</span>
-        <h2 class="font-display text-[2.25rem] md:text-[2.75rem] font-bold text-on-surface">{{ title }}</h2>
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-on-surface leading-tight">{{ title }}</h2>
       </div>
 
       <!-- Process Card -->
@@ -26,12 +26,12 @@
             <div class="h-[2px] w-8 mb-4 rounded-full" :class="col(index).accentColor"></div>
 
             <!-- Title -->
-            <h4 class="font-semibold text-on-surface text-sm mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
+            <h4 class="font-semibold text-on-surface text-base mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
               {{ step.title }}
             </h4>
 
             <!-- Description -->
-            <p class="text-on-surface-variant text-xs leading-relaxed">{{ step.description }}</p>
+            <p class="text-on-surface-variant text-sm leading-relaxed">{{ step.description }}</p>
                        <!-- Icon -->
             <div
               class="w-9 h-9 rounded-xl flex items-center justify-center mt-6 group-hover:scale-110 transition-transform duration-300"
@@ -72,13 +72,3 @@ function col(index: number) {
 }
 </script>
 
-<style scoped>
-@keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-in-up {
-  animation: fade-in-up 0.5s ease-out forwards;
-  opacity: 0;
-}
-</style>

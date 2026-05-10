@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
         <!-- Left Features -->
         <div>
-          <h2 class="font-display text-display text-[3.5rem] mb-stack-md">{{ title }}</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-stack-md leading-tight">{{ title }}</h2>
           <div class="space-y-stack-md">
             <FeatureItem
               v-for="feature in features"

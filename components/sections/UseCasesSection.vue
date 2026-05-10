@@ -1,7 +1,7 @@
 <template>
   <section class="py-section-padding bg-surface">
     <div class="max-w-container-max mx-auto px-gutter text-center">
-      <h2 class="font-display text-display text-[2.5rem] md:text-[3rem] mb-stack-lg text-on-surface">{{ title }}</h2>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-stack-lg text-on-surface leading-tight">{{ title }}</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
@@ -27,20 +27,3 @@ defineProps<{
 }>();
 </script>
 
-<style scoped>
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
-  opacity: 0;
-}
-</style>
