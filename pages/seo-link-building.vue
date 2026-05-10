@@ -15,15 +15,15 @@
       :benefits="benefits"
     />
 
-    <ProcessSection
-      title="So funktioniert unser Linkbuilding"
-      :steps="processSteps"
-    />
-
     <FeaturesSection
       title="Unsere Linkbuilding Leistungen"
       :features="features"
       image-url="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop"
+    />
+
+        <ProcessSection
+      title="So funktioniert unser Linkbuilding"
+      :steps="processSteps"
     />
 
     <SEOSection

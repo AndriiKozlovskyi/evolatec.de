@@ -34,41 +34,12 @@
     />
 
     <!-- SEO Services Navigation -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-display text-[2.5rem] md:text-[3rem] mb-4">Unsere SEO Leistungen</h2>
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Wählen Sie die SEO Leistung, die zu Ihren Zielen passt.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-gutter max-w-5xl mx-auto">
-          <NuxtLink
-            v-for="service in seoServiceLinks"
-            :key="service.href"
-            :to="service.href"
-            class="group glass-card ambient-shadow p-8 text-center transition-all duration-300 hover:scale-105 hover:shadow-lg border border-black/10"
-          >
-            <div
-              class="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 mx-auto transition-colors duration-300"
-              :class="[service.iconBg, `group-hover:${service.iconBgHover}`]"
-            >
-              <span
-                class="material-symbols-outlined text-3xl transition-colors duration-300"
-                :class="[service.iconColor, `group-hover:text-white`]"
-              >{{ service.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-2">{{ service.title }}</h3>
-            <p class="font-body-md text-on-surface-variant mb-4">{{ service.description }}</p>
-            <span class="text-primary font-bold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
-              Mehr erfahren
-              <span class="material-symbols-outlined text-lg">arrow_forward</span>
-            </span>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
+    <ServicesSection
+      title="Unsere SEO Leistungen"
+      subtitle="Wählen Sie die SEO Leistung, die zu Ihren Zielen passt."
+      variant="centered"
+      :services="seoServiceLinks"
+    />
 
     <!-- Pricing Section -->
     <PricingSection

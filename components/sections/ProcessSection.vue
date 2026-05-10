@@ -1,34 +1,49 @@
 <template>
-  <section class="py-section-padding bg-white text-on-surface">
+  <section class="py-section-padding bg-surface-container-low text-on-surface">
     <div class="max-w-container-max mx-auto px-gutter">
-      <h2 class="font-display text-display text-[2.5rem] md:text-[3rem] mb-stack-lg text-center font-bold">{{ title }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-stack-md">
-        <div
-          v-for="(step, index) in steps"
-          :key="step.title"
-          class="flex flex-col text-center p-8 rounded-xl glass-card backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:scale-110 group relative animate-fade-in-up border-2"
-          :style="{ animationDelay: `${index * 80}ms` }"
-        >
-          <!-- Step chip + icon row -->
-          <div class="flex flex-col items-center justify-center gap-4 mb-5">
+
+      <!-- Header -->
+      <div class="text-center mb-stack-lg max-w-2xl mx-auto">
+        <span class="text-primary/60 font-semibold text-xs uppercase tracking-[0.25em] mb-3 block">Der Prozess</span>
+        <h2 class="font-display text-[2.25rem] md:text-[2.75rem] font-black text-on-surface">{{ title }}</h2>
+      </div>
+
+      <!-- Process Card -->
+      <div class="bg-white/60 glass-card rounded-2xl p-8 md:p-14 shadow-sm border border-black/[0.04]">
+        <div class="flex flex-col sm:flex-col lg:flex-row gap-10 md:gap-12">
+          <div
+            v-for="(step, index) in steps"
+            :key="step.title"
+            class="group animate-fade-in-up flex flex-col"
+            :style="{ animationDelay: `${index * 70}ms` }"
+          >
+            <!-- Ghost number -->
+            <span class="text-[4rem] font-black leading-none select-none tracking-tight mb-1 text-on-surface/[0.06]">
+              {{ String(index + 1).padStart(2, '0') }}
+            </span>
+
+            <!-- Icon -->
             <div
-              class="w-16 h-16 rounded-xl mt-2 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
+              class="w-9 h-9 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300"
               :class="col(index).iconBg"
             >
-              <span class="material-symbols-outlined text-xl" :class="col(index).iconColor">{{ step.icon }}</span>
+              <span class="material-symbols-outlined text-[1.1rem]" :class="col(index).iconColor">{{ step.icon }}</span>
             </div>
-            <span
-              class="absolute top-2 -left-1 text-[0.6rem] uppercase bg-primary/80 text-white tracking-wider px-2 py-1 rounded-r-lg"
-            >Schritt {{ index + 1 }}</span>
+
+            <!-- Short accent line -->
+            <div class="h-[2px] w-8 mb-4 rounded-full" :class="col(index).accentColor"></div>
+
+            <!-- Title -->
+            <h4 class="font-semibold text-on-surface text-sm mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
+              {{ step.title }}
+            </h4>
+
+            <!-- Description -->
+            <p class="text-on-surface-variant text-xs leading-relaxed">{{ step.description }}</p>
           </div>
-
-          <!-- Title -->
-          <h3 class="text-headline-md font-normal mb-3 group-hover:text-primary transition-colors duration-300">{{ step.title }}</h3>
-
-          <!-- Description -->
-          <p class="text-body-md">{{ step.description }}</p>
         </div>
       </div>
+
     </div>
   </section>
 </template>
@@ -45,11 +60,11 @@ defineProps<{
 }>();
 
 const stepColors = [
-  { iconBg: 'bg-blue-100',    iconColor: 'text-blue-600',    borderColor: 'border-blue-400',    chipBg: 'bg-blue-50' },
-  { iconBg: 'bg-emerald-100', iconColor: 'text-emerald-600', borderColor: 'border-emerald-400', chipBg: 'bg-emerald-50' },
-  { iconBg: 'bg-purple-100',  iconColor: 'text-purple-600',  borderColor: 'border-purple-400',  chipBg: 'bg-purple-50' },
-  { iconBg: 'bg-amber-100',   iconColor: 'text-amber-600',   borderColor: 'border-amber-400',   chipBg: 'bg-amber-50' },
-  { iconBg: 'bg-rose-100',    iconColor: 'text-rose-600',    borderColor: 'border-rose-400',    chipBg: 'bg-rose-50' },
+  { iconBg: 'bg-sky-50',     iconColor: 'text-sky-500',     accentColor: 'bg-sky-300' },
+  { iconBg: 'bg-emerald-50', iconColor: 'text-emerald-500', accentColor: 'bg-emerald-300' },
+  { iconBg: 'bg-violet-50',  iconColor: 'text-violet-500',  accentColor: 'bg-violet-300' },
+  { iconBg: 'bg-amber-50',   iconColor: 'text-amber-500',   accentColor: 'bg-amber-300' },
+  { iconBg: 'bg-rose-50',    iconColor: 'text-rose-500',    accentColor: 'bg-rose-300' },
 ] as const;
 
 function col(index: number) {
@@ -59,11 +74,11 @@ function col(index: number) {
 
 <style scoped>
 @keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(30px); }
+  from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 .animate-fade-in-up {
-  animation: fade-in-up 0.7s ease-out forwards;
+  animation: fade-in-up 0.5s ease-out forwards;
   opacity: 0;
 }
 </style>

@@ -74,91 +74,19 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Unsere Social Media Leistungen
-          </h2>
-        </div>
+    <ServicesSection title="Unsere Social Media Leistungen" variant="centered" :services="socialServices" />
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          <div
-            v-for="service in socialServices"
-            :key="service.title"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
-            :class="service.borderColor"
-          >
-            <div
-              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
-              :class="service.iconBg"
-            >
-              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
-            <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+       <BenefitsSection
+      title="Modernes UI/UX Design für digitale Produkte"
+      :benefits="socialBenefits"
+      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+    />
 
-    <!-- Benefits Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Vorteile professioneller Social Media Werbung
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-gutter">
-          <div
-            v-for="benefit in socialBenefits"
-            :key="benefit.title"
-            class="glass-card ambient-shadow p-8 flex gap-6 transition-all duration-300 hover:scale-105"
-          >
-            <div class="flex-shrink-0">
-              <div class="w-16 h-16 rounded-2xl flex items-center justify-center" :class="benefit.iconBg">
-                <span class="material-symbols-outlined text-3xl" :class="benefit.iconColor">{{ benefit.icon }}</span>
-              </div>
-            </div>
-            <div>
-              <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
-              <p class="font-body-md text-on-surface-variant">{{ benefit.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Process Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          Unser Social Media Prozess
-        </h2>
+         <ProcessSection title="Unser Social Media Prozess" :steps="socialProcess" />
 
-        <div class="grid md:grid-cols-4 gap-gutter">
-          <div
-            v-for="(step, index) in socialProcess"
-            :key="step.title"
-            class="glass-card ambient-shadow p-8 border-t-4 transition-all duration-300 hover:scale-105"
-            :class="step.borderColor"
-          >
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-xl flex items-center justify-center" :class="step.iconBg">
-                <span class="material-symbols-outlined text-xl" :class="step.iconColor">{{ step.icon }}</span>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-full" :class="[step.chipBg, step.iconColor]">
-                Schritt {{ index + 1 }}
-              </span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-2">{{ step.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ step.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Results / Image Banner Section -->
     <section class="relative py-section-padding overflow-hidden">

@@ -38,33 +38,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Unsere Content & Copywriting Leistungen
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          <div
-            v-for="service in contentServices"
-            :key="service.title"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
-            :class="service.borderColor"
-          >
-            <div
-              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
-              :class="service.iconBg"
-            >
-              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
-            <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ServicesSection title="Unsere Content & Copywriting Leistungen" variant="centered" :services="contentServices" />
 
     <!-- Benefits Section -->
     <BenefitsSection title="Vorteile professioneller SEO Texte" :benefits="contentBenefits" />

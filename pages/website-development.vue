@@ -135,7 +135,7 @@ const processSteps = [
     description: 'Wir verstehen Ihre Ziele, Zielgruppe und Anforderungen genau.',
   },
   {
-    icon: 'architecture_2',
+    icon: 'architecture',
     title: 'Struktur & Wireframe',
     description: 'Genaue Planung der Seitenstruktur und des User-Experience-Designs.',
   },

@@ -32,38 +32,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Unsere Online Marketing Leistungen
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          <a
-            v-for="service in marketingServices"
-            :key="service.title"
-            :href="service.href"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4 block"
-            :class="service.borderColor"
-          >
-            <div
-              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
-              :class="service.iconBg"
-            >
-              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
-            <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
-            <div class="flex items-center gap-1 mt-4" :class="service.iconColor">
-              <span class="text-sm font-semibold">Mehr erfahren</span>
-              <span class="material-symbols-outlined text-sm">arrow_forward</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+    <ServicesSection title="Unsere Online Marketing Leistungen" :services="marketingServices" />
 
     <!-- Benefits Section -->
     <BenefitsSection title="Vorteile einer professionellen Online Marketing Agentur" :benefits="marketingBenefits" />
@@ -101,26 +70,49 @@
     <!-- Why EvolaTec Section -->
     <section class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Warum EvolaTec als Online Marketing Agentur?
-          </h2>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Viele Marketing Agenturen konzentrieren sich nur auf Werbung.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            EvolaTec kombiniert Marketing, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, <a href="/design-branding" class="text-primary font-semibold hover:underline">Branding</a> und technische Optimierung zu einer ganzheitlichen Lösung.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Dadurch entstehen Websites und Marketing Strategien, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
-          </p>
+
+        <!-- Image + Text split -->
+        <div class="grid md:grid-cols-2 gap-stack-lg items-center mb-stack-lg">
+          <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop"
+              alt="Online Marketing Agentur EvolaTec"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+            <!-- Floating badge -->
+            <div class="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-xl">campaign</span>
+              </div>
+              <div>
+                <div class="font-bold text-primary text-sm">+180% Leads</div>
+                <div class="text-on-surface-variant text-xs">mehr Anfragen</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
+              Warum EvolaTec als Online Marketing Agentur?
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              Viele Marketing Agenturen konzentrieren sich nur auf Werbung.
+            </p>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+              EvolaTec kombiniert Marketing, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, <a href="/design-branding" class="text-primary font-semibold hover:underline">Branding</a> und technische Optimierung zu einer ganzheitlichen Lösung.
+            </p>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              Dadurch entstehen Websites und Marketing Strategien, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
+            </p>
+          </div>
         </div>
 
         <div class="grid md:grid-cols-3 gap-gutter">
           <div
             v-for="usp in whyEvolaTec"
             :key="usp.title"
-            class="glass-card ambient-shadow p-8 text-center border-t-4 transition-all duration-300 hover:scale-105"
+            class="glass-card ambient-shadow bg-white/60 p-8 text-center border-t-4 transition-all duration-300 hover:scale-105"
             :class="usp.borderColor"
           >
             <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" :class="usp.iconBg">

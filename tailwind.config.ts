@@ -71,14 +71,7 @@ export default {
         'stack-sm': '1rem',
         'stack-md': '2rem',
         'stack-lg': '4rem',
-        'section-padding': '4rem',
-      },
-      screens: {
-        'xs': '320px',
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
+        'section-padding': '8rem',
       },
       fontSize: {
         'body-md': ['0.875rem', { lineHeight: '1.5', fontWeight: '400' }],

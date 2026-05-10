@@ -38,33 +38,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Unsere Branding & Corporate Design Leistungen
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          <div
-            v-for="service in brandingServices"
-            :key="service.title"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
-            :class="service.borderColor"
-          >
-            <div
-              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
-              :class="service.iconBg"
-            >
-              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
-            <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ServicesSection title="Unsere Branding & Corporate Design Leistungen" variant="centered" :services="brandingServices" />
 
     <!-- Benefits Section -->
     <BenefitsSection title="Vorteile professionellen Brandings" :benefits="brandingBenefits" />
@@ -72,33 +46,13 @@
     <!-- Process Section -->
     <ProcessSection title="Unser Branding Prozess" :steps="brandingProcess" />
 
-    <!-- Branding Types Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Branding Lösungen für moderne Unternehmen
-          </h2>
-        </div>
 
-        <div class="grid md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
-          <div
-            v-for="type in brandingTypes"
-            :key="type.title"
-            class="glass-card ambient-shadow p-8 flex gap-6"
-          >
-            <div class="flex-shrink-0">
-              <span class="material-symbols-outlined text-[40px] text-primary">{{ type.icon }}</span>
-            </div>
-            <div>
-              <h3 class="font-headline-md text-primary mb-2">{{ type.title }}</h3>
-              <p class="font-body-md text-on-surface-variant">{{ type.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <FeaturesSection
+      title="Branding Lösungen für moderne Unternehmen"
+      :features="brandingTypes"
+      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+    />
+  
     <!-- Corporate Design & Logo Info Section -->
     <section class="py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
