@@ -1,0 +1,458 @@
+<template>
+  <div>
+    <!-- Hero Section -->
+    <HeroSection
+      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      badge="Professionelle Google Ads & SEA Agentur"
+      title="Google Ads Agentur: Werbung schalten die Klicks & Kunden bringt"
+      description="EvolaTec entwickelt leistungsstarke Google Ads Kampagnen, die qualifizierte Besucher, mehr Anfragen und messbares Wachstum generieren."
+      primaryCTA="Google Ads anfragen"
+      secondaryCTA="Preise ansehen"
+      :stats="adsStats"
+    />
+
+    <!-- Intro Section -->
+    <section class="py-section-padding bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="max-w-3xl">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
+            Warum Google Ads für Unternehmen wichtig ist
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+            Google Ads gehört zu den effektivsten Methoden, um sofort sichtbar zu werden und gezielt neue Kunden zu erreichen.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+            Unternehmen können genau dann sichtbar sein, wenn potenzielle Kunden aktiv nach Dienstleistungen, Produkten oder Lösungen suchen.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Als Google Ads Agentur entwickelt EvolaTec datenbasierte Kampagnen, die Reichweite, Leads und Umsatz steigern. Erfahren Sie mehr über unsere <a href="/marketing" class="text-primary font-semibold hover:underline">Online Marketing Leistungen</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-section-padding bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
+            Unsere Google Ads Leistungen
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <div
+            v-for="service in adsServices"
+            :key="service.title"
+            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
+            :class="service.borderColor"
+          >
+            <div
+              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
+              :class="service.iconBg"
+            >
+              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
+            </div>
+            <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
+            <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-section-padding bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
+            Vorteile professioneller Google Ads Kampagnen
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-gutter">
+          <div
+            v-for="benefit in adsBenefits"
+            :key="benefit.title"
+            class="glass-card ambient-shadow p-8 flex gap-6 transition-all duration-300 hover:scale-105"
+          >
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 rounded-2xl flex items-center justify-center" :class="benefit.iconBg">
+                <span class="material-symbols-outlined text-3xl" :class="benefit.iconColor">{{ benefit.icon }}</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
+              <p class="font-body-md text-on-surface-variant">{{ benefit.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-section-padding bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
+          Unser Google Ads Prozess
+        </h2>
+
+        <div class="grid md:grid-cols-4 gap-gutter">
+          <div
+            v-for="(step, index) in adsProcess"
+            :key="step.title"
+            class="glass-card ambient-shadow p-8 border-t-4 transition-all duration-300 hover:scale-105"
+            :class="step.borderColor"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center" :class="step.iconBg">
+                <span class="material-symbols-outlined text-xl" :class="step.iconColor">{{ step.icon }}</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-full" :class="[step.chipBg, step.iconColor]">
+                Schritt {{ index + 1 }}
+              </span>
+            </div>
+            <h3 class="font-headline-md text-primary mb-2">{{ step.title }}</h3>
+            <p class="font-body-md text-on-surface-variant">{{ step.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campaign Types Section -->
+    <section class="py-section-padding bg-gradient-to-br from-slate-900 to-slate-800">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <h2 class="font-headline-lg text-headline-lg text-white text-center mb-stack-lg">
+          Google Werbung für verschiedene Ziele
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+          <div
+            v-for="type in campaignTypes"
+            :key="type.title"
+            class="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105"
+          >
+            <div
+              class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
+              :class="type.iconBg"
+            >
+              <span class="material-symbols-outlined text-2xl" :class="type.iconColor">{{ type.icon }}</span>
+            </div>
+            <h3 class="font-headline-md text-white mb-3">{{ type.title }}</h3>
+            <p class="font-body-md text-white/60 leading-relaxed">{{ type.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why EvolaTec Section -->
+    <section class="py-section-padding bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="max-w-3xl mx-auto mb-stack-lg">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
+            Warum EvolaTec als Google Ads Agentur?
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+            Erfolgreiche Google Werbung besteht nicht nur aus Anzeigen.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+            Entscheidend sind Strategie, Nutzererfahrung, Landingpages und kontinuierliche Optimierung.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            EvolaTec kombiniert Google Ads, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Conversion Optimierung und modernes Webdesign zu leistungsstarken Marketing Systemen.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-gutter">
+          <div
+            v-for="usp in whyEvolaTec"
+            :key="usp.title"
+            class="glass-card ambient-shadow p-8 text-center border-t-4 transition-all duration-300 hover:scale-105"
+            :class="usp.borderColor"
+          >
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" :class="usp.iconBg">
+              <span class="material-symbols-outlined text-2xl" :class="usp.iconColor">{{ usp.icon }}</span>
+            </div>
+            <h3 class="font-headline-md text-primary mb-3">{{ usp.title }}</h3>
+            <p class="font-body-md text-on-surface-variant">{{ usp.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Table Section -->
+    <section class="py-section-padding bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4">
+          Preise für Google Ads Betreuung
+        </h2>
+        <p class="text-center font-body-lg text-on-surface-variant mb-stack-lg">
+          Transparente Preise für Google Werbung, SEA Betreuung und Performance Marketing.
+        </p>
+
+        <div class="max-w-2xl mx-auto overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b-2 border-primary">
+                <th class="text-left py-4 px-6 font-headline-md text-primary">Leistung</th>
+                <th class="text-right py-4 px-6 font-headline-md text-primary">Preis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="item in pricingItems"
+                :key="item.name"
+                class="border-b border-outline-variant/20 hover:bg-surface transition-colors"
+              >
+                <td class="py-4 px-6 font-body-md text-on-surface">{{ item.name }}</td>
+                <td class="py-4 px-6 font-body-md text-primary font-bold text-right">{{ item.price }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-center mt-10">
+          <a href="/pricing">
+            <BaseButton variant="outline" size="md">Alle Preise ansehen</BaseButton>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <FAQSection title="Häufig gestellte Fragen zu Google Ads" :faqs="adsFaqs" />
+
+    <!-- Final CTA -->
+    <section class="py-section-padding bg-primary text-on-primary">
+      <div class="max-w-container-max mx-auto px-gutter text-center space-y-stack-md">
+        <h2 class="font-display text-headline-lg">Mehr Kunden durch professionelle Google Werbung</h2>
+        <p class="font-body-lg max-w-2xl mx-auto opacity-80">
+          EvolaTec entwickelt Google Ads Kampagnen, die sichtbar machen, Leads generieren und Unternehmen wachsen lassen.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6 pt-6">
+          <a href="/kontakt">
+            <BaseButton variant="secondary" size="lg">Google Ads starten</BaseButton>
+          </a>
+          <a href="/kontakt">
+            <BaseButton variant="outline" size="lg">Kostenlos beraten lassen</BaseButton>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script setup lang="ts">
+const adsStats = [
+  { value: 'Sofort', label: 'Sichtbar', icon: 'visibility' },
+  { value: 'Mehr Leads', label: 'Generierung', icon: 'person_add' },
+  { value: 'Performance', label: 'fokussiert', icon: 'ads_click' },
+  { value: 'Messbar', label: 'Ergebnisse', icon: 'analytics' },
+];
+
+const adsServices = [
+  {
+    title: 'Google Suchanzeigen',
+    description: 'Sichtbarkeit bei relevanten Suchanfragen mit conversionstarken Anzeigen.',
+    icon: 'ads_click',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+    borderColor: 'border-blue-500',
+  },
+  {
+    title: 'Display Werbung',
+    description: 'Bannerkampagnen zur Steigerung von Markenbekanntheit und Reichweite.',
+    icon: 'image',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    borderColor: 'border-emerald-500',
+  },
+  {
+    title: 'Google Shopping Ads',
+    description: 'Performance Kampagnen für Onlineshops und E-Commerce Projekte.',
+    icon: 'shopping_cart',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+    borderColor: 'border-orange-500',
+  },
+  {
+    title: 'Remarketing Kampagnen',
+    description: 'Rückgewinnung von Besuchern durch gezielte Anzeigen.',
+    icon: 'refresh',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    borderColor: 'border-purple-500',
+  },
+  {
+    title: 'Conversion Optimierung',
+    description: 'Optimierung von Anzeigen, Landingpages und Nutzerführung.',
+    icon: 'conversion_path',
+    iconBg: 'bg-rose-100',
+    iconColor: 'text-rose-600',
+    borderColor: 'border-rose-500',
+  },
+  {
+    title: 'Google Ads Beratung',
+    description: 'Strategische Beratung für Unternehmen und Performance Kampagnen.',
+    icon: 'support_agent',
+    iconBg: 'bg-teal-100',
+    iconColor: 'text-teal-600',
+    borderColor: 'border-teal-500',
+  },
+];
+
+const adsBenefits = [
+  {
+    title: 'Sofortige Sichtbarkeit',
+    description: 'Ihre Anzeigen erscheinen direkt bei relevanten Suchanfragen.',
+    icon: 'visibility',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+  },
+  {
+    title: 'Qualifizierte Leads',
+    description: 'Zielgerichtete Werbung erreicht potenzielle Kunden.',
+    icon: 'person_add',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+  },
+  {
+    title: 'Messbare Ergebnisse',
+    description: 'Klicks, Leads und Conversions sind exakt analysierbar.',
+    icon: 'analytics',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+  },
+  {
+    title: 'Skalierbares Wachstum',
+    description: 'Erfolgreiche Kampagnen können kontinuierlich skaliert werden.',
+    icon: 'stacked_line_chart',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+  },
+];
+
+const adsProcess = [
+  {
+    title: 'Analyse & Strategie',
+    description: 'Analyse Ihrer Branche, Zielgruppe und Wettbewerber.',
+    icon: 'analytics',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+    chipBg: 'bg-blue-50',
+    borderColor: 'border-blue-400',
+  },
+  {
+    title: 'Keyword Recherche',
+    description: 'Auswahl relevanter Suchbegriffe mit hohem Potenzial.',
+    icon: 'search',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+    chipBg: 'bg-orange-50',
+    borderColor: 'border-orange-400',
+  },
+  {
+    title: 'Kampagnen Erstellung',
+    description: 'Erstellung professioneller Anzeigen, Zielgruppen und Landingpages.',
+    icon: 'campaign',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    chipBg: 'bg-emerald-50',
+    borderColor: 'border-emerald-400',
+  },
+  {
+    title: 'Optimierung & Skalierung',
+    description: 'Laufende Verbesserung für bessere Performance und niedrigere Kosten.',
+    icon: 'tune',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    chipBg: 'bg-purple-50',
+    borderColor: 'border-purple-400',
+  },
+];
+
+const campaignTypes = [
+  {
+    title: 'Leadgenerierung',
+    description: 'Mehr Anfragen für Dienstleister und Unternehmen.',
+    icon: 'person_add',
+    iconBg: 'bg-blue-500/20',
+    iconColor: 'text-blue-400',
+  },
+  {
+    title: 'E-Commerce Werbung',
+    description: 'Google Shopping und Performance Kampagnen für Onlineshops.',
+    icon: 'shopping_cart',
+    iconBg: 'bg-orange-500/20',
+    iconColor: 'text-orange-400',
+  },
+  {
+    title: 'Lokale Werbung',
+    description: 'Google Anzeigen für lokale Unternehmen und regionale Sichtbarkeit.',
+    icon: 'location_on',
+    iconBg: 'bg-emerald-500/20',
+    iconColor: 'text-emerald-400',
+  },
+  {
+    title: 'Brand Kampagnen',
+    description: 'Aufbau von Markenbekanntheit und digitaler Reichweite.',
+    icon: 'campaign',
+    iconBg: 'bg-purple-500/20',
+    iconColor: 'text-purple-400',
+  },
+];
+
+const whyEvolaTec = [
+  {
+    title: 'Performance Fokus',
+    description: 'Zielgerichtete Kampagnen mit Fokus auf Ergebnisse.',
+    icon: 'ads_click',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
+    borderColor: 'border-blue-500',
+  },
+  {
+    title: 'Technische Expertise',
+    description: 'Kombination aus Marketing, SEO und Entwicklung.',
+    icon: 'code',
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    borderColor: 'border-emerald-500',
+  },
+  {
+    title: 'Skalierbare Kampagnen',
+    description: 'Systeme die langfristig wachsen.',
+    icon: 'stacked_line_chart',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    borderColor: 'border-purple-500',
+  },
+];
+
+const pricingItems = [
+  { name: 'Google Ads Beratung', price: 'ab 90€/Stunde' },
+  { name: 'Kampagnen Setup', price: 'ab 350€' },
+  { name: 'Google Ads Betreuung', price: 'ab 400€/Monat' },
+  { name: 'E-Commerce Kampagnen', price: 'ab 700€/Monat' },
+  { name: 'Performance Marketing', price: 'ab 1.200€/Monat' },
+  { name: 'Landingpage Optimierung', price: 'ab 500€' },
+];
+
+const adsFaqs = [
+  {
+    question: 'Was macht eine Google Ads Agentur?',
+    answer: 'Eine Google Ads Agentur erstellt, optimiert und verwaltet Werbekampagnen bei Google.',
+  },
+  {
+    question: 'Wie schnell funktionieren Google Ads?',
+    answer: 'Google Werbung kann bereits innerhalb weniger Tage erste Besucher und Leads generieren.',
+  },
+  {
+    question: 'Was kosten Google Ads Kampagnen?',
+    answer: 'Die Betreuung beginnt ab 400€ monatlich. Das Werbebudget wird separat festgelegt.',
+  },
+  {
+    question: 'Für welche Unternehmen eignet sich Google Ads?',
+    answer: 'Für lokale Unternehmen, Dienstleister, Onlineshops, Startups und B2B Unternehmen.',
+  },
+];
+</script>

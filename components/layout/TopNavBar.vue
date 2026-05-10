@@ -120,6 +120,9 @@
 
           <!-- Secondary Links -->
           <div class="px-4 space-y-2">
+            <a href="/marketing" @click="mobileMenuOpen = false" class="block p-3 text-sm text-on-surface-variant hover:text-primary transition-colors">
+              📣 Online Marketing
+            </a>
             <a href="/pricing" @click="mobileMenuOpen = false" class="block p-3 text-sm text-on-surface-variant hover:text-primary transition-colors">
               💰 Preise & Kosten
             </a>
@@ -178,7 +181,19 @@ const navLinks = [
       { id: 4.3, label: 'UI/UX Design', href: '/design-ui-ux' },
     ],
   },
-  { id: 5, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
+  {
+    id: 5,
+    label: 'Marketing',
+    href: '#',
+    isActive: false,
+    icon: 'campaign',
+    submenu: [
+      { id: 5.1, label: 'Online Marketing', href: '/marketing' },
+      { id: 5.2, label: 'Google Ads', href: '/marketing-google-ads' },
+      { id: 5.3, label: 'Social Media', href: '/marketing-social-media' },
+    ],
+  },
+  { id: 6, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
 ];
 </script>
 
