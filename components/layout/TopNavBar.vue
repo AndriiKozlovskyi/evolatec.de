@@ -193,7 +193,7 @@ const navLinks = [
       { id: 5.3, label: 'Social Media', href: '/marketing-social-media' },
     ],
   },
-  { id: 6, label: 'Preise', href: '/pricing', isActive: false, icon: 'price_check' },
+  { id: 6, label: 'Preise Kalkulator', href: '/pricing', isActive: false, icon: 'price_check' },
 ];
 </script>
 

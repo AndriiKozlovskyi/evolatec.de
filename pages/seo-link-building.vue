@@ -1,200 +1,64 @@
 <template>
   <div>
-    <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=600&fit=crop"
       badge="Professionelle Linkbuilding Agentur"
       title="Linkbuilding & Backlink Aufbau: Mehr Autorität für Ihre Website"
       description="Hochwertige Backlinks sind einer der wichtigsten Google Ranking Faktoren. Wir helfen Unternehmen, starke SEO Autorität aufzubauen und bessere Rankings zu erreichen."
-      primary-cta="Linkbuilding starten"
-      secondary-cta="Preise ansehen"
+      primaryCTA="Linkbuilding starten"
+      secondaryCTA="Preise ansehen"
       :stats="linkBuildingStats"
     />
 
-    <!-- Why Linkbuilding Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-lg text-center">
-          Warum ist Linkbuilding wichtig?
-        </h2>
+    <BenefitsSection
+      title="Warum professionelles Linkbuilding entscheidend ist"
+      :benefits="benefits"
+    />
 
-        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-gutter mb-stack-lg">
-          <div class="glass-card ambient-shadow p-8 text-center border-t-4 border-blue-500">
-            <div class="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center mx-auto mb-4">
-              <span class="material-symbols-outlined text-blue-600 text-2xl">verified</span>
-            </div>
-            <div class="text-headline-lg text-primary mb-4 font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Mehr Autorität</div>
-            <p class="font-body-md text-on-surface-variant">Vertrauenswürdige Backlinks stärken Ihre Domain.</p>
-          </div>
-          <div class="glass-card ambient-shadow p-8 text-center border-t-4 border-emerald-500">
-            <div class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center mx-auto mb-4">
-              <span class="material-symbols-outlined text-emerald-600 text-2xl">trending_up</span>
-            </div>
-            <div class="text-headline-lg text-primary mb-4 font-bold bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent">Bessere Rankings</div>
-            <p class="font-body-md text-on-surface-variant">OffPage SEO verbessert Ihre Google Positionen.</p>
-          </div>
-          <div class="glass-card ambient-shadow p-8 text-center border-t-4 border-orange-500">
-            <div class="w-12 h-12 rounded-2xl bg-orange-100 flex items-center justify-center mx-auto mb-4">
-              <span class="material-symbols-outlined text-orange-600 text-2xl">schedule</span>
-            </div>
-            <div class="text-headline-lg text-primary mb-4 font-bold bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text text-transparent">Langfristige Wirkung</div>
-            <p class="font-body-md text-on-surface-variant">Gute Backlinks wirken langfristig positiv.</p>
-          </div>
-        </div>
+    <ProcessSection
+      title="So funktioniert unser Linkbuilding"
+      :steps="processSteps"
+    />
 
-        <div class="max-w-3xl mx-auto">
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-4">
-            Backlinks gehören zu den wichtigsten Ranking Faktoren bei Google.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Hochwertige Verlinkungen erhöhen die Autorität Ihrer Website und verbessern langfristig Ihre Sichtbarkeit in Suchmaschinen.
-          </p>
-        </div>
-      </div>
-    </section>
+    <FeaturesSection
+      title="Unsere Linkbuilding Leistungen"
+      :features="features"
+      image-url="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop"
+    />
 
-    <!-- Services Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Unsere Linkbuilding Leistungen
-          </h2>
-        </div>
+    <SEOSection
+      title="Backlinks die wir aufbauen"
+      :features="backlinksTypes"
+    />
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-          <div
-            v-for="service in linkBuildingServices"
-            :key="service.title"
-            class="group glass-card ambient-shadow p-8 transition-all duration-300 hover:scale-105 hover:shadow-lg border-t-4"
-            :class="service.borderColor"
-          >
-            <div
-              class="flex items-center justify-center w-14 h-14 rounded-2xl mb-6 transition-all duration-300 group-hover:scale-110"
-              :class="service.iconBg"
-            >
-              <span class="material-symbols-outlined text-2xl" :class="service.iconColor">{{ service.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ service.title }}</h3>
-            <p class="font-body-md text-on-surface-variant leading-relaxed">{{ service.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          So funktioniert unser Linkbuilding
-        </h2>
-
-        <div class="grid md:grid-cols-4 gap-gutter">
-          <div
-            v-for="(step, index) in linkBuildingProcess"
-            :key="step.title"
-            class="glass-card ambient-shadow p-8 border-t-4 transition-all duration-300 hover:scale-105"
-            :class="step.borderColor"
-          >
-            <div class="flex items-center gap-3 mb-4">
-              <div
-                class="w-10 h-10 rounded-xl flex items-center justify-center"
-                :class="step.iconBg"
-              >
-                <span class="material-symbols-outlined text-xl" :class="step.iconColor">{{ step.icon }}</span>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-full" :class="[step.chipBg, step.iconColor]">
-                Schritt {{ index + 1 }}
-              </span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-2">{{ step.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ step.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Vorteile professionellen Linkbuildings
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-gutter">
-          <div
-            v-for="benefit in linkBuildingBenefits"
-            :key="benefit.title"
-            class="glass-card ambient-shadow p-8 flex gap-6 transition-all duration-300 hover:scale-105"
-          >
-            <div class="flex-shrink-0">
-              <div class="w-16 h-16 rounded-2xl flex items-center justify-center" :class="benefit.iconBg">
-                <span class="material-symbols-outlined text-3xl" :class="benefit.iconColor">{{ benefit.icon }}</span>
-              </div>
-            </div>
-            <div>
-              <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
-              <p class="font-body-md text-on-surface-variant">{{ benefit.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Backlink Types Section -->
-    <section class="py-section-padding bg-gradient-to-br from-slate-900 to-slate-800">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-white text-center mb-stack-lg">
-          Welche Backlinks bauen wir auf?
-        </h2>
-
-        <div class="max-w-3xl mx-auto">
-          <div class="grid md:grid-cols-2 gap-4">
-            <div
-              v-for="(backlinkType, index) in backlinksTypes"
-              :key="backlinkType"
-              class="flex gap-4 items-center bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10"
-            >
-              <span
-                class="material-symbols-outlined text-xl flex-shrink-0"
-                :class="backlinkColors[index % backlinkColors.length]"
-              >link</span>
-              <p class="font-body-md text-white/80">{{ backlinkType }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
     <PricingSection
       title="Linkbuilding Preise"
       subtitle="Transparente Preise für professionellen Backlink Aufbau."
       :pricing-plans="linkBuildingPricingPlans"
     />
 
-    <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zu Linkbuilding" :faqs="linkBuildingFaqs" />
 
-    <!-- Final CTA -->
-    <section class="py-section-padding bg-primary text-on-primary">
-      <div class="max-w-container-max mx-auto px-gutter text-center space-y-stack-md">
-        <h2 class="font-display text-headline-lg">Stärken Sie Ihre SEO Autorität</h2>
-        <p class="font-body-lg max-w-2xl mx-auto opacity-80">
-          Professioneller Backlink Aufbau für bessere Rankings und mehr Sichtbarkeit.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <BaseButton variant="secondary" size="lg">Linkbuilding starten</BaseButton>
-          <BaseButton variant="outline" size="lg">Kostenlos beraten lassen</BaseButton>
-        </div>
-      </div>
-    </section>
+    <CTASection
+      title="Stärken Sie Ihre SEO Autorität"
+      description="Professioneller Backlink Aufbau für bessere Rankings und mehr Sichtbarkeit bei Google."
+      primary-cta="Linkbuilding starten"
+      secondary-cta="Kostenlos beraten lassen"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Linkbuilding Agentur – Backlinks & SEO Autorität aufbauen | EvolaTec',
+  meta: [
+    { name: 'description', content: 'Professionelles Linkbuilding für bessere Google Rankings. Hochwertige Backlinks, Outreach und SEO Autorität. Linkbuilding ab 500€.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://evolatec.de/seo-link-building' },
+  ],
+});
+
 const linkBuildingStats = [
   { value: 'Domain Authority', label: 'Aufbau', icon: 'trending_up' },
   { value: 'Hochwertig', label: 'Backlinks', icon: 'verified' },
@@ -202,209 +66,115 @@ const linkBuildingStats = [
   { value: 'Expertise', label: 'OffPage SEO', icon: 'star' },
 ];
 
-const linkBuildingServices = [
+const benefits = [
   {
-    title: 'Linkbuilding Strategie',
-    description: 'Entwicklung einer nachhaltigen OffPage SEO Strategie für Ihre Branche.',
-    icon: 'map',
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-600',
-    borderColor: 'border-blue-500',
+    icon: 'verified',
+    title: 'Mehr Domain Autorität',
+    description: 'Hochwertige Backlinks von relevanten und vertrauenswürdigen Websites stärken die Autorität Ihrer Domain dauerhaft.',
   },
   {
-    title: 'Hochwertiger Backlink Aufbau',
-    description: 'Aufbau relevanter und vertrauenswürdiger Backlinks.',
-    icon: 'link',
-    iconBg: 'bg-emerald-100',
-    iconColor: 'text-emerald-600',
-    borderColor: 'border-emerald-500',
-  },
-  {
-    title: 'Outreach & Kooperationen',
-    description: 'Kontaktaufbau mit passenden Websites und Medien.',
-    icon: 'people',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange-600',
-    borderColor: 'border-orange-500',
-  },
-  {
-    title: 'Gastartikel & Content Links',
-    description: 'Contentbasierter Linkaufbau über hochwertige Artikel.',
-    icon: 'edit_document',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-    borderColor: 'border-purple-500',
-  },
-  {
-    title: 'Backlink Analyse',
-    description: 'Analyse bestehender Backlinks und Identifikation toxischer Links.',
-    icon: 'assessment',
-    iconBg: 'bg-rose-100',
-    iconColor: 'text-rose-600',
-    borderColor: 'border-rose-500',
-  },
-  {
-    title: 'Link Monitoring',
-    description: 'Laufende Kontrolle und Optimierung Ihres Linkprofils.',
-    icon: 'visibility',
-    iconBg: 'bg-teal-100',
-    iconColor: 'text-teal-600',
-    borderColor: 'border-teal-500',
-  },
-];
-
-const linkBuildingProcess = [
-  {
-    title: 'Analyse',
-    description: 'Analyse Ihrer Domain, Konkurrenz und Backlinkstruktur.',
-    icon: 'search',
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-600',
-    chipBg: 'bg-blue-50',
-    borderColor: 'border-blue-400',
-  },
-  {
-    title: 'Strategie',
-    description: 'Erstellung einer individuellen Linkbuilding Strategie.',
-    icon: 'map',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange-600',
-    chipBg: 'bg-orange-50',
-    borderColor: 'border-orange-400',
-  },
-  {
-    title: 'Linkaufbau',
-    description: 'Aufbau hochwertiger und thematisch relevanter Backlinks.',
-    icon: 'link',
-    iconBg: 'bg-emerald-100',
-    iconColor: 'text-emerald-600',
-    chipBg: 'bg-emerald-50',
-    borderColor: 'border-emerald-400',
-  },
-  {
-    title: 'Wachstum',
-    description: 'Mehr Autorität, bessere Rankings und nachhaltiges SEO Wachstum.',
     icon: 'trending_up',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-    chipBg: 'bg-purple-50',
-    borderColor: 'border-purple-400',
-  },
-];
-
-const linkBuildingBenefits = [
-  {
-    title: 'Höhere Domain Autorität',
-    description: 'Vertrauenswürdige Backlinks stärken Ihre Website.',
-    icon: 'grade',
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-600',
+    title: 'Bessere Google Rankings',
+    description: 'Backlinks sind einer der stärksten Ranking-Faktoren. Mehr Autorität bedeutet bessere Positionen bei Google.',
   },
   {
-    title: 'Mehr organischer Traffic',
-    description: 'Bessere Rankings bringen mehr Besucher.',
-    icon: 'trending_up',
-    iconBg: 'bg-emerald-100',
-    iconColor: 'text-emerald-600',
-  },
-  {
-    title: 'Nachhaltige SEO Wirkung',
-    description: 'Gute Links wirken langfristig positiv.',
     icon: 'schedule',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange-600',
+    title: 'Langfristige Wirkung',
+    description: 'Gute Backlinks wirken langfristig positiv und liefern kontinuierlich mehr organischen Traffic.',
+  },
+];
+
+const processSteps = [
+  {
+    icon: 'assessment',
+    title: 'Backlink Analyse',
+    description: 'Analyse Ihrer aktuellen Backlink-Struktur, Konkurrenten und Potenziale.',
   },
   {
-    title: 'Wettbewerbsvorteil',
-    description: 'Stärkeres Linkprofil gegenüber Konkurrenten.',
-    icon: 'leaderboard',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
+    icon: 'map',
+    title: 'Strategie Entwicklung',
+    description: 'Erstellung einer individuellen Linkbuilding Strategie passend zu Ihrer Branche.',
+  },
+  {
+    icon: 'people',
+    title: 'Outreach',
+    description: 'Kontaktaufbau mit relevanten Websites, Medien und Partnern.',
+  },
+  {
+    icon: 'link',
+    title: 'Link Aufbau',
+    description: 'Aufbau hochwertiger, thematisch relevanter Backlinks.',
+  },
+  {
+    icon: 'monitoring',
+    title: 'Monitoring',
+    description: 'Laufende Kontrolle des Linkprofils und weitere Optimierung.',
+  },
+];
+
+const features = [
+  {
+    icon: 'map',
+    title: 'Linkbuilding Strategie',
+    description: 'Entwicklung einer nachhaltigen OffPage SEO Strategie für Ihre Branche und Ziele.',
+  },
+  {
+    icon: 'people',
+    title: 'Outreach & Kooperationen',
+    description: 'Kontaktaufbau mit passenden Websites, Blogs und Medien in Ihrer Nische.',
+  },
+  {
+    icon: 'edit_document',
+    title: 'Gastartikel & Content Links',
+    description: 'Contentbasierter Linkaufbau über hochwertige Gastbeiträge und Artikel.',
+  },
+  {
+    icon: 'visibility',
+    title: 'Link Monitoring',
+    description: 'Laufende Kontrolle und Optimierung Ihres Linkprofils und der Linkqualität.',
   },
 ];
 
 const backlinksTypes = [
-  'Redaktionelle Backlinks',
-  'Branchenverzeichnisse',
-  'Gastartikel Links',
+  'Redaktionelle Backlinks von Fachmedien',
+  'Branchenverzeichnisse & Portale',
+  'Gastartikel & Content Marketing Links',
   'Contentbasierte Verlinkungen',
-  'Lokale Backlinks',
-  'Thematisch relevante Links',
+  'Lokale Backlinks für Local SEO',
+  'Thematisch relevante Nischen-Links',
   'Internationale Backlinks',
-  'Autoritätslinks',
-];
-
-const backlinkColors = [
-  'text-blue-400',
-  'text-emerald-400',
-  'text-orange-400',
-  'text-purple-400',
+  'Autoritätslinks von starken Domains',
 ];
 
 const linkBuildingPricingPlans = [
   {
     tier: 'Backlink Analyse',
     price: 'ab 200 €',
-    features: [
-      'Backlink Analyse',
-      'Konkurrenz Check',
-      'Probleme identifizieren',
-      'Strategieempfehlungen',
-    ],
+    features: ['Backlink Analyse', 'Konkurrenz Check', 'Probleme identifizieren', 'Strategieempfehlungen'],
     buttonText: 'Analyse anfragen',
     isHighlighted: false,
   },
   {
     tier: 'Basis Linkbuilding',
     price: 'ab 500 €',
-    features: [
-      'Linkbuilding Strategie',
-      'Erste Backlinks',
-      'Outreach & Aufbau',
-      'Implementierungsplan',
-    ],
+    features: ['Linkbuilding Strategie', 'Erste Backlinks', 'Outreach & Aufbau', 'Implementierungsplan'],
     buttonText: 'Projekt starten',
     isHighlighted: true,
   },
   {
     tier: 'Monatliche Linkbuilding Betreuung',
     price: 'ab 700 €/Monat',
-    features: [
-      'Laufender Linkaufbau',
-      'Monatliche Backlinks',
-      'Link Monitoring',
-      'Wettbewerb-Analyse',
-    ],
+    features: ['Laufender Linkaufbau', 'Monatliche Backlinks', 'Link Monitoring', 'Wettbewerb-Analyse'],
     buttonText: 'Betreuung buchen',
     isHighlighted: false,
   },
 ];
 
 const linkBuildingFaqs = [
-  {
-    question: 'Warum sind Backlinks wichtig?',
-    answer:
-      'Backlinks stärken die Autorität Ihrer Website und verbessern Rankings bei Google. Sie sind einer der stärksten Ranking Faktoren.',
-  },
-  {
-    question: 'Wie lange dauert Linkbuilding?',
-    answer:
-      'Linkbuilding ist ein langfristiger Prozess. Erste Verbesserungen sind oft nach einigen Wochen sichtbar, nachhaltige Ergebnisse entstehen über Monate.',
-  },
-  {
-    question: 'Was kostet professionelles Linkbuilding?',
-    answer:
-      'Basis Linkbuilding beginnt ab 500€. Monatliche Betreuung ab 700€/Monat. Die genauen Kosten hängen von Ihrer Branche und Zielen ab.',
-  },
-  {
-    question: 'Nutzen Sie sichere SEO Methoden?',
-    answer:
-      'Ja. Wir setzen auf nachhaltige und Google-konforme Linkbuilding Strategien. Wir vermeiden manipulative Taktiken und toxische Links.',
-  },
-  {
-    question: 'Werden toxische Links entfernt?',
-    answer:
-      'Ja. Wir analysieren Ihr Linkprofil auf toxische Links und initiieren ggf. Disavow-Anfragen, um schädliche Backlinks zu entfernen.',
-  },
+  { question: 'Warum sind Backlinks wichtig?', answer: 'Backlinks stärken die Autorität Ihrer Website und verbessern Rankings bei Google. Sie sind einer der stärksten Ranking Faktoren.' },
+  { question: 'Wie lange dauert Linkbuilding?', answer: 'Linkbuilding ist ein langfristiger Prozess. Erste Verbesserungen sind oft nach einigen Wochen sichtbar, nachhaltige Ergebnisse entstehen über Monate.' },
+  { question: 'Was kostet professionelles Linkbuilding?', answer: 'Basis Linkbuilding beginnt ab 500€. Monatliche Betreuung ab 700€/Monat. Die genauen Kosten hängen von Ihrer Branche und Zielen ab.' },
+  { question: 'Nutzen Sie sichere SEO Methoden?', answer: 'Ja. Wir setzen auf nachhaltige und Google-konforme Linkbuilding Strategien. Wir vermeiden manipulative Taktiken und toxische Links.' },
+  { question: 'Werden toxische Links entfernt?', answer: 'Ja. Wir analysieren Ihr Linkprofil auf toxische Links und initiieren ggf. Disavow-Anfragen, um schädliche Backlinks zu entfernen.' },
 ];
 </script>

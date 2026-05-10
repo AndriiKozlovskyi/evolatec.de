@@ -1,8 +1,7 @@
 <template>
   <div>
-    <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop"
       badge="SEO Preise & Kosten"
       title="Transparente SEO Preise für nachhaltiges Wachstum"
       description="Professionelle Suchmaschinenoptimierung zu transparenten Preisen. SEO Lösungen für Unternehmen, lokale Firmen und internationale Projekte."
@@ -11,40 +10,24 @@
       :stats="pricingStats"
     />
 
-    <!-- Intro Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Was kostet professionelle SEO?
-          </h2>
+    <TrustSection :companies="trustCompanies" />
 
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Die Kosten für Suchmaschinenoptimierung hängen vom Wettbewerb, der Website Größe und den Zielen Ihres Unternehmens ab.
-          </p>
+    <BenefitsSection
+      title="Warum in professionelle SEO investieren?"
+      :benefits="benefits"
+    />
 
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            EvolaTec bietet transparente SEO Preise ohne versteckte Kosten. Jede SEO Strategie wird individuell geplant.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEO Packages Section -->
     <PricingSection
       title="Unsere SEO Pakete"
       subtitle="Flexible SEO Angebote für verschiedene Unternehmensgrößen."
       :pricing-plans="seoPackages"
     />
 
-    <!-- Individual Services Section -->
+    <!-- Individual Services Pricing Table -->
     <section class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          Einzelne SEO Leistungen & Preise
-        </h2>
-
-        <div class="max-w-4xl mx-auto overflow-x-auto">
+        <h2 class="font-display text-[2.5rem] md:text-[3rem] text-center mb-stack-lg">Einzelne SEO Leistungen & Preise</h2>
+        <div class="max-w-3xl mx-auto overflow-x-auto">
           <table class="w-full">
             <thead>
               <tr class="border-b-2 border-primary">
@@ -67,71 +50,33 @@
       </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Warum in professionelle SEO investieren?
-          </h2>
-        </div>
+    <SEOSection
+      title="Welche Faktoren beeinflussen SEO Kosten?"
+      :features="costFactors"
+    />
 
-        <div class="grid md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
-          <div
-            v-for="benefit in seoBenefits"
-            :key="benefit.title"
-            class="glass-card ambient-shadow p-8 flex gap-6"
-          >
-            <div class="flex-shrink-0">
-              <span class="material-symbols-outlined text-[40px] text-primary">{{ benefit.icon }}</span>
-            </div>
-            <div>
-              <h3 class="font-headline-md text-primary mb-2">{{ benefit.title }}</h3>
-              <p class="font-body-md text-on-surface-variant">{{ benefit.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Factors Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          Welche Faktoren beeinflussen SEO Kosten?
-        </h2>
-
-        <div class="max-w-3xl mx-auto">
-          <div class="grid md:grid-cols-2 gap-gutter">
-            <div v-for="factor in costFactors" :key="factor" class="flex gap-4 items-start">
-              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0 mt-1">check_circle</span>
-              <p class="font-body-md text-on-surface-variant">{{ factor }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zu SEO Preisen" :faqs="pricingFaqs" />
 
-    <!-- Final CTA -->
-    <section class="py-section-padding bg-primary text-on-primary">
-      <div class="max-w-container-max mx-auto px-gutter text-center space-y-stack-md">
-        <h2 class="font-display text-headline-lg">Lassen Sie sich ein individuelles SEO Angebot erstellen</h2>
-        <p class="font-body-lg max-w-2xl mx-auto opacity-80">
-          Transparente SEO Preise für nachhaltiges Wachstum und bessere Google Rankings.
-        </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <BaseButton variant="secondary" size="lg">SEO Angebot anfragen</BaseButton>
-          <BaseButton variant="outline" size="lg">Kostenlos beraten lassen</BaseButton>
-        </div>
-      </div>
-    </section>
+    <CTASection
+      title="Lassen Sie sich ein individuelles SEO Angebot erstellen"
+      description="Transparente SEO Preise für nachhaltiges Wachstum und bessere Google Rankings."
+      primary-cta="SEO Angebot anfragen"
+      secondary-cta="Kostenlos beraten lassen"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'SEO Preise & Kosten – Transparente SEO Pakete | EvolaTec',
+  meta: [
+    { name: 'description', content: 'Transparente SEO Preise für professionelle Suchmaschinenoptimierung. SEO Pakete ab 250€/Monat. Keine versteckten Kosten.' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://evolatec.de/seo-pricing' },
+  ],
+});
+
 const pricingStats = [
   { value: 'ab 250€', label: 'SEO Betreuung', icon: 'trending_up' },
   { value: 'Transparent', label: 'Preise', icon: 'price_check' },
@@ -139,45 +84,45 @@ const pricingStats = [
   { value: 'ROI', label: 'fokussiert', icon: 'analytics' },
 ];
 
+const trustCompanies = ['FAIRE PREISE', 'TRANSPARENTE KOSTEN', 'FLEXIBLE PAKETE', 'KEIN VERSTECKTES'];
+
+const benefits = [
+  {
+    icon: 'trending_up',
+    title: 'Langfristiger Traffic',
+    description: 'SEO liefert nachhaltigen organischen Traffic ohne permanente Werbekosten — eine der besten Investitionen im Marketing.',
+  },
+  {
+    icon: 'people',
+    title: 'Mehr Kunden',
+    description: 'Bessere Google Rankings bringen mehr qualifizierte Anfragen von Kunden mit echter Kaufabsicht.',
+  },
+  {
+    icon: 'grade',
+    title: 'Wettbewerbsvorteil',
+    description: 'Unternehmen mit guter SEO setzen sich dauerhaft gegen Konkurrenten durch und gewinnen Marktanteile.',
+  },
+];
+
 const seoPackages = [
   {
     tier: 'START',
     price: 'ab 250 €/Monat',
-    features: [
-      'Technische SEO Basis',
-      'Keyword Analyse',
-      'OnPage Optimierung',
-      'Google Indexierung',
-      'Monatlicher Report',
-    ],
+    features: ['Technische SEO Basis', 'Keyword Analyse', 'OnPage Optimierung', 'Google Indexierung', 'Monatlicher Report'],
     buttonText: 'Angebot anfragen',
     isHighlighted: false,
   },
   {
     tier: 'GROWTH',
     price: 'ab 700 €/Monat',
-    features: [
-      'Komplette SEO Strategie',
-      'Technische SEO Optimierung',
-      'Content Optimierung',
-      'Local SEO',
-      'Linkbuilding',
-      'SEO Monitoring',
-    ],
+    features: ['Komplette SEO Strategie', 'Technische SEO Optimierung', 'Content Optimierung', 'Local SEO', 'Linkbuilding', 'SEO Monitoring'],
     buttonText: 'Angebot anfragen',
     isHighlighted: true,
   },
   {
     tier: 'PREMIUM',
     price: 'ab 1.500 €/Monat',
-    features: [
-      'Internationale SEO Strategie',
-      'Mehrsprachige SEO',
-      'Hochwertiges Linkbuilding',
-      'Content Strategie',
-      'Konkurrenzanalyse',
-      'Priorisierte Betreuung',
-    ],
+    features: ['Internationale SEO Strategie', 'Mehrsprachige SEO', 'Hochwertiges Linkbuilding', 'Content Strategie', 'Konkurrenzanalyse', 'Priorisierte Betreuung'],
     buttonText: 'Angebot anfragen',
     isHighlighted: false,
   },
@@ -192,65 +137,22 @@ const individualServices = [
   { name: 'SEO Content Erstellung', price: 'ab 80€ pro Artikel' },
 ];
 
-const seoBenefits = [
-  {
-    title: 'Langfristiger Traffic',
-    description: 'SEO liefert nachhaltigen Traffic ohne permanente Werbekosten.',
-    icon: 'trending_up',
-  },
-  {
-    title: 'Mehr Kunden',
-    description: 'Bessere Rankings bringen mehr qualifizierte Anfragen.',
-    icon: 'people',
-  },
-  {
-    title: 'Mehr Vertrauen',
-    description: 'Gute Google Rankings stärken Ihre Marke.',
-    icon: 'verified_user',
-  },
-  {
-    title: 'Wettbewerbsvorteil',
-    description: 'SEO hilft, sich gegen Konkurrenten durchzusetzen.',
-    icon: 'grade',
-  },
-];
-
 const costFactors = [
   'Konkurrenz in Ihrer Branche',
   'Größe der Website',
-  'Anzahl der Keywords',
+  'Anzahl der Ziel-Keywords',
   'Technischer Zustand der Website',
   'Internationales oder lokales SEO',
-  'Content Umfang',
+  'Umfang des Contents',
   'Linkbuilding Anforderungen',
   'Zielmärkte & Sprachen',
 ];
 
 const pricingFaqs = [
-  {
-    question: 'Was kostet SEO pro Monat?',
-    answer:
-      'Professionelle SEO Betreuung beginnt ab 250€/Monat. Die genauen Kosten hängen von Ihren Zielen, Branche und Website-Größe ab.',
-  },
-  {
-    question: 'Warum ist SEO langfristig?',
-    answer:
-      'Google Rankings werden kontinuierlich aufgebaut und verbessert. Nachhaltige SEO ist ein laufender Prozess, der regelmäßige Optimierung erfordert.',
-  },
-  {
-    question: 'Gibt es einmalige SEO Leistungen?',
-    answer:
-      'Ja. SEO Audits, technische Optimierungen und Beratungen können einmalig gebucht werden. Beispiele: SEO Audit (ab 150€) oder technische Optimierung (ab 500€).',
-  },
-  {
-    question: 'Ist günstige SEO sinnvoll?',
-    answer:
-      'Sehr günstige SEO Angebote arbeiten oft mit riskanten Methoden. Nachhaltige SEO benötigt Qualität, Zeit und Expertise - investieren Sie in langfristige Ergebnisse.',
-  },
-  {
-    question: 'Kann ich monatlich kündigen?',
-    answer:
-      'Ja. Unsere SEO Verträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen. Kostenlose Beratung für Ihr individuelles Angebot.',
-  },
+  { question: 'Was kostet SEO pro Monat?', answer: 'Professionelle SEO Betreuung beginnt ab 250€/Monat. Die genauen Kosten hängen von Ihren Zielen, Branche und Website-Größe ab.' },
+  { question: 'Warum ist SEO langfristig?', answer: 'Google Rankings werden kontinuierlich aufgebaut und verbessert. Nachhaltige SEO ist ein laufender Prozess, der regelmäßige Optimierung erfordert.' },
+  { question: 'Gibt es einmalige SEO Leistungen?', answer: 'Ja. SEO Audits, technische Optimierungen und Beratungen können einmalig gebucht werden. Beispiele: SEO Audit (ab 150€) oder technische Optimierung (ab 500€).' },
+  { question: 'Ist günstige SEO sinnvoll?', answer: 'Sehr günstige SEO Angebote arbeiten oft mit riskanten Methoden. Nachhaltige SEO benötigt Qualität, Zeit und Expertise — investieren Sie in langfristige Ergebnisse.' },
+  { question: 'Kann ich monatlich kündigen?', answer: 'Ja. Unsere SEO Verträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen.' },
 ];
 </script>
