@@ -47,48 +47,11 @@
     <ProcessSection title="Unser UI/UX Design Prozess" :steps="uiuxProcess" />
 
     <!-- UX & UI Info Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="grid md:grid-cols-2 gap-stack-lg mb-stack-lg">
-          <!-- UX Design -->
-          <div>
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              User Experience Design für moderne Websites
-            </h2>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Professionelles User Experience Design verbessert die Interaktion zwischen Nutzern und digitalen Produkten.
-            </p>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-              Gute UX reduziert Frustration, verbessert Orientierung und sorgt dafür, dass Besucher schneller die gewünschten Informationen finden.
-            </p>
-          </div>
-
-          <!-- UI Design -->
-          <div>
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              Modernes User Interface Design
-            </h2>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              UI Design bestimmt, wie ein digitales Produkt aussieht und wahrgenommen wird.
-            </p>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-              Unsere UI/UX Agentur entwickelt minimalistische, moderne und conversionstarke Benutzeroberflächen für Unternehmen, Startups und digitale Plattformen.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-gutter">
-          <div v-for="item in uiDesignItems" :key="item" class="flex gap-4 items-start">
-            <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0 mt-1">design_services</span>
-            <p class="font-body-md text-on-surface-variant">{{ item }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ChecklistSection
+      :columns="uiuxInfoColumns"
+      :items="uiDesignItems"
+      icon="design_services"
+    />
 
     <!-- Industries Section -->
    <!-- Industries Section -->
@@ -284,6 +247,23 @@ const uiuxIndustries = [
     title: 'Landingpages',
     description: 'Performanceorientierte Designs für Leadgenerierung.',
     icon: 'target',
+  },
+];
+
+const uiuxInfoColumns = [
+  {
+    heading: 'User Experience Design für moderne Websites',
+    paragraphs: [
+      'Professionelles User Experience Design verbessert die Interaktion zwischen Nutzern und digitalen Produkten.',
+      'Gute UX reduziert Frustration, verbessert Orientierung und sorgt dafür, dass Besucher schneller die gewünschten Informationen finden.',
+    ],
+  },
+  {
+    heading: 'Modernes User Interface Design',
+    paragraphs: [
+      'UI Design bestimmt, wie ein digitales Produkt aussieht und wahrgenommen wird.',
+      'Unsere UI/UX Agentur entwickelt minimalistische, moderne und conversionstarke Benutzeroberflächen für Unternehmen, Startups und digitale Plattformen.',
+    ],
   },
 ];
 

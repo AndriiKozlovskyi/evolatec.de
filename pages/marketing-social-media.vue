@@ -89,41 +89,19 @@
 
 
     <!-- Results / Image Banner Section -->
-    <section class="relative py-section-padding overflow-hidden">
-      <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
-        alt=""
-        class="absolute inset-0 w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40"></div>
-
-      <div class="relative max-w-container-max mx-auto px-gutter">
-        <div class="max-w-xl">
-          <span class="inline-block text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Messbare Ergebnisse</span>
-          <h2 class="font-display text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-            Kampagnen die
-            <span class="bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent">wirklich</span>
-            performen
-          </h2>
-          <p class="font-body-lg text-white/70 mb-10">
-            Unsere Social Media Kampagnen sind auf Ergebnisse ausgelegt — nicht auf Likes. Klicks, Leads und Umsatz sind exakt messbar.
-          </p>
-
-          <div class="grid grid-cols-3 gap-6 mb-10">
-            <div v-for="result in campaignResults" :key="result.label" class="text-center">
-              <div class="font-black text-3xl bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent mb-1">
-                {{ result.value }}
-              </div>
-              <div class="text-white/50 text-xs uppercase tracking-wider font-bold">{{ result.label }}</div>
-            </div>
-          </div>
-
-          <a href="/kontakt">
-            <BaseButton variant="secondary" size="lg">Social Media Kampagne starten</BaseButton>
-          </a>
-        </div>
-      </div>
-    </section>
+    <DarkBannerSection
+      image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      badge="Messbare Ergebnisse"
+      description="Unsere Social Media Kampagnen sind auf Ergebnisse ausgelegt — nicht auf Likes. Klicks, Leads und Umsatz sind exakt messbar."
+      cta-text="Social Media Kampagne starten"
+      :stats="campaignResults"
+    >
+      <template #title>
+        Kampagnen die
+        <span class="bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent">wirklich</span>
+        performen
+      </template>
+    </DarkBannerSection>
 
     <!-- Why EvolaTec Section -->
     <section class="py-section-padding bg-surface">

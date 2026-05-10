@@ -54,55 +54,7 @@
     />
   
     <!-- Corporate Design & Logo Info Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="grid md:grid-cols-2 gap-stack-lg">
-          <!-- Corporate Design -->
-          <div>
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              Corporate Design für Unternehmen
-            </h2>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Professionelles Corporate Design sorgt für einen konsistenten Markenauftritt über alle Kanäle hinweg.
-            </p>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
-              EvolaTec entwickelt Corporate Designs, die modern, hochwertig und flexibel einsetzbar sind.
-            </p>
-
-            <div class="space-y-3">
-              <div v-for="item in corporateDesignItems" :key="item" class="flex gap-3 items-start">
-                <span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span>
-                <p class="font-body-md text-on-surface-variant">{{ item }}</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Logo Design -->
-          <div>
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              Professionelle Logoentwicklung
-            </h2>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Ein gutes Logo ist das Fundament jeder Marke.
-            </p>
-
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
-              Unsere Logo Design Agentur entwickelt moderne, minimalistische und professionelle Logos, die Ihre Marke klar repräsentieren.
-            </p>
-
-            <div class="space-y-3">
-              <div v-for="item in logoDesignItems" :key="item" class="flex gap-3 items-start">
-                <span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5">check_circle</span>
-                <p class="font-body-md text-on-surface-variant">{{ item }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ChecklistSection bg="container-low" :columns="brandingInfoColumns" />
 
     <!-- Pricing Section -->
     <PricingSection
@@ -280,23 +232,38 @@ const brandingTypes = [
   },
 ];
 
-const corporateDesignItems = [
-  'Logo Design',
-  'Farbpalette',
-  'Typografie',
-  'Brand Guidelines',
-  'Social Media Design',
-  'Corporate Website Design',
-  'Präsentationen & Dokumente',
-  'Werbematerialien',
-];
-
-const logoDesignItems = [
-  'Wiedererkennbarkeit',
-  'Skalierbarkeit',
-  'Moderne Gestaltung',
-  'Markenpassung',
-  'Digitale & Print Nutzung',
+const brandingInfoColumns = [
+  {
+    heading: 'Corporate Design für Unternehmen',
+    paragraphs: [
+      'Professionelles Corporate Design sorgt für einen konsistenten Markenauftritt über alle Kanäle hinweg.',
+      'EvolaTec entwickelt Corporate Designs, die modern, hochwertig und flexibel einsetzbar sind.',
+    ],
+    items: [
+      'Logo Design',
+      'Farbpalette',
+      'Typografie',
+      'Brand Guidelines',
+      'Social Media Design',
+      'Corporate Website Design',
+      'Präsentationen & Dokumente',
+      'Werbematerialien',
+    ],
+  },
+  {
+    heading: 'Professionelle Logoentwicklung',
+    paragraphs: [
+      'Ein gutes Logo ist das Fundament jeder Marke.',
+      'Unsere Logo Design Agentur entwickelt moderne, minimalistische und professionelle Logos, die Ihre Marke klar repräsentieren.',
+    ],
+    items: [
+      'Wiedererkennbarkeit',
+      'Skalierbarkeit',
+      'Moderne Gestaltung',
+      'Markenpassung',
+      'Digitale & Print Nutzung',
+    ],
+  },
 ];
 
 const featuresData = [

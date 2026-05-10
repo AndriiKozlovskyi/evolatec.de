@@ -32,7 +32,7 @@
     </section>
 
     <!-- Services Section -->
-    <ServicesSection title="Unsere Online Marketing Leistungen" :services="marketingServices" />
+    <ServicesSection title="Unsere Online Marketing Leistungen" variant="centered" :services="marketingServices" />
 
     <!-- Benefits Section -->
     <BenefitsSection title="Vorteile einer professionellen Online Marketing Agentur" :benefits="marketingBenefits" />
@@ -41,31 +41,10 @@
     <ProcessSection title="Unser Online Marketing Prozess" :steps="marketingProcess" />
 
     <!-- Channels Section -->
-    <section class="py-section-padding bg-gradient-to-br from-slate-900 to-slate-800">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-white text-center mb-stack-lg">
-          Online Marketing Kanäle für Wachstum
-        </h2>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          <a
-            v-for="channel in marketingChannels"
-            :key="channel.title"
-            :href="channel.href"
-            class="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 block"
-          >
-            <div
-              class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
-              :class="channel.iconBg"
-            >
-              <span class="material-symbols-outlined text-2xl" :class="channel.iconColor">{{ channel.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-white mb-3">{{ channel.title }}</h3>
-            <p class="font-body-md text-white/60 leading-relaxed">{{ channel.description }}</p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <DarkCardsSection
+      title="Online Marketing Kanäle für Wachstum"
+      :cards="marketingChannels"
+    />
 
     <!-- Why EvolaTec Section -->
     <section class="py-section-padding bg-surface">
@@ -333,38 +312,10 @@ const marketingProcess = [
 ];
 
 const marketingChannels = [
-  {
-    title: 'Google SEO',
-    description: 'Organische Sichtbarkeit durch Suchmaschinenoptimierung.',
-    icon: 'search_insights',
-    iconBg: 'bg-blue-500/20',
-    iconColor: 'text-blue-400',
-    href: '/seo',
-  },
-  {
-    title: 'Google Ads',
-    description: 'Sofortige Reichweite durch bezahlte Suchanzeigen.',
-    icon: 'ads_click',
-    iconBg: 'bg-orange-500/20',
-    iconColor: 'text-orange-400',
-    href: '/marketing-google-ads',
-  },
-  {
-    title: 'Social Media Marketing',
-    description: 'Reichweite und Markenaufbau auf sozialen Plattformen.',
-    icon: 'groups',
-    iconBg: 'bg-emerald-500/20',
-    iconColor: 'text-emerald-400',
-    href: '/marketing-social-media',
-  },
-  {
-    title: 'Content Marketing',
-    description: 'SEO Inhalte, Landingpages und Conversion Content.',
-    icon: 'article',
-    iconBg: 'bg-purple-500/20',
-    iconColor: 'text-purple-400',
-    href: '/design-content',
-  },
+  { title: 'Google SEO', description: 'Organische Sichtbarkeit durch Suchmaschinenoptimierung.', icon: 'search_insights', href: '/seo' },
+  { title: 'Google Ads', description: 'Sofortige Reichweite durch bezahlte Suchanzeigen.', icon: 'ads_click', href: '/marketing-google-ads' },
+  { title: 'Social Media Marketing', description: 'Reichweite und Markenaufbau auf sozialen Plattformen.', icon: 'groups', href: '/marketing-social-media' },
+  { title: 'Content Marketing', description: 'SEO Inhalte, Landingpages und Conversion Content.', icon: 'article', href: '/design-content' },
 ];
 
 const whyEvolaTec = [

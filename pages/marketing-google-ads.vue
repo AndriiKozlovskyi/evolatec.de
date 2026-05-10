@@ -32,7 +32,7 @@
     </section>
 
     <!-- Services Section -->
-    <ServicesSection title="Unsere Google Ads Leistungen" :services="adsServices" />
+    <ServicesSection title="Unsere Google Ads Leistungen" variant="centered" :services="adsServices" />
 
     <!-- Benefits Section -->
     <BenefitsSection title="Vorteile professioneller Google Ads Kampagnen" :benefits="adsBenefits" />
@@ -41,30 +41,10 @@
     <ProcessSection title="Unser Google Ads Prozess" :steps="adsProcess" />
 
     <!-- Campaign Types Section -->
-    <section class="py-section-padding bg-gradient-to-br from-slate-900 to-slate-800">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-white text-center mb-stack-lg">
-          Google Werbung für verschiedene Ziele
-        </h2>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          <div
-            v-for="type in campaignTypes"
-            :key="type.title"
-            class="group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105"
-          >
-            <div
-              class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
-              :class="type.iconBg"
-            >
-              <span class="material-symbols-outlined text-2xl" :class="type.iconColor">{{ type.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-white mb-3">{{ type.title }}</h3>
-            <p class="font-body-md text-white/60 leading-relaxed">{{ type.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <DarkCardsSection
+      title="Google Werbung für verschiedene Ziele"
+      :cards="campaignTypes"
+    />
 
     <!-- Why EvolaTec Section -->
     <section class="py-section-padding bg-surface">
@@ -290,34 +270,10 @@ const adsProcess = [
 ];
 
 const campaignTypes = [
-  {
-    title: 'Leadgenerierung',
-    description: 'Mehr Anfragen für Dienstleister und Unternehmen.',
-    icon: 'person_add',
-    iconBg: 'bg-blue-500/20',
-    iconColor: 'text-blue-400',
-  },
-  {
-    title: 'E-Commerce Werbung',
-    description: 'Google Shopping und Performance Kampagnen für Onlineshops.',
-    icon: 'shopping_cart',
-    iconBg: 'bg-orange-500/20',
-    iconColor: 'text-orange-400',
-  },
-  {
-    title: 'Lokale Werbung',
-    description: 'Google Anzeigen für lokale Unternehmen und regionale Sichtbarkeit.',
-    icon: 'location_on',
-    iconBg: 'bg-emerald-500/20',
-    iconColor: 'text-emerald-400',
-  },
-  {
-    title: 'Brand Kampagnen',
-    description: 'Aufbau von Markenbekanntheit und digitaler Reichweite.',
-    icon: 'campaign',
-    iconBg: 'bg-purple-500/20',
-    iconColor: 'text-purple-400',
-  },
+  { title: 'Leadgenerierung', description: 'Mehr Anfragen für Dienstleister und Unternehmen.', icon: 'person_add' },
+  { title: 'E-Commerce Werbung', description: 'Google Shopping und Performance Kampagnen für Onlineshops.', icon: 'shopping_cart' },
+  { title: 'Lokale Werbung', description: 'Google Anzeigen für lokale Unternehmen und regionale Sichtbarkeit.', icon: 'location_on' },
+  { title: 'Brand Kampagnen', description: 'Aufbau von Markenbekanntheit und digitaler Reichweite.', icon: 'campaign' },
 ];
 
 const whyEvolaTec = [

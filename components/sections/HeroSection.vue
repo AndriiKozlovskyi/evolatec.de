@@ -40,13 +40,23 @@
         </div>
 
         <!-- Stats strip -->
-        <div class="pt-8 border-t border-white/[0.12] grid grid-cols-2 sm:grid-cols-4 gap-x-2 gap-y-6">
-          <div v-for="stat in stats" :key="stat.label" class="flex flex-col gap-1">
-            <span class="material-symbols-outlined text-xl mb-0.5 bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">{{ stat.icon }}</span>
-            <div class="font-black text-2xl leading-none bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">
-              {{ stat.value }}
+        <div class="relative pt-8">
+          <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-violet-400/35 via-white/10 to-transparent"></div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 items-center text-center">
+            <div
+              v-for="(stat, i) in stats"
+              :key="stat.label"
+              :class="[
+                'flex flex-col gap-1.5 py-1 px-6 first:pl-0',
+                i < stats.length - 1 ? 'border-r border-white/[0.12]' : '',
+              ]"
+            >
+              <span class="material-symbols-outlined text-[1.1rem] leading-none bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">{{ stat.icon }}</span>
+              <div class="font-black text-[1rem] leading-none bg-gradient-to-r from-violet-300 to-pink-400 bg-clip-text text-transparent">
+                {{ stat.value }}
+              </div>
+              <div class="text-white/40 text-[0.65rem] uppercase tracking-widest font-bold">{{ stat.label }}</div>
             </div>
-            <div class="text-white/45 text-xs uppercase tracking-wider font-semibold">{{ stat.label }}</div>
           </div>
         </div>
 

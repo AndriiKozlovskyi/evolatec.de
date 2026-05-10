@@ -47,22 +47,11 @@
     <ProcessSection title="So entstehen professionelle Website Texte" :steps="contentProcess" />
 
     <!-- Content Types Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          Welche Inhalte erstellen wir?
-        </h2>
-
-        <div class="max-w-3xl mx-auto">
-          <div class="grid md:grid-cols-2 gap-gutter">
-            <div v-for="contentType in contentTypes" :key="contentType" class="flex gap-4 items-start">
-              <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0 mt-1">edit_document</span>
-              <p class="font-body-md text-on-surface-variant">{{ contentType }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ChecklistSection
+      title="Welche Inhalte erstellen wir?"
+      icon="edit_document"
+      :items="contentTypes"
+    />
 
     <!-- Pricing Section -->
     <PricingSection

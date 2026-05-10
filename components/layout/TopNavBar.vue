@@ -1,5 +1,36 @@
 <template>
-  <nav class="fixed top-0 w-full z-50 bg-surface backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
+  <nav class="fixed top-0 w-full z-50">
+    <!-- Contact strip — desktop only -->
+    <div class="hidden md:block bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter flex justify-center py-2 items-center h-9 gap-7">
+        <a
+          href="tel:+491756200862"
+          class="flex items-center gap-1.5 text-black/60 hover:text-white transition-colors duration-200 text-xs font-medium"
+        >
+          <span class="material-symbols-outlined text-[13px] leading-none">phone</span>
+          +49 175 620 0862
+        </a>
+        <a
+          href="https://wa.me/491756200862"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center gap-1.5 text-black/60 hover:text-white transition-colors duration-200 text-xs font-medium"
+        >
+          <span class="material-symbols-outlined text-[13px] leading-none">chat</span>
+          WhatsApp
+        </a>
+        <a
+          href="mailto:team@evolatec.de"
+          class="flex items-center gap-1.5 text-black/60 hover:text-white transition-colors duration-200 text-xs font-medium"
+        >
+          <span class="material-symbols-outlined text-[13px] leading-none">mail</span>
+          team@evolatec.de
+        </a>
+      </div>
+    </div>
+
+    <!-- Main nav -->
+    <div class="bg-surface backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
     <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200">
@@ -70,6 +101,7 @@
       <a href="/kontakt" class="hidden sm:inline-block">
         <BaseButton variant="primary" size="sm">Anfragen</BaseButton>
       </a>
+    </div>
     </div>
 
     <!-- Mobile Menu Overlay -->
