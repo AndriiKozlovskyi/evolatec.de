@@ -1,188 +1,296 @@
 <template>
-  <div class="min-h-screen bg-surface-container-low pt-28 pb-24">
-    <div class="max-w-[740px] mx-auto px-gutter">
+  <div>
+    <!-- Hero -->
+    <section class="relative bg-gradient-to-br from-primary via-primary to-primary-container text-on-primary overflow-hidden">
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
 
-      <!-- Header -->
-      <div class="text-center mb-8">
-        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-3">
-          <span class="material-symbols-outlined text-sm">calculate</span>
-          Kostenrechner
+      <div class="relative max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-20 md:pb-20 text-center">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.25em] text-white/70 mb-4">
+          <span class="material-symbols-outlined text-base">calculate</span>
+          Preisrechner
         </span>
-        <h1 class="font-display text-4xl md:text-5xl font-black text-on-surface mb-3">Preisrechner</h1>
-        <p class="text-on-surface-variant text-sm">Unverbindliche Schätzung · Genaue Preise nach kostenlosem Erstgespräch</p>
+        <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4">
+          Was kostet Ihr Projekt?
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
+          Wählen Sie ein Paket, kalkulieren Sie individuell oder durchsuchen Sie unsere Einzelpreise.
+        </p>
       </div>
+    </section>
 
-      <!-- Tabs -->
-      <div class="flex gap-1.5 mb-6 bg-surface p-1.5 rounded-xl border border-outline-variant/20 shadow-sm">
-        <button
-          v-for="tab in tabs"
-          :key="tab.id"
-          @click="activeTab = tab.id"
-          class="flex-1 py-2.5 px-3 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-all duration-200"
-          :class="activeTab === tab.id
-            ? 'bg-surface-container-low text-on-surface shadow-sm border border-outline-variant/20'
-            : 'text-on-surface-variant hover:text-on-surface'"
-        >
-          <span class="material-symbols-outlined text-base">{{ tab.icon }}</span>
-          <span class="hidden sm:inline">{{ tab.label }}</span>
-          <span class="sm:hidden">{{ tab.shortLabel }}</span>
-        </button>
-      </div>
+    <!-- Content -->
+    <section class="bg-surface py-8 md:py-section-padding">
+      <div class="max-w-4xl mx-auto px-gutter">
 
-      <!-- ═══ PANEL: PAKETE ═══ -->
-      <div v-show="activeTab === 'pakete'">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div
-            v-for="pkg in packages"
-            :key="pkg.name"
-            class="bg-surface rounded-2xl border overflow-hidden transition-all duration-200 hover:shadow-md flex flex-col"
-            :class="pkg.popular ? 'border-primary shadow-sm relative' : 'border-outline-variant/30'"
+        <!-- Tabs -->
+        <div class="flex bg-surface-container-low rounded-full p-1 mb-8 max-w-xl mx-auto shadow-inner">
+          <button
+            v-for="tab in tabs"
+            :key="tab.id"
+            @click="activeTab = tab.id"
+            :class="[
+              'flex-1 py-2.5 px-3 rounded-full text-sm font-bold flex items-center justify-center gap-2 min-h-[44px] transition-all duration-200',
+              activeTab === tab.id
+                ? 'bg-primary text-on-primary shadow-md'
+                : 'text-on-surface-variant hover:text-primary',
+            ]"
           >
-            <div v-if="pkg.popular" class="bg-primary text-on-primary text-xs font-bold text-center py-1.5 tracking-wide">
-              Beliebt
-            </div>
-            <div class="p-6 flex flex-col flex-1">
-              <div class="text-sm font-semibold text-on-surface-variant mb-1">{{ pkg.name }}</div>
-              <div class="font-display text-3xl font-black text-on-surface mb-0.5">{{ pkg.price }}</div>
-              <div class="text-xs text-on-surface-variant mb-5">einmalig, zzgl. MwSt.</div>
-              <ul class="space-y-2.5 flex-1">
-                <li v-for="feat in pkg.features" :key="feat" class="flex items-start gap-2.5 text-sm text-on-surface-variant">
-                  <span class="material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">check_circle</span>
-                  {{ feat }}
-                </li>
-              </ul>
-              <a href="/kontakt" class="mt-6 block text-center bg-primary text-on-primary text-sm font-semibold rounded-xl py-2.5 hover:bg-primary/90 transition-colors">
-                Angebot anfordern
-              </a>
+            <span class="material-symbols-outlined text-lg">{{ tab.icon }}</span>
+            <span class="hidden sm:inline">{{ tab.label }}</span>
+            <span class="sm:hidden">{{ tab.shortLabel }}</span>
+          </button>
+        </div>
+
+        <!-- ═══ PAKETE ═══ -->
+        <div v-show="activeTab === 'pakete'" class="animate-fade-in-up">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            <div
+              v-for="pkg in packages"
+              :key="pkg.name"
+              :class="[
+                'relative bg-white rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-lg flex flex-col',
+                pkg.popular ? 'border-primary shadow-md md:scale-[1.02]' : 'border-outline-variant/30',
+              ]"
+            >
+              <div v-if="pkg.popular" class="bg-primary text-on-primary text-xs font-bold text-center py-2 tracking-widest uppercase">
+                Beliebt
+              </div>
+              <div class="p-6 md:p-7 flex flex-col flex-1">
+                <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">{{ pkg.name }}</p>
+                <p class="font-display text-4xl md:text-5xl font-black text-primary leading-none mb-1">{{ pkg.price }}</p>
+                <p class="text-xs text-on-surface-variant mb-6">einmalig, zzgl. MwSt.</p>
+                <ul class="space-y-2.5 mb-6 flex-1">
+                  <li v-for="feat in pkg.features" :key="feat" class="flex items-start gap-2 text-sm text-on-surface">
+                    <span class="material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">check_circle</span>
+                    {{ feat }}
+                  </li>
+                </ul>
+                <a href="/kontakt" class="block">
+                  <BaseButton :variant="pkg.popular ? 'primary' : 'outline'" size="md" class="w-full">
+                    Angebot anfordern
+                  </BaseButton>
+                </a>
+              </div>
             </div>
           </div>
+          <p class="text-center text-xs text-on-surface-variant mt-6">
+            Individuelle Lösungen auf Anfrage · Werbebudget wird separat berechnet
+          </p>
         </div>
-        <p class="text-center text-xs text-on-surface-variant mt-5">
-          Individuelle Lösungen auf Anfrage · Werbebudget für Marketing wird separat berechnet
-        </p>
-      </div>
 
-      <!-- ═══ PANEL: KALKULATOR ═══ -->
-      <div v-show="activeTab === 'kalkulator'">
-        <div class="bg-surface rounded-2xl border border-outline-variant/20 shadow-sm overflow-hidden">
+        <!-- ═══ KALKULATOR ═══ -->
+        <div v-show="activeTab === 'kalkulator'" class="animate-fade-in-up">
+          <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
 
-          <!-- Step 1: Category -->
-          <div class="p-6 pb-0">
-            <div class="step-label">1. Kategorie</div>
-            <div class="grid grid-cols-2 gap-2.5">
-              <button
-                v-for="cat in calcCategories"
-                :key="cat.id"
-                @click="selectCat(cat)"
-                class="opt-btn"
-                :class="{ 'opt-btn--sel': calc.cat?.id === cat.id }"
-              >
-                <span class="material-symbols-outlined opt-icon">{{ cat.icon }}</span>
-                <div class="text-left">
-                  <div class="opt-name">{{ cat.name }}</div>
-                  <div class="opt-desc">{{ cat.desc }}</div>
+            <!-- Step 1: Category -->
+            <div class="p-5 md:p-7">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-black flex-shrink-0">1</div>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-primary">Schritt 1</p>
+                  <p class="text-base font-bold text-on-surface leading-none mt-0.5">Kategorie wählen</p>
                 </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- Step 2: Type -->
-          <template v-if="calc.cat">
-            <div class="divider" />
-            <div class="p-6 pb-0">
-              <div class="step-label">2. Typ</div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              </div>
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
                 <button
-                  v-for="type in calc.cat.types"
-                  :key="type.id"
-                  @click="selectType(type)"
-                  class="opt-btn"
-                  :class="{ 'opt-btn--sel': calc.type?.id === type.id }"
+                  v-for="(cat, i) in calcCategories"
+                  :key="cat.id"
+                  @click="selectCat(cat)"
+                  :class="[
+                    'group relative flex flex-col items-center text-center p-4 rounded-xl border-2 transition-all duration-200 min-h-[120px]',
+                    calc.cat?.id === cat.id
+                      ? 'border-primary bg-primary/5 shadow-md'
+                      : 'border-outline-variant/30 hover:border-primary/40 hover:bg-surface-container-low',
+                  ]"
                 >
-                  <span class="material-symbols-outlined opt-icon">{{ type.icon }}</span>
-                  <div class="text-left flex-1">
-                    <div class="opt-name">{{ type.name }}</div>
-                    <div class="opt-desc">{{ type.desc }}</div>
+                  <span
+                    v-if="calc.cat?.id === cat.id"
+                    class="absolute top-2 right-2 material-symbols-outlined text-primary text-lg"
+                  >check_circle</span>
+                  <div
+                    :class="[
+                      'w-12 h-12 rounded-xl flex items-center justify-center mb-2 transition-colors',
+                      calc.cat?.id === cat.id ? 'bg-primary text-on-primary' : accent(i).bg + ' ' + accent(i).text,
+                    ]"
+                  >
+                    <span class="material-symbols-outlined text-xl">{{ cat.icon }}</span>
                   </div>
-                  <span class="opt-price">ab €{{ fmt(type.price) }}</span>
+                  <p class="font-bold text-sm text-on-surface leading-tight">{{ cat.name }}</p>
+                  <p class="text-xs text-on-surface-variant mt-1 leading-snug">{{ cat.desc }}</p>
                 </button>
               </div>
             </div>
-          </template>
 
-          <!-- Step 3: Extras -->
-          <template v-if="calc.type">
-            <div class="divider" />
-            <div class="p-6 pb-0">
-              <div class="step-label">3. Zusatzleistungen</div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                <button
-                  v-for="extra in calc.cat!.extras"
-                  :key="extra.id"
-                  @click="toggleExtra(extra)"
-                  class="opt-btn"
-                  :class="{ 'opt-btn--sel': isExtraSel(extra) }"
-                >
-                  <span class="material-symbols-outlined opt-icon">{{ extra.icon }}</span>
-                  <div class="text-left flex-1">
-                    <div class="opt-name">{{ extra.name }}</div>
+            <!-- Step 2: Type -->
+            <template v-if="calc.cat">
+              <div class="h-px bg-outline-variant/20 mx-5 md:mx-7"></div>
+              <div class="p-5 md:p-7">
+                <div class="flex items-center gap-3 mb-5">
+                  <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-black flex-shrink-0">2</div>
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-primary">Schritt 2</p>
+                    <p class="text-base font-bold text-on-surface leading-none mt-0.5">Typ auswählen</p>
                   </div>
-                  <span class="opt-price">+€{{ fmt(extra.price) }}</span>
-                </button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <button
+                    v-for="type in calc.cat.types"
+                    :key="type.id"
+                    @click="selectType(type)"
+                    :class="[
+                      'group relative flex items-center gap-3 p-4 rounded-xl border-2 transition-all duration-200 text-left min-h-[72px]',
+                      calc.type?.id === type.id
+                        ? 'border-primary bg-primary/5 shadow-md'
+                        : 'border-outline-variant/30 hover:border-primary/40 hover:bg-surface-container-low',
+                    ]"
+                  >
+                    <div
+                      :class="[
+                        'w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors',
+                        calc.type?.id === type.id ? 'bg-primary text-on-primary' : 'bg-primary/10 text-primary',
+                      ]"
+                    >
+                      <span class="material-symbols-outlined text-lg">{{ type.icon }}</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="font-bold text-sm text-on-surface leading-tight">{{ type.name }}</p>
+                      <p class="text-xs text-on-surface-variant mt-0.5">{{ type.desc }}</p>
+                    </div>
+                    <div class="text-right flex-shrink-0">
+                      <p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-semibold">ab</p>
+                      <p class="font-display text-base font-black text-primary leading-none">€{{ fmt(type.price) }}</p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </template>
+
+            <!-- Step 3: Extras -->
+            <template v-if="calc.type">
+              <div class="h-px bg-outline-variant/20 mx-5 md:mx-7"></div>
+              <div class="p-5 md:p-7">
+                <div class="flex items-center gap-3 mb-5">
+                  <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-black flex-shrink-0">3</div>
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-primary">Schritt 3</p>
+                    <p class="text-base font-bold text-on-surface leading-none mt-0.5">Zusatzleistungen <span class="font-normal text-on-surface-variant">(optional)</span></p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <button
+                    v-for="extra in calc.cat!.extras"
+                    :key="extra.id"
+                    @click="toggleExtra(extra)"
+                    :class="[
+                      'inline-flex items-center gap-2 px-3 py-2 rounded-full border-2 text-sm font-semibold transition-all duration-200',
+                      isExtraSel(extra)
+                        ? 'border-primary bg-primary text-on-primary shadow-sm'
+                        : 'border-outline-variant/40 bg-white text-on-surface hover:border-primary/40 hover:bg-primary/5',
+                    ]"
+                  >
+                    <span class="material-symbols-outlined text-base">{{ isExtraSel(extra) ? 'check' : extra.icon }}</span>
+                    {{ extra.name }}
+                    <span :class="isExtraSel(extra) ? 'text-white/85' : 'text-on-surface-variant'" class="text-xs font-bold">+€{{ fmt(extra.price) }}</span>
+                  </button>
+                </div>
+              </div>
+            </template>
+
+            <!-- Price summary -->
+            <div v-if="calc.type" class="p-5 md:p-7 pt-0">
+              <div class="relative bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-xl p-5 md:p-7 shadow-lg overflow-hidden">
+                <!-- decorative blob -->
+                <div class="absolute -top-12 -right-12 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-white/70 mb-1.5">Geschätzte Kosten</p>
+                    <p class="font-display text-4xl md:text-5xl font-black leading-none">
+                      ab €{{ fmt(totalPrice) }}
+                    </p>
+                    <p class="text-xs text-white/70 mt-2">{{ priceNote }}</p>
+                  </div>
+                  <a href="/kontakt" class="w-full sm:w-auto">
+                    <BaseButton variant="secondary" size="md" class="w-full sm:w-auto">
+                      Angebot anfordern
+                      <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </BaseButton>
+                  </a>
+                </div>
               </div>
             </div>
-          </template>
-
-          <!-- Price box -->
-          <div v-if="calc.type" class="p-6 pt-5">
-            <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div>
-                <div class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-1.5">Geschätzte Kosten</div>
-                <div class="font-display text-[2.25rem] font-black text-on-surface leading-none">ab €{{ fmt(totalPrice) }}</div>
-                <div class="text-xs text-on-surface-variant mt-1.5">{{ priceNote }}</div>
-              </div>
-              <a href="/kontakt" class="flex items-center gap-2 bg-blue-600 text-white font-semibold text-sm px-5 py-3 rounded-xl hover:bg-blue-700 transition-colors whitespace-nowrap">
-                Angebot anfordern
-                <span class="material-symbols-outlined text-base">arrow_forward</span>
-              </a>
+            <div v-else class="px-5 md:px-7 pb-6 text-xs text-on-surface-variant text-center">
+              Wählen Sie eine Kategorie und einen Typ, um den Preis zu berechnen.
             </div>
-          </div>
-          <div v-else class="px-6 pb-6 pt-3 text-xs text-on-surface-variant text-center">
-            Wählen Sie eine Kategorie und einen Typ, um den Preis zu berechnen.
-          </div>
 
+          </div>
         </div>
+
+        <!-- ═══ EINZELPREISE ═══ -->
+        <div v-show="activeTab === 'einzeln'" class="animate-fade-in-up">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+            <div
+              v-for="(section, sIdx) in singlePrices"
+              :key="section.title"
+              class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden flex flex-col"
+            >
+              <!-- Colored accent strip -->
+              <div class="h-1" :class="accent(sIdx).accent"></div>
+
+              <div class="p-5 md:p-6 flex flex-col flex-1">
+                <!-- Header -->
+                <div class="flex items-center gap-3 mb-5">
+                  <div
+                    class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                    :class="accent(sIdx).bg + ' ' + accent(sIdx).text"
+                  >
+                    <span class="material-symbols-outlined text-xl">{{ section.icon }}</span>
+                  </div>
+                  <h3 class="font-display text-xl sm:text-2xl font-black text-on-surface leading-tight">{{ section.title }}</h3>
+                </div>
+
+                <!-- Price rows -->
+                <ul class="space-y-1 flex-1">
+                  <li
+                    v-for="row in section.rows"
+                    :key="row.name"
+                    class="flex items-center justify-between gap-3 py-2.5 px-3 -mx-3 rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <span class="text-sm text-on-surface">{{ row.name }}</span>
+                    <span class="text-sm sm:text-base font-black text-primary whitespace-nowrap">{{ row.price }}</span>
+                  </li>
+                </ul>
+
+                <p v-if="section.note" class="text-xs text-on-surface-variant mt-4 italic">* {{ section.note }}</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs text-on-surface-variant mt-6">
+            Alle Preise zzgl. MwSt. · Individuelle Projekte auf Anfrage
+          </p>
+        </div>
+
       </div>
+    </section>
 
-      <!-- ═══ PANEL: EINZELPREISE ═══ -->
-      <div v-show="activeTab === 'einzeln'">
-        <div class="bg-surface rounded-2xl border border-outline-variant/20 shadow-sm divide-y divide-outline-variant/15">
-          <div v-for="section in singlePrices" :key="section.title" class="p-6">
-            <div class="flex items-center gap-2 text-sm font-semibold text-on-surface-variant mb-4">
-              <span class="material-symbols-outlined text-base text-primary">{{ section.icon }}</span>
-              {{ section.title }}
-            </div>
-            <table class="w-full">
-              <tbody>
-                <tr
-                  v-for="row in section.rows"
-                  :key="row.name"
-                  class="border-b border-outline-variant/10 last:border-0"
-                >
-                  <td class="py-2.5 text-sm text-on-surface">{{ row.name }}</td>
-                  <td class="py-2.5 text-sm font-semibold text-primary text-right whitespace-nowrap">{{ row.price }}</td>
-                </tr>
-              </tbody>
-            </table>
-            <p v-if="section.note" class="text-xs text-on-surface-variant mt-3">* {{ section.note }}</p>
-          </div>
-        </div>
-        <p class="text-center text-xs text-on-surface-variant mt-5">
-          Alle Preise zzgl. MwSt. · Individuelle Projekte auf Anfrage
+    <!-- CTA strip -->
+    <section class="bg-surface-container-low py-10 md:py-14 border-t border-outline-variant/30">
+      <div class="max-w-3xl mx-auto px-gutter text-center">
+        <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-black text-on-surface mb-3 leading-tight">
+          Nicht sicher, was Sie brauchen?
+        </h2>
+        <p class="text-sm sm:text-base text-on-surface-variant mb-6 max-w-xl mx-auto">
+          Kostenlose Erstberatung — wir helfen Ihnen, das passende Paket zu finden.
         </p>
+        <a href="/kontakt" class="inline-block">
+          <BaseButton variant="primary" size="lg">
+            <span class="material-symbols-outlined text-lg">event</span>
+            Termin buchen
+          </BaseButton>
+        </a>
       </div>
-
-    </div>
+    </section>
   </div>
 </template>
 
@@ -198,6 +306,17 @@ useHead({
 interface Extra     { id: string; icon: string; name: string; price: number }
 interface CalcType  { id: string; icon: string; name: string; desc: string; price: number; note: string }
 interface CalcCat   { id: string; icon: string; name: string; desc: string; types: CalcType[]; extras: Extra[] }
+
+// ── Accent rotation (matches ProcessSection palette feel) ─────────────────────
+const accentColors = [
+  { bg: 'bg-sky-50',     text: 'text-sky-600',     accent: 'bg-sky-400'     },
+  { bg: 'bg-emerald-50', text: 'text-emerald-600', accent: 'bg-emerald-400' },
+  { bg: 'bg-violet-50',  text: 'text-violet-600',  accent: 'bg-violet-400'  },
+  { bg: 'bg-amber-50',   text: 'text-amber-600',   accent: 'bg-amber-400'   },
+] as const;
+function accent(i: number) {
+  return accentColors[i % accentColors.length]!;
+}
 
 // ── Tabs ─────────────────────────────────────────────────────────────────────
 const activeTab = ref<'pakete' | 'kalkulator' | 'einzeln'>('pakete');
@@ -381,73 +500,3 @@ const singlePrices = [
 ];
 </script>
 
-<style scoped>
-.step-label {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--color-on-surface-variant, #888);
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-.opt-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 11px 13px;
-  border: 0.5px solid rgba(0,0,0,0.12);
-  border-radius: 10px;
-  background: white;
-  cursor: pointer;
-  text-align: left;
-  transition: border-color 0.15s, background 0.15s;
-  width: 100%;
-}
-.opt-btn:hover {
-  background: #f9f9f7;
-}
-.opt-btn--sel {
-  border: 2px solid #2563eb;
-  background: #eff6ff;
-}
-
-.opt-icon {
-  font-size: 18px;
-  color: #bbb;
-  flex-shrink: 0;
-  font-family: 'Material Symbols Outlined';
-}
-.opt-btn--sel .opt-icon {
-  color: #2563eb;
-}
-
-.opt-name {
-  font-size: 13px;
-  font-weight: 500;
-  color: #1a1a1a;
-}
-.opt-desc {
-  font-size: 11px;
-  color: #aaa;
-  margin-top: 1px;
-}
-.opt-price {
-  margin-left: auto;
-  font-size: 12px;
-  font-weight: 500;
-  color: #aaa;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.opt-btn--sel .opt-price {
-  color: #2563eb;
-}
-
-.divider {
-  height: 0.5px;
-  background: rgba(0,0,0,0.07);
-  margin: 1.25rem 1.5rem 0;
-}
-</style>
