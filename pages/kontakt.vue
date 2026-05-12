@@ -1,41 +1,24 @@
 <template>
-  <div>
-    <!-- Hero -->
-    <section class="relative bg-gradient-to-br from-primary via-primary to-primary-container text-on-primary overflow-hidden">
-      <!-- soft glow -->
-      <div class="absolute -top-40 -right-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="relative max-w-container-max mx-auto px-gutter pt-10 pb-14 md:pt-20 md:pb-24 text-center">
-        <span class="inline-block text-xs font-bold uppercase tracking-[0.25em] text-white/70 mb-4">Kontakt</span>
-        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-5">
-          Kostenlose Erstberatung
-        </h1>
-        <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-          Erzählen Sie uns kurz von Ihrem Projekt — wir melden uns
-          <span class="text-white font-semibold">innerhalb von 24 Stunden</span>
-          mit einem unverbindlichen Angebot.
-        </p>
-
-        <!-- Trust chips -->
-        <div class="flex flex-wrap gap-2 sm:gap-3 justify-center mt-7">
-          <span v-for="chip in trustChips" :key="chip" class="inline-flex items-center gap-1.5 bg-white/10 border border-white/15 rounded-full px-3 py-1.5 text-xs sm:text-sm font-medium">
-            <span class="material-symbols-outlined text-base">check</span>
-            {{ chip }}
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Two paths -->
-    <section class="bg-surface py-10 md:py-section-padding">
+  <div class="bg-surface">
+    <!-- TOP CTA: tabs + content right at the top -->
+    <section class="pt-8 md:pt-14 pb-8 md:pb-12">
       <div class="max-w-3xl mx-auto px-gutter">
-        <!-- Tab switcher -->
-        <div class="flex bg-surface-container-low rounded-full p-1.5 mb-8 max-w-md mx-auto shadow-inner">
+        <!-- Compact heading above tabs -->
+        <div class="text-center mb-6">
+          <h1 class="font-display text-2xl sm:text-3xl md:text-4xl font-black text-on-surface leading-tight">
+            Wie möchten Sie starten?
+          </h1>
+          <p class="text-sm sm:text-base text-on-surface-variant mt-2">
+            Termin buchen oder Anfrage schreiben — Sie entscheiden.
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="flex bg-surface-container-low rounded-full p-1 mb-6 max-w-md mx-auto">
           <button
             @click="tab = 'call'"
             :class="[
-              'flex-1 py-3 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
+              'flex-1 py-2.5 px-3 rounded-full font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
               tab === 'call' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
             ]"
           >
@@ -45,86 +28,105 @@
           <button
             @click="tab = 'form'"
             :class="[
-              'flex-1 py-3 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
+              'flex-1 py-2.5 px-3 rounded-full font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
               tab === 'form' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
             ]"
           >
             <span class="material-symbols-outlined text-lg">mail</span>
-            Anfrage schreiben
+            Anfrage senden
           </button>
         </div>
 
-        <!-- Call booking panel -->
-        <div v-if="tab === 'call'" class="bg-white rounded-2xl shadow-lg border border-outline-variant/20 p-6 sm:p-8 md:p-10 animate-fade-in-up">
-          <div class="text-center mb-6">
-            <h2 class="font-display text-2xl sm:text-3xl font-black text-on-surface mb-2">
-              15-Min Strategiegespräch
-            </h2>
-            <p class="text-sm sm:text-base text-on-surface-variant max-w-md mx-auto">
-              Unverbindliches Gespräch per Video oder Telefon. Wir besprechen Ihre Ziele und mögliche Lösungen.
-            </p>
-          </div>
-
-          <!-- Cal.com inline embed -->
-          <div class="rounded-xl overflow-hidden border border-outline-variant/30 bg-surface-container-low">
-            <iframe
-              :src="calComUrl"
-              loading="lazy"
-              title="Termin buchen"
-              class="w-full h-[640px] md:h-[700px] border-0"
-            />
-          </div>
-
-          <p class="text-xs text-on-surface-variant/70 text-center mt-4">
-            Lieber direkt sprechen?
-            <a href="tel:+491756200862" class="text-primary font-semibold hover:underline">+49 175 620 0862</a>
-            ·
-            <a href="https://wa.me/491756200862" target="_blank" rel="noopener" class="text-primary font-semibold hover:underline">WhatsApp</a>
+        <!-- TERMIN tab -->
+        <div v-if="tab === 'call'" class="bg-white rounded-2xl shadow-md border border-outline-variant/20 p-5 sm:p-7 animate-fade-in-up">
+          <p class="text-sm text-on-surface-variant mb-4 text-center">
+            Kostenloses 15-Min Erstgespräch — wählen Sie Ihren Weg:
           </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a
+              :href="calComUrl"
+              target="_blank"
+              rel="noopener"
+              class="group flex items-center gap-3 bg-primary text-on-primary rounded-xl p-4 hover:shadow-lg transition-all duration-200 sm:col-span-2"
+            >
+              <div class="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined">event_available</span>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="font-bold text-sm sm:text-base">Online-Termin auswählen</p>
+                <p class="text-xs text-white/75">Sofort verfügbare Zeitslots ansehen</p>
+              </div>
+              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+
+            <a
+              href="tel:+491756200862"
+              class="group flex items-center gap-3 bg-surface-container-low rounded-xl p-4 hover:bg-primary/5 hover:border-primary/40 border border-transparent transition-all duration-200"
+            >
+              <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary">phone</span>
+              </div>
+              <div class="min-w-0">
+                <p class="text-xs uppercase tracking-wider text-on-surface-variant font-semibold">Anrufen</p>
+                <p class="text-sm font-bold text-on-surface truncate">+49 175 620 0862</p>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/491756200862"
+              target="_blank"
+              rel="noopener"
+              class="group flex items-center gap-3 bg-surface-container-low rounded-xl p-4 hover:bg-primary/5 hover:border-primary/40 border border-transparent transition-all duration-200"
+            >
+              <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary">chat</span>
+              </div>
+              <div class="min-w-0">
+                <p class="text-xs uppercase tracking-wider text-on-surface-variant font-semibold">WhatsApp</p>
+                <p class="text-sm font-bold text-on-surface">Antwort meist &lt; 1h</p>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <!-- Form panel -->
-        <div v-else class="bg-white rounded-2xl shadow-lg border border-outline-variant/20 p-6 sm:p-8 md:p-10 animate-fade-in-up">
-          <div class="text-center mb-6">
-            <h2 class="font-display text-2xl sm:text-3xl font-black text-on-surface mb-2">
-              Schreiben Sie uns
-            </h2>
-            <p class="text-sm sm:text-base text-on-surface-variant max-w-md mx-auto">
-              Füllen Sie das Formular aus — wir antworten innerhalb von 24 Stunden.
-            </p>
-          </div>
-
+        <!-- FORM tab -->
+        <div v-else class="bg-white rounded-2xl shadow-md border border-outline-variant/20 p-5 sm:p-7 animate-fade-in-up">
           <ContactForm />
         </div>
       </div>
     </section>
 
-    <!-- Quick contact + price calc link -->
-    <section class="bg-surface-container-low py-10 md:py-16 border-t border-outline-variant/30">
-      <div class="max-w-4xl mx-auto px-gutter">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-          <a
-            v-for="channel in quickChannels"
-            :key="channel.label"
-            :href="channel.href"
-            :target="channel.external ? '_blank' : undefined"
-            :rel="channel.external ? 'noopener' : undefined"
-            class="group flex items-center gap-4 bg-white rounded-xl p-4 sm:p-5 border border-outline-variant/30 hover:border-primary/50 hover:shadow-md transition-all duration-200"
-          >
-            <div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-              <span class="material-symbols-outlined text-primary">{{ channel.icon }}</span>
-            </div>
-            <div class="min-w-0">
-              <p class="text-xs uppercase tracking-wider text-on-surface-variant font-semibold">{{ channel.label }}</p>
-              <p class="text-sm sm:text-base font-bold text-on-surface truncate">{{ channel.value }}</p>
-            </div>
-          </a>
-        </div>
+    <!-- TEXT block — kostenlose Erstberatung explainer (now below the CTA) -->
+    <section class="bg-white border-y border-outline-variant/30 py-10 md:py-14">
+      <div class="max-w-3xl mx-auto px-gutter text-center">
+        <span class="inline-block text-xs font-bold uppercase tracking-[0.25em] text-primary mb-3">
+          Kostenlose Erstberatung
+        </span>
+        <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-black text-on-surface leading-tight mb-4">
+          Rückmeldung innerhalb von 24 Stunden
+        </h2>
+        <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
+          Erzählen Sie uns kurz von Ihrem Projekt. Wir prüfen Ihre Anfrage und melden uns mit einem
+          <span class="text-on-surface font-semibold">unverbindlichen Angebot</span>
+          oder Terminvorschlägen für ein Gespräch — egal, ob Landingpage, Firmenwebsite oder Online-Shop.
+        </p>
 
-        <!-- Price calculator link -->
+        <div class="flex flex-wrap gap-2 justify-center mt-5">
+          <span v-for="chip in trustChips" :key="chip" class="inline-flex items-center gap-1.5 bg-primary/5 border border-primary/10 rounded-full px-3 py-1 text-xs sm:text-sm text-on-surface font-medium">
+            <span class="material-symbols-outlined text-base text-primary">check</span>
+            {{ chip }}
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price calculator shortcut -->
+    <section class="py-8 md:py-12">
+      <div class="max-w-3xl mx-auto px-gutter">
         <a
           href="/pricing"
-          class="mt-6 flex items-center justify-between gap-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl p-4 sm:p-5 hover:shadow-lg transition-shadow duration-200 group"
+          class="flex items-center justify-between gap-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl p-4 sm:p-5 hover:shadow-lg transition-shadow duration-200 group"
         >
           <div class="flex items-center gap-4 min-w-0">
             <div class="w-11 h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0">
@@ -157,19 +159,14 @@ useHead({
 
 const tab = ref<'call' | 'form'>('call');
 
-// Replace with your real Cal.com event link
-const calComUrl = 'https://cal.com/evolatec/15min?embed=true&theme=light&hideEventTypeDetails=false';
+// TODO: Replace with your real Cal.com event link once your account is set up.
+// Get one for free at https://cal.com — then update the URL below.
+const calComUrl = 'https://cal.com/evolatec/15min';
 
 const trustChips = [
-  'Kostenlos & unverbindlich',
-  'Antwort in 24 Stunden',
+  'Unverbindlich',
+  'Antwort in 24h',
   'DSGVO-konform',
-];
-
-const quickChannels = [
-  { icon: 'phone',  label: 'Telefon',  value: '+49 175 620 0862',  href: 'tel:+491756200862' },
-  { icon: 'chat',   label: 'WhatsApp', value: 'Schnelle Antwort',  href: 'https://wa.me/491756200862', external: true },
-  { icon: 'mail',   label: 'E-Mail',   value: 'team@evolatec.de',  href: 'mailto:team@evolatec.de' },
 ];
 
 const faqs = [
@@ -186,12 +183,12 @@ const faqs = [
   {
     question: 'Kann ich mit einem kleinen Budget starten?',
     answer:
-      'Ja. Landingpages starten ab 350€, Firmenwebsites ab 750€. Mit unserem Preis-Kalkulator erhalten Sie sofort eine Schätzung für Ihr Projekt.',
+      'Ja. Landingpages starten ab 350€, Firmenwebsites ab 750€. Mit unserem Preis-Kalkulator erhalten Sie sofort eine Schätzung.',
   },
   {
     question: 'Wann sind Sie erreichbar?',
     answer:
-      'Montag bis Freitag von 9–17 Uhr. Für Notfälle sind wir auch außerhalb dieser Zeiten erreichbar — schreiben Sie uns einfach eine WhatsApp-Nachricht.',
+      'Montag bis Freitag von 9–17 Uhr. Für dringende Anfragen schreiben Sie uns einfach auf WhatsApp — wir antworten meist innerhalb 1 Stunde.',
   },
 ];
 </script>
