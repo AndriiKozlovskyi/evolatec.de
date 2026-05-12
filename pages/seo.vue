@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="/main/seo.webp"
       badge="Professionelle SEO Agentur"
       title="Professionelle SEO Agentur: Mehr Sichtbarkeit & mehr Kunden durch Google"
       description="Moderne Suchmaschinenoptimierung für Unternehmen, die bei Google besser gefunden werden möchten. Mehr Rankings, mehr Traffic und mehr Anfragen."
@@ -26,7 +26,7 @@
     <FeaturesSection
       title="Was gute SEO für Ihr Unternehmen bewirkt"
       :features="features"
-      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      image-url="/web-development/seo.webp"
     />
 
     <!-- Benefits Section -->
@@ -115,21 +115,21 @@ const benefits = [
     title: 'Mehr Sichtbarkeit bei Google',
     description: 'Bessere Rankings bei relevanten Suchanfragen bringen Ihr Unternehmen genau dann vor Kunden, wenn sie suchen.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop',
+    image: '/main/seo.webp',
   },
   {
     icon: 'trending_up',
     title: 'Nachhaltig mehr Besucher',
     description: 'SEO liefert langfristig günstigen organischen Traffic ohne permanente Werbekosten.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/web-development/seo.webp',
   },
   {
     icon: 'person_add',
     title: 'Mehr qualifizierte Anfragen',
     description: 'Kunden die über Google kommen, haben hohe Kaufabsicht — bessere Leads als jeder andere Kanal.',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/landing/seo.webp',
   },
 ];
 

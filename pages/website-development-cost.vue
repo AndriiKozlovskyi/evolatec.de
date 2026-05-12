@@ -62,6 +62,7 @@
       title="Was beeinflusst die Kosten einer Website?"
       :features="priceFactors"
       image-url="/web-development-cost/features.webp"
+      image-alt="Faktoren die die Kosten einer Website beeinflussen – Design, Funktionen und SEO"
     />
 
     <!-- Landing Page Section -->

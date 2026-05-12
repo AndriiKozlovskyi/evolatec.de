@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection
-      background-image="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=600&fit=crop"
+      background-image="/main/seo.webp"
       badge="Professionelle Linkbuilding Agentur"
       title="Linkbuilding & Backlink Aufbau: Mehr Autorität für Ihre Website"
       description="Hochwertige Backlinks sind einer der wichtigsten Google Ranking Faktoren. Wir helfen Unternehmen, starke SEO Autorität aufzubauen und bessere Rankings zu erreichen."
@@ -18,7 +18,7 @@
     <FeaturesSection
       title="Unsere Linkbuilding Leistungen"
       :features="features"
-      image-url="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop"
+      image-url="/web-development/seo.webp"
     />
 
         <ProcessSection
@@ -72,21 +72,21 @@ const benefits = [
     title: 'Mehr Domain Autorität',
     description: 'Hochwertige Backlinks von relevanten und vertrauenswürdigen Websites stärken die Autorität Ihrer Domain dauerhaft.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/web-development/seo.webp',
   },
   {
     icon: 'trending_up',
     title: 'Bessere Google Rankings',
     description: 'Backlinks sind einer der stärksten Ranking-Faktoren. Mehr Autorität bedeutet bessere Positionen bei Google.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/main/seo.webp',
   },
   {
     icon: 'schedule',
     title: 'Langfristige Wirkung',
     description: 'Gute Backlinks wirken langfristig positiv und liefern kontinuierlich mehr organischen Traffic.',
     bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/landing/seo.webp',
   },
 ];
 

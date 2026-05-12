@@ -2,7 +2,7 @@
   <div>
     <!-- Hero -->
     <HeroSection
-      background-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=900&fit=crop"
+      background-image="/main/design.webp"
       badge="Professionelle Webdesign Agentur"
       title="Webdesign Agentur – Professionelles Webdesign von EvolaTec"
       description="EvolaTec entwickelt moderne Websites, starke Markenauftritte und conversionstarkes Webdesign für Unternehmen, Startups und lokale Firmen."
@@ -120,7 +120,7 @@
     <FeaturesSection
       title="Was professionelles Webdesign ausmacht."
       :features="features"
-      image-url="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&h=1100&fit=crop"
+      image-url="/web-development/design.webp"
     />
 
     <!-- Benefits -->
@@ -315,28 +315,28 @@ const benefits = [
     description: 'Professionelles Webdesign stärkt Ihre Marke.',
     icon: 'verified',
     bg: 'bg-gradient-to-br from-blue-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+    image: '/main/design.webp',
   },
   {
     title: 'Höhere Conversion',
     description: 'Moderne Websites generieren mehr Anfragen und Verkäufe.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/web-development/design.webp',
   },
   {
     title: 'Mobile Optimierung',
     description: 'Perfekte Darstellung auf allen Geräten.',
     icon: 'devices',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop',
+    image: '/web-development/responsive.webp',
   },
   {
     title: 'Starke Markenwirkung',
     description: 'Professionelle Designs bleiben im Gedächtnis.',
     icon: 'auto_awesome',
     bg: 'bg-gradient-to-br from-orange-500 to-rose-600',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/main/hero.webp',
   },
 ];
 

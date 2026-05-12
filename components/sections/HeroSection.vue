@@ -4,6 +4,9 @@
     <img
       :src="backgroundImage"
       alt=""
+      fetchpriority="high"
+      loading="eager"
+      decoding="async"
       class="absolute inset-0 w-full h-full object-cover"
     />
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection
-      background-image="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=600&fit=crop"
+      background-image="/main/seo.webp"
       badge="Local SEO Agentur"
       title="Lokales SEO: Werden Sie in Ihrer Region bei Google gefunden"
       description="Wir helfen Unternehmen, lokal bei Google sichtbar zu werden. Mehr regionale Kunden, bessere Google Maps Rankings und mehr Anfragen aus Ihrer Umgebung."
@@ -52,7 +52,7 @@
     <FeaturesSection
       title="Unsere Leistungen für lokales SEO"
       :features="features"
-      image-url="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
+      image-url="/web-development/seo.webp"
     />
 
     <PricingSection
@@ -103,21 +103,21 @@ const benefits = [
     title: 'Google Maps Präsenz',
     description: 'Optimierung Ihres Google Business Profils für bessere Platzierungen in Google Maps und der lokalen Suche.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=600&h=400&fit=crop',
+    image: '/main/seo.webp',
   },
   {
     icon: 'people',
     title: 'Mehr regionale Kunden',
     description: 'Sichtbarkeit bei lokalen Suchanfragen bringt qualifizierte Kunden direkt aus Ihrer Umgebung.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/landing/seo.webp',
   },
   {
     icon: 'star',
     title: 'Bewertungen & Vertrauen',
     description: 'Strategisches Bewertungsmanagement stärkt Ihr lokales Profil und das Vertrauen potenzieller Kunden.',
     bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
+    image: '/web-development/seo.webp',
   },
 ];
 

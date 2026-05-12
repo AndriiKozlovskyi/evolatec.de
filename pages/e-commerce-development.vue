@@ -304,28 +304,28 @@ const benefits = [
     description: 'Ihr professioneller Online Shop geht bereits ab 5 Arbeitstagen live.',
     icon: 'flash_on',
     bg: 'bg-gradient-to-br from-blue-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+    image: '/ecommerce/hero.webp',
   },
   {
     title: 'Höhere Conversion',
     description: 'Conversion-optimierte Shops generieren im Schnitt +340% mehr Bestellungen.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/ecommerce/features.webp',
   },
   {
     title: 'Technische Performance',
     description: 'Ladezeiten unter 1,2 Sekunden und 99,9% Uptime für Ihren Shop.',
     icon: 'speed',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    image: '/web-development-cost/tech.webp',
   },
   {
     title: 'Transparente Kosten',
     description: 'Klare Preise ohne versteckte Gebühren — von Anfang an ehrlich kalkuliert.',
     icon: 'price_check',
     bg: 'bg-gradient-to-br from-orange-500 to-rose-600',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop',
+    image: '/main/price.webp',
   },
 ];
 

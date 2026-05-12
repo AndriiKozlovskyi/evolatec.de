@@ -18,7 +18,7 @@
 
         <!-- Right Image -->
         <div class="relative min-h-[500px] rounded-xl overflow-hidden shadow-2xl">
-          <img :src="imageUrl" alt="Features visualization" class="absolute inset-0 w-full h-full object-cover" />
+          <img :src="imageUrl" :alt="imageAlt" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover" />
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+withDefaults(defineProps<{
   title: string;
   features: Array<{
     icon: string;
@@ -34,5 +34,8 @@ defineProps<{
     description: string;
   }>;
   imageUrl: string;
-}>();
+  imageAlt?: string;
+}>(), {
+  imageAlt: '',
+});
 </script>
