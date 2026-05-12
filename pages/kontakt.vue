@@ -38,60 +38,46 @@
         </div>
 
         <!-- TERMIN tab -->
-        <div v-if="tab === 'call'" class="bg-white rounded-2xl shadow-md border border-outline-variant/20 p-5 sm:p-7 animate-fade-in-up">
-          <p class="text-sm text-on-surface-variant mb-4 text-center">
-            Kostenloses 15-Min Erstgespräch — wählen Sie Ihren Weg:
-          </p>
+        <div v-show="tab === 'call'" class="bg-white rounded-2xl shadow-md border border-outline-variant/20 p-3 sm:p-4 animate-fade-in-up">
+          <!-- Cal.com inline widget -->
+          <div class="rounded-xl overflow-hidden border border-outline-variant/30 bg-surface-container-low">
+            <iframe
+              :src="calComEmbedUrl"
+              title="Termin buchen"
+              loading="lazy"
+              class="w-full h-[620px] sm:h-[680px] md:h-[720px] border-0 block"
+              allow="payment"
+            />
+          </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <a
-              :href="calComUrl"
-              target="_blank"
-              rel="noopener"
-              class="group flex items-center gap-3 bg-primary text-on-primary rounded-xl p-4 hover:shadow-lg transition-all duration-200 sm:col-span-2"
-            >
-              <div class="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined">event_available</span>
-              </div>
-              <div class="flex-1 min-w-0">
-                <p class="font-bold text-sm sm:text-base">Online-Termin auswählen</p>
-                <p class="text-xs text-white/75">Sofort verfügbare Zeitslots ansehen</p>
-              </div>
-              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </a>
-
+          <!-- Fallback contact channels under the widget -->
+          <div class="grid grid-cols-2 gap-2 mt-3">
             <a
               href="tel:+491756200862"
-              class="group flex items-center gap-3 bg-surface-container-low rounded-xl p-4 hover:bg-primary/5 hover:border-primary/40 border border-transparent transition-all duration-200"
+              class="group flex items-center gap-2 bg-surface-container-low rounded-lg p-3 hover:bg-primary/5 transition-colors"
             >
-              <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-primary">phone</span>
-              </div>
-              <div class="min-w-0">
-                <p class="text-xs uppercase tracking-wider text-on-surface-variant font-semibold">Anrufen</p>
-                <p class="text-sm font-bold text-on-surface truncate">+49 175 620 0862</p>
-              </div>
+              <span class="material-symbols-outlined text-primary text-lg">phone</span>
+              <span class="text-xs sm:text-sm font-semibold text-on-surface truncate">Anrufen</span>
             </a>
-
             <a
               href="https://wa.me/491756200862"
               target="_blank"
               rel="noopener"
-              class="group flex items-center gap-3 bg-surface-container-low rounded-xl p-4 hover:bg-primary/5 hover:border-primary/40 border border-transparent transition-all duration-200"
+              class="group flex items-center gap-2 bg-surface-container-low rounded-lg p-3 hover:bg-primary/5 transition-colors"
             >
-              <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-primary">chat</span>
-              </div>
-              <div class="min-w-0">
-                <p class="text-xs uppercase tracking-wider text-on-surface-variant font-semibold">WhatsApp</p>
-                <p class="text-sm font-bold text-on-surface">Antwort meist &lt; 1h</p>
-              </div>
+              <span class="material-symbols-outlined text-primary text-lg">chat</span>
+              <span class="text-xs sm:text-sm font-semibold text-on-surface">WhatsApp</span>
             </a>
           </div>
+
+          <p class="text-xs text-on-surface-variant/70 text-center mt-3">
+            Widget lädt nicht?
+            <a :href="calComUrl" target="_blank" rel="noopener" class="text-primary font-semibold hover:underline">In neuem Tab öffnen</a>
+          </p>
         </div>
 
         <!-- FORM tab -->
-        <div v-else class="bg-white rounded-2xl shadow-md border border-outline-variant/20 p-5 sm:p-7 animate-fade-in-up">
+        <div v-show="tab === 'form'" class="bg-white rounded-2xl shadow-md border border-outline-variant/20 p-5 sm:p-7 animate-fade-in-up">
           <ContactForm />
         </div>
       </div>
@@ -159,9 +145,8 @@ useHead({
 
 const tab = ref<'call' | 'form'>('call');
 
-// TODO: Replace with your real Cal.com event link once your account is set up.
-// Get one for free at https://cal.com — then update the URL below.
-const calComUrl = 'https://cal.com/evolatec/15min';
+const calComUrl = 'https://cal.eu/evolatec/15min';
+const calComEmbedUrl = 'https://cal.eu/evolatec/15min?embed=true&layout=month_view&theme=light&hideEventTypeDetails=false';
 
 const trustChips = [
   'Unverbindlich',

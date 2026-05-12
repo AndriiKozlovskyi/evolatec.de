@@ -49,17 +49,24 @@
       </select>
     </div>
 
-    <!-- Message -->
+    <!-- Message (optional) -->
     <div>
-      <label for="message" class="block text-sm font-bold text-on-surface mb-1.5">Nachricht *</label>
+      <label for="message" class="block text-sm font-bold text-on-surface mb-1.5">
+        Nachricht <span class="font-normal text-on-surface-variant">(optional)</span>
+      </label>
       <textarea
         id="message"
         v-model="form.message"
-        required
         placeholder="Erzählen Sie uns kurz von Ihrem Projekt..."
         rows="4"
         class="w-full px-4 py-2.5 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant resize-none text-sm"
       ></textarea>
+    </div>
+
+    <!-- Honeypot — hidden from real users, bots fill it -->
+    <div class="hidden" aria-hidden="true">
+      <label for="website">Website</label>
+      <input id="website" v-model="form.website" type="text" tabindex="-1" autocomplete="off" />
     </div>
 
     <!-- Privacy + Submit row -->
@@ -104,7 +111,7 @@
       class="p-3 bg-error/10 border border-error/30 rounded-lg text-error flex items-start gap-2 text-sm"
     >
       <span class="material-symbols-outlined text-lg flex-shrink-0">error</span>
-      <span>Etwas ist schiefgelaufen. Bitte erneut versuchen oder direkt schreiben.</span>
+      <span>{{ errorMessage }}</span>
     </div>
   </form>
 </template>
@@ -118,27 +125,33 @@ const form = ref({
   service: '',
   message: '',
   privacy: false,
+  website: '', // honeypot
 });
 
 const isSubmitting = ref(false);
 const submitSuccess = ref(false);
 const submitError = ref(false);
+const errorMessage = ref('');
 
 const handleSubmit = async () => {
   isSubmitting.value = true;
   submitSuccess.value = false;
   submitError.value = false;
+  errorMessage.value = '';
 
   try {
-    await new Promise(resolve => setTimeout(resolve, 1200));
-    console.log('Form submitted:', form.value);
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: form.value,
+    });
 
     submitSuccess.value = true;
-    form.value = { name: '', email: '', service: '', message: '', privacy: false };
+    form.value = { name: '', email: '', service: '', message: '', privacy: false, website: '' };
 
-    setTimeout(() => { submitSuccess.value = false; }, 5000);
-  } catch (error) {
+    setTimeout(() => { submitSuccess.value = false; }, 6000);
+  } catch (error: any) {
     submitError.value = true;
+    errorMessage.value = error?.data?.statusMessage || error?.statusMessage || 'Etwas ist schiefgelaufen. Bitte erneut versuchen oder direkt schreiben.';
     console.error('Form submission error:', error);
   } finally {
     isSubmitting.value = false;
