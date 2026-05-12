@@ -14,6 +14,21 @@
     <!-- Trust Section -->
     <TrustSection :companies="trustCompanies" />
 
+    <!-- SEO Services Navigation -->
+    <ServicesSection
+      title="Unsere SEO Leistungen"
+      subtitle="Wählen Sie die SEO Leistung, die zu Ihren Zielen passt."
+      variant="centered"
+      :services="seoServiceLinks"
+    />
+
+    <!-- Features Section -->
+    <FeaturesSection
+      title="Was gute SEO für Ihr Unternehmen bewirkt"
+      :features="features"
+      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+    />
+
     <!-- Benefits Section -->
     <BenefitsSection
       title="Warum professionelle SEO entscheidend ist"
@@ -24,21 +39,6 @@
     <ProcessSection
       title="So funktioniert unsere SEO Optimierung"
       :steps="processSteps"
-    />
-
-    <!-- Features Section -->
-    <FeaturesSection
-      title="Was gute SEO für Ihr Unternehmen bewirkt"
-      :features="features"
-      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
-    />
-
-    <!-- SEO Services Navigation -->
-    <ServicesSection
-      title="Unsere SEO Leistungen"
-      subtitle="Wählen Sie die SEO Leistung, die zu Ihren Zielen passt."
-      variant="centered"
-      :services="seoServiceLinks"
     />
 
     <!-- Pricing Section -->

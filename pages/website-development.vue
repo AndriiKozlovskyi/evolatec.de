@@ -114,43 +114,12 @@
       :services="developmentServices"
     />
 
-    <!-- Internal linking — sub-pages -->
-    <section class="relative py-section-padding overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary-container"></div>
-
-      <div class="relative max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-white/80 text-sm font-medium backdrop-blur-md mb-6">
-            <span class="material-symbols-outlined text-[18px]">hub</span>
-            Weitere Leistungen
-          </span>
-          <h2 class="font-headline-xl text-white mb-6">Weitere Leistungen im Bereich Webentwicklung</h2>
-          <p class="font-body-lg text-white/70">Entdecken Sie unsere spezialisierten Leistungen rund um Landingpages, E-Commerce und Website Preise.</p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8">
-          <NuxtLink
-            v-for="card in developmentLinks"
-            :key="card.to"
-            :to="card.to"
-            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 ambient-shadow"
-          >
-            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/10 to-transparent"></div>
-            <div class="relative w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
-              <span class="material-symbols-outlined text-white text-[32px]">{{ card.icon }}</span>
-            </div>
-            <div class="relative">
-              <h3 class="font-headline-md text-white mb-4">{{ card.title }}</h3>
-              <p class="font-body-md text-white/70 mb-6 leading-relaxed">{{ card.description }}</p>
-              <div class="flex items-center gap-2 text-white font-medium">
-                Mehr erfahren
-                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-              </div>
-            </div>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
+    <!-- Features -->
+    <FeaturesSection
+      title="Was eine professionelle Website enthalten sollte."
+      :features="features"
+      image-url="https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&h=1100&fit=crop"
+    />
 
     <!-- SEO content — expertise blocks with tags -->
     <section class="relative py-section-padding bg-surface-container-low overflow-hidden">
@@ -197,13 +166,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Features -->
-    <FeaturesSection
-      title="Was eine professionelle Website enthalten sollte."
-      :features="features"
-      image-url="https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&h=1100&fit=crop"
-    />
 
     <!-- Why us -->
     <BenefitsSection title="Warum EvolaTec als Webagentur?" :benefits="benefits" />
@@ -280,20 +242,22 @@ const developmentServices = [
     borderColor: 'border-blue-500',
   },
   {
-    title: 'Unternehmenswebsite entwickeln',
-    description: 'Moderne Unternehmenswebsites mit professionellem Markenauftritt und hoher Performance.',
-    icon: 'business',
+    title: 'Landingpage Entwicklung',
+    description: 'Conversionstarke Landingpages für Werbekampagnen, Leadgenerierung und digitale Produkte.',
+    icon: 'flag',
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
     borderColor: 'border-emerald-500',
+    href: '/landing-development',
   },
   {
-    title: 'Website programmieren lassen',
-    description: 'Individuelle Webentwicklung für moderne Plattformen, Webapps und digitale Produkte.',
-    icon: 'code',
+    title: 'E-Commerce Entwicklung',
+    description: 'Professionelle Onlineshops und moderne E-Commerce Plattformen für Unternehmen.',
+    icon: 'shopping_cart',
     iconBg: 'bg-purple-100',
     iconColor: 'text-purple-600',
     borderColor: 'border-purple-500',
+    href: '/e-commerce-development',
   },
   {
     title: 'Responsive Webentwicklung',
@@ -312,33 +276,13 @@ const developmentServices = [
     borderColor: 'border-rose-500',
   },
   {
-    title: 'Online Shop Entwicklung',
-    description: 'Professionelle E-Commerce Lösungen und moderne Onlineshops für digitale Verkäufe.',
-    icon: 'shopping_cart',
+    title: 'Preise & Kosten',
+    description: 'Transparente Preise für professionelle Websites, Firmenhomepages und Webentwicklung.',
+    icon: 'payments',
     iconBg: 'bg-cyan-100',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-500',
-  },
-];
-
-const developmentLinks = [
-  {
-    to: '/landing-development',
-    icon: 'flag',
-    title: 'Landingpage Entwicklung',
-    description: 'Conversionstarke Landingpages für Werbekampagnen, Leadgenerierung und digitale Produkte.',
-  },
-  {
-    to: '/e-commerce-development',
-    icon: 'shopping_cart',
-    title: 'E-Commerce Entwicklung',
-    description: 'Professionelle Onlineshops und moderne E-Commerce Plattformen für Unternehmen.',
-  },
-  {
-    to: '/website-development-cost',
-    icon: 'payments',
-    title: 'Website Preise & Kosten',
-    description: 'Transparente Preise für professionelle Websites, Firmenhomepages und Webentwicklung.',
+    href: '/website-development-cost',
   },
 ];
 

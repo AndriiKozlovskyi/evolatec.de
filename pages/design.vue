@@ -116,43 +116,12 @@
     <!-- Services -->
     <ServicesSection title="Unsere Webdesign Leistungen" variant="centered" :services="designServices" />
 
-    <!-- Internal linking — design sub-pages -->
-    <section class="relative py-section-padding overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary-container"></div>
-
-      <div class="relative max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-white/80 text-sm font-medium backdrop-blur-md mb-6">
-            <span class="material-symbols-outlined text-[18px]">hub</span>
-            Design Leistungen
-          </span>
-          <h2 class="font-headline-xl text-white mb-6">Design Lösungen für moderne Unternehmen</h2>
-          <p class="font-body-lg text-white/70">Entdecken Sie unsere spezialisierten Leistungen rund um Content Design, UI/UX und Branding.</p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8">
-          <NuxtLink
-            v-for="card in designLinks"
-            :key="card.to"
-            :to="card.to"
-            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10 ambient-shadow"
-          >
-            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-white/10 to-transparent"></div>
-            <div class="relative w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
-              <span class="material-symbols-outlined text-white text-[32px]">{{ card.icon }}</span>
-            </div>
-            <div class="relative">
-              <h3 class="font-headline-md text-white mb-4">{{ card.title }}</h3>
-              <p class="font-body-md text-white/70 mb-6 leading-relaxed">{{ card.description }}</p>
-              <div class="flex items-center gap-2 text-white font-medium">
-                Mehr erfahren
-                <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-              </div>
-            </div>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
+    <!-- Features -->
+    <FeaturesSection
+      title="Was professionelles Webdesign ausmacht."
+      :features="features"
+      image-url="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&h=1100&fit=crop"
+    />
 
     <!-- Benefits -->
     <BenefitsSection title="Warum professionelles Webdesign wichtig ist" :benefits="benefits" />
@@ -208,13 +177,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Features -->
-    <FeaturesSection
-      title="Was professionelles Webdesign ausmacht."
-      :features="features"
-      image-url="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&h=1100&fit=crop"
-    />
 
     <!-- FAQ -->
     <FAQSection title="Häufig gestellte Fragen" :faqs="faqs" />
@@ -295,41 +257,44 @@ const heroStats = [
 
 const designServices = [
   {
-    title: 'Professionelles Webdesign',
-    description: 'Moderne Websites mit starkem Markenauftritt und hoher Conversion.',
-    icon: 'language',
+    title: 'Content & Copywriting',
+    description: 'Professionelle Inhalte, strukturierte Texte und conversionstarke Content Strategien.',
+    icon: 'edit_square',
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',
     borderColor: 'border-blue-500',
+    href: '/design-content',
   },
   {
-    title: 'Responsive Webdesign',
-    description: 'Optimierte Websites für Smartphones, Tablets und Desktop.',
-    icon: 'devices',
+    title: 'UI/UX Design',
+    description: 'Intuitive Interfaces und moderne Nutzererlebnisse für digitale Produkte.',
+    icon: 'design_services',
+    iconBg: 'bg-purple-100',
+    iconColor: 'text-purple-600',
+    borderColor: 'border-purple-500',
+    href: '/design-ui-ux',
+  },
+  {
+    title: 'Branding & Corporate Design',
+    description: 'Professionelle Markenidentitäten und Corporate Designs für Unternehmen.',
+    icon: 'brand_awareness',
+    iconBg: 'bg-orange-100',
+    iconColor: 'text-orange-600',
+    borderColor: 'border-orange-500',
+    href: '/design-branding',
+  },
+  {
+    title: 'Professionelles Webdesign',
+    description: 'Moderne Websites mit starkem Markenauftritt und hoher Conversion.',
+    icon: 'language',
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
     borderColor: 'border-emerald-500',
   },
   {
-    title: 'UI/UX Design',
-    description: 'Intuitive Interfaces und moderne Nutzererlebnisse.',
-    icon: 'design_services',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-    borderColor: 'border-purple-500',
-  },
-  {
-    title: 'Branding',
-    description: 'Professionelle Markenidentitäten und Corporate Designs.',
-    icon: 'brand_awareness',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange-600',
-    borderColor: 'border-orange-500',
-  },
-  {
-    title: 'Landingpages',
-    description: 'Conversionoptimierte Landingpages für mehr Leads.',
-    icon: 'ads_click',
+    title: 'Responsive Webdesign',
+    description: 'Optimierte Websites für Smartphones, Tablets und Desktop.',
+    icon: 'devices',
     iconBg: 'bg-rose-100',
     iconColor: 'text-rose-600',
     borderColor: 'border-rose-500',
@@ -341,27 +306,6 @@ const designServices = [
     iconBg: 'bg-cyan-100',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-500',
-  },
-];
-
-const designLinks = [
-  {
-    to: '/design-content',
-    icon: 'edit_square',
-    title: 'Content Design',
-    description: 'Professionelle Inhalte, strukturierte Webseiten und conversionstarke Content Strategien für Unternehmen.',
-  },
-  {
-    to: '/design-ui-ux',
-    icon: 'design_services',
-    title: 'UI/UX Design',
-    description: 'Moderne Interfaces, intuitive Nutzererlebnisse und conversionoptimiertes Design für digitale Produkte.',
-  },
-  {
-    to: '/design-branding',
-    icon: 'brand_awareness',
-    title: 'Branding & Markenauftritt',
-    description: 'Professionelles Branding, Corporate Design und starke visuelle Identitäten für moderne Unternehmen.',
   },
 ];
 
