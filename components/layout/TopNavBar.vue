@@ -60,8 +60,8 @@
               v-if="isLinkActive(link)"
               class="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full"
             />
-            <span class="material-symbols-outlined text-[17px] leading-none">{{ link.icon }}</span>
-            <span class="hidden lg:inline text-xs">{{ link.label }}</span>
+            <span class="material-symbols-outlined text-[0.5rem] leading-none">{{ link.icon }}</span>
+            <span class="hidden lg:inline text-[0.7rem]">{{ link.label }}</span>
             <span v-if="link.submenu" class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">
               expand_more
             </span>
@@ -199,35 +199,33 @@ const navLinks = [
   {
     id: 2,
     label: 'Website-Erstellung',
-    href: '#',
+    href: '/website-development',
     isActive: true,
     icon: 'language',
     submenu: [
       { id: 2.1, label: 'E-Commerce Entwicklung', href: '/e-commerce-development' },
       { id: 2.2, label: 'Landingpage', href: '/landing-development' },
-      { id: 2.3, label: 'Firmenwebsite', href: '/website-development' },
-      { id: 2.4, label: 'Kosten & Preise', href: '/website-development-cost' },
+      { id: 2.3, label: 'Kosten & Preise', href: '/website-development-cost' },
     ],
   },
   {
     id: 3,
     label: 'SEO',
-    href: '#',
+    href: '/seo',
     isActive: false,
     icon: 'search_insights',
     submenu: [
-      { id: 3.1, label: 'SEO Strategie', href: '/seo' },
-      { id: 3.2, label: 'SEO Optimierung', href: '/seo-optimization' },
-      { id: 3.3, label: 'Local SEO', href: '/seo-local' },
-      { id: 3.4, label: 'Linkbuilding', href: '/seo-link-building' },
-      { id: 3.5, label: 'SEO Audit & Analyse', href: '/seo-audit' },
-    { id: 3.6, label: 'SEO Preise & Kosten', href: '/seo-pricing' },
+      { id: 3.1, label: 'SEO Optimierung', href: '/seo-optimization' },
+      { id: 3.2, label: 'Local SEO', href: '/seo-local' },
+      { id: 3.3, label: 'Linkbuilding', href: '/seo-link-building' },
+      { id: 3.4, label: 'SEO Audit & Analyse', href: '/seo-audit' },
+    { id: 3.5, label: 'SEO Preise & Kosten', href: '/seo-pricing' },
     ],
   },
   {
     id: 4,
     label: 'Design & Content',
-    href: '#',
+    href: '/design',
     isActive: false,
     icon: 'edit_document',
     submenu: [
@@ -239,13 +237,12 @@ const navLinks = [
   {
     id: 5,
     label: 'Marketing',
-    href: '#',
+    href: '/marketing',
     isActive: false,
     icon: 'campaign',
     submenu: [
-      { id: 5.1, label: 'Online Marketing', href: '/marketing' },
-      { id: 5.2, label: 'Google Ads', href: '/marketing-google-ads' },
-      { id: 5.3, label: 'Social Media', href: '/marketing-social-media' },
+      { id: 5.1, label: 'Google Ads', href: '/marketing-google-ads' },
+      { id: 5.2, label: 'Social Media', href: '/marketing-social-media' },
     ],
   },
   { id: 6, label: 'Preise Kalkulator', href: '/pricing', isActive: false, icon: 'price_check' },
