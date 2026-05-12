@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop"
+      background-image="/landing/advertising.webp"
       badge="Transparente Preise"
       title="Website erstellen lassen Kosten & Preise"
       description="Transparente Preise für Landingpages, Firmenwebsites und Online Shops. Professionelle Webentwicklung ohne versteckte Kosten."
@@ -61,7 +61,7 @@
     <FeaturesSection
       title="Was beeinflusst die Kosten einer Website?"
       :features="priceFactors"
-      image-url="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop"
+      image-url="/web-development-cost/features.webp"
     />
 
     <!-- Landing Page Section -->
@@ -274,21 +274,21 @@ const whyUs = [
     title: 'Transparente Preise',
     description: 'Klare Angebote ohne versteckte Kosten.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/web-development-cost/price.webp',
   },
   {
     icon: 'trending_up',
     title: 'Fokus auf Ergebnisse',
     description: 'Websites, die Kunden gewinnen und Umsatz steigern.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/landing/leads.webp',
   },
   {
     icon: 'rocket_launch',
     title: 'Moderne Technologien',
     description: 'Schnelle, SEO-optimierte und responsive Websites.',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/web-development-cost/tech.webp',
   },
 ];
 

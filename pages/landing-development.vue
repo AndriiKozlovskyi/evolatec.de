@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAh03EyFGK2bdSQ9TK0_P731mUGV00H3wsr1JN7GYZYjRXlkmVAOiEG9uxoVddUSoU9z6HU7XFxafYD3jUtwzjTySK4jX03fbvmRah_O7bWiyHEBftgLmnkPe1i17B8S2qYm24qRpSBb4s6TPn79TAcPIhWg8AwNGY0LbF4u2tdaFG2x15WICGtqyUNIlHeFhwbj4v4KLzcNsOMXfO12Ct72DXLmTLHb8N5HE7nosAtb1GVjVI7Go8xoYaMN00CoxTmRnbSMXvaFUnd"
+      background-image="/ecommerce/hero.webp"
       badge="Conversion-orientierte Landingpages"
       title="Landingpage & One-Pager erstellen lassen – schnell & conversion-stark"
       description="Professionelle Landingpages für Werbung, Leadgenerierung und digitale Kampagnen. Optimiert für Conversions, Geschwindigkeit und SEO."
@@ -21,7 +21,7 @@
     <FeaturesSection
       title="Was eine erfolgreiche Landingpage enthalten sollte."
       :features="features"
-      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuCGXPpstFnvNOLu1iW8eXACK2oCXjXGpmpAhmP85bhKf2YIRTo7H0LcK2iFLWNS8Gk3rz7lvZz9BoANJNhYnR0iq9ecT2OtD88l0sRffXqqAeW1ES__lU1iEE0f9UXRQ0hyqT_6oey2eofxvRJ52TIeZw0-9y9L0mGWS-eja22ypOMS96VyPxNVl9CDWyDxjQtIkU2UpKjDsKhAOEdM7aABCaAVuCLMZupFk2lffKW5TGmGxxM6_r1l1NyMVgqoSVn0pfZaKHFzQIcz"
+      image-url="/ecommerce/features.webp"
     />
 
     <!-- Process Section -->
@@ -105,21 +105,21 @@ const benefits = [
     title: 'Mehr Leads & Anfragen',
     description: 'Landingpages fokussieren Besucher auf eine einzige Aktion.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/landing/leads.webp',
   },
   {
     icon: 'ads_click',
     title: 'Ideal für Werbung',
     description: 'Perfekt für Google Ads, Meta Ads und Marketingkampagnen.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    image: '/landing/advertising.webp',
   },
   {
     icon: 'speed',
     title: 'Schnell online',
     description: 'Professionelle One-Pager innerhalb weniger Tage.',
     bg: 'bg-gradient-to-br from-orange-500 to-amber-600',
-    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop',
+    image: '/landing/fast.webp',
   },
 ];
 

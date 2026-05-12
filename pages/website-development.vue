@@ -2,7 +2,7 @@
   <div>
     <!-- Hero -->
     <HeroSection
-      background-image="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&h=900&fit=crop"
+      background-image="/web-development/hero.webp"
       badge="Professionelle Webentwicklung Agentur"
       title="Professionelle Website erstellen lassen | EvolaTec Agentur"
       description="Homepage erstellen lassen – Ihre professionelle Webagentur für moderne Unternehmenswebsites, Landingpages, Firmenwebsites und leistungsstarke digitale Lösungen."
@@ -118,7 +118,7 @@
     <FeaturesSection
       title="Was eine professionelle Website enthalten sollte."
       :features="features"
-      image-url="https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&h=1100&fit=crop"
+      image-url="/web-development/features.webp"
     />
 
     <!-- SEO content — expertise blocks with tags -->
@@ -317,28 +317,28 @@ const benefits = [
     description: 'Professionelle Benutzeroberflächen und moderne digitale Designs für Ihre Marke.',
     icon: 'design_services',
     bg: 'bg-gradient-to-br from-blue-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop',
+    image: '/web-development/design.webp',
   },
   {
     title: 'Responsive Entwicklung',
     description: 'Optimierte Darstellung auf Smartphones, Tablets und Desktop-Geräten.',
     icon: 'devices',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop',
+    image: '/web-development/responsive.webp',
   },
   {
     title: 'SEO Optimierung',
     description: 'Technische SEO Grundlagen und schnelle Ladezeiten für bessere Sichtbarkeit bei Google.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/web-development/seo.webp',
   },
   {
     title: 'Individuelle Entwicklung',
     description: 'Maßgeschneiderte Lösungen für Unternehmen, Startups und digitale Plattformen.',
     icon: 'tune',
     bg: 'bg-gradient-to-br from-orange-500 to-rose-600',
-    image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&h=400&fit=crop',
+    image: '/web-development/develop.webp',
   },
 ];
 
