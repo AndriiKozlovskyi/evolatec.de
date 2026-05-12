@@ -1,178 +1,197 @@
 <template>
   <div>
-    <!-- Hero Section -->
-    <!-- Contact Section -->
-    <section class="py-8 md:py-section-padding bg-white">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-stack-lg">
-          <!-- Contact Information -->
-          <div class="lg:col-span-1 order-2 lg:order-1">
-            <div class="space-y-4 md:space-y-stack-md">
-              <!-- Email -->
-              <div class="group">
-                <h3 class="text-base sm:text-headline-md font-bold text-on-surface mb-2 sm:mb-4 flex items-center gap-3">
-                  <span class="material-symbols-outlined text-lg sm:text-2xl text-primary">mail</span>
-                  E-Mail
-                </h3>
-                <a
-                  href="mailto:team@evolatec.de"
-                  class="text-sm sm:text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200"
-                >
-                  team@evolatec.de
-                </a>
-              </div>
+    <!-- Hero -->
+    <section class="relative bg-gradient-to-br from-primary via-primary to-primary-container text-on-primary overflow-hidden">
+      <!-- soft glow -->
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
 
-              <!-- Phone -->
-              <div class="group">
-                <h3 class="text-base sm:text-headline-md font-bold text-on-surface mb-2 sm:mb-4 flex items-center gap-3">
-                  <span class="material-symbols-outlined text-lg sm:text-2xl text-primary">phone</span>
-                  Telefon
-                </h3>
-                <a
-                  href="tel:+49123456789"
-                  class="text-sm sm:text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200 break-all"
-                >
-                  +49 (0) 123 456789
-                </a>
-              </div>
+      <div class="relative max-w-container-max mx-auto px-gutter pt-10 pb-14 md:pt-20 md:pb-24 text-center">
+        <span class="inline-block text-xs font-bold uppercase tracking-[0.25em] text-white/70 mb-4">Kontakt</span>
+        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-5">
+          Kostenlose Erstberatung
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+          Erzählen Sie uns kurz von Ihrem Projekt — wir melden uns
+          <span class="text-white font-semibold">innerhalb von 24 Stunden</span>
+          mit einem unverbindlichen Angebot.
+        </p>
 
-              <!-- Location -->
-              <div class="group">
-                <h3 class="text-base sm:text-headline-md font-bold text-on-surface mb-2 sm:mb-4 flex items-center gap-3">
-                  <span class="material-symbols-outlined text-lg sm:text-2xl text-primary">location_on</span>
-                  Büro
-                </h3>
-                <p class="text-sm sm:text-body-md text-on-surface-variant">
-                  Deutschland
-                  <br />
-                  Remote Support weltweit
-                </p>
-              </div>
-
-              <!-- Response Time -->
-              <div class="mt-4 sm:mt-8 p-4 sm:p-6 bg-primary/5 rounded-lg sm:rounded-xl border border-primary/10">
-                <div class="flex items-center gap-3 mb-2">
-                  <span class="material-symbols-outlined text-primary text-lg sm:text-xl">schedule</span>
-                  <h4 class="font-bold text-sm sm:text-base text-on-surface">Antwortzeit</h4>
-                </div>
-                <p class="text-sm sm:text-body-md text-on-surface-variant">
-                  Innerhalb von 24 Stunden
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="lg:col-span-2 order-1 lg:order-2">
-            <div class="bg-surface-container-low rounded-lg sm:rounded-2xl p-6 sm:p-8 md:p-12">
-              <h2 class="text-xl sm:text-headline-lg font-bold text-on-surface mb-1 sm:mb-2">Schreiben Sie uns</h2>
-              <p class="text-sm sm:text-body-md text-on-surface-variant mb-6 md:mb-stack-lg">
-                Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.
-              </p>
-
-              <ContactForm />
-            </div>
-          </div>
+        <!-- Trust chips -->
+        <div class="flex flex-wrap gap-2 sm:gap-3 justify-center mt-7">
+          <span v-for="chip in trustChips" :key="chip" class="inline-flex items-center gap-1.5 bg-white/10 border border-white/15 rounded-full px-3 py-1.5 text-xs sm:text-sm font-medium">
+            <span class="material-symbols-outlined text-base">check</span>
+            {{ chip }}
+          </span>
         </div>
       </div>
     </section>
 
-    <!-- Why Contact Section -->
-    <section class="py-8 md:py-section-padding bg-gradient-to-r from-primary/90 via-primary to-primary/90 text-on-primary relative overflow-hidden">
-      <!-- Background decoration - hidden on mobile -->
-      <div class="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute -top-40 -right-40 w-80 h-80 bg-on-primary-container/10 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-on-primary-container/10 rounded-full blur-3xl"></div>
-      </div>
+    <!-- Two paths -->
+    <section class="bg-surface py-10 md:py-section-padding">
+      <div class="max-w-3xl mx-auto px-gutter">
+        <!-- Tab switcher -->
+        <div class="flex bg-surface-container-low rounded-full p-1.5 mb-8 max-w-md mx-auto shadow-inner">
+          <button
+            @click="tab = 'call'"
+            :class="[
+              'flex-1 py-3 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
+              tab === 'call' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
+            ]"
+          >
+            <span class="material-symbols-outlined text-lg">event</span>
+            Termin buchen
+          </button>
+          <button
+            @click="tab = 'form'"
+            :class="[
+              'flex-1 py-3 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
+              tab === 'form' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
+            ]"
+          >
+            <span class="material-symbols-outlined text-lg">mail</span>
+            Anfrage schreiben
+          </button>
+        </div>
 
-      <div class="relative z-10 max-w-container-max mx-auto px-gutter">
-        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-center mb-6 md:mb-stack-lg leading-tight">Warum mit EvolaTec arbeiten?</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-          <div v-for="(benefit, index) in benefits" :key="index" class="text-center animate-fade-in-up" :style="{ animationDelay: `${index * 100}ms` }">
-            <div class="inline-flex items-center justify-center w-12 sm:w-16 h-12 sm:h-16 rounded-full bg-on-primary-container/20 mb-3 sm:mb-6">
-              <span class="material-symbols-outlined text-lg sm:text-2xl">{{ benefit.icon }}</span>
-            </div>
-            <h3 class="text-base sm:text-headline-md font-bold mb-2 sm:mb-3">{{ benefit.title }}</h3>
-            <p class="text-on-primary-container leading-relaxed text-sm sm:text-base">{{ benefit.description }}</p>
+        <!-- Call booking panel -->
+        <div v-if="tab === 'call'" class="bg-white rounded-2xl shadow-lg border border-outline-variant/20 p-6 sm:p-8 md:p-10 animate-fade-in-up">
+          <div class="text-center mb-6">
+            <h2 class="font-display text-2xl sm:text-3xl font-black text-on-surface mb-2">
+              15-Min Strategiegespräch
+            </h2>
+            <p class="text-sm sm:text-base text-on-surface-variant max-w-md mx-auto">
+              Unverbindliches Gespräch per Video oder Telefon. Wir besprechen Ihre Ziele und mögliche Lösungen.
+            </p>
           </div>
+
+          <!-- Cal.com inline embed -->
+          <div class="rounded-xl overflow-hidden border border-outline-variant/30 bg-surface-container-low">
+            <iframe
+              :src="calComUrl"
+              loading="lazy"
+              title="Termin buchen"
+              class="w-full h-[640px] md:h-[700px] border-0"
+            />
+          </div>
+
+          <p class="text-xs text-on-surface-variant/70 text-center mt-4">
+            Lieber direkt sprechen?
+            <a href="tel:+491756200862" class="text-primary font-semibold hover:underline">+49 175 620 0862</a>
+            ·
+            <a href="https://wa.me/491756200862" target="_blank" rel="noopener" class="text-primary font-semibold hover:underline">WhatsApp</a>
+          </p>
+        </div>
+
+        <!-- Form panel -->
+        <div v-else class="bg-white rounded-2xl shadow-lg border border-outline-variant/20 p-6 sm:p-8 md:p-10 animate-fade-in-up">
+          <div class="text-center mb-6">
+            <h2 class="font-display text-2xl sm:text-3xl font-black text-on-surface mb-2">
+              Schreiben Sie uns
+            </h2>
+            <p class="text-sm sm:text-base text-on-surface-variant max-w-md mx-auto">
+              Füllen Sie das Formular aus — wir antworten innerhalb von 24 Stunden.
+            </p>
+          </div>
+
+          <ContactForm />
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <FAQSection
-      title="Häufig gestellte Fragen"
-      :faqs="faqs"
-    />
+    <!-- Quick contact + price calc link -->
+    <section class="bg-surface-container-low py-10 md:py-16 border-t border-outline-variant/30">
+      <div class="max-w-4xl mx-auto px-gutter">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          <a
+            v-for="channel in quickChannels"
+            :key="channel.label"
+            :href="channel.href"
+            :target="channel.external ? '_blank' : undefined"
+            :rel="channel.external ? 'noopener' : undefined"
+            class="group flex items-center gap-4 bg-white rounded-xl p-4 sm:p-5 border border-outline-variant/30 hover:border-primary/50 hover:shadow-md transition-all duration-200"
+          >
+            <div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+              <span class="material-symbols-outlined text-primary">{{ channel.icon }}</span>
+            </div>
+            <div class="min-w-0">
+              <p class="text-xs uppercase tracking-wider text-on-surface-variant font-semibold">{{ channel.label }}</p>
+              <p class="text-sm sm:text-base font-bold text-on-surface truncate">{{ channel.value }}</p>
+            </div>
+          </a>
+        </div>
 
-    <!-- CTA Section -->
-    <CTASection
-      title="Bereit für Ihr Website-Projekt?"
-      description="Lassen Sie uns gemeinsam Ihre Website zum Erfolg machen."
-      primary-cta="Jetzt anfragen"
-      secondary-cta="Preise ansehen"
-    />
+        <!-- Price calculator link -->
+        <a
+          href="/pricing"
+          class="mt-6 flex items-center justify-between gap-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl p-4 sm:p-5 hover:shadow-lg transition-shadow duration-200 group"
+        >
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="w-11 h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined">calculate</span>
+            </div>
+            <div class="min-w-0">
+              <p class="text-xs uppercase tracking-wider text-white/70 font-semibold">Schnell-Check</p>
+              <p class="text-sm sm:text-base font-bold">Berechnen Sie sofort Ihren Preis</p>
+            </div>
+          </div>
+          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <FAQSection title="Häufig gestellte Fragen" :faqs="faqs" />
   </div>
 </template>
 
 <script setup lang="ts">
-const heroStats = [
-  { value: '24h', label: 'Antwortzeit', icon: 'schedule' },
-  { value: '100%', label: 'Kundenzufriedenheit', icon: 'sentiment_satisfied' },
-  { value: '50+', label: 'Projekte', icon: 'check_circle' },
-  { value: 'Deutschland', label: 'Servicegebiet', icon: 'public' },
+import { ref } from 'vue';
+
+useHead({
+  title: 'Kontakt – Kostenlose Erstberatung | EvolaTec',
+  meta: [
+    { name: 'description', content: 'Kostenlose Erstberatung für Ihre Website oder Online Shop. Termin buchen oder Anfrage schreiben — Antwort innerhalb von 24 Stunden.' },
+  ],
+});
+
+const tab = ref<'call' | 'form'>('call');
+
+// Replace with your real Cal.com event link
+const calComUrl = 'https://cal.com/evolatec/15min?embed=true&theme=light&hideEventTypeDetails=false';
+
+const trustChips = [
+  'Kostenlos & unverbindlich',
+  'Antwort in 24 Stunden',
+  'DSGVO-konform',
 ];
 
-const benefits = [
-  {
-    icon: 'headset_mic',
-    title: 'Persönliche Betreuung',
-    description: 'Jedes Projekt wird von einem dedizierten Team betreut. Ihre Fragen sind uns wichtig.',
-  },
-  {
-    icon: 'schedule',
-    title: 'Schnelle Umsetzung',
-    description: 'Wir arbeiten effizient und halten uns an vereinbarte Deadlines. Ab 3 Tagen sind Sie online.',
-  },
-  {
-    icon: 'verified',
-    title: 'Transparente Kommunikation',
-    description: 'Klare Preise, regelmäßige Updates und offene Diskussionen über Ihre Ziele.',
-  },
+const quickChannels = [
+  { icon: 'phone',  label: 'Telefon',  value: '+49 175 620 0862',  href: 'tel:+491756200862' },
+  { icon: 'chat',   label: 'WhatsApp', value: 'Schnelle Antwort',  href: 'https://wa.me/491756200862', external: true },
+  { icon: 'mail',   label: 'E-Mail',   value: 'team@evolatec.de',  href: 'mailto:team@evolatec.de' },
 ];
 
 const faqs = [
   {
-    question: 'Wie schnell erhalte ich ein Angebot?',
+    question: 'Was passiert nach meiner Anfrage?',
     answer:
-      'Nach Ihrem Kontakt prüfen wir Ihre Anfrage und erstellen Ihnen innerhalb von 24 Stunden ein maßgeschneidertes Angebot.',
+      'Wir prüfen Ihre Anfrage und melden uns innerhalb von 24 Stunden mit einem unverbindlichen Angebot oder Terminvorschlägen für ein Erstgespräch.',
+  },
+  {
+    question: 'Ist die Erstberatung wirklich kostenlos?',
+    answer:
+      'Ja. Das 15-minütige Erstgespräch und das daraus resultierende Angebot sind komplett kostenlos und unverbindlich.',
   },
   {
     question: 'Kann ich mit einem kleinen Budget starten?',
     answer:
-      'Ja, absolut. Unsere Leistungen starten ab 350€ für Landingpages. Wir haben flexible Pakete für jedes Budget.',
+      'Ja. Landingpages starten ab 350€, Firmenwebsites ab 750€. Mit unserem Preis-Kalkulator erhalten Sie sofort eine Schätzung für Ihr Projekt.',
   },
   {
-    question: 'Welche Zahlungsarten akzeptieren Sie?',
+    question: 'Wann sind Sie erreichbar?',
     answer:
-      'Wir akzeptieren Banküberweisung, Kreditkarte und PayPal. Gerne besprechen wir flexible Zahlungspläne.',
-  },
-  {
-    question: 'Kann ich mit Ihnen zu jeder Tageszeit kommunizieren?',
-    answer:
-      'Montag bis Freitag von 9-17 Uhr. Für Notfälle können wir flexible Zeiten vereinbaren. Emails beantworten wir auch außerhalb dieser Zeiten.',
-  },
-  {
-    question: 'Erhalte ich nach dem Launch Support?',
-    answer:
-      'Ja. Im Preis ist grundlegender Support enthalten. Erweiterten Support und Wartung können Sie optional hinzubuchen.',
-  },
-  {
-    question: 'Wie kann ich meine Website später ändern?',
-    answer:
-      'Sie erhalten Zugang zu einem benutzerfreundlichen Content-Management-System (CMS). Gerne unterstützen wir Sie auch bei Änderungen.',
+      'Montag bis Freitag von 9–17 Uhr. Für Notfälle sind wir auch außerhalb dieser Zeiten erreichbar — schreiben Sie uns einfach eine WhatsApp-Nachricht.',
   },
 ];
 </script>
-
