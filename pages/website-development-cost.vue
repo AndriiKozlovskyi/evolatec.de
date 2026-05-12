@@ -177,6 +177,18 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Website Kosten & Preise 2024 | Webagentur EvolaTec',
+  meta: [
+    { name: 'description', content: 'Was kostet eine professionelle Website? Transparente Preise für Unternehmenswebsites, Landingpages und Onlineshops. Jetzt Kosten vergleichen.' },
+    { name: 'keywords', content: 'website kosten, website preise, homepage erstellen lassen kosten, webagentur preise, website erstellen kosten 2024' },
+    { property: 'og:title', content: 'Website Kosten & Preise | EvolaTec Webagentur' },
+    { property: 'og:description', content: 'Transparente Preise für professionelle Websites, Landingpages und Onlineshops.' },
+    { property: 'og:type', content: 'website' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/website-development-cost' }],
+});
+
 const heroStats = [
   { value: 'ab 350€', label: 'Landingpage', icon: 'trending_up' },
   { value: 'ab 750€', label: 'Website', icon: 'language' },

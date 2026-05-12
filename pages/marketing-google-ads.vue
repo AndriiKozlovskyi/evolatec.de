@@ -157,6 +157,18 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Google Ads Agentur – Google Werbung schalten lassen | EvolaTec',
+  meta: [
+    { name: 'description', content: 'Professionelle Google Ads Kampagnen von EvolaTec. Search, Display & Shopping Ads für mehr Klicks, Leads und messbare Ergebnisse.' },
+    { name: 'keywords', content: 'google ads agentur, google werbung schalten lassen, google adwords agentur, google ads kampagne, ppc agentur' },
+    { property: 'og:title', content: 'Google Ads Agentur | EvolaTec' },
+    { property: 'og:description', content: 'Professionelle Google Ads Kampagnen für mehr Sichtbarkeit und messbare Ergebnisse.' },
+    { property: 'og:type', content: 'website' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-google-ads' }],
+});
+
 const adsStats = [
   { value: 'Sofort', label: 'Sichtbar', icon: 'visibility' },
   { value: 'Mehr Leads', label: 'Generierung', icon: 'person_add' },

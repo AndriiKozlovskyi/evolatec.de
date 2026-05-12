@@ -223,6 +223,18 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Social Media Marketing Agentur | Instagram & Facebook Ads | EvolaTec',
+  meta: [
+    { name: 'description', content: 'Professionelles Social Media Marketing von EvolaTec. Instagram, Facebook und LinkedIn Ads für mehr Reichweite, Follower und Conversions.' },
+    { name: 'keywords', content: 'social media marketing agentur, instagram marketing, facebook ads agentur, social media agentur, social media werbung' },
+    { property: 'og:title', content: 'Social Media Marketing Agentur | EvolaTec' },
+    { property: 'og:description', content: 'Instagram, Facebook und LinkedIn Ads für mehr Reichweite und Conversions.' },
+    { property: 'og:type', content: 'website' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-social-media' }],
+});
+
 const socialStats = [
   { value: 'Facebook', label: 'Instagram & Meta', icon: 'groups' },
   { value: 'Mehr Leads', label: 'Generierung', icon: 'person_add' },

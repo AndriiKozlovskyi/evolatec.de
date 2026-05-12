@@ -193,6 +193,18 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Online Marketing Agentur | Google Ads, SEO & Social Media | EvolaTec',
+  meta: [
+    { name: 'description', content: 'Professionelles Online Marketing von EvolaTec. Google Ads, Social Media Marketing und SEO für mehr Reichweite, Leads und Umsatz.' },
+    { name: 'keywords', content: 'online marketing agentur, google ads agentur, social media marketing, online marketing, digital marketing' },
+    { property: 'og:title', content: 'Online Marketing Agentur | EvolaTec' },
+    { property: 'og:description', content: 'Google Ads, Social Media Marketing und SEO für nachhaltiges digitales Wachstum.' },
+    { property: 'og:type', content: 'website' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing' }],
+});
+
 const marketingStats = [
   { value: 'Full Service', label: 'Marketing', icon: 'campaign' },
   { value: 'Mehr Leads', label: 'Generierung', icon: 'person_add' },
