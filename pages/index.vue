@@ -203,6 +203,19 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'EvolaTec – Webagentur für Website, SEO & Online Marketing',
+  meta: [
+    { name: 'description', content: 'EvolaTec ist Ihre professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing. Moderne Websites ab 3 Tagen Lieferzeit.' },
+    { name: 'keywords', content: 'webagentur, website erstellen lassen, seo agentur, online marketing agentur, homepage erstellen lassen, webdesign agentur' },
+    { property: 'og:title', content: 'EvolaTec – Webagentur für Website, SEO & Online Marketing' },
+    { property: 'og:description', content: 'Professionelle Websites, SEO und Online Marketing für Unternehmen. Modern, schnell und conversion-optimiert.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://evolatec.de' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de' }],
+});
+
 const heroStats = [
   { value: 'ab 3 Tagen', label: 'Lieferzeit', icon: 'flash_on' },
   { value: '100%', label: 'SEO-ready', icon: 'search_check' },
