@@ -16,11 +16,32 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title: string;
   faqs: Array<{
     question: string;
     answer: string;
   }>;
 }>();
+
+// Auto-inject FAQPage schema.org structured data for SEO rich results
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: props.faqs.map(faq => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      }),
+    },
+  ],
+});
 </script>
