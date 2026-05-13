@@ -138,7 +138,7 @@
               Entscheidend sind Strategie, Zielgruppenanalyse, Content und datenbasierte Optimierung.
             </p>
             <p class="font-body-lg text-body-lg text-on-surface-variant">
-              EvolaTec verbindet Social Media Werbung, <a href="/marketing" class="text-primary font-semibold hover:underline">Performance Marketing</a>, Webdesign und <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> zu leistungsstarken Marketing Systemen.
+              EvolaTec verbindet Social Media Werbung, <a href="/online-marketing" class="text-primary font-semibold hover:underline">Performance Marketing</a>, Webdesign und <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> zu leistungsstarken Marketing Systemen.
             </p>
           </div>
         </div>
@@ -192,7 +192,7 @@
         </div>
 
         <div class="text-center mt-10">
-          <a href="/pricing">
+          <a href="/webseite-kosten-kalkulator">
             <BaseButton variant="outline" size="md">Alle Preise ansehen</BaseButton>
           </a>
         </div>

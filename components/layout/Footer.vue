@@ -83,11 +83,11 @@
 const currentYear = new Date().getFullYear();
 
 const services = [
-  { label: 'Firmenwebsite', href: '/website-development' },
-  { label: 'E-Commerce', href: '/e-commerce-development' },
-  { label: 'Landingpage', href: '/landing-development' },
+  { label: 'Firmenwebsite', href: '/firmenwebsite-erstellen-lassen' },
+  { label: 'E-Commerce', href: '/online-shop-erstellen-lassen' },
+  { label: 'Landingpage', href: '/landingpage-erstellen-lassen' },
   { label: 'SEO Strategie', href: '/seo' },
-  { label: 'UI/UX Design', href: '/design-ui-ux' },
+  { label: 'UI/UX Design', href: '/ui-ux-design' },
 ];
 
 const legalLinks = [

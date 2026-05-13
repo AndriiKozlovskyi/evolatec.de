@@ -37,7 +37,7 @@
           <a href="/kontakt" class="w-full sm:w-auto">
             <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">{{ primaryCTA }}</BaseButton>
           </a>
-          <a href="/pricing" class="w-full sm:w-auto">
+          <a href="/webseite-kosten-kalkulator" class="w-full sm:w-auto">
             <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/30 !text-white hover:!bg-white/10">
               {{ secondaryCTA }}
             </BaseButton>

@@ -201,7 +201,7 @@ const seoServiceLinks = [
     iconBg: 'bg-orange-100',
     iconBgHover: 'bg-orange-600',
     iconColor: 'text-orange-600',
-    href: '/seo-optimization',
+    href: '/seo-optimieren-lassen',
   },
   {
     title: 'Local SEO',
@@ -210,7 +210,7 @@ const seoServiceLinks = [
     iconBg: 'bg-emerald-100',
     iconBgHover: 'bg-emerald-600',
     iconColor: 'text-emerald-600',
-    href: '/seo-local',
+    href: '/local-seo',
   },
   {
     title: 'SEO Audit & Analyse',
@@ -228,16 +228,7 @@ const seoServiceLinks = [
     iconBg: 'bg-rose-100',
     iconBgHover: 'bg-rose-600',
     iconColor: 'text-rose-600',
-    href: '/seo-link-building',
-  },
-  {
-    title: 'SEO Preise',
-    description: 'Transparente SEO Pakete für jeden Bedarf und jedes Budget.',
-    icon: 'price_check',
-    iconBg: 'bg-teal-100',
-    iconBgHover: 'bg-teal-600',
-    iconColor: 'text-teal-600',
-    href: '/seo-pricing',
+    href: '/seo-linkbuilding',
   },
 ];
 

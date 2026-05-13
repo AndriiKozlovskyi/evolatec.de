@@ -25,7 +25,7 @@
             Unternehmen können genau dann sichtbar sein, wenn potenzielle Kunden aktiv nach Dienstleistungen, Produkten oder Lösungen suchen.
           </p>
           <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Als Google Ads Agentur entwickelt EvolaTec datenbasierte Kampagnen, die Reichweite, Leads und Umsatz steigern. Erfahren Sie mehr über unsere <a href="/marketing" class="text-primary font-semibold hover:underline">Online Marketing Leistungen</a>.
+            Als Google Ads Agentur entwickelt EvolaTec datenbasierte Kampagnen, die Reichweite, Leads und Umsatz steigern. Erfahren Sie mehr über unsere <a href="/online-marketing" class="text-primary font-semibold hover:underline">Online Marketing Leistungen</a>.
           </p>
         </div>
       </div>
@@ -136,7 +136,7 @@
         </div>
 
         <div class="text-center mt-10">
-          <a href="/pricing">
+          <a href="/webseite-kosten-kalkulator">
             <BaseButton variant="outline" size="md">Alle Preise ansehen</BaseButton>
           </a>
         </div>

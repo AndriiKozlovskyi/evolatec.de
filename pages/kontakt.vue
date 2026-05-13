@@ -111,7 +111,7 @@
     <section class="py-8 md:py-12">
       <div class="max-w-3xl mx-auto px-gutter">
         <a
-          href="/pricing"
+          href="/webseite-kosten-kalkulator"
           class="flex items-center justify-between gap-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl p-4 sm:p-5 hover:shadow-lg transition-shadow duration-200 group"
         >
           <div class="flex items-center gap-4 min-w-0">

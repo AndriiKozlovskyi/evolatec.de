@@ -110,7 +110,7 @@
         </div>
 
         <div class="text-center">
-          <a href="/pricing" class="inline-block">
+          <a href="/webseite-kosten-kalkulator" class="inline-block">
             <BaseButton variant="primary" size="lg">Alle Preise ansehen</BaseButton>
           </a>
         </div>
@@ -172,13 +172,13 @@
           </p>
 
           <div class="pt-6 md:pt-8 flex flex-col sm:flex-wrap sm:flex-row gap-3 sm:gap-4">
-            <a href="/website-development" class="inline-block w-full sm:w-auto">
+            <a href="/firmenwebsite-erstellen-lassen" class="inline-block w-full sm:w-auto">
               <BaseButton variant="primary" size="md" class="w-full sm:w-auto">Firmenwebsite</BaseButton>
             </a>
-            <a href="/landing-development" class="inline-block w-full sm:w-auto">
+            <a href="/landingpage-erstellen-lassen" class="inline-block w-full sm:w-auto">
               <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Landingpage</BaseButton>
             </a>
-            <a href="/e-commerce-development" class="inline-block w-full sm:w-auto">
+            <a href="/online-shop-erstellen-lassen" class="inline-block w-full sm:w-auto">
               <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Online Shop</BaseButton>
             </a>
           </div>
@@ -230,7 +230,7 @@ const services = [
     title: 'Landingpage erstellen lassen',
     description: 'Conversion-optimierte One-Pager für Werbung und Leadgenerierung.',
     price: 'ab 350€',
-    href: '/landing-development',
+    href: '/landingpage-erstellen-lassen',
   },
   {
     id: 2,
@@ -238,7 +238,7 @@ const services = [
     title: 'Firmenwebsite erstellen lassen',
     description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen.',
     price: 'ab 750€',
-    href: '/website-development',
+    href: '/firmenwebsite-erstellen-lassen',
   },
   {
     id: 3,
@@ -246,7 +246,7 @@ const services = [
     title: 'Online Shop erstellen lassen',
     description: 'Moderne E-Commerce Lösungen und Shopify Shops.',
     price: 'ab 1.200€',
-    href: '/e-commerce-development',
+    href: '/online-shop-erstellen-lassen',
   },
   {
     id: 4,

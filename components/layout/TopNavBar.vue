@@ -201,13 +201,13 @@ const navLinks = [
   {
     id: 2,
     label: 'Website-Erstellung',
-    href: '/website-development',
+    href: '/firmenwebsite-erstellen-lassen',
     isActive: true,
     icon: 'language',
     submenu: [
-      { id: 2.1, label: 'E-Commerce Entwicklung', href: '/e-commerce-development' },
-      { id: 2.2, label: 'Landingpage', href: '/landing-development' },
-      { id: 2.3, label: 'Kosten & Preise', href: '/website-development-cost' },
+      { id: 2.1, label: 'Firmenwebsite', href: '/firmenwebsite-erstellen-lassen' },
+      { id: 2.2, label: 'Landingpage',   href: '/landingpage-erstellen-lassen' },
+      { id: 2.3, label: 'Online-Shop',   href: '/online-shop-erstellen-lassen' },
     ],
   },
   {
@@ -217,29 +217,28 @@ const navLinks = [
     isActive: false,
     icon: 'search_insights',
     submenu: [
-      { id: 3.1, label: 'SEO Optimierung', href: '/seo-optimization' },
-      { id: 3.2, label: 'Local SEO', href: '/seo-local' },
-      { id: 3.3, label: 'Linkbuilding', href: '/seo-link-building' },
+      { id: 3.1, label: 'SEO Optimierung', href: '/seo-optimieren-lassen' },
+      { id: 3.2, label: 'Local SEO', href: '/local-seo' },
+      { id: 3.3, label: 'Linkbuilding', href: '/seo-linkbuilding' },
       { id: 3.4, label: 'SEO Audit & Analyse', href: '/seo-audit' },
-    { id: 3.5, label: 'SEO Preise & Kosten', href: '/seo-pricing' },
     ],
   },
   {
     id: 4,
     label: 'Design & Content',
-    href: '/design',
+    href: '/webdesign',
     isActive: false,
     icon: 'edit_document',
     submenu: [
-      { id: 4.1, label: 'Content & Copywriting', href: '/design-content' },
+      { id: 4.1, label: 'Content & Copywriting', href: '/webseiten-texte-schreiben-lassen' },
       { id: 4.2, label: 'Branding & Corporate Design', href: '/design-branding' },
-      { id: 4.3, label: 'UI/UX Design', href: '/design-ui-ux' },
+      { id: 4.3, label: 'UI/UX Design', href: '/ui-ux-design' },
     ],
   },
   {
     id: 5,
     label: 'Marketing',
-    href: '/marketing',
+    href: '/online-marketing',
     isActive: false,
     icon: 'campaign',
     submenu: [
@@ -247,7 +246,7 @@ const navLinks = [
       { id: 5.2, label: 'Social Media', href: '/marketing-social-media' },
     ],
   },
-  { id: 6, label: 'Preise Kalkulator', href: '/pricing', isActive: false, icon: 'price_check' },
+  { id: 6, label: 'Preise Kalkulator', href: '/webseite-kosten-kalkulator', isActive: false, icon: 'price_check' },
 ];
 </script>
 
