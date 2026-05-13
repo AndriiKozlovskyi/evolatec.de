@@ -109,7 +109,19 @@
             :key="`submenu-${link.id}`"
             class="border-t border-outline-variant/20 pt-6 mt-6"
           >
-            <div class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
+            <a
+              v-if="link.href && link.href !== '#'"
+              :href="link.href"
+              @click="mobileMenuOpen = false"
+              class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2 py-2 rounded-lg hover:bg-primary/10 transition-colors touch-target"
+            >
+              <span class="material-symbols-outlined text-base">{{ link.icon }}</span>
+              {{ link.label }}
+            </a>
+            <div
+              v-else
+              class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2"
+            >
               <span class="material-symbols-outlined text-base">{{ link.icon }}</span>
               {{ link.label }}
             </div>
