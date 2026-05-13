@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="/ecommerce/hero.webp"
+      background-image="/landing/hero.webp"
       badge="Conversion-orientierte Landingpages"
       title="Landingpage & One-Pager erstellen lassen – schnell & conversion-stark"
       description="Professionelle Landingpages für Werbung, Leadgenerierung und digitale Kampagnen. Optimiert für Conversions, Geschwindigkeit und SEO."

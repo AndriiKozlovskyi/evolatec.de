@@ -175,7 +175,7 @@ const navLinks = [
     isActive: true,
     icon: 'language',
     submenu: [
-      { id: 2.1, label: 'Firmenwebsite', href: '/firmenwebsite-erstellen-lassen' },
+      { id: 2.1, label: 'Firmenwebsite', href: '/firmenwebsite' },
       { id: 2.2, label: 'Landingpage',   href: '/landingpage-erstellen-lassen' },
       { id: 2.3, label: 'Online-Shop',   href: '/online-shop-erstellen-lassen' },
     ],
