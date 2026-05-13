@@ -41,13 +41,15 @@
         </li>
       </ul>
 
-      <BaseButton
-        :variant="isHighlighted ? 'secondary' : 'outline'"
-        size="md"
-        class="w-full"
-      >
-        {{ buttonText }}
-      </BaseButton>
+      <a href="/kontakt" class="block w-full">
+        <BaseButton
+          :variant="isHighlighted ? 'secondary' : 'outline'"
+          size="md"
+          class="w-full"
+        >
+          {{ buttonText }}
+        </BaseButton>
+      </a>
     </div>
   </div>
 </template>

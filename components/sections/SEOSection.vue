@@ -16,7 +16,9 @@
             </div>
           </div>
 
-          <BaseButton variant="secondary" size="md" class="mt-8">Mehr über SEO erfahren</BaseButton>
+          <a href="/kontakt" class="inline-block mt-8">
+            <BaseButton variant="secondary" size="md">Mehr über SEO erfahren</BaseButton>
+          </a>
         </div>
 
         <!-- Icon illustration -->

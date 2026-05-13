@@ -81,7 +81,9 @@
                 <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
-            <BaseButton variant="primary" size="md">Mehr über Landingpages</BaseButton>
+            <a href="/kontakt" class="inline-block">
+              <BaseButton variant="primary" size="md">Mehr über Landingpages</BaseButton>
+            </a>
           </div>
 
           <!-- Price Card -->
@@ -89,7 +91,9 @@
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Landingpage</p>
             <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 350€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 3 Tagen</p>
-            <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
+            <a href="/kontakt" class="block w-full">
+              <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
+            </a>
           </div>
         </div>
       </div>
@@ -104,7 +108,9 @@
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Firmenwebsite</p>
             <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 750€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 7 Tagen</p>
-            <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
+            <a href="/kontakt" class="block w-full">
+              <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
+            </a>
           </div>
 
           <!-- Content -->
@@ -119,7 +125,9 @@
                 <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
-            <BaseButton variant="primary" size="md">Mehr über Firmenwebsites</BaseButton>
+            <a href="/kontakt" class="inline-block">
+              <BaseButton variant="primary" size="md">Mehr über Firmenwebsites</BaseButton>
+            </a>
           </div>
         </div>
       </div>
@@ -141,7 +149,9 @@
                 <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
-            <BaseButton variant="primary" size="md">Mehr über Online Shops</BaseButton>
+            <a href="/kontakt" class="inline-block">
+              <BaseButton variant="primary" size="md">Mehr über Online Shops</BaseButton>
+            </a>
           </div>
 
           <!-- Price Card -->
@@ -149,7 +159,9 @@
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Online Shop</p>
             <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 1.200€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 14 Tagen</p>
-            <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
+            <a href="/kontakt" class="block w-full">
+              <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
+            </a>
           </div>
         </div>
       </div>
