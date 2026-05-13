@@ -73,7 +73,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Professionelle Suchmaschinenoptimierung für Unternehmen. Mehr Google Rankings, organischer Traffic und Kundenanfragen. SEO Betreuung ab 250€/Monat.',
+      content: 'Professionelle Suchmaschinenoptimierung für Unternehmen. Mehr Google Rankings, organischer Traffic und Kundenanfragen. SEO Optimierung ab 300€.',
     },
     {
       name: 'keywords',
@@ -235,7 +235,7 @@ const seoServiceLinks = [
 const seoPricingPlans = [
   {
     tier: 'SEO Audit',
-    price: 'ab 150 €',
+    price: 'ab 100 €',
     features: [
       'Technische Analyse',
       'Konkurrenzanalyse',
@@ -247,7 +247,7 @@ const seoPricingPlans = [
   },
   {
     tier: 'Basis SEO',
-    price: 'ab 500 €',
+    price: 'ab 300 €',
     features: [
       'OnPage Optimierung',
       'Technische Fixes',
@@ -290,7 +290,7 @@ const seoFaqs = [
   },
   {
     question: 'Was kostet professionelle SEO?',
-    answer: 'Basis SEO beginnt ab 500€, monatliche Betreuung ab 250€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.',
+    answer: 'Ein SEO Audit beginnt ab 100€, Basis SEO Optimierung ab 300€, monatliche Betreuung ab 250€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.',
   },
   {
     question: 'Ist SEO besser als Werbung?',

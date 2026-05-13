@@ -168,7 +168,7 @@ const faqs = [
   {
     question: 'Kann ich mit einem kleinen Budget starten?',
     answer:
-      'Ja. Landingpages starten ab 350€, Firmenwebsites ab 750€. Mit unserem Preis-Kalkulator erhalten Sie sofort eine Schätzung.',
+      'Ja. Landingpages starten ab 500€, Firmenwebsites ab 1.500€. Mit unserem Preis-Kalkulator erhalten Sie sofort eine Schätzung.',
   },
   {
     question: 'Wann sind Sie erreichbar?',

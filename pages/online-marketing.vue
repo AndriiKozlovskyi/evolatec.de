@@ -378,7 +378,7 @@ const consultingColors = [
 const pricingItems = [
   { name: 'Marketing Beratung', price: 'ab 90€/Stunde' },
   { name: 'SEO Betreuung', price: 'ab 400€/Monat' },
-  { name: 'Google Ads Management', price: 'ab 350€/Monat' },
+  { name: 'Google Ads Management', price: 'ab 400€/Monat' },
   { name: 'Performance Marketing', price: 'ab 700€/Monat' },
   { name: 'Full Service Marketing', price: 'ab 1.200€/Monat' },
   { name: 'Marketing Strategie', price: 'ab 600€' },
@@ -398,7 +398,7 @@ const marketingFaqs = [
   {
     question: 'Was kostet professionelles Online Marketing?',
     answer:
-      'Marketing Betreuung beginnt ab 350€ monatlich, Full Service Lösungen ab 1.200€ monatlich.',
+      'Marketing Betreuung beginnt ab 400€ monatlich, Full Service Lösungen ab 1.200€ monatlich.',
   },
   {
     question: 'Für welche Unternehmen eignet sich Online Marketing?',

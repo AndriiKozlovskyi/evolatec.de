@@ -256,7 +256,7 @@ const introPoints = [
 
 const introStats = [
   { value: '100+', label: 'Firmenwebsites' },
-  { value: 'ab 750€', label: 'Festpreis' },
+  { value: 'ab 1.500€', label: 'Festpreis' },
   { value: 'ab 7T', label: 'Lieferzeit' },
 ];
 
@@ -427,7 +427,7 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Firmenwebsite?',
     answer:
-      'Die Kosten hängen vom Umfang der Website ab. Moderne Firmenwebsites starten bei EvolaTec ab 750€ als Festpreis. Komplexere Unternehmenswebsites mit individuellen Funktionen oder mehrsprachigen Inhalten entsprechend höher — wir beraten Sie transparent vor Projektstart.',
+      'Die Kosten hängen vom Umfang der Website ab. Moderne Firmenwebsites starten bei EvolaTec ab 1.500€ als Festpreis. Komplexere Unternehmenswebsites mit individuellen Funktionen oder mehrsprachigen Inhalten entsprechend höher — wir beraten Sie transparent vor Projektstart.',
   },
   {
     question: 'Gibt es Festpreise für Firmenwebsites?',

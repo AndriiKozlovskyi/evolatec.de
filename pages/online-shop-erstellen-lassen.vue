@@ -139,7 +139,7 @@
     <!-- Pricing Section -->
     <PricingSection
       title="Online Shop Kosten & Preise"
-      subtitle="Transparente Preise ohne versteckte Kosten. Onlineshop erstellen lassen ab 5.000 €."
+      subtitle="Transparente Preise ohne versteckte Kosten. Onlineshop erstellen lassen ab 3.000 €."
       :pricing-plans="pricingPlans"
     />
 
@@ -425,7 +425,7 @@ const faqs = [
   {
     question: 'Was kostet es, einen Onlineshop erstellen zu lassen?',
     answer:
-      'Die Kosten für einen professionellen Online Shop bei EvolaTec starten ab 5.000 € für einen Shopify Starter Shop. Business-Lösungen mit Custom Design und Integrationen beginnen ab 15.000 €. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang und Plattform ab — wir beraten Sie gerne transparent.',
+      'Die Kosten für einen professionellen Online Shop bei EvolaTec starten ab 3.000 € für einen Basis-Shop. Premium-Lösungen mit Custom Design, erweiterten Funktionen und Integrationen beginnen ab 6.000 €. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang und Plattform ab — wir beraten Sie gerne transparent.',
   },
   {
     question: 'Welche laufenden Kosten entstehen nach der Shop-Erstellung?',

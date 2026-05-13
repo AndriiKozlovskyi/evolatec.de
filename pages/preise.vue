@@ -89,7 +89,7 @@
           <!-- Price Card -->
           <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl">
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Landingpage</p>
-            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 350€</p>
+            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 500€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 3 Tagen</p>
             <a href="/kontakt" class="block w-full">
               <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
@@ -106,7 +106,7 @@
           <!-- Price Card -->
           <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl order-2 md:order-1">
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Firmenwebsite</p>
-            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 750€</p>
+            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 1.500€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 7 Tagen</p>
             <a href="/kontakt" class="block w-full">
               <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
@@ -157,7 +157,7 @@
           <!-- Price Card -->
           <div class="bg-gradient-to-br from-primary-container to-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-on-primary shadow-xl">
             <p class="text-on-primary-container text-xs font-bold uppercase tracking-widest mb-2">Online Shop</p>
-            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 1.200€</p>
+            <p class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 md:mb-4 leading-tight">ab 3.000€</p>
             <p class="text-on-primary-container text-sm md:text-base mb-4 md:mb-6">Lieferung ab 14 Tagen</p>
             <a href="/kontakt" class="block w-full">
               <BaseButton variant="secondary" size="md" class="w-full">Anfrage stellen</BaseButton>
@@ -203,36 +203,31 @@ useHead({
 });
 
 const heroStats = [
-  { value: 'ab 350€', label: 'Landingpage', icon: 'trending_up' },
-  { value: 'ab 750€', label: 'Website', icon: 'language' },
-  { value: 'ab 1.200€', label: 'Online Shop', icon: 'shopping_bag' },
+  { value: 'ab 500€', label: 'Landingpage', icon: 'trending_up' },
+  { value: 'ab 1.500€', label: 'Website', icon: 'language' },
+  { value: 'ab 3.000€', label: 'Online Shop', icon: 'shopping_bag' },
   { value: 'Keine', label: 'Versteckten Kosten', icon: 'verified' },
 ];
 
 const pricingTable = [
   {
     service: 'Landingpage / One-Pager',
-    price: 'ab 350€',
+    price: 'ab 500€',
     delivery: 'ab 3 Tagen',
   },
   {
     service: 'Firmenwebsite',
-    price: 'ab 750€',
+    price: 'ab 1.500€',
     delivery: 'ab 7 Tagen',
   },
   {
-    service: 'Business Website',
-    price: 'ab 1.200€',
-    delivery: 'ab 10 Tagen',
-  },
-  {
     service: 'Online Shop',
-    price: 'ab 1.200€',
+    price: 'ab 3.000€',
     delivery: 'ab 14 Tagen',
   },
   {
     service: 'Premium E-Commerce',
-    price: 'ab 5.000€',
+    price: 'ab 6.000€',
     delivery: 'ab 30 Tagen',
   },
 ];
@@ -261,21 +256,21 @@ const priceFactors = [
 ];
 
 const landingFeatures = [
-  'Ab 350€',
+  'Ab 500€',
   'Lieferung ab 3 Tagen',
   'SEO-ready',
   'Responsive Design',
 ];
 
 const websiteFeatures = [
-  'Ab 750€',
+  'Ab 1.500€',
   'Ab 7 Tagen',
   'SEO optimiert',
   'Modernes Webdesign',
 ];
 
 const ecommerceFeatures = [
-  'Ab 1.200€',
+  'Ab 3.000€',
   'Ab 14 Tagen',
   'Produktverwaltung',
   'Zahlungssysteme integriert',
@@ -309,17 +304,17 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Website?',
     answer:
-      'Professionelle Websites beginnen ab 750€, abhängig von Umfang und Funktionen. Eine Firmenwebsite enthält alle wichtigen Features für ein Unternehmen: modernes Design, mobile Optimierung und Basis-SEO.',
+      'Professionelle Firmenwebsites beginnen ab 1.500€, abhängig von Umfang und Funktionen. Eine Firmenwebsite enthält alle wichtigen Features für ein Unternehmen: modernes Design, mobile Optimierung und Basis-SEO.',
   },
   {
     question: 'Was kostet eine Landingpage?',
     answer:
-      'Landingpages beginnen ab 350€ und eignen sich ideal für Werbung, Kampagnen und schnelle Leadgenerierung. Sie sind perfekt, wenn Sie schnell online präsent sein möchten.',
+      'Landingpages beginnen ab 500€ und eignen sich ideal für Werbung, Kampagnen und schnelle Leadgenerierung. Sie sind perfekt, wenn Sie schnell online präsent sein möchten.',
   },
   {
     question: 'Was kostet ein Online Shop?',
     answer:
-      'Online Shops starten ab 1.200€, abhängig von der Anzahl der Produkte und benötigten Funktionen. Komplexere E-Commerce-Lösungen mit erweiterten Features kosten ab 5.000€.',
+      'Online Shops starten ab 3.000€, abhängig von der Anzahl der Produkte und benötigten Funktionen. Premium E-Commerce-Lösungen mit erweiterten Features kosten ab 6.000€.',
   },
   {
     question: 'Gibt es Festpreise?',

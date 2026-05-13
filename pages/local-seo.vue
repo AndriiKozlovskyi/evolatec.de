@@ -81,7 +81,7 @@
 useHead({
   title: 'Local SEO Agentur – Lokal bei Google gefunden werden | EvolaTec',
   meta: [
-    { name: 'description', content: 'Professionelle Local SEO Agentur für mehr regionale Sichtbarkeit bei Google und Google Maps. Local SEO ab 250€.' },
+    { name: 'description', content: 'Professionelle Local SEO Agentur für mehr regionale Sichtbarkeit bei Google und Google Maps. Local SEO ab 400€.' },
   ],
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/local-seo' },

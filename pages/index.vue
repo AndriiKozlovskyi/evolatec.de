@@ -228,8 +228,8 @@ const services = [
     id: 1,
     icon: 'article',
     title: 'Landingpage erstellen lassen',
-    description: 'Conversion-optimierte One-Pager für Werbung und Leadgenerierung.',
-    price: 'ab 350€',
+    description: 'Konversionsstarke One-Pager für Werbung und Leadgenerierung.',
+    price: 'ab 500€',
     href: '/landingpage-erstellen-lassen',
   },
   {
@@ -237,7 +237,7 @@ const services = [
     icon: 'language',
     title: 'Firmenwebsite erstellen lassen',
     description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen.',
-    price: 'ab 750€',
+    price: 'ab 1.500€',
     href: '/firmenwebsite-erstellen-lassen',
   },
   {
@@ -245,7 +245,7 @@ const services = [
     icon: 'shopping_bag',
     title: 'Online Shop erstellen lassen',
     description: 'Moderne E-Commerce Lösungen und Shopify Shops.',
-    price: 'ab 1.200€',
+    price: 'ab 3.000€',
     href: '/online-shop-erstellen-lassen',
   },
   {
@@ -253,7 +253,7 @@ const services = [
     icon: 'search_insights',
     title: 'SEO Optimierung',
     description: 'Mehr Sichtbarkeit bei Google und nachhaltiges Wachstum.',
-    price: 'ab 250€/Monat',
+    price: 'ab 300€',
     href: '/seo',
   },
   {
@@ -261,8 +261,8 @@ const services = [
     icon: 'trending_up',
     title: 'Google Ads Betreuung',
     description: 'Mehr Kundenanfragen durch gezielte Werbekampagnen.',
-    price: 'ab 200€/Monat',
-    href: '/google-ads',
+    price: 'ab 400€/Monat',
+    href: '/marketing-google-ads',
   },
 ];
 
@@ -321,11 +321,10 @@ const processSteps = [
 ];
 
 const pricingTable = [
-  { service: 'Landingpage', price: 'ab 350€', delivery: 'ab 3 Tagen' },
-  { service: 'Firmenwebsite', price: 'ab 750€', delivery: 'ab 7 Tagen' },
-  { service: 'Business Website', price: 'ab 1.200€', delivery: 'ab 10 Tagen' },
-  { service: 'Online Shop', price: 'ab 1.200€', delivery: 'ab 14 Tagen' },
-  { service: 'Premium E-Commerce', price: 'ab 5.000€', delivery: 'ab 30 Tagen' },
+  { service: 'Landingpage', price: 'ab 500€', delivery: 'ab 3 Tagen' },
+  { service: 'Firmenwebsite', price: 'ab 1.500€', delivery: 'ab 7 Tagen' },
+  { service: 'Online Shop', price: 'ab 3.000€', delivery: 'ab 14 Tagen' },
+  { service: 'Premium E-Commerce', price: 'ab 6.000€', delivery: 'ab 30 Tagen' },
 ];
 
 const results = [
@@ -339,7 +338,7 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Website?',
     answer:
-      'Die Preise beginnen ab 350€ für Landingpages und ab 750€ für Firmenwebsites. Jedes Projekt ist unterschiedlich – wir erstellen Ihnen gerne ein transparentes Angebot.',
+      'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Jedes Projekt ist unterschiedlich – wir erstellen Ihnen gerne ein transparentes Angebot.',
   },
   {
     question: 'Wie lange dauert die Erstellung?',

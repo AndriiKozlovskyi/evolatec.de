@@ -52,7 +52,7 @@
 useHead({
   title: 'Linkbuilding Agentur – Backlinks & SEO Autorität aufbauen | EvolaTec',
   meta: [
-    { name: 'description', content: 'Professionelles Linkbuilding für bessere Google Rankings. Hochwertige Backlinks, Outreach und SEO Autorität. Linkbuilding ab 500€.' },
+    { name: 'description', content: 'Professionelles Linkbuilding für bessere Google Rankings. Hochwertige Backlinks, Outreach und SEO Autorität. Linkbuilding ab 100€.' },
   ],
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/seo-linkbuilding' },

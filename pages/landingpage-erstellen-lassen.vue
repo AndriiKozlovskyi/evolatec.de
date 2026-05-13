@@ -65,7 +65,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Professionelle Landingpages & One-Pager erstellen lassen. Conversion-optimierte Landingpages für Werbung, Kampagnen und Lead-Generierung ab 350€.'
+      content: 'Professionelle Landingpages & One-Pager erstellen lassen. Konversionsstarke Landingpages für Werbung, Kampagnen und Lead-Generierung ab 500€.'
     },
     {
       name: 'keywords',
@@ -182,7 +182,7 @@ const processSteps = [
 const pricingPlans = [
   {
     tier: 'Basic',
-    price: 'ab 350 €',
+    price: 'ab 500 €',
     features: ['One-Pager Setup', 'Responsives Design', 'Basis-SEO', 'ab 3 Tagen'],
     buttonText: 'Anfrage stellen',
     isHighlighted: false,
@@ -224,7 +224,7 @@ const faqs = [
   {
     question: 'Was kostet eine Landingpage?',
     answer:
-      'Professionelle Landingpages beginnen ab 350€, abhängig von Design und Funktionen. Wir erstellen transparente Angebote ohne versteckte Kosten.',
+      'Professionelle Landingpages beginnen ab 500€, abhängig von Design und Funktionen. Wir erstellen transparente Angebote ohne versteckte Kosten.',
   },
   {
     question: 'Wie lange dauert die Erstellung?',

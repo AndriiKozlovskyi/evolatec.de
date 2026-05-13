@@ -293,7 +293,7 @@ const featuresData = [
 const uiuxPricingPlans = [
   {
     tier: 'UX Analyse',
-    price: 'ab 300 €',
+    price: 'ab 500 €',
     features: [
       'Nutzerforschung',
       'Analyse bestehender UX',
@@ -348,7 +348,7 @@ const uiuxFaqs = [
   {
     question: 'Was kostet professionelles UI/UX Design?',
     answer:
-      'UI/UX Projekte beginnen ab 300€ für Analysen und ab 1.200€ für komplette Website Designs. Komplexe Projekte wie SaaS Apps ab 2.000€.',
+      'UI/UX Projekte beginnen ab 500€ für eine UX Analyse und ab 1.200€ für komplette Website Designs. Komplexe Projekte wie SaaS Apps ab 2.000€.',
   },
 ];
 </script>

@@ -292,7 +292,7 @@ const featuresData = [
 const brandingPricingPlans = [
   {
     tier: 'Logo Design',
-    price: 'ab 300 €',
+    price: 'ab 200 €',
     features: [
       'Professionelles Logo',
       'Mehrere Varianten',
@@ -342,7 +342,7 @@ const brandingFaqs = [
   {
     question: 'Was kostet professionelles Branding?',
     answer:
-      'Branding Projekte beginnen ab 1.500€, Logo Design ab 300€. Rebranding und komplette Corporate Designs ab 2.500€.',
+      'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.500€.',
   },
   {
     question: 'Können bestehende Marken modernisiert werden?',
