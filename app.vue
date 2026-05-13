@@ -5,6 +5,7 @@
       <NuxtPage />
     </main>
     <Footer />
+    <FloatingContact />
   </div>
 </template>
 
