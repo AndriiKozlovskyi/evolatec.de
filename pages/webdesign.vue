@@ -5,7 +5,7 @@
       background-image="/main/design.webp"
       badge="Professionelle Webdesign Agentur"
       title="Webdesign Agentur – Professionelles Webdesign von EvolaTec"
-      description="EvolaTec entwickelt moderne Websites, starke Markenauftritte und conversionstarkes Webdesign für Unternehmen, Startups und lokale Firmen."
+      description="EvolaTec entwickelt moderne Websites, starke Markenauftritte und konversionsstarkes Webdesign für Unternehmen, Startups und lokale Firmen."
       primaryCTA="Projekt starten"
       secondaryCTA="Preise ansehen"
       :stats="heroStats"
@@ -184,7 +184,7 @@
     <!-- CTA -->
     <CTASection
       title="Professionelles Webdesign für Ihr Unternehmen"
-      description="EvolaTec entwickelt moderne Websites, starke Markenauftritte und conversionstarke digitale Erlebnisse."
+      description="EvolaTec entwickelt moderne Websites, starke Markenauftritte und konversionsstarke digitale Erlebnisse."
       primary-cta="Webdesign anfragen"
       secondary-cta="Kostenlos beraten lassen"
     />
@@ -207,7 +207,7 @@ const trustCompanies = ['WEB DESIGN', 'UI/UX', 'BRANDING', 'RESPONSIVE'];
 const introPoints = [
   {
     icon: 'speed',
-    text: 'Als professionelle Webdesign Agentur entwickelt EvolaTec moderne, schnelle und conversionstarke Websites für Unternehmen, Startups und lokale Dienstleister.',
+    text: 'Als professionelle Webdesign Agentur entwickelt EvolaTec moderne, schnelle und konversionsstarke Websites für Unternehmen, Startups und lokale Dienstleister.',
   },
   {
     icon: 'verified',
@@ -258,7 +258,7 @@ const heroStats = [
 const designServices = [
   {
     title: 'Content & Copywriting',
-    description: 'Professionelle Inhalte, strukturierte Texte und conversionstarke Content Strategien.',
+    description: 'Professionelle Inhalte, strukturierte Texte und konversionsstarke Content Strategien.',
     icon: 'edit_square',
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',

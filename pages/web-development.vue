@@ -243,7 +243,7 @@ const developmentServices = [
   },
   {
     title: 'Landingpage Entwicklung',
-    description: 'Conversionstarke Landingpages für Werbekampagnen, Leadgenerierung und digitale Produkte.',
+    description: 'Konversionsstarke Landingpages für Werbekampagnen, Leadgenerierung und digitale Produkte.',
     icon: 'flag',
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
@@ -302,7 +302,7 @@ const expertiseBlocks = [
     icon: 'engineering',
     title: 'Website entwickeln lassen vom Profi',
     paragraphs: [
-      'Wer eine professionelle Website entwickeln lassen möchte, benötigt mehr als nur schönes Design — moderne Webseiten müssen technisch performant, mobil optimiert und conversionstark sein.',
+      'Wer eine professionelle Website entwickeln lassen möchte, benötigt mehr als nur schönes Design — moderne Webseiten müssen technisch performant, mobil optimiert und konversionsstark sein.',
       'Unsere Agentur entwickelt Webseiten für Unternehmen, Startups, Dienstleister und lokale Firmen, die online professionell auftreten möchten.',
       'Egal ob Landingpage, Unternehmenswebsite, Online Shop oder individuelle Plattform — EvolaTec entwickelt maßgeschneiderte Lösungen für moderne Anforderungen.',
       'Als professionelle Website Agentur unterstützen wir Unternehmen bei Webdesign, Entwicklung, SEO, Performance Optimierung und digitalem Wachstum.',

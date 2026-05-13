@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-[calc(100svh-5rem)] md:min-h-screen flex items-center overflow-hidden">
+  <section class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] flex items-center overflow-hidden">
     <!-- Background image — full opacity, cinematic crop -->
     <img
       :src="backgroundImage"
@@ -14,7 +14,7 @@
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/75 to-slate-900/20"></div>
 
     <!-- Content -->
-    <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-40 md:pb-28">
+    <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-28 md:pb-24">
       <div class="max-w-2xl">
 
         <!-- Badge -->

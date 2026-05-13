@@ -323,7 +323,7 @@ const internalLinks = [
     to: '/landing-development',
     icon: 'flag',
     title: 'Landingpage Entwicklung',
-    description: 'Conversionstarke Landingpages für Werbung, Kampagnen und Leadgenerierung.',
+    description: 'Konversionsstarke Landingpages für Werbung, Kampagnen und Leadgenerierung.',
   },
   {
     to: '/e-commerce-development',

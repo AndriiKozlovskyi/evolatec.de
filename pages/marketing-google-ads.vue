@@ -179,7 +179,7 @@ const adsStats = [
 const adsServices = [
   {
     title: 'Google Suchanzeigen',
-    description: 'Sichtbarkeit bei relevanten Suchanfragen mit conversionstarken Anzeigen.',
+    description: 'Sichtbarkeit bei relevanten Suchanfragen mit konversionsstarken Anzeigen.',
     icon: 'ads_click',
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',

@@ -83,7 +83,7 @@
     <!-- Final CTA -->
     <CTASection
       title="Professionelles UI/UX Design für moderne digitale Produkte"
-      description="EvolaTec entwickelt moderne Interfaces, starke Nutzererlebnisse und conversionstarke Designs für Unternehmen, Startups und digitale Plattformen."
+      description="EvolaTec entwickelt moderne Interfaces, starke Nutzererlebnisse und konversionsstarke Designs für Unternehmen, Startups und digitale Plattformen."
       primary-cta="UI/UX Projekt starten"
       secondary-cta="Kostenlos beraten lassen"
     />
@@ -262,7 +262,7 @@ const uiuxInfoColumns = [
     heading: 'Modernes User Interface Design',
     paragraphs: [
       'UI Design bestimmt, wie ein digitales Produkt aussieht und wahrgenommen wird.',
-      'Unsere UI/UX Agentur entwickelt minimalistische, moderne und conversionstarke Benutzeroberflächen für Unternehmen, Startups und digitale Plattformen.',
+      'Unsere UI/UX Agentur entwickelt minimalistische, moderne und konversionsstarke Benutzeroberflächen für Unternehmen, Startups und digitale Plattformen.',
     ],
   },
 ];

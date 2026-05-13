@@ -120,7 +120,7 @@ const contentServices = [
   },
   {
     title: 'Landingpage Copywriting',
-    description: 'Conversionstarke Texte für mehr Leads, Anfragen und Verkäufe.',
+    description: 'Konversionsstarke Texte für mehr Leads, Anfragen und Verkäufe.',
     icon: 'target',
     iconBg: 'bg-orange-100',
     iconColor: 'text-orange-600',
@@ -189,7 +189,7 @@ const contentProcess = [
   },
   {
     title: 'Content Erstellung',
-    description: 'Professionelle, strukturierte und conversionstarke Inhalte schreiben.',
+    description: 'Professionelle, strukturierte und konversionsstarke Inhalte schreiben.',
     icon: 'edit_document',
   },
   {
@@ -223,7 +223,7 @@ const featuresData = [
   },
   {
     title: 'Landingpage Copywriting',
-    description: 'Conversionstarke Texte für mehr Leads, Anfragen und Verkäufe.',
+    description: 'Konversionsstarke Texte für mehr Leads, Anfragen und Verkäufe.',
     icon: 'target',
   },
   {
@@ -250,7 +250,7 @@ const contentPricingPlans = [
     tier: 'Landingpage Copywriting',
     price: 'ab 250 €',
     features: [
-      'Conversionstarke Texte',
+      'Konversionsstarke Texte',
       'CTA Optimierung',
       'Sales fokussiert',
       'A/B Testing ready',
@@ -281,7 +281,7 @@ const contentFaqs = [
   {
     question: 'Schreiben Sie Texte für Landingpages?',
     answer:
-      'Ja. Wir erstellen conversionstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.',
+      'Ja. Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.',
   },
   {
     question: 'Können Inhalte mehrsprachig erstellt werden?',

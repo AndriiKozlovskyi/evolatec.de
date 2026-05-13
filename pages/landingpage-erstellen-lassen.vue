@@ -4,7 +4,7 @@
     <HeroSection
       background-image="/landing/hero.webp"
       badge="Conversion-orientierte Landingpages"
-      title="Landingpage & One-Pager erstellen lassen – schnell & conversion-stark"
+      title="Landingpage & One-Pager erstellen lassen – schnell & konversionsstark"
       description="Professionelle Landingpages für Werbung, Leadgenerierung und digitale Kampagnen. Optimiert für Conversions, Geschwindigkeit und SEO."
       primaryCTA="Kostenloses Angebot erhalten"
       secondaryCTA="Preise ansehen"
@@ -52,7 +52,7 @@
     <!-- CTA Section -->
     <CTASection
       title="Professionelle Landingpage erstellen lassen"
-      description="Conversion-starke Landingpages, die mehr Leads und Kunden bringen."
+      description="Konversionsstarke Landingpages, die mehr Leads und Kunden bringen."
       primary-cta="Kostenlos beraten lassen"
       secondary-cta="Preise ansehen"
     />

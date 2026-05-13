@@ -5,7 +5,7 @@
       background-image="/main/hero.webp"
       badge="Webdesign & Webentwicklung Agentur"
       title="Professionelle Website erstellen lassen für Unternehmen"
-      description="Moderne Firmenwebsites, Landingpages und Online Shops, die Kunden gewinnen und Ihr Unternehmen wachsen lassen. SEO-optimiert, schnell und conversion-stark."
+      description="Moderne Firmenwebsites, Landingpages und Online Shops, die Kunden gewinnen und Ihr Unternehmen wachsen lassen. SEO-optimiert, schnell und konversionsstark."
       primaryCTA="Kostenloses Angebot erhalten"
       secondaryCTA="Preise ansehen"
       :stats="heroStats"
