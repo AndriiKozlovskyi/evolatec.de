@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="/main/seo.webp"
+      background-image="/seo/hero.webp"
       badge="Professionelle SEO Agentur"
       title="Professionelle SEO Agentur: Mehr Sichtbarkeit & mehr Kunden durch Google"
       description="Moderne Suchmaschinenoptimierung für Unternehmen, die bei Google besser gefunden werden möchten. Mehr Rankings, mehr Traffic und mehr Anfragen."

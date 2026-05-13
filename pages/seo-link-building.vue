@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection
-      background-image="/main/seo.webp"
+      background-image="/seo/link.webp"
       badge="Professionelle Linkbuilding Agentur"
       title="Linkbuilding & Backlink Aufbau: Mehr Autorität für Ihre Website"
       description="Hochwertige Backlinks sind einer der wichtigsten Google Ranking Faktoren. Wir helfen Unternehmen, starke SEO Autorität aufzubauen und bessere Rankings zu erreichen."

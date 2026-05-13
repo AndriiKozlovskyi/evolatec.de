@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection
-      background-image="/main/seo.webp"
+      background-image="/seo/optimize.webp"
       badge="Technische SEO Optimierung"
       title="Technische SEO Optimierung: Wir bringen Ihre Website auf Kurs"
       description="Wir optimieren Ihre Website technisch, verbessern Ladezeiten, Core Web Vitals, Struktur und SEO Performance für bessere Google Rankings und mehr Kunden."

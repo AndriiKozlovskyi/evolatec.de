@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection
-      background-image="/main/seo.webp"
+      background-image="/seo/audit.webp"
       badge="Professionelle SEO Analyse Agentur"
       title="SEO Audit & Analyse: Technischer Check für Ihre Website"
       description="Professioneller SEO Audit für bessere Rankings, mehr Sichtbarkeit und mehr organischen Traffic. Wir analysieren technische Fehler, OnPage SEO und Optimierungspotenziale."

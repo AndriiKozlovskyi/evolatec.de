@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection
-      background-image="/main/seo.webp"
+      background-image="/seo/local.webp"
       badge="Local SEO Agentur"
       title="Lokales SEO: Werden Sie in Ihrer Region bei Google gefunden"
       description="Wir helfen Unternehmen, lokal bei Google sichtbar zu werden. Mehr regionale Kunden, bessere Google Maps Rankings und mehr Anfragen aus Ihrer Umgebung."
