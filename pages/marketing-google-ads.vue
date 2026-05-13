@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="/ads/hero.webp"
       badge="Professionelle Google Ads & SEA Agentur"
       title="Google Ads Agentur: Werbung schalten die Klicks & Kunden bringt"
       description="EvolaTec entwickelt leistungsstarke Google Ads Kampagnen, die qualifizierte Besucher, mehr Anfragen und messbares Wachstum generieren."
@@ -54,7 +54,7 @@
         <div class="grid md:grid-cols-2 gap-stack-lg items-center mb-stack-lg">
           <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
             <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop"
+              src="/landing/leads.webp"
               alt="Google Ads Performance Marketing EvolaTec"
               class="w-full h-full object-cover"
             />
@@ -233,28 +233,28 @@ const adsBenefits = [
     description: 'Ihre Anzeigen erscheinen direkt bei relevanten Suchanfragen.',
     icon: 'visibility',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/landing/leads.webp',
   },
   {
     title: 'Qualifizierte Leads',
     description: 'Zielgerichtete Werbung erreicht potenzielle Kunden.',
     icon: 'person_add',
     bg: 'bg-gradient-to-br from-orange-500 to-amber-600',
-    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop',
+    image: '/ads/benefit.webp',
   },
   {
     title: 'Messbare Ergebnisse',
     description: 'Klicks, Leads und Conversions sind exakt analysierbar.',
     icon: 'analytics',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/web-development-cost/price.webp',
   },
   {
     title: 'Skalierbares Wachstum',
     description: 'Erfolgreiche Kampagnen können kontinuierlich skaliert werden.',
     icon: 'stacked_line_chart',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/web-development-cost/tech.webp',
   },
 ];
 

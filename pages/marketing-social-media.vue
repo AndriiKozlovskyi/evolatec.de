@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="/smm/hero.webp"
       badge="Professionelle Social Media & Meta Ads Agentur"
       title="Social Media Ads Agentur: Facebook & Instagram Werbung die verkauft"
       description="EvolaTec entwickelt leistungsstarke Social Media Kampagnen für Facebook, Instagram und Meta Ads — Strategie, Content und Performance Marketing für messbare Ergebnisse."
@@ -79,7 +79,7 @@
        <BenefitsSection
       title="Modernes UI/UX Design für digitale Produkte"
       :benefits="socialBenefits"
-      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      image-url="/ecommerce/hero.webp"
     />
 
 
@@ -90,7 +90,7 @@
 
     <!-- Results / Image Banner Section -->
     <DarkBannerSection
-      image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      image="/ecommerce/hero.webp"
       badge="Messbare Ergebnisse"
       description="Unsere Social Media Kampagnen sind auf Ergebnisse ausgelegt — nicht auf Likes. Klicks, Leads und Umsatz sind exakt messbar."
       cta-text="Social Media Kampagne starten"
@@ -110,7 +110,7 @@
         <div class="grid md:grid-cols-2 gap-stack-lg items-center mb-stack-lg">
           <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+              src="/main/seo.webp"
               alt="Social Media Marketing Agentur EvolaTec"
               class="w-full h-full object-cover"
             />
@@ -248,28 +248,28 @@ const socialPlatforms = [
     description: 'Werbung für lokale Unternehmen, Dienstleistungen und E-Commerce.',
     icon: 'thumb_up',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM',
+    image: '/smm/facebook.webp',
   },
   {
     name: 'Instagram Marketing',
     description: 'Visuelle Kampagnen für Markenaufbau und Reichweite.',
     icon: 'photo_camera',
     bg: 'bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM',
+    image: '/smm/instagram.webp',
   },
   {
     name: 'Meta Ads',
     description: 'Performance Kampagnen im gesamten Meta Netzwerk.',
     icon: 'hub',
     bg: 'bg-gradient-to-br from-indigo-600 to-blue-700',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM',
+    image: '/smm/meta.webp',
   },
   {
     name: 'Retargeting',
     description: 'Rückgewinnung von Besuchern und Interessenten.',
     icon: 'refresh',
     bg: 'bg-gradient-to-br from-slate-700 to-slate-900',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM',
+    image: '/smm/retargeting.webp',
   },
 ];
 

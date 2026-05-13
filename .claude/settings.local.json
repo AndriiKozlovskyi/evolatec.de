@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx nuxt *)"
+      "Bash(npx nuxt *)",
+      "Bash(xargs grep -oE '\"material-symbols-outlined[^\"]*\">[a-z_]+<')",
+      "Bash(sed 's/[><]//g')",
+      "Bash(xargs grep -oE \"icon: '[a-z_]+'\")"
     ]
   }
 }

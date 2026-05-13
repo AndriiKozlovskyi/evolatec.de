@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="/design-content/hero.webp"
       badge="Professionelle Webseiten Texte & SEO Copywriting"
       title="Webseiten Texte & Copywriting: Inhalte die verkaufen & bei Google ranken"
       description="Professionelle Website Texte, SEO optimierte Inhalte und modernes Copywriting für Unternehmen, Landingpages, Onlineshops und Corporate Websites."
@@ -64,7 +64,7 @@
     <FeaturesSection
       title="Professionelles Copywriting für Ihre digitale Präsenz"
       :features="featuresData"
-      image-url="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+      image-url="/design-content/copywriting.webp"
     />
 
     <!-- FAQ Section -->
@@ -158,21 +158,21 @@ const contentBenefits = [
     description: 'SEO optimierte Texte verbessern Ihre Sichtbarkeit.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/landing/seo.webp',
   },
   {
     title: 'Höhere Conversion',
     description: 'Gute Texte überzeugen Besucher und steigern Anfragen.',
     icon: 'shopping_cart',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/web-development-cost/price.webp',
   },
   {
     title: 'Professioneller Markenauftritt',
     description: 'Hochwertige Inhalte stärken Vertrauen und Markenwirkung.',
     icon: 'verified_user',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/web-development-cost/tech.webp',
   },
 ];
 

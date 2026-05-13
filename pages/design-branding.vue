@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="/design-branding/hero.webp"
       badge="Branding Agentur & Corporate Design Studio"
       title="Branding Agentur: Corporate Design das Ihre Marke unverwechselbar macht"
       description="EvolaTec entwickelt starke Markenidentitäten, modernes Corporate Design, professionelle Logos und digitale Markenauftritte, die Unternehmen sichtbar, vertrauenswürdig und einzigartig machen."
@@ -50,7 +50,7 @@
     <FeaturesSection
       title="Branding Lösungen für moderne Unternehmen"
       :features="brandingTypes"
-      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      image-url="/web-development-cost/features.webp"
     />
   
     <!-- Corporate Design & Logo Info Section -->
@@ -67,7 +67,7 @@
     <FeaturesSection
       title="Starke Markenidentitäten für moderne Unternehmen"
       :features="featuresData"
-      image-url="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop"
+      image-url="/design-branding/features.webp"
     />
 
     <!-- FAQ Section -->
@@ -161,28 +161,28 @@ const brandingBenefits = [
     description: 'Ein starkes Corporate Design sorgt dafür, dass Kunden Ihre Marke sofort erkennen.',
     icon: 'recognition',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/landing/leads.webp',
   },
   {
     title: 'Vertrauen & Professionalität',
     description: 'Professionelles Branding steigert Glaubwürdigkeit und Vertrauen.',
     icon: 'verified_user',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/web-development-cost/price.webp',
   },
   {
     title: 'Bessere Positionierung',
     description: 'Eine klare Markenidentität hebt Sie von Wettbewerbern ab.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/web-development-cost/tech.webp',
   },
   {
     title: 'Höhere Conversion',
     description: 'Starkes Branding verbessert Nutzererfahrung und Kaufentscheidungen.',
     icon: 'shopping_cart',
     bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    image: '/landing/advertising.webp',
   },
 ];
 

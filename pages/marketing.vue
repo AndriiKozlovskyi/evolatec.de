@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="/marketing/hero.webp"
       badge="Full Service Online Marketing Agentur"
       title="Online Marketing Agentur: Mehr Reichweite, mehr Leads, mehr Umsatz"
       description="EvolaTec entwickelt digitale Marketingstrategien, die Unternehmen sichtbar machen, qualifizierte Leads generieren und nachhaltiges Wachstum schaffen."
@@ -54,7 +54,7 @@
         <div class="grid md:grid-cols-2 gap-stack-lg items-center mb-stack-lg">
           <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop"
+              src="/landing/leads.webp"
               alt="Online Marketing Agentur EvolaTec"
               class="w-full h-full object-cover"
             />
@@ -275,28 +275,28 @@ const marketingBenefits = [
     description: 'Professionelles Marketing bringt Ihre Marke vor die richtige Zielgruppe.',
     icon: 'public',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/landing/leads.webp',
   },
   {
     title: 'Mehr Leads',
     description: 'Conversion optimierte Strategien generieren qualifizierte Anfragen.',
     icon: 'person_add',
     bg: 'bg-gradient-to-br from-orange-500 to-amber-600',
-    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop',
+    image: '/landing/fast.webp',
   },
   {
     title: 'Mehr Umsatz',
     description: 'Datenbasierte Kampagnen steigern Verkäufe und Wachstum.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/web-development-cost/price.webp',
   },
   {
     title: 'Nachhaltige Ergebnisse',
     description: 'Langfristige Strategien sorgen für stabile Sichtbarkeit.',
     icon: 'schedule',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/web-development-cost/tech.webp',
   },
 ];
 

@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <HeroSection
-      background-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      background-image="/design-ui-ux/hero.webp"
       badge="Professionelle UI/UX Design Agentur"
       title="UI/UX Design Agentur: User Interface & Experience Design das überzeugt"
       description="EvolaTec entwickelt moderne UI/UX Designs, intuitive Benutzeroberflächen und digitale Nutzererlebnisse, die Vertrauen schaffen, Conversion steigern und Marken professionell präsentieren."
@@ -59,7 +59,7 @@
        <FeaturesSection
       title="UI/UX Lösungen für moderne Branchen"
       :features="uiuxIndustries"
-      image-url="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
+      image-url="/web-development/hero.webp"
     />
 
 
@@ -74,7 +74,7 @@
     <FeaturesSection
       title="Modernes UI/UX Design für digitale Produkte"
       :features="featuresData"
-      image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5zdLscgbQtZZEjecvYHDkQXZP1W7c_XfVpQJf0x7AFGBVe8Zk5O1mXCBDSE5gn8F1TBNe5wotsh4kH16_RscWT5Rc-LHZ_Zrodd5Z3EClq_NVJ-zzrrOHgMyB5fy7MRD-BXVJq2DjNKRmFDMcjTe2F6Thx0doN_l6tF4c02FTh-D2VvMLDnMe7Gucrt4z33eG2j18j14Y6tvpuIoqe2CPJmN6HzOY1GgCG0ArrlB_DzDXO1ccXnkh5e0TCDMIkGJGGuIHGSFTEHM"
+      image-url="/design-ui-ux/features.webp"
     />
 
     <!-- FAQ Section -->
@@ -168,31 +168,31 @@ const uiuxBenefits = [
     description: 'Intuitive Interfaces steigern Leads, Verkäufe und Anfragen.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: '/landing/leads.webp',
   },
   {
     title: 'Bessere Nutzererfahrung',
     description: 'Klare Strukturen verbessern Navigation und Benutzerfreundlichkeit.',
     icon: 'sentiment_satisfied',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
+    image: '/web-development-cost/price.webp',
   },
   {
     title: 'Professioneller Markenauftritt',
     description: 'Modernes UI Design stärkt Vertrauen und Markenwahrnehmung.',
     icon: 'verified_user',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
+    image: '/web-development-cost/tech.webp',
   },
   {
     title: 'Mobile Optimierung',
     description: 'Responsive UX Designs funktionieren perfekt auf allen Geräten.',
     icon: 'devices',
     bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    image: '/web-development/responsive.webp',
   },
 ];
-
+ 
 const uiuxProcess = [
   {
     title: 'Analyse & Research',
