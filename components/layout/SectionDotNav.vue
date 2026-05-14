@@ -15,19 +15,14 @@
         'group relative flex items-center justify-center outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-full transition-all duration-300 ease-out',
         section.icon ? 'w-9 h-9' : 'w-6 h-6',
         i === activeIndex && section.icon
-          ? 'bg-primary text-on-primary shadow-[0_0_0_4px_rgba(0,44,80,0.12)]'
+          ? ' text-on-primary '
           : section.icon
             ? 'text-on-surface-variant/70 hover:text-primary hover:bg-primary/10'
             : '',
       ]"
     >
+
       <span
-        v-if="section.icon"
-        class="material-symbols-outlined transition-transform duration-300 ease-out group-hover:scale-110"
-        :class="i === activeIndex ? 'text-[20px]' : 'text-[18px]'"
-      >{{ section.icon }}</span>
-      <span
-        v-else
         :class="[
           'block rounded-full transition-all duration-300 ease-out',
           i === activeIndex
