@@ -227,7 +227,7 @@ const introPoints = [
 ];
 
 const introStats = [
-  { value: '100+', label: 'Websites Live' },
+  { value: '30 Tage', label: 'Support' },
   { value: '99', label: 'Lighthouse Avg' },
   { value: 'ab 7T', label: 'Lieferzeit' },
 ];

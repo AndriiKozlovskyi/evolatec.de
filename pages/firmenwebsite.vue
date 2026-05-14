@@ -201,7 +201,7 @@ useHead({
     { property: 'og:description', content: 'Moderne Webseiten, Firmenhomepages und digitale Plattformen für Unternehmen.' },
     { property: 'og:type', content: 'website' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite-erstellen-lassen' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite' }],
 });
 
 const heroStats = [
@@ -227,7 +227,7 @@ const introPoints = [
 ];
 
 const introStats = [
-  { value: '100+', label: 'Websites Live' },
+  { value: '30 Tage', label: 'Support' },
   { value: '99', label: 'Lighthouse Avg' },
   { value: 'ab 7T', label: 'Lieferzeit' },
 ];

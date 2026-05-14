@@ -182,12 +182,12 @@ function isLinkActive(link: (typeof navLinks)[number]) {
 const navLinks = [
   {
     id: 2,
-    label: 'Website-Erstellung',
-    href: '/firmenwebsite-erstellen-lassen',
+    label: 'Website',
+    href: '/firmenwebsite',
     isActive: true,
     icon: 'language',
     submenu: [
-      { id: 2.1, label: 'Firmenwebsite', href: '/firmenwebsite' },
+      { id: 2.1, label: 'Firmenwebsite', href: '/firmenwebsite-erstellen-lassen' },
       { id: 2.2, label: 'Landingpage',   href: '/landingpage-erstellen-lassen' },
       { id: 2.3, label: 'Online-Shop',   href: '/online-shop-erstellen-lassen' },
     ],

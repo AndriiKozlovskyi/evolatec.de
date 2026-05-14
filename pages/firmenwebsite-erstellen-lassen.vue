@@ -4,9 +4,9 @@
     <HeroSection
       background-image="/main/firmen.webp"
       badge="Professionelle Firmenwebsite Entwicklung"
-      title="Firmenwebsite erstellen lassen – Professionelle Unternehmenswebsite"
+      title="Website erstellen lassen – Professionelle Unternehmenswebsite"
       description="Firmenwebsite & Unternehmenswebsite professionell erstellen lassen — moderne Webseiten für Unternehmen, Dienstleister und Marken mit Fokus auf Performance, SEO und Conversion."
-      primaryCTA="Firmenwebsite erstellen lassen"
+      primaryCTA="Website erstellen lassen"
       secondaryCTA="Festpreise ansehen"
       :stats="heroStats"
     />
@@ -61,7 +61,7 @@
 
               <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Festpreis</div>
-                <div class="font-display text-4xl font-black leading-none text-primary">ab 750<span class="text-lg text-on-surface-variant">€</span></div>
+                <div class="font-display text-4xl font-black leading-none text-primary">ab 1.500<span class="text-lg text-on-surface-variant">€</span></div>
                 <div class="text-xs text-on-surface-variant mt-1">Transparent</div>
               </div>
 
@@ -229,7 +229,7 @@ useHead({
     { property: 'og:description', content: 'Professionelle Firmenwebsites und Unternehmenswebsites von EvolaTec — moderne Webseiten mit transparenten Festpreisen.' },
     { property: 'og:type', content: 'website' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite-erstellen-lassen' }],
 });
 
 const heroStats = [
@@ -255,7 +255,7 @@ const introPoints = [
 ];
 
 const introStats = [
-  { value: '100+', label: 'Firmenwebsites' },
+  { value: '30 Tage', label: 'Support' },
   { value: 'ab 1.500€', label: 'Festpreis' },
   { value: 'ab 7T', label: 'Lieferzeit' },
 ];
