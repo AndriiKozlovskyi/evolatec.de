@@ -2,7 +2,7 @@
   <nav
     v-if="sections.length > 1"
     aria-label="Abschnittsnavigation"
-    class="hidden lg:flex fixed right-10 top-1/2 -translate-y-1/2 z-40 flex-col gap-2 items-center"
+    class="hidden lg:flex fixed right-10 top-1/2 -translate-y-1/2 z-40 flex-col gap-1 items-center bg-surface-container-low/60 backdrop-blur-sm rounded-full p-2 shadow-xl"
   >
     <button
       v-for="(section, i) in sections"
@@ -11,7 +11,7 @@
       @click="scrollTo(i)"
       :aria-label="`Zu Abschnitt: ${section.label}`"
       :aria-current="i === activeIndex ? 'true' : undefined"
-      class="group relative flex items-center justify-center w-14 h-6 outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-full"
+      class="group relative flex items-center justify-center w-6 h-6 outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-full"
     >
       <span
         :class="[
