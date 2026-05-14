@@ -6,6 +6,7 @@
     </main>
     <Footer />
     <FloatingContact />
+    <SectionDotNav />
   </div>
 </template>
 

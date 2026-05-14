@@ -1,5 +1,8 @@
 <template>
-  <section class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] flex items-center overflow-hidden">
+  <section
+    data-nav-label="Start"
+    class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] flex items-center overflow-hidden"
+  >
     <!-- Background image — full opacity, cinematic crop -->
     <img
       :src="backgroundImage"
@@ -14,7 +17,7 @@
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/75 to-slate-900/20"></div>
 
     <!-- Content -->
-    <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-28 md:pb-24">
+    <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-14 md:pb-14">
       <div class="max-w-2xl">
 
         <!-- Badge -->
@@ -67,6 +70,17 @@
 
       </div>
     </div>
+
+    <!-- Scroll cue -->
+    <button
+      type="button"
+      @click="scrollNext"
+      aria-label="Nach unten scrollen"
+      class="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group"
+    >
+      <span class="text-[0.65rem] uppercase tracking-[0.25em] font-semibold">Scroll</span>
+      <span class="material-symbols-outlined text-2xl animate-bounce-slow group-hover:translate-y-0.5 transition-transform">expand_more</span>
+    </button>
   </section>
 </template>
 
@@ -83,4 +97,25 @@ withDefaults(
   }>(),
   {}
 );
+
+function scrollNext() {
+  const main = document.querySelector('main');
+  if (!main) return;
+  const sections = Array.from(main.querySelectorAll<HTMLElement>(':scope > section, :scope > div > section'));
+  const next = sections[1];
+  if (!next) return;
+  const top = next.getBoundingClientRect().top + window.scrollY - 80;
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top, behavior: prefersReduced ? 'auto' : 'smooth' });
+}
 </script>
+
+<style scoped>
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 1.8s ease-in-out infinite;
+}
+</style>
