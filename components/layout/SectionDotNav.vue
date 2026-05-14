@@ -2,7 +2,7 @@
   <nav
     v-if="sections.length > 1"
     aria-label="Abschnittsnavigation"
-    class="hidden lg:flex fixed right-5 top-1/2 -translate-y-1/2 z-40 flex-col gap-3 items-center py-3 px-2 rounded-full bg-white/70 backdrop-blur-md border border-outline-variant/30 shadow-lg"
+    class="hidden lg:flex fixed right-10 top-1/2 -translate-y-1/2 z-40 flex-col gap-2 items-center"
   >
     <button
       v-for="(section, i) in sections"
@@ -11,27 +11,18 @@
       @click="scrollTo(i)"
       :aria-label="`Zu Abschnitt: ${section.label}`"
       :aria-current="i === activeIndex ? 'true' : undefined"
-      :class="[
-        'group relative flex items-center justify-center outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-full transition-all duration-300 ease-out',
-        section.icon ? 'w-9 h-9' : 'w-6 h-6',
-        i === activeIndex && section.icon
-          ? ' text-on-primary '
-          : section.icon
-            ? 'text-on-surface-variant/70 hover:text-primary hover:bg-primary/10'
-            : '',
-      ]"
+      class="group relative flex items-center justify-center w-14 h-6 outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-full"
     >
-
       <span
         :class="[
           'block rounded-full transition-all duration-300 ease-out',
           i === activeIndex
-            ? 'w-3 h-3 bg-primary shadow-[0_0_0_4px_rgba(0,44,80,0.12)]'
-            : 'w-2 h-2 bg-on-surface-variant/40 group-hover:bg-primary/70 group-hover:scale-125',
+            ? 'w-2.5 h-2.5 bg-primary shadow-[0_0_0_3px_rgba(0,44,80,0.12)]'
+            : 'w-1.5 h-1.5 bg-on-surface-variant/40 group-hover:bg-primary group-hover:scale-150',
         ]"
       />
       <span
-        class="pointer-events-none absolute right-full mr-3 px-2.5 py-1 rounded-md bg-slate-900 text-white text-xs font-semibold whitespace-nowrap shadow-lg opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"
+        class="pointer-events-none absolute right-full mr-2 px-2.5 py-1 rounded-md bg-slate-900 text-white text-xs font-medium whitespace-nowrap shadow-lg opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200"
       >
         {{ section.label }}
       </span>
