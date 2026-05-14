@@ -11,12 +11,18 @@
             :key="benefit.title"
             class="group relative rounded-3xl overflow-hidden h-72 cursor-pointer"
           >
-            <img
+            <NuxtPicture
               :src="benefit.image"
               :alt="benefit.title"
-              loading="lazy"
-              decoding="async"
-              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform"
+              format="avif,webp"
+              sizes="xs:100vw sm:100vw md:50vw lg:25vw xl:25vw xxl:25vw"
+              :width="600"
+              :height="450"
+              :img-attrs="{
+                loading: 'lazy',
+                decoding: 'async',
+                class: 'absolute inset-0 w-full h-full object-cover transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform',
+              }"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <div class="relative h-full flex flex-col justify-between p-6">

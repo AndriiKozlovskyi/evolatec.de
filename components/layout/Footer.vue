@@ -4,7 +4,7 @@
       <!-- Brand Section -->
       <div class="space-y-4 sm:col-span-2 md:col-span-1">
         <div class="flex items-center gap-2">
-          <img src="/logo.png" alt="EvolaTec Logo" class="h-5 w-5" />
+          <NuxtImg src="/logo.png" alt="EvolaTec Logo" :width="40" :height="40" format="webp" class="h-5 w-5" loading="lazy" />
           <span class="font-display text-headline-md font-bold text-primary">EvolaTec</span>
         </div>
         <p class="text-on-surface-variant text-sm md:text-body-md md:pr-8">

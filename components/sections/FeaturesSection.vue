@@ -18,7 +18,15 @@
 
         <!-- Right Image -->
         <div class="relative min-h-[500px] rounded-xl overflow-hidden shadow-2xl">
-          <img :src="imageUrl" :alt="imageAlt" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover" />
+          <NuxtPicture
+            :src="imageUrl"
+            :alt="imageAlt"
+            format="avif,webp"
+            sizes="xs:100vw sm:100vw md:100vw lg:50vw xl:50vw xxl:50vw"
+            :width="1000"
+            :height="700"
+            :img-attrs="{ loading: 'lazy', decoding: 'async', class: 'absolute inset-0 w-full h-full object-cover' }"
+          />
         </div>
       </div>
     </div>

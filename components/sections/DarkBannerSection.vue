@@ -1,6 +1,14 @@
 <template>
   <section class="relative py-section-padding overflow-hidden">
-    <img :src="image" alt="" class="absolute inset-0 w-full h-full object-cover" />
+    <NuxtPicture
+      :src="image"
+      alt=""
+      format="avif,webp"
+      sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw"
+      :width="1920"
+      :height="1080"
+      :img-attrs="{ loading: 'lazy', decoding: 'async', class: 'absolute inset-0 w-full h-full object-cover' }"
+    />
     <div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 via-primary-container/80 to-primary-container/40"></div>
 
     <div class="relative max-w-container-max mx-auto px-gutter">

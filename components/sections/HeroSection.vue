@@ -4,13 +4,20 @@
     class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] lg:min-h-[calc(100vh-5rem)] flex items-center overflow-hidden"
   >
     <!-- Background image — full opacity, cinematic crop -->
-    <img
+    <NuxtPicture
       :src="backgroundImage"
       alt=""
-      fetchpriority="high"
-      loading="eager"
-      decoding="async"
-      class="absolute inset-0 w-full h-full object-cover"
+      format="avif,webp"
+      sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw"
+      :width="1920"
+      :height="1080"
+      preload
+      :img-attrs="{
+        fetchpriority: 'high',
+        loading: 'eager',
+        decoding: 'async',
+        class: 'absolute inset-0 w-full h-full object-cover',
+      }"
     />
 
     <!-- Dark gradient overlay: left-heavy, fades to transparent on the right -->

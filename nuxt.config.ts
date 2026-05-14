@@ -1,9 +1,22 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
+  },
+  image: {
+    format: ['avif', 'webp'],
+    quality: 80,
+    densities: [1, 2],
+    screens: {
+      xs: 360,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+    },
   },
   components: {
     dirs: [

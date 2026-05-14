@@ -51,10 +51,18 @@
             :class="platform.bg"
           >
             <!-- Background image overlay -->
-            <img
+            <NuxtPicture
               :src="platform.image"
               alt=""
-              class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform"
+              format="avif,webp"
+              sizes="xs:100vw sm:100vw md:50vw lg:25vw xl:25vw xxl:25vw"
+              :width="600"
+              :height="450"
+              :img-attrs="{
+                loading: 'lazy',
+                decoding: 'async',
+                class: 'absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform',
+              }"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 

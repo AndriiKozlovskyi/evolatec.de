@@ -6,7 +6,7 @@
     <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200">
-        <img src="/logo.png" alt="EvolaTec Logo" class="h-5 w-5" />
+        <NuxtImg src="/logo.png" alt="EvolaTec Logo" :width="40" :height="40" format="webp" class="h-5 w-5" loading="eager" />
         <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>
       </a>
 
