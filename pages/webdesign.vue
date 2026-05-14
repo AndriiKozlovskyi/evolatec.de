@@ -15,103 +15,13 @@
     <TrustSection :companies="trustCompanies" />
 
     <!-- Intro -->
-    <section class="relative py-section-padding bg-surface overflow-hidden">
-      <!-- Ambient color depth -->
-      <div class="absolute top-20 -right-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
-      <div class="absolute bottom-0 -left-32 w-[400px] h-[400px] rounded-full bg-primary-container/20 blur-[100px] pointer-events-none"></div>
-
-      <div class="relative max-w-container-max mx-auto px-gutter">
-        <div class="grid lg:grid-cols-[1.15fr_1fr] gap-stack-lg items-center">
-
-          <!-- Text column -->
-          <div>
-            <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <span class="material-symbols-outlined text-[18px]">language</span>
-              Professionelles Webdesign
-            </span>
-
-            <h2 class="font-headline-xl text-headline-xl text-primary mb-8 leading-[1.1]">
-              Moderne Websites für
-              <span class="relative inline-block">
-                <span class="relative z-10">Unternehmen</span>
-                <span class="absolute -bottom-1 left-0 right-0 h-3 bg-primary/15 rounded-sm -z-0"></span>
-              </span>, Marken und digitale Produkte
-            </h2>
-
-            <div class="space-y-5 mb-10">
-              <div v-for="(point, i) in introPoints" :key="i" class="flex gap-4 items-start">
-                <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span class="material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
-                </div>
-                <p class="font-body-lg text-on-surface-variant flex-1 pt-1">{{ point.text }}</p>
-              </div>
-            </div>
-
-            <!-- Stats row -->
-            <div class="grid grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30">
-              <div v-for="stat in introStats" :key="stat.label">
-                <div class="font-display text-3xl text-primary font-black leading-none">{{ stat.value }}</div>
-                <div class="text-[0.7rem] uppercase tracking-widest text-on-surface-variant font-bold mt-2">{{ stat.label }}</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Designer's toolkit composition — desktop only -->
-          <div class="relative hidden lg:block">
-            <div class="relative aspect-square max-w-md mx-auto">
-              <!-- Gradient backdrop -->
-              <div class="absolute inset-6 rounded-[2rem] bg-gradient-to-br from-primary/85 via-primary-container to-primary/60 ambient-shadow"></div>
-
-              <!-- Icon badge top-right -->
-              <div class="absolute top-0 right-8 w-20 h-20 rounded-2xl bg-white shadow-xl flex items-center justify-center rotate-[8deg]">
-                <span class="material-symbols-outlined text-primary text-[40px]">design_services</span>
-              </div>
-
-              <!-- Color palette card -->
-              <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
-                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Color Palette</div>
-                <div class="flex gap-2">
-                  <div class="w-9 h-9 rounded-lg bg-primary ring-2 ring-white"></div>
-                  <div class="w-9 h-9 rounded-lg bg-primary-container ring-2 ring-white"></div>
-                  <div class="w-9 h-9 rounded-lg bg-slate-900 ring-2 ring-white"></div>
-                  <div class="w-9 h-9 rounded-lg bg-orange-400 ring-2 ring-white"></div>
-                </div>
-              </div>
-
-              <!-- Typography card -->
-              <div class="absolute top-44 right-0 bg-white rounded-2xl p-5 shadow-xl rotate-[5deg]">
-                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Typography</div>
-                <div class="font-display text-4xl font-black leading-none text-primary">Aa</div>
-                <div class="text-xs text-on-surface-variant mt-1">Inter · Display</div>
-              </div>
-
-              <!-- Layout grid card -->
-              <div class="absolute bottom-6 left-6 bg-white rounded-2xl p-5 shadow-xl rotate-[-3deg]">
-                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Layout Grid</div>
-                <div class="grid grid-cols-3 gap-1.5 w-32">
-                  <div class="h-5 rounded-sm bg-primary"></div>
-                  <div class="h-5 rounded-sm bg-primary/30"></div>
-                  <div class="h-5 rounded-sm bg-primary/30"></div>
-                  <div class="h-5 rounded-sm bg-primary/30"></div>
-                  <div class="h-5 rounded-sm bg-primary"></div>
-                  <div class="h-5 rounded-sm bg-primary/30"></div>
-                </div>
-              </div>
-
-              <!-- Live status chip -->
-              <div class="absolute bottom-16 right-0 bg-white rounded-full px-4 py-2 shadow-xl rotate-[6deg] flex items-center gap-2">
-                <span class="relative flex w-2 h-2">
-                  <span class="absolute inline-flex w-full h-full rounded-full bg-emerald-500 opacity-75 animate-ping"></span>
-                  <span class="relative inline-flex w-2 h-2 rounded-full bg-emerald-500"></span>
-                </span>
-                <span class="text-xs font-bold text-on-surface uppercase tracking-wider">Live</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      heading="Moderne Websites für Unternehmen, Marken und digitale Produkte"
+      :paragraphs="introParagraphs"
+      image="/web-development/design.webp"
+      image-alt="Professionelles Webdesign"
+      :badge="introBadge"
+    />
 
     <!-- Services -->
     <ServicesSection title="Unsere Webdesign Leistungen" variant="centered" :services="designServices" />
@@ -130,7 +40,7 @@
     <ProcessSection title="Unser Webdesign Prozess" :steps="processSteps" />
 
     <!-- Expertise blocks — 2 card columns with tags -->
-    <section class="relative py-section-padding bg-surface-container-low overflow-hidden">
+    <section data-nav-label="Expertise" data-nav-icon="verified" class="relative py-section-padding bg-surface-container-low overflow-hidden">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none"></div>
 
       <div class="relative max-w-container-max mx-auto px-gutter">
@@ -204,26 +114,18 @@ useHead({
 
 const trustCompanies = ['WEB DESIGN', 'UI/UX', 'BRANDING', 'RESPONSIVE'];
 
-const introPoints = [
-  {
-    icon: 'speed',
-    text: 'Als professionelle Webdesign Agentur entwickelt EvolaTec moderne, schnelle und konversionsstarke Websites für Unternehmen, Startups und lokale Dienstleister.',
-  },
-  {
-    icon: 'verified',
-    text: 'Professionelles Webdesign verbessert die Wahrnehmung Ihrer Marke, steigert Vertrauen und sorgt dafür, dass Besucher zu Kunden werden.',
-  },
-  {
-    icon: 'auto_awesome',
-    text: 'Unsere Webagentur kombiniert modernes UI/UX Design, SEO-optimierte Strukturen und performante Entwicklung für nachhaltigen Erfolg im Internet.',
-  },
+const introParagraphs = [
+  'Als professionelle Webdesign Agentur entwickelt EvolaTec moderne, schnelle und konversionsstarke Websites für Unternehmen, Startups und lokale Dienstleister.',
+  'Professionelles Webdesign verbessert die Wahrnehmung Ihrer Marke, steigert Vertrauen und sorgt dafür, dass Besucher zu Kunden werden.',
+  'Unsere Webagentur kombiniert modernes UI/UX Design, SEO-optimierte Strukturen und performante Entwicklung für nachhaltigen Erfolg im Internet.',
 ];
 
-const introStats = [
-  { value: '10+', label: 'Jahre Erfahrung' },
-  { value: '100+', label: 'Projekte' },
-  { value: '98%', label: 'Zufriedenheit' },
-];
+const introBadge = {
+  icon: 'palette',
+  title: 'Modernes Design',
+  subtitle: 'Markenstark',
+  iconBg: 'bg-gradient-to-br from-primary to-primary-container',
+};
 
 const expertiseBlocks = [
   {

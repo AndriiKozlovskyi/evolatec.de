@@ -14,29 +14,6 @@
     <!-- Trust Section -->
     <TrustSection :companies="trustCompanies" />
 
-    <!-- Intro Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Warum professionelle Website Texte wichtig sind
-          </h2>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Gute Webseiten Texte entscheiden darüber, ob Besucher zu Kunden werden.
-          </p>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Moderne Website Inhalte müssen nicht nur professionell wirken, sondern gleichzeitig bei Google ranken und Vertrauen schaffen.
-          </p>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            EvolaTec erstellt SEO optimierte Texte, die Suchmaschinen verstehen und Nutzer überzeugen.
-          </p>
-        </div>
-      </div>
-    </section>
-
     <!-- Services Section -->
     <ServicesSection title="Unsere Content & Copywriting Leistungen" variant="centered" :services="contentServices" />
 
@@ -51,6 +28,14 @@
       title="Welche Inhalte erstellen wir?"
       icon="edit_document"
       :items="contentTypes"
+    />
+        <!-- Intro Section -->
+    <IntroSection
+      heading="Warum professionelle Website Texte wichtig sind"
+      :paragraphs="introParagraphs"
+      image="/design-content/copywriting.webp"
+      image-alt="SEO Copywriting EvolaTec"
+      :badge="introBadge"
     />
 
     <!-- Pricing Section -->
@@ -93,6 +78,19 @@ useHead({
 });
 
 const trustCompanies = ['SEO CONTENT', 'COPYWRITING', 'WEB TEXTE', 'CONVERSION'];
+
+const introParagraphs = [
+  'Gute Webseiten Texte entscheiden darüber, ob Besucher zu Kunden werden.',
+  'Moderne Website Inhalte müssen nicht nur professionell wirken, sondern gleichzeitig bei Google ranken und Vertrauen schaffen.',
+  'EvolaTec erstellt SEO optimierte Texte, die Suchmaschinen verstehen und Nutzer überzeugen.',
+];
+
+const introBadge = {
+  icon: 'edit_document',
+  title: 'SEO Texte',
+  subtitle: 'Die ranken',
+  iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-600',
+};
 
 const contentStats = [
   { value: 'SEO +', label: 'Optimiert', icon: 'trending_up' },

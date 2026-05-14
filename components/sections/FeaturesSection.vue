@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-primary text-on-primary">
+  <section data-nav-icon="auto_awesome" class="py-section-padding bg-primary text-on-primary">
     <div class="max-w-container-max mx-auto px-gutter">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
         <!-- Left Features -->

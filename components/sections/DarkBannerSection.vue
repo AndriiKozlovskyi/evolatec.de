@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-section-padding overflow-hidden">
+  <section data-nav-label="Highlights" data-nav-icon="campaign" class="relative py-section-padding overflow-hidden">
     <NuxtPicture
       :src="image"
       alt=""
@@ -27,7 +27,7 @@
 
         <div v-if="stats?.length" class="grid grid-cols-3 gap-6 mb-10">
           <div v-for="stat in stats" :key="stat.label" class="text-center">
-            <div class="font-black text-3xl bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent mb-1">
+            <div class="font-black text-3xl text-white mb-1">
               {{ stat.value }}
             </div>
             <div class="text-white/50 text-xs uppercase tracking-wider font-bold">{{ stat.label }}</div>

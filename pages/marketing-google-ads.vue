@@ -12,24 +12,13 @@
     />
 
     <!-- Intro Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Warum Google Ads für Unternehmen wichtig ist
-          </h2>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Google Ads gehört zu den effektivsten Methoden, um sofort sichtbar zu werden und gezielt neue Kunden zu erreichen.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Unternehmen können genau dann sichtbar sein, wenn potenzielle Kunden aktiv nach Dienstleistungen, Produkten oder Lösungen suchen.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Als Google Ads Agentur entwickelt EvolaTec datenbasierte Kampagnen, die Reichweite, Leads und Umsatz steigern. Erfahren Sie mehr über unsere <a href="/online-marketing" class="text-primary font-semibold hover:underline">Online Marketing Leistungen</a>.
-          </p>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      heading="Warum Google Ads für Unternehmen wichtig ist"
+      :paragraphs="introParagraphs"
+      image="/landing/advertising.webp"
+      image-alt="Google Ads Kampagnen EvolaTec"
+      :badge="introBadge"
+    />
 
     <!-- Services Section -->
     <ServicesSection title="Unsere Google Ads Leistungen" variant="centered" :services="adsServices" />
@@ -47,62 +36,16 @@
     />
 
     <!-- Why EvolaTec Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-
-        <!-- Image + Text split -->
-        <div class="grid md:grid-cols-2 gap-stack-lg items-center mb-stack-lg">
-          <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
-            <img
-              src="/landing/leads.webp"
-              alt="Google Ads Performance Marketing EvolaTec"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
-            <!-- Floating badge -->
-            <div class="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
-                <span class="material-symbols-outlined text-white text-xl">ads_click</span>
-              </div>
-              <div>
-                <div class="font-bold text-primary text-sm">+340% ROI</div>
-                <div class="text-on-surface-variant text-xs">aus Kampagnen</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              Warum EvolaTec als Google Ads Agentur?
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Erfolgreiche Google Werbung besteht nicht nur aus Anzeigen.
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Entscheidend sind Strategie, Nutzererfahrung, Landingpages und kontinuierliche Optimierung.
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-              EvolaTec kombiniert Google Ads, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Conversion Optimierung und modernes Webdesign zu leistungsstarken Marketing Systemen.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-gutter">
-          <div
-            v-for="usp in whyEvolaTec"
-            :key="usp.title"
-            class="glass-card ambient-shadow bg-white/60 p-8 text-center border-t-4 transition-all duration-300 hover:scale-105"
-            :class="usp.borderColor"
-          >
-            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" :class="usp.iconBg">
-              <span class="material-symbols-outlined text-2xl" :class="usp.iconColor">{{ usp.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ usp.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ usp.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      data-nav-label="Warum wir"
+      data-nav-icon="stars"
+      heading="Warum EvolaTec als Google Ads Agentur?"
+      :paragraphs="whyEvolaTecParagraphs"
+      image="/landing/leads.webp"
+      image-alt="Google Ads Performance Marketing EvolaTec"
+      :badge="whyEvolaTecBadge"
+      :usps="whyEvolaTec"
+    />
 
     <!-- Pricing Table Section -->
     <section class="py-section-padding bg-surface-container-low">
@@ -168,6 +111,32 @@ useHead({
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-google-ads' }],
 });
+
+const introParagraphs = [
+  'Google Ads gehört zu den effektivsten Methoden, um sofort sichtbar zu werden und gezielt neue Kunden zu erreichen.',
+  'Unternehmen können genau dann sichtbar sein, wenn potenzielle Kunden aktiv nach Dienstleistungen, Produkten oder Lösungen suchen.',
+  'Als Google Ads Agentur entwickelt EvolaTec datenbasierte Kampagnen, die Reichweite, Leads und Umsatz steigern. Erfahren Sie mehr über unsere <a href="/online-marketing" class="text-primary font-semibold hover:underline">Online Marketing Leistungen</a>.',
+];
+
+const introBadge = {
+  icon: 'campaign',
+  title: 'Sofort sichtbar',
+  subtitle: 'bei Google',
+  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
+};
+
+const whyEvolaTecParagraphs = [
+  'Erfolgreiche Google Werbung besteht nicht nur aus Anzeigen.',
+  'Entscheidend sind Strategie, Nutzererfahrung, Landingpages und kontinuierliche Optimierung.',
+  'EvolaTec kombiniert Google Ads, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Conversion Optimierung und modernes Webdesign zu leistungsstarken Marketing Systemen.',
+];
+
+const whyEvolaTecBadge = {
+  icon: 'ads_click',
+  title: '+340% ROI',
+  subtitle: 'aus Kampagnen',
+  iconBg: 'bg-gradient-to-br from-orange-500 to-red-500',
+};
 
 const adsStats = [
   { value: 'Sofort', label: 'Sichtbar', icon: 'visibility' },

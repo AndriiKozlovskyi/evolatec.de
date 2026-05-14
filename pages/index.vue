@@ -12,7 +12,7 @@
     />
 
     <!-- Services Section -->
-    <section class="py-8 md:py-section-padding bg-surface">
+    <section data-nav-label="Leistungen" data-nav-icon="apps" class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-6 md:mb-stack-lg">
           <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-2 md:mb-4 leading-tight">Unsere Leistungen</h2>
@@ -52,18 +52,22 @@
 
     <!-- Why Us Section -->
     <BenefitsSection
+      data-nav-label="Warum wir"
+      data-nav-icon="stars"
       title="Warum EvolaTec?"
       :benefits="whyUs"
     />
 
     <!-- Process Section -->
     <ProcessSection
+      data-nav-label="Prozess"
+      data-nav-icon="route"
       title="So arbeiten wir"
       :steps="processSteps"
     />
 
     <!-- Pricing Overview -->
-    <section class="py-8 md:py-section-padding bg-surface-container-low">
+    <section data-nav-label="Preise" data-nav-icon="sell" class="py-8 md:py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-6 md:mb-stack-lg">
           <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block text-xs">Preise</span>
@@ -118,7 +122,7 @@
     </section>
 
     <!-- Results Section -->
-    <section class="py-8 md:py-section-padding bg-gradient-to-r from-primary/90 via-primary to-primary/90 text-on-primary relative overflow-hidden">
+    <section data-nav-label="Ergebnisse" data-nav-icon="trending_up" class="py-8 md:py-section-padding bg-gradient-to-r from-primary/90 via-primary to-primary/90 text-on-primary relative overflow-hidden">
       <!-- Background decoration - hidden on mobile -->
       <div class="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute -top-40 -right-40 w-80 h-80 bg-on-primary-container/10 rounded-full blur-3xl"></div>
@@ -158,7 +162,7 @@
     </section>
 
     <!-- SEO Text Section -->
-    <section class="py-8 md:py-section-padding bg-white">
+    <section data-nav-label="Über uns" data-nav-icon="info" class="py-8 md:py-section-padding bg-white">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="max-w-3xl mx-auto space-y-4 md:space-y-stack-md">
           <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
@@ -188,12 +192,16 @@
 
     <!-- FAQ Section -->
     <FAQSection
+      data-nav-label="FAQ"
+      data-nav-icon="help"
       title="Häufig gestellte Fragen"
       :faqs="faqs"
     />
 
     <!-- CTA Section -->
     <CTASection
+      data-nav-label="Kontakt"
+      data-nav-icon="send"
       title="Lassen Sie Ihre Website professionell erstellen"
       description="Moderne Websites, die Kunden gewinnen und Ihr Unternehmen wachsen lassen."
       primary-cta="Kostenlos beraten lassen"

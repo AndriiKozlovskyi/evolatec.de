@@ -12,24 +12,13 @@
     />
 
     <!-- Intro Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Warum modernes Online Marketing entscheidend ist
-          </h2>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Unternehmen, die online nicht sichtbar sind, verlieren täglich potenzielle Kunden.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Professionelles Online Marketing hilft dabei, Reichweite aufzubauen, Vertrauen zu schaffen und konstant neue Anfragen zu generieren.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            EvolaTec kombiniert <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, Performance Marketing und digitale Strategien zu messbaren Ergebnissen.
-          </p>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      heading="Warum modernes Online Marketing entscheidend ist"
+      :paragraphs="introParagraphs"
+      image="/marketing/hero.webp"
+      image-alt="Online Marketing Agentur EvolaTec"
+      :badge="introBadge"
+    />
 
     <!-- Services Section -->
     <ServicesSection title="Unsere Online Marketing Leistungen" variant="centered" :services="marketingServices" />
@@ -47,62 +36,16 @@
     />
 
     <!-- Why EvolaTec Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-
-        <!-- Image + Text split -->
-        <div class="grid md:grid-cols-2 gap-stack-lg items-center mb-stack-lg">
-          <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
-            <img
-              src="/landing/leads.webp"
-              alt="Online Marketing Agentur EvolaTec"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
-            <!-- Floating badge -->
-            <div class="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-                <span class="material-symbols-outlined text-white text-xl">campaign</span>
-              </div>
-              <div>
-                <div class="font-bold text-primary text-sm">+180% Leads</div>
-                <div class="text-on-surface-variant text-xs">mehr Anfragen</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              Warum EvolaTec als Online Marketing Agentur?
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Viele Marketing Agenturen konzentrieren sich nur auf Werbung.
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              EvolaTec kombiniert Marketing, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, <a href="/design-branding" class="text-primary font-semibold hover:underline">Branding</a> und technische Optimierung zu einer ganzheitlichen Lösung.
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-              Dadurch entstehen Websites und Marketing Strategien, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-gutter">
-          <div
-            v-for="usp in whyEvolaTec"
-            :key="usp.title"
-            class="glass-card ambient-shadow bg-white/60 p-8 text-center border-t-4 transition-all duration-300 hover:scale-105"
-            :class="usp.borderColor"
-          >
-            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" :class="usp.iconBg">
-              <span class="material-symbols-outlined text-2xl" :class="usp.iconColor">{{ usp.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ usp.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ usp.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      data-nav-label="Warum wir"
+      data-nav-icon="stars"
+      heading="Warum EvolaTec als Online Marketing Agentur?"
+      :paragraphs="whyEvolaTecParagraphs"
+      image="/landing/leads.webp"
+      image-alt="Online Marketing Agentur EvolaTec"
+      :badge="whyEvolaTecBadge"
+      :usps="whyEvolaTec"
+    />
 
     <!-- Consulting/Services List Section -->
     <section class="py-section-padding bg-surface-container-low">
@@ -204,6 +147,32 @@ useHead({
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing' }],
 });
+
+const introParagraphs = [
+  'Unternehmen, die online nicht sichtbar sind, verlieren täglich potenzielle Kunden.',
+  'Professionelles Online Marketing hilft dabei, Reichweite aufzubauen, Vertrauen zu schaffen und konstant neue Anfragen zu generieren.',
+  'EvolaTec kombiniert <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, Performance Marketing und digitale Strategien zu messbaren Ergebnissen.',
+];
+
+const introBadge = {
+  icon: 'campaign',
+  title: 'Mehr Reichweite',
+  subtitle: 'Online sichtbar',
+  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
+};
+
+const whyEvolaTecParagraphs = [
+  'Viele Marketing Agenturen konzentrieren sich nur auf Werbung.',
+  'EvolaTec kombiniert Marketing, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, <a href="/design-branding" class="text-primary font-semibold hover:underline">Branding</a> und technische Optimierung zu einer ganzheitlichen Lösung.',
+  'Dadurch entstehen Websites und Marketing Strategien, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.',
+];
+
+const whyEvolaTecBadge = {
+  icon: 'campaign',
+  title: '+180% Leads',
+  subtitle: 'mehr Anfragen',
+  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
+};
 
 const marketingStats = [
   { value: 'Full Service', label: 'Marketing', icon: 'campaign' },

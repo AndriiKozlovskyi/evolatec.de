@@ -15,27 +15,13 @@
     <TrustSection :companies="trustCompanies" />
 
     <!-- Intro Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Warum professionelles Branding entscheidend ist
-          </h2>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Starkes Branding entscheidet darüber, wie Kunden Ihr Unternehmen wahrnehmen. Eine professionelle Markenidentität schafft Vertrauen, Wiedererkennung und Positionierung im Markt.
-          </p>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Unternehmen mit klarem Corporate Design wirken professioneller, hochwertiger und bleiben langfristig im Gedächtnis.
-          </p>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Als Branding Agentur entwickelt EvolaTec moderne Markenauftritte für Unternehmen, Startups, Dienstleister und digitale Marken.
-          </p>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      heading="Warum professionelles Branding entscheidend ist"
+      :paragraphs="introParagraphs"
+      image="/design-branding/features.webp"
+      image-alt="Professionelles Branding und Corporate Design"
+      :badge="introBadge"
+    />
 
     <!-- Services Section -->
     <ServicesSection title="Unsere Branding & Corporate Design Leistungen" variant="centered" :services="brandingServices" />
@@ -96,6 +82,19 @@ useHead({
 });
 
 const trustCompanies = ['LOGO DESIGN', 'CORPORATE DESIGN', 'BRAND STRATEGY', 'REBRANDING'];
+
+const introParagraphs = [
+  'Starkes Branding entscheidet darüber, wie Kunden Ihr Unternehmen wahrnehmen. Eine professionelle Markenidentität schafft Vertrauen, Wiedererkennung und Positionierung im Markt.',
+  'Unternehmen mit klarem Corporate Design wirken professioneller, hochwertiger und bleiben langfristig im Gedächtnis.',
+  'Als Branding Agentur entwickelt EvolaTec moderne Markenauftritte für Unternehmen, Startups, Dienstleister und digitale Marken.',
+];
+
+const introBadge = {
+  icon: 'palette',
+  title: 'Starkes Branding',
+  subtitle: 'Mehr Vertrauen',
+  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
+};
 
 const brandingStats = [
   { value: 'Einzigartig', label: 'Marken', icon: 'star' },

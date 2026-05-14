@@ -15,7 +15,7 @@
     <TrustSection :companies="trustCompanies" />
 
     <!-- Intro — 2-col with keyword-rich content -->
-    <section class="relative py-section-padding bg-surface overflow-hidden">
+    <section data-nav-label="Intro" data-nav-icon="storefront" class="relative py-section-padding bg-surface overflow-hidden">
       <div class="absolute top-20 -right-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
       <div class="absolute bottom-0 -left-32 w-[400px] h-[400px] rounded-full bg-primary-container/20 blur-[100px] pointer-events-none"></div>
       <div class="relative max-w-container-max mx-auto px-gutter">
@@ -101,7 +101,7 @@
     />
 
     <!-- Expertise Blocks — Kosten & professioneller Shop -->
-    <section class="relative py-section-padding bg-surface-container-low overflow-hidden">
+    <section data-nav-label="Expertise" data-nav-icon="verified" class="relative py-section-padding bg-surface-container-low overflow-hidden">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none"></div>
       <div class="relative max-w-container-max mx-auto px-gutter">
         <div class="text-center max-w-2xl mx-auto mb-stack-lg">

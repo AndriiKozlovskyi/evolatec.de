@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-surface">
+  <section data-nav-icon="category" class="py-section-padding bg-surface">
     <div class="max-w-container-max mx-auto px-gutter text-center">
       <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-stack-lg text-on-surface leading-tight">{{ title }}</h2>
 

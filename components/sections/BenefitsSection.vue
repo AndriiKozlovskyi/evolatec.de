@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-white text-on-surface">
+  <section data-nav-icon="stars" class="py-section-padding bg-white text-on-surface">
     <div class="max-w-container-max mx-auto px-gutter">
       <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-stack-lg text-center leading-tight">{{ title }}</h2>
       <div class="grid grid-cols-1 gap-stack-md" :class="gridCols">

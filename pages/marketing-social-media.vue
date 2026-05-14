@@ -12,24 +12,13 @@
     />
 
     <!-- Intro Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Warum Social Media Marketing heute entscheidend ist
-          </h2>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Facebook, Instagram und andere soziale Netzwerke gehören zu den wichtigsten Marketingkanälen für moderne Unternehmen.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Professionelle Social Media Werbung ermöglicht es, gezielt neue Kunden zu erreichen, Markenbekanntheit aufzubauen und Verkäufe zu steigern.
-          </p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Als Social Media Agentur entwickelt EvolaTec Kampagnen, die Reichweite, Interaktionen, Leads und Umsatz generieren — ergänzt durch <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> und <a href="/marketing-google-ads" class="text-primary font-semibold hover:underline">Google Ads</a>.
-          </p>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      heading="Warum Social Media Marketing heute entscheidend ist"
+      :paragraphs="introParagraphs"
+      image="/smm/meta.webp"
+      image-alt="Social Media Marketing EvolaTec"
+      :badge="introBadge"
+    />
 
     <!-- Platforms Visual Section -->
     <section class="py-section-padding bg-surface-container-low">
@@ -112,61 +101,16 @@
     </DarkBannerSection>
 
     <!-- Why EvolaTec Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <!-- Image + Text split -->
-        <div class="grid md:grid-cols-2 gap-stack-lg items-center mb-stack-lg">
-          <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
-            <img
-              src="/main/seo.webp"
-              alt="Social Media Marketing Agentur EvolaTec"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
-            <!-- Floating badge -->
-            <div class="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center">
-                <span class="material-symbols-outlined text-white text-xl">groups</span>
-              </div>
-              <div>
-                <div class="font-bold text-primary text-sm">+2.4M</div>
-                <div class="text-on-surface-variant text-xs">Reichweite generiert</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              Warum EvolaTec als Social Media Agentur?
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Erfolgreiches Social Media Marketing benötigt mehr als nur schöne Beiträge.
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-              Entscheidend sind Strategie, Zielgruppenanalyse, Content und datenbasierte Optimierung.
-            </p>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-              EvolaTec verbindet Social Media Werbung, <a href="/online-marketing" class="text-primary font-semibold hover:underline">Performance Marketing</a>, Webdesign und <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> zu leistungsstarken Marketing Systemen.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-gutter">
-          <div
-            v-for="usp in whyEvolaTec"
-            :key="usp.title"
-            class="glass-card ambient-shadow p-8 text-center border-t-4 transition-all duration-300 hover:scale-105"
-            :class="usp.borderColor"
-          >
-            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" :class="usp.iconBg">
-              <span class="material-symbols-outlined text-2xl" :class="usp.iconColor">{{ usp.icon }}</span>
-            </div>
-            <h3 class="font-headline-md text-primary mb-3">{{ usp.title }}</h3>
-            <p class="font-body-md text-on-surface-variant">{{ usp.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      data-nav-label="Warum wir"
+      data-nav-icon="stars"
+      heading="Warum EvolaTec als Social Media Agentur?"
+      :paragraphs="whyEvolaTecParagraphs"
+      image="/main/seo.webp"
+      image-alt="Social Media Marketing Agentur EvolaTec"
+      :badge="whyEvolaTecBadge"
+      :usps="whyEvolaTec"
+    />
 
     <!-- Pricing Table Section -->
     <section class="py-section-padding bg-surface-container-low">
@@ -242,6 +186,32 @@ useHead({
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-social-media' }],
 });
+
+const introParagraphs = [
+  'Facebook, Instagram und andere soziale Netzwerke gehören zu den wichtigsten Marketingkanälen für moderne Unternehmen.',
+  'Professionelle Social Media Werbung ermöglicht es, gezielt neue Kunden zu erreichen, Markenbekanntheit aufzubauen und Verkäufe zu steigern.',
+  'Als Social Media Agentur entwickelt EvolaTec Kampagnen, die Reichweite, Interaktionen, Leads und Umsatz generieren — ergänzt durch <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> und <a href="/marketing-google-ads" class="text-primary font-semibold hover:underline">Google Ads</a>.',
+];
+
+const introBadge = {
+  icon: 'thumb_up',
+  title: 'Mehr Reichweite',
+  subtitle: 'Auf Meta',
+  iconBg: 'bg-gradient-to-br from-blue-500 to-pink-500',
+};
+
+const whyEvolaTecParagraphs = [
+  'Erfolgreiches Social Media Marketing benötigt mehr als nur schöne Beiträge.',
+  'Entscheidend sind Strategie, Zielgruppenanalyse, Content und datenbasierte Optimierung.',
+  'EvolaTec verbindet Social Media Werbung, <a href="/online-marketing" class="text-primary font-semibold hover:underline">Performance Marketing</a>, Webdesign und <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> zu leistungsstarken Marketing Systemen.',
+];
+
+const whyEvolaTecBadge = {
+  icon: 'groups',
+  title: '+2.4M',
+  subtitle: 'Reichweite generiert',
+  iconBg: 'bg-gradient-to-br from-pink-500 to-purple-600',
+};
 
 const socialStats = [
   { value: 'Facebook', label: 'Instagram & Meta', icon: 'groups' },

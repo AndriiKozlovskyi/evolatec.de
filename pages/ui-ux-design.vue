@@ -15,27 +15,13 @@
     <TrustSection :companies="trustCompanies" />
 
     <!-- Intro Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl">
-          <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">
-            Warum gutes UI/UX Design entscheidend ist
-          </h2>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Moderne Websites und digitale Produkte müssen nicht nur gut aussehen, sondern auch intuitiv funktionieren.
-          </p>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-            Professionelles UX Design verbessert die Nutzererfahrung, reduziert Absprungraten und erhöht die Wahrscheinlichkeit, dass Besucher zu Kunden werden.
-          </p>
-
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Als UI/UX Design Agentur entwickelt EvolaTec moderne Benutzeroberflächen, digitale Experiences und performante Interfaces für Websites, SaaS Plattformen, Landingpages und E-Commerce Projekte.
-          </p>
-        </div>
-      </div>
-    </section>
+    <IntroSection
+      heading="Warum gutes UI/UX Design entscheidend ist"
+      :paragraphs="introParagraphs"
+      image="/design-ui-ux/features.webp"
+      image-alt="UI/UX Design Agentur"
+      :badge="introBadge"
+    />
 
     <!-- Services Section -->
     <ServicesSection title="Unsere UI/UX Design Leistungen" variant="centered" :services="uiuxServices" />
@@ -103,6 +89,19 @@ useHead({
 });
 
 const trustCompanies = ['UI DESIGN', 'UX RESEARCH', 'PROTOTYPING', 'CONVERSION'];
+
+const introParagraphs = [
+  'Moderne Websites und digitale Produkte müssen nicht nur gut aussehen, sondern auch intuitiv funktionieren.',
+  'Professionelles UX Design verbessert die Nutzererfahrung, reduziert Absprungraten und erhöht die Wahrscheinlichkeit, dass Besucher zu Kunden werden.',
+  'Als UI/UX Design Agentur entwickelt EvolaTec moderne Benutzeroberflächen, digitale Experiences und performante Interfaces für Websites, SaaS Plattformen, Landingpages und E-Commerce Projekte.',
+];
+
+const introBadge = {
+  icon: 'design_services',
+  title: 'Bessere UX',
+  subtitle: 'Mehr Conversion',
+  iconBg: 'bg-gradient-to-br from-purple-500 to-pink-500',
+};
 
 const uiuxStats = [
   { value: 'Modern', label: 'UI Design', icon: 'design_services' },

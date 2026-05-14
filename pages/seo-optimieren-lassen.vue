@@ -27,7 +27,7 @@
     />
 
     <!-- Split image + text section -->
-    <section class="py-section-padding bg-surface">
+    <section data-nav-label="Probleme" data-nav-icon="bug_report" class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="grid md:grid-cols-2 gap-stack-lg items-center">
           <div class="relative rounded-2xl overflow-hidden h-80 shadow-2xl">

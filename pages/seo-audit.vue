@@ -29,7 +29,7 @@
     />
 
     <!-- Common Problems Section -->
-    <section class="py-section-padding bg-surface-container-low">
+    <section data-nav-label="Probleme" data-nav-icon="bug_report" class="py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center max-w-2xl mx-auto mb-stack-lg">
           <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight">Häufige SEO Probleme, die wir finden</h2>

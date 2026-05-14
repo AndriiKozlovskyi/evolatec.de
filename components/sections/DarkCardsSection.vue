@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-gradient-to-br from-primary/90 via-primary to-primary/90 text-on-primary">
+  <section data-nav-icon="dashboard" class="py-section-padding bg-gradient-to-br from-primary/90 via-primary to-primary/90 text-on-primary">
     <div class="max-w-container-max mx-auto px-gutter">
       <h2 class="font-headline-lg text-headline-lg text-white text-center mb-stack-lg">{{ title }}</h2>
 

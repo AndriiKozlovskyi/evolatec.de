@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-surface-container-low text-on-surface">
+  <section data-nav-label="Prozess" data-nav-icon="route" class="py-section-padding bg-surface-container-low text-on-surface">
     <div class="max-w-container-max mx-auto px-gutter">
 
       <!-- Header -->

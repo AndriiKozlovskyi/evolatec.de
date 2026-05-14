@@ -1,5 +1,5 @@
 <template>
-  <section :class="['py-section-padding', bg === 'container-low' ? 'bg-surface-container-low' : 'bg-surface']">
+  <section data-nav-icon="checklist" :class="['py-section-padding', bg === 'container-low' ? 'bg-surface-container-low' : 'bg-surface']">
     <div class="max-w-container-max mx-auto px-gutter">
 
       <!-- Optional centered section title -->

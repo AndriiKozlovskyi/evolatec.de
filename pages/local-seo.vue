@@ -13,7 +13,7 @@
     <TrustSection :companies="trustCompanies" />
 
     <!-- Stats Cards -->
-    <section class="py-section-padding bg-surface">
+    <section data-nav-label="Warum lokal" data-nav-icon="location_on" class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center max-w-2xl mx-auto mb-stack-lg">
           <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight">Warum lokales SEO wichtig ist</h2>

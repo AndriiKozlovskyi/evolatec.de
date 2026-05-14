@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding">
+  <section data-nav-icon="apps" class="py-section-padding">
     <div class="max-w-container-max mx-auto px-gutter">
 
       <!-- Header -->

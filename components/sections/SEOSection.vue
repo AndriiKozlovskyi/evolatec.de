@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-gradient-to-r from-primary via-primary/95 to-primary/90 text-on-primary">
+  <section data-nav-label="SEO Check" data-nav-icon="search_check" class="py-section-padding bg-gradient-to-r from-primary via-primary/95 to-primary/90 text-on-primary">
     <div class="max-w-container-max mx-auto px-gutter">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
         <!-- Content -->
