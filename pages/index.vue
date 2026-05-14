@@ -11,6 +11,105 @@
       :stats="heroStats"
     />
 
+     <!-- Why Us Section -->
+    <section
+      data-nav-label="Warum wir"
+      data-nav-icon="stars"
+      class="relative py-section-padding bg-surface overflow-hidden"
+    >
+      <div class="absolute top-20 -right-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-0 -left-32 w-[400px] h-[400px] rounded-full bg-primary-container/20 blur-[100px] pointer-events-none"></div>
+
+      <div class="relative max-w-container-max mx-auto px-gutter">
+        <div class="grid lg:grid-cols-[1.15fr_1fr] gap-stack-lg items-center">
+
+          <!-- Text column -->
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
+              <span class="material-symbols-outlined text-[18px]">stars</span>
+              Warum EvolaTec?
+            </span>
+
+            <h2 class="font-headline-xl text-headline-xl text-primary mb-6 leading-[1.1]">
+              Moderne Webentwicklung für
+              <span class="relative inline-block">
+                <span class="relative z-10">Unternehmen</span>
+                <span class="absolute -bottom-1 left-0 right-0 h-3 bg-primary/15 rounded-sm -z-0"></span>
+              </span>
+              mit hohen Ansprüchen
+            </h2>
+
+            <p class="font-body-lg text-on-surface-variant mb-10 leading-relaxed">
+              EvolaTec kombiniert modernes Webdesign, performante Entwicklung und SEO-optimierte Technologien für schnelle, professionelle und skalierbare Websites.
+            </p>
+
+            <div class="space-y-5">
+              <div v-for="(point, i) in whyUsPoints" :key="i" class="flex gap-4 items-start">
+                <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-display font-bold text-on-surface mb-1 leading-tight">{{ point.title }}</h3>
+                  <p class="font-body-md text-on-surface-variant leading-relaxed">{{ point.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer toolkit composition — desktop only -->
+          <div class="relative hidden lg:block">
+            <div class="relative aspect-square max-w-md mx-auto">
+              <div class="absolute inset-6 rounded-[2rem] bg-gradient-to-br from-primary/85 via-primary-container to-primary/60 ambient-shadow"></div>
+
+              <!-- Code icon badge top-right -->
+              <div class="absolute top-0 right-8 w-20 h-20 rounded-2xl bg-white shadow-xl flex items-center justify-center rotate-[8deg]">
+                <span class="material-symbols-outlined text-primary text-[40px]">code_blocks</span>
+              </div>
+
+              <!-- Tech stack card -->
+              <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
+                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Tech Stack</div>
+                <div class="flex flex-wrap gap-1.5 max-w-[180px]">
+                  <span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[0.65rem] font-bold">Vue</span>
+                  <span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[0.65rem] font-bold">Nuxt</span>
+                  <span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[0.65rem] font-bold">Tailwind</span>
+                  <span class="px-2 py-1 rounded-md bg-primary/10 text-primary text-[0.65rem] font-bold">TypeScript</span>
+                </div>
+              </div>
+
+              <!-- Lighthouse performance card -->
+              <div class="absolute top-44 right-0 bg-white rounded-2xl p-5 shadow-xl rotate-[5deg]">
+                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Performance</div>
+                <div class="font-display text-4xl font-black leading-none text-primary">99<span class="text-lg text-on-surface-variant">/100</span></div>
+                <div class="text-xs text-on-surface-variant mt-1">Lighthouse</div>
+              </div>
+
+              <!-- Clean code lines card -->
+              <div class="absolute bottom-6 left-6 bg-white rounded-2xl p-5 shadow-xl rotate-[-3deg]">
+                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Clean Code</div>
+                <div class="flex flex-col gap-1.5 w-32">
+                  <div class="h-2 rounded-sm bg-primary w-full"></div>
+                  <div class="h-2 rounded-sm bg-primary/30 w-3/4"></div>
+                  <div class="h-2 rounded-sm bg-primary/30 w-5/6"></div>
+                  <div class="h-2 rounded-sm bg-primary w-2/3"></div>
+                </div>
+              </div>
+
+              <!-- Deployed status pill -->
+              <div class="absolute bottom-16 right-0 bg-white rounded-full px-4 py-2 shadow-xl rotate-[6deg] flex items-center gap-2">
+                <span class="relative flex w-2 h-2">
+                  <span class="absolute inline-flex w-full h-full rounded-full bg-emerald-500 opacity-75 animate-ping"></span>
+                  <span class="relative inline-flex w-2 h-2 rounded-full bg-emerald-500"></span>
+                </span>
+                <span class="text-xs font-bold text-on-surface uppercase tracking-wider">Deployed</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section data-nav-label="Leistungen" data-nav-icon="apps" class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -49,14 +148,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Why Us Section -->
-    <BenefitsSection
-      data-nav-label="Warum wir"
-      data-nav-icon="stars"
-      title="Warum EvolaTec?"
-      :benefits="whyUs"
-    />
 
     <!-- Process Section -->
     <ProcessSection
@@ -274,34 +365,36 @@ const services = [
   },
 ];
 
-const whyUs = [
+const whyUsPoints = [
   {
-    icon: 'target',
-    title: 'Ergebnisse statt nur Design',
-    description: 'Wir entwickeln Websites, die Leads generieren und verkaufen.',
-    bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: '/main/design.webp',
+    icon: 'bolt',
+    title: 'Schnelle & performante Websites',
+    description: 'Unsere Websites werden mit modernen Technologien wie Vue.js, Nuxt und Tailwind CSS entwickelt und erreichen starke Core Web Vitals sowie schnelle Ladezeiten.',
   },
   {
-    icon: 'search_check',
-    title: 'SEO-ready Entwicklung',
-    description: 'Technisch optimierte Websites für bessere Rankings bei Google.',
-    bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: '/main/seo.webp',
+    icon: 'search_insights',
+    title: 'SEO optimierte Entwicklung',
+    description: 'Technisches SEO, saubere Strukturen, SSR Rendering und mobile Optimierung sorgen für bessere Sichtbarkeit bei Google.',
   },
   {
-    icon: 'flash_on',
-    title: 'Schnelle Umsetzung',
-    description: 'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen.',
-    bg: 'bg-gradient-to-br from-amber-500 to-orange-600',
-    image: '/main/fast.webp',
+    icon: 'design_services',
+    title: 'Modernes Premium Design',
+    description: 'Keine Standard-Templates oder veraltete Themes. Wir entwickeln individuelle Benutzeroberflächen mit professionellem UI/UX Design.',
   },
   {
-    icon: 'verified_user',
-    title: 'Transparente Preise',
-    description: 'Klare Angebote ohne versteckte Kosten.',
-    bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
-    image: '/main/price.webp',
+    icon: 'rocket_launch',
+    title: 'Skalierbare Technologien',
+    description: 'Unsere Lösungen eignen sich perfekt für Unternehmenswebsites, SaaS Plattformen, Landingpages und moderne digitale Produkte.',
+  },
+  {
+    icon: 'security',
+    title: 'Sichere & stabile Systeme',
+    description: 'Moderne Architektur bedeutet weniger Abhängigkeit von unsicheren Plugins und eine bessere langfristige Wartbarkeit.',
+  },
+  {
+    icon: 'psychology',
+    title: 'Strategischer Ansatz',
+    description: 'Wir entwickeln nicht nur schöne Websites, sondern digitale Lösungen mit Fokus auf Conversion, Markenauftritt und Wachstum.',
   },
 ];
 
