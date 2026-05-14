@@ -8,7 +8,7 @@
           <span class="font-display text-headline-md font-bold text-primary">EvolaTec</span>
         </div>
         <p class="text-on-surface-variant text-sm md:text-body-md md:pr-8">
-          Wir bauen die digitalen Landmarks von morgen. Präzision in jeder Zeile Code.
+          Websites, SEO und Marketing — alles aus einer Hand.
         </p>
 
         <!-- Direct contact -->

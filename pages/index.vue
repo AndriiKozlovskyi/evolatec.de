@@ -164,7 +164,7 @@
           <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
 
           <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
-            Eine professionelle Website ist heute entscheidend für den Erfolg eines Unternehmens. Bei EvolaTec entwickeln wir moderne Firmenwebsites, Landingpages und Online Shops, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
+            Eine professionelle Website ist heutzutage entscheidend für den Erfolg eines Unternehmens. Bei EvolaTec entwickeln wir moderne Firmenwebsites, Landingpages und Online Shops, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
           </p>
 
           <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
@@ -338,7 +338,7 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Website?',
     answer:
-      'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Jedes Projekt ist unterschiedlich – wir erstellen Ihnen gerne ein transparentes Angebot.',
+      'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.',
   },
   {
     question: 'Wie lange dauert die Erstellung?',
@@ -348,22 +348,22 @@ const faqs = [
   {
     question: 'Ist SEO inklusive?',
     answer:
-      'Ja. Basis-SEO ist in jedem Projekt enthalten. Das beinhaltet technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Meta-Daten.',
+      'Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.',
   },
   {
     question: 'Entwickeln Sie Shopify Shops?',
     answer:
-      'Ja. Wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben Expertise.',
+      'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.',
   },
   {
     question: 'Gibt es Festpreise?',
     answer:
-      'Ja. Wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet – keine versteckten Zusatzkosten.',
+      'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.',
   },
   {
     question: 'Was ist nach dem Launch?',
     answer:
-      'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Optional bieten wir regelmäßige Updates, Monitoring und Performance-Verbesserungen an.',
+      'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an.',
   },
 ];
 </script>
