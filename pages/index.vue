@@ -11,6 +11,61 @@
       :stats="heroStats"
     />
 
+     <!-- About Us Section -->
+    <section
+      data-nav-label="Über uns"
+      data-nav-icon="info"
+      class="relative py-section-padding bg-surface overflow-hidden"
+    >
+      <div class="absolute top-20 -left-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-0 -right-32 w-[400px] h-[400px] rounded-full bg-primary-container/20 blur-[100px] pointer-events-none"></div>
+
+      <div class="relative max-w-container-max mx-auto px-gutter">
+        <div class="grid lg:grid-cols-2 gap-stack-lg items-start">
+
+          <!-- Left: copy -->
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
+              <span class="material-symbols-outlined text-[18px]">info</span>
+              Über EvolaTec
+            </span>
+
+            <h2 class="font-headline-xl text-headline-xl text-primary mb-6 leading-[1.1]">
+              Moderne Webagentur für
+              <span class="relative inline-block">
+                <span class="relative z-10">professionelle</span>
+                <span class="absolute -bottom-1 left-0 right-0 h-3 bg-primary/15 rounded-sm -z-0"></span>
+              </span>
+              digitale Lösungen
+            </h2>
+
+            <div class="space-y-4 font-body-lg text-on-surface-variant leading-relaxed">
+              <p>EvolaTec entwickelt moderne Websites, Unternehmenswebseiten, Landingpages und digitale Plattformen für Unternehmen, Startups und lokale Dienstleister.</p>
+              <p>Unser Fokus liegt auf performanter Webentwicklung, modernem UI/UX Design und SEO-optimierten Lösungen, die nicht nur professionell aussehen, sondern auch messbare Ergebnisse liefern.</p>
+              <p>Wir kombinieren moderne Technologien wie Vue.js, Nuxt, Tailwind CSS und TypeScript, um schnelle, skalierbare und hochwertige Websites für moderne Unternehmen zu entwickeln.</p>
+              <p>Egal ob Firmenwebsite, E-Commerce Plattform, Landingpage oder individuelle Weblösung — EvolaTec unterstützt Unternehmen beim professionellen digitalen Wachstum.</p>
+            </div>
+          </div>
+
+          <!-- Right: 2×2 feature cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div
+              v-for="card in aboutFeatures"
+              :key="card.title"
+              class="bg-white rounded-2xl p-6 border border-outline-variant/30 ambient-shadow hover:shadow-xl hover:-translate-y-1 hover:border-primary/20 transition-all duration-300"
+            >
+              <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-primary text-[22px]">{{ card.icon }}</span>
+              </div>
+              <h3 class="font-display font-bold text-on-surface mb-2 leading-tight">{{ card.title }}</h3>
+              <p class="font-body-md text-on-surface-variant leading-relaxed">{{ card.description }}</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
      <!-- Why Us Section -->
     <section
       data-nav-label="Warum wir"
@@ -253,7 +308,7 @@
     </section>
 
     <!-- SEO Text Section -->
-    <section data-nav-label="Über uns" data-nav-icon="info" class="py-8 md:py-section-padding bg-white">
+    <section data-nav-label="Lösungen" data-nav-icon="category" class="py-8 md:py-section-padding bg-white">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="max-w-3xl mx-auto space-y-4 md:space-y-stack-md">
           <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
@@ -362,6 +417,29 @@ const services = [
     description: 'Mehr Kundenanfragen durch gezielte Werbekampagnen.',
     price: 'ab 400€/Monat',
     href: '/marketing-google-ads',
+  },
+];
+
+const aboutFeatures = [
+  {
+    icon: 'code_blocks',
+    title: 'Moderne Technologien',
+    description: 'Entwicklung mit Vue.js, Nuxt, Tailwind CSS und modernen Frontend-Technologien.',
+  },
+  {
+    icon: 'bolt',
+    title: 'Fokus auf Performance',
+    description: 'Schnelle Ladezeiten, saubere Architektur und optimierte Benutzererfahrung.',
+  },
+  {
+    icon: 'search_insights',
+    title: 'SEO & Sichtbarkeit',
+    description: 'Technische SEO Optimierung für bessere Rankings und mehr organische Sichtbarkeit.',
+  },
+  {
+    icon: 'auto_awesome',
+    title: 'Individuelle Lösungen',
+    description: 'Keine Standard-Themes — jedes Projekt wird individuell entwickelt.',
   },
 ];
 
