@@ -32,9 +32,9 @@
               v-if="isLinkActive(link)"
               class="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full"
             />
-            <span class="material-symbols-outlined text-[0.5rem] leading-none">{{ link.icon }}</span>
+            <span class="material-symbols-outlined text-base leading-none">{{ link.icon }}</span>
             <span class="hidden lg:inline text-[0.7rem]">{{ link.label }}</span>
-            <span v-if="link.submenu" class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform duration-300">
+            <span v-if="link.submenu" class="material-symbols-outlined text-base group-hover:rotate-180 transition-transform duration-300">
               expand_more
             </span>
           </a>
@@ -98,7 +98,7 @@
               @click="mobileMenuOpen = false"
               class="flex items-center gap-4 p-4 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target font-semibold"
             >
-              <span class="material-symbols-outlined text-xl">{{ link.icon }}</span>
+              <span class="material-symbols-outlined text-2xl">{{ link.icon }}</span>
               <span>{{ link.label }}</span>
             </a>
           </div>
@@ -115,14 +115,14 @@
               @click="mobileMenuOpen = false"
               class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2 py-2 rounded-lg hover:bg-primary/10 transition-colors touch-target"
             >
-              <span class="material-symbols-outlined text-base">{{ link.icon }}</span>
+              <span class="material-symbols-outlined text-xl">{{ link.icon }}</span>
               {{ link.label }}
             </a>
             <div
               v-else
               class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2"
             >
-              <span class="material-symbols-outlined text-base">{{ link.icon }}</span>
+              <span class="material-symbols-outlined text-2xl">{{ link.icon }}</span>
               {{ link.label }}
             </div>
             <div class="space-y-2">
@@ -133,7 +133,7 @@
                 @click="mobileMenuOpen = false"
                 class="flex items-center gap-3 p-4 pl-8 text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target text-sm rounded-lg"
               >
-                <span class="material-symbols-outlined text-lg">arrow_right</span>
+                <span class="material-symbols-outlined text-xl">arrow_right</span>
                 {{ sublink.label }}
               </a>
             </div>
@@ -146,7 +146,7 @@
           <div class="px-4">
             <a href="/kontakt" @click="mobileMenuOpen = false" class="block">
               <BaseButton variant="primary" size="lg" class="w-full">
-                <span class="material-symbols-outlined text-xl">rocket_launch</span>
+                <span class="material-symbols-outlined text-2xl">rocket_launch</span>
                 Projekt anfragen
               </BaseButton>
             </a>

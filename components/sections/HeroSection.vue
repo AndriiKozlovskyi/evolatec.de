@@ -1,7 +1,7 @@
 <template>
   <section
     data-nav-label="Start"
-    class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] flex items-center overflow-hidden"
+    class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] lg:min-h-[calc(100vh-5rem)] flex items-center overflow-hidden"
   >
     <!-- Background image — full opacity, cinematic crop -->
     <img
