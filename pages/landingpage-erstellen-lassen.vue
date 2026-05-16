@@ -172,7 +172,7 @@ const processSteps = [
     details: ['Frontend-Entwicklung', 'Performance-Optimierung', 'SEO-Integration'],
   },
   {
-    icon: 'deploy',
+    icon: 'rocket_launch',
     title: 'Deployment',
     description: 'Intensive Testphase, finale Optimierungen und sichere Live-Schaltung.',
     details: ['QA & Testing', 'Optimierung', 'Live-Schaltung'],
@@ -232,7 +232,7 @@ const faqs = [
   },
   {
     question: 'Ist die Landingpage mobil optimiert?',
-    answer: 'Ja. Alle Landingpages sind vollständig responsive und mobile-first optimiert für alle Geräte.',
+    answer: 'Ja, alle Landingpages sind vollständig responsive und für alle Geräte mobil-first optimiert.',
   },
   {
     question: 'Ist SEO inklusive?',
@@ -240,7 +240,7 @@ const faqs = [
   },
   {
     question: 'Kann die Landingpage für Werbung genutzt werden?',
-    answer: 'Ja. Unsere Landingpages sind speziell für Google Ads und Social Media Kampagnen optimiert.',
+    answer: 'Ja, unsere Landingpages sind speziell für Google Ads und Social Media Kampagnen optimiert.',
   },
 ];
 </script>

@@ -41,7 +41,7 @@
                 <p class="font-body-lg text-on-surface-variant flex-1 pt-1">{{ point.text }}</p>
               </div>
             </div>
-            <div class="grid grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30">
+            <div class="grid grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30 text-center">
               <div v-for="stat in introStats" :key="stat.label">
                 <div class="font-display text-3xl text-primary font-black leading-none">{{ stat.value }}</div>
                 <div class="text-[0.7rem] uppercase tracking-widest text-on-surface-variant font-bold mt-2">{{ stat.label }}</div>
@@ -55,14 +55,14 @@
                 <span class="material-symbols-outlined text-primary text-[40px]">storefront</span>
               </div>
               <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
-                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Conversion Rate</div>
-                <div class="font-display text-4xl font-black leading-none text-primary">+340<span class="text-lg text-on-surface-variant">%</span></div>
-                <div class="text-xs text-on-surface-variant mt-1">Ø Ergebnis</div>
+                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Festpreis</div>
+                <div class="font-display text-4xl font-black leading-none text-primary">ab 3.000<span class="text-lg text-on-surface-variant">€</span></div>
+                <div class="text-xs text-on-surface-variant mt-1">Transparent</div>
               </div>
               <div class="absolute top-44 right-0 bg-white rounded-2xl p-5 shadow-xl rotate-[5deg]">
-                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Ladezeit</div>
-                <div class="font-display text-4xl font-black leading-none text-primary">&lt;1.2<span class="text-lg text-on-surface-variant">s</span></div>
-                <div class="text-xs text-on-surface-variant mt-1">PageSpeed</div>
+                <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Lieferzeit</div>
+                <div class="font-display text-4xl font-black leading-none text-primary">ab 14<span class="text-lg text-on-surface-variant">T</span></div>
+                <div class="text-xs text-on-surface-variant mt-1">Schnell live</div>
               </div>
               <div class="absolute bottom-6 left-6 bg-white rounded-2xl p-5 shadow-xl rotate-[-3deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Zahlungsarten</div>
@@ -115,11 +115,11 @@
           <div
             v-for="block in expertiseBlocks"
             :key="block.title"
-            class="group relative bg-surface rounded-3xl p-10 border border-outline-variant/30 ambient-shadow hover:shadow-2xl hover:border-primary/20 transition-all duration-500 overflow-hidden"
+            class="group relative flex bg-surface rounded-3xl p-10 border border-outline-variant/30 ambient-shadow hover:shadow-2xl hover:border-primary/20 transition-all duration-500 overflow-hidden"
           >
             <div class="absolute top-0 left-10 right-10 h-1 bg-gradient-to-r from-primary to-primary-container rounded-b-full"></div>
             <div class="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-primary/5 blur-[60px] pointer-events-none"></div>
-            <div class="relative">
+            <div class="relative flex flex-col w-full">
               <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary/15 transition-all duration-300">
                 <span class="material-symbols-outlined text-primary text-2xl">{{ block.icon }}</span>
               </div>
@@ -127,7 +127,7 @@
               <div class="space-y-4 mb-7">
                 <p v-for="(para, i) in block.paragraphs" :key="i" class="font-body-lg text-on-surface-variant">{{ para }}</p>
               </div>
-              <div class="flex flex-wrap gap-2 pt-6 border-t border-outline-variant/20">
+              <div class="flex flex-wrap gap-2 pt-6 border-t border-outline-variant/20 mt-auto">
                 <span v-for="tag in block.tags" :key="tag" class="px-3 py-1.5 rounded-full bg-primary/8 text-primary text-xs font-semibold">{{ tag }}</span>
               </div>
             </div>
@@ -193,10 +193,10 @@ useHead({
 });
 
 const heroStats = [
-  { value: '+340%', label: 'Conversion', icon: 'trending_up' },
-  { value: '< 1.2s', label: 'Ladezeit', icon: 'flash_on' },
-  { value: '99.9%', label: 'Uptime', icon: 'shield' },
-  { value: 'ab 5T', label: 'Lieferzeit', icon: 'rocket_launch' },
+  { value: 'ab 3.000€', label: 'Festpreis',  icon: 'price_check' },
+  { value: 'ab 14T',    label: 'Lieferzeit', icon: 'rocket_launch' },
+  { value: 'SSL',       label: 'Sicher',     icon: 'shield' },
+  { value: '30 Tage',   label: 'Support',    icon: 'support_agent' },
 ];
 
 const trustCompanies = ['E-COMMERCE', 'SHOPIFY', 'WOOCOMMERCE', 'CUSTOM SHOP'];
@@ -217,9 +217,9 @@ const introPoints = [
 ];
 
 const introStats = [
-  { value: '50+', label: 'Shops Live' },
-  { value: '+340%', label: 'Ø Conversion' },
-  { value: 'ab 5T', label: 'Lieferzeit' },
+  { value: 'SSL', label: 'Sicher' },
+  { value: 'ab 3.000€', label: 'Festpreis' },
+  { value: 'ab 14T', label: 'Lieferzeit' },
 ];
 
 const ecommerceServices = [
@@ -279,7 +279,7 @@ const expertiseBlocks = [
     title: 'Onlineshop erstellen lassen Kosten — was Sie wissen sollten',
     paragraphs: [
       'Die Kosten, einen Onlineshop erstellen zu lassen, hängen von Plattform, Umfang und individuellen Anforderungen ab. Ein professioneller Shopify Shop startet bei EvolaTec ab 5.000 €, individuelle Custom-Lösungen entsprechend höher.',
-      'Zu den einmaligen Erstellungskosten kommen laufende Betriebskosten: Hosting, Plattform-Gebühren (z. B. Shopify ab ca. 30 €/Monat), Zahlungsanbieter-Gebühren sowie optionale Wartungsleistungen.',
+      'Zu den einmaligen Erstellungskosten kommen laufende Betriebskosten hinzu: Hosting, Plattformgebühren (z. B. Shopify ab ca. 30 € pro Monat), Gebühren von Zahlungsanbietern sowie optionale Wartungsleistungen.',
       'Wer seinen Onlineshop professionell erstellen lässt, investiert in eine Lösung, die langfristig Umsatz generiert — statt in günstige Baukastensysteme, die schnell an ihre Grenzen stoßen.',
       'EvolaTec bietet transparente Preise ohne versteckte Kosten. Bereits im ersten Gespräch erhalten Sie eine realistische Einschätzung der Kosten für Ihren individuellen Online Shop.',
     ],
@@ -301,28 +301,28 @@ const expertiseBlocks = [
 const benefits = [
   {
     title: 'Schnelle Lieferzeit',
-    description: 'Ihr professioneller Online Shop geht bereits ab 5 Arbeitstagen live.',
+    description: 'Ihr professioneller Online Shop geht bereits ab 14 Arbeitstagen live.',
     icon: 'flash_on',
     bg: 'bg-gradient-to-br from-blue-600 to-indigo-800',
     image: '/ecommerce/hero.webp',
   },
   {
     title: 'Höhere Conversion',
-    description: 'Conversion-optimierte Shops generieren im Schnitt +340% mehr Bestellungen.',
+    description: 'Konversionsstarke Shop-Architektur, klare CTAs und reibungsloser Checkout für mehr Bestellungen.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
     image: '/ecommerce/features.webp',
   },
   {
-    title: 'Technische Performance',
-    description: 'Ladezeiten unter 1,2 Sekunden und 99,9% Uptime für Ihren Shop.',
-    icon: 'speed',
+    title: 'Sicher & Performant',
+    description: 'SSL-verschlüsselte Zahlungen, schnelle Ladezeiten und SEO-optimierte Struktur — technisch solide aufgebaut.',
+    icon: 'shield',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
     image: '/web-development-cost/tech.webp',
   },
   {
     title: 'Transparente Kosten',
-    description: 'Klare Preise ohne versteckte Gebühren — von Anfang an ehrlich kalkuliert.',
+    description: 'Festpreis ab 3.000€ — von Anfang an ehrlich kalkuliert, keine versteckten Gebühren.',
     icon: 'price_check',
     bg: 'bg-gradient-to-br from-orange-500 to-rose-600',
     image: '/main/price.webp',
@@ -425,7 +425,7 @@ const faqs = [
   {
     question: 'Was kostet es, einen Onlineshop erstellen zu lassen?',
     answer:
-      'Die Kosten für einen professionellen Online Shop bei EvolaTec starten ab 3.000 € für einen Basis-Shop. Premium-Lösungen mit Custom Design, erweiterten Funktionen und Integrationen beginnen ab 6.000 €. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang und Plattform ab — wir beraten Sie gerne transparent.',
+      'Die Kosten für einen professionellen Online Shop bei EvolaTec starten ab 3.000 € für einen Basis-Shop. Premium-Lösungen mit erweiterten Funktionen und Integrationen beginnen ab 6.000 €. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang und Plattform ab — wir beraten Sie gerne transparent.',
   },
   {
     question: 'Welche laufenden Kosten entstehen nach der Shop-Erstellung?',
@@ -435,7 +435,7 @@ const faqs = [
   {
     question: 'Wie lange dauert die Entwicklung eines Online-Shops?',
     answer:
-      'Ein Standard-Shopify-Setup kann innerhalb von 2–4 Wochen live gehen. Komplexe Custom-Lösungen benötigen je nach Umfang 2–4 Monate für Konzeption und Entwicklung.',
+      'Ein professioneller Online Shop ist bei EvolaTec bereits ab 14 Arbeitstagen live. Komplexere Custom-Lösungen mit individuellen Integrationen benötigen je nach Umfang 6–12 Wochen für Konzeption und Entwicklung.',
   },
   {
     question: 'Welche Shop-Plattform ist die richtige für mein Unternehmen?',
@@ -448,9 +448,14 @@ const faqs = [
       'Ja, jeder von uns entwickelte Online Shop ist von Grund auf SEO-optimiert — mit technischer Struktur, PageSpeed-Optimierung, Schema.org Markup und sauberer URL-Architektur für beste Rankings bei Google.',
   },
   {
+    question: 'Ist mein Online Shop sicher?',
+    answer:
+      'Ja. Jeder von uns entwickelte Shop wird mit SSL-Verschlüsselung, sicheren Zahlungsanbietern (Stripe, PayPal, Klarna) und DSGVO-konformer Datenverarbeitung ausgeliefert — Standard, nicht Optional.',
+  },
+  {
     question: 'Bietet EvolaTec auch Wartung und Support nach dem Launch an?',
     answer:
-      'Ja, wir bieten verschiedene Wartungspakete mit monatlichem Support, Updates, Performance-Monitoring und technischer Betreuung. So bleibt Ihr Online Shop dauerhaft aktuell und leistungsstark.',
+      'Im Preis sind 30 Tage kostenloser Support nach dem Launch enthalten. Darüber hinaus bieten wir Wartungspakete mit monatlichem Support, Updates, Performance-Monitoring und technischer Betreuung — damit Ihr Online Shop dauerhaft aktuell und leistungsstark bleibt.',
   },
 ];
 </script>

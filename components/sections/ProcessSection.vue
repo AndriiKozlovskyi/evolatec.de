@@ -14,7 +14,7 @@
           <div
             v-for="(step, index) in steps"
             :key="step.title"
-            class="group animate-fade-in-up flex flex-col items-center text-center"
+            class="group animate-fade-in-up flex flex-1 flex-col items-center text-center"
             :style="{ animationDelay: `${index * 70}ms` }"
           >
             <!-- Ghost number -->
@@ -30,14 +30,17 @@
               {{ step.title }}
             </h4>
 
-            <!-- Description -->
-            <p class="text-on-surface-variant text-sm leading-relaxed">{{ step.description }}</p>
-                       <!-- Icon -->
-            <div
-              class="w-9 h-9 rounded-xl flex items-center justify-center mt-6 group-hover:scale-110 transition-transform duration-300"
-              :class="col(index).iconBg"
-            >
-              <span class="material-symbols-outlined text-[1.1rem]" :class="col(index).iconColor">{{ step.icon }}</span>
+            <!-- Description (min-height keeps each step's text block the same height across the row) -->
+            <p class="text-on-surface-variant text-sm leading-relaxed lg:min-h-[6rem]">{{ step.description }}</p>
+
+            <!-- Icon (pushed to the bottom so all icons align across columns) -->
+            <div class="mt-auto pt-6">
+              <div
+                class="w-9 h-9 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                :class="col(index).iconBg"
+              >
+                <span class="material-symbols-outlined text-[1.1rem]" :class="col(index).iconColor">{{ step.icon }}</span>
+              </div>
             </div>
 
           </div>

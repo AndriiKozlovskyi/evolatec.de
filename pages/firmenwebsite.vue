@@ -293,7 +293,7 @@ const expertiseBlocks = [
     paragraphs: [
       'Unternehmen, die ihre Homepage professionell erstellen lassen, profitieren von einem stärkeren Markenauftritt, mehr Vertrauen und einer besseren Positionierung im Internet.',
       'Eine moderne Firmenhomepage hilft dabei, neue Kunden zu gewinnen, Dienstleistungen professionell zu präsentieren und digitale Sichtbarkeit aufzubauen.',
-      'EvolaTec entwickelt moderne Unternehmenswebsites, die nicht nur gut aussehen, sondern auch technisch performant, responsive und SEO-optimiert sind.',
+      'EvolaTec entwickelt Unternehmenswebsites, die nicht nur gut aussehen, sondern auch technisch leistungsfähig, responsiv und suchmaschinenoptimiert sind.',
       'Professionelle Webseiten überzeugen durch schnelle Ladezeiten, klare Strukturen und benutzerfreundliche Navigation — genau darauf spezialisiert sich unsere Webagentur.',
     ],
     tags: ['Firmenhomepage', 'Markenauftritt', 'Performance', 'SEO Ready'],
@@ -374,7 +374,7 @@ const faqs = [
   {
     question: 'Was kostet es, eine Website erstellen zu lassen?',
     answer:
-      'Die Kosten hängen vom Umfang des Projekts ab. Einfache Unternehmenswebsites starten meist ab einigen hundert Euro, komplexe Plattformen und Onlineshops entsprechend höher.',
+      'Die Kosten hängen vom Umfang des Projekts ab. Einfache Unternehmenswebsites starten in der Regel bei einigen hundert Euro, während die Kosten für komplexe Plattformen und Onlineshops entsprechend höher sind.',
   },
   {
     question: 'Warum ist professionelle Webentwicklung wichtig?',
