@@ -127,7 +127,7 @@ const benefits = [
   {
     icon: 'person_add',
     title: 'Mehr qualifizierte Anfragen',
-    description: 'Kunden die über Google kommen, haben hohe Kaufabsicht — bessere Leads als jeder andere Kanal.',
+    description: 'Menschen suchen bereits nach Ihrer Leistung — SEO sorgt dafür, dass sie Sie finden.',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
     image: '/landing/seo.webp',
   },
@@ -192,7 +192,7 @@ const seoServiceLinks = [
     iconBg: 'bg-blue-100',
     iconBgHover: 'bg-blue-600',
     iconColor: 'text-blue-600',
-    href: '/seo',
+    href: '/kontakt',
   },
   {
     title: 'SEO Optimierung',
@@ -286,7 +286,7 @@ const seoFaqs = [
   {
     question: 'Wie lange dauert SEO?',
     answer:
-      'Erste Ergebnisse sind oft nach 2–3 Monaten sichtbar. Nachhaltige SEO ist jedoch ein langfristiger Prozess, der kontinuierliche Optimierung erfordert.',
+      'Erste Ergebnisse sind in der Regel nach 2–3 Monaten sichtbar. Nachhaltige Suchmaschinenoptimierung (SEO) ist jedoch ein langfristiger Prozess, der kontinuierliche Optimierung erfordert.',
   },
   {
     question: 'Was kostet professionelle SEO?',
@@ -295,11 +295,11 @@ const seoFaqs = [
   {
     question: 'Ist SEO besser als Werbung?',
     answer:
-      'SEO liefert langfristig günstigeren Traffic, während Werbung sofortige Ergebnisse bringt. Beide Strategien funktionieren zusammen am besten.',
+      'SEO liefert langfristig günstigeren Traffic, während Werbung sofortige Ergebnisse bringt. Am besten funktionieren beide Strategien zusammen.',
   },
   {
     question: 'Optimieren Sie internationale Websites?',
-    answer: 'Ja. Wir bieten mehrsprachige und internationale SEO Strategien für Unternehmen an, die global wachsen möchten.',
+    answer: 'Ja, wir bieten mehrsprachige und internationale SEO Strategien für Unternehmen an, die global wachsen möchten.',
   },
   {
     question: 'Was ist im SEO Audit enthalten?',
@@ -307,7 +307,7 @@ const seoFaqs = [
   },
   {
     question: 'Kann ich SEO monatlich kündigen?',
-    answer: 'Ja. Unsere SEO Betreuungsverträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen.',
+    answer: 'Unsere SEO Betreuungsverträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen.',
   },
 ];
 </script>

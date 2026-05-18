@@ -6,7 +6,7 @@
       title="SEO Audit & Analyse: Technischer Check für Ihre Website"
       description="Professioneller SEO Audit für bessere Rankings, mehr Sichtbarkeit und mehr organischen Traffic. Wir analysieren technische Fehler, OnPage SEO und Optimierungspotenziale."
       primaryCTA="Kostenloses SEO Gespräch"
-      secondaryCTA="SEO Audit Preise ansehen"
+      secondaryCTA="Preise ansehen"
       :stats="auditStats"
     />
 
@@ -197,10 +197,10 @@ const auditPricingPlans = [
 ];
 
 const auditFaqs = [
-  { question: 'Was kostet ein SEO Audit?', answer: 'Basis SEO Analysen beginnen ab 100€. Umfangreiche technische Audits ab 300€. Die genauen Kosten hängen von der Komplexität Ihrer Website ab.' },
+  { question: 'Was kostet ein SEO Audit?', answer: 'Basis SEO Analysen beginnen bei 100€. Umfangreiche technische Audits ab 300€. Die genauen Kosten hängen von der Komplexität Ihrer Website ab.' },
   { question: 'Wie lange dauert eine SEO Analyse?', answer: 'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites kann es etwas länger dauern.' },
   { question: 'Was wird bei einem SEO Audit geprüft?', answer: 'Wir prüfen Technik, Ladezeiten, Struktur, Keywords, Content, mobile Optimierung, Indexierung und Wettbewerber-Strategien.' },
-  { question: 'Bekomme ich einen SEO Report?', answer: 'Ja. Sie erhalten einen strukturierten Bericht mit konkreten Handlungsempfehlungen und einem Prioritäts-Plan.' },
-  { question: 'Optimieren Sie die Website auch um?', answer: 'Ja. Nach dem Audit können wir die Optimierungen umsetzen oder Sie bei der Umsetzung unterstützen.' },
+  { question: 'Bekomme ich einen SEO Report?', answer: 'Sie erhalten einen strukturierten Bericht mit konkreten Handlungsempfehlungen und einem Prioritätsplan.' },
+  { question: 'Optimieren Sie die Website auch um?', answer: 'Gerne setzen wir die Optimierungen nach dem Audit für Sie um oder unterstützen Sie dabei.' },
 ];
 </script>

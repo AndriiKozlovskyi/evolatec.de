@@ -4,7 +4,7 @@
       background-image="/seo/link.webp"
       badge="Professionelle Linkbuilding Agentur"
       title="Linkbuilding & Backlink Aufbau: Mehr Autorität für Ihre Website"
-      description="Hochwertige Backlinks sind einer der wichtigsten Google Ranking Faktoren. Wir helfen Unternehmen, starke SEO Autorität aufzubauen und bessere Rankings zu erreichen."
+      description="Hochwertige Backlinks zählen zu den wichtigsten Google Rankingfaktoren. Wir helfen Unternehmen dabei, eine starke SEO-Autorität aufzubauen und bessere Rankings zu erreichen."
       primaryCTA="Linkbuilding starten"
       secondaryCTA="Preise ansehen"
       :stats="linkBuildingStats"
@@ -69,7 +69,7 @@ const linkBuildingStats = [
 const benefits = [
   {
     icon: 'verified',
-    title: 'Mehr Domain Autorität',
+    title: 'Mehr Domain-Autorität',
     description: 'Hochwertige Backlinks von relevanten und vertrauenswürdigen Websites stärken die Autorität Ihrer Domain dauerhaft.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
     image: '/web-development/seo.webp',
@@ -77,7 +77,7 @@ const benefits = [
   {
     icon: 'trending_up',
     title: 'Bessere Google Rankings',
-    description: 'Backlinks sind einer der stärksten Ranking-Faktoren. Mehr Autorität bedeutet bessere Positionen bei Google.',
+    description: 'Backlinks zählen zu den stärksten Ranking-Faktoren. Mehr Autorität bedeutet bessere Positionen bei Google.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
     image: '/main/seo.webp',
   },
@@ -99,7 +99,7 @@ const processSteps = [
   {
     icon: 'map',
     title: 'Strategie Entwicklung',
-    description: 'Erstellung einer individuellen Linkbuilding Strategie passend zu Ihrer Branche.',
+    description: 'Erstellung einer individuellen Linkbuilding Strategie, die zu Ihrer Branche passt.',
   },
   {
     icon: 'people',
@@ -108,7 +108,7 @@ const processSteps = [
   },
   {
     icon: 'link',
-    title: 'Link Aufbau',
+    title: 'Linkaufbau',
     description: 'Aufbau hochwertiger, thematisch relevanter Backlinks.',
   },
   {
@@ -132,7 +132,7 @@ const features = [
   {
     icon: 'edit_document',
     title: 'Gastartikel & Content Links',
-    description: 'Contentbasierter Linkaufbau über hochwertige Gastbeiträge und Artikel.',
+    description: 'Content-basierter Linkaufbau über hochwertige Gastbeiträge und Artikel.',
   },
   {
     icon: 'visibility',
@@ -145,7 +145,7 @@ const backlinksTypes = [
   'Redaktionelle Backlinks von Fachmedien',
   'Branchenverzeichnisse & Portale',
   'Gastartikel & Content Marketing Links',
-  'Contentbasierte Verlinkungen',
+  'Content-basierte Verlinkungen',
   'Lokale Backlinks für Local SEO',
   'Thematisch relevante Nischen-Links',
   'Internationale Backlinks',
@@ -177,10 +177,10 @@ const linkBuildingPricingPlans = [
 ];
 
 const linkBuildingFaqs = [
-  { question: 'Warum sind Backlinks wichtig?', answer: 'Backlinks stärken die Autorität Ihrer Website und verbessern Rankings bei Google. Sie sind einer der stärksten Ranking Faktoren.' },
+  { question: 'Warum sind Backlinks wichtig?', answer: 'Backlinks stärken die Autorität Ihrer Website und verbessern Rankings bei Google. Sie zählen zu den stärksten Rankingfaktoren.' },
   { question: 'Wie lange dauert Linkbuilding?', answer: 'Linkbuilding ist ein langfristiger Prozess. Erste Verbesserungen sind oft nach einigen Wochen sichtbar, nachhaltige Ergebnisse entstehen über Monate.' },
   { question: 'Was kostet professionelles Linkbuilding?', answer: 'Basis Linkbuilding beginnt ab 500€. Monatliche Betreuung ab 700€/Monat. Die genauen Kosten hängen von Ihrer Branche und Zielen ab.' },
-  { question: 'Nutzen Sie sichere SEO Methoden?', answer: 'Ja. Wir setzen auf nachhaltige und Google-konforme Linkbuilding Strategien. Wir vermeiden manipulative Taktiken und toxische Links.' },
-  { question: 'Werden toxische Links entfernt?', answer: 'Ja. Wir analysieren Ihr Linkprofil auf toxische Links und initiieren ggf. Disavow-Anfragen, um schädliche Backlinks zu entfernen.' },
+  { question: 'Nutzen Sie sichere SEO Methoden?', answer: 'Ja, wir setzen auf nachhaltige und Google-konforme Linkbuilding Strategien. Wir vermeiden manipulative Taktiken und toxische Links.' },
+  { question: 'Werden toxische Links entfernt?', answer: 'Ja, wir analysieren Ihr Linkprofil auf toxische Links und initiieren bei Bedarf Disavow-Anfragen, um schädliche Backlinks zu entfernen.' },
 ];
 </script>

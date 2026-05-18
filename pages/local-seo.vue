@@ -4,9 +4,9 @@
       background-image="/seo/local.webp"
       badge="Local SEO Agentur"
       title="Lokales SEO: Werden Sie in Ihrer Region bei Google gefunden"
-      description="Wir helfen Unternehmen, lokal bei Google sichtbar zu werden. Mehr regionale Kunden, bessere Google Maps Rankings und mehr Anfragen aus Ihrer Umgebung."
+      description="Wir helfen Unternehmen dabei, lokal bei Google sichtbar zu werden. Erreichen Sie mehr regionale Kunden, bessere Google Maps Rankings und mehr Anfragen aus Ihrer Umgebung."
       primaryCTA="Kostenloses SEO Gespräch"
-      secondaryCTA="Local SEO Preise ansehen"
+      secondaryCTA="Preise ansehen"
       :stats="localStats"
     />
 
@@ -101,7 +101,7 @@ const benefits = [
   {
     icon: 'location_on',
     title: 'Google Maps Präsenz',
-    description: 'Optimierung Ihres Google Business Profils für bessere Platzierungen in Google Maps und der lokalen Suche.',
+    description: 'Optimierung Ihres Google Business Profils, um bessere Platzierungen in Google Maps und der lokalen Suche zu erreichen.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
     image: '/main/seo.webp',
   },
@@ -208,10 +208,10 @@ const industries = [
 ];
 
 const localFaqs = [
-  { question: 'Was ist Local SEO?', answer: 'Local SEO optimiert Unternehmen für lokale Suchanfragen und Google Maps. Ziel ist es, dass Sie in Ihrer Region bei Google gefunden werden.' },
-  { question: 'Wie lange dauert Local SEO?', answer: 'Erste Verbesserungen sind oft nach wenigen Wochen sichtbar. Nachhaltige Ergebnisse entstehen über mehrere Monate.' },
+  { question: 'Was ist Local SEO?', answer: 'Local SEO optimiert Unternehmen für lokale Suchanfragen und Google Maps. Das Ziel besteht darin, dass Sie in Ihrer Region bei Google gefunden werden.' },
+  { question: 'Wie lange dauert Local SEO?', answer: 'Erste Verbesserungen sind oft nach wenigen Wochen sichtbar. Nachhaltige Ergebnisse stellen sich über mehrere Monate hinweg ein.' },
   { question: 'Was kostet lokales SEO?', answer: 'Basis Local SEO beginnt ab 500€. Monatliche Betreuung ab 300€. Die genauen Kosten hängen von Ihrer Branche und Region ab.' },
-  { question: 'Ist Google Maps wichtig?', answer: 'Ja. Viele lokale Kunden suchen direkt über Google Maps. Eine gute Google Business Optimierung ist entscheidend.' },
-  { question: 'Haben Sie Erfahrung in meiner Branche?', answer: 'Wir arbeiten mit vielen lokalen Unternehmen: Ärzte, Handwerker, Restaurants, Einzelhandel und Dienstleister. Gerne besprechen wir Ihre Branche.' },
+  { question: 'Ist Google Maps wichtig?', answer: 'Ja, viele lokale Kunden suchen direkt über Google Maps. Eine gute Google Business Optimierung ist entscheidend.' },
+  { question: 'Haben Sie Erfahrung in meiner Branche?', answer: 'Wir arbeiten mit vielen lokalen Unternehmen zusammen: Ärzte, Handwerker, Restaurants, Einzelhandel und Dienstleister. Gerne besprechen wir Ihre Branche.' },
 ];
 </script>

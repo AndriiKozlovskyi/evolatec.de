@@ -4,7 +4,7 @@
       background-image="/seo/optimize.webp"
       badge="Technische SEO Optimierung"
       title="Technische SEO Optimierung: Wir bringen Ihre Website auf Kurs"
-      description="Wir optimieren Ihre Website technisch, verbessern Ladezeiten, Core Web Vitals, Struktur und SEO Performance für bessere Google Rankings und mehr Kunden."
+      description="Wir optimieren Ihre Website technisch, verbessern Ladezeiten, Core Web Vitals, Struktur und SEO Performance, um bessere Google-Rankings und mehr Kunden zu erreichen."
       primaryCTA="Website optimieren lassen"
       secondaryCTA="Preise ansehen"
       :stats="optimizationStats"
@@ -111,7 +111,7 @@ const benefits = [
   {
     icon: 'smartphone',
     title: 'Mobile-First Optimierung',
-    description: 'Über 60% aller Suchanfragen kommen vom Smartphone. Mobile Optimierung ist heute kein Optional mehr.',
+    description: 'Über 60% aller Suchanfragen kommen vom Smartphone. Mobile Optimierung ist heute kein optionales Extra mehr.',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
     image: '/landing/seo.webp',
   },
@@ -125,18 +125,18 @@ const processSteps = [
   },
   {
     icon: 'bug_report',
-    title: 'Fehler Identifikation',
-    description: 'Alle technischen SEO Probleme werden erkannt und priorisiert.',
+    title: 'Fehleridentifikation',
+    description: 'Alle technischen SEO-Probleme werden erkannt und priorisiert.',
   },
   {
     icon: 'priority_high',
     title: 'Priorisierung',
-    description: 'Erstellung eines Optimierungsplans nach SEO Relevanz und Impact.',
+    description: 'Erstellung eines Optimierungsplans nach SEO-Relevanz und -Impact.',
   },
   {
     icon: 'build',
     title: 'Technische Umsetzung',
-    description: 'Speed Optimierung, SEO Fixes und strukturelle Verbesserungen.',
+    description: 'Speed-Optimierung, SEO-Fixes und strukturelle Verbesserungen.',
   },
   {
     icon: 'monitoring',
@@ -148,17 +148,17 @@ const processSteps = [
 const features = [
   {
     icon: 'speed',
-    title: 'Ladezeiten Optimierung',
+    title: 'Ladezeiten',
     description: 'Bilder, CSS, JavaScript und Serverantwortzeiten werden gezielt verbessert.',
   },
   {
     icon: 'architecture',
-    title: 'Seitenstruktur Optimierung',
+    title: 'Seitenstruktur',
     description: 'URLs, Überschriften, Navigation und interne Verlinkung werden optimiert.',
   },
   {
     icon: 'security',
-    title: 'Sicherheitsoptimierung',
+    title: 'Sicherheit',
     description: 'HTTPS, sichere Ressourcen und moderne Hosting-Standards.',
   },
   {
@@ -174,14 +174,14 @@ const commonProblems = [
   'Nicht optimierte Bilder',
   'Mobile Darstellungsprobleme',
   'Unsichere Inhalte (Mixed Content)',
-  'Schlechte URL Struktur',
+  'Schlechte URL-Struktur',
 ];
 
 const optimizationPricingPlans = [
   {
     tier: 'Basis Website Optimierung',
     price: 'ab 300 €',
-    features: ['Performance Analyse', 'Speed Optimierung', 'Mobile Check', 'Erste Verbesserungen'],
+    features: ['Performance Analyse', 'Speed-Optimierung', 'Mobile Check', 'Erste Verbesserungen'],
     buttonText: 'Optimierung anfragen',
     isHighlighted: false,
   },
@@ -204,8 +204,8 @@ const optimizationPricingPlans = [
 const optimizationFaqs = [
   { question: 'Was kostet technische SEO Optimierung?', answer: 'Basis Optimierungen beginnen ab 300€. Umfangreiche SEO Optimierungen ab 500–1.200€. Die genauen Kosten hängen vom Umfang ab.' },
   { question: 'Wie lange dauert die Optimierung?', answer: 'Kleine Optimierungen dauern wenige Tage, größere technische Projekte 1–3 Wochen. Das hängt von der Komplexität Ihrer Website ab.' },
-  { question: 'Verbessert technische SEO meine Rankings?', answer: 'Ja. Technische SEO ist eine wichtige Grundlage für bessere Google Rankings. Ohne technische Basis verlieren Sie Sichtbarkeit.' },
-  { question: 'Optimieren Sie bestehende Websites?', answer: 'Ja. Wir optimieren bestehende Websites unabhängig vom verwendeten System oder Framework.' },
-  { question: 'Kann ich die Optimierungen selbst umsetzen?', answer: 'Ja. Wir erstellen einen detaillierten Implementierungsplan. Bei technischen Fragen unterstützen wir Sie gerne.' },
+  { question: 'Verbessert technische SEO meine Rankings?', answer: 'Ja, technische SEO ist eine wichtige Grundlage für bessere Google-Rankings. Ohne technische Basis verlieren Sie Sichtbarkeit.' },
+  { question: 'Optimieren Sie bestehende Websites?', answer: 'Ja, wir optimieren bestehende Websites unabhängig vom verwendeten System oder Framework.' },
+  { question: 'Kann ich die Optimierungen selbst umsetzen?', answer: 'Ja, wir erstellen einen detaillierten Implementierungsplan. Bei technischen Fragen unterstützen wir Sie gerne.' },
 ];
 </script>
