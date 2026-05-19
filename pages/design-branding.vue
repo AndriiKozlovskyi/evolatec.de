@@ -84,7 +84,7 @@ useHead({
 const trustCompanies = ['LOGO DESIGN', 'CORPORATE DESIGN', 'BRAND STRATEGY', 'REBRANDING'];
 
 const introParagraphs = [
-  'Starkes Branding entscheidet darüber, wie Kunden Ihr Unternehmen wahrnehmen. Eine professionelle Markenidentität schafft Vertrauen, Wiedererkennung und Positionierung im Markt.',
+  'Starkes Branding entscheidet darüber, wie Kunden Ihr Unternehmen wahrnehmen. Eine professionelle Markenidentität schafft Vertrauen, sorgt für Wiedererkennung und positioniert Ihr Unternehmen im Markt.',
   'Unternehmen mit klarem Corporate Design wirken professioneller, hochwertiger und bleiben langfristig im Gedächtnis.',
   'Als Branding Agentur entwickelt EvolaTec moderne Markenauftritte für Unternehmen, Startups, Dienstleister und digitale Marken.',
 ];
@@ -115,7 +115,7 @@ const brandingServices = [
   {
     title: 'Logo Design Agentur',
     description: 'Professionelle Logos für Unternehmen, Startups und digitale Marken.',
-    icon: 'art_tracks',
+    icon: 'auto_awesome',
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
     borderColor: 'border-emerald-500',
@@ -158,7 +158,7 @@ const brandingBenefits = [
   {
     title: 'Wiedererkennbarkeit',
     description: 'Ein starkes Corporate Design sorgt dafür, dass Kunden Ihre Marke sofort erkennen.',
-    icon: 'recognition',
+    icon: 'fingerprint',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
     image: '/landing/leads.webp',
   },
@@ -274,7 +274,7 @@ const featuresData = [
   {
     title: 'Logo Design Agentur',
     description: 'Professionelle Logos für Unternehmen, Startups und digitale Marken.',
-    icon: 'art_tracks',
+    icon: 'auto_awesome',
   },
   {
     title: 'Corporate Design',
@@ -331,7 +331,7 @@ const brandingFaqs = [
   {
     question: 'Was macht eine Branding Agentur?',
     answer:
-      'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Design, Logos und strategische Markenauftritte für Unternehmen und Startups.',
+      'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Designs, Logos und strategische Markenauftritte für Unternehmen und Startups.',
   },
   {
     question: 'Warum ist Corporate Design wichtig?',
@@ -346,7 +346,7 @@ const brandingFaqs = [
   {
     question: 'Können bestehende Marken modernisiert werden?',
     answer:
-      'Ja. Wir bieten Rebranding, Corporate Redesign und komplette Marken Relaunches an um bestehende Marken zu modernisieren.',
+      'Ja, wir bieten Rebranding, Corporate Redesign und komplette Marken Relaunches an um bestehende Marken zu modernisieren.',
   },
   {
     question: 'Wie lange dauert ein Branding Projekt?',

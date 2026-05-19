@@ -31,10 +31,10 @@
             </h4>
 
             <!-- Description (min-height keeps each step's text block the same height across the row) -->
-            <p class="text-on-surface-variant text-sm leading-relaxed lg:min-h-[6rem]">{{ step.description }}</p>
+            <p class="text-on-surface-variant text-sm leading-relaxed lg:min-h-[4.5rem]">{{ step.description }}</p>
 
             <!-- Icon (pushed to the bottom so all icons align across columns) -->
-            <div class="mt-auto pt-6">
+            <div class="mt-auto pt-4">
               <div
                 class="w-9 h-9 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
                 :class="col(index).iconBg"

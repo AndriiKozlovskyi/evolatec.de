@@ -79,16 +79,6 @@
       </div>
     </div>
 
-    <!-- Scroll cue -->
-    <button
-      type="button"
-      @click="scrollNext"
-      aria-label="Nach unten scrollen"
-      class="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group"
-    >
-      <span class="text-[0.65rem] uppercase tracking-[0.25em] font-semibold">Scroll</span>
-      <span class="material-symbols-outlined text-2xl animate-bounce-slow group-hover:translate-y-0.5 transition-transform">expand_more</span>
-    </button>
   </section>
 </template>
 
@@ -105,17 +95,6 @@ withDefaults(
   }>(),
   {}
 );
-
-function scrollNext() {
-  const main = document.querySelector('main');
-  if (!main) return;
-  const sections = Array.from(main.querySelectorAll<HTMLElement>(':scope > section, :scope > div > section'));
-  const next = sections[1];
-  if (!next) return;
-  const top = next.getBoundingClientRect().top + window.scrollY - 80;
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  window.scrollTo({ top, behavior: prefersReduced ? 'auto' : 'smooth' });
-}
 </script>
 
 <style scoped>

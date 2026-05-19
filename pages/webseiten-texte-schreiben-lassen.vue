@@ -160,7 +160,7 @@ const contentBenefits = [
   },
   {
     title: 'Höhere Conversion',
-    description: 'Gute Texte überzeugen Besucher und steigern Anfragen.',
+    description: 'Gute Texte überzeugen Besucher und steigern die Anzahl der Anfragen.',
     icon: 'shopping_cart',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
     image: '/web-development-cost/price.webp',
@@ -177,22 +177,22 @@ const contentBenefits = [
 const contentProcess = [
   {
     title: 'Analyse',
-    description: 'Zielgruppe, Branche und Konkurrenz analysieren.',
+    description: 'Wir analysieren Ihre Zielgruppe, Branche und Wettbewerber — und definieren gemeinsam Tonalität, Botschaften und Ziele Ihrer Texte.',
     icon: 'analytics',
   },
   {
     title: 'Keyword Recherche',
-    description: 'Relevante SEO Keywords für bessere Rankings identifizieren.',
+    description: 'Wir identifizieren relevante SEO Keywords mit echtem Suchvolumen und passender Suchintention für nachhaltige Rankings bei Google.',
     icon: 'search',
   },
   {
     title: 'Content Erstellung',
-    description: 'Professionelle, strukturierte und konversionsstarke Inhalte schreiben.',
+    description: 'Professionelle, strukturierte und konversionsstarke Texte — klar verständlich, suchmaschinenoptimiert und auf Ihre Markenstimme abgestimmt.',
     icon: 'edit_document',
   },
   {
     title: 'SEO Optimierung',
-    description: 'Inhalte für Google und Nutzer optimieren.',
+    description: 'Feinschliff für Meta-Daten, Überschriftenstruktur und interne Verlinkung — damit Ihre Inhalte sowohl Google als auch Ihre Leser überzeugen.',
     icon: 'search_insights',
   },
 ];
@@ -274,27 +274,27 @@ const contentFaqs = [
   {
     question: 'Warum sind SEO Texte wichtig?',
     answer:
-      'SEO Texte verbessern Rankings und helfen Google, Ihre Website besser zu verstehen. Gute Texte führen zu mehr organischem Traffic.',
+      'SEO Texte verbessern Rankings und helfen Google dabei, Ihre Website besser zu verstehen. Gute Texte führen zu mehr organischem Traffic.',
   },
   {
     question: 'Schreiben Sie Texte für Landingpages?',
     answer:
-      'Ja. Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.',
+      'Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.',
   },
   {
     question: 'Können Inhalte mehrsprachig erstellt werden?',
     answer:
-      'Ja. Wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativen Sprachkenntnissen.',
+      'Wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativen Sprachkenntnissen.',
   },
   {
     question: 'Was kosten professionelle Website Texte?',
     answer:
-      'Professionelle Webseiten Texte beginnen ab 150€, komplette Projekte ab 700€. Die genauen Kosten hängen vom Umfang ab.',
+      'Professionelle Webseiten Texte beginnen bei 150€, komplette Projekte bei 700€. Die genauen Kosten hängen vom Umfang ab.',
   },
   {
     question: 'Wie lange dauert die Content Erstellung?',
     answer:
-      'Durchschnittlich 5-10 Werktage für einzelne Seiten, größere Projekte 2-4 Wochen. Schnellere Umsetzung ist möglich.',
+      'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für größere Projekte 2–4 Wochen. Eine schnellere Umsetzung ist möglich.',
   },
 ];
 </script>

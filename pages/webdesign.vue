@@ -195,7 +195,7 @@ const designServices = [
   },
   {
     title: 'Responsive Webdesign',
-    description: 'Optimierte Websites für Smartphones, Tablets und Desktop.',
+    description: 'Optimierte Websites für Smartphones, Tablets und Desktops.',
     icon: 'devices',
     iconBg: 'bg-rose-100',
     iconColor: 'text-rose-600',
@@ -243,10 +243,26 @@ const benefits = [
 ];
 
 const processSteps = [
-  { title: 'Analyse', description: 'Analyse von Zielgruppe, Markt und Anforderungen.', icon: 'search' },
-  { title: 'Konzept & Struktur', description: 'Wireframes, Seitenstruktur und UX Planung.', icon: 'schema' },
-  { title: 'Design', description: 'Modernes UI Design und Branding.', icon: 'design_services' },
-  { title: 'Optimierung', description: 'Performance, SEO und mobile Optimierung.', icon: 'rocket_launch' },
+  {
+    title: 'Analyse',
+    description: 'Wir analysieren Zielgruppe, Markt und Wettbewerb — und definieren gemeinsam mit Ihnen klare Ziele für Ihre Website.',
+    icon: 'search',
+  },
+  {
+    title: 'Konzept & Struktur',
+    description: 'Wireframes, Informationsarchitektur und User-Flow für eine intuitive Navigation und maximale Konversion.',
+    icon: 'schema',
+  },
+  {
+    title: 'Design',
+    description: 'Modernes UI Design im Einklang mit Ihrem Branding — pixelgenau, responsiv und auf Wiedererkennung optimiert.',
+    icon: 'design_services',
+  },
+  {
+    title: 'Optimierung',
+    description: 'Schnelle Ladezeiten, mobile Optimierung und saubere SEO-Struktur für nachhaltige Sichtbarkeit bei Google.',
+    icon: 'rocket_launch',
+  },
 ];
 
 const features = [
@@ -258,7 +274,7 @@ const features = [
   {
     icon: 'devices',
     title: 'Responsive auf allen Geräten',
-    description: 'Jedes Layout funktioniert perfekt auf Smartphones, Tablets und Desktop — Mobile First, pixelgenau und ohne Kompromisse.',
+    description: 'Jedes Layout funktioniert perfekt auf Smartphones, Tablets und Desktops — Mobile First, pixelgenau und ohne Kompromisse.',
   },
   {
     icon: 'ads_click',
@@ -280,7 +296,7 @@ const features = [
 const faqs = [
   {
     question: 'Was kostet professionelles Webdesign?',
-    answer: 'Die Kosten hängen vom Umfang des Projekts ab. Professionelle Websites starten meist ab 1.000€.',
+    answer: 'Die Kosten hängen vom Umfang des jeweiligen Projekts ab. Professionelle Websites starten in der Regel ab 1.000€.',
   },
   {
     question: 'Warum ist responsive Webdesign wichtig?',

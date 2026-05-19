@@ -91,7 +91,7 @@ useHead({
 const trustCompanies = ['UI DESIGN', 'UX RESEARCH', 'PROTOTYPING', 'CONVERSION'];
 
 const introParagraphs = [
-  'Moderne Websites und digitale Produkte müssen nicht nur gut aussehen, sondern auch intuitiv funktionieren.',
+  'Moderne Websites und digitale Produkte müssen nicht nur ansprechend gestaltet sein, sondern auch intuitiv bedienbar.',
   'Professionelles UX Design verbessert die Nutzererfahrung, reduziert Absprungraten und erhöht die Wahrscheinlichkeit, dass Besucher zu Kunden werden.',
   'Als UI/UX Design Agentur entwickelt EvolaTec moderne Benutzeroberflächen, digitale Experiences und performante Interfaces für Websites, SaaS Plattformen, Landingpages und E-Commerce Projekte.',
 ];
@@ -253,8 +253,8 @@ const uiuxInfoColumns = [
   {
     heading: 'User Experience Design für moderne Websites',
     paragraphs: [
-      'Professionelles User Experience Design verbessert die Interaktion zwischen Nutzern und digitalen Produkten.',
-      'Gute UX reduziert Frustration, verbessert Orientierung und sorgt dafür, dass Besucher schneller die gewünschten Informationen finden.',
+      'Professionelles User Experience Design optimisiert die Interaktion zwischen Nutzern und digitalen Produkten.',
+      'Eine gute UX reduziert Frustration, verbessert Orientierung und sorgt dafür, dass Besucher schneller die gewünschten Informationen finden.',
     ],
   },
   {
@@ -342,12 +342,12 @@ const uiuxFaqs = [
   {
     question: 'Warum ist UX Design wichtig?',
     answer:
-      'Gute UX verbessert Conversion, Nutzerzufriedenheit, Kundenbindung und reduziert Absprungraten. Schlechte UX führt zu frustrierten Nutzern und verlorenen Kunden.',
+      'Eine gute UX verbessert Conversion, Nutzerzufriedenheit, Kundenbindung und reduziert Absprungraten. Schlechte UX führt zu frustrierten Nutzern und verlorenen Kunden.',
   },
   {
     question: 'Was kostet professionelles UI/UX Design?',
     answer:
-      'UI/UX Projekte beginnen ab 500€ für eine UX Analyse und ab 1.200€ für komplette Website Designs. Komplexe Projekte wie SaaS Apps ab 2.000€.',
+      'UI/UX Projekte beginnen ab 500€ für eine UX Analyse und ab 1.200€ für ein komplettes Website Design. Komplexe Projekte wie SaaS Apps ab 2.000€.',
   },
 ];
 </script>
