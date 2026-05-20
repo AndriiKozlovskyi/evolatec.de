@@ -164,7 +164,7 @@ const introBadge = {
 const whyEvolaTecParagraphs = [
   'Viele Marketing Agenturen konzentrieren sich nur auf Werbung.',
   'EvolaTec kombiniert Marketing, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, <a href="/design-branding" class="text-primary font-semibold hover:underline">Branding</a> und technische Optimierung zu einer ganzheitlichen Lösung.',
-  'Dadurch entstehen Websites und Marketing Strategien, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.',
+  'So entstehen Websites und Marketingstrategien, die nicht nur gut aussehen, sondern auch echte Ergebnisse liefern.',
 ];
 
 const whyEvolaTecBadge = {

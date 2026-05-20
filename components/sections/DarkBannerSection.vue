@@ -25,14 +25,16 @@
 
         <p class="font-body-lg text-white/70 mb-10">{{ description }}</p>
 
-        <div v-if="stats?.length" class="grid grid-cols-3 gap-6 mb-10">
-          <div v-for="stat in stats" :key="stat.label" class="text-center">
-            <div class="font-black text-3xl text-white mb-1">
-              {{ stat.value }}
-            </div>
-            <div class="text-white/50 text-xs uppercase tracking-wider font-bold">{{ stat.label }}</div>
-          </div>
-        </div>
+        <ul v-if="checklist?.length" class="grid sm:grid-cols-2 gap-3 mb-10">
+          <li
+            v-for="item in checklist"
+            :key="item"
+            class="flex items-center gap-3 rounded-xl bg-white/[0.07] border border-white/10 backdrop-blur-sm px-4 py-3 transition-colors duration-300 hover:bg-white/[0.12]"
+          >
+            <span class="material-symbols-outlined text-xl text-blue-300 flex-shrink-0">check_circle</span>
+            <span class="text-white/90 text-sm font-body-md leading-snug">{{ item }}</span>
+          </li>
+        </ul>
 
         <a :href="ctaHref">
           <BaseButton variant="secondary" size="lg">{{ ctaText }}</BaseButton>
@@ -49,7 +51,7 @@ withDefaults(
     badge?: string;
     badgeClass?: string;
     description: string;
-    stats?: Array<{ value: string; label: string }>;
+    checklist?: string[];
     ctaText: string;
     ctaHref?: string;
   }>(),

@@ -91,7 +91,7 @@
       badge="Messbare Ergebnisse"
       description="Unsere Social Media Kampagnen sind auf Ergebnisse ausgelegt — nicht auf Likes. Klicks, Leads und Umsatz sind exakt messbar."
       cta-text="Social Media Kampagne starten"
-      :stats="campaignResults"
+      :checklist="campaignResults"
     >
       <template #title>
         Kampagnen die
@@ -208,8 +208,8 @@ const whyEvolaTecParagraphs = [
 
 const whyEvolaTecBadge = {
   icon: 'groups',
-  title: '+2.4M',
-  subtitle: 'Reichweite generiert',
+  title: 'Meta Ads',
+  subtitle: 'Strategie & Setup',
   iconBg: 'bg-gradient-to-br from-pink-500 to-purple-600',
 };
 
@@ -373,9 +373,10 @@ const socialProcess = [
 ];
 
 const campaignResults = [
-  { value: '+340%', label: 'Mehr Reichweite' },
-  { value: '3.2×', label: 'ROAS Ø' },
-  { value: '-42%', label: 'Cost per Lead' },
+  'Klare KPIs & transparentes Reporting',
+  'A/B-getestete Anzeigen & Creatives',
+  'Laufende Optimierung der Kampagnen',
+  'Fokus auf Leads & Umsatz statt Likes',
 ];
 
 const whyEvolaTec = [
@@ -421,7 +422,7 @@ const socialFaqs = [
   },
   {
     question: 'Was kosten Facebook oder Instagram Ads?',
-    answer: 'Die Betreuung beginnt ab 500€ monatlich. Das Werbebudget wird separat festgelegt.',
+    answer: 'Die Betreuung ist ab einem monatlichen Budget von 500 € möglich. Das Werbebudget wird separat festgelegt.',
   },
   {
     question: 'Wie schnell funktionieren Social Media Ads?',
