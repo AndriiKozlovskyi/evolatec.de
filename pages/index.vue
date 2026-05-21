@@ -267,70 +267,45 @@
       </div>
     </section>
 
-    <!-- Results Section -->
-    <section data-nav-label="Ergebnisse" data-nav-icon="trending_up" class="py-8 md:py-section-padding bg-gradient-to-r from-primary/90 via-primary to-primary/90 text-on-primary relative overflow-hidden">
-      <!-- Background decoration - hidden on mobile -->
-      <div class="hidden sm:block absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute -top-40 -right-40 w-80 h-80 bg-on-primary-container/10 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-on-primary-container/10 rounded-full blur-3xl"></div>
-      </div>
-
-      <div class="relative z-10 max-w-container-max mx-auto px-gutter">
-        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-center mb-6 md:mb-stack-lg leading-tight">Ergebnisse unserer Kunden</h2>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 md:gap-8 mb-6 md:mb-stack-lg">
-          <div
-            v-for="(result, index) in results"
-            :key="index"
-            class="text-center animate-fade-in-up"
-            :style="{ animationDelay: `${index * 100}ms` }"
-          >
-            <p
-              v-if="result.icon"
-              class="text-3xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-3 text-on-primary leading-none flex items-center justify-center"
-            >
-              <span class="material-symbols-outlined" style="font-size: 1em; line-height: 1;">{{ result.icon }}</span>
-            </p>
-            <p
-              v-else
-              class="text-3xl sm:text-5xl md:text-6xl font-black mb-2 sm:mb-3 text-on-primary leading-tight"
-            >{{ result.value }}</p>
-            <p class="text-on-primary-container text-xs sm:text-body-md">{{ result.label }}</p>
-          </div>
-        </div>
-
-        <div class="text-center">
-          <a href="/portfolio" class="inline-block">
-            <BaseButton variant="secondary" size="md">Projekte ansehen</BaseButton>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- SEO Text Section -->
-    <section data-nav-label="Lösungen" data-nav-icon="category" class="py-8 md:py-section-padding bg-white">
+    <section data-nav-label="Lösungen" data-nav-icon="category" class="py-8 md:py-section-padding bg-surface border-y border-outline-variant/40">
       <div class="max-w-container-max mx-auto px-gutter">
-        <div class="max-w-3xl mx-auto space-y-4 md:space-y-stack-md">
-          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
+        <div class="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-stack-lg items-center">
+          <!-- Left: copy + CTAs -->
+          <div class="space-y-4 md:space-y-stack-md">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
 
-          <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
-            Eine professionelle Website ist heutzutage entscheidend für den Erfolg eines Unternehmens. Bei EvolaTec entwickeln wir moderne Firmenwebsites, Landingpages und Online Shops, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
-          </p>
+            <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
+              Eine professionelle Website ist heutzutage entscheidend für den Erfolg eines Unternehmens. Bei EvolaTec entwickeln wir moderne Firmenwebsites, Landingpages und Online Shops, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
+            </p>
 
-          <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
-            Unsere Websites sind SEO-optimiert, mobilfreundlich und auf Conversion ausgelegt. Ob kleine Firmenwebsite, Landingpage für Werbung oder komplexer Online Shop — wir entwickeln individuelle Lösungen für Unternehmen in Deutschland.
-          </p>
+            <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
+              Unsere Websites sind SEO-optimiert, mobilfreundlich und auf Conversion ausgelegt. Ob kleine Firmenwebsite, Landingpage für Werbung oder komplexer Online Shop — wir entwickeln individuelle Lösungen für Unternehmen in Deutschland.
+            </p>
 
-          <div class="pt-6 md:pt-8 flex flex-col sm:flex-wrap sm:flex-row gap-3 sm:gap-4">
-            <a href="/firmenwebsite-erstellen-lassen" class="inline-block w-full sm:w-auto">
-              <BaseButton variant="primary" size="md" class="w-full sm:w-auto">Firmenwebsite</BaseButton>
-            </a>
-            <a href="/landingpage-erstellen-lassen" class="inline-block w-full sm:w-auto">
-              <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Landingpage</BaseButton>
-            </a>
-            <a href="/online-shop-erstellen-lassen" class="inline-block w-full sm:w-auto">
-              <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Online Shop</BaseButton>
-            </a>
+            <div class="pt-6 md:pt-8 flex flex-col sm:flex-wrap sm:flex-row gap-3 sm:gap-4">
+              <a href="/firmenwebsite-erstellen-lassen" class="inline-block w-full sm:w-auto">
+                <BaseButton variant="primary" size="md" class="w-full sm:w-auto">Firmenwebsite</BaseButton>
+              </a>
+              <a href="/landingpage-erstellen-lassen" class="inline-block w-full sm:w-auto">
+                <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Landingpage</BaseButton>
+              </a>
+              <a href="/online-shop-erstellen-lassen" class="inline-block w-full sm:w-auto">
+                <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Online Shop</BaseButton>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: laptop mockup -->
+          <div class="relative">
+            <img
+              src="/web-development/features.webp"
+              alt="Laptop mit professioneller Website Mockup"
+              loading="lazy"
+              width="1000"
+              height="600"
+              class="w-full h-auto"
+            />
           </div>
         </div>
       </div>

@@ -155,7 +155,7 @@ const backlinksTypes = [
 const linkBuildingPricingPlans = [
   {
     tier: 'Backlink Analyse',
-    price: 'ab 200 €',
+    price: 'ab 100 €',
     features: ['Backlink Analyse', 'Konkurrenz Check', 'Probleme identifizieren', 'Strategieempfehlungen'],
     buttonText: 'Analyse anfragen',
     isHighlighted: false,
@@ -179,7 +179,7 @@ const linkBuildingPricingPlans = [
 const linkBuildingFaqs = [
   { question: 'Warum sind Backlinks wichtig?', answer: 'Backlinks stärken die Autorität Ihrer Website und verbessern Rankings bei Google. Sie zählen zu den stärksten Rankingfaktoren.' },
   { question: 'Wie lange dauert Linkbuilding?', answer: 'Linkbuilding ist ein langfristiger Prozess. Erste Verbesserungen sind oft nach einigen Wochen sichtbar, nachhaltige Ergebnisse entstehen über Monate.' },
-  { question: 'Was kostet professionelles Linkbuilding?', answer: 'Basis Linkbuilding beginnt ab 500€. Monatliche Betreuung ab 700€/Monat. Die genauen Kosten hängen von Ihrer Branche und Zielen ab.' },
+  { question: 'Was kostet professionelles Linkbuilding?', answer: 'Linkbuilding beginnt ab 100€. Monatliche Betreuung ab 700€/Monat. Die genauen Kosten hängen von Ihrer Branche und Zielen ab.' },
   { question: 'Nutzen Sie sichere SEO Methoden?', answer: 'Ja, wir setzen auf nachhaltige und Google-konforme Linkbuilding Strategien. Wir vermeiden manipulative Taktiken und toxische Links.' },
   { question: 'Werden toxische Links entfernt?', answer: 'Ja, wir analysieren Ihr Linkprofil auf toxische Links und initiieren bei Bedarf Disavow-Anfragen, um schädliche Backlinks zu entfernen.' },
 ];
