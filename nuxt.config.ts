@@ -1,6 +1,15 @@
+// Cookiebot Domain Group ID — get yours free at https://www.cookiebot.com
+// after registering your domain, then paste it here.
+const COOKIEBOT_CBID = '262a7035-5608-447f-b551-e39d0be800f3';
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      cookiebotCbid: COOKIEBOT_CBID,
+    },
+  },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
@@ -28,6 +37,19 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      script: [
+        // Cookiebot consent banner — must load first in <head> so auto-blocking
+        // can hold back any tracking scripts/cookies until the user consents.
+        {
+          id: 'Cookiebot',
+          src: 'https://consent.cookiebot.com/uc.js',
+          'data-cbid': COOKIEBOT_CBID,
+          'data-blockingmode': 'auto',
+          type: 'text/javascript',
+          tagPosition: 'head',
+          tagPriority: 'critical',
+        },
+      ],
       link: [
         {
           rel: 'icon',
