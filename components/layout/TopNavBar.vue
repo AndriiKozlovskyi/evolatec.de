@@ -82,77 +82,80 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
-<div
-  v-if="mobileMenuOpen"
-  id="mobile-menu"
-  class="md:hidden fixed top-20 left-0 right-0 bottom-0 backdrop-blur-md z-50 overflow-y-auto overscroll-contain bg-surface"
->
-      <div class="max-w-container-max mx-auto px-gutter py-4 pb-32">
-          <!-- Main Navigation Links -->
-          <div class="space-y-2 mb-6">
+    <Transition name="slide-up">
+      <div
+        v-if="mobileMenuOpen"
+        id="mobile-menu"
+        class="md:hidden fixed top-20 left-0 right-0 bottom-0 backdrop-blur-md z-50 overflow-y-auto overscroll-contain bg-surface/95"
+      >
+        <div class="max-w-container-max mx-auto px-gutter py-6 pb-32 space-y-2">
+          <!-- Navigation Links -->
+          <div
+            v-for="link in navLinks"
+            :key="link.id"
+            class="space-y-1"
+          >
+            <!-- Main Link -->
+            <button
+              v-if="link.submenu"
+              @click="toggleMobileSubmenu(link.id)"
+              class="w-full flex items-center justify-between gap-4 px-4 py-3 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-all duration-200 font-semibold touch-target"
+            >
+              <span class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-xl flex-shrink-0">{{ link.icon }}</span>
+                <span>{{ link.label }}</span>
+              </span>
+              <span
+                class="material-symbols-outlined text-lg flex-shrink-0 transition-transform duration-300"
+                :class="{ 'rotate-180': expandedMenus.has(link.id) }"
+              >
+                expand_more
+              </span>
+            </button>
             <a
-              v-for="link in navLinks"
-              v-show="!link.submenu"
-              :key="link.id"
+              v-else
               :href="link.href"
               @click="mobileMenuOpen = false"
-              class="flex items-center gap-4 p-4 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target font-semibold"
+              class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-all duration-200 font-semibold touch-target"
             >
-              <span class="material-symbols-outlined text-2xl">{{ link.icon }}</span>
+              <span class="material-symbols-outlined text-xl flex-shrink-0">{{ link.icon }}</span>
               <span>{{ link.label }}</span>
             </a>
-          </div>
 
-          <!-- Submenu Items -->
-          <div
-            v-for="link in navLinks.filter(l => l.submenu)"
-            :key="`submenu-${link.id}`"
-            class="border-t border-outline-variant/20 pt-6 mt-6"
-          >
-            <a
-              v-if="link.href && link.href !== '#'"
-              :href="link.href"
-              @click="mobileMenuOpen = false"
-              class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2 py-2 rounded-lg hover:bg-primary/10 transition-colors touch-target"
-            >
-              <span class="material-symbols-outlined text-xl">{{ link.icon }}</span>
-              {{ link.label }}
-            </a>
-            <div
-              v-else
-              class="font-bold text-primary px-4 mb-4 text-sm uppercase tracking-wider flex items-center gap-2"
-            >
-              <span class="material-symbols-outlined text-2xl">{{ link.icon }}</span>
-              {{ link.label }}
-            </div>
-            <div class="space-y-2">
-              <a
-                v-for="sublink in link.submenu"
-                :key="sublink.id"
-                :href="sublink.href"
-                @click="mobileMenuOpen = false"
-                class="flex items-center gap-3 p-4 pl-8 text-on-surface hover:bg-primary/10 hover:text-primary transition-colors touch-target text-sm rounded-lg"
+            <!-- Submenu (Collapsible) -->
+            <Transition name="expand">
+              <div
+                v-if="link.submenu && expandedMenus.has(link.id)"
+                class="space-y-1 pl-4"
               >
-                <span class="material-symbols-outlined text-xl">arrow_right</span>
-                {{ sublink.label }}
-              </a>
-            </div>
+                <a
+                  v-for="sublink in link.submenu"
+                  :key="sublink.id"
+                  :href="sublink.href"
+                  @click="mobileMenuOpen = false"
+                  class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm text-on-surface-variant hover:bg-primary/10 hover:text-primary transition-all duration-200 touch-target"
+                >
+                  <span>{{ sublink.label }}</span>
+                </a>
+              </div>
+            </Transition>
           </div>
 
           <!-- Divider -->
-          <div class="border-t border-outline-variant/20 my-6"></div>
+          <div class="border-t border-outline-variant/20 my-4"></div>
 
           <!-- CTA Button -->
-          <div class="px-4">
+          <div>
             <a href="/kontakt" @click="mobileMenuOpen = false" class="block">
               <BaseButton variant="primary" size="lg" class="w-full">
-                <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                <span class="material-symbols-outlined text-lg">rocket_launch</span>
                 Projekt anfragen
               </BaseButton>
             </a>
           </div>
         </div>
-    </div>
+      </div>
+    </Transition>
   </nav>
 </template>
 
@@ -160,11 +163,13 @@
 import { ref, watch, onBeforeUnmount } from 'vue';
 
 const mobileMenuOpen = ref(false);
+const expandedMenus = ref(new Set<number>());
 const route = useRoute();
 
 if (import.meta.client) {
   watch(mobileMenuOpen, (open) => {
     document.body.style.overflow = open ? 'hidden' : '';
+    if (!open) expandedMenus.value.clear();
   });
   watch(() => route.path, () => {
     mobileMenuOpen.value = false;
@@ -172,6 +177,14 @@ if (import.meta.client) {
   onBeforeUnmount(() => {
     document.body.style.overflow = '';
   });
+}
+
+function toggleMobileSubmenu(linkId: number) {
+  if (expandedMenus.value.has(linkId)) {
+    expandedMenus.value.delete(linkId);
+  } else {
+    expandedMenus.value.add(linkId);
+  }
 }
 
 function isLinkActive(link: (typeof navLinks)[number]) {
@@ -237,6 +250,36 @@ const navLinks = [
   min-height: 44px;
   display: flex;
   align-items: center;
+}
+
+/* Slide-up animation for mobile menu */
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+}
+
+/* Expand animation for submenus */
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+  opacity: 0;
+  max-height: 0;
+}
+
+.expand-enter-to,
+.expand-leave-from {
+  opacity: 1;
+  max-height: 500px;
 }
 
 .fade-enter-active,
