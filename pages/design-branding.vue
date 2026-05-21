@@ -70,6 +70,42 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/design-branding/#webpage',
+      url: 'https://evolatec.de/design-branding',
+      name: 'Branding Agentur & Corporate Design | EvolaTec',
+      description: 'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung. EvolaTec entwickelt starke Markenidentitäten für Unternehmen und Startups.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/design-branding/#service',
+      name: 'Branding & Corporate Design',
+      description: 'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung.',
+      url: 'https://evolatec.de/design-branding',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '200', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was macht eine Branding Agentur?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Designs, Logos und strategische Markenauftritte für Unternehmen und Startups.' } },
+        { '@type': 'Question', name: 'Warum ist Corporate Design wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Corporate Design sorgt für Wiedererkennbarkeit, Professionalität und Vertrauen. Ein einheitliches Design schafft eine konsistente Markenwahrnehmung.' } },
+        { '@type': 'Question', name: 'Was kostet professionelles Branding?', acceptedAnswer: { '@type': 'Answer', text: 'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.500€.' } },
+        { '@type': 'Question', name: 'Können bestehende Marken modernisiert werden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir bieten Rebranding, Corporate Redesign und komplette Marken Relaunches an um bestehende Marken zu modernisieren.' } },
+        { '@type': 'Question', name: 'Wie lange dauert ein Branding Projekt?', acceptedAnswer: { '@type': 'Answer', text: 'Ein Branding Projekt dauert durchschnittlich 4-8 Wochen, abhängig von Umfang und Komplexität. Logo Design ist oft schneller umsetzbar.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Branding Agentur & Corporate Design | EvolaTec',
   meta: [
@@ -79,6 +115,8 @@ useHead({
         'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung. EvolaTec entwickelt starke Markenidentitäten für Unternehmen und Startups.',
     },
   ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/design-branding' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const trustCompanies = ['LOGO DESIGN', 'CORPORATE DESIGN', 'BRAND STRATEGY', 'REBRANDING'];

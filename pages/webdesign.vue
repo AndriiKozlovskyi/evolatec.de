@@ -101,6 +101,41 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/webdesign/#webpage',
+      url: 'https://evolatec.de/webdesign',
+      name: 'Webdesign Agentur – Professionelles Webdesign | EvolaTec',
+      description: 'Professionelles Webdesign von EvolaTec. Moderne Websites, responsive Designs, UI/UX und Branding für Unternehmen, Startups und lokale Firmen.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/webdesign/#service',
+      name: 'Webdesign',
+      description: 'Modernes, responsives Webdesign für Unternehmen, Startups und lokale Firmen.',
+      url: 'https://evolatec.de/webdesign',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1000', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was kostet professionelles Webdesign?', acceptedAnswer: { '@type': 'Answer', text: 'Die Kosten hängen vom Umfang des jeweiligen Projekts ab. Professionelle Websites starten in der Regel ab 1.000€.' } },
+        { '@type': 'Question', name: 'Warum ist responsive Webdesign wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Responsive Websites funktionieren auf Smartphones, Tablets und Desktop-Geräten optimal.' } },
+        { '@type': 'Question', name: 'Was macht eine Webdesign Agentur?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Webdesign Agentur entwickelt moderne Websites, verbessert Markenauftritte und optimiert Nutzererlebnisse.' } },
+        { '@type': 'Question', name: 'Bietet EvolaTec auch UI/UX Design an?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, EvolaTec entwickelt moderne UI/UX Designs für Websites, Apps und digitale Plattformen.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Webdesign Agentur – Professionelles Webdesign | EvolaTec',
   meta: [
@@ -109,6 +144,8 @@ useHead({
       content: 'Professionelles Webdesign von EvolaTec. Moderne Websites, responsive Designs, UI/UX und Branding für Unternehmen, Startups und lokale Firmen.',
     },
   ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/webdesign' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const trustCompanies = ['WEB DESIGN', 'UI/UX', 'BRANDING', 'RESPONSIVE'];

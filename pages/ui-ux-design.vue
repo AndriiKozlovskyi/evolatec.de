@@ -77,6 +77,41 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/ui-ux-design/#webpage',
+      url: 'https://evolatec.de/ui-ux-design',
+      name: 'UI/UX Design Agentur | EvolaTec',
+      description: 'Professionelle UI/UX Design Agentur für moderne Benutzeroberflächen, User Experience Design und digitale Nutzererlebnisse. EvolaTec steigert Conversion durch exzellentes Design.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/ui-ux-design/#service',
+      name: 'UI/UX Design',
+      description: 'Professionelles User Interface und User Experience Design für moderne Websites, Apps und digitale Produkte.',
+      url: 'https://evolatec.de/ui-ux-design',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '500', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was macht eine UX Design Agentur?', acceptedAnswer: { '@type': 'Answer', text: 'Eine UX Agentur entwickelt Nutzererlebnisse, die Websites und digitale Produkte benutzerfreundlicher, intuitiver und conversionsstärker machen.' } },
+        { '@type': 'Question', name: 'Was ist der Unterschied zwischen UI und UX?', acceptedAnswer: { '@type': 'Answer', text: 'UX beschreibt die gesamte Nutzererfahrung und Interaktion mit einem Produkt. UI ist das visuelle Interface und die Benutzeroberfläche, mit der Nutzer interagieren.' } },
+        { '@type': 'Question', name: 'Warum ist UX Design wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Eine gute UX verbessert Conversion, Nutzerzufriedenheit, Kundenbindung und reduziert Absprungraten. Schlechte UX führt zu frustrierten Nutzern und verlorenen Kunden.' } },
+        { '@type': 'Question', name: 'Was kostet professionelles UI/UX Design?', acceptedAnswer: { '@type': 'Answer', text: 'UI/UX Projekte beginnen ab 500€ für eine UX Analyse und ab 1.200€ für ein komplettes Website Design. Komplexe Projekte wie SaaS Apps ab 2.000€.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'UI/UX Design Agentur | EvolaTec',
   meta: [
@@ -86,6 +121,8 @@ useHead({
         'Professionelle UI/UX Design Agentur für moderne Benutzeroberflächen, User Experience Design und digitale Nutzererlebnisse. EvolaTec steigert Conversion durch exzellentes Design.',
     },
   ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/ui-ux-design' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const trustCompanies = ['UI DESIGN', 'UX RESEARCH', 'PROTOTYPING', 'CONVERSION'];

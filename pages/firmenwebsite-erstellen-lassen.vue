@@ -212,6 +212,42 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/firmenwebsite-erstellen-lassen/#webpage',
+      url: 'https://evolatec.de/firmenwebsite-erstellen-lassen',
+      name: 'Firmenwebsite erstellen lassen – Professionelle Unternehmenswebsite | EvolaTec',
+      description: 'Firmenwebsite & Unternehmenswebsite professionell erstellen lassen. Moderne Webseiten für Unternehmen, Dienstleister und Marken — SEO-optimiert, responsive und mit transparenten Festpreisen.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/firmenwebsite-erstellen-lassen/#service',
+      name: 'Firmenwebsite erstellen lassen',
+      description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen — SEO-optimiert, responsive und mit transparenten Festpreisen.',
+      url: 'https://evolatec.de/firmenwebsite-erstellen-lassen',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1500', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was kostet eine professionelle Firmenwebsite?', acceptedAnswer: { '@type': 'Answer', text: 'Die Kosten hängen vom Umfang der Website ab. Moderne Firmenwebsites starten bei EvolaTec ab 1.500€ als Festpreis. Komplexere Unternehmenswebsites mit individuellen Funktionen oder mehrsprachigen Inhalten entsprechend höher — wir beraten Sie transparent vor Projektstart.' } },
+        { '@type': 'Question', name: 'Gibt es Festpreise für Firmenwebsites?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, EvolaTec bietet transparente Festpreise für professionelle Webseiten und Firmenwebsites. Sie wissen von Anfang an, was Ihre Website kostet — keine versteckten Zusatzkosten während der Entwicklung.' } },
+        { '@type': 'Question', name: 'Sind die Websites SEO optimiert?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle Websites werden technisch SEO optimiert entwickelt — mit sauberer URL-Struktur, optimierten Meta-Daten, schnellen Ladezeiten und semantischem HTML für die beste Sichtbarkeit bei Google.' } },
+        { '@type': 'Question', name: 'Sind die Webseiten responsive?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle Websites werden Mobile First entwickelt und funktionieren optimal auf Smartphones, Tablets und Desktop-Geräten — perfekt für jeden Nutzer und jedes Endgerät.' } },
+        { '@type': 'Question', name: 'Wie lange dauert die Entwicklung einer Firmenwebsite?', acceptedAnswer: { '@type': 'Answer', text: 'Eine professionelle Firmenwebsite ist bei EvolaTec bereits ab 7 Arbeitstagen live. Umfangreichere Unternehmenswebsites benötigen je nach Inhalt und Funktionen 2–4 Wochen.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Firmenwebsite erstellen lassen – Professionelle Unternehmenswebsite | EvolaTec',
   meta: [
@@ -230,6 +266,7 @@ useHead({
     { property: 'og:type', content: 'website' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite-erstellen-lassen' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const heroStats = [

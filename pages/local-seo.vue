@@ -78,6 +78,42 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/local-seo/#webpage',
+      url: 'https://evolatec.de/local-seo',
+      name: 'Local SEO Agentur – Lokal bei Google gefunden werden | EvolaTec',
+      description: 'Professionelle Local SEO Agentur für mehr regionale Sichtbarkeit bei Google und Google Maps. Local SEO ab 400€.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/local-seo/#service',
+      name: 'Local SEO',
+      description: 'Professionelle lokale SEO für mehr regionale Sichtbarkeit bei Google und Google Maps.',
+      url: 'https://evolatec.de/local-seo',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '400', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was ist Local SEO?', acceptedAnswer: { '@type': 'Answer', text: 'Local SEO optimiert Unternehmen für lokale Suchanfragen und Google Maps. Das Ziel besteht darin, dass Sie in Ihrer Region bei Google gefunden werden.' } },
+        { '@type': 'Question', name: 'Wie lange dauert Local SEO?', acceptedAnswer: { '@type': 'Answer', text: 'Erste Verbesserungen sind oft nach wenigen Wochen sichtbar. Nachhaltige Ergebnisse stellen sich über mehrere Monate hinweg ein.' } },
+        { '@type': 'Question', name: 'Was kostet lokales SEO?', acceptedAnswer: { '@type': 'Answer', text: 'Local SEO beginnt ab 400€. Monatliche Betreuung ab 300€. Die genauen Kosten hängen von Ihrer Branche und Region ab.' } },
+        { '@type': 'Question', name: 'Ist Google Maps wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, viele lokale Kunden suchen direkt über Google Maps. Eine gute Google Business Optimierung ist entscheidend.' } },
+        { '@type': 'Question', name: 'Haben Sie Erfahrung in meiner Branche?', acceptedAnswer: { '@type': 'Answer', text: 'Wir arbeiten mit vielen lokalen Unternehmen zusammen: Ärzte, Handwerker, Restaurants, Einzelhandel und Dienstleister. Gerne besprechen wir Ihre Branche.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Local SEO Agentur – Lokal bei Google gefunden werden | EvolaTec',
   meta: [
@@ -86,6 +122,7 @@ useHead({
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/local-seo' },
   ],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const localStats = [

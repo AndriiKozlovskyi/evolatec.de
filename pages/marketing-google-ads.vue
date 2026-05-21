@@ -100,6 +100,41 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/marketing-google-ads/#webpage',
+      url: 'https://evolatec.de/marketing-google-ads',
+      name: 'Google Ads Agentur – Google Werbung schalten lassen | EvolaTec',
+      description: 'Professionelle Google Ads Kampagnen von EvolaTec. Search, Display & Shopping Ads für mehr Klicks, Leads und messbare Ergebnisse.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/marketing-google-ads/#service',
+      name: 'Google Ads Betreuung',
+      description: 'Professionelle Google Ads Kampagnen für mehr Sichtbarkeit, Klicks und messbare Ergebnisse.',
+      url: 'https://evolatec.de/marketing-google-ads',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '400', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was macht eine Google Ads Agentur?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Google Ads Agentur erstellt, optimiert und verwaltet Werbekampagnen bei Google.' } },
+        { '@type': 'Question', name: 'Wie schnell funktionieren Google Ads?', acceptedAnswer: { '@type': 'Answer', text: 'Google Werbung kann bereits innerhalb weniger Tage erste Besucher und Leads generieren.' } },
+        { '@type': 'Question', name: 'Was kosten Google Ads Kampagnen?', acceptedAnswer: { '@type': 'Answer', text: 'Die Betreuung beginnt ab 400€ monatlich. Das Werbebudget wird separat festgelegt.' } },
+        { '@type': 'Question', name: 'Für welche Unternehmen eignet sich Google Ads?', acceptedAnswer: { '@type': 'Answer', text: 'Für lokale Unternehmen, Dienstleister, Onlineshops, Startups und B2B Unternehmen.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Google Ads Agentur – Google Werbung schalten lassen | EvolaTec',
   meta: [
@@ -110,6 +145,7 @@ useHead({
     { property: 'og:type', content: 'website' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-google-ads' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const introParagraphs = [

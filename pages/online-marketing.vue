@@ -136,6 +136,41 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/marketing/#webpage',
+      url: 'https://evolatec.de/marketing',
+      name: 'Online Marketing Agentur | Google Ads, SEO & Social Media | EvolaTec',
+      description: 'Professionelles Online Marketing von EvolaTec. Google Ads, Social Media Marketing und SEO für mehr Reichweite, Leads und Umsatz.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/marketing/#service',
+      name: 'Online Marketing',
+      description: 'Google Ads, Social Media Marketing und SEO für mehr Reichweite, Leads und nachhaltiges Wachstum.',
+      url: 'https://evolatec.de/marketing',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '400', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was macht eine Online Marketing Agentur?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Online Marketing Agentur entwickelt Strategien, Kampagnen und digitale Maßnahmen für Reichweite, Leads und Umsatzwachstum.' } },
+        { '@type': 'Question', name: 'Welche Marketing Leistungen bietet EvolaTec?', acceptedAnswer: { '@type': 'Answer', text: 'SEO, Google Ads, Branding, Content Marketing, Conversion Optimierung und digitale Strategien.' } },
+        { '@type': 'Question', name: 'Was kostet professionelles Online Marketing?', acceptedAnswer: { '@type': 'Answer', text: 'Marketing Betreuung beginnt ab 400€ monatlich, Full Service Lösungen ab 1.200€ monatlich.' } },
+        { '@type': 'Question', name: 'Für welche Unternehmen eignet sich Online Marketing?', acceptedAnswer: { '@type': 'Answer', text: 'Für lokale Unternehmen, Dienstleister, Startups, Onlineshops und digitale Marken.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Online Marketing Agentur | Google Ads, SEO & Social Media | EvolaTec',
   meta: [
@@ -146,6 +181,7 @@ useHead({
     { property: 'og:type', content: 'website' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const introParagraphs = [

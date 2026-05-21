@@ -49,6 +49,42 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/seo-linkbuilding/#webpage',
+      url: 'https://evolatec.de/seo-linkbuilding',
+      name: 'Linkbuilding Agentur – Backlinks & SEO Autorität aufbauen | EvolaTec',
+      description: 'Professionelles Linkbuilding für bessere Google Rankings. Hochwertige Backlinks, Outreach und SEO Autorität. Linkbuilding ab 100€.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/seo-linkbuilding/#service',
+      name: 'Linkbuilding',
+      description: 'Hochwertige Backlinks und Outreach für mehr Domain-Autorität und bessere Google Rankings.',
+      url: 'https://evolatec.de/seo-linkbuilding',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '100', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Warum sind Backlinks wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Backlinks stärken die Autorität Ihrer Website und verbessern Rankings bei Google. Sie zählen zu den stärksten Rankingfaktoren.' } },
+        { '@type': 'Question', name: 'Wie lange dauert Linkbuilding?', acceptedAnswer: { '@type': 'Answer', text: 'Linkbuilding ist ein langfristiger Prozess. Erste Verbesserungen sind oft nach einigen Wochen sichtbar, nachhaltige Ergebnisse entstehen über Monate.' } },
+        { '@type': 'Question', name: 'Was kostet professionelles Linkbuilding?', acceptedAnswer: { '@type': 'Answer', text: 'Linkbuilding beginnt ab 100€. Monatliche Betreuung ab 700€/Monat. Die genauen Kosten hängen von Ihrer Branche und Zielen ab.' } },
+        { '@type': 'Question', name: 'Nutzen Sie sichere SEO Methoden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir setzen auf nachhaltige und Google-konforme Linkbuilding Strategien. Wir vermeiden manipulative Taktiken und toxische Links.' } },
+        { '@type': 'Question', name: 'Werden toxische Links entfernt?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir analysieren Ihr Linkprofil auf toxische Links und initiieren bei Bedarf Disavow-Anfragen, um schädliche Backlinks zu entfernen.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Linkbuilding Agentur – Backlinks & SEO Autorität aufbauen | EvolaTec',
   meta: [
@@ -57,6 +93,7 @@ useHead({
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/seo-linkbuilding' },
   ],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const linkBuildingStats = [

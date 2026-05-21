@@ -76,6 +76,42 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/seo-optimieren-lassen/#webpage',
+      url: 'https://evolatec.de/seo-optimieren-lassen',
+      name: 'Technische SEO Optimierung – Website Performance verbessern | EvolaTec',
+      description: 'Professionelle technische SEO Optimierung für bessere Google Rankings. Ladezeiten, Core Web Vitals, Struktur. SEO Optimierung ab 300€.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/seo-optimieren-lassen/#service',
+      name: 'SEO Optimierung',
+      description: 'Technische SEO Optimierung für bessere Google Rankings, schnellere Ladezeiten und bessere Core Web Vitals.',
+      url: 'https://evolatec.de/seo-optimieren-lassen',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '300', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was kostet technische SEO Optimierung?', acceptedAnswer: { '@type': 'Answer', text: 'Basis Optimierungen beginnen ab 300€. Umfangreiche SEO Optimierungen ab 500–1.200€. Die genauen Kosten hängen vom Umfang ab.' } },
+        { '@type': 'Question', name: 'Wie lange dauert die SEO Optimierung?', acceptedAnswer: { '@type': 'Answer', text: 'Kleine Optimierungen dauern wenige Tage, größere technische Projekte 1–3 Wochen. Das hängt von der Komplexität Ihrer Website ab.' } },
+        { '@type': 'Question', name: 'Verbessert technische SEO meine Rankings?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, technische SEO ist eine wichtige Grundlage für bessere Google-Rankings. Ohne technische Basis verlieren Sie Sichtbarkeit.' } },
+        { '@type': 'Question', name: 'Optimieren Sie bestehende Websites?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir optimieren bestehende Websites unabhängig vom verwendeten System oder Framework.' } },
+        { '@type': 'Question', name: 'Kann ich die Optimierungen selbst umsetzen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir erstellen einen detaillierten Implementierungsplan. Bei technischen Fragen unterstützen wir Sie gerne.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Technische SEO Optimierung – Website Performance verbessern | EvolaTec',
   meta: [
@@ -84,6 +120,7 @@ useHead({
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/seo-optimieren-lassen' },
   ],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const optimizationStats = [

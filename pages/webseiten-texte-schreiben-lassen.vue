@@ -66,6 +66,42 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/webseiten-texte-schreiben-lassen/#webpage',
+      url: 'https://evolatec.de/webseiten-texte-schreiben-lassen',
+      name: 'Webseiten Texte & SEO Copywriting | EvolaTec',
+      description: 'Professionelle Webseiten Texte, SEO Copywriting und Website Inhalte für Unternehmen, Landingpages und Onlineshops. Texte die ranken und verkaufen.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/webseiten-texte-schreiben-lassen/#service',
+      name: 'Webseiten Texte & SEO Copywriting',
+      description: 'Professionelle Website-Texte, SEO Copywriting und Inhalte für Unternehmen, Landingpages und Onlineshops.',
+      url: 'https://evolatec.de/webseiten-texte-schreiben-lassen',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '75', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Warum sind SEO Texte wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'SEO Texte verbessern Rankings und helfen Google dabei, Ihre Website besser zu verstehen. Gute Texte führen zu mehr organischem Traffic.' } },
+        { '@type': 'Question', name: 'Schreiben Sie Texte für Landingpages?', acceptedAnswer: { '@type': 'Answer', text: 'Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.' } },
+        { '@type': 'Question', name: 'Können Inhalte mehrsprachig erstellt werden?', acceptedAnswer: { '@type': 'Answer', text: 'Wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativen Sprachkenntnissen.' } },
+        { '@type': 'Question', name: 'Was kosten professionelle Website Texte?', acceptedAnswer: { '@type': 'Answer', text: 'Professionelle Webseiten Texte beginnen bei 150€, komplette Projekte bei 700€. Die genauen Kosten hängen vom Umfang ab.' } },
+        { '@type': 'Question', name: 'Wie lange dauert die Content Erstellung?', acceptedAnswer: { '@type': 'Answer', text: 'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für größere Projekte 2–4 Wochen. Eine schnellere Umsetzung ist möglich.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Webseiten Texte & SEO Copywriting | EvolaTec',
   meta: [
@@ -75,6 +111,8 @@ useHead({
         'Professionelle Webseiten Texte, SEO Copywriting und Website Inhalte für Unternehmen, Landingpages und Onlineshops. Texte die ranken und verkaufen.',
     },
   ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/webseiten-texte-schreiben-lassen' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const trustCompanies = ['SEO CONTENT', 'COPYWRITING', 'WEB TEXTE', 'CONVERSION'];

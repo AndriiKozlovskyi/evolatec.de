@@ -190,6 +190,44 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': 'https://evolatec.de/preise/#webpage',
+      url: 'https://evolatec.de/preise',
+      name: 'Website Kosten & Preise | Webagentur EvolaTec',
+      description: 'Transparente Preise für Landingpages, Firmenwebsites und Online Shops. Professionelle Webentwicklung ohne versteckte Kosten.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'ItemList',
+      '@id': 'https://evolatec.de/preise/#pricelist',
+      name: 'Website Preise EvolaTec',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Landingpage', description: 'ab 500€ – Lieferung ab 3 Tagen' },
+        { '@type': 'ListItem', position: 2, name: 'Firmenwebsite', description: 'ab 1.500€ – Lieferung ab 7 Tagen' },
+        { '@type': 'ListItem', position: 3, name: 'Online Shop', description: 'ab 3.000€ – Lieferung ab 14 Tagen' },
+        { '@type': 'ListItem', position: 4, name: 'Premium E-Commerce', description: 'ab 6.000€ – Lieferung ab 30 Tagen' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was kostet eine professionelle Website?', acceptedAnswer: { '@type': 'Answer', text: 'Professionelle Firmenwebsites beginnen ab 1.500€, abhängig von Umfang und Funktionen.' } },
+        { '@type': 'Question', name: 'Was kostet eine Landingpage?', acceptedAnswer: { '@type': 'Answer', text: 'Landingpages beginnen ab 500€ und eignen sich ideal für Werbung, Kampagnen und schnelle Leadgenerierung.' } },
+        { '@type': 'Question', name: 'Was kostet ein Online Shop?', acceptedAnswer: { '@type': 'Answer', text: 'Online Shops starten ab 3.000€. Premium E-Commerce-Lösungen mit erweiterten Features kosten ab 6.000€.' } },
+        { '@type': 'Question', name: 'Gibt es Festpreise?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir bieten transparente Festpreis-Angebote. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine überraschenden Zusatzkosten.' } },
+        { '@type': 'Question', name: 'Ist SEO inklusive?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, Basis-SEO ist in allen Projekten enthalten. Das beinhaltet technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Meta-Daten.' } },
+        { '@type': 'Question', name: 'Sind Wartung und Support inklusive?', acceptedAnswer: { '@type': 'Answer', text: 'Die Grundlage ist im Preis enthalten. Für regelmäßige Wartung, Updates und erweiterten Support bieten wir flexible Pakete an.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Website Kosten & Preise 2024 | Webagentur EvolaTec',
   meta: [
@@ -200,6 +238,7 @@ useHead({
     { property: 'og:type', content: 'website' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/preise' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const heroStats = [

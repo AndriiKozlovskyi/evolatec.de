@@ -169,6 +169,41 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/marketing-social-media/#webpage',
+      url: 'https://evolatec.de/marketing-social-media',
+      name: 'Social Media Marketing Agentur | Instagram & Facebook Ads | EvolaTec',
+      description: 'Professionelles Social Media Marketing von EvolaTec. Instagram, Facebook und LinkedIn Ads für mehr Reichweite, Follower und Conversions.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/marketing-social-media/#service',
+      name: 'Meta Ads & Social Media Marketing',
+      description: 'Instagram, Facebook und LinkedIn Ads für mehr Reichweite, Follower und Conversions.',
+      url: 'https://evolatec.de/marketing-social-media',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '300', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was macht eine Social Media Agentur?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Social Media Agentur entwickelt, verwaltet und optimiert Kampagnen auf Plattformen wie Facebook und Instagram.' } },
+        { '@type': 'Question', name: 'Was kosten Facebook oder Instagram Ads?', acceptedAnswer: { '@type': 'Answer', text: 'Meta Ads Betreuung beginnt ab 300€ monatlich. Das Werbebudget wird separat festgelegt.' } },
+        { '@type': 'Question', name: 'Wie schnell funktionieren Social Media Ads?', acceptedAnswer: { '@type': 'Answer', text: 'Erste Ergebnisse können bereits innerhalb weniger Tage sichtbar werden.' } },
+        { '@type': 'Question', name: 'Für welche Unternehmen eignet sich Social Media Marketing?', acceptedAnswer: { '@type': 'Answer', text: 'Für lokale Unternehmen, Dienstleister, E-Commerce, Startups und Markenaufbau.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Social Media Marketing Agentur | Instagram & Facebook Ads | EvolaTec',
   meta: [
@@ -179,6 +214,7 @@ useHead({
     { property: 'og:type', content: 'website' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-social-media' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const introParagraphs = [

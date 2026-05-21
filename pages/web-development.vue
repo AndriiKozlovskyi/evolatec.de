@@ -184,6 +184,41 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/website-development/#webpage',
+      url: 'https://evolatec.de/website-development',
+      name: 'Professionelle Website erstellen lassen | EvolaTec Agentur',
+      description: 'Homepage erstellen lassen – Ihre professionelle Webagentur für moderne Unternehmenswebsites, Landingpages und digitale Plattformen.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/website-development/#service',
+      name: 'Webentwicklung',
+      description: 'Professionelle Webentwicklung für moderne Unternehmenswebsites, Landingpages, Onlineshops und digitale Plattformen.',
+      url: 'https://evolatec.de/website-development',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1500', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was kostet es, eine Website erstellen zu lassen?', acceptedAnswer: { '@type': 'Answer', text: 'Die Kosten hängen vom Umfang des Projekts ab. Einfache Unternehmenswebsites starten ab 1.500€, komplexe Plattformen und Onlineshops ab 3.000€.' } },
+        { '@type': 'Question', name: 'Warum ist professionelle Webentwicklung wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Professionelle Websites sorgen für Vertrauen, bessere Nutzererfahrung und höhere Conversion-Raten. Sie sind technisch optimiert, SEO-ready und für alle Geräte ausgelegt.' } },
+        { '@type': 'Question', name: 'Entwickelt EvolaTec auch Onlineshops?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, EvolaTec entwickelt moderne E-Commerce Lösungen und professionelle Onlineshops für Unternehmen jeder Größe.' } },
+        { '@type': 'Question', name: 'Sind die Websites responsive?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle Websites werden Mobile First entwickelt und für Smartphones, Tablets und Desktop-Geräte optimiert.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'Professionelle Website erstellen lassen | EvolaTec Agentur',
   meta: [
@@ -202,6 +237,7 @@ useHead({
     { property: 'og:type', content: 'website' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/website-development' }],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const heroStats = [

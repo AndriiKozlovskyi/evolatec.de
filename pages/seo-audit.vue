@@ -65,6 +65,42 @@
 </template>
 
 <script setup lang="ts">
+const schemaMarkup = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://evolatec.de/seo-audit/#webpage',
+      url: 'https://evolatec.de/seo-audit',
+      name: 'SEO Audit & Analyse – Technischer Website Check | EvolaTec',
+      description: 'Professioneller SEO Audit für bessere Google Rankings. Technische Analyse, OnPage Check und Konkurrenzanalyse. SEO Audits ab 100€.',
+      isPartOf: { '@id': 'https://evolatec.de/#website' },
+      about: { '@id': 'https://evolatec.de/#organization' },
+      inLanguage: 'de-DE',
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://evolatec.de/seo-audit/#service',
+      name: 'SEO Audit',
+      description: 'Technische SEO-Analyse, OnPage Check und Konkurrenzanalyse für bessere Google Rankings.',
+      url: 'https://evolatec.de/seo-audit',
+      provider: { '@id': 'https://evolatec.de/#organization' },
+      areaServed: { '@type': 'Country', name: 'Germany' },
+      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '100', priceCurrency: 'EUR' } },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Was kostet ein SEO Audit?', acceptedAnswer: { '@type': 'Answer', text: 'Basis SEO Analysen beginnen bei 100€. Umfangreiche technische Audits ab 300€. Die genauen Kosten hängen von der Komplexität Ihrer Website ab.' } },
+        { '@type': 'Question', name: 'Wie lange dauert eine SEO Analyse?', acceptedAnswer: { '@type': 'Answer', text: 'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites kann es etwas länger dauern.' } },
+        { '@type': 'Question', name: 'Was wird bei einem SEO Audit geprüft?', acceptedAnswer: { '@type': 'Answer', text: 'Wir prüfen Technik, Ladezeiten, Struktur, Keywords, Content, mobile Optimierung, Indexierung und Wettbewerber-Strategien.' } },
+        { '@type': 'Question', name: 'Bekomme ich einen SEO Report?', acceptedAnswer: { '@type': 'Answer', text: 'Sie erhalten einen strukturierten Bericht mit konkreten Handlungsempfehlungen und einem Prioritätsplan.' } },
+        { '@type': 'Question', name: 'Optimieren Sie die Website auch um?', acceptedAnswer: { '@type': 'Answer', text: 'Gerne setzen wir die Optimierungen nach dem Audit für Sie um oder unterstützen Sie dabei.' } },
+      ],
+    },
+  ],
+};
+
 useHead({
   title: 'SEO Audit & Analyse – Technischer Website Check | EvolaTec',
   meta: [
@@ -73,6 +109,7 @@ useHead({
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/seo-audit' },
   ],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const auditStats = [
