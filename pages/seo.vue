@@ -139,7 +139,7 @@ useHead({
 });
 
 const seoStats = [
-  { value: '+300%', label: 'Organischer Traffic', icon: 'trending_up' },
+  { value: 'TOP', label: 'Organischer Traffic', icon: 'trending_up' },
   { value: 'Top Rankings', label: 'Bei Google', icon: 'grade' },
   { value: '+Leads', label: 'Ohne Werbung', icon: 'people' },
   { value: 'Sichtbar', label: 'Bei Kunden', icon: 'visibility' },

@@ -131,7 +131,7 @@ const introBadge = {
 };
 
 const contentStats = [
-  { value: 'SEO +', label: 'Optimiert', icon: 'trending_up' },
+  { value: 'SEO', label: 'Optimiert', icon: 'trending_up' },
   { value: 'Verkaufs-', label: 'fokussiert', icon: 'shopping_cart' },
   { value: 'Google', label: 'Rankings', icon: 'grade' },
   { value: 'Professionell', label: 'Texte', icon: 'edit_document' },

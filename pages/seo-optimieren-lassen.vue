@@ -124,7 +124,7 @@ useHead({
 });
 
 const optimizationStats = [
-  { value: '+40%', label: 'Schneller', icon: 'speed' },
+  { value: '100%', label: 'Schneller', icon: 'speed' },
   { value: 'Top Scores', label: 'Web Vitals', icon: 'verified_user' },
   { value: '+Ranking', label: 'Verbesserung', icon: 'trending_up' },
   { value: 'Mobile Ready', label: 'Optimiert', icon: 'smartphone' },

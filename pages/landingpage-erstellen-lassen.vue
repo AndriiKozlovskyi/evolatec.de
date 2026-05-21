@@ -131,7 +131,7 @@ useHead({
 
 const heroStats = [
   { value: 'ab 3', label: 'Tagen', icon: 'flash_on' },
-  { value: '100%', label: 'Conversion', icon: 'trending_up' },
+  { value: 'High', label: 'Conversion', icon: 'trending_up' },
   { value: 'Mobile', label: 'First', icon: 'smartphone' },
   { value: 'Fest', label: 'Preis', icon: 'price_check' },
 ];
