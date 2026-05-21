@@ -73,15 +73,9 @@
     <!-- Services Section -->
     <ServicesSection title="Unsere Social Media Leistungen" variant="centered" :services="socialServices" />
 
-       <BenefitsSection
-      title="Modernes UI/UX Design für digitale Produkte"
-      :benefits="socialBenefits"
-      image-url="/ecommerce/hero.webp"
-    />
-
 
     <!-- Process Section -->
-         <ProcessSection title="Unser Social Media Prozess" :steps="socialProcess" />
+    <ProcessSection title="Unser Social Media Prozess" :steps="socialProcess" />
 
 
 
