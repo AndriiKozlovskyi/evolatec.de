@@ -19,7 +19,7 @@ const cbid = useRuntimeConfig().public.cookiebotCbid as string;
 const failed = ref(false);
 
 onMounted(() => {
-  if (!container.value || !cbid || cbid === 'YOUR-COOKIEBOT-CBID') return;
+  if (!container.value || !cbid || cbid === '262a7035-5608-447f-b551-e39d0be800f3') return;
   // Avoid injecting a second script when navigating back to this page.
   if (container.value.querySelector('#CookieDeclaration')) {
     ready.value = true;
