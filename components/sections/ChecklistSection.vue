@@ -11,12 +11,16 @@
       <!-- Two-column heading blocks (each with optional per-column item list) -->
       <div
         v-if="columns?.length"
-        :class="['grid md:grid-cols-2 gap-stack-lg', items?.length ? 'mb-12' : '']"
+        :class="['grid md:grid-cols-2 gap-6 md:gap-8', items?.length ? 'mb-12' : '']"
       >
-        <div v-for="col in columns" :key="col.heading">
+        <div
+          v-for="col in columns"
+          :key="col.heading"
+          class="bg-white rounded-2xl p-6 md:p-8 border border-black/[0.05] shadow-sm flex flex-col"
+        >
           <component
             :is="title ? 'h3' : 'h2'"
-            class="font-headline-lg text-headline-lg text-primary mb-6"
+            class="font-headline-lg text-headline-lg text-primary mb-4"
           >{{ col.heading }}</component>
 
           <p
@@ -24,20 +28,20 @@
             :key="i"
             :class="[
               'font-body-lg text-body-lg text-on-surface-variant',
-              i < (col.paragraphs?.length ?? 0) - 1 ? 'mb-4' : col.items?.length ? 'mb-8' : '',
+              i < (col.paragraphs?.length ?? 0) - 1 ? 'mb-3' : col.items?.length ? 'mb-6' : '',
             ]"
           >{{ para }}</p>
 
-          <div v-if="col.items?.length" class="flex flex-col gap-2">
+          <div v-if="col.items?.length" class="grid grid-cols-2 gap-2 mt-auto">
             <div
               v-for="item in col.items"
               :key="item"
-              class="flex items-center gap-3.5 rounded-xl bg-white px-5 py-3 border border-black/[0.05] shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-200"
+              class="flex items-center gap-2.5 rounded-xl bg-surface-container-low px-3.5 py-2.5 hover:bg-primary/5 transition-colors duration-200"
             >
-              <span class="material-symbols-outlined text-primary text-lg leading-none flex-shrink-0">
+              <span class="material-symbols-outlined text-primary text-base leading-none flex-shrink-0">
                 {{ col.icon || icon }}
               </span>
-              <span class="text-sm font-semibold text-on-surface">{{ item }}</span>
+              <span class="text-sm font-medium text-on-surface">{{ item }}</span>
             </div>
           </div>
         </div>

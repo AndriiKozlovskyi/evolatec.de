@@ -21,18 +21,9 @@
           </a>
         </div>
 
-        <!-- Icon illustration -->
+        <!-- Image illustration -->
         <div class="hidden md:flex justify-center items-center">
-          <div class="relative w-80 h-80">
-            <!-- Animated background circles -->
-            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-on-primary-container/10 to-transparent blur-3xl animate-pulse"></div>
-            <div class="absolute inset-12 rounded-full bg-gradient-to-tr from-on-primary-container/5 to-transparent blur-2xl animate-pulse" style="animation-delay: 1s"></div>
-
-            <!-- Center icon -->
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="material-symbols-outlined text-[120px] opacity-30">analytics</span>
-            </div>
-          </div>
+          <img src="/seo/section.webp" alt="SEO Optimierung" class="w-full rounded-2xl object-cover" />
         </div>
       </div>
     </div>
