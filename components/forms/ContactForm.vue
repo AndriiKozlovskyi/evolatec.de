@@ -1,11 +1,18 @@
 <template>
-  <form @submit.prevent="handleSubmit" class="space-y-4">
+  <form 
+    @submit.prevent="handleSubmit" 
+    name="contact-form"
+    netlify
+    netlify-honeypot="website"
+    class="space-y-4"
+  >
     <!-- Name + Email side by side on sm+ -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div>
         <label for="name" class="block text-sm font-bold text-on-surface mb-1.5">Name *</label>
         <input
           id="name"
+          name="name"
           v-model="form.name"
           type="text"
           required
@@ -19,6 +26,7 @@
         <label for="email" class="block text-sm font-bold text-on-surface mb-1.5">E-Mail *</label>
         <input
           id="email"
+          name="email"
           v-model="form.email"
           type="email"
           required
@@ -35,6 +43,7 @@
       <label for="service" class="block text-sm font-bold text-on-surface mb-1.5">Was interessiert Sie? *</label>
       <select
         id="service"
+        name="service"
         v-model="form.service"
         required
         class="w-full px-4 py-2.5 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface bg-white text-sm"
@@ -56,6 +65,7 @@
       </label>
       <textarea
         id="message"
+        name="message"
         v-model="form.message"
         placeholder="Erzählen Sie uns kurz von Ihrem Projekt..."
         rows="4"
@@ -66,13 +76,14 @@
     <!-- Honeypot — hidden from real users, bots fill it -->
     <div class="hidden" aria-hidden="true">
       <label for="website">Website</label>
-      <input id="website" v-model="form.website" type="text" tabindex="-1" autocomplete="off" />
+      <input id="website" name="website" v-model="form.website" type="text" tabindex="-1" autocomplete="off" />
     </div>
 
     <!-- Privacy + Submit row -->
     <div class="flex items-start gap-3">
       <input
         id="privacy"
+        name="privacy"
         v-model="form.privacy"
         type="checkbox"
         required
