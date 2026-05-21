@@ -23,15 +23,14 @@
       :badge="introBadge"
     />
 
-    <!-- Services -->
-    <ServicesSection title="Unsere Webdesign Leistungen" variant="centered" :services="designServices" />
-
     <!-- Features -->
     <FeaturesSection
       title="Was professionelles Webdesign ausmacht."
       :features="features"
       image-url="/web-development/design.webp"
     />
+    <ServicesSection title="Unsere Webdesign Leistungen" variant="centered" :services="designServices" />
+
 
     <!-- Benefits -->
     <BenefitsSection title="Warum professionelles Webdesign wichtig ist" :benefits="benefits" />
