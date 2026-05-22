@@ -110,11 +110,12 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
+    <Teleport to="body">
     <Transition name="slide-up">
       <div
         v-if="mobileMenuOpen"
         id="mobile-menu"
-        class="md:hidden fixed top-20 left-0 right-0 bottom-0 backdrop-blur-md z-50 overflow-y-auto overscroll-contain bg-surface/95"
+        class="md:hidden fixed top-20 left-0 right-0 bottom-0 backdrop-blur-md z-[200] overflow-y-auto overscroll-contain bg-surface/95"
       >
         <div class="max-w-container-max mx-auto px-gutter py-6 pb-32 space-y-2">
           <!-- Navigation Links -->
@@ -135,7 +136,7 @@
               </span>
               <span
                 class="material-symbols-outlined text-lg flex-shrink-0 transition-transform duration-300"
-                :class="{ 'rotate-180': expandedMenus.has(link.id) }"
+                :class="{ 'rotate-180': expandedMenus.includes(link.id) }"
               >
                 expand_more
               </span>
@@ -153,7 +154,7 @@
             <!-- Submenu (Collapsible) -->
             <Transition name="expand">
               <div
-                v-if="link.submenu && expandedMenus.has(link.id)"
+                v-if="link.submenu && expandedMenus.includes(link.id)"
                 class="space-y-1 pl-4"
               >
                 <a
@@ -207,6 +208,7 @@
         </div>
       </div>
     </Transition>
+    </Teleport>
   </nav>
 </template>
 
@@ -215,13 +217,13 @@ import { ref, computed, watch, onBeforeUnmount } from 'vue';
 
 const { currentLang, isEnglish, deHref, enHref, savePreference } = useLanguageSwitcher();
 const mobileMenuOpen = ref(false);
-const expandedMenus = ref(new Set<number>());
+const expandedMenus = ref<number[]>([]);
 const route = useRoute();
 
 if (import.meta.client) {
   watch(mobileMenuOpen, (open) => {
     document.body.style.overflow = open ? 'hidden' : '';
-    if (!open) expandedMenus.value.clear();
+    if (!open) expandedMenus.value = [];
   });
   watch(() => route.path, () => {
     mobileMenuOpen.value = false;
@@ -232,10 +234,10 @@ if (import.meta.client) {
 }
 
 function toggleMobileSubmenu(linkId: number) {
-  if (expandedMenus.value.has(linkId)) {
-    expandedMenus.value.delete(linkId);
+  if (expandedMenus.value.includes(linkId)) {
+    expandedMenus.value = expandedMenus.value.filter(id => id !== linkId);
   } else {
-    expandedMenus.value.add(linkId);
+    expandedMenus.value = [...expandedMenus.value, linkId];
   }
 }
 
