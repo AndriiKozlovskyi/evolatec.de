@@ -70,43 +70,46 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema } from '~/composables/schema/global'
+import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema/service'
 const { hreflangLinks } = useLanguageSwitcher();
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebPage',
-      '@id': 'https://evolatec.de/design-branding/#webpage',
-      url: 'https://evolatec.de/design-branding',
-      name: 'Branding Agentur & Corporate Design | EvolaTec',
-      description: 'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung. EvolaTec entwickelt starke Markenidentitäten für Unternehmen und Startups.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://evolatec.de/design-branding/#service',
-      name: 'Branding & Corporate Design',
-      description: 'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung.',
-      url: 'https://evolatec.de/design-branding',
-      provider: { '@id': 'https://evolatec.de/#organization' },
-      areaServed: { '@type': 'Country', name: 'Germany' },
-      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '200', priceCurrency: 'EUR' } },
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Was macht eine Branding Agentur?', acceptedAnswer: { '@type': 'Answer', text: 'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Designs, Logos und strategische Markenauftritte für Unternehmen und Startups.' } },
-        { '@type': 'Question', name: 'Warum ist Corporate Design wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Corporate Design sorgt für Wiedererkennbarkeit, Professionalität und Vertrauen. Ein einheitliches Design schafft eine konsistente Markenwahrnehmung.' } },
-        { '@type': 'Question', name: 'Was kostet professionelles Branding?', acceptedAnswer: { '@type': 'Answer', text: 'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.500€.' } },
-        { '@type': 'Question', name: 'Können bestehende Marken modernisiert werden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir bieten Rebranding, Corporate Redesign und komplette Marken Relaunches an um bestehende Marken zu modernisieren.' } },
-        { '@type': 'Question', name: 'Wie lange dauert ein Branding Projekt?', acceptedAnswer: { '@type': 'Answer', text: 'Ein Branding Projekt dauert durchschnittlich 4-8 Wochen, abhängig von Umfang und Komplexität. Logo Design ist oft schneller umsetzbar.' } },
-      ],
-    },
-  ],
-};
+const brandingFaqs = [
+  {
+    question: 'Was macht eine Branding Agentur?',
+    answer:
+      'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Designs, Logos und strategische Markenauftritte für Unternehmen und Startups.',
+  },
+  {
+    question: 'Warum ist Corporate Design wichtig?',
+    answer:
+      'Corporate Design sorgt für Wiedererkennbarkeit, Professionalität und Vertrauen. Ein einheitliches Design schafft eine konsistente Markenwahrnehmung.',
+  },
+  {
+    question: 'Was kostet professionelles Branding?',
+    answer:
+      'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.500€.',
+  },
+  {
+    question: 'Können bestehende Marken modernisiert werden?',
+    answer:
+      'Ja, wir bieten Rebranding, Corporate Redesign und komplette Marken Relaunches an um bestehende Marken zu modernisieren.',
+  },
+  {
+    question: 'Wie lange dauert ein Branding Projekt?',
+    answer:
+      'Ein Branding Projekt dauert durchschnittlich 4-8 Wochen, abhängig von Umfang und Komplexität. Logo Design ist oft schneller umsetzbar.',
+  },
+];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({ url: 'https://evolatec.de/design-branding', name: 'Branding Agentur & Corporate Design | EvolaTec', description: 'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung. EvolaTec entwickelt starke Markenidentitäten für Unternehmen und Startups.' }),
+  serviceSchema({ id: 'https://evolatec.de/design-branding/#service', name: 'Branding & Corporate Design', description: 'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung.', url: 'https://evolatec.de/design-branding', serviceType: 'Branding', minPrice: 200 }),
+  breadcrumbSchema([{ name: 'Home', url: 'https://evolatec.de' }, { name: 'Design & Content', url: 'https://evolatec.de/webdesign' }, { name: 'Branding & Corporate Design', url: 'https://evolatec.de/design-branding' }]),
+  faqSchema(brandingFaqs),
+);
 
 useHead({
   title: 'Branding Agentur & Corporate Design | EvolaTec',
@@ -367,31 +370,4 @@ const brandingPricingPlans = [
   },
 ];
 
-const brandingFaqs = [
-  {
-    question: 'Was macht eine Branding Agentur?',
-    answer:
-      'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Designs, Logos und strategische Markenauftritte für Unternehmen und Startups.',
-  },
-  {
-    question: 'Warum ist Corporate Design wichtig?',
-    answer:
-      'Corporate Design sorgt für Wiedererkennbarkeit, Professionalität und Vertrauen. Ein einheitliches Design schafft eine konsistente Markenwahrnehmung.',
-  },
-  {
-    question: 'Was kostet professionelles Branding?',
-    answer:
-      'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.500€.',
-  },
-  {
-    question: 'Können bestehende Marken modernisiert werden?',
-    answer:
-      'Ja, wir bieten Rebranding, Corporate Redesign und komplette Marken Relaunches an um bestehende Marken zu modernisieren.',
-  },
-  {
-    question: 'Wie lange dauert ein Branding Projekt?',
-    answer:
-      'Ein Branding Projekt dauert durchschnittlich 4-8 Wochen, abhängig von Umfang und Komplexität. Logo Design ist oft schneller umsetzbar.',
-  },
-];
 </script>

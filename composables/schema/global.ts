@@ -34,12 +34,13 @@ export function organizationSchema() {
       email: 'team@evolatec.de',
       availableLanguage: ['German', 'English'],
     },
+    foundingDate: '2024',
     founder: {
       '@type': 'Person',
       name: 'Maksym Streltsov',
     },
-    // Add sameAs when social profiles are live:
-    // sameAs: ['https://linkedin.com/company/evolatec', 'https://facebook.com/evolatec'],
+    // Uncomment and fill when social profiles are live:
+    // sameAs: ['https://linkedin.com/company/evolatec', 'https://facebook.com/evolatec', 'https://instagram.com/evolatec'],
   }
 }
 
@@ -54,6 +55,14 @@ export function websiteSchema() {
       'Professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing',
     publisher: { '@id': `${BASE}/#organization` },
     inLanguage: ['de-DE', 'en-US'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${BASE}/?s={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
   }
 }
 

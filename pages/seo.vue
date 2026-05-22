@@ -68,44 +68,62 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema } from '~/composables/schema/global'
+import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema/service'
+
 const { hreflangLinks } = useLanguageSwitcher();
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebPage',
-      '@id': 'https://evolatec.de/seo/#webpage',
-      url: 'https://evolatec.de/seo',
-      name: 'Professionelle SEO Agentur – Mehr Sichtbarkeit bei Google | EvolaTec',
-      description: 'Professionelle Suchmaschinenoptimierung für Unternehmen. Mehr Google Rankings, organischer Traffic und Kundenanfragen. SEO Audit ab 100€.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://evolatec.de/seo/#service',
-      name: 'SEO Agentur',
-      description: 'Professionelle Suchmaschinenoptimierung für mehr Google Rankings, organischen Traffic und Kundenanfragen.',
-      url: 'https://evolatec.de/seo',
-      provider: { '@id': 'https://evolatec.de/#organization' },
-      areaServed: { '@type': 'Country', name: 'Germany' },
-      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '100', priceCurrency: 'EUR' } },
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Wie lange dauert SEO?', acceptedAnswer: { '@type': 'Answer', text: 'Erste Ergebnisse sind in der Regel nach 2–3 Monaten sichtbar. Nachhaltige SEO ist jedoch ein langfristiger Prozess, der kontinuierliche Optimierung erfordert.' } },
-        { '@type': 'Question', name: 'Was kostet professionelle SEO?', acceptedAnswer: { '@type': 'Answer', text: 'Ein SEO Audit beginnt ab 100€, Basis SEO Optimierung ab 300€, monatliche Betreuung ab 250€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.' } },
-        { '@type': 'Question', name: 'Ist SEO besser als Werbung?', acceptedAnswer: { '@type': 'Answer', text: 'SEO liefert langfristig günstigeren Traffic, während Werbung sofortige Ergebnisse bringt. Am besten funktionieren beide Strategien zusammen.' } },
-        { '@type': 'Question', name: 'Optimieren Sie internationale Websites?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir bieten mehrsprachige und internationale SEO Strategien für Unternehmen an, die global wachsen möchten.' } },
-        { '@type': 'Question', name: 'Was ist im SEO Audit enthalten?', acceptedAnswer: { '@type': 'Answer', text: 'Technische Analyse, OnPage Check, Konkurrenzanalyse, Keyword-Recherche und ein detaillierter Maßnahmenplan.' } },
-        { '@type': 'Question', name: 'Kann ich SEO monatlich kündigen?', acceptedAnswer: { '@type': 'Answer', text: 'Unsere SEO Betreuungsverträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen.' } },
-      ],
-    },
-  ],
-};
+const seoFaqs = [
+  {
+    question: 'Wie lange dauert SEO?',
+    answer:
+      'Erste Ergebnisse sind in der Regel nach 2–3 Monaten sichtbar. Nachhaltige Suchmaschinenoptimierung (SEO) ist jedoch ein langfristiger Prozess, der kontinuierliche Optimierung erfordert.',
+  },
+  {
+    question: 'Was kostet professionelle SEO?',
+    answer: 'Ein SEO Audit beginnt ab 100€, Basis SEO Optimierung ab 300€, monatliche Betreuung ab 250€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.',
+  },
+  {
+    question: 'Ist SEO besser als Werbung?',
+    answer:
+      'SEO liefert langfristig günstigeren Traffic, während Werbung sofortige Ergebnisse bringt. Am besten funktionieren beide Strategien zusammen.',
+  },
+  {
+    question: 'Optimieren Sie internationale Websites?',
+    answer: 'Ja, wir bieten mehrsprachige und internationale SEO Strategien für Unternehmen an, die global wachsen möchten.',
+  },
+  {
+    question: 'Was ist im SEO Audit enthalten?',
+    answer: 'Technische Analyse, OnPage Check, Konkurrenzanalyse, Keyword-Recherche und ein detaillierter Maßnahmenplan.',
+  },
+  {
+    question: 'Kann ich SEO monatlich kündigen?',
+    answer: 'Unsere SEO Betreuungsverträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen.',
+  },
+];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({
+    url: 'https://evolatec.de/seo',
+    name: 'Professionelle SEO Agentur – Mehr Sichtbarkeit bei Google | EvolaTec',
+    description: 'Professionelle Suchmaschinenoptimierung für Unternehmen. Mehr Google Rankings, organischer Traffic und Kundenanfragen. SEO Audit ab 100€.',
+  }),
+  serviceSchema({
+    id: 'https://evolatec.de/seo/#service',
+    name: 'SEO Agentur',
+    description: 'Professionelle Suchmaschinenoptimierung für mehr Google Rankings, organischen Traffic und Kundenanfragen.',
+    url: 'https://evolatec.de/seo',
+    serviceType: 'Suchmaschinenoptimierung',
+    minPrice: 100,
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: 'https://evolatec.de' },
+    { name: 'SEO', url: 'https://evolatec.de/seo' },
+  ]),
+  faqSchema(seoFaqs),
+);
 
 useHead({
   title: 'Professionelle SEO Agentur – Mehr Sichtbarkeit bei Google | EvolaTec',
@@ -323,32 +341,4 @@ const seoChecklist = [
   'Monatliche Reports & Ranking Monitoring',
 ];
 
-const seoFaqs = [
-  {
-    question: 'Wie lange dauert SEO?',
-    answer:
-      'Erste Ergebnisse sind in der Regel nach 2–3 Monaten sichtbar. Nachhaltige Suchmaschinenoptimierung (SEO) ist jedoch ein langfristiger Prozess, der kontinuierliche Optimierung erfordert.',
-  },
-  {
-    question: 'Was kostet professionelle SEO?',
-    answer: 'Ein SEO Audit beginnt ab 100€, Basis SEO Optimierung ab 300€, monatliche Betreuung ab 250€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.',
-  },
-  {
-    question: 'Ist SEO besser als Werbung?',
-    answer:
-      'SEO liefert langfristig günstigeren Traffic, während Werbung sofortige Ergebnisse bringt. Am besten funktionieren beide Strategien zusammen.',
-  },
-  {
-    question: 'Optimieren Sie internationale Websites?',
-    answer: 'Ja, wir bieten mehrsprachige und internationale SEO Strategien für Unternehmen an, die global wachsen möchten.',
-  },
-  {
-    question: 'Was ist im SEO Audit enthalten?',
-    answer: 'Technische Analyse, OnPage Check, Konkurrenzanalyse, Keyword-Recherche und ein detaillierter Maßnahmenplan.',
-  },
-  {
-    question: 'Kann ich SEO monatlich kündigen?',
-    answer: 'Unsere SEO Betreuungsverträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen.',
-  },
-];
 </script>

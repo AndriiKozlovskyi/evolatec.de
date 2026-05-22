@@ -190,45 +190,69 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema } from '~/composables/schema/global'
+import { breadcrumbSchema, faqSchema } from '~/composables/schema/service'
+
 const { hreflangLinks } = useLanguageSwitcher();
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'CollectionPage',
-      '@id': 'https://evolatec.de/preise/#webpage',
-      url: 'https://evolatec.de/preise',
-      name: 'Website Kosten & Preise | Webagentur EvolaTec',
-      description: 'Transparente Preise für Landingpages, Firmenwebsites und Online Shops. Professionelle Webentwicklung ohne versteckte Kosten.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'ItemList',
-      '@id': 'https://evolatec.de/preise/#pricelist',
-      name: 'Website Preise EvolaTec',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Landingpage', description: 'ab 500€ – Lieferung ab 3 Tagen' },
-        { '@type': 'ListItem', position: 2, name: 'Firmenwebsite', description: 'ab 1.500€ – Lieferung ab 7 Tagen' },
-        { '@type': 'ListItem', position: 3, name: 'Online Shop', description: 'ab 3.000€ – Lieferung ab 14 Tagen' },
-        { '@type': 'ListItem', position: 4, name: 'Premium E-Commerce', description: 'ab 6.000€ – Lieferung ab 30 Tagen' },
-      ],
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Was kostet eine professionelle Website?', acceptedAnswer: { '@type': 'Answer', text: 'Professionelle Firmenwebsites beginnen ab 1.500€, abhängig von Umfang und Funktionen.' } },
-        { '@type': 'Question', name: 'Was kostet eine Landingpage?', acceptedAnswer: { '@type': 'Answer', text: 'Landingpages beginnen ab 500€ und eignen sich ideal für Werbung, Kampagnen und schnelle Leadgenerierung.' } },
-        { '@type': 'Question', name: 'Was kostet ein Online Shop?', acceptedAnswer: { '@type': 'Answer', text: 'Online Shops starten ab 3.000€. Premium E-Commerce-Lösungen mit erweiterten Features kosten ab 6.000€.' } },
-        { '@type': 'Question', name: 'Gibt es Festpreise?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir bieten transparente Festpreis-Angebote. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine überraschenden Zusatzkosten.' } },
-        { '@type': 'Question', name: 'Ist SEO inklusive?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, Basis-SEO ist in allen Projekten enthalten. Das beinhaltet technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Meta-Daten.' } },
-        { '@type': 'Question', name: 'Sind Wartung und Support inklusive?', acceptedAnswer: { '@type': 'Answer', text: 'Die Grundlage ist im Preis enthalten. Für regelmäßige Wartung, Updates und erweiterten Support bieten wir flexible Pakete an.' } },
-      ],
-    },
-  ],
-};
+const faqs = [
+  {
+    question: 'Was kostet eine professionelle Website?',
+    answer:
+      'Professionelle Firmenwebsites beginnen ab 1.500€, abhängig von Umfang und Funktionen. Eine Firmenwebsite enthält alle wichtigen Features für ein Unternehmen: modernes Design, mobile Optimierung und Basis-SEO.',
+  },
+  {
+    question: 'Was kostet eine Landingpage?',
+    answer:
+      'Landingpages beginnen ab 500€ und eignen sich ideal für Werbung, Kampagnen und schnelle Leadgenerierung. Sie sind perfekt, wenn Sie schnell online präsent sein möchten.',
+  },
+  {
+    question: 'Was kostet ein Online Shop?',
+    answer:
+      'Online Shops starten ab 3.000€, abhängig von der Anzahl der Produkte und benötigten Funktionen. Premium E-Commerce-Lösungen mit erweiterten Features kosten ab 6.000€.',
+  },
+  {
+    question: 'Gibt es Festpreise?',
+    answer:
+      'Ja, wir bieten transparente Festpreis-Angebote. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine überraschenden Zusatzkosten während der Entwicklung.',
+  },
+  {
+    question: 'Ist SEO inklusive?',
+    answer:
+      'Ja, Basis-SEO ist in allen Projekten enthalten. Das beinhaltet technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Meta-Daten. Erweiterte SEO-Services sind gegen Aufpreis möglich.',
+  },
+  {
+    question: 'Sind Wartung und Support inklusive?',
+    answer:
+      'Die Grundlage ist im Preis enthalten. Für regelmäßige Wartung, Updates und erweiterten Support bieten wir flexible Pakete an.',
+  },
+];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({
+    url: 'https://evolatec.de/preise',
+    name: 'Website Kosten & Preise | Webagentur EvolaTec',
+    description: 'Transparente Preise für Landingpages, Firmenwebsites und Online Shops. Professionelle Webentwicklung ohne versteckte Kosten.',
+  }),
+  {
+    '@type': 'ItemList',
+    '@id': 'https://evolatec.de/preise/#pricelist',
+    name: 'Website Preise EvolaTec',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Landingpage', description: 'ab 500€ – Lieferung ab 3 Tagen' },
+      { '@type': 'ListItem', position: 2, name: 'Firmenwebsite', description: 'ab 1.500€ – Lieferung ab 7 Tagen' },
+      { '@type': 'ListItem', position: 3, name: 'Online Shop', description: 'ab 3.000€ – Lieferung ab 14 Tagen' },
+      { '@type': 'ListItem', position: 4, name: 'Premium E-Commerce', description: 'ab 6.000€ – Lieferung ab 30 Tagen' },
+    ],
+  },
+  breadcrumbSchema([
+    { name: 'Home', url: 'https://evolatec.de' },
+    { name: 'Preise', url: 'https://evolatec.de/preise' },
+  ]),
+  faqSchema(faqs),
+);
 
 useHead({
   title: 'Website Kosten & Preise 2024 | Webagentur EvolaTec',
@@ -341,36 +365,4 @@ const whyUs = [
   },
 ];
 
-const faqs = [
-  {
-    question: 'Was kostet eine professionelle Website?',
-    answer:
-      'Professionelle Firmenwebsites beginnen ab 1.500€, abhängig von Umfang und Funktionen. Eine Firmenwebsite enthält alle wichtigen Features für ein Unternehmen: modernes Design, mobile Optimierung und Basis-SEO.',
-  },
-  {
-    question: 'Was kostet eine Landingpage?',
-    answer:
-      'Landingpages beginnen ab 500€ und eignen sich ideal für Werbung, Kampagnen und schnelle Leadgenerierung. Sie sind perfekt, wenn Sie schnell online präsent sein möchten.',
-  },
-  {
-    question: 'Was kostet ein Online Shop?',
-    answer:
-      'Online Shops starten ab 3.000€, abhängig von der Anzahl der Produkte und benötigten Funktionen. Premium E-Commerce-Lösungen mit erweiterten Features kosten ab 6.000€.',
-  },
-  {
-    question: 'Gibt es Festpreise?',
-    answer:
-      'Ja, wir bieten transparente Festpreis-Angebote. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine überraschenden Zusatzkosten während der Entwicklung.',
-  },
-  {
-    question: 'Ist SEO inklusive?',
-    answer:
-      'Ja, Basis-SEO ist in allen Projekten enthalten. Das beinhaltet technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Meta-Daten. Erweiterte SEO-Services sind gegen Aufpreis möglich.',
-  },
-  {
-    question: 'Sind Wartung und Support inklusive?',
-    answer:
-      'Die Grundlage ist im Preis enthalten. Für regelmäßige Wartung, Updates und erweiterten Support bieten wir flexible Pakete an.',
-  },
-];
 </script>

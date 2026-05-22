@@ -66,43 +66,46 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema } from '~/composables/schema/global'
+import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema/service'
 const { hreflangLinks } = useLanguageSwitcher();
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebPage',
-      '@id': 'https://evolatec.de/webseiten-texte-schreiben-lassen/#webpage',
-      url: 'https://evolatec.de/webseiten-texte-schreiben-lassen',
-      name: 'Webseiten Texte & SEO Copywriting | EvolaTec',
-      description: 'Professionelle Webseiten Texte, SEO Copywriting und Website Inhalte für Unternehmen, Landingpages und Onlineshops. Texte die ranken und verkaufen.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://evolatec.de/webseiten-texte-schreiben-lassen/#service',
-      name: 'Webseiten Texte & SEO Copywriting',
-      description: 'Professionelle Website-Texte, SEO Copywriting und Inhalte für Unternehmen, Landingpages und Onlineshops.',
-      url: 'https://evolatec.de/webseiten-texte-schreiben-lassen',
-      provider: { '@id': 'https://evolatec.de/#organization' },
-      areaServed: { '@type': 'Country', name: 'Germany' },
-      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '75', priceCurrency: 'EUR' } },
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Warum sind SEO Texte wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'SEO Texte verbessern Rankings und helfen Google dabei, Ihre Website besser zu verstehen. Gute Texte führen zu mehr organischem Traffic.' } },
-        { '@type': 'Question', name: 'Schreiben Sie Texte für Landingpages?', acceptedAnswer: { '@type': 'Answer', text: 'Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.' } },
-        { '@type': 'Question', name: 'Können Inhalte mehrsprachig erstellt werden?', acceptedAnswer: { '@type': 'Answer', text: 'Wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativen Sprachkenntnissen.' } },
-        { '@type': 'Question', name: 'Was kosten professionelle Website Texte?', acceptedAnswer: { '@type': 'Answer', text: 'Professionelle Webseiten Texte beginnen bei 150€, komplette Projekte bei 700€. Die genauen Kosten hängen vom Umfang ab.' } },
-        { '@type': 'Question', name: 'Wie lange dauert die Content Erstellung?', acceptedAnswer: { '@type': 'Answer', text: 'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für größere Projekte 2–4 Wochen. Eine schnellere Umsetzung ist möglich.' } },
-      ],
-    },
-  ],
-};
+const contentFaqs = [
+  {
+    question: 'Warum sind SEO Texte wichtig?',
+    answer:
+      'SEO Texte verbessern Rankings und helfen Google dabei, Ihre Website besser zu verstehen. Gute Texte führen zu mehr organischem Traffic.',
+  },
+  {
+    question: 'Schreiben Sie Texte für Landingpages?',
+    answer:
+      'Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.',
+  },
+  {
+    question: 'Können Inhalte mehrsprachig erstellt werden?',
+    answer:
+      'Wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativen Sprachkenntnissen.',
+  },
+  {
+    question: 'Was kosten professionelle Website Texte?',
+    answer:
+      'Professionelle Webseiten Texte beginnen bei 150€, komplette Projekte bei 700€. Die genauen Kosten hängen vom Umfang ab.',
+  },
+  {
+    question: 'Wie lange dauert die Content Erstellung?',
+    answer:
+      'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für größere Projekte 2–4 Wochen. Eine schnellere Umsetzung ist möglich.',
+  },
+];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({ url: 'https://evolatec.de/webseiten-texte-schreiben-lassen', name: 'Webseiten Texte & SEO Copywriting | EvolaTec', description: 'Professionelle Webseiten Texte, SEO Copywriting und Website Inhalte für Unternehmen, Landingpages und Onlineshops. Texte die ranken und verkaufen.' }),
+  serviceSchema({ id: 'https://evolatec.de/webseiten-texte-schreiben-lassen/#service', name: 'Webseiten Texte & SEO Copywriting', description: 'Professionelle Website-Texte, SEO Copywriting und Inhalte für Unternehmen, Landingpages und Onlineshops.', url: 'https://evolatec.de/webseiten-texte-schreiben-lassen', serviceType: 'Copywriting', minPrice: 75 }),
+  breadcrumbSchema([{ name: 'Home', url: 'https://evolatec.de' }, { name: 'Design & Content', url: 'https://evolatec.de/webdesign' }, { name: 'Content & Copywriting', url: 'https://evolatec.de/webseiten-texte-schreiben-lassen' }]),
+  faqSchema(contentFaqs),
+);
 
 useHead({
   title: 'Webseiten Texte & SEO Copywriting | EvolaTec',
@@ -310,31 +313,4 @@ const contentPricingPlans = [
   },
 ];
 
-const contentFaqs = [
-  {
-    question: 'Warum sind SEO Texte wichtig?',
-    answer:
-      'SEO Texte verbessern Rankings und helfen Google dabei, Ihre Website besser zu verstehen. Gute Texte führen zu mehr organischem Traffic.',
-  },
-  {
-    question: 'Schreiben Sie Texte für Landingpages?',
-    answer:
-      'Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.',
-  },
-  {
-    question: 'Können Inhalte mehrsprachig erstellt werden?',
-    answer:
-      'Wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativen Sprachkenntnissen.',
-  },
-  {
-    question: 'Was kosten professionelle Website Texte?',
-    answer:
-      'Professionelle Webseiten Texte beginnen bei 150€, komplette Projekte bei 700€. Die genauen Kosten hängen vom Umfang ab.',
-  },
-  {
-    question: 'Wie lange dauert die Content Erstellung?',
-    answer:
-      'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für größere Projekte 2–4 Wochen. Eine schnellere Umsetzung ist möglich.',
-  },
-];
 </script>

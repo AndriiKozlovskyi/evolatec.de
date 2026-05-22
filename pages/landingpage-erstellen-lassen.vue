@@ -60,43 +60,58 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema } from '~/composables/schema/global'
+import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema/service'
+
 const { hreflangLinks } = useLanguageSwitcher();
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebPage',
-      '@id': 'https://evolatec.de/landingpage-erstellen-lassen/#webpage',
-      url: 'https://evolatec.de/landingpage-erstellen-lassen',
-      name: 'Landingpage erstellen lassen – One-Pager | EvolaTec Agentur',
-      description: 'Professionelle Landingpages & One-Pager erstellen lassen. Konversionsstarke Landingpages für Werbung, Kampagnen und Lead-Generierung ab 500€.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://evolatec.de/landingpage-erstellen-lassen/#service',
-      name: 'Landingpage erstellen lassen',
-      description: 'Konversionsstarke One-Pager und Landingpages für Werbung, Kampagnen und Lead-Generierung.',
-      url: 'https://evolatec.de/landingpage-erstellen-lassen',
-      provider: { '@id': 'https://evolatec.de/#organization' },
-      areaServed: { '@type': 'Country', name: 'Germany' },
-      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '500', priceCurrency: 'EUR' } },
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Was kostet eine Landingpage?', acceptedAnswer: { '@type': 'Answer', text: 'Professionelle Landingpages beginnen ab 500€, abhängig von Design und Funktionen. Wir erstellen transparente Angebote ohne versteckte Kosten.' } },
-        { '@type': 'Question', name: 'Wie lange dauert die Erstellung einer Landingpage?', acceptedAnswer: { '@type': 'Answer', text: 'Die meisten Landingpages werden innerhalb von 3–7 Tagen erstellt, je nach Komplexität und Ihren Anforderungen.' } },
-        { '@type': 'Question', name: 'Ist die Landingpage mobil optimiert?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle Landingpages sind vollständig responsive und für alle Geräte mobil-first optimiert.' } },
-        { '@type': 'Question', name: 'Ist SEO inklusive?', acceptedAnswer: { '@type': 'Answer', text: 'Basis-SEO ist in jeder Landingpage enthalten. Premium-Pakete beinhalten erweiterte SEO-Optimierung.' } },
-        { '@type': 'Question', name: 'Kann die Landingpage für Werbung genutzt werden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, unsere Landingpages sind speziell für Google Ads und Social Media Kampagnen optimiert.' } },
-      ],
-    },
-  ],
-};
+const faqs = [
+  {
+    question: 'Was kostet eine Landingpage?',
+    answer:
+      'Professionelle Landingpages beginnen ab 500€, abhängig von Design und Funktionen. Wir erstellen transparente Angebote ohne versteckte Kosten.',
+  },
+  {
+    question: 'Wie lange dauert die Erstellung?',
+    answer: 'Die meisten Landingpages werden innerhalb von 3–7 Tagen erstellt, je nach Komplexität und Ihren Anforderungen.',
+  },
+  {
+    question: 'Ist die Landingpage mobil optimiert?',
+    answer: 'Ja, alle Landingpages sind vollständig responsive und für alle Geräte mobil-first optimiert.',
+  },
+  {
+    question: 'Ist SEO inklusive?',
+    answer: 'Basis-SEO ist in jeder Landingpage enthalten. Premium-Pakete beinhalten erweiterte SEO-Optimierung.',
+  },
+  {
+    question: 'Kann die Landingpage für Werbung genutzt werden?',
+    answer: 'Ja, unsere Landingpages sind speziell für Google Ads und Social Media Kampagnen optimiert.',
+  },
+];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({
+    url: 'https://evolatec.de/landingpage-erstellen-lassen',
+    name: 'Landingpage erstellen lassen – One-Pager | EvolaTec Agentur',
+    description: 'Professionelle Landingpages & One-Pager erstellen lassen. Konversionsstarke Landingpages für Werbung, Kampagnen und Lead-Generierung ab 500€.',
+  }),
+  serviceSchema({
+    id: 'https://evolatec.de/landingpage-erstellen-lassen/#service',
+    name: 'Landingpage erstellen lassen',
+    description: 'Konversionsstarke One-Pager und Landingpages für Werbung, Kampagnen und Lead-Generierung.',
+    url: 'https://evolatec.de/landingpage-erstellen-lassen',
+    serviceType: 'Webdesign',
+    minPrice: 500,
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: 'https://evolatec.de' },
+    { name: 'Firmenwebsite', url: 'https://evolatec.de/firmenwebsite' },
+    { name: 'Landingpage erstellen lassen', url: 'https://evolatec.de/landingpage-erstellen-lassen' },
+  ]),
+  faqSchema(faqs),
+);
 
 useHead({
   title: 'Landingpage erstellen lassen – One-Pager | EvolaTec Agentur',
@@ -260,27 +275,4 @@ const useCases = [
   'Beauty & Gesundheit',
 ];
 
-const faqs = [
-  {
-    question: 'Was kostet eine Landingpage?',
-    answer:
-      'Professionelle Landingpages beginnen ab 500€, abhängig von Design und Funktionen. Wir erstellen transparente Angebote ohne versteckte Kosten.',
-  },
-  {
-    question: 'Wie lange dauert die Erstellung?',
-    answer: 'Die meisten Landingpages werden innerhalb von 3–7 Tagen erstellt, je nach Komplexität und Ihren Anforderungen.',
-  },
-  {
-    question: 'Ist die Landingpage mobil optimiert?',
-    answer: 'Ja, alle Landingpages sind vollständig responsive und für alle Geräte mobil-first optimiert.',
-  },
-  {
-    question: 'Ist SEO inklusive?',
-    answer: 'Basis-SEO ist in jeder Landingpage enthalten. Premium-Pakete beinhalten erweiterte SEO-Optimierung.',
-  },
-  {
-    question: 'Kann die Landingpage für Werbung genutzt werden?',
-    answer: 'Ja, unsere Landingpages sind speziell für Google Ads und Social Media Kampagnen optimiert.',
-  },
-];
 </script>

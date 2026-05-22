@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ── Home ─────────────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/main/hero.webp</image:loc>
+      <image:title>EvolaTec — Web Design, SEO and Online Marketing Agency Hamburg</image:title>
+      <image:caption>EvolaTec creates professional websites and delivers measurable online marketing results for businesses across Germany.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Website Hub ───────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/business-website/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/firmenwebsite/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/business-website/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/firmenwebsite/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/web-development/hero.webp</image:loc>
+      <image:title>Professional Business Website Design — EvolaTec</image:title>
+      <image:caption>Custom business websites with modern design, optimal performance, and integrated SEO strategy by EvolaTec.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Website Services ──────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/business-website-design/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/firmenwebsite-erstellen-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/business-website-design/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/firmenwebsite-erstellen-lassen/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/web-development/hero.webp</image:loc>
+      <image:title>Business Website Design Agency — EvolaTec</image:title>
+      <image:caption>Professional business website by experts — responsive design, fast loading times, and on-page SEO included.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/landing-page-design/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/landingpage-erstellen-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/landing-page-design/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/landingpage-erstellen-lassen/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/landing/hero.webp</image:loc>
+      <image:title>Landing Page Design Agency — High-converting pages</image:title>
+      <image:caption>Professional landing pages with clear value propositions and optimised conversion elements for more qualified leads.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/online-shop-development/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/online-shop-erstellen-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/online-shop-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/online-shop-erstellen-lassen/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/ecommerce/hero.webp</image:loc>
+      <image:title>Online Shop Development Agency — EvolaTec</image:title>
+      <image:caption>Professional online shops with secure payment processing, mobile-first design, and high conversion rates by EvolaTec.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── SEO Hub ───────────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/seo/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/seo/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/seo/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/seo/hero.webp</image:loc>
+      <image:title>SEO Agency Hamburg — Search Engine Optimization EvolaTec</image:title>
+      <image:caption>Comprehensive SEO strategies by EvolaTec for sustainable top rankings in search engines across Germany.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── SEO Services ──────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/seo-optimization/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/seo-optimieren-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/seo-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/seo-optimieren-lassen/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/seo/optimize.webp</image:loc>
+      <image:title>SEO Optimization Service — On-Page and Off-Page SEO</image:title>
+      <image:caption>On-page and off-page SEO measures for improved visibility in organic search results and sustainable rankings.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/seo-audit/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/seo-audit/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/seo-audit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/seo-audit/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/seo/audit.webp</image:loc>
+      <image:title>SEO Audit Service — Technical SEO Analysis EvolaTec</image:title>
+      <image:caption>Detailed technical SEO audit analysing crawlability, Core Web Vitals, and structured data implementation.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/local-seo/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/local-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/local-seo/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/seo/local.webp</image:loc>
+      <image:title>Local SEO Agency — Google Maps and Local Search Optimization</image:title>
+      <image:caption>Local SEO for Hamburg and across Germany — Google My Business optimisation and local keyword strategy for more regional visibility.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/seo-link-building/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/seo-linkbuilding/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/seo-link-building/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/seo-linkbuilding/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/seo/link.webp</image:loc>
+      <image:title>SEO Link Building Service — Backlinks and Domain Authority</image:title>
+      <image:caption>Sustainable link building through high-quality backlinks from thematically relevant German websites to boost domain authority.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Design & Content Hub ──────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/web-design/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/webdesign/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/web-design/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/webdesign/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/design-ui-ux/hero.webp</image:loc>
+      <image:title>Web Design Agency Hamburg — UI/UX Design EvolaTec</image:title>
+      <image:caption>Creative web design with focus on usability, visual identity, and conversion optimisation by EvolaTec Hamburg.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Design & Content Services ────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/website-copywriting/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/webseiten-texte-schreiben-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/website-copywriting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/webseiten-texte-schreiben-lassen/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/design-content/hero.webp</image:loc>
+      <image:title>Website Copywriting Service — Professional Content Creation</image:title>
+      <image:caption>Professional copywriting and SEO-optimised website content for more organic traffic and better conversion rates.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/design-branding/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/design-branding/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/design-branding/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/design-branding/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/design-branding/hero.webp</image:loc>
+      <image:title>Branding and Corporate Design Agency — EvolaTec</image:title>
+      <image:caption>Memorable brand identities with professional logo design, colour concept, and corporate design system by EvolaTec.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/ui-ux-design/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/ui-ux-design/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/ui-ux-design/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/ui-ux-design/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/design-ui-ux/hero.webp</image:loc>
+      <image:title>UI/UX Design Agency — User-centred Web Design</image:title>
+      <image:caption>User-centred UI/UX design with wireframes, interactive prototypes, and usability-tested interfaces by EvolaTec.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Marketing Hub ─────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/online-marketing/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/online-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/online-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/online-marketing/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/marketing/hero.webp</image:loc>
+      <image:title>Online Marketing Agency Hamburg — Google Ads, Social Media</image:title>
+      <image:caption>Data-driven online marketing with Google Ads, Social Media, and content marketing for maximum reach and more conversions.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Marketing Services ────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/google-ads-management/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/marketing-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/google-ads-management/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/marketing-google-ads/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/ads/hero.webp</image:loc>
+      <image:title>Google Ads Management Agency — PPC and Performance Marketing</image:title>
+      <image:caption>Professional Google Ads management with ROI-optimised campaigns and continuous performance monitoring by EvolaTec.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://evolatec.de/en/social-media-marketing/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/marketing-social-media/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/social-media-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/marketing-social-media/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/smm/hero.webp</image:loc>
+      <image:title>Social Media Marketing Agency — Instagram, Facebook, Meta Ads</image:title>
+      <image:caption>Strategic Social Media Marketing on Instagram and Facebook for greater reach, follower growth, and brand engagement.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Web Development ───────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/web-development/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/web-development/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/web-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/web-development/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/web-development/hero.webp</image:loc>
+      <image:title>Web Development Agency — Nuxt, Vue, TypeScript</image:title>
+      <image:caption>Modern web development with Nuxt, Vue, and TypeScript for performant, scalable, and maintainable web applications.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Cost Calculator ───────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/website-cost-calculator/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/webseite-kosten-kalkulator/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/website-cost-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/webseite-kosten-kalkulator/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/web-development-cost/features.webp</image:loc>
+      <image:title>Website Cost Calculator — Calculate your project price</image:title>
+      <image:caption>Our interactive website cost calculator provides transparent project pricing based on your individual requirements.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ── Pricing ───────────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/pricing/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/preise/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/preise/"/>
+  </url>
+
+  <!-- ── Contact ───────────────────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/en/contact/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/kontakt/"/>
+  </url>
+
+</urlset>

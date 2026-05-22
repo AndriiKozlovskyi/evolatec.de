@@ -134,53 +134,10 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema } from '~/composables/schema/global'
+import { breadcrumbSchema, faqSchema } from '~/composables/schema/service'
 const { hreflangLinks } = useLanguageSwitcher();
 import { ref } from 'vue';
-
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'ContactPage',
-      '@id': 'https://evolatec.de/kontakt/#webpage',
-      url: 'https://evolatec.de/kontakt',
-      name: 'Kontakt – Kostenlose Erstberatung | EvolaTec',
-      description: 'Kostenlose Erstberatung für Ihre Website oder Online Shop. Termin buchen oder Anfrage schreiben — Antwort innerhalb von 24 Stunden.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Was passiert nach meiner Anfrage?', acceptedAnswer: { '@type': 'Answer', text: 'Wir prüfen Ihre Anfrage und melden uns innerhalb von 24 Stunden mit einem unverbindlichen Angebot oder Terminvorschlägen für ein Erstgespräch.' } },
-        { '@type': 'Question', name: 'Ist die Erstberatung wirklich kostenlos?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Das 15-minütige Erstgespräch und das daraus resultierende Angebot sind komplett kostenlos und unverbindlich.' } },
-        { '@type': 'Question', name: 'Kann ich mit einem kleinen Budget starten?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Landingpages starten ab 500€, Firmenwebsites ab 1.500€. Mit unserem Preis-Kalkulator erhalten Sie sofort eine Schätzung.' } },
-        { '@type': 'Question', name: 'Wann sind Sie erreichbar?', acceptedAnswer: { '@type': 'Answer', text: 'Montag bis Freitag von 9–17 Uhr. Für dringende Anfragen schreiben Sie uns einfach auf WhatsApp — wir antworten meist innerhalb 1 Stunde.' } },
-      ],
-    },
-  ],
-};
-
-useHead({
-  title: 'Kontakt – Kostenlose Erstberatung | EvolaTec',
-  meta: [
-    { name: 'description', content: 'Kostenlose Erstberatung für Ihre Website oder Online Shop. Termin buchen oder Anfrage schreiben — Antwort innerhalb von 24 Stunden.' },
-  ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/kontakt' }, ...hreflangLinks.value],
-  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
-});
-
-const tab = ref<'call' | 'form'>('call');
-
-const calComUrl = 'https://cal.eu/evolatec/15min';
-const calComEmbedUrl = 'https://cal.eu/evolatec/15min?embed=true&layout=month_view&theme=light&hideEventTypeDetails=false';
-
-const trustChips = [
-  'Unverbindlich',
-  'Antwort in 24h',
-  'DSGVO-konform',
-];
 
 const faqs = [
   {
@@ -204,4 +161,33 @@ const faqs = [
       'Montag bis Freitag von 9–17 Uhr. Für dringende Anfragen schreiben Sie uns einfach auf WhatsApp — wir antworten meist innerhalb 1 Stunde.',
   },
 ];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({ url: 'https://evolatec.de/kontakt', name: 'Kontakt – Kostenlose Erstberatung | EvolaTec', description: 'Kostenlose Erstberatung für Ihre Website oder Online Shop. Termin buchen oder Anfrage schreiben — Antwort innerhalb von 24 Stunden.' }),
+  breadcrumbSchema([{ name: 'Home', url: 'https://evolatec.de' }, { name: 'Kontakt', url: 'https://evolatec.de/kontakt' }]),
+  faqSchema(faqs),
+);
+
+useHead({
+  title: 'Kontakt – Kostenlose Erstberatung | EvolaTec',
+  meta: [
+    { name: 'description', content: 'Kostenlose Erstberatung für Ihre Website oder Online Shop. Termin buchen oder Anfrage schreiben — Antwort innerhalb von 24 Stunden.' },
+  ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/kontakt' }, ...hreflangLinks.value],
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
+});
+
+const tab = ref<'call' | 'form'>('call');
+
+const calComUrl = 'https://cal.eu/evolatec/15min';
+const calComEmbedUrl = 'https://cal.eu/evolatec/15min?embed=true&layout=month_view&theme=light&hideEventTypeDetails=false';
+
+const trustChips = [
+  'Unverbindlich',
+  'Antwort in 24h',
+  'DSGVO-konform',
+];
+
 </script>

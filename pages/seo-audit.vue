@@ -65,43 +65,42 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema } from '~/composables/schema/global'
+import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema/service'
+
 const { hreflangLinks } = useLanguageSwitcher();
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebPage',
-      '@id': 'https://evolatec.de/seo-audit/#webpage',
-      url: 'https://evolatec.de/seo-audit',
-      name: 'SEO Audit & Analyse – Technischer Website Check | EvolaTec',
-      description: 'Professioneller SEO Audit für bessere Google Rankings. Technische Analyse, OnPage Check und Konkurrenzanalyse. SEO Audits ab 100€.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://evolatec.de/seo-audit/#service',
-      name: 'SEO Audit',
-      description: 'Technische SEO-Analyse, OnPage Check und Konkurrenzanalyse für bessere Google Rankings.',
-      url: 'https://evolatec.de/seo-audit',
-      provider: { '@id': 'https://evolatec.de/#organization' },
-      areaServed: { '@type': 'Country', name: 'Germany' },
-      offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '100', priceCurrency: 'EUR' } },
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        { '@type': 'Question', name: 'Was kostet ein SEO Audit?', acceptedAnswer: { '@type': 'Answer', text: 'Basis SEO Analysen beginnen bei 100€. Umfangreiche technische Audits ab 300€. Die genauen Kosten hängen von der Komplexität Ihrer Website ab.' } },
-        { '@type': 'Question', name: 'Wie lange dauert eine SEO Analyse?', acceptedAnswer: { '@type': 'Answer', text: 'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites kann es etwas länger dauern.' } },
-        { '@type': 'Question', name: 'Was wird bei einem SEO Audit geprüft?', acceptedAnswer: { '@type': 'Answer', text: 'Wir prüfen Technik, Ladezeiten, Struktur, Keywords, Content, mobile Optimierung, Indexierung und Wettbewerber-Strategien.' } },
-        { '@type': 'Question', name: 'Bekomme ich einen SEO Report?', acceptedAnswer: { '@type': 'Answer', text: 'Sie erhalten einen strukturierten Bericht mit konkreten Handlungsempfehlungen und einem Prioritätsplan.' } },
-        { '@type': 'Question', name: 'Optimieren Sie die Website auch um?', acceptedAnswer: { '@type': 'Answer', text: 'Gerne setzen wir die Optimierungen nach dem Audit für Sie um oder unterstützen Sie dabei.' } },
-      ],
-    },
-  ],
-};
+const auditFaqs = [
+  { question: 'Was kostet ein SEO Audit?', answer: 'Basis SEO Analysen beginnen bei 100€. Umfangreiche technische Audits ab 300€. Die genauen Kosten hängen von der Komplexität Ihrer Website ab.' },
+  { question: 'Wie lange dauert eine SEO Analyse?', answer: 'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites kann es etwas länger dauern.' },
+  { question: 'Was wird bei einem SEO Audit geprüft?', answer: 'Wir prüfen Technik, Ladezeiten, Struktur, Keywords, Content, mobile Optimierung, Indexierung und Wettbewerber-Strategien.' },
+  { question: 'Bekomme ich einen SEO Report?', answer: 'Sie erhalten einen strukturierten Bericht mit konkreten Handlungsempfehlungen und einem Prioritätsplan.' },
+  { question: 'Optimieren Sie die Website auch um?', answer: 'Gerne setzen wir die Optimierungen nach dem Audit für Sie um oder unterstützen Sie dabei.' },
+];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({
+    url: 'https://evolatec.de/seo-audit',
+    name: 'SEO Audit & Analyse – Technischer Website Check | EvolaTec',
+    description: 'Professioneller SEO Audit für bessere Google Rankings. Technische Analyse, OnPage Check und Konkurrenzanalyse. SEO Audits ab 100€.',
+  }),
+  serviceSchema({
+    id: 'https://evolatec.de/seo-audit/#service',
+    name: 'SEO Audit',
+    description: 'Technische SEO-Analyse, OnPage Check und Konkurrenzanalyse für bessere Google Rankings.',
+    url: 'https://evolatec.de/seo-audit',
+    serviceType: 'SEO Audit',
+    minPrice: 100,
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: 'https://evolatec.de' },
+    { name: 'SEO', url: 'https://evolatec.de/seo' },
+    { name: 'SEO Audit & Analyse', url: 'https://evolatec.de/seo-audit' },
+  ]),
+  faqSchema(auditFaqs),
+);
 
 useHead({
   title: 'SEO Audit & Analyse – Technischer Website Check | EvolaTec',
@@ -236,11 +235,4 @@ const auditPricingPlans = [
   },
 ];
 
-const auditFaqs = [
-  { question: 'Was kostet ein SEO Audit?', answer: 'Basis SEO Analysen beginnen bei 100€. Umfangreiche technische Audits ab 300€. Die genauen Kosten hängen von der Komplexität Ihrer Website ab.' },
-  { question: 'Wie lange dauert eine SEO Analyse?', answer: 'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites kann es etwas länger dauern.' },
-  { question: 'Was wird bei einem SEO Audit geprüft?', answer: 'Wir prüfen Technik, Ladezeiten, Struktur, Keywords, Content, mobile Optimierung, Indexierung und Wettbewerber-Strategien.' },
-  { question: 'Bekomme ich einen SEO Report?', answer: 'Sie erhalten einen strukturierten Bericht mit konkreten Handlungsempfehlungen und einem Prioritätsplan.' },
-  { question: 'Optimieren Sie die Website auch um?', answer: 'Gerne setzen wir die Optimierungen nach dem Audit für Sie um oder unterstützen Sie dabei.' },
-];
 </script>
