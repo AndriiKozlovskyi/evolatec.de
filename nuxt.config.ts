@@ -5,6 +5,9 @@ const COOKIEBOT_CBID = '262a7035-5608-447f-b551-e39d0be800f3';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  nitro: {
+    preset: 'netlify',
+  },
   runtimeConfig: {
     public: {
       cookiebotCbid: COOKIEBOT_CBID,
