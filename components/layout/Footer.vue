@@ -5,7 +5,7 @@
       <div class="space-y-4 sm:col-span-2 md:col-span-1">
         <div class="flex flex-row items-center gap-3">
           <NuxtImg src="/logo.png" alt="EvolaTec Logo" :width="60" :height="60" format="webp" class="h-9 w-9" loading="eager" />
-                <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>     
+          <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>     
         </div>
         <p class="text-on-surface-variant text-sm md:text-body-md md:pr-8">
           {{ isEnglish ? 'Websites, SEO and marketing — everything from one source.' : 'Websites, SEO und Marketing — alles aus einer Hand.' }}
