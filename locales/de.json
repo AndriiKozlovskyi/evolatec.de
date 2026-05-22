@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "website": "Website",
+    "seo": "SEO",
+    "designContent": "Design & Content",
+    "marketing": "Marketing",
+    "pricing": "Preise Kalkulator",
+    "request": "Anfragen",
+    "projectRequest": "Projekt anfragen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "navItems": {
+    "firmenwebsite": "Firmenwebsite",
+    "landingpage": "Landingpage",
+    "onlineShop": "Online-Shop",
+    "seoOptimierung": "SEO Optimierung",
+    "localSeo": "Local SEO",
+    "linkbuilding": "Linkbuilding",
+    "seoAudit": "SEO Audit & Analyse",
+    "contentCopywriting": "Content & Copywriting",
+    "brandingDesign": "Branding & Corporate Design",
+    "uiUxDesign": "UI/UX Design",
+    "googleAds": "Google Ads",
+    "socialMedia": "Social Media"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "getQuote": "Kostenloses Angebot erhalten",
+    "getConsultation": "Kostenlos beraten lassen",
+    "discussProject": "Projekt besprechen",
+    "viewPricing": "Preise ansehen",
+    "viewAllPrices": "Alle Preise ansehen",
+    "contact": "Kontakt",
+    "service": "Leistung",
+    "price": "Preis",
+    "deliveryTime": "Lieferzeit"
+  },
+  "hero": {
+    "index": {
+      "badge": "Webdesign & Webentwicklung Agentur",
+      "title": "Professionelle Website erstellen lassen für Unternehmen",
+      "description": "Moderne Firmenwebsites, Landingpages und Online Shops, die Kunden gewinnen und Ihr Unternehmen wachsen lassen. SEO-optimiert, schnell und konversionsstark.",
+      "primaryCta": "Kostenloses Angebot erhalten",
+      "secondaryCta": "Preise ansehen"
+    }
+  },
+  "stats": {
+    "deliveryTime": "Lieferzeit",
+    "seoReady": "SEO-ready",
+    "responsiveDesign": "Responsive Design",
+    "pricing": "Preise",
+    "from3Days": "ab 3 Tagen",
+    "allDevices": "Alle",
+    "transparent": "Transparent"
+  },
+  "footer": {
+    "tagline": "Websites, SEO und Marketing — alles aus einer Hand.",
+    "services": "Leistungen",
+    "legal": "Rechtliches",
+    "newsletter": "Newsletter",
+    "subscribe": "Abonnieren",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "process": {
+    "title": "So arbeiten wir",
+    "step1": { "title": "Kostenlose Beratung", "desc": "Wir verstehen Ihre Anforderungen und Ziele genau." },
+    "step2": { "title": "Struktur & Design", "desc": "Planung und Gestaltung Ihrer Website." },
+    "step3": { "title": "Entwicklung & SEO", "desc": "Professionelle Umsetzung mit vollständiger SEO-Optimierung." },
+    "step4": { "title": "Launch & Optimierung", "desc": "Gründliches Testen und professioneller Go-Live." }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Was kostet eine professionelle Website?",
+    "a1": "Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.",
+    "q2": "Wie lange dauert die Erstellung?",
+    "a2": "Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online Shops ab 14 Tagen. Der genaue Zeitrahmen hängt von Umfang und Anforderungen ab.",
+    "q3": "Ist SEO inklusive?",
+    "a3": "Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.",
+    "q4": "Entwickeln Sie Shopify Shops?",
+    "a4": "Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.",
+    "q5": "Gibt es Festpreise?",
+    "a5": "Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.",
+    "q6": "Was ist nach dem Launch?",
+    "a6": "Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an."
+  },
+  "cta": {
+    "index": {
+      "title": "Lassen Sie Ihre Website professionell erstellen",
+      "description": "Moderne Websites, die Kunden gewinnen und Ihr Unternehmen wachsen lassen.",
+      "primary": "Kostenlos beraten lassen",
+      "secondary": "Projekt besprechen"
+    }
+  }
+}

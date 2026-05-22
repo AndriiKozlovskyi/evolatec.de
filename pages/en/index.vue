@@ -3,17 +3,17 @@
     <!-- Hero Section -->
     <HeroSection
       background-image="/main/hero.webp"
-      badge="Webdesign & Webentwicklung Agentur"
-      title="Professionelle Website erstellen lassen für Unternehmen"
-      description="Moderne Firmenwebsites, Landingpages und Online Shops, die Kunden gewinnen und Ihr Unternehmen wachsen lassen. SEO-optimiert, schnell und konversionsstark."
-      primaryCTA="Kostenloses Angebot erhalten"
-      secondaryCTA="Preise ansehen"
+      badge="Web Design & Web Development Agency"
+      title="Professional Website Development for Businesses"
+      description="Modern business websites, landing pages and online shops that win customers and grow your business. SEO-optimized, fast and conversion-focused."
+      primaryCTA="Get a Free Quote"
+      secondaryCTA="View Pricing"
       :stats="heroStats"
     />
 
-     <!-- About Us Section -->
+    <!-- About Us Section -->
     <section
-      data-nav-label="Über uns"
+      data-nav-label="About Us"
       data-nav-icon="info"
       class="relative py-section-padding bg-surface overflow-hidden"
     >
@@ -27,23 +27,23 @@
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
               <span class="material-symbols-outlined text-[18px]">info</span>
-              Über EvolaTec
+              About EvolaTec
             </span>
 
             <h2 class="font-headline-xl text-headline-xl text-primary mb-6 leading-[1.1]">
-              Moderne Webagentur für
+              Modern Web Agency for
               <span class="relative inline-block">
-                <span class="relative z-10">professionelle</span>
+                <span class="relative z-10">Professional</span>
                 <span class="absolute -bottom-1 left-0 right-0 h-3 bg-primary/15 rounded-sm -z-0"></span>
               </span>
-              digitale Lösungen
+              Digital Solutions
             </h2>
 
             <div class="space-y-4 font-body-lg text-on-surface-variant leading-relaxed">
-              <p>EvolaTec entwickelt moderne Websites, Unternehmenswebseiten, Landingpages und digitale Plattformen für Unternehmen, Startups und lokale Dienstleister.</p>
-              <p>Unser Fokus liegt auf performanter Webentwicklung, modernem UI/UX Design und SEO-optimierten Lösungen, die nicht nur professionell aussehen, sondern auch messbare Ergebnisse liefern.</p>
-              <p>Wir kombinieren moderne Technologien wie Vue.js, Nuxt, Tailwind CSS und TypeScript, um schnelle, skalierbare und hochwertige Websites für moderne Unternehmen zu entwickeln.</p>
-              <p>Egal ob Firmenwebsite, E-Commerce Plattform, Landingpage oder individuelle Weblösung — EvolaTec unterstützt Unternehmen beim professionellen digitalen Wachstum.</p>
+              <p>EvolaTec develops modern websites, business websites, landing pages and digital platforms for companies, startups and local service providers.</p>
+              <p>Our focus is on high-performance web development, modern UI/UX design and SEO-optimized solutions that not only look professional but deliver measurable results.</p>
+              <p>We combine modern technologies like Vue.js, Nuxt, Tailwind CSS and TypeScript to build fast, scalable and high-quality websites for modern businesses.</p>
+              <p>Whether it's a business website, e-commerce platform, landing page or custom web solution — EvolaTec supports companies in their professional digital growth.</p>
             </div>
           </div>
 
@@ -66,9 +66,9 @@
       </div>
     </section>
 
-     <!-- Why Us Section -->
+    <!-- Why Us Section -->
     <section
-      data-nav-label="Warum wir"
+      data-nav-label="Why Us"
       data-nav-icon="stars"
       class="relative py-section-padding bg-surface overflow-hidden"
     >
@@ -82,20 +82,20 @@
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
               <span class="material-symbols-outlined text-[18px]">stars</span>
-              Warum EvolaTec?
+              Why EvolaTec?
             </span>
 
             <h2 class="font-headline-xl text-headline-xl text-primary mb-6 leading-[1.1]">
-              Moderne Webentwicklung für
+              Modern Web Development for
               <span class="relative inline-block">
-                <span class="relative z-10">Unternehmen</span>
+                <span class="relative z-10">Businesses</span>
                 <span class="absolute -bottom-1 left-0 right-0 h-3 bg-primary/15 rounded-sm -z-0"></span>
               </span>
-              mit hohen Ansprüchen
+              with High Standards
             </h2>
 
             <p class="font-body-lg text-on-surface-variant mb-10 leading-relaxed">
-              EvolaTec kombiniert modernes Webdesign, performante Entwicklung und SEO-optimierte Technologien für schnelle, professionelle und skalierbare Websites.
+              EvolaTec combines modern web design, high-performance development and SEO-optimized technologies for fast, professional and scalable websites.
             </p>
 
             <div class="space-y-5">
@@ -116,12 +116,10 @@
             <div class="relative aspect-square max-w-md mx-auto">
               <div class="absolute inset-6 rounded-[2rem] bg-gradient-to-br from-primary/85 via-primary-container to-primary/60 ambient-shadow"></div>
 
-              <!-- Code icon badge top-right -->
               <div class="absolute top-0 right-8 w-20 h-20 rounded-2xl bg-white shadow-xl flex items-center justify-center rotate-[8deg]">
                 <span class="material-symbols-outlined text-primary text-[40px]">code_blocks</span>
               </div>
 
-              <!-- Tech stack card -->
               <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Tech Stack</div>
                 <div class="flex flex-wrap gap-1.5 max-w-[180px]">
@@ -132,14 +130,12 @@
                 </div>
               </div>
 
-              <!-- Lighthouse performance card -->
               <div class="absolute top-44 right-0 bg-white rounded-2xl p-5 shadow-xl rotate-[5deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Performance</div>
                 <div class="font-display text-4xl font-black leading-none text-primary">99<span class="text-lg text-on-surface-variant">/100</span></div>
                 <div class="text-xs text-on-surface-variant mt-1">Lighthouse</div>
               </div>
 
-              <!-- Clean code lines card -->
               <div class="absolute bottom-6 left-6 bg-white rounded-2xl p-5 shadow-xl rotate-[-3deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Clean Code</div>
                 <div class="flex flex-col gap-1.5 w-32">
@@ -150,7 +146,6 @@
                 </div>
               </div>
 
-              <!-- Deployed status pill -->
               <div class="absolute bottom-16 right-0 bg-white rounded-full px-4 py-2 shadow-xl rotate-[6deg] flex items-center gap-2">
                 <span class="relative flex w-2 h-2">
                   <span class="absolute inline-flex w-full h-full rounded-full bg-emerald-500 opacity-75 animate-ping"></span>
@@ -166,10 +161,10 @@
     </section>
 
     <!-- Services Section -->
-    <section data-nav-label="Leistungen" data-nav-icon="apps" class="py-8 md:py-section-padding bg-surface">
+    <section data-nav-label="Services" data-nav-icon="apps" class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-6 md:mb-stack-lg">
-          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-2 md:mb-4 leading-tight">Unsere Leistungen</h2>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-2 md:mb-4 leading-tight">Our Services</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-stack-md">
@@ -179,24 +174,17 @@
             class="group relative bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-surface-container-high animate-fade-in-up"
             :style="{ animationDelay: `${index * 100}ms` }"
           >
-            <!-- Icon -->
             <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-lg md:rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-gradient-to-br group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
               <span class="material-symbols-outlined text-xl sm:text-[2rem] text-primary group-hover:scale-110 transition-transform duration-300">{{ service.icon }}</span>
             </div>
-
-            <!-- Content -->
             <h3 class="text-base sm:text-headline-md font-bold text-on-surface mb-2 sm:mb-3">{{ service.title }}</h3>
             <p class="text-sm sm:text-body-md text-on-surface-variant mb-4 sm:mb-6 line-clamp-3">{{ service.description }}</p>
-
-            <!-- Price -->
             <p class="text-base sm:text-lg font-black text-primary mb-4 sm:mb-6">{{ service.price }}</p>
-
-            <!-- Link -->
             <a
               :href="service.href"
               class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all duration-300 text-sm sm:text-base py-2 min-h-[44px]"
             >
-              Mehr erfahren
+              Learn more
               <span class="material-symbols-outlined text-lg">arrow_forward</span>
             </a>
           </div>
@@ -206,19 +194,19 @@
 
     <!-- Process Section -->
     <ProcessSection
-      data-nav-label="Prozess"
+      data-nav-label="Process"
       data-nav-icon="route"
-      title="So arbeiten wir"
+      title="How We Work"
       :steps="processSteps"
     />
 
     <!-- Pricing Overview -->
-    <section data-nav-label="Preise" data-nav-icon="sell" class="py-8 md:py-section-padding bg-surface-container-low">
+    <section data-nav-label="Pricing" data-nav-icon="sell" class="py-8 md:py-section-padding bg-surface-container-low">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-6 md:mb-stack-lg">
-          <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block text-xs">Preise</span>
-          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-2 md:mb-4 leading-tight">Website erstellen lassen – Preise</h2>
-          <p class="text-on-surface-variant text-sm sm:text-lg max-w-2xl mx-auto">Transparente Preise für professionelle Webentwicklung.</p>
+          <span class="text-label-md uppercase font-bold text-primary tracking-widest mb-2 block text-xs">Pricing</span>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-2 md:mb-4 leading-tight">Website Development Pricing</h2>
+          <p class="text-on-surface-variant text-sm sm:text-lg max-w-2xl mx-auto">Transparent pricing for professional web development.</p>
         </div>
 
         <!-- Mobile: stacked cards -->
@@ -244,9 +232,9 @@
           <table class="w-full text-base">
             <thead>
               <tr class="border-b-2 border-primary/20 bg-surface">
-                <th class="text-left p-4 font-bold text-on-surface">Leistung</th>
-                <th class="text-left p-4 font-bold text-on-surface">Preis</th>
-                <th class="text-left p-4 font-bold text-on-surface">Lieferzeit</th>
+                <th class="text-left p-4 font-bold text-on-surface">Service</th>
+                <th class="text-left p-4 font-bold text-on-surface">Price</th>
+                <th class="text-left p-4 font-bold text-on-surface">Delivery Time</th>
               </tr>
             </thead>
             <tbody>
@@ -260,47 +248,45 @@
         </div>
 
         <div class="text-center">
-          <a href="/webseite-kosten-kalkulator" class="inline-block">
-            <BaseButton variant="primary" size="lg">Alle Preise ansehen</BaseButton>
+          <a href="/en/website-cost-calculator" class="inline-block">
+            <BaseButton variant="primary" size="lg">View All Prices</BaseButton>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- SEO Text Section -->
-    <section data-nav-label="Lösungen" data-nav-icon="category" class="py-8 md:py-section-padding bg-surface border-y border-outline-variant/40">
+    <!-- Solutions Section -->
+    <section data-nav-label="Solutions" data-nav-icon="category" class="py-8 md:py-section-padding bg-surface border-y border-outline-variant/40">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-stack-lg items-center">
-          <!-- Left: copy + CTAs -->
           <div class="space-y-4 md:space-y-stack-md">
-            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professionelle Website erstellen lassen</h2>
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface mb-4 md:mb-6 leading-tight">Professional Website Development</h2>
 
             <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
-              Eine professionelle Website ist heutzutage entscheidend für den Erfolg eines Unternehmens. Bei EvolaTec entwickeln wir moderne Firmenwebsites, Landingpages und Online Shops, die nicht nur gut aussehen, sondern echte Ergebnisse liefern.
+              A professional website is crucial for the success of a business today. At EvolaTec, we develop modern business websites, landing pages and online shops that not only look great, but deliver real results.
             </p>
 
             <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
-              Unsere Websites sind SEO-optimiert, mobilfreundlich und auf Conversion ausgelegt. Ob kleine Firmenwebsite, Landingpage für Werbung oder komplexer Online Shop — wir entwickeln individuelle Lösungen für Unternehmen in Deutschland.
+              Our websites are SEO-optimized, mobile-friendly and designed for conversion. Whether a small business website, landing page for advertising or complex online shop — we develop individual solutions for businesses across Europe.
             </p>
 
             <div class="pt-6 md:pt-8 flex flex-col sm:flex-wrap sm:flex-row gap-3 sm:gap-4">
-              <a href="/firmenwebsite-erstellen-lassen" class="inline-block w-full sm:w-auto">
-                <BaseButton variant="primary" size="md" class="w-full sm:w-auto">Firmenwebsite</BaseButton>
+              <a href="/en/business-website-design" class="inline-block w-full sm:w-auto">
+                <BaseButton variant="primary" size="md" class="w-full sm:w-auto">Business Website</BaseButton>
               </a>
-              <a href="/landingpage-erstellen-lassen" class="inline-block w-full sm:w-auto">
-                <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Landingpage</BaseButton>
+              <a href="/en/landing-page-design" class="inline-block w-full sm:w-auto">
+                <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Landing Page</BaseButton>
               </a>
-              <a href="/online-shop-erstellen-lassen" class="inline-block w-full sm:w-auto">
+              <a href="/en/online-shop-development" class="inline-block w-full sm:w-auto">
                 <BaseButton variant="outline" size="md" class="w-full sm:w-auto">Online Shop</BaseButton>
               </a>
             </div>
           </div>
 
-          <!-- Right: laptop mockup -->
           <div class="relative">
             <img
               src="/web-development/features.webp"
-              alt="Laptop mit professioneller Website Mockup"
+              alt="Laptop with professional website mockup"
               loading="lazy"
               width="1000"
               height="600"
@@ -315,18 +301,18 @@
     <FAQSection
       data-nav-label="FAQ"
       data-nav-icon="help"
-      title="Häufig gestellte Fragen"
+      title="Frequently Asked Questions"
       :faqs="faqs"
     />
 
     <!-- CTA Section -->
     <CTASection
-      data-nav-label="Kontakt"
+      data-nav-label="Contact"
       data-nav-icon="send"
-      title="Lassen Sie Ihre Website professionell erstellen"
-      description="Moderne Websites, die Kunden gewinnen und Ihr Unternehmen wachsen lassen."
-      primary-cta="Kostenlos beraten lassen"
-      secondary-cta="Projekt besprechen"
+      title="Get Your Website Professionally Built"
+      description="Modern websites that win customers and grow your business."
+      primary-cta="Get a Free Consultation"
+      secondary-cta="Discuss Your Project"
     />
   </div>
 </template>
@@ -346,13 +332,20 @@ const schemaMarkup = {
         '@type': 'ImageObject',
         url: 'https://evolatec.de/logo.png',
       },
-      description: 'EvolaTec ist eine professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing in Deutschland.',
-      areaServed: { '@type': 'Country', name: 'Germany' },
+      description: 'EvolaTec is a professional web agency for website development, SEO optimization and online marketing in Europe.',
+      areaServed: [
+        { '@type': 'Country', name: 'Germany' },
+        { '@type': 'Country', name: 'Austria' },
+        { '@type': 'Country', name: 'Switzerland' },
+      ],
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer service',
-        url: 'https://evolatec.de/kontakt',
-        availableLanguage: { '@type': 'Language', name: 'German' },
+        url: 'https://evolatec.de/en/contact',
+        availableLanguage: [
+          { '@type': 'Language', name: 'German' },
+          { '@type': 'Language', name: 'English' },
+        ],
       },
     },
     {
@@ -360,32 +353,32 @@ const schemaMarkup = {
       '@id': 'https://evolatec.de/#website',
       name: 'EvolaTec',
       url: 'https://evolatec.de',
-      description: 'Professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing',
+      description: 'Professional web agency for website development, SEO optimization and online marketing',
       publisher: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
+      inLanguage: 'en-US',
     },
     {
       '@type': 'WebPage',
-      '@id': 'https://evolatec.de/#webpage',
-      url: 'https://evolatec.de',
-      name: 'EvolaTec – Webagentur für Website, SEO & Online Marketing',
-      description: 'EvolaTec ist Ihre professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing. Moderne Websites ab 3 Tagen Lieferzeit.',
+      '@id': 'https://evolatec.de/en/#webpage',
+      url: 'https://evolatec.de/en',
+      name: 'EvolaTec – Web Agency for Website, SEO & Online Marketing',
+      description: 'EvolaTec is your professional web agency for website development, SEO optimization and online marketing. Modern websites from 3 days delivery time.',
       isPartOf: { '@id': 'https://evolatec.de/#website' },
       about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
+      inLanguage: 'en-US',
     },
     {
       '@type': 'ItemList',
-      name: 'EvolaTec Leistungen',
+      name: 'EvolaTec Services',
       itemListElement: [
         {
           '@type': 'ListItem',
           position: 1,
           item: {
             '@type': 'Service',
-            name: 'Landingpage erstellen lassen',
-            description: 'Konversionsstarke One-Pager für Werbung und Leadgenerierung.',
-            url: 'https://evolatec.de/landingpage-erstellen-lassen',
+            name: 'Landing Page Design',
+            description: 'Conversion-focused one-pagers for advertising and lead generation.',
+            url: 'https://evolatec.de/en/landing-page-design',
             provider: { '@id': 'https://evolatec.de/#organization' },
             offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '500', priceCurrency: 'EUR' } },
           },
@@ -395,9 +388,9 @@ const schemaMarkup = {
           position: 2,
           item: {
             '@type': 'Service',
-            name: 'Firmenwebsite erstellen lassen',
-            description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen.',
-            url: 'https://evolatec.de/firmenwebsite-erstellen-lassen',
+            name: 'Business Website Design',
+            description: 'Professional company websites for local businesses and enterprises.',
+            url: 'https://evolatec.de/en/business-website-design',
             provider: { '@id': 'https://evolatec.de/#organization' },
             offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1500', priceCurrency: 'EUR' } },
           },
@@ -407,9 +400,9 @@ const schemaMarkup = {
           position: 3,
           item: {
             '@type': 'Service',
-            name: 'Online Shop erstellen lassen',
-            description: 'Moderne E-Commerce Lösungen und Shopify Shops.',
-            url: 'https://evolatec.de/online-shop-erstellen-lassen',
+            name: 'Online Shop Development',
+            description: 'Modern e-commerce solutions and Shopify shops.',
+            url: 'https://evolatec.de/en/online-shop-development',
             provider: { '@id': 'https://evolatec.de/#organization' },
             offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '3000', priceCurrency: 'EUR' } },
           },
@@ -419,9 +412,9 @@ const schemaMarkup = {
           position: 4,
           item: {
             '@type': 'Service',
-            name: 'SEO Optimierung',
-            description: 'Mehr Sichtbarkeit bei Google und nachhaltiges Wachstum.',
-            url: 'https://evolatec.de/seo',
+            name: 'SEO Optimization',
+            description: 'More visibility on Google and sustainable growth.',
+            url: 'https://evolatec.de/en/seo-optimization',
             provider: { '@id': 'https://evolatec.de/#organization' },
             offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '300', priceCurrency: 'EUR' } },
           },
@@ -431,9 +424,9 @@ const schemaMarkup = {
           position: 5,
           item: {
             '@type': 'Service',
-            name: 'Google Ads Betreuung',
-            description: 'Mehr Kundenanfragen durch gezielte Werbekampagnen.',
-            url: 'https://evolatec.de/marketing-google-ads',
+            name: 'Google Ads Management',
+            description: 'More customer inquiries through targeted advertising campaigns.',
+            url: 'https://evolatec.de/en/google-ads-management',
             provider: { '@id': 'https://evolatec.de/#organization' },
             offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '400', priceCurrency: 'EUR' } },
           },
@@ -445,227 +438,219 @@ const schemaMarkup = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'Was kostet eine professionelle Website?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.' },
+          name: 'How much does a professional website cost?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Prices start from €500 for landing pages and from €1,500 for business websites. Since every project is different, we are happy to provide you with a transparent quote.' },
         },
         {
           '@type': 'Question',
-          name: 'Wie lange dauert die Erstellung?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online Shops ab 14 Tagen. Der genaue Zeitrahmen hängt von Umfang und Anforderungen ab.' },
+          name: 'How long does website development take?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Landing pages from 3 days, business websites from 7 days, online shops from 14 days. The exact timeframe depends on scope and requirements.' },
         },
         {
           '@type': 'Question',
-          name: 'Ist SEO inklusive?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.' },
+          name: 'Is SEO included?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, basic SEO is included in every project. This includes technical optimizations, fast load times, mobile optimization and clean metadata.' },
         },
         {
           '@type': 'Question',
-          name: 'Entwickeln Sie Shopify Shops?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.' },
+          name: 'Do you develop Shopify shops?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we develop modern Shopify shops and custom e-commerce solutions. Whether a simple shop or a complex integration — we have the necessary expertise.' },
         },
         {
           '@type': 'Question',
-          name: 'Gibt es Festpreise?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.' },
+          name: 'Are there fixed prices?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we work with transparent fixed prices. You know from the start what your website costs, there are no hidden additional costs.' },
         },
         {
           '@type': 'Question',
-          name: 'Was ist nach dem Launch?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an.' },
+          name: 'What happens after the website launch?',
+          acceptedAnswer: { '@type': 'Answer', text: 'After launch, we support you with maintenance and optimization. On request, we also offer regular updates, monitoring and performance improvements.' },
         },
       ],
     },
   ],
-};
+}
 
 useHead({
-  title: 'EvolaTec – Webagentur für Website, SEO & Online Marketing',
+  title: 'EvolaTec – Web Agency for Website, SEO & Online Marketing',
+  htmlAttrs: { lang: 'en' },
   meta: [
-    { name: 'description', content: 'EvolaTec ist Ihre professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing. Moderne Websites ab 3 Tagen Lieferzeit.' },
-    { name: 'keywords', content: 'webagentur, website erstellen lassen, seo agentur, online marketing agentur, homepage erstellen lassen, webdesign agentur' },
-    { property: 'og:title', content: 'EvolaTec – Webagentur für Website, SEO & Online Marketing' },
-    { property: 'og:description', content: 'Professionelle Websites, SEO und Online Marketing für Unternehmen. Modern, schnell und conversion-optimiert.' },
+    { name: 'description', content: 'EvolaTec is your professional web agency for website development, SEO optimization and online marketing. Modern websites from 3 days delivery time.' },
+    { name: 'keywords', content: 'web agency, website development, seo agency, online marketing agency, website design, web design agency' },
+    { property: 'og:title', content: 'EvolaTec – Web Agency for Website, SEO & Online Marketing' },
+    { property: 'og:description', content: 'Professional websites, SEO and online marketing for businesses. Modern, fast and conversion-optimized.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://evolatec.de' },
+    { property: 'og:url', content: 'https://evolatec.de/en' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:locale:alternate', content: 'de_DE' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de' }, ...hreflangLinks.value],
+  link: [
+    { rel: 'canonical', href: 'https://evolatec.de/en' },
+    ...hreflangLinks.value,
+  ],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
-});
+})
 
 const heroStats = [
-  { value: 'ab 3 Tagen', label: 'Lieferzeit', icon: 'flash_on' },
+  { value: 'from 3 Days', label: 'Delivery Time', icon: 'flash_on' },
   { value: '100%', label: 'SEO-ready', icon: 'search_check' },
-  { value: 'Alle', label: 'Responsive Design', icon: 'smartphone' },
-  { value: 'Transparent', label: 'Preise', icon: 'verified' },
-];
+  { value: 'All Devices', label: 'Responsive Design', icon: 'smartphone' },
+  { value: 'Transparent', label: 'Pricing', icon: 'verified' },
+]
 
 const services = [
   {
     id: 1,
     icon: 'article',
-    title: 'Landingpage erstellen lassen',
-    description: 'Konversionsstarke One-Pager für Werbung und Leadgenerierung.',
-    price: 'ab 500€',
-    href: '/landingpage-erstellen-lassen',
+    title: 'Landing Page Design',
+    description: 'Conversion-focused one-pagers for advertising and lead generation.',
+    price: 'from €500',
+    href: '/en/landing-page-design',
   },
   {
     id: 2,
     icon: 'language',
-    title: 'Firmenwebsite erstellen lassen',
-    description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen.',
-    price: 'ab 1.500€',
-    href: '/firmenwebsite-erstellen-lassen',
+    title: 'Business Website Design',
+    description: 'Professional company websites for local businesses and enterprises.',
+    price: 'from €1,500',
+    href: '/en/business-website-design',
   },
   {
     id: 3,
     icon: 'shopping_bag',
-    title: 'Online Shop erstellen lassen',
-    description: 'Moderne E-Commerce Lösungen und Shopify Shops.',
-    price: 'ab 3.000€',
-    href: '/online-shop-erstellen-lassen',
+    title: 'Online Shop Development',
+    description: 'Modern e-commerce solutions and Shopify shops.',
+    price: 'from €3,000',
+    href: '/en/online-shop-development',
   },
   {
     id: 4,
     icon: 'search_insights',
-    title: 'SEO Optimierung',
-    description: 'Mehr Sichtbarkeit bei Google und nachhaltiges Wachstum.',
-    price: 'ab 300€',
-    href: '/seo',
+    title: 'SEO Optimization',
+    description: 'More visibility on Google and sustainable growth.',
+    price: 'from €300',
+    href: '/en/seo-optimization',
   },
   {
     id: 5,
     icon: 'trending_up',
-    title: 'Google Ads Betreuung',
-    description: 'Mehr Kundenanfragen durch gezielte Werbekampagnen.',
-    price: 'ab 400€/Monat',
-    href: '/marketing-google-ads',
+    title: 'Google Ads Management',
+    description: 'More customer inquiries through targeted advertising campaigns.',
+    price: 'from €400/month',
+    href: '/en/google-ads-management',
   },
-];
+]
 
 const aboutFeatures = [
   {
     icon: 'code_blocks',
-    title: 'Moderne Technologien',
-    description: 'Entwicklung mit Vue.js, Nuxt, Tailwind CSS und modernen Frontend-Technologien.',
+    title: 'Modern Technologies',
+    description: 'Development with Vue.js, Nuxt, Tailwind CSS and modern frontend technologies.',
   },
   {
     icon: 'bolt',
-    title: 'Fokus auf Performance',
-    description: 'Schnelle Ladezeiten, saubere Architektur und optimierte Benutzererfahrung.',
+    title: 'Performance Focus',
+    description: 'Fast load times, clean architecture and optimized user experience.',
   },
   {
     icon: 'search_insights',
-    title: 'SEO & Sichtbarkeit',
-    description: 'Technische SEO Optimierung für bessere Rankings und mehr organische Sichtbarkeit.',
+    title: 'SEO & Visibility',
+    description: 'Technical SEO optimization for better rankings and more organic visibility.',
   },
   {
     icon: 'auto_awesome',
-    title: 'Individuelle Lösungen',
-    description: 'Keine Standard-Themes — jedes Projekt wird individuell entwickelt.',
+    title: 'Custom Solutions',
+    description: 'No standard themes — every project is individually developed.',
   },
-];
+]
 
 const whyUsPoints = [
   {
     icon: 'bolt',
-    title: 'Schnelle & performante Websites',
-    description: 'Unsere Websites werden mit modernen Technologien wie Vue.js, Nuxt und Tailwind CSS entwickelt und erreichen starke Core Web Vitals sowie schnelle Ladezeiten.',
+    title: 'Fast & High-Performance Websites',
+    description: 'Our websites are built with modern technologies like Vue.js, Nuxt and Tailwind CSS, achieving strong Core Web Vitals and fast load times.',
   },
   {
     icon: 'search_insights',
-    title: 'SEO optimierte Entwicklung',
-    description: 'Technisches SEO, saubere Strukturen, SSR Rendering und mobile Optimierung sorgen für bessere Sichtbarkeit bei Google.',
+    title: 'SEO-Optimized Development',
+    description: 'Technical SEO, clean structures, SSR rendering and mobile optimization ensure better visibility on Google.',
   },
   {
     icon: 'design_services',
-    title: 'Modernes Premium Design',
-    description: 'Keine Standard-Templates oder veraltete Themes. Wir entwickeln individuelle Benutzeroberflächen mit professionellem UI/UX Design.',
+    title: 'Modern Premium Design',
+    description: 'No standard templates or outdated themes. We develop individual user interfaces with professional UI/UX design.',
   },
   {
     icon: 'rocket_launch',
-    title: 'Skalierbare Technologien',
-    description: 'Unsere Lösungen eignen sich perfekt für Unternehmenswebsites, SaaS Plattformen, Landingpages und moderne digitale Produkte.',
+    title: 'Scalable Technologies',
+    description: 'Our solutions are perfect for business websites, SaaS platforms, landing pages and modern digital products.',
   },
   {
     icon: 'security',
-    title: 'Sichere & stabile Systeme',
-    description: 'Moderne Architektur bedeutet weniger Abhängigkeit von unsicheren Plugins und eine bessere langfristige Wartbarkeit.',
+    title: 'Secure & Stable Systems',
+    description: 'Modern architecture means less dependency on insecure plugins and better long-term maintainability.',
   },
   {
     icon: 'psychology',
-    title: 'Strategischer Ansatz',
-    description: 'Wir entwickeln nicht nur schöne Websites, sondern digitale Lösungen mit Fokus auf Conversion, Markenauftritt und Wachstum.',
+    title: 'Strategic Approach',
+    description: "We don't just build beautiful websites, but digital solutions focused on conversion, brand presence and growth.",
   },
-];
+]
 
 const processSteps = [
   {
     icon: 'mail',
-    title: 'Kostenlose Beratung',
-    description: 'Wir verstehen Ihre Anforderungen und Ziele genau.',
+    title: 'Free Consultation',
+    description: 'We understand your requirements and goals precisely.',
   },
   {
     icon: 'design_services',
-    title: 'Struktur & Design',
-    description: 'Planung und Gestaltung Ihrer Website.',
+    title: 'Structure & Design',
+    description: 'Planning and design of your website.',
   },
   {
     icon: 'code',
-    title: 'Entwicklung & SEO',
-    description: 'Professionelle Umsetzung mit vollständiger SEO-Optimierung.',
+    title: 'Development & SEO',
+    description: 'Professional implementation with complete SEO optimization.',
   },
   {
     icon: 'rocket_launch',
-    title: 'Launch & Optimierung',
-    description: 'Gründliches Testen und professioneller Go-Live.',
+    title: 'Launch & Optimization',
+    description: 'Thorough testing and professional go-live.',
   },
-];
+]
 
 const pricingTable = [
-  { service: 'Landingpage', price: 'ab 500€', delivery: 'ab 3 Tagen' },
-  { service: 'Firmenwebsite', price: 'ab 1.500€', delivery: 'ab 7 Tagen' },
-  { service: 'Online Shop', price: 'ab 3.000€', delivery: 'ab 14 Tagen' },
-  { service: 'Premium E-Commerce', price: 'ab 6.000€', delivery: 'ab 30 Tagen' },
-];
-
-const results = [
-  { value: '+230%', label: 'mehr Leads' },
-  { value: '+180%', label: 'organischer Traffic' },
-  { icon: 'bolt', label: 'Schnellere Ladezeiten' },
-  { icon: 'trending_up', label: 'Mehr Verkäufe' },
-];
+  { service: 'Landing Page', price: 'from €500', delivery: 'from 3 days' },
+  { service: 'Business Website', price: 'from €1,500', delivery: 'from 7 days' },
+  { service: 'Online Shop', price: 'from €3,000', delivery: 'from 14 days' },
+  { service: 'Premium E-Commerce', price: 'from €6,000', delivery: 'from 30 days' },
+]
 
 const faqs = [
   {
-    question: 'Was kostet eine professionelle Website?',
-    answer:
-      'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.',
+    question: 'How much does a professional website cost?',
+    answer: 'Prices start from €500 for landing pages and from €1,500 for business websites. Since every project is different, we are happy to provide you with a transparent quote.',
   },
   {
-    question: 'Wie lange dauert die Erstellung?',
-    answer:
-      'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online Shops ab 14 Tagen. Der genaue Zeitrahmen hängt von Umfang und Anforderungen ab.',
+    question: 'How long does website development take?',
+    answer: 'Landing pages from 3 days, business websites from 7 days, online shops from 14 days. The exact timeframe depends on scope and requirements.',
   },
   {
-    question: 'Ist SEO inklusive?',
-    answer:
-      'Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.',
+    question: 'Is SEO included?',
+    answer: 'Yes, basic SEO is included in every project. This includes technical optimizations, fast load times, mobile optimization and clean metadata.',
   },
   {
-    question: 'Entwickeln Sie Shopify Shops?',
-    answer:
-      'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.',
+    question: 'Do you develop Shopify shops?',
+    answer: 'Yes, we develop modern Shopify shops and custom e-commerce solutions. Whether a simple shop or a complex integration — we have the necessary expertise.',
   },
   {
-    question: 'Gibt es Festpreise?',
-    answer:
-      'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.',
+    question: 'Are there fixed prices?',
+    answer: 'Yes, we work with transparent fixed prices. You know from the start what your website costs, there are no hidden additional costs.',
   },
   {
-    question: 'Was ist nach dem Launch?',
-    answer:
-      'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an.',
+    question: 'What happens after the website launch?',
+    answer: 'After launch, we support you with maintenance and optimization. On request, we also offer regular updates, monitoring and performance improvements.',
   },
-];
+]
 </script>
-

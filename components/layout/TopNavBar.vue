@@ -7,8 +7,7 @@
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200">
         <NuxtImg src="/logo.png" alt="EvolaTec Logo" :width="40" :height="40" format="webp" class="h-5 w-5" loading="eager" />
-        <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>
-      </a>
+        <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>      </a>
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex gap-4 lg:gap-2 items-center">
@@ -73,6 +72,32 @@
         <span class="material-symbols-outlined text-2xl" v-if="!mobileMenuOpen">menu</span>
         <span class="material-symbols-outlined text-2xl" v-if="mobileMenuOpen">close</span>
       </button>
+
+      <!-- Language Switcher -->
+      <div class="hidden md:flex items-center gap-1 border-l border-outline-variant/30 pl-3">
+        <a
+          :href="deHref"
+          :class="[
+            'text-xs font-bold px-2 py-1 rounded transition-colors duration-200',
+            currentLang === 'de'
+              ? 'text-primary bg-primary/10'
+              : 'text-on-surface-variant hover:text-primary hover:bg-primary/5',
+          ]"
+          hreflang="de"
+          aria-label="Deutsch"
+        >DE</a>
+        <a
+          :href="enHref"
+          :class="[
+            'text-xs font-bold px-2 py-1 rounded transition-colors duration-200',
+            currentLang === 'en'
+              ? 'text-primary bg-primary/10'
+              : 'text-on-surface-variant hover:text-primary hover:bg-primary/5',
+          ]"
+          hreflang="en"
+          aria-label="English"
+        >EN</a>
+      </div>
 
       <!-- Desktop CTA -->
       <a href="/kontakt" class="hidden sm:inline-block">
@@ -144,6 +169,29 @@
           <!-- Divider -->
           <div class="border-t border-outline-variant/20 my-4"></div>
 
+          <!-- Language Switcher -->
+          <div class="flex items-center gap-2 px-4 py-2">
+            <span class="material-symbols-outlined text-base text-on-surface-variant">language</span>
+            <a
+              :href="deHref"
+              @click="mobileMenuOpen = false"
+              :class="[
+                'text-sm font-bold px-3 py-1.5 rounded transition-colors duration-200',
+                currentLang === 'de' ? 'text-primary bg-primary/10' : 'text-on-surface-variant hover:text-primary',
+              ]"
+              hreflang="de"
+            >Deutsch</a>
+            <a
+              :href="enHref"
+              @click="mobileMenuOpen = false"
+              :class="[
+                'text-sm font-bold px-3 py-1.5 rounded transition-colors duration-200',
+                currentLang === 'en' ? 'text-primary bg-primary/10' : 'text-on-surface-variant hover:text-primary',
+              ]"
+              hreflang="en"
+            >English</a>
+          </div>
+
           <!-- CTA Button -->
           <div>
             <a href="/kontakt" @click="mobileMenuOpen = false" class="block">
@@ -162,6 +210,7 @@
 <script setup lang="ts">
 import { ref, watch, onBeforeUnmount } from 'vue';
 
+const { currentLang, deHref, enHref } = useLanguageSwitcher();
 const mobileMenuOpen = ref(false);
 const expandedMenus = ref(new Set<number>());
 const route = useRoute();
