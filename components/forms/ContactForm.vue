@@ -96,8 +96,8 @@
 
     <!-- Honeypot — hidden from real users, bots fill it -->
     <div class="hidden" aria-hidden="true">
-      <label for="website">Website</label>
-      <input id="website" name="website" v-model="form.website" type="text" tabindex="-1" autocomplete="off" />
+      <label for="bot-field">Do not fill</label>
+      <input id="bot-field" name="bot-field" v-model="form.botField" type="text" tabindex="-1" autocomplete="off" />
     </div>
 
     <!-- Privacy checkbox -->
@@ -169,7 +169,7 @@ const form = ref({
   service: '',
   message: '',
   privacy: false,
-  website: '',
+  botField: '',
 });
 
 const isSubmitting = ref(false);
@@ -223,13 +223,8 @@ function validate(): boolean {
   return Object.keys(errors).length === 0;
 }
 
-function encodeFormData(data: Record<string, string | boolean>): string {
-  return Object.entries(data)
-    .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(String(v))}`)
-    .join('&');
-}
-
 const handleSubmit = async () => {
+  if (form.value.botField) return; // honeypot: silently ignore bots
   if (!validate()) return;
 
   isSubmitting.value = true;
@@ -238,16 +233,24 @@ const handleSubmit = async () => {
   errorMessage.value = '';
 
   try {
-    const response = await fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encodeFormData({ 'form-name': 'contact-form', ...form.value }),
+    const body = new URLSearchParams({
+      'form-name': 'contact-form',
+      'bot-field': form.value.botField,
+      name: form.value.name,
+      email: form.value.email,
+      service: form.value.service,
+      message: form.value.message,
+      privacy: String(form.value.privacy),
     });
 
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    await $fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString(),
+    });
 
     submitSuccess.value = true;
-    form.value = { name: '', email: '', service: '', message: '', privacy: false, website: '' };
+    form.value = { name: '', email: '', service: '', message: '', privacy: false, botField: '' };
     fieldErrors.value = {};
     setTimeout(() => { submitSuccess.value = false; }, 6000);
   } catch {

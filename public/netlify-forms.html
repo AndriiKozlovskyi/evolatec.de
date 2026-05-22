@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Netlify Forms</title>
-  </head>
+<html lang="de">
+  <head><title>Netlify Forms</title></head>
   <body>
-    <!-- Hidden form for Netlify detection during build -->
-    <form name="contact-form" netlify netlify-honeypot="website" hidden>
+    <!-- Static form for Netlify build-time detection (SSR workaround) -->
+    <form name="contact-form" data-netlify="true" netlify data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact-form" />
+      <input name="bot-field" type="text" />
       <input name="name" type="text" />
       <input name="email" type="email" />
-      <select name="service">
-        <option></option>
-      </select>
+      <select name="service"><option></option></select>
       <textarea name="message"></textarea>
       <input name="privacy" type="checkbox" />
-      <input name="website" type="text" />
     </form>
   </body>
 </html>
