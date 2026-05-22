@@ -366,7 +366,7 @@ const firmenwebsiteServices = [
     iconBg: 'bg-cyan-100',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-500',
-    href: '/website-development-cost',
+    href: '/webseite-kosten-kalkulator',
   },
 ];
 
@@ -378,19 +378,19 @@ const internalLinks = [
     description: 'Professionelle Webentwicklung für moderne Websites und digitale Plattformen.',
   },
   {
-    to: '/landing-development',
+    to: '/landingpage-erstellen-lassen',
     icon: 'flag',
     title: 'Landingpage Entwicklung',
     description: 'Konversionsstarke Landingpages für Werbung, Kampagnen und Leadgenerierung.',
   },
   {
-    to: '/e-commerce-development',
+    to: '/online-shop-erstellen-lassen',
     icon: 'shopping_cart',
     title: 'E-Commerce Entwicklung',
     description: 'Moderne Onlineshops und professionelle E-Commerce Plattformen.',
   },
   {
-    to: '/website-development-cost',
+    to: '/webseite-kosten-kalkulator',
     icon: 'payments',
     title: 'Website Preise & Kosten',
     description: 'Transparente Preise für professionelle Firmenwebsites und Webentwicklung.',

@@ -300,7 +300,7 @@ const developmentServices = [
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
     borderColor: 'border-emerald-500',
-    href: '/landing-development',
+    href: '/landingpage-erstellen-lassen',
   },
   {
     title: 'E-Commerce Entwicklung',
@@ -309,7 +309,7 @@ const developmentServices = [
     iconBg: 'bg-purple-100',
     iconColor: 'text-purple-600',
     borderColor: 'border-purple-500',
-    href: '/e-commerce-development',
+    href: '/online-shop-erstellen-lassen',
   },
   {
     title: 'Responsive Webentwicklung',
@@ -334,7 +334,7 @@ const developmentServices = [
     iconBg: 'bg-cyan-100',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-500',
-    href: '/website-development-cost',
+    href: '/webseite-kosten-kalkulator',
   },
 ];
 
