@@ -70,6 +70,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -115,7 +117,7 @@ useHead({
         'Professionelle Branding Agentur für Corporate Design, Logo Design und Markenentwicklung. EvolaTec entwickelt starke Markenidentitäten für Unternehmen und Startups.',
     },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/design-branding' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/design-branding' }, ...hreflangLinks.value],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 

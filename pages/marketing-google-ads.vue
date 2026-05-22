@@ -100,6 +100,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -144,7 +146,7 @@ useHead({
     { property: 'og:description', content: 'Professionelle Google Ads Kampagnen für mehr Sichtbarkeit und messbare Ergebnisse.' },
     { property: 'og:type', content: 'website' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-google-ads' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-google-ads' }, ...hreflangLinks.value],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 

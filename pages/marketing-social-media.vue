@@ -169,6 +169,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -213,7 +215,7 @@ useHead({
     { property: 'og:description', content: 'Instagram, Facebook und LinkedIn Ads für mehr Reichweite und Conversions.' },
     { property: 'og:type', content: 'website' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-social-media' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/marketing-social-media' }, ...hreflangLinks.value],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 

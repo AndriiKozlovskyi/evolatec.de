@@ -184,6 +184,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -236,7 +238,7 @@ useHead({
     { property: 'og:description', content: 'Moderne Webseiten, Firmenhomepages und digitale Plattformen für Unternehmen.' },
     { property: 'og:type', content: 'website' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/website-development' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/website-development' }, ...hreflangLinks.value],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 

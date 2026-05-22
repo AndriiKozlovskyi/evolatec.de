@@ -66,6 +66,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -111,7 +113,7 @@ useHead({
         'Professionelle Webseiten Texte, SEO Copywriting und Website Inhalte für Unternehmen, Landingpages und Onlineshops. Texte die ranken und verkaufen.',
     },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/webseiten-texte-schreiben-lassen' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/webseiten-texte-schreiben-lassen' }, ...hreflangLinks.value],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 

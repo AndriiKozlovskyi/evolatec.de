@@ -77,6 +77,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -121,7 +123,7 @@ useHead({
         'Professionelle UI/UX Design Agentur für moderne Benutzeroberflächen, User Experience Design und digitale Nutzererlebnisse. EvolaTec steigert Conversion durch exzellentes Design.',
     },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/ui-ux-design' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/ui-ux-design' }, ...hreflangLinks.value],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 

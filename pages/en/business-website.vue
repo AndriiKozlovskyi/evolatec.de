@@ -1,38 +1,35 @@
 <template>
   <div>
-    <!-- Hero -->
     <HeroSection
       background-image="/web-development/hero.webp"
-      badge="Professionelle Webentwicklung Agentur"
-      title="Professionelle Website erstellen lassen | EvolaTec Agentur"
-      description="Homepage erstellen lassen – Ihre professionelle Webagentur für moderne Unternehmenswebsites, Landingpages, Firmenwebsites und leistungsstarke digitale Lösungen."
-      primaryCTA="Website erstellen lassen"
-      secondaryCTA="Preise ansehen"
+      badge="Professional Web Development Agency"
+      title="Professional Business Website | EvolaTec Agency"
+      description="Get your website built – your professional web agency for modern business websites, landing pages and powerful digital solutions."
+      primaryCTA="Get a Website Built"
+      secondaryCTA="View Pricing"
       :stats="heroStats"
     />
 
-    <!-- Intro — prettified 2-col with developer toolkit visual -->
+    <!-- Intro — 2-col with developer toolkit visual -->
     <section data-nav-label="Intro" data-nav-icon="info" class="relative py-section-padding bg-surface overflow-hidden">
       <div class="absolute top-20 -right-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
       <div class="absolute bottom-0 -left-32 w-[400px] h-[400px] rounded-full bg-primary-container/20 blur-[100px] pointer-events-none"></div>
 
       <div class="relative max-w-container-max mx-auto px-gutter">
         <div class="grid lg:grid-cols-[1.15fr_1fr] gap-stack-lg items-center">
-
-          <!-- Text column -->
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
               <span class="material-symbols-outlined text-[18px]">code</span>
-              Professionelle Webentwicklung
+              Professional Web Development
             </span>
 
             <h2 class="font-headline-xl text-headline-xl text-primary mb-8 leading-[1.1]">
-              Professionelle
+              Professional
               <span class="relative inline-block">
-                <span class="relative z-10">Webseiten</span>
+                <span class="relative z-10">Websites</span>
                 <span class="absolute -bottom-1 left-0 right-0 h-3 bg-primary/15 rounded-sm -z-0"></span>
               </span>
-              entwickeln lassen
+              Built for Your Business
             </h2>
 
             <div class="space-y-5 mb-10">
@@ -52,17 +49,14 @@
             </div>
           </div>
 
-          <!-- Developer toolkit composition — desktop only -->
           <div class="relative hidden lg:block">
             <div class="relative aspect-square max-w-md mx-auto">
               <div class="absolute inset-6 rounded-[2rem] bg-gradient-to-br from-primary/85 via-primary-container to-primary/60 ambient-shadow"></div>
 
-              <!-- Code icon badge top-right -->
               <div class="absolute top-0 right-8 w-20 h-20 rounded-2xl bg-white shadow-xl flex items-center justify-center rotate-[8deg]">
                 <span class="material-symbols-outlined text-primary text-[40px]">code_blocks</span>
               </div>
 
-              <!-- Tech stack card -->
               <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Tech Stack</div>
                 <div class="flex flex-wrap gap-1.5 max-w-[180px]">
@@ -73,14 +67,12 @@
                 </div>
               </div>
 
-              <!-- Lighthouse performance card -->
               <div class="absolute top-44 right-0 bg-white rounded-2xl p-5 shadow-xl rotate-[5deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-2">Performance</div>
                 <div class="font-display text-4xl font-black leading-none text-primary">99<span class="text-lg text-on-surface-variant">/100</span></div>
                 <div class="text-xs text-on-surface-variant mt-1">Lighthouse</div>
               </div>
 
-              <!-- Clean code lines card -->
               <div class="absolute bottom-6 left-6 bg-white rounded-2xl p-5 shadow-xl rotate-[-3deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Clean Code</div>
                 <div class="flex flex-col gap-1.5 w-32">
@@ -91,7 +83,6 @@
                 </div>
               </div>
 
-              <!-- Deployed status pill -->
               <div class="absolute bottom-16 right-0 bg-white rounded-full px-4 py-2 shadow-xl rotate-[6deg] flex items-center gap-2">
                 <span class="relative flex w-2 h-2">
                   <span class="absolute inline-flex w-full h-full rounded-full bg-emerald-500 opacity-75 animate-ping"></span>
@@ -101,27 +92,24 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Services -->
     <ServicesSection
-      title="Unsere Leistungen in der Webentwicklung"
-      subtitle="Professionelle Webentwicklung für Unternehmen, Marken und digitale Produkte."
+      title="Our Web Development Services"
+      subtitle="Professional web development for businesses, brands and digital products."
       variant="centered"
       :services="developmentServices"
     />
 
-    <!-- Features -->
     <FeaturesSection
-      title="Was eine professionelle Website enthalten sollte."
+      title="What a professional website should include."
       :features="features"
       image-url="/web-development/features.webp"
     />
 
-    <!-- SEO content — expertise blocks with tags -->
+    <!-- Expertise blocks -->
     <section data-nav-label="Expertise" data-nav-icon="verified" class="relative py-section-padding bg-surface-container-low overflow-hidden">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none"></div>
 
@@ -129,9 +117,9 @@
         <div class="text-center max-w-2xl mx-auto mb-stack-lg">
           <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-5">
             <span class="material-symbols-outlined text-[18px]">verified</span>
-            Webentwicklung aus einer Hand
+            Web Development from One Source
           </span>
-          <h2 class="font-headline-lg text-primary leading-tight">Moderne Webseiten — vom Konzept bis zum Launch</h2>
+          <h2 class="font-headline-lg text-primary leading-tight">Modern Websites — from Concept to Launch</h2>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-8">
@@ -147,19 +135,12 @@
               <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary/15 transition-all duration-300">
                 <span class="material-symbols-outlined text-primary text-2xl">{{ block.icon }}</span>
               </div>
-
               <h3 class="font-headline-lg text-primary mb-5 leading-tight">{{ block.title }}</h3>
-
               <div class="space-y-4 mb-7">
                 <p v-for="(para, i) in block.paragraphs" :key="i" class="font-body-lg text-on-surface-variant">{{ para }}</p>
               </div>
-
               <div class="flex flex-wrap gap-2 pt-6 border-t border-outline-variant/20">
-                <span
-                  v-for="tag in block.tags"
-                  :key="tag"
-                  class="px-3 py-1.5 rounded-full bg-primary/8 text-primary text-xs font-semibold"
-                >{{ tag }}</span>
+                <span v-for="tag in block.tags" :key="tag" class="px-3 py-1.5 rounded-full bg-primary/8 text-primary text-xs font-semibold">{{ tag }}</span>
               </div>
             </div>
           </div>
@@ -167,18 +148,15 @@
       </div>
     </section>
 
-    <!-- Why us -->
-    <BenefitsSection title="Warum EvolaTec als Webagentur?" :benefits="benefits" />
+    <BenefitsSection title="Why Choose EvolaTec as Your Web Agency?" :benefits="benefits" />
 
-    <!-- FAQ -->
-    <FAQSection title="Häufig gestellte Fragen" :faqs="faqs" />
+    <FAQSection title="Frequently Asked Questions" :faqs="faqs" />
 
-    <!-- CTA -->
     <CTASection
-      title="Professionelle Website erstellen lassen"
-      description="EvolaTec entwickelt moderne Webseiten, Firmenhomepages, Landingpages und digitale Plattformen für Unternehmen und Marken."
-      primary-cta="Projekt starten"
-      secondary-cta="Preise ansehen"
+      title="Get Your Professional Business Website"
+      description="EvolaTec builds modern websites, business homepages, landing pages and digital platforms for companies and brands."
+      primary-cta="Start Your Project"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>
@@ -191,20 +169,20 @@ const schemaMarkup = {
   '@graph': [
     {
       '@type': 'WebPage',
-      '@id': 'https://evolatec.de/firmenwebsite/#webpage',
-      url: 'https://evolatec.de/firmenwebsite',
-      name: 'Professionelle Website erstellen lassen | EvolaTec Agentur',
-      description: 'Homepage erstellen lassen – Ihre professionelle Webagentur für moderne Unternehmenswebsites, Landingpages, Firmenwebsites und leistungsstarke digitale Lösungen.',
+      '@id': 'https://evolatec.de/en/business-website/#webpage',
+      url: 'https://evolatec.de/en/business-website',
+      name: 'Professional Business Website | EvolaTec Agency',
+      description: 'Get a professional business website built – your web agency for modern company websites, landing pages and powerful digital solutions.',
       isPartOf: { '@id': 'https://evolatec.de/#website' },
       about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
+      inLanguage: 'en-US',
     },
     {
       '@type': 'Service',
-      '@id': 'https://evolatec.de/firmenwebsite/#service',
-      name: 'Website erstellen lassen',
-      description: 'Professionelle Unternehmenswebsites, Landingpages und digitale Plattformen für Unternehmen.',
-      url: 'https://evolatec.de/firmenwebsite',
+      '@id': 'https://evolatec.de/en/business-website/#service',
+      name: 'Business Website Development',
+      description: 'Professional company websites, landing pages and digital platforms for businesses.',
+      url: 'https://evolatec.de/en/business-website',
       provider: { '@id': 'https://evolatec.de/#organization' },
       areaServed: { '@type': 'Country', name: 'Germany' },
       offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1500', priceCurrency: 'EUR' } },
@@ -212,168 +190,173 @@ const schemaMarkup = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'Was kostet es, eine Website erstellen zu lassen?', acceptedAnswer: { '@type': 'Answer', text: 'Die Kosten hängen vom Umfang des Projekts ab. Einfache Unternehmenswebsites starten in der Regel bei einigen hundert Euro, während die Kosten für komplexe Plattformen und Onlineshops entsprechend höher sind.' } },
-        { '@type': 'Question', name: 'Warum ist professionelle Webentwicklung wichtig?', acceptedAnswer: { '@type': 'Answer', text: 'Professionelle Websites sorgen für Vertrauen, bessere Nutzererfahrung und höhere Conversion-Raten. Sie sind technisch optimiert, SEO-ready und für alle Geräte ausgelegt.' } },
-        { '@type': 'Question', name: 'Entwickelt EvolaTec auch Onlineshops?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, EvolaTec entwickelt moderne E-Commerce Lösungen und professionelle Onlineshops für Unternehmen jeder Größe.' } },
-        { '@type': 'Question', name: 'Sind die Websites responsive?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, alle Websites werden Mobile First entwickelt und für Smartphones, Tablets und Desktop-Geräte optimiert.' } },
+        { '@type': 'Question', name: 'How much does it cost to get a website built?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on the scope of the project. Simple company websites typically start from a few hundred euros, while complex platforms and online shops are priced accordingly.' } },
+        { '@type': 'Question', name: 'Why is professional web development important?', acceptedAnswer: { '@type': 'Answer', text: 'Professional websites build trust, deliver a better user experience and generate higher conversion rates. They are technically optimised, SEO-ready and designed for all devices.' } },
+        { '@type': 'Question', name: 'Does EvolaTec also develop online shops?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, EvolaTec develops modern e-commerce solutions and professional online shops for businesses of all sizes.' } },
+        { '@type': 'Question', name: 'Are the websites responsive?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, all websites are developed Mobile First and optimised for smartphones, tablets and desktop devices.' } },
       ],
     },
   ],
 };
 
 useHead({
-  title: 'Professionelle Website erstellen lassen | EvolaTec Agentur',
+  title: 'Professional Business Website | EvolaTec Agency',
+  htmlAttrs: { lang: 'en' },
   meta: [
     {
       name: 'description',
-      content:
-        'Homepage erstellen lassen – Ihre professionelle Webagentur für moderne Unternehmenswebsites, Landingpages, Firmenwebsites und digitale Plattformen.',
+      content: 'Get your business website built professionally – your web agency for modern company websites, landing pages and powerful digital platforms.',
     },
     {
       name: 'keywords',
-      content:
-        'website erstellen lassen, homepage erstellen lassen, webentwicklung agentur, firmenwebsite, unternehmenswebsite, website programmieren lassen',
+      content: 'business website, company website, professional website development, web agency, website design, responsive website',
     },
-    { property: 'og:title', content: 'Professionelle Website erstellen lassen | EvolaTec' },
-    { property: 'og:description', content: 'Moderne Webseiten, Firmenhomepages und digitale Plattformen für Unternehmen.' },
+    { property: 'og:title', content: 'Professional Business Website | EvolaTec' },
+    { property: 'og:description', content: 'Modern websites, business homepages and digital platforms for companies and brands.' },
     { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://evolatec.de/en/business-website' },
+    { property: 'og:locale', content: 'en_US' },
+    { property: 'og:locale:alternate', content: 'de_DE' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite' }, ...hreflangLinks.value],
+  link: [
+    { rel: 'canonical', href: 'https://evolatec.de/en/business-website' },
+    ...hreflangLinks.value,
+  ],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
 const heroStats = [
-  { value: 'Modern', label: 'Webentwicklung', icon: 'code' },
+  { value: 'Modern', label: 'Web Development', icon: 'code' },
   { value: 'Responsive', label: 'Mobile First', icon: 'devices' },
-  { value: 'SEO', label: 'Optimiert', icon: 'trending_up' },
+  { value: 'SEO', label: 'Optimised', icon: 'trending_up' },
   { value: 'Fast', label: 'Performance', icon: 'speed' },
 ];
 
 const introPoints = [
   {
     icon: 'rocket_launch',
-    text: 'EvolaTec entwickelt moderne Webseiten, Unternehmenswebsites, Landingpages und individuelle digitale Plattformen für Unternehmen, Startups und lokale Dienstleister.',
+    text: 'EvolaTec builds modern websites, company homepages, landing pages and individual digital platforms for businesses, start-ups and local service providers.',
   },
   {
     icon: 'verified',
-    text: 'Eine moderne Website ist heute weit mehr als eine digitale Visitenkarte — sie sorgt für Vertrauen, bessere Sichtbarkeit bei Google und höhere Conversion-Raten.',
+    text: 'A modern website is far more than a digital business card — it builds trust, improves Google visibility and drives higher conversion rates.',
   },
   {
     icon: 'auto_awesome',
-    text: 'Unsere Webagentur kombiniert modernes Webdesign, responsive Entwicklung, SEO-Optimierung und hohe Performance — damit Ihre Website messbare Ergebnisse liefert.',
+    text: 'Our web agency combines modern design, responsive development, SEO optimisation and high performance — so your website delivers measurable results.',
   },
 ];
 
 const introStats = [
-  { value: '30 Tage', label: 'Support' },
+  { value: '30 Days', label: 'Support' },
   { value: '99', label: 'Lighthouse Avg' },
-  { value: 'ab 7T', label: 'Lieferzeit' },
+  { value: 'from 7d', label: 'Delivery' },
 ];
 
 const developmentServices = [
   {
-    title: 'Homepage erstellen lassen',
-    description: 'Professionelle Firmenhomepages und moderne Webseiten für Unternehmen jeder Größe.',
+    title: 'Business Homepage Development',
+    description: 'Professional company homepages and modern websites for businesses of all sizes.',
     icon: 'home',
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',
     borderColor: 'border-blue-500',
   },
   {
-    title: 'Landingpage Entwicklung',
-    description: 'Konversionsstarke Landingpages für Werbekampagnen, Leadgenerierung und digitale Produkte.',
+    title: 'Landing Page Development',
+    description: 'High-converting landing pages for ad campaigns, lead generation and digital products.',
     icon: 'flag',
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
     borderColor: 'border-emerald-500',
-    href: '/landingpage-erstellen-lassen',
+    href: '/en/landing-page-design',
   },
   {
-    title: 'E-Commerce Entwicklung',
-    description: 'Professionelle Onlineshops und moderne E-Commerce Plattformen für Unternehmen.',
+    title: 'E-Commerce Development',
+    description: 'Professional online shops and modern e-commerce platforms for businesses.',
     icon: 'shopping_cart',
     iconBg: 'bg-purple-100',
     iconColor: 'text-purple-600',
     borderColor: 'border-purple-500',
-    href: '/online-shop-erstellen-lassen',
+    href: '/en/online-shop-development',
   },
   {
-    title: 'Responsive Webentwicklung',
-    description: 'Mobile optimierte Websites für Smartphones, Tablets und Desktop-Geräte.',
+    title: 'Responsive Web Development',
+    description: 'Mobile-optimised websites for smartphones, tablets and desktop devices.',
     icon: 'devices',
     iconBg: 'bg-orange-100',
     iconColor: 'text-orange-600',
     borderColor: 'border-orange-500',
   },
   {
-    title: 'Website gestalten lassen',
-    description: 'Modernes UI/UX Design und professionelle Benutzeroberflächen für Unternehmen und Marken.',
+    title: 'UI/UX Website Design',
+    description: 'Modern UI/UX design and professional interfaces for businesses and brands.',
     icon: 'design_services',
     iconBg: 'bg-rose-100',
     iconColor: 'text-rose-600',
     borderColor: 'border-rose-500',
   },
   {
-    title: 'Preise & Kosten',
-    description: 'Transparente Preise für professionelle Websites, Firmenhomepages und Webentwicklung.',
+    title: 'Pricing & Costs',
+    description: 'Transparent pricing for professional websites, business homepages and web development.',
     icon: 'payments',
     iconBg: 'bg-cyan-100',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-500',
-    href: '/preise',
+    href: '/en/pricing',
   },
 ];
 
 const expertiseBlocks = [
   {
     icon: 'home_work',
-    title: 'Professionelle Homepage erstellen lassen',
+    title: 'Professional Business Homepage Design',
     paragraphs: [
-      'Unternehmen, die ihre Homepage professionell erstellen lassen, profitieren von einem stärkeren Markenauftritt, mehr Vertrauen und einer besseren Positionierung im Internet.',
-      'Eine moderne Firmenhomepage hilft dabei, neue Kunden zu gewinnen, Dienstleistungen professionell zu präsentieren und digitale Sichtbarkeit aufzubauen.',
-      'EvolaTec entwickelt Unternehmenswebsites, die nicht nur gut aussehen, sondern auch technisch leistungsfähig, responsiv und suchmaschinenoptimiert sind.',
-      'Professionelle Webseiten überzeugen durch schnelle Ladezeiten, klare Strukturen und benutzerfreundliche Navigation — genau darauf spezialisiert sich unsere Webagentur.',
+      'Businesses that have their homepage professionally built benefit from a stronger brand presence, more trust and a better position online.',
+      'A modern company homepage helps attract new customers, present services professionally and build digital visibility.',
+      'EvolaTec builds company websites that not only look great, but are also technically performant, responsive and search engine optimised.',
+      'Professional websites win users over with fast load times, clear structure and intuitive navigation — exactly what our web agency specialises in.',
     ],
-    tags: ['Firmenhomepage', 'Markenauftritt', 'Performance', 'SEO Ready'],
+    tags: ['Business Homepage', 'Brand Presence', 'Performance', 'SEO Ready'],
   },
   {
     icon: 'engineering',
-    title: 'Website entwickeln lassen vom Profi',
+    title: 'Website Development by Professionals',
     paragraphs: [
-      'Wer eine professionelle Website entwickeln lassen möchte, benötigt mehr als nur schönes Design — moderne Webseiten müssen technisch performant, mobil optimiert und konversionsstark sein.',
-      'Unsere Agentur entwickelt Webseiten für Unternehmen, Startups, Dienstleister und lokale Firmen, die online professionell auftreten möchten.',
-      'Egal ob Landingpage, Unternehmenswebsite, Online Shop oder individuelle Plattform — EvolaTec entwickelt maßgeschneiderte Lösungen für moderne Anforderungen.',
-      'Als professionelle Website Agentur unterstützen wir Unternehmen bei Webdesign, Entwicklung, SEO, Performance Optimierung und digitalem Wachstum.',
+      'Getting a professional website built requires more than just great design — modern sites must be technically performant, mobile-optimised and built for conversions.',
+      'Our agency develops websites for businesses, start-ups, service providers and local companies that want to present themselves professionally online.',
+      'Whether a landing page, company website, online shop or custom platform — EvolaTec develops tailored solutions for modern requirements.',
+      'As a professional web agency, we support businesses with web design, development, SEO, performance optimisation and digital growth.',
     ],
-    tags: ['Webentwicklung', 'Webagentur', 'Conversion', 'Digital Growth'],
+    tags: ['Web Development', 'Web Agency', 'Conversion', 'Digital Growth'],
   },
 ];
 
 const benefits = [
   {
-    title: 'Modernes Webdesign',
-    description: 'Professionelle Benutzeroberflächen und moderne digitale Designs für Ihre Marke.',
+    title: 'Modern Web Design',
+    description: 'Professional interfaces and modern digital designs for your brand.',
     icon: 'design_services',
     bg: 'bg-gradient-to-br from-blue-600 to-indigo-800',
     image: '/web-development/design.webp',
   },
   {
-    title: 'Responsive Entwicklung',
-    description: 'Optimierte Darstellung auf Smartphones, Tablets und Desktop-Geräten.',
+    title: 'Responsive Development',
+    description: 'Optimised display on smartphones, tablets and desktop devices.',
     icon: 'devices',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
     image: '/web-development/responsive.webp',
   },
   {
-    title: 'SEO Optimierung',
-    description: 'Technische SEO Grundlagen und schnelle Ladezeiten für bessere Sichtbarkeit bei Google.',
+    title: 'SEO Optimisation',
+    description: 'Technical SEO fundamentals and fast load times for better visibility on Google.',
     icon: 'trending_up',
     bg: 'bg-gradient-to-br from-purple-600 to-indigo-800',
     image: '/web-development/seo.webp',
   },
   {
-    title: 'Individuelle Entwicklung',
-    description: 'Maßgeschneiderte Lösungen für Unternehmen, Startups und digitale Plattformen.',
+    title: 'Custom Development',
+    description: 'Tailored solutions for businesses, start-ups and digital platforms.',
     icon: 'tune',
     bg: 'bg-gradient-to-br from-orange-500 to-rose-600',
     image: '/web-development/develop.webp',
@@ -383,51 +366,47 @@ const benefits = [
 const features = [
   {
     icon: 'speed',
-    title: 'Hohe Performance & schnelle Ladezeiten',
-    description: 'Optimierte Websites mit Lighthouse-Scores nahe 100 — für bessere User Experience und höheres Google-Ranking.',
+    title: 'High Performance & Fast Load Times',
+    description: 'Optimised websites with Lighthouse scores near 100 — for better user experience and higher Google rankings.',
   },
   {
     icon: 'devices',
-    title: 'Responsive Design für alle Geräte',
-    description: 'Mobile First Entwicklung für perfekte Darstellung auf Smartphones, Tablets und Desktop — ohne Kompromisse.',
+    title: 'Responsive Design for All Devices',
+    description: 'Mobile-first development for perfect display on smartphones, tablets and desktop — no compromises.',
   },
   {
     icon: 'search_insights',
-    title: 'Technisch SEO-optimiert von Grund auf',
-    description: 'Strukturierte Daten, saubere URLs, schnelle Core Web Vitals und semantisches HTML für maximale Sichtbarkeit.',
+    title: 'Technically SEO-Optimised from the Start',
+    description: 'Structured data, clean URLs, fast Core Web Vitals and semantic HTML for maximum visibility.',
   },
   {
     icon: 'verified_user',
-    title: 'Sicherheit & moderne Technologien',
-    description: 'HTTPS, sichere Hosting-Infrastruktur und moderne Frameworks wie Nuxt, Vue und Tailwind CSS.',
+    title: 'Security & Modern Technologies',
+    description: 'HTTPS, secure hosting infrastructure and modern frameworks like Nuxt, Vue and Tailwind CSS.',
   },
   {
     icon: 'tune',
-    title: 'Individuelle Anpassung & Skalierbarkeit',
-    description: 'Maßgeschneiderte Lösungen, die mit Ihrem Unternehmen mitwachsen — keine Standard-Templates, sondern echte Entwicklung.',
+    title: 'Custom Flexibility & Scalability',
+    description: 'Tailored solutions that grow with your business — real development, not standard templates.',
   },
 ];
 
 const faqs = [
   {
-    question: 'Was kostet es, eine Website erstellen zu lassen?',
-    answer:
-      'Die Kosten hängen vom Umfang des Projekts ab. Einfache Unternehmenswebsites starten in der Regel bei einigen hundert Euro, während die Kosten für komplexe Plattformen und Onlineshops entsprechend höher sind.',
+    question: 'How much does it cost to get a website built?',
+    answer: 'Costs depend on the scope of the project. Simple company websites typically start from a few hundred euros, while the cost for complex platforms and online shops is priced accordingly.',
   },
   {
-    question: 'Warum ist professionelle Webentwicklung wichtig?',
-    answer:
-      'Professionelle Websites sorgen für Vertrauen, bessere Nutzererfahrung und höhere Conversion-Raten. Sie sind technisch optimiert, SEO-ready und für alle Geräte ausgelegt.',
+    question: 'Why is professional web development important?',
+    answer: 'Professional websites build trust, deliver a better user experience and generate higher conversion rates. They are technically optimised, SEO-ready and designed for all devices.',
   },
   {
-    question: 'Entwickelt EvolaTec auch Onlineshops?',
-    answer:
-      'Ja, EvolaTec entwickelt moderne E-Commerce Lösungen und professionelle Onlineshops für Unternehmen jeder Größe.',
+    question: 'Does EvolaTec also develop online shops?',
+    answer: 'Yes, EvolaTec develops modern e-commerce solutions and professional online shops for businesses of all sizes.',
   },
   {
-    question: 'Sind die Websites responsive?',
-    answer:
-      'Ja, alle Websites werden Mobile First entwickelt und für Smartphones, Tablets und Desktop-Geräte optimiert.',
+    question: 'Are the websites responsive?',
+    answer: 'Yes, all websites are developed Mobile First and optimised for smartphones, tablets and desktop devices.',
   },
 ];
 </script>

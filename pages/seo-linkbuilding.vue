@@ -49,6 +49,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -92,6 +94,7 @@ useHead({
   ],
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/seo-linkbuilding' },
+    ...hreflangLinks.value,
   ],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });

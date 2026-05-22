@@ -213,6 +213,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 useHead({
   title: 'Datenschutzerklärung | EvolaTec',
   meta: [
@@ -221,6 +223,7 @@ useHead({
   ],
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/datenschutz' },
+    ...hreflangLinks.value,
   ],
 });
 </script>

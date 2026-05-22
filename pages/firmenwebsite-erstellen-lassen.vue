@@ -212,6 +212,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 const schemaMarkup = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -265,7 +267,7 @@ useHead({
     { property: 'og:description', content: 'Professionelle Firmenwebsites und Unternehmenswebsites von EvolaTec — moderne Webseiten mit transparenten Festpreisen.' },
     { property: 'og:type', content: 'website' },
   ],
-  link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite-erstellen-lassen' }],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/firmenwebsite-erstellen-lassen' }, ...hreflangLinks.value],
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
