@@ -30,7 +30,7 @@
             :key="tab.id"
             @click="activeTab = tab.id"
             :class="[
-              'flex-1 py-2.5 px-3 rounded-full text-sm font-bold flex items-center justify-center gap-2 min-h-[44px] transition-all duration-200',
+              'flex-1 min-w-0 py-2.5 px-3 rounded-full text-sm font-bold flex items-center justify-center gap-2 whitespace-nowrap min-h-[44px] transition-all duration-200',
               activeTab === tab.id
                 ? 'bg-primary text-on-primary shadow-md'
                 : 'text-on-surface-variant hover:text-primary',
@@ -98,7 +98,7 @@
                   :key="cat.id"
                   @click="selectCat(cat)"
                   :class="[
-                    'group relative flex flex-col items-center text-center p-4 rounded-xl border-2 transition-all duration-200 min-h-[120px]',
+                    'group relative flex flex-col items-center text-center p-4 rounded-xl border-2 transition-all duration-200 min-h-[120px] min-w-0 w-full overflow-hidden',
                     calc.cat?.id === cat.id
                       ? 'border-primary bg-primary/5 shadow-md'
                       : 'border-outline-variant/30 hover:border-primary/40 hover:bg-surface-container-low',
@@ -116,8 +116,8 @@
                   >
                     <span class="material-symbols-outlined text-xl">{{ cat.icon }}</span>
                   </div>
-                  <p class="font-bold text-sm text-on-surface leading-tight">{{ cat.name }}</p>
-                  <p class="text-xs text-on-surface-variant mt-1 leading-snug">{{ cat.desc }}</p>
+                  <p class="font-bold text-sm text-on-surface leading-tight break-words hyphens-auto w-full">{{ cat.name }}</p>
+                  <p class="text-xs text-on-surface-variant mt-1 leading-snug break-words hyphens-auto w-full">{{ cat.desc }}</p>
                 </button>
               </div>
             </div>
@@ -139,7 +139,7 @@
                     :key="type.id"
                     @click="selectType(type)"
                     :class="[
-                      'group relative flex items-center gap-3 p-4 rounded-xl border-2 transition-all duration-200 text-left min-h-[72px]',
+                      'group relative flex items-center gap-3 p-4 rounded-xl border-2 transition-all duration-200 text-left min-h-[72px] min-w-0 w-full overflow-hidden',
                       calc.type?.id === type.id
                         ? 'border-primary bg-primary/5 shadow-md'
                         : 'border-outline-variant/30 hover:border-primary/40 hover:bg-surface-container-low',
@@ -154,8 +154,8 @@
                       <span class="material-symbols-outlined text-lg">{{ type.icon }}</span>
                     </div>
                     <div class="flex-1 min-w-0">
-                      <p class="font-bold text-sm text-on-surface leading-tight">{{ type.name }}</p>
-                      <p class="text-xs text-on-surface-variant mt-0.5">{{ type.desc }}</p>
+                      <p class="font-bold text-sm text-on-surface leading-tight break-words hyphens-auto">{{ type.name }}</p>
+                      <p class="text-xs text-on-surface-variant mt-0.5 break-words hyphens-auto">{{ type.desc }}</p>
                     </div>
                     <div class="text-right flex-shrink-0">
                       <p class="text-[10px] text-on-surface-variant uppercase tracking-wider font-semibold">ab</p>
@@ -387,7 +387,7 @@ const calcCategories: CalcCat[] = [
     ],
   },
   {
-    id: 'seo', icon: 'trending_up', name: 'SEO', desc: 'Suchmaschinenoptimierung',
+    id: 'seo', icon: 'trending_up', name: 'SEO', desc: 'Suchmaschinen­optimierung',
     types: [
       { id: 'audit', icon: 'zoom_in',      name: 'SEO Audit',        desc: 'Einmalige Analyse',    price: 100, note: 'einmalig, zzgl. MwSt.' },
       { id: 'opt',   icon: 'tune',         name: 'SEO Optimierung',  desc: 'Onpage & Technisch',   price: 300, note: 'einmalig, zzgl. MwSt.' },

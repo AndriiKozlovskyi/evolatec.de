@@ -243,10 +243,6 @@
           </a>
         </div>
 
-        <p class="text-xs text-on-surface-variant/50 mt-8 text-center">
-          Quelle: in Anlehnung an eRecht24 · Stand Mai 2026
-        </p>
-
       </article>
     </div>
   </div>
