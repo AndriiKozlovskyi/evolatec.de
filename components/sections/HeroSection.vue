@@ -9,14 +9,14 @@
       :src="backgroundImage"
       alt=""
       format="avif,webp"
-      sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw xxl:100vw"
+      sizes="360px sm:640px md:960px lg:1280px xl:1920px"
       :width="1920"
       :height="1080"
       preload
       :img-attrs="{
         fetchpriority: 'high',
         loading: 'eager',
-        decoding: 'async',
+        decoding: 'sync',
         class: 'absolute inset-0 w-full h-full object-cover',
       }"
     />

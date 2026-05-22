@@ -1,3 +1,5 @@
+const LANG_KEY = 'preferred-language'
+
 /**
  * Maps each German route to its English counterpart and vice versa.
  * Update this map whenever a new EN page is created under pages/en/.
@@ -57,5 +59,28 @@ export function useLanguageSwitcher() {
     { rel: 'alternate', hreflang: 'x-default', href: `https://evolatec.de${deHref.value}` },
   ])
 
-  return { currentLang, isEnglish, deHref, enHref, canonicalUrl, hreflangLinks }
+  /** Call on language link click to persist the user's choice */
+  function savePreference(lang: 'de' | 'en') {
+    if (import.meta.client) localStorage.setItem(LANG_KEY, lang)
+  }
+
+  /**
+   * Call once on mount (homepage only).
+   * If the user has a saved preference that differs from the current language,
+   * redirect them to the equivalent page in their preferred language.
+   */
+  function redirectToPreferred() {
+    if (!import.meta.client) return
+    const saved = localStorage.getItem(LANG_KEY) as 'de' | 'en' | null
+    if (!saved) return
+    if (saved === 'en' && !isEnglish.value) {
+      const target = deToEn[route.path] ?? '/en'
+      navigateTo(target)
+    } else if (saved === 'de' && isEnglish.value) {
+      const target = enToDe[route.path] ?? '/'
+      navigateTo(target)
+    }
+  }
+
+  return { currentLang, isEnglish, deHref, enHref, canonicalUrl, hreflangLinks, savePreference, redirectToPreferred }
 }

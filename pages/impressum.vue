@@ -74,6 +74,8 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 useHead({
   title: 'Impressum | EvolaTec',
   meta: [
@@ -82,6 +84,7 @@ useHead({
   ],
   link: [
     { rel: 'canonical', href: 'https://evolatec.de/impressum' },
+    ...hreflangLinks.value,
   ],
 });
 </script>

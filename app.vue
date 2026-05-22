@@ -18,3 +18,13 @@
     <SectionDotNav />
   </div>
 </template>
+
+<script setup lang="ts">
+import { onMounted, watch } from 'vue';
+
+const route = useRoute();
+const { redirectToPreferred } = useLanguageSwitcher();
+
+onMounted(redirectToPreferred);
+watch(() => route.path, redirectToPreferred);
+</script>

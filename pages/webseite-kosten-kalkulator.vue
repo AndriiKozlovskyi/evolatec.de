@@ -295,11 +295,14 @@
 </template>
 
 <script setup lang="ts">
+const { hreflangLinks } = useLanguageSwitcher();
+
 useHead({
   title: 'Preisrechner – Kosten schätzen | EvolaTec',
   meta: [
     { name: 'description', content: 'Berechnen Sie die Kosten für Website, SEO, Marketing und Design. Kostenloser Preisrechner von EvolaTec.' },
   ],
+  link: [{ rel: 'canonical', href: 'https://evolatec.de/webseite-kosten-kalkulator' }, ...hreflangLinks.value],
 });
 
 // ── Types ────────────────────────────────────────────────────────────────────
