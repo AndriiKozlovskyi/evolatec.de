@@ -125,22 +125,31 @@
             class="space-y-1"
           >
             <!-- Main Link -->
-            <button
+            <div
               v-if="link.submenu"
-              @click="toggleMobileSubmenu(link.id)"
-              class="w-full flex items-center justify-between gap-4 px-4 py-3 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-all duration-200 font-semibold touch-target"
+              class="flex items-center rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-all duration-200 font-semibold"
             >
-              <span class="flex items-center gap-4">
+              <a
+                :href="link.href"
+                @click="mobileMenuOpen = false"
+                class="flex items-center gap-4 px-4 py-3 flex-1 touch-target"
+              >
                 <span class="material-symbols-outlined text-xl flex-shrink-0">{{ link.icon }}</span>
                 <span>{{ link.label }}</span>
-              </span>
-              <span
-                class="material-symbols-outlined text-lg flex-shrink-0 transition-transform duration-300"
-                :class="{ 'rotate-180': expandedMenus.includes(link.id) }"
+              </a>
+              <button
+                @click="toggleMobileSubmenu(link.id)"
+                class="px-4 py-3 touch-target flex-shrink-0"
+                :aria-label="`${link.label} Untermenü ${expandedMenus.includes(link.id) ? 'schließen' : 'öffnen'}`"
               >
-                expand_more
-              </span>
-            </button>
+                <span
+                  class="material-symbols-outlined text-lg transition-transform duration-300"
+                  :class="{ 'rotate-180': expandedMenus.includes(link.id) }"
+                >
+                  expand_more
+                </span>
+              </button>
+            </div>
             <a
               v-else
               :href="link.href"
