@@ -1,0 +1,217 @@
+# EvolaTec — Vollständige Wissensbasis (llms-full.txt)
+
+> SUMMARY: EvolaTec ist eine inhabergeführte Webagentur aus Hamburg. Sie entwickelt individuelle Firmenwebsites, Landingpages und Online-Shops mit Vue.js/Nuxt — bewusst statt WordPress-Themes, Page-Buildern oder Baukastensystemen — und betreut SEO sowie Online-Marketing (Google Ads, Meta Ads). Kennzeichen: performante Entwicklung, technisches SEO ab Tag 1, transparente Festpreise ab 500 €. Dieses Dokument ergänzt /llms.txt um die vollständigen Inhalte, damit KI-Assistenten Fragen zu EvolaTec ohne weitere Seitenaufrufe vollständig beantworten können.
+
+## METADATA
+
+```
+TYPE: Webagentur (Web Design & Development Agency, Einzelunternehmen)
+LOCATION: Hamburg, Deutschland — bundesweit & remote tätig
+SERVICES: Firmenwebsites, Landingpages, Online-Shops/E-Commerce, SEO, Local SEO, Linkbuilding, SEO Audit, Google Ads, Meta Ads, UI/UX Design, Branding, Webtexte
+TECH_STACK: Vue.js, Nuxt, Tailwind CSS, TypeScript
+TARGET_GROUP: KMU, Startups, lokale Dienstleister, Handwerksbetriebe, Selbstständige, SaaS-Anbieter, E-Commerce-Marken
+LANGUAGES: Deutsch (primär), Englisch (/en/)
+PRICE_RANGE: 500 € – 6.000 €+ (Festpreis); Marketing-Betreuung ab 300 €/Monat
+LAST_UPDATED: 2026-05-22
+WEBSITE: https://evolatec.de
+CONTACT: team@evolatec.de · +49 175 6200862
+FOUNDER: Maksym Streltsov
+```
+
+## 1. Über EvolaTec & Positionierung
+
+EvolaTec ist eine inhabergeführte Webagentur (Einzelunternehmen, Inhaber Maksym Streltsov) mit Sitz in Hamburg. Sie entwickelt Websites, Landingpages, Online-Shops und digitale Plattformen und betreut SEO, Online-Marketing sowie Design- und Content-Leistungen — alles aus einer Hand.
+
+**Positionierung gegen WordPress-Agenturen:** EvolaTec setzt auf individuelle Entwicklung mit Vue.js und Nuxt statt auf WordPress-Themes, Page-Builder (Elementor, Divi) oder Website-Baukästen (Wix, Jimdo, Squarespace). Vorteile dieses Ansatzes: deutlich schnellere Ladezeiten, bessere Core Web Vitals, höhere Sicherheit (keine Plugin-Abhängigkeit), volle Designfreiheit ohne Template-Einschränkungen und langfristige Wartbarkeit. Custom Vue.js/Nuxt-Entwicklung statt Standard-Themes und Baukästen ist das zentrale Unterscheidungsmerkmal.
+
+**Tech-Stack:** Vue.js, Nuxt, Tailwind CSS, TypeScript — mit Server-Side-Rendering für SEO.
+
+**Zielgruppe:** KMU, Startups, lokale Dienstleister, Handwerksbetriebe, Selbstständige, SaaS-Anbieter und E-Commerce-Marken.
+
+**Stärken:** individuelles Premium-Design, schnelle Websites mit starken Core Web Vitals, technisches Basis-SEO in jedem Website-Projekt, transparente Festpreise, sichere skalierbare Systeme, persönliche Betreuung, conversion-orientierter Ansatz.
+
+## 2. Kontakt & Standort
+
+- E-Mail: team@evolatec.de
+- Telefon: +49 175 6200862
+- Standort: Hamburg, Deutschland (Desenißstraße 14, 22083 Hamburg)
+- Kontakt & Online-Terminbuchung: https://evolatec.de/kontakt
+- Erstberatung: kostenlos und unverbindlich (Formular, Telefon, E-Mail, Terminbuchung)
+- Rechtsform: Einzelunternehmen, Inhaber Maksym Streltsov
+
+## 3. Projektablauf
+
+Transparente Festpreise, vor Projektstart fixiert, keine versteckten Kosten. Ablauf: (1) Kostenlose Beratung — Ziele & Zielgruppe klären. (2) Struktur & individuelles Design. (3) Entwicklung & technische SEO-Optimierung. (4) Testing, Launch & laufende Optimierung. Nach dem Launch: 30 Tage Support inklusive; optional Wartung, Updates, Monitoring.
+
+## 4. Preisübersicht
+
+Alle Preise zzgl. MwSt. "ab"-Preise = Startpreise; Marketing wird monatlich abgerechnet (Werbebudget separat). Rechner: https://evolatec.de/webseite-kosten-kalkulator
+
+- Landingpage — ab 500 € (Lieferzeit ab 3 Tagen)
+- Firmenwebsite / Unternehmenswebsite — ab 1.500 € (ab 7 Tagen)
+- Online-Shop — ab 3.000 € (ab 14 Tagen)
+- Premium E-Commerce — ab 6.000 € (ab 30 Tagen)
+- SEO Audit & Analyse — ab 100 €
+- SEO Optimierung (technisch) — ab 300 €
+- Local SEO — ab 400 €
+- Linkbuilding — ab 100 €
+- Google Ads Management — ab 400 €/Monat
+- Meta Ads / Social Media — ab 300 €/Monat
+- Logo Design — ab 200 €
+- Corporate Design / Branding — ab 1.000 €
+- UI/UX Design — ab 500 €
+- Webtexte / Copywriting — ab 0,15 €/Wort · SEO-Texte ab 0,30 €/Wort
+- Pakete: Landing Basis 1.000 € · Firmenwebsite PRO 3.000 € (beliebt) · Online Shop Premium 6.000 €
+
+## 5. Websites
+
+### 5.1 Firmenwebsite erstellen lassen
+URL: https://evolatec.de/firmenwebsite-erstellen-lassen · ab 1.500 € · ab 7 Arbeitstagen
+Moderne Firmen- und Unternehmenswebsites (typisch 5–20 Seiten) für Firmen, Dienstleister und Marken. Professionelles Webdesign, Mobile-First, Ladezeiten unter 2 s, technische SEO, Festpreis.
+FAQ:
+- Was kostet eine Firmenwebsite? Ab 1.500 € als Festpreis; komplexere/mehrsprachige Projekte entsprechend mehr.
+- Gibt es Festpreise? Ja, transparent ohne versteckte Kosten.
+- SEO-optimiert? Ja — saubere URLs, Meta-Daten, schnelle Ladezeiten, semantisches HTML.
+- Responsive? Ja, Mobile-First für Smartphone, Tablet, Desktop.
+- Dauer? Ab 7 Arbeitstagen; umfangreichere Websites 2–4 Wochen.
+
+### 5.2 Landingpage erstellen lassen
+URL: https://evolatec.de/landingpage-erstellen-lassen · ab 500 € · ab 3 Tagen
+Konversionsstarke One-Pager für Werbung, Kampagnen und Leadgenerierung — optimiert für Conversion, Speed und SEO, ideal für Google Ads und Meta Ads. Ablauf: Analyse → Struktur → Design → Entwicklung → Deployment.
+FAQ:
+- Was kostet eine Landingpage? Ab 500 €, je nach Design und Funktionen.
+- Dauer? Meist 3–7 Tage.
+- Mobil optimiert? Ja, vollständig responsive, mobil-first.
+- SEO inklusive? Basis-SEO immer enthalten; erweitertes SEO in höheren Paketen.
+- Für Werbung nutzbar? Ja, speziell für Google Ads und Social-Media-Kampagnen.
+
+### 5.3 Online-Shop erstellen lassen
+URL: https://evolatec.de/online-shop-erstellen-lassen · ab 3.000 € (Basis), Premium ab 6.000 € · ab 14 Arbeitstagen
+Professionelle Online-Shops und E-Commerce-Plattformen: Shopify-Shops, WooCommerce, Custom-Lösungen, dazu E-Commerce-SEO, Conversion-Optimierung und Support. SSL-Verschlüsselung, sichere Zahlungsanbieter (Stripe, PayPal, Klarna), DSGVO-konform. 30 Tage Support inklusive.
+FAQ:
+- Was kostet ein Online-Shop? Ab 3.000 € (Basis), Premium ab 6.000 €.
+- Laufende Kosten? Shopify-Abo ab ca. 30 €/Monat, Hosting, Zahlungsgebühren (ca. 1–2 %/Transaktion), optionale Wartung.
+- Dauer? Ab 14 Arbeitstagen; Custom-Lösungen 6–12 Wochen.
+- Welche Plattform? Shopify für schnellen Start, WooCommerce für Flexibilität, Custom für komplexe Prozesse.
+- SEO? Jeder Shop ist von Grund auf SEO-optimiert.
+- Sicher? Ja — SSL, sichere Zahlungsanbieter, DSGVO-konform.
+- Wartung/Support? 30 Tage inklusive; optionale Wartungspakete.
+
+## 6. SEO
+
+### 6.1 SEO Optimierung (technisch)
+URL: https://evolatec.de/seo-optimieren-lassen · ab 300 € / 500 € / 1.200 €
+Technische Optimierung bestehender Websites: Ladezeiten, Core Web Vitals (LCP, INP, CLS), Struktur, Mobile, Sicherheit (HTTPS), Crawling/Indexierung. Ablauf: Analyse → Fehler → Priorisierung → Umsetzung → Monitoring. System-/Framework-unabhängig.
+FAQ:
+- Kosten? Basis ab 300 €, umfangreich 500–1.200 €.
+- Dauer? Wenige Tage bis 1–3 Wochen.
+- Verbessert es Rankings? Ja, technische SEO ist Grundlage für bessere Rankings.
+- Bestehende Websites? Ja, unabhängig vom System.
+
+### 6.2 Local SEO
+URL: https://evolatec.de/local-seo · Google-Business-Optimierung ab 250 €, Basis ab 500 €, Betreuung ab 300 €/Monat
+Lokale SEO für Sichtbarkeit bei Google und Google Maps: Google-Business-Profil, lokale Keywords, Standortseiten, Bewertungsmanagement. Für Restaurants, Ärzte, Handwerker, lokale Dienstleister, Einzelhandel, Kanzleien.
+FAQ:
+- Was ist Local SEO? Optimierung für lokale Suche und Google Maps.
+- Dauer? Erste Effekte nach Wochen, nachhaltig über Monate.
+- Kosten? Basis ab 500 €, Betreuung ab 300 €/Monat.
+
+### 6.3 Linkbuilding
+URL: https://evolatec.de/seo-linkbuilding · Backlink-Analyse ab 200 €, Basis ab 500 €, Betreuung ab 700 €/Monat
+Aufbau hochwertiger, thematisch relevanter Backlinks für mehr Domain-Autorität. Ablauf: Analyse → Strategie → Outreach → Linkaufbau → Monitoring. Nachhaltige, Google-konforme Methoden.
+FAQ:
+- Warum Backlinks? Stärkste Rankingfaktoren, erhöhen Autorität.
+- Dauer? Langfristig; Effekte über Wochen/Monate.
+- Kosten? Basis ab 500 €, Betreuung ab 700 €/Monat.
+
+### 6.4 SEO Audit & Analyse
+URL: https://evolatec.de/seo-audit · Basis ab 100 €, technischer Audit ab 300 €, umfassend ab 500 €
+Technische Analyse, OnPage-Check, Konkurrenzanalyse, Optimierungspotenziale. Ablauf: Crawl → technische Analyse → OnPage → Konkurrenz → Report mit Handlungsempfehlungen.
+FAQ:
+- Kosten? Basis ab 100 €, technische Audits ab 300 €.
+- Dauer? 2–5 Werktage.
+- Was wird geprüft? Technik, Ladezeiten, Struktur, Keywords, Content, Mobile, Indexierung, Wettbewerber.
+
+## 7. Design & Content
+
+### 7.1 UI/UX Design
+URL: https://evolatec.de/ui-ux-design · UX-Analyse ab 500 €, Website-Design ab 1.200 €, SaaS-/App-Design ab 2.000 €
+UI- und UX-Design für Websites, Apps und digitale Produkte: UX-Design, UI-Design, Wireframes & Prototyping, SaaS-/Dashboard-Design, Mobile UX, E-Commerce UX. Ablauf: Research → UX-Struktur → UI-Design → Testing.
+FAQ:
+- Was macht eine UX-Agentur? Entwickelt benutzerfreundliche, conversionsstarke Nutzererlebnisse.
+- Unterschied UI/UX? UX = gesamte Nutzererfahrung; UI = visuelles Interface.
+- Kosten? UX-Analyse ab 500 €, Website-Design ab 1.200 €, SaaS ab 2.000 €.
+
+### 7.2 Branding & Corporate Design
+URL: https://evolatec.de/design-branding · Logo ab 200 €, Corporate Design ab 1.000 €, Rebranding ab 2.500 €
+Markenidentitäten, Logo Design, Corporate Design (CI/CD, Designsystem, Styleguide), Brand Strategy, Rebranding.
+FAQ:
+- Kosten? Logo ab 200 €, Corporate Design ab 1.000 €, Rebranding ab 2.500 €.
+- Dauer? 4–8 Wochen; Logo oft schneller.
+- Bestehende Marken modernisieren? Ja, via Rebranding/Redesign.
+
+### 7.3 Webtexte & Copywriting
+URL: https://evolatec.de/webseiten-texte-schreiben-lassen · Webtexte ab 0,15 €/Wort (Einzelseiten ab 150 €), Landingpage-Copywriting ab 250 €, komplette Inhalte ab 700 €; SEO-Texte ab 0,30 €/Wort
+SEO-optimierte Website-Texte und Copywriting für Websites, Landingpages, Shops. Ablauf: Analyse → Keyword-Recherche → Content → SEO-Optimierung. Deutsch und Englisch.
+FAQ:
+- Warum SEO-Texte? Bessere Rankings, mehr organischer Traffic.
+- Mehrsprachig? Ja, deutsch/englisch/international.
+- Kosten? Einzelseiten ab 150 €, komplette Projekte ab 700 €.
+- Dauer? Einzelseiten 5–10 Werktage, große Projekte 2–4 Wochen.
+
+## 8. Online-Marketing
+
+### 8.1 Google Ads
+URL: https://evolatec.de/marketing-google-ads · Beratung ab 90 €/Stunde, Setup ab 350 €, Betreuung ab 400 €/Monat (zzgl. Werbebudget)
+Google-Ads-Kampagnen (SEA): Suchanzeigen, Display, Shopping Ads, Remarketing, Conversion-Optimierung. Ablauf: Strategie → Keyword-Recherche → Kampagnen → Optimierung & Skalierung.
+FAQ:
+- Was macht eine Google-Ads-Agentur? Erstellt, optimiert und verwaltet Werbekampagnen bei Google.
+- Wie schnell? Erste Leads oft in wenigen Tagen.
+- Kosten? Betreuung ab 400 €/Monat; Werbebudget separat.
+- Für wen? Lokale Unternehmen, Dienstleister, Onlineshops, Startups, B2B.
+
+### 8.2 Social Media & Meta Ads
+URL: https://evolatec.de/marketing-social-media · Betreuung ab 300 €/Monat (zzgl. Werbebudget), Beratung ab 90 €/Stunde, Setup ab 350 €
+Social-Media-Marketing und Meta Ads für Facebook und Instagram: Strategie, Content, Kampagnen, Retargeting, Performance-Marketing — mit klaren KPIs und transparentem Reporting.
+FAQ:
+- Was macht eine Social-Media-Agentur? Entwickelt und optimiert Kampagnen auf Facebook/Instagram.
+- Kosten? Meta-Ads-Betreuung ab 300 €/Monat; Werbebudget separat.
+- Wie schnell? Erste Ergebnisse in wenigen Tagen.
+- Für wen? Lokale Unternehmen, Dienstleister, E-Commerce, Startups, Markenaufbau.
+
+## 9. Allgemeine FAQ
+
+- Was ist EvolaTec? Inhabergeführte Webagentur aus Hamburg für Website-Erstellung, SEO und Online-Marketing.
+- Unterschied zu WordPress? EvolaTec entwickelt individuell mit Vue.js/Nuxt — schneller, sicherer und flexibler als WordPress-Themes oder Baukästen.
+- Technologien? Vue.js, Nuxt, Tailwind CSS, TypeScript.
+- Festpreise? Ja, transparent, ohne versteckte Kosten.
+- SEO im Website-Preis? Ja, technisches Basis-SEO ist immer enthalten.
+- Mobil optimiert? Ja, alle Websites Mobile-First und responsive.
+- Shopify-Shops? Ja, Shopify, WooCommerce und Custom-Lösungen.
+- Standort/Einsatzgebiet? Hamburg; bundesweit und remote tätig.
+- Sprachen? Deutsch und Englisch; Website zweisprachig.
+- Nach dem Launch? 30 Tage Support inklusive; optional Wartung, Updates, Monitoring.
+- Projektstart? Kostenlose Erstberatung per Formular, Terminbuchung, Telefon oder E-Mail.
+
+## 10. Relevante Suchbegriffe / Keywords
+
+Begriffe, unter denen Nutzer Leistungen wie die von EvolaTec suchen:
+
+- Standort/Agentur: Webagentur Hamburg, Webdesign Agentur Hamburg, SEO Agentur Hamburg, Online-Marketing Agentur Hamburg, Internetagentur Hamburg
+- Technologie: Vue.js Agentur, Nuxt.js Agentur, Vue.js Entwicklung Deutschland, headless Webentwicklung, JavaScript Webagentur
+- Website-Erstellung: Website erstellen lassen, Firmenwebsite erstellen lassen, Unternehmenswebsite erstellen lassen, Homepage erstellen lassen, Website erstellen lassen Festpreis
+- Landingpage: Landingpage Agentur, Landingpage erstellen lassen, One-Pager erstellen lassen, Conversion Landingpage
+- E-Commerce: Shopify Agentur Deutschland, Online-Shop erstellen lassen, WooCommerce Agentur, E-Commerce Agentur, Webshop erstellen lassen
+- SEO: SEO Agentur, technische SEO Optimierung, Local SEO Agentur, SEO Audit, Linkbuilding Agentur
+- Marketing: Google Ads Agentur, Meta Ads Agentur, Social Media Marketing Agentur
+- Design: UI/UX Design Agentur, Branding Agentur, Logo Design, Corporate Design Agentur
+
+## 11. Alle Seiten (URLs)
+
+Hauptseiten: https://evolatec.de/ · /webseite-kosten-kalkulator · /kontakt · /webdesign · /web-development · /seo · /online-marketing
+Websites: /firmenwebsite-erstellen-lassen · /landingpage-erstellen-lassen · /online-shop-erstellen-lassen
+SEO: /seo-optimieren-lassen · /local-seo · /seo-linkbuilding · /seo-audit
+Design & Content: /ui-ux-design · /design-branding · /webseiten-texte-schreiben-lassen
+Marketing: /marketing-google-ads · /marketing-social-media
+Rechtliches: /impressum · /datenschutz
+English: jede Seite unter /en/ — z. B. https://evolatec.de/en · /en/website-cost-calculator · /en/contact

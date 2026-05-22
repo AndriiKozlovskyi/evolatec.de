@@ -1,2 +1,93 @@
-User-Agent: *
-Disallow:
+# robots.txt — EvolaTec
+# https://evolatec.de
+# Last updated: 2026-05-22
+
+# ─────────────────────────────────────────────
+# Default Rules — alle Crawler dürfen die Website indexieren
+# ─────────────────────────────────────────────
+
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /netlify-forms.html
+
+# ─────────────────────────────────────────────
+# AI / LLM Crawlers — bewusst erlaubt für Sichtbarkeit
+# in KI-Suche und KI-Assistenten
+# ─────────────────────────────────────────────
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Copilot / Bing
+User-agent: Bingbot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Common Crawl (Datenquelle vieler KI-Modelle)
+User-agent: CCBot
+Allow: /
+
+# ─────────────────────────────────────────────
+# Sitemaps
+# ─────────────────────────────────────────────
+
+Sitemap: https://evolatec.de/sitemap.xml
+Sitemap: https://evolatec.de/en/sitemap.xml
+
+# ─────────────────────────────────────────────
+# LLM-Ressourcen (KI-Wissensbasis der Website)
+# ─────────────────────────────────────────────
+
+# Kompakter Index für KI-Crawler:
+LLMS: https://evolatec.de/llms.txt
+# Vollständige Wissensbasis mit allen Inhalten:
+LLMS-FULL: https://evolatec.de/llms-full.txt
