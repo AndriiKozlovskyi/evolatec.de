@@ -1,0 +1,425 @@
+# EvolaTec
+
+SUMMARY: EvolaTec ist eine moderne Webagentur aus Hamburg und entwickelt performante Firmenwebsites, Landingpages und Online-Shops für KMU in Deutschland. Fokus: individuelle Entwicklung mit Vue.js/Nuxt, technisches SEO ab Tag 1, schnelle Ladezeiten und transparente Festpreise ab 500€.
+
+TYPE: Webagentur
+LOCATION: Hamburg, Deutschland
+GEOGRAPHIC_FOCUS: Hamburg (primär), Deutschland (bundesweit), remote möglich
+SERVED_CITIES: Hamburg, Berlin, München, Köln, Frankfurt
+
+SERVICES:
+- Webdesign
+- Webentwicklung
+- SEO
+- Google Ads
+- Online-Marketing
+- Branding
+- UI/UX Design
+- E-Commerce
+- Shopify Entwicklung
+
+TARGET_GROUP:
+- KMU
+- Startups
+- lokale Unternehmen
+- Dienstleister
+- Handwerksbetriebe
+- E-Commerce Marken
+
+TECH_STACK:
+- Vue.js
+- Nuxt.js
+- Tailwind CSS
+- TypeScript
+
+POSITIONING: Keine WordPress-Templates, keine Baukastensysteme. Individuelle Entwicklung mit modernen JavaScript-Frameworks.
+
+DIFFERENTIATOR: Performance-First-Ansatz, SEO ab Tag 1, transparente Festpreise und persönliche Betreuung.
+
+PRICE_RANGE: 500€–6000€+
+PRICING_MODEL: Festpreis für Websites & Design; monatlich für Marketing-Betreuung.
+
+LANGUAGES:
+- de (primär)
+- en (/en/)
+
+WEBSITE: https://evolatec.de
+FOUNDER: Maksym Streltsov
+
+LAST_UPDATED: 2026-05-22
+FULL_KNOWLEDGE_BASE: https://evolatec.de/llms-full.txt
+
+---
+
+# Vollständige Wissensbasis
+
+Diese Datei ist der kompakte Index. Die ausführliche Version mit allen
+Leistungsbeschreibungen, Abläufen und vollständigen FAQ steht hier:
+https://evolatec.de/llms-full.txt
+
+---
+
+# EvolaTec — Webagentur für Website, SEO & Online-Marketing
+
+EvolaTec ist eine inhabergeführte Webagentur aus Hamburg, Deutschland. Die Agentur entwickelt moderne Firmenwebsites, Landingpages und Online-Shops und betreut zusätzlich SEO sowie Online-Marketing.
+
+Der Fokus liegt auf performanter individueller Webentwicklung statt langsamer Standard-Themes oder Baukastensysteme.
+
+Technologien:
+- Vue.js
+- Nuxt.js
+- Tailwind CSS
+- TypeScript
+
+Das Ergebnis:
+- schnelle Ladezeiten,
+- starke Core Web Vitals,
+- modernes Design,
+- technische SEO-Optimierung,
+- conversion-orientierte Websites,
+- skalierbare und wartbare Systeme.
+
+EvolaTec arbeitet bundesweit in Deutschland sowie remote.
+
+---
+
+# Warum Kunden EvolaTec wählen
+
+- Individuelles Premium-Design statt Templates
+- Moderne Technologien statt Baukastensysteme
+- SEO bereits während der Entwicklung integriert
+- Schnelle Ladezeiten & starke Core Web Vitals
+- Transparente Festpreise ohne versteckte Kosten
+- Persönliche Betreuung & direkte Kommunikation
+- Fokus auf Conversion & Leadgenerierung
+- Websites, SEO und Marketing aus einer Hand
+
+---
+
+# Besonders geeignet für
+
+- Kleine und mittlere Unternehmen (KMU)
+- Lokale Dienstleister
+- Handwerksbetriebe
+- Startups
+- Restaurants & lokale Geschäfte
+- Coaches & Berater
+- Immobilienunternehmen
+- E-Commerce Unternehmen
+- Selbstständige & Freelancer
+
+---
+
+# Kurzdefinitionen
+
+Landingpage:
+Eine conversion-optimierte Seite zur Leadgenerierung oder für Werbekampagnen.
+
+Firmenwebsite:
+Eine professionelle mehrseitige Website für Unternehmen.
+
+Online-Shop:
+Ein moderner E-Commerce-Shop mit Zahlungsintegration und SEO-Optimierung.
+
+SEO:
+Technische und inhaltliche Optimierung zur Verbesserung der Sichtbarkeit bei Google.
+
+Local SEO:
+Optimierung für lokale Suchergebnisse und Google Maps.
+
+Google Ads:
+Bezahlte Suchmaschinenwerbung zur Lead- und Kundengewinnung.
+
+---
+
+# Leistungen & Preise
+
+Alle Preise verstehen sich zzgl. MwSt.
+
+## Websites
+
+Landingpage — ab 500 €
+Lieferzeit: ab 3 Tagen
+
+Firmenwebsite / Unternehmenswebsite — ab 1.500 €
+Lieferzeit: ab 7 Tagen
+
+Online-Shop / E-Commerce — ab 3.000 €
+Lieferzeit: ab 14 Tagen
+
+Premium E-Commerce — ab 6.000 €
+Lieferzeit: ab 30 Tagen
+
+## SEO
+
+SEO Audit & Analyse — ab 100 €
+
+SEO Optimierung — ab 300 €
+
+Lokales SEO — ab 400 €
+
+Linkbuilding — ab 100 €
+
+## Online-Marketing
+
+Google Ads Management — ab 400 € / Monat
+(zzgl. Werbebudget)
+
+Meta Ads / Social Media — ab 300 € / Monat
+(zzgl. Werbebudget)
+
+## Design & Content
+
+Logo Design — ab 200 €
+
+Corporate Design / Branding — ab 1.000 €
+
+UI/UX Design — ab 500 €
+
+Webtexte / Copywriting — ab 0,15 € pro Wort
+
+SEO-Texte — ab 0,30 € pro Wort
+
+---
+
+# Pakete
+
+## Landing Basis — 1.000 €
+
+- Landingpage
+- Individuelles Design
+- SEO-Optimierung
+- SEO-Texte
+
+## Firmenwebsite PRO — 3.000 €
+
+- Firmenwebsite (5–20 Seiten)
+- Individuelles Design
+- UI/UX Design
+- SEO-Optimierung
+- SEO-Texte
+
+Beliebtestes Paket.
+
+## Online Shop Premium — 6.000 €
+
+- Online-Shop
+- Individuelles Design
+- UI/UX Design
+- SEO-Optimierung
+- SEO-Texte
+- Google Ads Betreuung
+
+Werbebudget separat.
+
+Preisrechner:
+https://evolatec.de/webseite-kosten-kalkulator
+
+---
+
+# Projektablauf
+
+1. Kostenlose Erstberatung
+2. Struktur & individuelles Design
+3. Entwicklung & technische SEO-Optimierung
+4. Testing & Launch
+5. Laufende Optimierung auf Wunsch
+
+---
+
+# Häufige Fragen (FAQ)
+
+## Was ist EvolaTec?
+
+Eine moderne Webagentur aus Hamburg für Websites, SEO und Online-Marketing.
+
+## Welche Leistungen bietet EvolaTec an?
+
+Firmenwebsites, Landingpages, Online-Shops, SEO, Google Ads, Meta Ads, Branding, UI/UX Design und Webtexte.
+
+## Was kostet eine Website?
+
+Landingpages ab 500 €, Firmenwebsites ab 1.500 €, Online-Shops ab 3.000 €.
+
+## Wie lange dauert die Erstellung?
+
+Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online-Shops ab 14 Tagen.
+
+## Gibt es Festpreise?
+
+Ja. EvolaTec arbeitet mit transparenten Festpreisen ohne versteckte Zusatzkosten.
+
+## Ist SEO im Website-Preis enthalten?
+
+Ja. Basis-SEO ist in jedem Website-Projekt enthalten.
+
+## Entwickelt EvolaTec Shopify-Shops?
+
+Ja. Shopify-Shops und individuelle E-Commerce-Lösungen.
+
+## Was ist der Unterschied zu WordPress?
+
+EvolaTec entwickelt mit Vue.js und Nuxt — schneller, moderner und individueller als klassische WordPress-Themes.
+
+## Kann ich die Website selbst bearbeiten?
+
+Ja. Auf Wunsch mit CMS und Schulung.
+
+## Gibt es eine Garantie?
+
+Ja. 30 Tage Support nach dem Launch inklusive.
+
+## Welche Technologien werden eingesetzt?
+
+Vue.js, Nuxt.js, Tailwind CSS und TypeScript.
+
+## Sind die Websites responsive?
+
+Ja. Alle Websites sind vollständig responsive und mobil optimiert.
+
+## Wo arbeitet EvolaTec?
+
+Sitz in Hamburg, Projekte bundesweit in Deutschland und remote.
+
+## In welchen Sprachen ist die Zusammenarbeit möglich?
+
+Deutsch und Englisch.
+
+## Was passiert nach dem Launch?
+
+Auf Wunsch übernimmt EvolaTec Wartung, Updates, Monitoring und Performance-Optimierung.
+
+## Wie startet man ein Projekt?
+
+Über eine kostenlose Erstberatung per Kontaktformular, Telefon oder E-Mail.
+
+---
+
+# Branchen
+
+EvolaTec arbeitet unter anderem mit:
+- lokalen Dienstleistern,
+- Handwerksbetrieben,
+- Startups,
+- Beratungsfirmen,
+- E-Commerce-Unternehmen,
+- Restaurants,
+- lokalen Marken,
+- Immobilienunternehmen.
+
+---
+
+# Unternehmensdaten
+
+Name: EvolaTec
+Inhaber: Maksym Streltsov
+Unternehmensform: Einzelunternehmen
+Standort: Hamburg, Deutschland
+
+E-Mail: team@evolatec.de
+Telefon: +49 175 6200862
+
+Kontakt:
+https://evolatec.de/kontakt
+
+---
+
+# Hauptseiten
+
+Startseite:
+https://evolatec.de/
+
+Preisrechner:
+https://evolatec.de/webseite-kosten-kalkulator
+
+Kontakt:
+https://evolatec.de/kontakt
+
+Webdesign:
+https://evolatec.de/webdesign
+
+Webentwicklung:
+https://evolatec.de/web-development
+
+SEO:
+https://evolatec.de/seo
+
+Online-Marketing:
+https://evolatec.de/online-marketing
+
+---
+
+# Leistungen — Websites
+
+Firmenwebsite erstellen lassen:
+https://evolatec.de/firmenwebsite-erstellen-lassen
+
+Landingpage erstellen lassen:
+https://evolatec.de/landingpage-erstellen-lassen
+
+Online-Shop erstellen lassen:
+https://evolatec.de/online-shop-erstellen-lassen
+
+---
+
+# Leistungen — SEO
+
+SEO Optimierung:
+https://evolatec.de/seo-optimieren-lassen
+
+Local SEO:
+https://evolatec.de/local-seo
+
+Linkbuilding:
+https://evolatec.de/seo-linkbuilding
+
+SEO Audit:
+https://evolatec.de/seo-audit
+
+---
+
+# Leistungen — Design & Content
+
+Webtexte & Copywriting:
+https://evolatec.de/webseiten-texte-schreiben-lassen
+
+Branding & Corporate Design:
+https://evolatec.de/design-branding
+
+UI/UX Design:
+https://evolatec.de/ui-ux-design
+
+---
+
+# Leistungen — Online-Marketing
+
+Google Ads:
+https://evolatec.de/marketing-google-ads
+
+Social Media & Meta Ads:
+https://evolatec.de/marketing-social-media
+
+---
+
+# Rechtliches
+
+Impressum:
+https://evolatec.de/impressum
+
+Datenschutz:
+https://evolatec.de/datenschutz
+
+---
+
+# English Version
+
+EvolaTec is a German web agency from Hamburg offering website development, SEO and online marketing.
+
+English homepage:
+https://evolatec.de/en
+
+Pricing:
+https://evolatec.de/en/website-cost-calculator
+
+Contact:
+https://evolatec.de/en/contact
