@@ -73,6 +73,9 @@
       ></textarea>
     </div>
 
+    <!-- Required by Netlify for AJAX form submissions -->
+    <input type="hidden" name="form-name" value="contact-form" />
+
     <!-- Honeypot — hidden from real users, bots fill it -->
     <div class="hidden" aria-hidden="true">
       <label for="website">Website</label>
@@ -128,8 +131,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
 const form = ref({
   name: '',
   email: '',
@@ -144,6 +145,12 @@ const submitSuccess = ref(false);
 const submitError = ref(false);
 const errorMessage = ref('');
 
+function encodeFormData(data: Record<string, string | boolean>): string {
+  return Object.entries(data)
+    .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(String(v))}`)
+    .join('&');
+}
+
 const handleSubmit = async () => {
   isSubmitting.value = true;
   submitSuccess.value = false;
@@ -151,19 +158,20 @@ const handleSubmit = async () => {
   errorMessage.value = '';
 
   try {
-    await $fetch('/api/contact', {
+    const response = await fetch('/', {
       method: 'POST',
-      body: form.value,
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData({ 'form-name': 'contact-form', ...form.value }),
     });
+
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     submitSuccess.value = true;
     form.value = { name: '', email: '', service: '', message: '', privacy: false, website: '' };
-
     setTimeout(() => { submitSuccess.value = false; }, 6000);
-  } catch (error: any) {
+  } catch {
     submitError.value = true;
-    errorMessage.value = error?.data?.statusMessage || error?.statusMessage || 'Etwas ist schiefgelaufen. Bitte erneut versuchen oder direkt schreiben.';
-    console.error('Form submission error:', error);
+    errorMessage.value = 'Etwas ist schiefgelaufen. Bitte erneut versuchen oder direkt schreiben.';
   } finally {
     isSubmitting.value = false;
   }
