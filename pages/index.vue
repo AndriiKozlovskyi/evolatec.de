@@ -332,151 +332,37 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema, serviceListSchema } from '~/composables/schema/global'
+import { faqSchema, type FAQ } from '~/composables/schema/service'
+
 const { hreflangLinks } = useLanguageSwitcher()
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': ['Organization', 'ProfessionalService'],
-      '@id': 'https://evolatec.de/#organization',
-      name: 'EvolaTec',
-      url: 'https://evolatec.de',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://evolatec.de/logo.png',
-      },
-      description: 'EvolaTec ist eine professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing in Deutschland.',
-      areaServed: { '@type': 'Country', name: 'Germany' },
-      contactPoint: {
-        '@type': 'ContactPoint',
-        contactType: 'customer service',
-        url: 'https://evolatec.de/kontakt',
-        availableLanguage: { '@type': 'Language', name: 'German' },
-      },
-    },
-    {
-      '@type': 'WebSite',
-      '@id': 'https://evolatec.de/#website',
-      name: 'EvolaTec',
-      url: 'https://evolatec.de',
-      description: 'Professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing',
-      publisher: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'WebPage',
-      '@id': 'https://evolatec.de/#webpage',
-      url: 'https://evolatec.de',
-      name: 'EvolaTec – Webagentur für Website, SEO & Online Marketing',
-      description: 'EvolaTec ist Ihre professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing. Moderne Websites ab 3 Tagen Lieferzeit.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'de-DE',
-    },
-    {
-      '@type': 'ItemList',
-      name: 'EvolaTec Leistungen',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          item: {
-            '@type': 'Service',
-            name: 'Landingpage erstellen lassen',
-            description: 'Konversionsstarke One-Pager für Werbung und Leadgenerierung.',
-            url: 'https://evolatec.de/landingpage-erstellen-lassen',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '500', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          item: {
-            '@type': 'Service',
-            name: 'Firmenwebsite erstellen lassen',
-            description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen.',
-            url: 'https://evolatec.de/firmenwebsite-erstellen-lassen',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1500', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          item: {
-            '@type': 'Service',
-            name: 'Online Shop erstellen lassen',
-            description: 'Moderne E-Commerce Lösungen und Shopify Shops.',
-            url: 'https://evolatec.de/online-shop-erstellen-lassen',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '3000', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          item: {
-            '@type': 'Service',
-            name: 'SEO Optimierung',
-            description: 'Mehr Sichtbarkeit bei Google und nachhaltiges Wachstum.',
-            url: 'https://evolatec.de/seo',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '300', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          item: {
-            '@type': 'Service',
-            name: 'Google Ads Betreuung',
-            description: 'Mehr Kundenanfragen durch gezielte Werbekampagnen.',
-            url: 'https://evolatec.de/marketing-google-ads',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '400', priceCurrency: 'EUR' } },
-          },
-        },
-      ],
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'Was kostet eine professionelle Website?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Wie lange dauert die Erstellung?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online Shops ab 14 Tagen. Der genaue Zeitrahmen hängt von Umfang und Anforderungen ab.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Ist SEO inklusive?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Entwickeln Sie Shopify Shops?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Gibt es Festpreise?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Was ist nach dem Launch?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an.' },
-        },
-      ],
-    },
-  ],
-};
+const homeFaqs: FAQ[] = [
+  { question: 'Was kostet eine professionelle Website?', answer: 'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.' },
+  { question: 'Wie lange dauert die Erstellung?', answer: 'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online Shops ab 14 Tagen. Der genaue Zeitrahmen hängt von Umfang und Anforderungen ab.' },
+  { question: 'Ist SEO inklusive?', answer: 'Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.' },
+  { question: 'Entwickeln Sie Shopify Shops?', answer: 'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.' },
+  { question: 'Gibt es Festpreise?', answer: 'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.' },
+  { question: 'Was ist nach dem Launch?', answer: 'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an.' },
+];
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({
+    url: 'https://evolatec.de',
+    name: 'EvolaTec – Webagentur für Website, SEO & Online Marketing',
+    description: 'EvolaTec ist Ihre professionelle Webagentur für Website-Erstellung, SEO-Optimierung und Online Marketing. Moderne Websites ab 3 Tagen Lieferzeit.',
+  }),
+  serviceListSchema([
+    { name: 'Landingpage erstellen lassen', description: 'Konversionsstarke One-Pager für Werbung und Leadgenerierung.', url: 'https://evolatec.de/landingpage-erstellen-lassen', minPrice: 500 },
+    { name: 'Firmenwebsite erstellen lassen', description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen.', url: 'https://evolatec.de/firmenwebsite-erstellen-lassen', minPrice: 1500 },
+    { name: 'Online Shop erstellen lassen', description: 'Moderne E-Commerce Lösungen und Shopify Shops.', url: 'https://evolatec.de/online-shop-erstellen-lassen', minPrice: 3000 },
+    { name: 'SEO Optimierung', description: 'Mehr Sichtbarkeit bei Google und nachhaltiges Wachstum.', url: 'https://evolatec.de/seo', minPrice: 300 },
+    { name: 'Google Ads Betreuung', description: 'Mehr Kundenanfragen durch gezielte Werbekampagnen.', url: 'https://evolatec.de/marketing-google-ads', minPrice: 400 },
+  ]),
+  faqSchema(homeFaqs),
+);
 
 useHead({
   title: 'EvolaTec – Webagentur für Website, SEO & Online Marketing',
