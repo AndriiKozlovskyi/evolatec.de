@@ -3,8 +3,9 @@
     <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-stack-lg">
       <!-- Brand Section -->
       <div class="space-y-4 sm:col-span-2 md:col-span-1">
-        <div class="">
-          <NuxtImg src="/logo.png" alt="EvolaTec Logo" :width="310" :height="220" format="webp" class="w-20 h-full brightness-0" loading="lazy" />
+        <div class="flex flex-row items-center gap-3">
+          <NuxtImg src="/logo.png" alt="EvolaTec Logo" :width="60" :height="60" format="webp" class="h-9 w-9" loading="eager" />
+                <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>     
         </div>
         <p class="text-on-surface-variant text-sm md:text-body-md md:pr-8">
           {{ isEnglish ? 'Websites, SEO and marketing — everything from one source.' : 'Websites, SEO und Marketing — alles aus einer Hand.' }}
