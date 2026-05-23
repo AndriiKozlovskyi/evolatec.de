@@ -470,23 +470,38 @@ const benefits = [
 const faqs = [
   {
     question: 'How much does a professional business website cost?',
-    answer: 'Costs depend on the scope of the project. Professional business websites start from €1,500 as a fixed price at EvolaTec. More complex websites with custom features or multilingual content are priced accordingly — we advise you transparently before the project starts.',
+    answer:
+      'Business website costs depend on scope. At EvolaTec, modern business websites start as a fixed price from €1,500 including design, development, hosting setup and basic SEO. Larger corporate websites with custom features, multilingual content or integrations are priced accordingly – we provide a transparent quote with no hidden costs before the project starts.',
   },
   {
     question: 'Are there fixed prices for business websites?',
-    answer: 'Yes, EvolaTec offers transparent fixed prices for professional websites. You know the cost from the start — no hidden charges during development.',
-  },
-  {
-    question: 'Are the websites SEO optimised?',
-    answer: 'Yes, all websites are developed with technical SEO built in — clean URL structure, optimised meta data, fast load times and semantic HTML for the best visibility on Google.',
-  },
-  {
-    question: 'Are the websites responsive?',
-    answer: 'Yes, all websites are developed Mobile First and work perfectly on smartphones, tablets and desktop devices.',
+    answer:
+      'Yes, EvolaTec works exclusively with transparent fixed prices for professional business websites. You know the cost from day one – there are no surprise charges during development. Optional add-ons such as additional languages, blogs or booking systems are listed separately and can be added flexibly.',
   },
   {
     question: 'How long does it take to develop a business website?',
-    answer: 'A professional business website can be live in as little as 7 working days at EvolaTec. Larger websites with more content and features typically take 2–4 weeks.',
+    answer:
+      'A professional business website can go live in as little as 7 working days at EvolaTec. Larger corporate websites with multiple languages, booking systems or integrations take 2–4 weeks. The exact timeframe depends on how quickly content, images and approvals are provided – for urgent projects we also offer express delivery.',
+  },
+  {
+    question: 'Are the business websites SEO-optimised?',
+    answer:
+      'Yes, every business website is developed with technical SEO built in from the start – clean URL structure, optimised meta data, fast load times, mobile optimisation, structured data and semantic HTML. Your website is ready for strong Google rankings from day one. For deeper SEO strategies we offer additional SEO packages.',
+  },
+  {
+    question: 'Are the business websites responsive and mobile-optimised?',
+    answer:
+      'Yes, all websites are developed Mobile-First and work perfectly on smartphones, tablets and desktop devices. We test every project on multiple screen sizes, browsers and operating systems. Since Google uses Mobile-First Indexing, responsive design is now a prerequisite for good rankings and non-negotiable.',
+  },
+  {
+    question: 'Can I maintain the business website myself later?',
+    answer:
+      'Yes, on request we build your business website with a modern headless CMS like Storyblok, Strapi or Sanity so you can update text, images and blog posts yourself. Alternatively we take care of ongoing maintenance under a service agreement starting from €30/month.',
+  },
+  {
+    question: 'What is included after the business website launch?',
+    answer:
+      'After launch you receive a short walkthrough and an optional maintenance agreement with regular updates, security patches, backups and minor content changes. We can also seamlessly take over SEO management, Google Ads campaigns or later extensions to keep your website competitive long-term.',
   },
 ];
 </script>

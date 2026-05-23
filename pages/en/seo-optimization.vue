@@ -265,10 +265,40 @@ const optimizationPricingPlans = [
 ];
 
 const optimizationFaqs = [
-  { question: 'How much does technical SEO optimisation cost?', answer: 'Basic optimisations start from €300. Comprehensive SEO optimisations range from €500–€1,200. Exact costs depend on the scope of work.' },
-  { question: 'How long does the optimisation take?', answer: 'Small optimisations take a few days, larger technical projects 1–3 weeks. This depends on the complexity of your website.' },
-  { question: 'Does technical SEO improve my rankings?', answer: 'Yes, technical SEO is an important foundation for better Google rankings. Without a solid technical base you lose visibility.' },
-  { question: 'Do you optimise existing websites?', answer: 'Yes, we optimise existing websites regardless of the system or framework used.' },
-  { question: 'Can I implement the optimisations myself?', answer: 'Yes, we create a detailed implementation plan. We are happy to support you with any technical questions.' },
+  {
+    question: 'How much does technical SEO optimisation cost?',
+    answer:
+      'Basic SEO optimisations at EvolaTec start from €300 and fix the most important technical issues (load time, meta data, indexing). Comprehensive technical SEO packages with Core Web Vitals optimisation, Schema.org, on-page and structure rework cost €500–€1,200. For complex websites or online shops, individual projects from €2,000 are realistic. Costs depend on scope and complexity of your website.',
+  },
+  {
+    question: 'How long does SEO optimisation take?',
+    answer:
+      'Smaller technical optimisations are usually implemented within 3–5 working days. Larger projects such as PageSpeed optimisation, on-page rework or structural adjustments take 1–3 weeks. First improvements in Google rankings are usually visible after 4–8 weeks, once Google has indexed the changes.',
+  },
+  {
+    question: 'Does technical SEO improve my Google rankings?',
+    answer:
+      'Yes, technical SEO is the foundation for good Google rankings. A fast, technically clean website with strong Core Web Vitals is favoured by Google. Problems like slow load times, broken indexing or poor mobile optimisation lead directly to ranking losses. Without a solid technical base even the best content and backlinks deliver little.',
+  },
+  {
+    question: 'What are Core Web Vitals and why are they important?',
+    answer:
+      'Core Web Vitals are three Google metrics for user experience: LCP (loading), INP (interactivity) and CLS (visual stability). Since 2021 they are an official ranking factor. Websites with poor Core Web Vitals lose rankings, visibility and conversions. We optimise your website for green scores in all three areas.',
+  },
+  {
+    question: 'Do you also optimise existing websites?',
+    answer:
+      'Yes, we optimise existing websites regardless of the CMS or framework used – Storyblok, Shopify, TYPO3, Drupal, Webflow, Nuxt, Vue, React and others. We first analyse the current state, identify the biggest issues and optimise specifically with the highest ranking leverage first.',
+  },
+  {
+    question: 'Can I implement the SEO optimisations myself?',
+    answer:
+      'Yes, on request we create a detailed implementation plan with concrete instructions for your team or developers. For technical questions or code changes we support you hourly (from €95/hour) or take over the full implementation if no internal capacity is available.',
+  },
+  {
+    question: 'Which areas does a complete SEO optimisation cover?',
+    answer:
+      'A complete SEO optimisation covers: technology (load time, Core Web Vitals, mobile, HTTPS, crawling), on-page (meta data, headings, content optimisation, internal links), structured data (Schema.org), URL structure, image optimisation (alt text, WebP, lazy loading) and indexing/XML sitemaps. On request we also add keyword strategy and content optimisation.',
+  },
 ];
 </script>

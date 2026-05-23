@@ -193,22 +193,37 @@ const faqs = [
   {
     question: 'Was kostet es, eine Website erstellen zu lassen?',
     answer:
-      'Die Kosten hängen vom Umfang des Projekts ab. Einfache Unternehmenswebsites starten in der Regel bei einigen hundert Euro, während die Kosten für komplexe Plattformen und Onlineshops entsprechend höher sind.',
+      'Die Kosten für eine Website hängen vom Umfang und der Komplexität ab. Landingpages beginnen bei 500€, professionelle Firmenwebsites ab 1.500€ und Onlineshops ab 3.000€. Komplexere Plattformen mit individuellen Funktionen oder Anbindungen kosten entsprechend mehr. Wir arbeiten mit transparenten Festpreisen und erstellen vor Projektstart ein detailliertes Angebot ohne versteckte Zusatzkosten.',
+  },
+  {
+    question: 'Wie lange dauert die Erstellung einer Website?',
+    answer:
+      'Eine Landingpage ist meist innerhalb von 3–7 Tagen fertig, eine Firmenwebsite in 2–4 Wochen und ein Onlineshop in 4–8 Wochen. Die Dauer hängt vom Funktionsumfang und davon ab, wie schnell Texte, Bilder und Feedback bereitgestellt werden. Für dringende Projekte bieten wir auch beschleunigte Umsetzung an.',
   },
   {
     question: 'Warum ist professionelle Webentwicklung wichtig?',
     answer:
-      'Professionelle Websites sorgen für Vertrauen, bessere Nutzererfahrung und höhere Conversion-Raten. Sie sind technisch optimiert, SEO-ready und für alle Geräte ausgelegt.',
+      'Eine professionelle Website ist heute oft der erste Kontaktpunkt mit potenziellen Kunden – sie entscheidet über Vertrauen und Conversion. Professionell entwickelte Websites laden schnell, sind SEO-optimiert, mobil perfekt nutzbar und sicher. Selbstgebaute Lösungen oder veraltete Templates kosten am Ende meist mehr durch verlorene Anfragen, schlechte Google-Rankings und technische Probleme.',
   },
   {
-    question: 'Entwickelt EvolaTec auch Onlineshops?',
+    question: 'Welches CMS oder Framework empfehlen Sie?',
     answer:
-      'Ja, EvolaTec entwickelt moderne E-Commerce Lösungen und professionelle Onlineshops für Unternehmen jeder Größe.',
+      'Das hängt von Ihren Anforderungen ab: Für individuelle, performante Websites nutzen wir Nuxt, Vue.js und Tailwind CSS. Wenn Sie Inhalte selbst pflegen möchten, empfehlen wir Storyblok als modernes Headless CMS – flexibel, schnell und mit komfortablem Visual Editor. Für Onlineshops nutzen wir Shopify oder individuelle E-Commerce-Lösungen. Wir wählen die Technologie nach Ihrem Use Case – nicht nach unserer Vorliebe.',
   },
   {
-    question: 'Sind die Websites responsive?',
+    question: 'Sind die Websites SEO-optimiert?',
     answer:
-      'Ja, alle Websites werden Mobile First entwickelt und für Smartphones, Tablets und Desktop-Geräte optimiert.',
+      'Ja, jede von uns entwickelte Website ist von Beginn an SEO-optimiert: sauberer Code, strukturierte Daten, schnelle Ladezeiten, mobile Optimierung, korrekte Meta-Tags und logische Seitenstruktur. Für weitergehende SEO-Strategien wie Keyword-Recherche, Content-Optimierung und Linkbuilding bieten wir zusätzliche SEO-Pakete an.',
+  },
+  {
+    question: 'Entwickelt EvolaTec auch Onlineshops und Webanwendungen?',
+    answer:
+      'Ja, neben klassischen Firmenwebsites entwickeln wir professionelle Onlineshops, individuelle Webanwendungen, SaaS-Plattformen, Buchungssysteme und Schnittstellen zu Drittsystemen wie CRM, ERP oder Zahlungsanbietern. Wir setzen sowohl Standard-Lösungen (Shopify, Storyblok) als auch maßgeschneiderte Entwicklungen um.',
+  },
+  {
+    question: 'Sind die Websites responsive und für Mobilgeräte optimiert?',
+    answer:
+      'Ja, alle Websites werden Mobile-First entwickelt und für Smartphones, Tablets und Desktop optimiert. Da Google Mobile-First-Indexing nutzt, ist responsive Design heute Pflicht – nicht nur für Nutzer, sondern auch für Ihre Google-Rankings. Wir testen jedes Projekt auf verschiedenen Geräten, Browsern und Bildschirmgrößen.',
   },
 ];
 

@@ -221,27 +221,37 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Firmenwebsite?',
     answer:
-      'Die Kosten hängen vom Umfang der Website ab. Moderne Firmenwebsites starten bei EvolaTec ab 1.500€ als Festpreis. Komplexere Unternehmenswebsites mit individuellen Funktionen oder mehrsprachigen Inhalten entsprechend höher — wir beraten Sie transparent vor Projektstart.',
+      'Die Kosten für eine Firmenwebsite hängen vom Umfang ab. Bei EvolaTec starten moderne Firmenwebsites als Festpreis ab 1.500€ inklusive Design, Entwicklung, Hosting-Setup und Basis-SEO. Umfangreichere Unternehmenswebsites mit individuellen Funktionen, mehrsprachigen Inhalten oder Schnittstellen kosten entsprechend mehr – wir erstellen vor Projektstart ein transparentes Angebot ohne versteckte Kosten.',
   },
   {
     question: 'Gibt es Festpreise für Firmenwebsites?',
     answer:
-      'Ja, EvolaTec bietet transparente Festpreise für professionelle Webseiten und Firmenwebsites. Sie wissen von Anfang an, was Ihre Website kostet — keine versteckten Zusatzkosten während der Entwicklung.',
-  },
-  {
-    question: 'Sind die Websites SEO optimiert?',
-    answer:
-      'Ja, alle Websites werden technisch SEO optimiert entwickelt — mit sauberer URL-Struktur, optimierten Meta-Daten, schnellen Ladezeiten und semantischem HTML für die beste Sichtbarkeit bei Google.',
-  },
-  {
-    question: 'Sind die Webseiten responsive?',
-    answer:
-      'Ja, alle Websites werden Mobile First entwickelt und funktionieren optimal auf Smartphones, Tablets und Desktop-Geräten — perfekt für jeden Nutzer und jedes Endgerät.',
+      'Ja, EvolaTec arbeitet ausschließlich mit transparenten Festpreisen für professionelle Firmenwebsites. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine Zusatzkosten während der Entwicklung. Optionale Erweiterungen wie zusätzliche Sprachen, Blogs oder Buchungssysteme werden separat ausgewiesen und können flexibel hinzugebucht werden.',
   },
   {
     question: 'Wie lange dauert die Entwicklung einer Firmenwebsite?',
     answer:
-      'Eine professionelle Firmenwebsite ist bei EvolaTec bereits ab 7 Arbeitstagen live. Umfangreichere Unternehmenswebsites benötigen je nach Inhalt und Funktionen 2–4 Wochen.',
+      'Eine professionelle Firmenwebsite ist bei EvolaTec bereits ab 7 Arbeitstagen live. Umfangreichere Unternehmenswebsites mit mehreren Sprachen, Buchungssystemen oder Schnittstellen benötigen 2–4 Wochen. Die genaue Dauer hängt davon ab, wie schnell Texte, Bilder und Freigaben bereitgestellt werden – für dringende Projekte bieten wir auch Express-Umsetzung an.',
+  },
+  {
+    question: 'Sind die Firmenwebsites SEO-optimiert?',
+    answer:
+      'Ja, jede Firmenwebsite wird von Beginn an technisch SEO-optimiert entwickelt – mit sauberer URL-Struktur, optimierten Meta-Daten, schnellen Ladezeiten, mobiler Optimierung, strukturierten Daten und semantischem HTML. So ist Ihre Website ab dem ersten Tag bereit für gute Google-Rankings. Für weitergehende SEO-Strategien bieten wir zusätzliche SEO-Pakete an.',
+  },
+  {
+    question: 'Sind die Firmenwebsites responsive und mobil optimiert?',
+    answer:
+      'Ja, alle Websites werden Mobile-First entwickelt und funktionieren optimal auf Smartphones, Tablets und Desktop-Geräten. Wir testen jedes Projekt auf verschiedenen Bildschirmgrößen, Browsern und Betriebssystemen. Da Google Mobile-First-Indexing nutzt, ist responsive Design heute Voraussetzung für gute Rankings und nicht verhandelbar.',
+  },
+  {
+    question: 'Kann ich die Firmenwebsite später selbst pflegen?',
+    answer:
+      'Ja, auf Wunsch entwickeln wir Ihre Firmenwebsite mit einem modernen Headless CMS wie Storyblok, Strapi oder Sanity, sodass Sie Texte, Bilder und Blog-Beiträge selbst aktualisieren können. Alternativ übernehmen wir die laufende Pflege im Rahmen eines Wartungsvertrags ab 30€/Monat.',
+  },
+  {
+    question: 'Was ist nach dem Launch einer Firmenwebsite enthalten?',
+    answer:
+      'Nach dem Launch erhalten Sie eine kurze Einweisung und auf Wunsch eine Wartungsvereinbarung mit regelmäßigen Updates, Sicherheits-Patches, Backups und kleinen inhaltlichen Anpassungen. Auch SEO-Betreuung, Google-Ads-Kampagnen oder spätere Erweiterungen können wir nahtlos übernehmen, damit Ihre Website langfristig wettbewerbsfähig bleibt.',
   },
 ];
 

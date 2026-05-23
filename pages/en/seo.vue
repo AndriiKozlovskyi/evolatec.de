@@ -307,28 +307,39 @@ const seoChecklist = [
 
 const seoFaqs = [
   {
-    question: 'How long does SEO take?',
-    answer: 'First results are typically visible after 2–3 months. Sustainable search engine optimisation is however a long-term process that requires continuous work.',
+    question: 'How long does SEO take to show first results?',
+    answer:
+      'First improvements in Google rankings are usually measurable after 2–3 months. Noticeable increases in organic traffic appear after 4–6 months, and sustainable top positions after 6–12 months. Search engine optimisation is a long-term process: continuous work on technology, content and backlinks builds a competitive advantage that paid advertising cannot replace.',
   },
   {
-    question: 'How much does professional SEO cost?',
-    answer: 'An SEO audit starts from €100, basic SEO optimisation from €300, monthly management from €300/month. Exact prices depend on scope and target audience.',
+    question: 'How much does professional SEO cost for businesses?',
+    answer:
+      'An SEO audit starts from €100, technical SEO optimisation from €300 and ongoing SEO management from €300 per month. Exact costs depend on the competition in your industry, the current state of your website and your ranking goals. In a free initial consultation we put together a transparent SEO offer tailored to your budget.',
   },
   {
-    question: 'Is SEO better than advertising?',
-    answer: 'SEO delivers cheaper traffic in the long run, while advertising provides immediate results. Both strategies work best together.',
+    question: 'What is the difference between SEO and Google Ads?',
+    answer:
+      'SEO delivers organic, unpaid rankings on Google and provides the cheapest long-term traffic. Google Ads bring visitors immediately but cost money for every click. In practice both channels complement each other: ads deliver fast results while SEO builds stable visibility, trust and predictable leads over months.',
   },
   {
-    question: 'Do you optimise international websites?',
-    answer: 'Yes, we offer multilingual and international SEO strategies for businesses that want to grow globally.',
+    question: 'What are the most important SEO ranking factors?',
+    answer:
+      'Google evaluates over 200 factors – the most important are high-quality content, a clean technical foundation (page speed, mobile optimisation, Core Web Vitals), a clear site structure, topic-relevant keywords and trustworthy backlinks. We optimise every area as part of our SEO management and prioritise the actions with the biggest ranking impact for your industry.',
   },
   {
     question: 'What is included in the SEO audit?',
-    answer: 'Technical analysis, on-page check, competitor analysis, keyword research and a detailed action plan.',
+    answer:
+      'Our SEO audit covers a technical analysis (page speed, indexing, crawling), an on-page check (meta data, headings, content), a keyword and competitor analysis and a backlink review. You receive a prioritised action plan with concrete recommendations that you can implement yourself or have us execute.',
   },
   {
-    question: 'Can I cancel SEO on a monthly basis?',
-    answer: 'Our SEO management contracts are flexible. You only pay for the services you actually use.',
+    question: 'Do you optimise international and multilingual websites?',
+    answer:
+      'Yes, we develop international SEO strategies with hreflang implementation, localised keywords and country-specific content. This way you rank in every target market with the right language version and avoid duplicate content issues. Particularly relevant for businesses growing in Germany, Austria, Switzerland or internationally.',
+  },
+  {
+    question: 'Can I cancel SEO management on a monthly basis?',
+    answer:
+      'Yes, our SEO contracts are flexible and can be cancelled without a long minimum term. You only pay for the services you actually use and retain full cost control. We rely on results rather than contractual commitment – clients who are happy with our work stay long-term.',
   },
 ];
 </script>

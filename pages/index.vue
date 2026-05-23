@@ -338,12 +338,41 @@ import { faqSchema, type FAQ } from '~/composables/schema/service'
 const { hreflangLinks } = useLanguageSwitcher()
 
 const homeFaqs: FAQ[] = [
-  { question: 'Was kostet eine professionelle Website?', answer: 'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.' },
-  { question: 'Wie lange dauert die Erstellung?', answer: 'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online Shops ab 14 Tagen. Der genaue Zeitrahmen hängt von Umfang und Anforderungen ab.' },
-  { question: 'Ist SEO inklusive?', answer: 'Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.' },
-  { question: 'Entwickeln Sie Shopify Shops?', answer: 'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.' },
-  { question: 'Gibt es Festpreise?', answer: 'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.' },
-  { question: 'Was ist nach dem Launch?', answer: 'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an.' },
+  {
+    question: 'Was kostet eine professionelle Website?',
+    answer:
+      'Die Preise hängen vom Projekt-Typ ab: Landingpages beginnen bei 500€, professionelle Firmenwebsites ab 1.500€, Onlineshops ab 3.000€ und komplexe Plattformen ab 6.000€. Da jedes Projekt unterschiedlich ist, erstellen wir vor Beginn ein transparentes Festpreisangebot ohne versteckte Kosten. Nutzen Sie auch unseren Preisrechner, um die Kosten für Ihr Projekt schnell zu berechnen.',
+  },
+  {
+    question: 'Wie lange dauert die Erstellung einer Website?',
+    answer:
+      'Landingpages sind bereits ab 3 Werktagen live, professionelle Firmenwebsites in 2–4 Wochen, Onlineshops in 4–8 Wochen und komplexe Webanwendungen in 6–16 Wochen. Der genaue Zeitrahmen hängt vom Umfang und der Geschwindigkeit der Inhaltsbereitstellung ab. Bei dringenden Projekten bieten wir auch Express-Umsetzung an.',
+  },
+  {
+    question: 'Ist SEO bei der Website inklusive?',
+    answer:
+      'Ja, Basis-SEO ist in jedem Projekt enthalten: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung, strukturierte Daten und korrekte Meta-Tags. So sind Ihre Websites von Beginn an für Google bereit. Für weitergehende SEO-Strategien wie Keyword-Recherche, Content-Optimierung und Linkbuilding bieten wir zusätzliche SEO-Pakete ab 300€/Monat an.',
+  },
+  {
+    question: 'Welche Leistungen bietet EvolaTec an?',
+    answer:
+      'EvolaTec bietet ein vollständiges digitales Leistungsspektrum: Webdesign und Webentwicklung (Landingpages, Firmenwebsites, Onlineshops), SEO (Audit, technische Optimierung, Local SEO, Linkbuilding), Online Marketing (Google Ads, Meta Ads), Branding und Corporate Design, UI/UX Design sowie Website-Texte und Content Marketing. Alles aus einer Hand – ohne Schnittstellenprobleme zwischen verschiedenen Dienstleistern.',
+  },
+  {
+    question: 'Entwickeln Sie Shopify Shops und individuelle Onlineshops?',
+    answer:
+      'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce-Lösungen mit Frameworks wie Nuxt und Storyblok. Egal ob schneller Markt-Start mit Shopify oder komplexe Custom-Lösung mit ERP-Anbindung, B2B-Funktionen oder mehrsprachigem Setup – wir wählen die Plattform, die zu Ihrem Use Case passt.',
+  },
+  {
+    question: 'Gibt es Festpreise für Websites?',
+    answer:
+      'Ja, wir arbeiten ausschließlich mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine versteckten Zusatzkosten während der Entwicklung. Optionale Erweiterungen wie zusätzliche Sprachen, Buchungssysteme oder spezielle Schnittstellen werden separat ausgewiesen und können flexibel hinzugebucht werden.',
+  },
+  {
+    question: 'Was ist nach dem Website-Launch enthalten?',
+    answer:
+      'Nach dem Launch erhalten Sie 30 Tage kostenlosen Support. Anschließend bieten wir Wartungspakete ab 30€/Monat mit regelmäßigen Updates, Sicherheits-Patches, Backups und Performance-Monitoring. Auf Wunsch übernehmen wir auch laufende SEO-Betreuung, Marketing-Kampagnen und Content-Updates, damit Ihre Website langfristig wettbewerbsfähig bleibt.',
+  },
 ];
 
 const schemaMarkup = buildSchema(
@@ -521,37 +550,6 @@ const results = [
   { icon: 'trending_up', label: 'Mehr Verkäufe' },
 ];
 
-const faqs = [
-  {
-    question: 'Was kostet eine professionelle Website?',
-    answer:
-      'Die Preise beginnen ab 500€ für Landingpages und ab 1.500€ für Firmenwebsites. Da jedes Projekt unterschiedlich ist, erstellen wir Ihnen gerne ein transparentes Angebot.',
-  },
-  {
-    question: 'Wie lange dauert die Erstellung?',
-    answer:
-      'Landingpages ab 3 Tagen, Firmenwebsites ab 7 Tagen, Online Shops ab 14 Tagen. Der genaue Zeitrahmen hängt von Umfang und Anforderungen ab.',
-  },
-  {
-    question: 'Ist SEO inklusive?',
-    answer:
-      'Ja, Basis-SEO ist in jedem Projekt enthalten. Dazu gehören technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Metadaten.',
-  },
-  {
-    question: 'Entwickeln Sie Shopify Shops?',
-    answer:
-      'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce Lösungen. Egal ob einfacher Shop oder komplexe Integration – wir haben die nötige Expertise.',
-  },
-  {
-    question: 'Gibt es Festpreise?',
-    answer:
-      'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet, es gibt keine versteckten Zusatzkosten.',
-  },
-  {
-    question: 'Was ist nach dem Launch?',
-    answer:
-      'Nach dem Launch unterstützen wir Sie bei der Wartung und Optimierung. Auf Wunsch bieten wir Ihnen auch regelmäßige Updates, Monitoring und Performance-Verbesserungen an.',
-  },
-];
+const faqs = homeFaqs;
 </script>
 

@@ -392,19 +392,38 @@ const pricingItems = [
 const marketingFaqs = [
   {
     question: 'What does an online marketing agency do?',
-    answer: 'An online marketing agency develops strategies, campaigns and digital measures for reach, leads and revenue growth.',
+    answer:
+      'An online marketing agency develops and implements digital strategies that generate more reach, qualified leads and predictable revenue growth. This includes search engine optimisation (SEO), paid advertising (Google Ads, Meta Ads), content marketing, conversion optimisation and marketing analytics. We coordinate all channels so you achieve the best ratio of ad spend to results.',
   },
   {
     question: 'Which marketing services does EvolaTec offer?',
-    answer: 'SEO, Google Ads, branding, content marketing, conversion optimisation and digital strategies.',
+    answer:
+      'EvolaTec offers a complete online marketing spectrum: search engine optimisation (SEO), Google Ads (Search, Display, Shopping, YouTube), Meta Ads (Instagram, Facebook), Local SEO, content marketing, link building, branding and conversion/landing page optimisation. On request we also handle the right tracking, analytics setup and monthly performance reports.',
   },
   {
     question: 'How much does professional online marketing cost?',
-    answer: 'Google Ads management from €400/month, Meta Ads from €300/month. Ad budget is set separately.',
+    answer:
+      'Our marketing management starts from €300/month for Meta Ads and €400/month for Google Ads. SEO packages start from €300/month, an online marketing strategy from €800 one-off. The ad budget for paid channels is set separately and paid directly to Google or Meta – typically €500–€2,000/month depending on industry and target market.',
+  },
+  {
+    question: 'What is the difference between SEO and online marketing?',
+    answer:
+      'SEO is one part of online marketing and focuses on organic Google rankings. Online marketing additionally includes paid advertising (Google Ads, Meta Ads), social media, content marketing, email marketing and conversion optimisation. SEO builds stable long-term visibility, paid channels deliver immediate leads – the combination produces the best results.',
+  },
+  {
+    question: 'How quickly do I see results from online marketing?',
+    answer:
+      'Paid channels like Google Ads and Meta Ads deliver clicks and leads within the first few days. SEO and content marketing show first impact after 2–3 months, sustainable rankings after 6–12 months. We recommend starting short-term (ads) and long-term measures (SEO, content) in parallel to see results quickly while building growth.',
+  },
+  {
+    question: 'Which marketing channel is best for my business?',
+    answer:
+      'This depends on industry, audience and sales model. Local service providers usually benefit from Local SEO and Google Ads, e-commerce from Meta Ads and Shopping Ads, B2B companies from LinkedIn Ads and SEO. We analyse your audience and recommend the channels with the best balance of reach, cost and conversion.',
   },
   {
     question: 'Which businesses are suited for online marketing?',
-    answer: 'Local businesses, service providers, start-ups, online shops and digital brands.',
+    answer:
+      'Online marketing is suitable for almost any company that wants to gain digital visibility: local service providers, online shops, tradespeople, medical practices, coaches, start-ups, SaaS and B2B companies. The key is that your target audience is reachable online and you are willing to invest in the right channels.',
   },
 ];
 </script>

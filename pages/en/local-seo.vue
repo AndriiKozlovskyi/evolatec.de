@@ -278,24 +278,39 @@ const industries = [
 
 const localFaqs = [
   {
-    question: 'What is local SEO?',
-    answer: 'Local SEO optimises businesses for local search queries and Google Maps. The goal is to ensure you get found in your region on Google.',
+    question: 'What is local SEO and how does it work?',
+    answer:
+      'Local SEO is search engine optimisation for local search queries like "hairdresser Munich" or "lawyer near me". The goal is visibility in Google Maps, the Local Pack (top-3 map results) and local organic rankings. We optimise Google Business Profile, local keywords, NAP data (name, address, phone), reviews, local backlinks and structured data.',
   },
   {
-    question: 'How long does local SEO take?',
-    answer: 'First improvements are often visible within a few weeks. Sustainable results develop over several months.',
+    question: 'What is the difference between local SEO and regular SEO?',
+    answer:
+      'Classic SEO targets nationwide or international rankings for general search queries. Local SEO focuses on regional visibility, Google Maps and the Local Pack. The most important local SEO factors are the Google Business Profile, proximity to the searcher, relevance and reviews. Both disciplines complement each other – businesses targeting local customers usually need both.',
   },
   {
-    question: 'How much does local SEO cost?',
-    answer: 'Local SEO starts from €400. Monthly management from €300. Exact costs depend on your industry and region.',
+    question: 'How much does professional local SEO cost?',
+    answer:
+      'Google Business Profile optimisation at EvolaTec starts from €400. Basic local SEO including local keyword strategy and website integration from €500. Ongoing local SEO management with review management and ranking monitoring from €300/month. Costs depend on industry, region and competition – highly contested locations require more effort.',
   },
   {
-    question: 'Is Google Maps important?',
-    answer: 'Yes, many local customers search directly via Google Maps. Good Google Business optimisation is essential.',
+    question: 'How long does local SEO take to show first results?',
+    answer:
+      'First improvements are often visible after 2–4 weeks, especially with Google Business optimisation. Solid rankings in the Local Pack emerge after 2–4 months, sustainable top placements after 6–12 months – depending on industry, competition and region. Local SEO often works faster than classic SEO because regional competition is limited.',
   },
   {
-    question: 'Do you have experience in my industry?',
-    answer: 'We work with many local businesses: doctors, tradespeople, restaurants, retail and service providers. We are happy to discuss your industry.',
+    question: 'How important is Google Maps for my business?',
+    answer:
+      'Google Maps is often more important for local businesses than classic Google search. Over 60% of smartphone users search for local providers directly via Maps. An optimised Google Business Profile with photos, opening hours, reviews and correct contact details can generate more calls and enquiries than the website itself – especially for restaurants, doctors and tradespeople.',
+  },
+  {
+    question: 'How important are Google reviews for local SEO?',
+    answer:
+      'Google reviews are one of the strongest ranking factors in local SEO. Quantity, recency and review text influence both rankings and click-through rate. We develop strategies for active review management: automated review requests after customer contact, responses to positive and negative reviews, and handling unfair reviews.',
+  },
+  {
+    question: 'Which industries benefit from local SEO?',
+    answer:
+      'Local SEO is worthwhile for any business with a regional catchment area: restaurants, cafés, doctors and clinics, tradespeople and construction companies, lawyers and tax consultants, real estate agents, gyms, coaches, retail and local service providers. Multi-location businesses also benefit – we optimise multi-location setups with separate Google Business Profiles for each location.',
   },
 ];
 </script>

@@ -195,20 +195,39 @@ const trustChips = [
 
 const faqs = [
   {
-    question: 'What happens after my enquiry?',
-    answer: 'We review your enquiry and get back to you within 24 hours with a no-obligation quote or appointment suggestions for an initial conversation.',
+    question: 'What happens after my contact enquiry?',
+    answer:
+      'We review your enquiry and get back to you within 24 hours – often the same day – with a no-obligation quote or appointment suggestions for an initial conversation. In the initial call we clarify your goals, requirements and budget. You then receive a detailed fixed-price quote with deliverables, timeline and transparent terms.',
   },
   {
-    question: 'Is the initial consultation really free?',
-    answer: 'Yes. The 15-minute initial conversation and the resulting quote are completely free and non-binding.',
+    question: 'Is the initial consultation really free and non-binding?',
+    answer:
+      'Yes, the 15- to 30-minute initial conversation and the resulting quote are completely free and non-binding. You take on no obligation – if our quote or approach is not the right fit, that is absolutely fine. We are happy if we can add value during the consultation regardless.',
   },
   {
-    question: 'Can I start with a small budget?',
-    answer: 'Yes. Landing pages start from €500, business websites from €1,500. Use our price calculator to get an instant estimate.',
+    question: 'Can I start with a small budget at EvolaTec?',
+    answer:
+      'Yes, landing pages start from €500, business websites from €1,500 and SEO packages from €100. Use our pricing calculator for an immediate estimate of your project. If your budget is limited we advise on sensible entry-level solutions and gradual expansion – rather than pushing you towards overpriced complete packages.',
+  },
+  {
+    question: 'How quickly does EvolaTec respond to enquiries?',
+    answer:
+      'We usually respond to contact enquiries within a few hours, but at the latest within 24 hours on working days. For urgent matters you can also reach us directly via WhatsApp – we typically reply within an hour. Existing clients have a personal contact with direct availability.',
   },
   {
     question: 'When are you available?',
-    answer: 'Monday to Friday, 9am–5pm. For urgent enquiries, simply message us on WhatsApp — we usually respond within 1 hour.',
+    answer:
+      'We are available Monday to Friday from 9am–5pm by phone and email. For urgent enquiries outside those hours simply message us on WhatsApp – we usually respond within an hour. Video call appointments can also be arranged flexibly in the evening or on Saturday by agreement.',
+  },
+  {
+    question: 'In which regions does EvolaTec operate?',
+    answer:
+      'EvolaTec works location-independently for clients across Germany, Austria, Switzerland and internationally. Most projects are handled fully remotely via video calls, email and project management tools. In-person meetings are possible by arrangement. We support both local businesses and internationally operating clients.',
+  },
+  {
+    question: 'Do you offer fixed prices or hourly billing?',
+    answer:
+      'We work exclusively with transparent fixed-price quotes. You know exactly what your project will cost before it starts – there are no surprise costs. We use hourly billing only for smaller special tasks (€95/hour) or as part of ongoing service contracts.',
   },
 ];
 </script>

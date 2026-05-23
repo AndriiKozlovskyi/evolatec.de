@@ -75,30 +75,39 @@ const { hreflangLinks } = useLanguageSwitcher();
 
 const seoFaqs = [
   {
-    question: 'Wie lange dauert SEO?',
+    question: 'Wie lange dauert SEO bis zu den ersten Ergebnissen?',
     answer:
-      'Erste Ergebnisse sind in der Regel nach 2–3 Monaten sichtbar. Nachhaltige Suchmaschinenoptimierung (SEO) ist jedoch ein langfristiger Prozess, der kontinuierliche Optimierung erfordert.',
+      'Erste Verbesserungen bei den Google Rankings sind meist nach 2–3 Monaten messbar. Spürbare Steigerungen beim organischen Traffic stellen sich nach 4–6 Monaten ein, nachhaltige Top-Positionen nach 6–12 Monaten. Suchmaschinenoptimierung ist ein langfristiger Prozess: Wer kontinuierlich an Technik, Content und Backlinks arbeitet, baut einen Wettbewerbsvorteil auf, den bezahlte Werbung nicht ersetzen kann.',
   },
   {
-    question: 'Was kostet professionelle SEO?',
-    answer: 'Ein SEO Audit beginnt ab 100€, Basis SEO Optimierung ab 300€, monatliche Betreuung ab 300€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.',
-  },
-  {
-    question: 'Ist SEO besser als Werbung?',
+    question: 'Was kostet professionelle SEO für Unternehmen?',
     answer:
-      'SEO liefert langfristig günstigeren Traffic, während Werbung sofortige Ergebnisse bringt. Am besten funktionieren beide Strategien zusammen.',
+      'Ein SEO Audit beginnt bei 100€, eine technische SEO Optimierung ab 300€ und die laufende SEO Betreuung ab 300€ pro Monat. Die genauen Kosten hängen vom Wettbewerb in Ihrer Branche, dem aktuellen Zustand der Website und den Ranking-Zielen ab. In einem kostenlosen Erstgespräch berechnen wir ein transparentes SEO Angebot, das zu Ihrem Budget passt.',
   },
   {
-    question: 'Optimieren Sie internationale Websites?',
-    answer: 'Ja, wir bieten mehrsprachige und internationale SEO Strategien für Unternehmen an, die global wachsen möchten.',
+    question: 'Was ist der Unterschied zwischen SEO und Google Ads?',
+    answer:
+      'SEO sorgt für organische, unbezahlte Rankings bei Google und liefert langfristig den günstigsten Traffic. Google Ads bringen sofort Besucher, kosten aber für jeden Klick Geld. In der Praxis ergänzen sich beide Kanäle: Ads liefern schnelle Ergebnisse, während SEO über Monate stabile Sichtbarkeit, Vertrauen und planbare Leads aufbaut.',
+  },
+  {
+    question: 'Was sind die wichtigsten SEO Rankingfaktoren?',
+    answer:
+      'Google bewertet über 200 Faktoren – die wichtigsten sind hochwertiger Content, eine saubere technische Basis (Ladezeit, mobile Optimierung, Core Web Vitals), eine klare Seitenstruktur, themenrelevante Keywords und vertrauenswürdige Backlinks. Wir optimieren alle Bereiche im Rahmen unserer SEO Betreuung und priorisieren die Maßnahmen mit dem größten Ranking-Hebel für Ihre Branche.',
   },
   {
     question: 'Was ist im SEO Audit enthalten?',
-    answer: 'Technische Analyse, OnPage Check, Konkurrenzanalyse, Keyword-Recherche und ein detaillierter Maßnahmenplan.',
+    answer:
+      'Unser SEO Audit umfasst eine technische Analyse (Ladezeit, Indexierung, Crawling), einen OnPage Check (Meta-Daten, Überschriften, Content), eine Keyword- und Wettbewerbsanalyse sowie eine Backlink-Prüfung. Sie erhalten am Ende einen priorisierten Maßnahmenplan mit konkreten Handlungsempfehlungen, den Sie selbst umsetzen oder von uns implementieren lassen können.',
   },
   {
-    question: 'Kann ich SEO monatlich kündigen?',
-    answer: 'Unsere SEO Betreuungsverträge sind flexibel. Sie zahlen nur für die Leistungen, die Sie wirklich nutzen.',
+    question: 'Optimieren Sie auch internationale und mehrsprachige Websites?',
+    answer:
+      'Ja, wir entwickeln internationale SEO Strategien mit hreflang-Implementierung, lokalisierten Keywords und länderspezifischen Inhalten. So ranken Sie in jedem Zielmarkt mit der passenden Sprachversion und vermeiden Duplicate-Content-Probleme. Besonders relevant für Unternehmen, die in Deutschland, Österreich, der Schweiz oder international wachsen möchten.',
+  },
+  {
+    question: 'Kann ich die SEO Betreuung monatlich kündigen?',
+    answer:
+      'Ja, unsere SEO Verträge sind flexibel und ohne lange Mindestlaufzeit kündbar. Sie zahlen nur für die Leistungen, die Sie tatsächlich nutzen, und behalten volle Kostenkontrolle. Wir setzen auf Ergebnisse statt auf Vertragsbindung – wer mit unserer Arbeit zufrieden ist, bleibt langfristig dabei.',
   },
 ];
 

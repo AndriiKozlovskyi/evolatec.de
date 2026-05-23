@@ -108,19 +108,38 @@ const { hreflangLinks } = useLanguageSwitcher();
 const faqs = [
   {
     question: 'Was kostet professionelles Webdesign?',
-    answer: 'Die Kosten hängen vom Umfang des jeweiligen Projekts ab. Landingpages starten ab 500€, professionelle Firmenwebsites ab 1.500€.',
+    answer:
+      'Die Kosten für Webdesign hängen vom Umfang und der Komplexität des Projekts ab. Landingpages beginnen bei 500€, professionelle Firmenwebsites ab 1.500€ und individuelle Online-Shops ab 3.000€. Wir arbeiten mit transparenten Festpreisen ohne versteckte Zusatzkosten – Sie erhalten vor Projektstart ein detailliertes Angebot mit allen Leistungen.',
   },
   {
-    question: 'Warum ist responsive Webdesign wichtig?',
-    answer: 'Responsive Websites funktionieren auf Smartphones, Tablets und Desktop-Geräten optimal.',
+    question: 'Wie lange dauert die Erstellung einer Website?',
+    answer:
+      'Eine Landingpage ist meist innerhalb von 3–7 Tagen fertig, eine professionelle Firmenwebsite in 2–4 Wochen und ein Online-Shop in 4–8 Wochen. Die genaue Dauer hängt von Umfang, Funktionen und der Geschwindigkeit beim Bereitstellen von Texten und Bildern ab. Bei dringenden Projekten bieten wir auch beschleunigte Umsetzung an.',
   },
   {
     question: 'Was macht eine Webdesign Agentur?',
-    answer: 'Eine Webdesign Agentur entwickelt moderne Websites, verbessert Markenauftritte und optimiert Nutzererlebnisse.',
+    answer:
+      'Eine Webdesign Agentur konzipiert, gestaltet und entwickelt moderne Websites, die nicht nur professionell aussehen, sondern auch funktional, schnell und SEO-optimiert sind. EvolaTec übernimmt den gesamten Prozess von Strategie und Design über die technische Umsetzung bis hin zu Hosting, Wartung und laufender Optimierung.',
   },
   {
-    question: 'Bietet EvolaTec auch UI/UX Design an?',
-    answer: 'Ja, EvolaTec entwickelt moderne UI/UX Designs für Websites, Apps und digitale Plattformen.',
+    question: 'Warum ist responsive Webdesign wichtig?',
+    answer:
+      'Über 60% aller Website-Besucher kommen mittlerweile vom Smartphone. Responsive Webdesign sorgt dafür, dass Ihre Website auf allen Geräten – Smartphone, Tablet und Desktop – perfekt funktioniert. Google nutzt zudem Mobile-First-Indexing: eine nicht-responsive Website verliert spürbar an Sichtbarkeit und Rankings.',
+  },
+  {
+    question: 'Was ist der Unterschied zwischen Webdesign und Webentwicklung?',
+    answer:
+      'Webdesign konzentriert sich auf das visuelle Erscheinungsbild, die Nutzerführung und das User Interface einer Website. Webentwicklung ist die technische Umsetzung mit HTML, CSS, JavaScript und Backend-Systemen. EvolaTec bietet beide Disziplinen aus einer Hand – so erhalten Sie eine konsistente Website ohne Schnittstellenprobleme.',
+  },
+  {
+    question: 'Ist SEO im Webdesign enthalten?',
+    answer:
+      'Ja, jede von uns entwickelte Website ist von Beginn an SEO-optimiert. Dazu gehören saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung, strukturierte Daten und korrekte Meta-Tags. Für weitergehende SEO-Maßnahmen wie Keyword-Strategien und Content-Optimierung bieten wir zusätzliche SEO-Pakete an.',
+  },
+  {
+    question: 'Welche Technologien nutzen Sie für Webdesign?',
+    answer:
+      'Wir entwickeln mit modernen Technologien wie Nuxt, Vue.js und Tailwind CSS für individuelle Websites sowie Storyblok und Shopify, wenn ein einfach erweiterbares Headless CMS oder eine Shop-Plattform gewünscht ist. Die Wahl der Technologie richtet sich nach Ihren Anforderungen – nicht nach unserer Vorliebe.',
   },
 ];
 

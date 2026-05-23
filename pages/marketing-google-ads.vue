@@ -107,19 +107,38 @@ const { hreflangLinks } = useLanguageSwitcher();
 const adsFaqs = [
   {
     question: 'Was macht eine Google Ads Agentur?',
-    answer: 'Eine Google Ads Agentur erstellt, optimiert und verwaltet Werbekampagnen bei Google.',
+    answer:
+      'Eine Google Ads Agentur konzipiert, schaltet und optimiert Werbekampagnen bei Google Search, Display, Shopping und YouTube. Dazu gehören Keyword-Recherche, Anzeigentexte, Conversion-Tracking, Bid-Management und laufende Optimierung der Kampagnen-Performance. Ziel ist es, mit dem eingesetzten Budget möglichst viele qualifizierte Klicks, Leads oder Verkäufe zu generieren.',
   },
   {
     question: 'Wie schnell funktionieren Google Ads?',
-    answer: 'Google Werbung kann bereits innerhalb weniger Tage erste Besucher und Leads generieren.',
+    answer:
+      'Google Ads liefern in der Regel innerhalb von 24–48 Stunden nach Kampagnenstart die ersten Klicks und Besucher. Erste qualifizierte Leads oder Verkäufe folgen meist in der ersten Woche. Anders als SEO bringt Google Werbung sofortige Sichtbarkeit – die Kampagnen werden anschließend kontinuierlich anhand der Performance-Daten optimiert.',
   },
   {
     question: 'Was kosten Google Ads Kampagnen?',
-    answer: 'Die Betreuung beginnt ab 400€ monatlich. Das Werbebudget wird separat festgelegt.',
+    answer:
+      'Unsere Google Ads Betreuung beginnt bei 400€ pro Monat für Agenturleistungen. Das Werbebudget (Klickkosten) wird separat festgelegt und direkt an Google bezahlt – realistisch sind 300–2.000€/Monat je nach Branche und Wettbewerb. Wir empfehlen ein Startbudget von mindestens 500€/Monat, damit aussagekräftige Daten für die Optimierung gesammelt werden können.',
+  },
+  {
+    question: 'Wie hoch sollte mein Google Ads Budget sein?',
+    answer:
+      'Das ideale Google Ads Budget hängt vom Wettbewerb in Ihrer Branche und vom Klickpreis ab. Lokale Dienstleister starten oft mit 300–500€/Monat, B2B-Unternehmen mit 1.000–2.000€/Monat, E-Commerce-Shops je nach Sortiment ab 1.500€/Monat. Wir berechnen vor Kampagnenstart eine realistische Budget-Empfehlung anhand Ihrer Ziele und Klickpreise.',
+  },
+  {
+    question: 'Was ist der Unterschied zwischen Google Ads und SEO?',
+    answer:
+      'Google Ads sind bezahlte Anzeigen, die sofort über den organischen Suchergebnissen erscheinen – Sie zahlen pro Klick. SEO sorgt für organische Rankings ohne Klickkosten, dauert aber Monate. In der Praxis kombinieren wir beides: Ads liefern sofort Leads, während SEO langfristig stabile, planbare Sichtbarkeit aufbaut.',
+  },
+  {
+    question: 'Was ist ein guter ROAS bei Google Ads?',
+    answer:
+      'Ein guter ROAS (Return on Ad Spend) hängt stark von Branche und Marge ab. Für E-Commerce-Shops gelten 400–600% als solide, für hochpreisige B2B-Leads kann auch ein ROAS von 200% profitabel sein. Im Lead-Geschäft messen wir zusätzlich den Cost-per-Lead und die spätere Abschlussrate, um die tatsächliche Profitabilität korrekt zu bewerten.',
   },
   {
     question: 'Für welche Unternehmen eignet sich Google Ads?',
-    answer: 'Für lokale Unternehmen, Dienstleister, Onlineshops, Startups und B2B Unternehmen.',
+    answer:
+      'Google Ads sind für nahezu jede Branche geeignet, in der potenzielle Kunden aktiv nach Lösungen suchen: lokale Dienstleister (Handwerker, Anwälte, Ärzte), Online-Shops, B2B-Unternehmen, SaaS-Anbieter und Startups. Besonders effektiv sind Ads, wenn Ihr Angebot ein konkretes Problem löst und die Klickpreise im Verhältnis zum Auftragswert wirtschaftlich sind.',
   },
 ];
 

@@ -169,37 +169,42 @@ const faqs = [
   {
     question: 'Was kostet es, einen Onlineshop erstellen zu lassen?',
     answer:
-      'Die Kosten für einen professionellen Online Shop bei EvolaTec starten ab 3.000 € für einen Basis-Shop. Premium-Lösungen mit erweiterten Funktionen und Integrationen beginnen ab 6.000 €. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang und Plattform ab — wir beraten Sie gerne transparent.',
+      'Ein professioneller Onlineshop bei EvolaTec startet bei 3.000€ als Basis-Shop. Premium-Lösungen mit erweiterten Funktionen, individuellen Designs und Integrationen beginnen ab 6.000€, komplexe Enterprise-Shops ab 15.000€. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang, Plattform und gewünschten Schnittstellen ab. Wir erstellen vor Projektstart ein transparentes Festpreisangebot ohne versteckte Kosten.',
   },
   {
     question: 'Welche laufenden Kosten entstehen nach der Shop-Erstellung?',
     answer:
-      'Neben den einmaligen Entwicklungskosten fallen monatliche Betriebskosten an: Shopify-Abo ab ca. 30 €/Monat, Hosting, Zahlungsanbieter-Gebühren (ca. 1–2% pro Transaktion) sowie optionale Wartung und Support. Wir beraten Sie zu allen laufenden Kosten transparent vor Projektstart.',
+      'Neben der einmaligen Entwicklung fallen monatliche Betriebskosten an: Shopify-Abo ab 30€/Monat (Basic) bzw. 90€/Monat (Advanced), Hosting bei eigener Lösung ab 10€/Monat, Zahlungsanbieter-Gebühren (ca. 1,5–2,9% pro Transaktion) sowie Domain und ggf. Wartungspaket. Marketing-Budget (Google Ads, Meta Ads, SEO) sollte je nach Wachstumsziel zusätzlich eingeplant werden.',
   },
   {
     question: 'Wie lange dauert die Entwicklung eines Online-Shops?',
     answer:
-      'Ein professioneller Online Shop ist bei EvolaTec bereits ab 14 Arbeitstagen live. Komplexere Custom-Lösungen mit individuellen Integrationen benötigen je nach Umfang 6–12 Wochen für Konzeption und Entwicklung.',
+      'Ein professioneller Onlineshop ist bei EvolaTec bereits ab 14 Arbeitstagen live. Mittelgroße Shops mit individuellen Designs, mehreren Sprachen oder Schnittstellen benötigen 4–8 Wochen. Komplexe Custom-Lösungen mit ERP-Anbindung, B2B-Funktionen oder individuellen Prozessen benötigen 8–16 Wochen für Konzeption und Entwicklung.',
   },
   {
     question: 'Welche Shop-Plattform ist die richtige für mein Unternehmen?',
     answer:
-      'Shopify eignet sich ideal für schnellen Start und einfache Verwaltung. WooCommerce bietet maximale Flexibilität auf WordPress-Basis. Custom-Lösungen empfehlen wir für komplexe Prozesse, hohe Skalierbarkeit oder spezifische Integrationen.',
+      'Shopify ist ideal für schnellen Marktstart, einfache Verwaltung und international skalierende Shops. Custom-Lösungen mit Nuxt, Storyblok und individueller Shop-Logik empfehlen wir für komplexe B2B-Prozesse, hohe Performance-Anforderungen, individuelle Buchungslogik oder spezielle Schnittstellen. Wir wählen die Plattform anhand Ihrer Anforderungen, nicht anhand unserer Vorlieben.',
   },
   {
-    question: 'Unterstützen Sie auch bei der SEO-Optimierung des Shops?',
+    question: 'Unterstützen Sie auch bei der SEO-Optimierung des Onlineshops?',
     answer:
-      'Ja, jeder von uns entwickelte Online Shop ist von Grund auf SEO-optimiert — mit technischer Struktur, PageSpeed-Optimierung, Schema.org Markup und sauberer URL-Architektur für beste Rankings bei Google.',
+      'Ja, jeder Onlineshop wird von Grund auf SEO-optimiert entwickelt: saubere URL-Architektur, technisches SEO, PageSpeed-Optimierung, Schema.org Markup für Produkte und korrekte Meta-Daten. Für weitergehende SEO-Strategien wie Kategorie-Optimierung, Produkttexte, Linkbuilding und laufende Betreuung bieten wir zusätzliche SEO-Pakete für E-Commerce ab 300€/Monat an.',
   },
   {
-    question: 'Ist mein Online Shop sicher?',
+    question: 'Welche Zahlungsanbieter können integriert werden?',
     answer:
-      'Ja. Jeder von uns entwickelte Shop wird mit SSL-Verschlüsselung, sicheren Zahlungsanbietern (Stripe, PayPal, Klarna) und DSGVO-konformer Datenverarbeitung ausgeliefert — Standard, nicht Optional.',
+      'Wir integrieren alle gängigen Zahlungsanbieter: Kreditkarte (Stripe, Adyen), PayPal, Klarna (Sofortüberweisung, Rechnung, Ratenkauf), Apple Pay, Google Pay, Amazon Pay, Kauf auf Rechnung und SEPA-Lastschrift. Welche Methoden sinnvoll sind, hängt von Zielgruppe und Warenkorb-Höhe ab – wir empfehlen die passende Auswahl für maximale Conversion.',
   },
   {
-    question: 'Bietet EvolaTec auch Wartung und Support nach dem Launch an?',
+    question: 'Ist mein Onlineshop sicher und DSGVO-konform?',
     answer:
-      'Im Preis sind 30 Tage kostenloser Support nach dem Launch enthalten. Darüber hinaus bieten wir Wartungspakete mit monatlichem Support, Updates, Performance-Monitoring und technischer Betreuung — damit Ihr Online Shop dauerhaft aktuell und leistungsstark bleibt.',
+      'Ja, jeder Shop wird mit SSL-Verschlüsselung, sicheren Zahlungsanbietern (Stripe, PayPal, Klarna) und DSGVO-konformer Datenverarbeitung ausgeliefert. Dazu gehören Cookie-Consent, Datenschutzerklärung, Impressum, AGB-Schnittstelle, sichere Datenübertragung sowie regelmäßige Sicherheits-Updates. Compliance ist Standard, nicht optional.',
+  },
+  {
+    question: 'Bietet EvolaTec auch Wartung und Support nach dem Launch?',
+    answer:
+      'Im Preis sind 30 Tage kostenloser Support nach dem Launch enthalten. Darüber hinaus bieten wir Wartungspakete ab 50€/Monat mit Updates, Sicherheits-Patches, Backups, Performance-Monitoring und kleineren inhaltlichen Anpassungen. Auch Marketing-Betreuung, A/B-Tests und Conversion-Optimierung können wir laufend übernehmen.',
   },
 ];
 

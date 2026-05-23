@@ -199,32 +199,42 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Website?',
     answer:
-      'Professionelle Firmenwebsites beginnen ab 1.500€, abhängig von Umfang und Funktionen. Eine Firmenwebsite enthält alle wichtigen Features für ein Unternehmen: modernes Design, mobile Optimierung und Basis-SEO.',
+      'Professionelle Firmenwebsites beginnen bei EvolaTec ab 1.500€ inklusive Design, Entwicklung, mobiler Optimierung und Basis-SEO. Umfangreichere Unternehmenswebsites mit Mehrsprachigkeit, Buchungssystem oder individuellen Funktionen kosten ab 3.000€. Die exakten Kosten hängen von Umfang, Seitenanzahl und gewünschten Funktionen ab – nutzen Sie unseren Preisrechner für eine schnelle Schätzung.',
   },
   {
     question: 'Was kostet eine Landingpage?',
     answer:
-      'Landingpages beginnen ab 500€ und eignen sich ideal für Werbung, Kampagnen und schnelle Leadgenerierung. Sie sind perfekt, wenn Sie schnell online präsent sein möchten.',
+      'Eine professionelle Landingpage beginnt bei 500€ und eignet sich ideal für Werbekampagnen (Google Ads, Meta Ads) und Leadgenerierung. Business-Pakete mit Conversion-Optimierung starten bei 800€, Premium-Landingpages mit SEO-Texten, A/B-Testing und Tracking bei 1.500€. Sie sind perfekt, wenn Sie schnell online präsent sein und qualifizierte Leads gewinnen möchten.',
   },
   {
     question: 'Was kostet ein Online Shop?',
     answer:
-      'Online Shops starten ab 3.000€, abhängig von der Anzahl der Produkte und benötigten Funktionen. Premium E-Commerce-Lösungen mit erweiterten Features kosten ab 6.000€.',
+      'Onlineshops beginnen ab 3.000€ für einen Basis-Shopify-Shop. Premium-Lösungen mit erweiterten Funktionen und Integrationen kosten ab 6.000€, komplexe Enterprise-Shops mit ERP-Anbindung oder B2B-Funktionen ab 15.000€. Hinzu kommen laufende Kosten wie Shopify-Abo (ab 30€/Monat), Zahlungsanbieter-Gebühren (1,5–2,9%) und optional Wartung.',
   },
   {
-    question: 'Gibt es Festpreise?',
+    question: 'Was kostet SEO bei EvolaTec?',
     answer:
-      'Ja, wir bieten transparente Festpreis-Angebote. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine überraschenden Zusatzkosten während der Entwicklung.',
+      'Ein SEO Audit beginnt bei 100€, technische SEO-Optimierung ab 300€ und laufende SEO-Betreuung ab 300€/Monat. Local SEO startet bei 400€, Linkbuilding ab 100€ und SEO-Texte ab 150€. Die exakten Kosten hängen von Branche, Wettbewerb und Zielen ab – wir erstellen vor Projektstart ein transparentes Angebot.',
   },
   {
-    question: 'Ist SEO inklusive?',
+    question: 'Was kostet Online Marketing (Google Ads, Meta Ads)?',
     answer:
-      'Ja, Basis-SEO ist in allen Projekten enthalten. Das beinhaltet technische Optimierungen, schnelle Ladezeiten, mobile Optimierung und saubere Meta-Daten. Erweiterte SEO-Services sind gegen Aufpreis möglich.',
+      'Unsere Google Ads Betreuung beginnt bei 400€/Monat, Meta Ads (Facebook/Instagram) ab 300€/Monat. Das Werbebudget für die Anzeigen wird separat festgelegt und direkt an Google bzw. Meta bezahlt – realistisch sind 300–2.000€/Monat je nach Branche. Wir empfehlen ein Startbudget von mindestens 500€/Monat für aussagekräftige Test-Ergebnisse.',
   },
   {
-    question: 'Sind Wartung und Support inklusive?',
+    question: 'Gibt es Festpreise oder werden Kosten nach Aufwand abgerechnet?',
     answer:
-      'Die Grundlage ist im Preis enthalten. Für regelmäßige Wartung, Updates und erweiterten Support bieten wir flexible Pakete an.',
+      'Wir arbeiten ausschließlich mit transparenten Festpreis-Angeboten. Sie wissen von Anfang an, was Ihr Projekt kostet – es gibt keine überraschenden Zusatzkosten während der Entwicklung. Optionale Erweiterungen oder spätere Änderungswünsche werden separat ausgewiesen und können flexibel hinzugebucht werden. Stundenbasiert arbeiten wir nur bei laufender Betreuung oder kleineren Sonderaufgaben (95€/Stunde).',
+  },
+  {
+    question: 'Ist SEO bei Websites inklusive?',
+    answer:
+      'Ja, Basis-SEO ist in allen Web-Projekten enthalten: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung, strukturierte Daten und korrekte Meta-Tags. Für weitergehende SEO-Strategien wie Keyword-Recherche, Content-Optimierung, Linkbuilding und laufende Betreuung bieten wir zusätzliche SEO-Pakete ab 300€/Monat an.',
+  },
+  {
+    question: 'Sind Wartung und Support nach dem Launch inklusive?',
+    answer:
+      '30 Tage kostenloser Support nach dem Launch sind im Preis enthalten. Für langfristige Wartung, regelmäßige Updates, Sicherheits-Patches, Backups und Performance-Monitoring bieten wir flexible Wartungspakete ab 30€/Monat an. So bleibt Ihre Website langfristig sicher, aktuell und performant.',
   },
 ];
 

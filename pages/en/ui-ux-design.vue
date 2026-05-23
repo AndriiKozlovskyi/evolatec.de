@@ -334,19 +334,38 @@ const uiuxPricingPlans = [
 const uiuxFaqs = [
   {
     question: 'What does a UX design agency do?',
-    answer: 'A UX agency develops user experiences that make websites and digital products more user-friendly, intuitive and conversion-focused.',
+    answer:
+      'A UX design agency develops user experiences for websites, apps and digital products that are user-friendly, intuitive and conversion-focused. This includes user research, wireframes, prototyping, usability testing, interface design and close collaboration with development. The goal is for users to enjoy and successfully use your product – which directly increases conversion, customer retention and revenue.',
   },
   {
-    question: 'What is the difference between UI and UX?',
-    answer: 'UX describes the overall user experience and interaction with a product. UI is the visual interface and the user surface with which users interact.',
+    question: 'What is the difference between UI and UX design?',
+    answer:
+      'UX (User Experience) describes the overall user experience: structure, navigation, interaction, logic and functionality. UI (User Interface) is the visual surface: layout, colours, typography, buttons and visual hierarchy. Simply put: UX is how it works, UI is how it looks. Both belong together – good UI without UX is pretty but unusable; good UX without UI is functional but feels unprofessional.',
   },
   {
     question: 'Why is UX design important?',
-    answer: 'Good UX improves conversion, user satisfaction and customer retention while reducing bounce rates. Poor UX leads to frustrated users and lost customers.',
+    answer:
+      'Good UX improves conversion rates, user satisfaction and customer retention while reducing bounce rates. Studies show every euro invested in UX returns 10–100€ in ROI. Poor UX leads to frustrated users, lost customers and expensive support. For e-commerce and SaaS products UX is often the decisive competitive factor.',
   },
   {
     question: 'How much does professional UI/UX design cost?',
-    answer: 'UI/UX projects start from €500 for a UX analysis and from €1,200 for a complete website design. Complex projects such as SaaS apps from €2,000.',
+    answer:
+      'A UX analysis starts from €500, a complete website UI/UX design from €1,200. Complex projects like SaaS applications, dashboards or mobile apps start from €2,000. Costs depend on scope, number of screens, complexity of user flows and desired prototypes. We provide a transparent fixed-price quote before the project starts.',
+  },
+  {
+    question: 'How long does a UI/UX design project take?',
+    answer:
+      'A UX analysis is usually completed in 1–2 weeks, a full website design in 3–6 weeks. Complex projects such as SaaS platforms or mobile apps take 6–12 weeks for research, wireframes, UI design and prototyping. Duration depends on scope and the number of feedback rounds.',
+  },
+  {
+    question: 'How does the UX design process work?',
+    answer:
+      'Our UX design process has five phases: 1) Research (audience analysis, competitors, user interviews), 2) Concept (user flows, information architecture), 3) Wireframes (structural sketches), 4) UI design (visual design), 5) Prototyping & testing (clickable prototypes, usability tests). Handover to development follows with a detailed design system.',
+  },
+  {
+    question: 'Which tools do you use for UI/UX design?',
+    answer:
+      'We work with Figma as the central tool for UI, prototyping and design systems. For user research we use tools like Maze, Hotjar or Google Analytics for behavioural analysis. For handover to development we provide design systems, component libraries and specs.',
   },
 ];
 </script>

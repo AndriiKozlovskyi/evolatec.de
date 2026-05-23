@@ -335,23 +335,38 @@ const brandingPricingPlans = [
 const brandingFaqs = [
   {
     question: 'What does a branding agency do?',
-    answer: 'A branding agency develops brand identities, corporate designs, logos and strategic brand presences for businesses and start-ups.',
+    answer:
+      'A branding agency develops brand identities, corporate designs, logos and strategic brand presences for businesses, start-ups and established brands. This includes brand strategy, naming, logo design, colour and typography systems, brand guidelines and consistent execution across all touchpoints – from website and social media to print and packaging. The goal is a recognisable brand that builds trust and clearly stands out from competitors.',
   },
   {
     question: 'Why is corporate design important?',
-    answer: 'Corporate design ensures recognition, professionalism and trust. A consistent design creates a cohesive brand perception.',
+    answer:
+      'Corporate design ensures recognition, professionalism and trust – three factors that directly influence conversion and revenue. A consistent design across website, social media, advertising and print creates a cohesive brand perception and makes your business unmistakable. Studies show that consistent branding can increase revenue by up to 23%.',
   },
   {
     question: 'How much does professional branding cost?',
-    answer: 'Logo design starts from €200, corporate design from €1,000. Rebranding and complete brand presences from €2,000.',
-  },
-  {
-    question: 'Can existing brands be modernised?',
-    answer: 'Yes, we offer rebranding, corporate redesign and complete brand relaunches to modernise existing brands.',
+    answer:
+      'A professional logo design at EvolaTec starts from €200, a complete corporate design (logo + colour palette + typography + business card + brand guidelines) from €1,000. Complete rebranding or brand presences for established businesses start from €2,000. Exact costs depend on scope, number of touchpoints and strategic depth.',
   },
   {
     question: 'How long does a branding project take?',
-    answer: 'A branding project takes an average of 4–8 weeks, depending on scope and complexity. Logo design is often achievable faster.',
+    answer:
+      'A logo design is usually ready within 1–2 weeks. A complete corporate design takes 3–5 weeks, complex rebranding or strategy projects 6–12 weeks. Duration depends on scope, number of feedback rounds and approval speed. We work in clearly defined phases with transparent milestones.',
+  },
+  {
+    question: 'What is the difference between branding and logo design?',
+    answer:
+      'Logo design is a single visual element – your business mark. Branding covers the entire brand identity: strategy, values, positioning, logo, colours, typography, imagery, tone of voice and communication. A logo alone is just a symbol – branding turns it into a brand with recognition and emotional connection.',
+  },
+  {
+    question: 'Can existing brands be modernised?',
+    answer:
+      'Yes, we offer rebranding, corporate redesign and complete brand relaunches. With rebranding we preserve valuable brand assets, carefully modernise logo, colours and typography and reposition the brand for current audiences. On request we also develop completely new brand identities if a fundamental repositioning makes sense.',
+  },
+  {
+    question: 'What is included in the brand guidelines?',
+    answer:
+      'Our brand guidelines include logo variants and protection zones, colour palette (print + digital), typography system, imagery, iconography, tone of voice, application examples and dos & don\'ts. This way you and your service providers (agencies, printers, employees) can apply your brand consistently across all channels and avoid misuse.',
   },
 ];
 </script>

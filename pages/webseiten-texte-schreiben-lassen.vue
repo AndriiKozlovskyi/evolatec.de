@@ -72,29 +72,39 @@ const { hreflangLinks } = useLanguageSwitcher();
 
 const contentFaqs = [
   {
-    question: 'Warum sind SEO Texte wichtig?',
+    question: 'Warum sind SEO Texte für die Website wichtig?',
     answer:
-      'SEO Texte verbessern Rankings und helfen Google dabei, Ihre Website besser zu verstehen. Gute Texte führen zu mehr organischem Traffic.',
-  },
-  {
-    question: 'Schreiben Sie Texte für Landingpages?',
-    answer:
-      'Wir erstellen konversionsstarke Inhalte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren.',
-  },
-  {
-    question: 'Können Inhalte mehrsprachig erstellt werden?',
-    answer:
-      'Wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativen Sprachkenntnissen.',
+      'SEO Texte verbessern Ihre Google-Rankings, weil sie relevante Keywords, klare Strukturen und nutzerorientierten Content kombinieren. Google bewertet Texte nach Relevanz, Lesbarkeit, Tiefe und Suchintent – professionelle SEO Texte erfüllen alle Kriterien. Das Ergebnis: mehr organischer Traffic, höhere Verweildauer, bessere Conversion und langfristig planbare Sichtbarkeit ohne Werbekosten.',
   },
   {
     question: 'Was kosten professionelle Website Texte?',
     answer:
-      'Professionelle Webseiten Texte beginnen bei 150€, komplette Projekte bei 700€. Die genauen Kosten hängen vom Umfang ab.',
+      'Einzelne Webseiten-Texte (500 Wörter) beginnen bei EvolaTec ab 150€, conversionsstarke Landingpage-Texte ab 250€ und komplette Website-Inhalte (bis zu 5 Seiten inkl. Keyword-Strategie) ab 700€. Längere SEO-Blogartikel ab 200€ pro Artikel. Die genauen Kosten hängen von Recherchetiefe, Wortzahl und Themenkomplexität ab. Wir erstellen vor Projektstart ein transparentes Festpreisangebot.',
   },
   {
-    question: 'Wie lange dauert die Content Erstellung?',
+    question: 'Wie lange dauert die Erstellung von Website Texten?',
     answer:
-      'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für größere Projekte 2–4 Wochen. Eine schnellere Umsetzung ist möglich.',
+      'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für komplette Website-Inhalte 2–4 Wochen. Die Dauer hängt von Recherche, Anzahl der Texte und Feedback-Runden ab. Bei dringenden Projekten bieten wir Express-Erstellung innerhalb von 48–72 Stunden gegen Aufpreis an.',
+  },
+  {
+    question: 'Schreiben Sie auch Texte für Landingpages und Werbung?',
+    answer:
+      'Ja, wir erstellen conversionsstarke Texte für Landingpages, Google-Ads-Anzeigen, Meta-Ads-Creatives und E-Mail-Kampagnen. Diese Texte sind speziell auf Verkäufe und Leads optimiert – mit klaren Botschaften, starken Call-to-Actions und nachgewiesenen Copywriting-Frameworks. Auf Wunsch erstellen wir auch mehrere Varianten für A/B-Tests, um die beste Conversion-Rate zu finden.',
+  },
+  {
+    question: 'Was ist der Unterschied zwischen SEO Texten und Copywriting?',
+    answer:
+      'SEO Texte sind auf Suchmaschinen optimiert: Keywords, Suchintent, Struktur und organische Rankings stehen im Vordergrund. Copywriting fokussiert auf Conversion: emotionale Botschaften, Verkaufspsychologie und starke CTAs. Gute Web-Texte verbinden beides – sie ranken bei Google UND verkaufen an den Nutzer. Wir kombinieren beide Disziplinen für maximale Wirkung.',
+  },
+  {
+    question: 'Können Inhalte mehrsprachig erstellt werden?',
+    answer:
+      'Ja, wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativer Sprachkompetenz. Bei mehrsprachigen Projekten achten wir auf lokale Suchgewohnheiten, kulturelle Besonderheiten und korrekte SEO-Implementierung (hreflang, lokalisierte Keywords). So ranken Sie in jedem Zielmarkt mit überzeugenden Inhalten.',
+  },
+  {
+    question: 'Wie läuft die Texterstellung ab?',
+    answer:
+      'Unser Texterstellungs-Prozess umfasst vier Phasen: 1) Briefing & Recherche (Zielgruppe, Wettbewerb, Tonalität), 2) Keyword-Strategie und Themenplanung, 3) Texterstellung mit SEO-Optimierung, 4) Feedback und Feinschliff. Sie erhalten den fertigen Text in einem Word- oder Google-Dokument und können bei Bedarf zwei Korrekturrunden ohne Aufpreis nutzen.',
   },
 ];
 

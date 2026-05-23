@@ -82,11 +82,41 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema
 const { hreflangLinks } = useLanguageSwitcher();
 
 const optimizationFaqs = [
-  { question: 'Was kostet technische SEO Optimierung?', answer: 'Basis Optimierungen beginnen ab 300€. Umfangreiche SEO Optimierungen ab 500–1.200€. Die genauen Kosten hängen vom Umfang ab.' },
-  { question: 'Wie lange dauert die Optimierung?', answer: 'Kleine Optimierungen dauern wenige Tage, größere technische Projekte 1–3 Wochen. Das hängt von der Komplexität Ihrer Website ab.' },
-  { question: 'Verbessert technische SEO meine Rankings?', answer: 'Ja, technische SEO ist eine wichtige Grundlage für bessere Google-Rankings. Ohne technische Basis verlieren Sie Sichtbarkeit.' },
-  { question: 'Optimieren Sie bestehende Websites?', answer: 'Ja, wir optimieren bestehende Websites unabhängig vom verwendeten System oder Framework.' },
-  { question: 'Kann ich die Optimierungen selbst umsetzen?', answer: 'Ja, wir erstellen einen detaillierten Implementierungsplan. Bei technischen Fragen unterstützen wir Sie gerne.' },
+  {
+    question: 'Was kostet technische SEO Optimierung?',
+    answer:
+      'Basis-SEO-Optimierungen beginnen bei EvolaTec ab 300€ und beheben die wichtigsten technischen Probleme (Ladezeit, Meta-Daten, Indexierung). Umfangreiche technische SEO-Pakete mit Core Web Vitals Optimierung, Schema.org, OnPage- und Strukturüberarbeitung kosten 500–1.200€. Für komplexe Websites oder Onlineshops sind individuelle Projekte ab 2.000€ realistisch. Die Kosten hängen vom Umfang und der Komplexität Ihrer Website ab.',
+  },
+  {
+    question: 'Wie lange dauert die SEO Optimierung?',
+    answer:
+      'Kleinere technische Optimierungen sind oft innerhalb von 3–5 Werktagen umgesetzt. Umfangreichere Projekte wie PageSpeed-Optimierung, OnPage-Überarbeitung oder Struktur-Anpassungen benötigen 1–3 Wochen. Erste Verbesserungen bei den Google-Rankings sind meist nach 4–8 Wochen sichtbar, sobald Google die Änderungen indexiert hat.',
+  },
+  {
+    question: 'Verbessert technische SEO meine Google Rankings?',
+    answer:
+      'Ja, technische SEO ist die Grundlage für gute Google-Rankings. Eine schnell ladende, technisch saubere Website mit guten Core Web Vitals wird von Google bevorzugt. Probleme wie langsame Ladezeiten, fehlerhafte Indexierung oder schlechte mobile Optimierung führen direkt zu Ranking-Verlusten. Ohne technische Basis bringen auch die besten Inhalte und Backlinks wenig.',
+  },
+  {
+    question: 'Was sind Core Web Vitals und warum sind sie wichtig?',
+    answer:
+      'Core Web Vitals sind drei Google-Messwerte für Nutzererfahrung: LCP (Ladezeit), INP (Interaktivität) und CLS (visuelle Stabilität). Seit 2021 sind sie offizieller Ranking-Faktor. Websites mit schlechten Core Web Vitals verlieren Rankings, Sichtbarkeit und Conversion. Wir optimieren Ihre Website für grüne Werte in allen drei Bereichen.',
+  },
+  {
+    question: 'Optimieren Sie auch bestehende Websites?',
+    answer:
+      'Ja, wir optimieren bestehende Websites unabhängig vom verwendeten CMS oder Framework – Storyblok, Shopify, TYPO3, Drupal, Webflow, Nuxt, Vue, React und andere. Wir analysieren zuerst den aktuellen Zustand, identifizieren die größten Probleme und optimieren gezielt mit dem höchsten Ranking-Hebel zuerst.',
+  },
+  {
+    question: 'Kann ich die SEO Optimierungen selbst umsetzen?',
+    answer:
+      'Ja, wir erstellen auf Wunsch einen detaillierten Implementierungsplan mit konkreten Anleitungen für Ihr Team oder Ihre Entwickler. Bei technischen Fragen oder Code-Anpassungen unterstützen wir Sie gerne stundenweise (ab 95€/Stunde) oder übernehmen die komplette Umsetzung, falls intern keine Kapazität vorhanden ist.',
+  },
+  {
+    question: 'Welche Bereiche umfasst eine vollständige SEO Optimierung?',
+    answer:
+      'Eine vollständige SEO-Optimierung umfasst: Technik (Ladezeit, Core Web Vitals, Mobile, HTTPS, Crawling), OnPage (Meta-Daten, Überschriften, Content-Optimierung, interne Links), Strukturierte Daten (Schema.org), URL-Struktur, Bilder-Optimierung (Alt-Texte, WebP, Lazy Loading) sowie Indexierung und XML-Sitemaps. Auf Wunsch ergänzen wir Keyword-Strategie und Content-Optimierung.',
+  },
 ];
 
 const schemaMarkup = buildSchema(

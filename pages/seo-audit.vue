@@ -71,11 +71,41 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema
 const { hreflangLinks } = useLanguageSwitcher();
 
 const auditFaqs = [
-  { question: 'Was kostet ein SEO Audit?', answer: 'Basis SEO Analysen beginnen bei 100€. Umfangreiche technische Audits ab 300€. Die genauen Kosten hängen von der Komplexität Ihrer Website ab.' },
-  { question: 'Wie lange dauert eine SEO Analyse?', answer: 'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites kann es etwas länger dauern.' },
-  { question: 'Was wird bei einem SEO Audit geprüft?', answer: 'Wir prüfen Technik, Ladezeiten, Struktur, Keywords, Content, mobile Optimierung, Indexierung und Wettbewerber-Strategien.' },
-  { question: 'Bekomme ich einen SEO Report?', answer: 'Sie erhalten einen strukturierten Bericht mit konkreten Handlungsempfehlungen und einem Prioritätsplan.' },
-  { question: 'Optimieren Sie die Website auch um?', answer: 'Gerne setzen wir die Optimierungen nach dem Audit für Sie um oder unterstützen Sie dabei.' },
+  {
+    question: 'Was kostet ein professioneller SEO Audit?',
+    answer:
+      'Eine Basis-SEO-Analyse beginnt bei EvolaTec ab 100€ und prüft die wichtigsten technischen und inhaltlichen Faktoren. Umfangreiche technische SEO Audits mit Wettbewerbsanalyse, Backlink-Check und detailliertem Maßnahmenplan starten ab 300€. Bei großen Websites oder Onlineshops mit vielen URLs kosten Enterprise-Audits ab 800€. Die Kosten hängen von Seitenanzahl, Komplexität und gewünschter Audit-Tiefe ab.',
+  },
+  {
+    question: 'Wie lange dauert eine SEO Analyse?',
+    answer:
+      'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites mit über 100 Seiten, Onlineshops oder mehrsprachigen Projekten kann ein detaillierter Audit 1–2 Wochen in Anspruch nehmen. Sie erhalten am Ende einen schriftlichen Report sowie auf Wunsch eine persönliche Präsentation der Ergebnisse.',
+  },
+  {
+    question: 'Was wird bei einem SEO Audit geprüft?',
+    answer:
+      'Wir prüfen über 100 Faktoren: Technik (Ladezeit, Core Web Vitals, Crawlability, Indexierung), OnPage (Meta-Daten, Überschriften, Content, interne Verlinkung), Keywords (Recherche, Suchintent, Wettbewerb), Backlinks (Profil-Qualität, Anchor-Texte, toxische Links), mobile Optimierung und strukturierte Daten. Außerdem analysieren wir Ihre 3–5 wichtigsten Wettbewerber und identifizieren Ranking-Lücken.',
+  },
+  {
+    question: 'Was bekomme ich nach dem SEO Audit?',
+    answer:
+      'Sie erhalten einen strukturierten SEO-Report (PDF, 20–50 Seiten) mit allen Befunden, konkreten Handlungsempfehlungen und einem priorisierten Maßnahmenplan. Die Empfehlungen sind nach Aufwand und SEO-Impact gewichtet, sodass Sie sofort wissen, welche Optimierungen den größten Ranking-Hebel bieten. Auf Wunsch erläutern wir die Ergebnisse in einem persönlichen Call.',
+  },
+  {
+    question: 'Setzen Sie die Optimierungen nach dem Audit auch um?',
+    answer:
+      'Ja, gerne übernehmen wir die Umsetzung der empfohlenen SEO-Optimierungen – technisch, inhaltlich oder beides. Alternativ unterstützen wir Ihr Team oder Ihre Entwickler bei der Implementierung mit klaren Spezifikationen. Auf Wunsch begleiten wir Sie auch laufend mit monatlicher SEO-Betreuung ab 300€/Monat.',
+  },
+  {
+    question: 'Wie oft sollte ein SEO Audit durchgeführt werden?',
+    answer:
+      'Wir empfehlen mindestens einmal jährlich einen umfassenden SEO Audit, ergänzt durch quartalsweise Mini-Audits (Rankings, Technik, neue Wettbewerber). Bei größeren Website-Relaunches oder Google-Algorithmus-Updates ist ein zusätzlicher Audit sinnvoll, um Ranking-Verluste frühzeitig zu identifizieren und Chancen zu nutzen.',
+  },
+  {
+    question: 'Welche Tools nutzen Sie für den SEO Audit?',
+    answer:
+      'Wir kombinieren professionelle SEO-Tools wie Ahrefs, Semrush, Screaming Frog, Google Search Console, PageSpeed Insights und Lighthouse mit manueller Analyse und langjähriger Erfahrung. Tools liefern Daten – die Bewertung und Priorisierung übernehmen unsere SEO-Experten, damit Sie umsetzbare statt generischer Empfehlungen erhalten.',
+  },
 ];
 
 const schemaMarkup = buildSchema(

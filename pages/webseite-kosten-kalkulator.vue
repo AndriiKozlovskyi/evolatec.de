@@ -11,10 +11,10 @@
           Preisrechner
         </span>
         <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4">
-          Was kostet Ihr Projekt?
+          Website Kosten Rechner: Preise für Web, SEO & Marketing
         </h1>
-        <p class="text-sm sm:text-base md:text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
-          Wählen Sie ein Paket, kalkulieren Sie individuell oder durchsuchen Sie unsere Einzelpreise.
+        <p class="text-sm sm:text-base md:text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
+          Berechnen Sie die Kosten für Website, SEO, Online Marketing und Design. Transparente Festpreise, individuelle Pakete und alle Einzelpreise auf einen Blick.
         </p>
       </div>
     </section>
@@ -278,10 +278,10 @@
     <section class="bg-surface-container-low py-10 md:py-14 border-t border-outline-variant/30">
       <div class="max-w-3xl mx-auto px-gutter text-center">
         <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-black text-on-surface mb-3 leading-tight">
-          Nicht sicher, was Sie brauchen?
+          Ihr Projekt zum Festpreis — von der Webagentur
         </h2>
         <p class="text-sm sm:text-base text-on-surface-variant mb-6 max-w-xl mx-auto">
-          Kostenlose Erstberatung — wir helfen Ihnen, das passende Paket zu finden.
+          Kostenlose Erstberatung — wir helfen Ihnen, das passende Paket für Website, SEO, Marketing oder Design zu finden.
         </p>
         <a href="/kontakt" class="inline-block">
           <BaseButton variant="primary" size="lg">
@@ -298,9 +298,23 @@
 const { hreflangLinks } = useLanguageSwitcher();
 
 useHead({
-  title: 'Preisrechner – Kosten schätzen | EvolaTec',
+  title: 'Was kostet eine Website? Kosten & Preise berechnen | EvolaTec',
   meta: [
-    { name: 'description', content: 'Berechnen Sie die Kosten für Website, SEO, Marketing und Design. Kostenloser Preisrechner von EvolaTec.' },
+    {
+      name: 'description',
+      content: 'Kostenrechner für digitale Projekte: Berechnen Sie transparente Festpreise für Website-Erstellung, Online Shop, SEO Optimierung, Google Ads und Design – ohne Anmeldung, ohne versteckte Kosten.',
+    },
+    {
+      name: 'keywords',
+      content: 'preisrechner webagentur, kostenrechner agentur, was kostet eine website, website kosten, seo kosten, online marketing kosten, google ads preise, online shop kosten, design kosten, agentur preise, festpreise webagentur, website erstellen lassen kosten, homepage erstellen lassen kosten',
+    },
+    { property: 'og:title', content: 'Preisrechner: Was kostet Website, SEO, Marketing & Design? | EvolaTec' },
+    {
+      property: 'og:description',
+      content: 'Berechnen Sie transparente Festpreise für Website, SEO, Online Marketing und Design — mit dem EvolaTec Preisrechner.',
+    },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://evolatec.de/webseite-kosten-kalkulator' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de/webseite-kosten-kalkulator' }, ...hreflangLinks.value],
 });

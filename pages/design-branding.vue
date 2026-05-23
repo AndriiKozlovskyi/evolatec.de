@@ -78,27 +78,37 @@ const brandingFaqs = [
   {
     question: 'Was macht eine Branding Agentur?',
     answer:
-      'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Designs, Logos und strategische Markenauftritte für Unternehmen und Startups.',
+      'Eine Branding Agentur entwickelt Markenidentitäten, Corporate Designs, Logos und strategische Markenauftritte für Unternehmen, Startups und etablierte Marken. Dazu gehören Markenstrategie, Naming, Logo-Design, Farb- und Typografie-Systeme, Brand Guidelines und die konsistente Umsetzung über alle Touchpoints – von Website und Social Media bis Print und Verpackung. Ziel ist eine wiedererkennbare Marke, die Vertrauen aufbaut und sich klar vom Wettbewerb abhebt.',
   },
   {
     question: 'Warum ist Corporate Design wichtig?',
     answer:
-      'Corporate Design sorgt für Wiedererkennbarkeit, Professionalität und Vertrauen. Ein einheitliches Design schafft eine konsistente Markenwahrnehmung.',
+      'Corporate Design sorgt für Wiedererkennbarkeit, Professionalität und Vertrauen – drei Faktoren, die unmittelbar Conversion und Umsatz beeinflussen. Ein einheitliches Design über Website, Social Media, Werbung und Print hinweg schafft eine konsistente Markenwahrnehmung und macht Ihr Unternehmen unverwechselbar. Studien zeigen, dass konsistentes Branding den Umsatz um bis zu 23% steigern kann.',
   },
   {
     question: 'Was kostet professionelles Branding?',
     answer:
-      'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.000€.',
-  },
-  {
-    question: 'Können bestehende Marken modernisiert werden?',
-    answer:
-      'Ja, wir bieten Rebranding, Corporate Redesign und komplette Marken Relaunches an um bestehende Marken zu modernisieren.',
+      'Ein professionelles Logo-Design beginnt bei EvolaTec ab 200€, ein vollständiges Corporate Design (Logo + Farbpalette + Typografie + Visitenkarte + Brand Guidelines) ab 1.000€. Komplettes Rebranding oder Markenauftritte für etablierte Unternehmen starten ab 2.000€. Die genauen Kosten hängen vom Umfang, der Anzahl der Touchpoints und der strategischen Tiefe ab.',
   },
   {
     question: 'Wie lange dauert ein Branding Projekt?',
     answer:
-      'Ein Branding Projekt dauert durchschnittlich 4-8 Wochen, abhängig von Umfang und Komplexität. Logo Design ist oft schneller umsetzbar.',
+      'Ein Logo-Design ist meist innerhalb von 1–2 Wochen fertig. Ein vollständiges Corporate Design benötigt 3–5 Wochen, komplexe Rebrandings oder Strategie-Projekte 6–12 Wochen. Die Dauer hängt vom Umfang, der Anzahl der Feedback-Runden und der Geschwindigkeit der Abstimmungen ab. Wir arbeiten in klar definierten Phasen mit transparenten Meilensteinen.',
+  },
+  {
+    question: 'Was ist der Unterschied zwischen Branding und Logo-Design?',
+    answer:
+      'Logo-Design ist ein einzelnes visuelles Element – das Markenzeichen Ihres Unternehmens. Branding umfasst die gesamte Markenidentität: Strategie, Werte, Positionierung, Logo, Farben, Typografie, Bildsprache, Tonalität und Kommunikation. Ein Logo allein ist nur ein Symbol – Branding macht daraus eine Marke mit Wiedererkennbarkeit und emotionaler Bindung.',
+  },
+  {
+    question: 'Können bestehende Marken modernisiert werden?',
+    answer:
+      'Ja, wir bieten Rebranding, Corporate Redesign und komplette Marken-Relaunches an. Beim Rebranding behalten wir wertvolle Marken-Assets bei, modernisieren Logo, Farben und Typografie behutsam und positionieren die Marke neu für aktuelle Zielgruppen. Auf Wunsch entwickeln wir auch komplett neue Markenauftritte, falls eine grundlegende Neupositionierung sinnvoll ist.',
+  },
+  {
+    question: 'Was ist in den Brand Guidelines enthalten?',
+    answer:
+      'Unsere Brand Guidelines enthalten Logo-Varianten und Schutzräume, Farbpalette (Print + Digital), Typografie-System, Bildsprache, Iconografie, Tonalität, Anwendungsbeispiele und Do\'s & Don\'ts. So können Sie und Ihre Dienstleister (Agenturen, Druckereien, Mitarbeiter) Ihre Marke konsistent über alle Kanäle einsetzen und Fehlanwendungen vermeiden.',
   },
 ];
 

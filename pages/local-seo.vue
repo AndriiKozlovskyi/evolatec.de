@@ -84,11 +84,41 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema
 const { hreflangLinks } = useLanguageSwitcher();
 
 const localFaqs = [
-  { question: 'Was ist Local SEO?', answer: 'Local SEO optimiert Unternehmen für lokale Suchanfragen und Google Maps. Das Ziel besteht darin, dass Sie in Ihrer Region bei Google gefunden werden.' },
-  { question: 'Wie lange dauert Local SEO?', answer: 'Erste Verbesserungen sind oft nach wenigen Wochen sichtbar. Nachhaltige Ergebnisse stellen sich über mehrere Monate hinweg ein.' },
-  { question: 'Was kostet lokales SEO?', answer: 'Local SEO beginnt ab 400€. Monatliche Betreuung ab 300€. Die genauen Kosten hängen von Ihrer Branche und Region ab.' },
-  { question: 'Ist Google Maps wichtig?', answer: 'Ja, viele lokale Kunden suchen direkt über Google Maps. Eine gute Google Business Optimierung ist entscheidend.' },
-  { question: 'Haben Sie Erfahrung in meiner Branche?', answer: 'Wir arbeiten mit vielen lokalen Unternehmen zusammen: Ärzte, Handwerker, Restaurants, Einzelhandel und Dienstleister. Gerne besprechen wir Ihre Branche.' },
+  {
+    question: 'Was ist Local SEO und wie funktioniert es?',
+    answer:
+      'Local SEO ist die Suchmaschinenoptimierung für lokale Suchanfragen wie "Friseur München" oder "Anwalt in der Nähe". Ziel ist es, in Google Maps, im Local Pack (Top-3 Karten-Ergebnisse) und in lokalen organischen Rankings sichtbar zu sein. Dazu optimieren wir Google Business Profile, lokale Keywords, NAP-Daten (Name, Adresse, Telefon), Bewertungen, lokale Backlinks und strukturierte Daten.',
+  },
+  {
+    question: 'Was ist der Unterschied zwischen Local SEO und normaler SEO?',
+    answer:
+      'Klassische SEO zielt auf bundesweite oder internationale Rankings für allgemeine Suchanfragen. Local SEO fokussiert auf regionale Sichtbarkeit, Google Maps und das Local Pack. Wichtigste Local-SEO-Faktoren sind das Google Business Profile, Nähe zum Suchenden, Relevanz und Bewertungen. Beide Disziplinen ergänzen sich – wer lokal Kunden gewinnen möchte, braucht meist beides.',
+  },
+  {
+    question: 'Was kostet professionelles Local SEO?',
+    answer:
+      'Eine Google Business Profile Optimierung beginnt bei EvolaTec ab 400€. Basis-Local-SEO inkl. lokaler Keyword-Strategie und Website-Integration ab 500€. Laufende Local-SEO-Betreuung mit Bewertungs-Management und Ranking-Monitoring ab 300€/Monat. Die Kosten hängen von Branche, Region und Wettbewerb ab – stark umkämpfte Standorte erfordern mehr Aufwand.',
+  },
+  {
+    question: 'Wie lange dauert Local SEO bis zu ersten Ergebnissen?',
+    answer:
+      'Erste Verbesserungen sind oft schon nach 2–4 Wochen sichtbar, vor allem bei der Google-Business-Optimierung. Solide Rankings im Local Pack entstehen nach 2–4 Monaten, nachhaltige Top-Platzierungen nach 6–12 Monaten – abhängig von Branche, Wettbewerb und Region. Local SEO wirkt oft schneller als klassische SEO, weil der Wettbewerb regional begrenzt ist.',
+  },
+  {
+    question: 'Wie wichtig ist Google Maps für mein Unternehmen?',
+    answer:
+      'Google Maps ist für lokale Unternehmen oft wichtiger als die klassische Google-Suche. Über 60% der Smartphone-Nutzer suchen nach lokalen Dienstleistern direkt über Maps. Ein optimiertes Google Business Profile mit Fotos, Öffnungszeiten, Bewertungen und korrekten Kontaktdaten kann mehr Anrufe und Anfragen generieren als die Website selbst – besonders bei Restaurants, Ärzten und Handwerksbetrieben.',
+  },
+  {
+    question: 'Wie wichtig sind Google-Bewertungen für Local SEO?',
+    answer:
+      'Google-Bewertungen sind einer der stärksten Ranking-Faktoren im Local SEO. Anzahl, Aktualität und Bewertungstext beeinflussen sowohl Rankings als auch die Klick-Wahrscheinlichkeit. Wir entwickeln Strategien für aktives Bewertungs-Management: automatisierte Bewertungs-Anfragen nach Kundenkontakt, Antworten auf positive und negative Bewertungen, sowie den Umgang mit unfairen Rezensionen.',
+  },
+  {
+    question: 'Für welche Branchen lohnt sich Local SEO?',
+    answer:
+      'Local SEO lohnt sich für jedes Unternehmen mit regionalem Einzugsgebiet: Restaurants, Cafés, Ärzte und Kliniken, Handwerker und Bauunternehmen, Anwälte und Steuerberater, Immobilienmakler, Fitnessstudios, Coaches, Einzelhandel und lokale Dienstleister. Auch Filialisten profitieren – wir optimieren auch Multi-Location-Setups mit eigenen Google Business Profilen pro Standort.',
+  },
 ];
 
 const schemaMarkup = buildSchema(

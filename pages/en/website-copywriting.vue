@@ -314,24 +314,39 @@ const contentPricingPlans = [
 
 const contentFaqs = [
   {
-    question: 'Why is SEO content important?',
-    answer: 'SEO content improves rankings and helps Google understand your website better. Good copy leads to more organic traffic.',
-  },
-  {
-    question: 'Do you write copy for landing pages?',
-    answer: 'We create conversion-focused content for landing pages and ad campaigns targeting sales and leads.',
-  },
-  {
-    question: 'Can content be created in multiple languages?',
-    answer: 'We create content for German, English and international projects with native language expertise.',
+    question: 'Why is SEO content important for a website?',
+    answer:
+      'SEO content improves your Google rankings because it combines relevant keywords, clear structure and user-focused copy. Google evaluates content by relevance, readability, depth and search intent – professional SEO content meets all criteria. The result: more organic traffic, longer dwell time, better conversion and predictable long-term visibility without ad costs.',
   },
   {
     question: 'How much does professional website copy cost?',
-    answer: 'Professional website copy starts from €150, complete projects from €700. Exact costs depend on the scope.',
+    answer:
+      'Individual website pages (500 words) start at EvolaTec from €150, conversion-focused landing page copy from €250 and complete website content (up to 5 pages incl. keyword strategy) from €700. Long-form SEO blog articles from €200 per article. Exact costs depend on research depth, word count and topic complexity. We provide a transparent fixed-price quote before the project starts.',
   },
   {
-    question: 'How long does content creation take?',
-    answer: 'For individual pages we typically need 5–10 working days, for larger projects 2–4 weeks. Faster turnaround is possible.',
+    question: 'How long does website copywriting take?',
+    answer:
+      'For individual pages we typically need 5–10 working days, for complete website content 2–4 weeks. Duration depends on research, number of pages and feedback rounds. For urgent projects we offer express delivery within 48–72 hours for a surcharge.',
+  },
+  {
+    question: 'Do you also write copy for landing pages and advertising?',
+    answer:
+      'Yes, we write conversion-focused copy for landing pages, Google Ads, Meta Ads creatives and email campaigns. This copy is specifically optimised for sales and leads – with clear messages, strong calls-to-action and proven copywriting frameworks. On request we also create multiple variants for A/B testing to find the best conversion rate.',
+  },
+  {
+    question: 'What is the difference between SEO copy and copywriting?',
+    answer:
+      'SEO copy is optimised for search engines: keywords, search intent, structure and organic rankings come first. Copywriting focuses on conversion: emotional messaging, sales psychology and strong CTAs. Good web content combines both – it ranks on Google AND sells to the user. We combine both disciplines for maximum impact.',
+  },
+  {
+    question: 'Can content be created in multiple languages?',
+    answer:
+      'Yes, we create content for German, English and international projects with native language expertise. For multilingual projects we account for local search habits, cultural nuances and correct SEO implementation (hreflang, localised keywords). This way you rank in every target market with compelling content.',
+  },
+  {
+    question: 'How does the copywriting process work?',
+    answer:
+      'Our copywriting process has four phases: 1) Briefing & research (audience, competitors, tone of voice), 2) keyword strategy and topic planning, 3) writing with SEO optimisation, 4) feedback and polishing. You receive the finished copy in a Word or Google document and can use two revision rounds at no extra cost.',
   },
 ];
 </script>

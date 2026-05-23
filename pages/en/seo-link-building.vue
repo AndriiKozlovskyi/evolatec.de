@@ -247,24 +247,39 @@ const linkBuildingPricingPlans = [
 
 const linkBuildingFaqs = [
   {
-    question: 'Why are backlinks important?',
-    answer: 'Backlinks strengthen the authority of your website and improve rankings on Google. They are among the strongest ranking factors.',
-  },
-  {
-    question: 'How long does link building take?',
-    answer: 'Link building is a long-term process. First improvements are often visible after a few weeks; sustainable results develop over months.',
+    question: 'Why are backlinks important for SEO?',
+    answer:
+      'Backlinks have been one of the most important Google ranking factors for years. Every link from an external website acts as a "vote of confidence" for your page – the more relevant and authoritative the linking domain, the stronger the effect on your rankings. Websites with strong backlink profiles rank higher, gain more organic traffic and are classified by Google as trustworthy sources.',
   },
   {
     question: 'How much does professional link building cost?',
-    answer: 'Link building starts from €100. Monthly management from €700/month. Exact costs depend on your industry and goals.',
+    answer:
+      'A backlink analysis at EvolaTec starts from €100. One-off basic link building with strategy and first backlinks from €500. Ongoing link building management with monthly new backlinks and monitoring from €700/month. Exact costs depend on industry, competition and the desired number and quality of backlinks.',
   },
   {
-    question: 'Do you use safe SEO methods?',
-    answer: 'Yes, we rely on sustainable and Google-compliant link building strategies. We avoid manipulative tactics and toxic links.',
+    question: 'How long does link building take to show results?',
+    answer:
+      'Link building is a long-term process. First improvements in Google rankings are often visible after 2–3 months, sustainable authority increases develop over 6–12 months. Those who continuously build high-quality backlinks build a long-term competitive advantage – fast mass links bring nothing short-term and can even lead to Google penalties.',
   },
   {
-    question: 'Are toxic links removed?',
-    answer: 'Yes, we analyse your link profile for toxic links and initiate disavow requests where necessary to remove harmful backlinks.',
+    question: 'Which types of backlinks do you build?',
+    answer:
+      'We focus on high-quality, topic-relevant backlinks: editorial mentions in trade media, guest articles in industry blogs, niche directories, content-based links through high-quality assets, local backlinks for Local SEO and authority links from strong domains. We avoid bought mass links, PBNs and other black-hat methods that harm your website long-term.',
+  },
+  {
+    question: 'Do you use safe, Google-compliant link building methods?',
+    answer:
+      'Yes, we rely exclusively on sustainable white-hat link building strategies that comply with Google\'s guidelines. We avoid manipulative tactics like link farms, PBNs, automated comments or bought mass links – such methods lead to Google penalties and long-term ranking losses. Our focus is on relationship building and genuine content value.',
+  },
+  {
+    question: 'Are toxic backlinks detected and removed?',
+    answer:
+      'Yes, we analyse your backlink profile with tools like Ahrefs and Semrush for toxic, spammy or harmful links. If necessary we create a disavow file for Google Search Console so Google ignores these links when evaluating your website. This is particularly important after a Google penalty or when taking over old domains with questionable link history.',
+  },
+  {
+    question: 'How many backlinks do I need for a good ranking?',
+    answer:
+      'The number is less important than quality. 10 high-quality backlinks from authoritative, topic-relevant domains are more effective than 1,000 weak links. Competitor analyses show how many backlinks competitors in top positions have – we build a comparable or stronger profile with the right mix of authority, relevance and natural growth.',
   },
 ];
 </script>

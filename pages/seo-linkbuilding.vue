@@ -54,11 +54,41 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from '~/composables/schema
 const { hreflangLinks } = useLanguageSwitcher();
 
 const linkBuildingFaqs = [
-  { question: 'Warum sind Backlinks wichtig?', answer: 'Backlinks stärken die Autorität Ihrer Website und verbessern Rankings bei Google. Sie zählen zu den stärksten Rankingfaktoren.' },
-  { question: 'Wie lange dauert Linkbuilding?', answer: 'Linkbuilding ist ein langfristiger Prozess. Erste Verbesserungen sind oft nach einigen Wochen sichtbar, nachhaltige Ergebnisse entstehen über Monate.' },
-  { question: 'Was kostet professionelles Linkbuilding?', answer: 'Linkbuilding beginnt ab 100€. Monatliche Betreuung ab 700€/Monat. Die genauen Kosten hängen von Ihrer Branche und Zielen ab.' },
-  { question: 'Nutzen Sie sichere SEO Methoden?', answer: 'Ja, wir setzen auf nachhaltige und Google-konforme Linkbuilding Strategien. Wir vermeiden manipulative Taktiken und toxische Links.' },
-  { question: 'Werden toxische Links entfernt?', answer: 'Ja, wir analysieren Ihr Linkprofil auf toxische Links und initiieren bei Bedarf Disavow-Anfragen, um schädliche Backlinks zu entfernen.' },
+  {
+    question: 'Warum sind Backlinks für SEO wichtig?',
+    answer:
+      'Backlinks sind seit Jahren einer der wichtigsten Google-Rankingfaktoren. Jeder Link von einer externen Website gilt als "Vertrauensvotum" für Ihre Seite – je relevanter und autoritativer die verlinkende Domain, desto stärker der Effekt auf Ihre Rankings. Websites mit starkem Backlink-Profil ranken höher, gewinnen mehr organischen Traffic und werden von Google als vertrauenswürdige Quellen eingestuft.',
+  },
+  {
+    question: 'Was kostet professionelles Linkbuilding?',
+    answer:
+      'Eine Backlink-Analyse beginnt bei EvolaTec ab 100€. Einmaliges Basis-Linkbuilding mit Strategie und ersten Backlinks ab 500€. Laufende Linkbuilding-Betreuung mit monatlich neuen Backlinks und Monitoring ab 700€/Monat. Die genauen Kosten hängen von Branche, Wettbewerb und der gewünschten Anzahl und Qualität der Backlinks ab.',
+  },
+  {
+    question: 'Wie lange dauert Linkbuilding bis zu Ergebnissen?',
+    answer:
+      'Linkbuilding ist ein langfristiger Prozess. Erste Verbesserungen bei den Google-Rankings sind oft nach 2–3 Monaten sichtbar, nachhaltige Autoritäts-Steigerungen entstehen über 6–12 Monate. Wer regelmäßig hochwertige Backlinks aufbaut, baut einen langfristigen Wettbewerbsvorteil auf – schnelle Massen-Links bringen kurzfristig nichts und können sogar zu Google-Strafen führen.',
+  },
+  {
+    question: 'Welche Arten von Backlinks bauen Sie auf?',
+    answer:
+      'Wir konzentrieren uns auf hochwertige, themenrelevante Backlinks: redaktionelle Erwähnungen in Fachmedien, Gastartikel in Branchenblogs, Brancheneinträge, Content-basierte Links durch hochwertige Inhalte, lokale Backlinks für Local SEO sowie Authority-Links aus starken Domains. Wir vermeiden gekaufte Massen-Links, PBNs und andere Black-Hat-Methoden, die Ihrer Website langfristig schaden.',
+  },
+  {
+    question: 'Nutzen Sie sichere, Google-konforme Linkbuilding Methoden?',
+    answer:
+      'Ja, wir setzen ausschließlich auf nachhaltige White-Hat-Linkbuilding-Strategien, die mit Googles Richtlinien konform sind. Wir vermeiden manipulative Taktiken wie Link-Farmen, PBNs, automatisierte Kommentare oder gekaufte Massen-Links – solche Methoden führen zu Google-Strafen und langfristigen Ranking-Verlusten. Unser Fokus liegt auf Beziehungsaufbau und echtem Content-Mehrwert.',
+  },
+  {
+    question: 'Werden toxische Backlinks erkannt und entfernt?',
+    answer:
+      'Ja, wir analysieren Ihr Backlink-Profil mit Tools wie Ahrefs und Semrush auf toxische, spammige oder schädliche Links. Bei Bedarf erstellen wir eine Disavow-Datei für die Google Search Console, mit der Google diese Links bei der Bewertung Ihrer Website ignoriert. Das ist besonders wichtig nach Google-Penalty oder bei Übernahmen alter Domains mit fragwürdiger Linkhistorie.',
+  },
+  {
+    question: 'Wie viele Backlinks brauche ich für ein gutes Ranking?',
+    answer:
+      'Die Anzahl ist weniger entscheidend als die Qualität. 10 hochwertige Backlinks von autoritativen, themenrelevanten Domains sind wirkungsvoller als 1.000 schwache Links. Wettbewerbsanalysen zeigen, wie viele Backlinks Konkurrenten in den Top-Positionen haben – wir bauen ein vergleichbares oder besseres Profil mit dem richtigen Mix aus Authority, Relevanz und natürlichem Wachstum auf.',
+  },
 ];
 
 const schemaMarkup = buildSchema(

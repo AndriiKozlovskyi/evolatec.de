@@ -386,19 +386,38 @@ const features = [
 const faqs = [
   {
     question: 'How much does it cost to get a website built?',
-    answer: 'Costs depend on scope. Simple company websites typically start from €1,500, while complex platforms and online shops are priced accordingly.',
+    answer:
+      'Web development costs depend on scope and complexity. Landing pages start from €500, professional business websites from €1,500 and online shops from €3,000. Complex platforms with custom features or integrations are priced accordingly. We work with transparent fixed prices and provide a detailed quote with no hidden costs before the project starts.',
+  },
+  {
+    question: 'How long does web development take?',
+    answer:
+      'We develop landing pages in 3–7 days, business websites in 2–4 weeks and online shops in 4–8 weeks. Complex web applications or SaaS platforms take 6–16 weeks. The timeframe depends on the feature scope and how quickly content, images and feedback are provided.',
   },
   {
     question: 'Why is professional web development important?',
-    answer: 'Professional websites build trust, deliver a better user experience and generate higher conversion rates. They are technically optimised, SEO-ready and designed for all devices.',
+    answer:
+      'A professionally developed website loads fast, is SEO-optimised, secure and perfectly usable on every device. It is often the first contact point with customers and decides on trust and conversion. DIY solutions or outdated templates usually cost more in the long run through lost enquiries, poor rankings and maintenance issues.',
   },
   {
-    question: 'Does EvolaTec also develop online shops?',
-    answer: 'Yes, EvolaTec develops modern e-commerce solutions and professional online shops for businesses of all sizes.',
+    question: 'Which technologies do you use for web development?',
+    answer:
+      'We build with modern technologies like Nuxt, Vue.js, Nest.js and Tailwind CSS for custom websites and web applications. For CMS-based projects we use Storyblok, Strapi or Sanity as headless CMS. For e-commerce we use Shopify or custom solutions. Technology choice is based on your use case – not on our preference.',
   },
   {
-    question: 'Are the websites responsive?',
-    answer: 'Yes, all websites are developed Mobile First and optimised for smartphones, tablets and desktop devices.',
+    question: 'Are the developed websites SEO-optimised?',
+    answer:
+      'Yes, every website is developed SEO-optimised from the start: clean code, structured data, fast loading times, mobile optimisation, correct meta tags and a logical site structure. For deeper SEO strategies such as keyword research and content optimisation we offer dedicated SEO packages.',
+  },
+  {
+    question: 'Does EvolaTec also develop online shops and web applications?',
+    answer:
+      'Yes, beyond classic websites we develop professional online shops, custom web applications, SaaS platforms, booking systems, customer portals and integrations with CRM, ERP or payment providers. We implement both standard solutions (Shopify, Storyblok) and tailored development.',
+  },
+  {
+    question: 'Are the websites responsive and mobile-optimised?',
+    answer:
+      'Yes, all websites are developed Mobile-First and optimised for smartphones, tablets and desktop. Since Google uses Mobile-First Indexing, responsive design is now mandatory – not just for users but also for your Google rankings. We test every project on multiple devices, browsers and screen sizes.',
   },
 ];
 </script>
