@@ -86,7 +86,7 @@ const schemaMarkup = {
       mainEntity: [
         { '@type': 'Question', name: 'What does a branding agency do?', acceptedAnswer: { '@type': 'Answer', text: 'A branding agency develops brand identities, corporate designs, logos and strategic brand presences for businesses and start-ups.' } },
         { '@type': 'Question', name: 'Why is corporate design important?', acceptedAnswer: { '@type': 'Answer', text: 'Corporate design ensures recognition, professionalism and trust. A consistent design creates a cohesive brand perception.' } },
-        { '@type': 'Question', name: 'How much does professional branding cost?', acceptedAnswer: { '@type': 'Answer', text: 'Logo design starts from €200, corporate design from €1,000. Rebranding and complete brand presences from €2,500.' } },
+        { '@type': 'Question', name: 'How much does professional branding cost?', acceptedAnswer: { '@type': 'Answer', text: 'Logo design starts from €200, corporate design from €1,000. Rebranding and complete brand presences from €2,000.' } },
         { '@type': 'Question', name: 'Can existing brands be modernised?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer rebranding, corporate redesign and complete brand relaunches to modernise existing brands.' } },
         { '@type': 'Question', name: 'How long does a branding project take?', acceptedAnswer: { '@type': 'Answer', text: 'A branding project takes an average of 4–8 weeks, depending on scope and complexity. Logo design is often achievable faster.' } },
       ],
@@ -297,21 +297,36 @@ const brandingPricingPlans = [
   {
     tier: 'Logo Design',
     price: 'from €200',
-    features: ['Professional Logo', 'Multiple Variants', 'Vector Format', 'Brand Markings'],
+    features: [
+      'Professional Logo',
+      'Multiple Variants',
+      'Vector Format (SVG/PDF)',
+      'Brand Markings',
+    ],
     buttonText: 'Request Logo',
     isHighlighted: false,
   },
   {
-    tier: 'Branding Package',
-    price: 'from €1,500',
-    features: ['Logo + Corporate Design', 'Colour Palette & Typography', 'Brand Guidelines', 'Website Design Basics'],
+    tier: 'Corporate Design',
+    price: 'from €1,000',
+    features: [
+      'Everything in Logo Design',
+      'Colour Palette & Typography',
+      'Brand Guidelines',
+      'Visual Design System',
+    ],
     buttonText: 'Start Branding',
     isHighlighted: true,
   },
   {
     tier: 'Rebranding & Relaunch',
-    price: 'from €2,500',
-    features: ['Complete Rebranding', 'Visual Modernisation', 'Corporate Redesign', 'Implementation'],
+    price: 'from €2,000',
+    features: [
+      'Everything in Corporate Design',
+      'Brand Analysis & Strategy',
+      'Visual Modernisation',
+      'Roll-out & Implementation',
+    ],
     buttonText: 'Book Rebranding',
     isHighlighted: false,
   },
@@ -328,7 +343,7 @@ const brandingFaqs = [
   },
   {
     question: 'How much does professional branding cost?',
-    answer: 'Logo design starts from €200, corporate design from €1,000. Rebranding and complete brand presences from €2,500.',
+    answer: 'Logo design starts from €200, corporate design from €1,000. Rebranding and complete brand presences from €2,000.',
   },
   {
     question: 'Can existing brands be modernised?',

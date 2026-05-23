@@ -279,7 +279,7 @@ const contentPricingPlans = [
     tier: 'Webseiten Texte',
     price: 'ab 150 €',
     features: [
-      'Einzelne Seiten',
+      'Einzelne Seiten (500 Wörter)',
       'SEO optimiert',
       'Professionell geschrieben',
       'Google fokussiert',
@@ -292,7 +292,7 @@ const contentPricingPlans = [
     price: 'ab 250 €',
     features: [
       'Konversionsstarke Texte',
-      'CTA Optimierung',
+      'CTA & Headline Optimierung',
       'Sales fokussiert',
       'A/B Testing ready',
     ],
@@ -303,9 +303,9 @@ const contentPricingPlans = [
     tier: 'Komplette Website Inhalte',
     price: 'ab 700 €',
     features: [
-      'Alle Seiten',
+      'Alle Seiten (bis 5)',
       'Content Strategie',
-      'SEO Struktur',
+      'SEO Struktur & Keywords',
       'Professionelle Umsetzung',
     ],
     buttonText: 'Projekt starten',

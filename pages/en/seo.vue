@@ -87,7 +87,7 @@ const schemaMarkup = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'How long does SEO take?', acceptedAnswer: { '@type': 'Answer', text: 'First results are typically visible after 2–3 months. Sustainable SEO is however a long-term process that requires continuous optimisation.' } },
-        { '@type': 'Question', name: 'How much does professional SEO cost?', acceptedAnswer: { '@type': 'Answer', text: 'An SEO audit starts from €100, basic SEO optimisation from €300, monthly management from €250/month. Exact prices depend on scope and target audience.' } },
+        { '@type': 'Question', name: 'How much does professional SEO cost?', acceptedAnswer: { '@type': 'Answer', text: 'An SEO audit starts from €100, basic SEO optimisation from €300, monthly management from €300/month. Exact prices depend on scope and target audience.' } },
         { '@type': 'Question', name: 'Is SEO better than advertising?', acceptedAnswer: { '@type': 'Answer', text: 'SEO delivers cheaper traffic in the long run, while advertising provides immediate results. Both strategies work best together.' } },
         { '@type': 'Question', name: 'Do you optimise international websites?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer multilingual and international SEO strategies for businesses that want to grow globally.' } },
         { '@type': 'Question', name: 'What is included in the SEO audit?', acceptedAnswer: { '@type': 'Answer', text: 'Technical analysis, on-page check, competitor analysis, keyword research and a detailed action plan.' } },
@@ -272,17 +272,17 @@ const seoPricingPlans = [
     tier: 'Basic SEO',
     price: 'from €300',
     features: [
+      'Everything in SEO Audit',
       'On-Page Optimisation',
       'Technical Fixes',
       'Content Optimisation',
-      'First Rankings',
     ],
     buttonText: 'Choose Package',
     isHighlighted: true,
   },
   {
     tier: 'Monthly Management',
-    price: 'from €250/month',
+    price: 'from €300/month',
     features: [
       'Continuous Optimisation',
       'Content Updates',
@@ -312,7 +312,7 @@ const seoFaqs = [
   },
   {
     question: 'How much does professional SEO cost?',
-    answer: 'An SEO audit starts from €100, basic SEO optimisation from €300, monthly management from €250/month. Exact prices depend on scope and target audience.',
+    answer: 'An SEO audit starts from €100, basic SEO optimisation from €300, monthly management from €300/month. Exact prices depend on scope and target audience.',
   },
   {
     question: 'Is SEO better than advertising?',

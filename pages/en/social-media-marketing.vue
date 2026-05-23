@@ -161,7 +161,7 @@ const schemaMarkup = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'What does a social media agency do?', acceptedAnswer: { '@type': 'Answer', text: 'A social media agency develops, manages and optimises campaigns on platforms such as Facebook and Instagram.' } },
-        { '@type': 'Question', name: 'How much do Facebook or Instagram ads cost?', acceptedAnswer: { '@type': 'Answer', text: 'Management is possible from a monthly budget of €500. The advertising budget is set separately.' } },
+        { '@type': 'Question', name: 'How much do Facebook or Instagram ads cost?', acceptedAnswer: { '@type': 'Answer', text: 'Meta Ads management starts from €300/month. The advertising budget is set separately.' } },
         { '@type': 'Question', name: 'How quickly do social media ads work?', acceptedAnswer: { '@type': 'Answer', text: 'First results can be visible within a few days.' } },
         { '@type': 'Question', name: 'Which businesses benefit from social media marketing?', acceptedAnswer: { '@type': 'Answer', text: 'Local businesses, service providers, e-commerce, start-ups and brand building.' } },
       ],
@@ -378,10 +378,10 @@ const whyEvolaTec = [
 
 const pricingItems = [
   { name: 'Social Media Consulting', price: 'from €90/hour' },
-  { name: 'Facebook Ads Setup', price: 'from €350' },
-  { name: 'Instagram Ads Setup', price: 'from €350' },
-  { name: 'Social Media Management', price: 'from €500/month' },
-  { name: 'Performance Marketing', price: 'from €1,200/month' },
+  { name: 'Meta Ads Management', price: 'from €300/month' },
+  { name: 'Creatives & Graphics', price: 'from €150' },
+  { name: 'Monthly Reporting', price: 'from €100/month' },
+  { name: 'Social Media Templates', price: 'from €150' },
   { name: 'Content Production', price: 'from €300' },
 ];
 
@@ -392,7 +392,7 @@ const socialFaqs = [
   },
   {
     question: 'How much do Facebook or Instagram ads cost?',
-    answer: 'Management is possible from a monthly budget of €500. The advertising budget is set separately.',
+    answer: 'Meta Ads management starts from €300/month. The advertising budget is set separately.',
   },
   {
     question: 'How quickly do social media ads work?',

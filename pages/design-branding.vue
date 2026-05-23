@@ -88,7 +88,7 @@ const brandingFaqs = [
   {
     question: 'Was kostet professionelles Branding?',
     answer:
-      'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.500€.',
+      'Logo Design beginnt ab 200€, Corporate Design ab 1.000€. Rebranding und komplette Markenauftritte ab 2.000€.',
   },
   {
     question: 'Können bestehende Marken modernisiert werden?',
@@ -338,32 +338,32 @@ const brandingPricingPlans = [
     features: [
       'Professionelles Logo',
       'Mehrere Varianten',
-      'Vektorformat',
+      'Vektorformat (SVG/PDF)',
       'Brand Markings',
     ],
     buttonText: 'Logo anfragen',
     isHighlighted: false,
   },
   {
-    tier: 'Branding Paket',
-    price: 'ab 1.500 €',
+    tier: 'Corporate Design',
+    price: 'ab 1.000 €',
     features: [
-      'Logo + Corporate Design',
+      'Alles aus Logo Design',
       'Farbpalette & Typografie',
       'Brand Guidelines',
-      'Website Design Grundlagen',
+      'Visuelles Designsystem',
     ],
     buttonText: 'Branding starten',
     isHighlighted: true,
   },
   {
     tier: 'Rebranding & Relaunch',
-    price: 'ab 2.500 €',
+    price: 'ab 2.000 €',
     features: [
-      'Komplettes Rebranding',
+      'Alles aus Corporate Design',
+      'Markenanalyse & Strategie',
       'Visuelle Modernisierung',
-      'Corporate Redesign',
-      'Implementierung',
+      'Roll-out & Implementierung',
     ],
     buttonText: 'Rebranding buchen',
     isHighlighted: false,

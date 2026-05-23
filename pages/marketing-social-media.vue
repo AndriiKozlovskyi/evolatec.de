@@ -176,7 +176,7 @@ const { hreflangLinks } = useLanguageSwitcher();
 
 const socialFaqs = [
   { question: 'Was macht eine Social Media Agentur?', answer: 'Eine Social Media Agentur entwickelt, verwaltet und optimiert Kampagnen auf Plattformen wie Facebook und Instagram.' },
-  { question: 'Was kosten Facebook oder Instagram Ads?', answer: 'Die Betreuung ist ab einem monatlichen Budget von 500 € möglich. Das Werbebudget wird separat festgelegt.' },
+  { question: 'Was kosten Facebook oder Instagram Ads?', answer: 'Die Meta Ads Betreuung beginnt ab 300€/Monat. Das Werbebudget wird separat festgelegt.' },
   { question: 'Wie schnell funktionieren Social Media Ads?', answer: 'Erste Ergebnisse können bereits innerhalb weniger Tage sichtbar werden.' },
   { question: 'Für welche Unternehmen eignet sich Social Media Marketing?', answer: 'Für lokale Unternehmen, Dienstleister, E-Commerce, Startups und Markenaufbau.' },
 ];
@@ -439,10 +439,10 @@ const whyEvolaTec = [
 
 const pricingItems = [
   { name: 'Social Media Beratung', price: 'ab 90€/Stunde' },
-  { name: 'Facebook Ads Setup', price: 'ab 350€' },
-  { name: 'Instagram Ads Setup', price: 'ab 350€' },
-  { name: 'Social Media Betreuung', price: 'ab 500€/Monat' },
-  { name: 'Performance Marketing', price: 'ab 1.200€/Monat' },
+  { name: 'Meta Ads Management', price: 'ab 300€/Monat' },
+  { name: 'Creatives & Grafiken', price: 'ab 150€' },
+  { name: 'Monatliches Reporting', price: 'ab 100€/Monat' },
+  { name: 'Social Media Templates', price: 'ab 150€' },
   { name: 'Content Produktion', price: 'ab 300€' },
 ];
 

@@ -108,7 +108,7 @@ const { hreflangLinks } = useLanguageSwitcher();
 const faqs = [
   {
     question: 'Was kostet professionelles Webdesign?',
-    answer: 'Die Kosten hängen vom Umfang des jeweiligen Projekts ab. Professionelle Websites starten in der Regel ab 1.000€.',
+    answer: 'Die Kosten hängen vom Umfang des jeweiligen Projekts ab. Landingpages starten ab 500€, professionelle Firmenwebsites ab 1.500€.',
   },
   {
     question: 'Warum ist responsive Webdesign wichtig?',

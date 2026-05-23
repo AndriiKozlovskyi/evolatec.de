@@ -358,7 +358,7 @@ const schemaMarkup = buildSchema(
     { name: 'Landingpage erstellen lassen', description: 'Konversionsstarke One-Pager für Werbung und Leadgenerierung.', url: 'https://evolatec.de/landingpage-erstellen-lassen', minPrice: 500 },
     { name: 'Firmenwebsite erstellen lassen', description: 'Professionelle Unternehmenswebsites für lokale Firmen und Unternehmen.', url: 'https://evolatec.de/firmenwebsite-erstellen-lassen', minPrice: 1500 },
     { name: 'Online Shop erstellen lassen', description: 'Moderne E-Commerce Lösungen und Shopify Shops.', url: 'https://evolatec.de/online-shop-erstellen-lassen', minPrice: 3000 },
-    { name: 'SEO Optimierung', description: 'Mehr Sichtbarkeit bei Google und nachhaltiges Wachstum.', url: 'https://evolatec.de/seo', minPrice: 300 },
+    { name: 'SEO Optimierung', description: 'Mehr Sichtbarkeit bei Google und nachhaltiges Wachstum.', url: 'https://evolatec.de/seo-optimieren-lassen', minPrice: 300 },
     { name: 'Google Ads Betreuung', description: 'Mehr Kundenanfragen durch gezielte Werbekampagnen.', url: 'https://evolatec.de/marketing-google-ads', minPrice: 400 },
   ]),
   faqSchema(homeFaqs),

@@ -319,11 +319,11 @@ const whyEvolaTec = [
 
 const pricingItems = [
   { name: 'Google Ads Beratung', price: 'ab 90€/Stunde' },
-  { name: 'Kampagnen Setup', price: 'ab 350€' },
-  { name: 'Google Ads Betreuung', price: 'ab 400€/Monat' },
-  { name: 'E-Commerce Kampagnen', price: 'ab 700€/Monat' },
-  { name: 'Performance Marketing', price: 'ab 1.200€/Monat' },
-  { name: 'Landingpage Optimierung', price: 'ab 500€' },
+  { name: 'Google Ads Management', price: 'ab 400€/Monat' },
+  { name: 'Creatives & Grafiken', price: 'ab 150€' },
+  { name: 'Monatliches Reporting', price: 'ab 100€/Monat' },
+  { name: 'Landing Page', price: 'ab 500€' },
+  { name: 'SEO Optimierung', price: 'ab 300€' },
 ];
 
 </script>

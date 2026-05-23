@@ -154,7 +154,7 @@ const marketingFaqs = [
   {
     question: 'Was kostet professionelles Online Marketing?',
     answer:
-      'Marketing Betreuung beginnt ab 400€ monatlich, Full Service Lösungen ab 1.200€ monatlich.',
+      'Google Ads Betreuung ab 400€/Monat, Meta Ads ab 300€/Monat. Werbebudget wird separat festgelegt.',
   },
   {
     question: 'Für welche Unternehmen eignet sich Online Marketing?',
@@ -383,11 +383,11 @@ const consultingColors = [
 
 const pricingItems = [
   { name: 'Marketing Beratung', price: 'ab 90€/Stunde' },
-  { name: 'SEO Betreuung', price: 'ab 400€/Monat' },
   { name: 'Google Ads Management', price: 'ab 400€/Monat' },
-  { name: 'Performance Marketing', price: 'ab 700€/Monat' },
-  { name: 'Full Service Marketing', price: 'ab 1.200€/Monat' },
-  { name: 'Marketing Strategie', price: 'ab 600€' },
+  { name: 'Meta Ads Management', price: 'ab 300€/Monat' },
+  { name: 'SEO Optimierung', price: 'ab 300€' },
+  { name: 'Creatives & Grafiken', price: 'ab 150€' },
+  { name: 'Monatliches Reporting', price: 'ab 100€/Monat' },
 ];
 
 </script>

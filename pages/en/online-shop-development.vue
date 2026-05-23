@@ -304,7 +304,7 @@ const expertiseBlocks = [
     icon: 'price_check',
     title: 'Online Shop Development Costs — What You Should Know',
     paragraphs: [
-      'The cost of building an online shop depends on the platform, scope and individual requirements. A professional Shopify shop at EvolaTec starts from €5,000, with custom solutions priced accordingly.',
+      'The cost of building an online shop depends on the platform, scope and individual requirements. A professional online shop at EvolaTec starts from €3,000, with custom solutions priced accordingly.',
       'In addition to the one-off build cost, there are ongoing operating costs: hosting, platform fees (e.g. Shopify from approx. €30/month), payment provider fees and optional maintenance.',
       'Investing in a professionally built online shop means investing in a solution that generates long-term revenue — rather than low-cost website builders that quickly hit their limits.',
       'EvolaTec offers transparent pricing with no hidden costs. From the very first conversation you receive a realistic estimate for your individual online shop.',
@@ -381,20 +381,25 @@ const features = [
 const pricingPlans = [
   {
     tier: 'Starter',
-    price: 'from €5,000',
-    features: ['Shopify Standard Setup', 'Design Customisation', 'Basic SEO', 'Support Included'],
+    price: 'from €3,000',
+    features: [
+      'Online Shop Setup',
+      'Responsive Design',
+      'Basic SEO',
+      '30 Days Support',
+    ],
     buttonText: 'Request a Quote',
     isHighlighted: false,
   },
   {
-    tier: 'Business Elite',
-    price: 'from €15,000',
+    tier: 'Premium',
+    price: 'from €6,000',
     features: [
-      'Custom Storefront',
-      'ERP & PIM Integration',
-      'Performance Hosting',
+      'Everything in Starter',
+      'Unique Design + UI/UX',
+      'SEO Optimisation & SEO Copy',
+      'Google Ads Setup (budget separate)',
       'Advanced Analytics',
-      '24/7 Monitoring',
     ],
     buttonText: 'Most Popular',
     isHighlighted: true,
@@ -402,7 +407,13 @@ const pricingPlans = [
   {
     tier: 'Enterprise',
     price: 'Custom',
-    features: ['Full Custom Architecture', 'Multi-Shop Management', 'Global Rollout', 'Dedicated Team'],
+    features: [
+      'Everything in Premium',
+      'Full Custom Architecture',
+      'ERP & PIM Integration',
+      'Multi-Shop Management',
+      'Dedicated Team',
+    ],
     buttonText: 'Book Consultation',
     isHighlighted: false,
   },

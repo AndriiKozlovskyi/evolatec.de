@@ -81,7 +81,7 @@ const seoFaqs = [
   },
   {
     question: 'Was kostet professionelle SEO?',
-    answer: 'Ein SEO Audit beginnt ab 100€, Basis SEO Optimierung ab 300€, monatliche Betreuung ab 250€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.',
+    answer: 'Ein SEO Audit beginnt ab 100€, Basis SEO Optimierung ab 300€, monatliche Betreuung ab 300€/Monat. Genaue Preise hängen von Umfang und Zielgruppe ab.',
   },
   {
     question: 'Ist SEO besser als Werbung?',
@@ -297,8 +297,8 @@ const seoPricingPlans = [
     price: 'ab 100 €',
     features: [
       'Technische Analyse',
-      'Konkurrenzanalyse',
       'Keyword-Recherche',
+      'Konkurrenzanalyse',
       'Detaillierter Report',
     ],
     buttonText: 'Audit anfragen',
@@ -308,17 +308,17 @@ const seoPricingPlans = [
     tier: 'Basis SEO',
     price: 'ab 300 €',
     features: [
+      'Alles aus SEO Audit',
       'OnPage Optimierung',
       'Technische Fixes',
       'Content Optimierung',
-      'Erste Rankings',
     ],
     buttonText: 'Paket wählen',
     isHighlighted: true,
   },
   {
     tier: 'Monatliche Betreuung',
-    price: 'ab 250 €/Monat',
+    price: 'ab 300 €/Monat',
     features: [
       'Kontinuierliche Optimierung',
       'Content Updates',

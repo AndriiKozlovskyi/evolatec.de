@@ -157,7 +157,7 @@ const schemaMarkup = {
       mainEntity: [
         { '@type': 'Question', name: 'What does an online marketing agency do?', acceptedAnswer: { '@type': 'Answer', text: 'An online marketing agency develops strategies, campaigns and digital measures for reach, leads and revenue growth.' } },
         { '@type': 'Question', name: 'Which marketing services does EvolaTec offer?', acceptedAnswer: { '@type': 'Answer', text: 'SEO, Google Ads, branding, content marketing, conversion optimisation and digital strategies.' } },
-        { '@type': 'Question', name: 'How much does professional online marketing cost?', acceptedAnswer: { '@type': 'Answer', text: 'Marketing management starts from €400 per month, full service solutions from €1,200 per month.' } },
+        { '@type': 'Question', name: 'How much does professional online marketing cost?', acceptedAnswer: { '@type': 'Answer', text: 'Google Ads management from €400/month, Meta Ads from €300/month. Ad budget is set separately.' } },
         { '@type': 'Question', name: 'Which businesses are suited for online marketing?', acceptedAnswer: { '@type': 'Answer', text: 'Local businesses, service providers, start-ups, online shops and digital brands.' } },
       ],
     },
@@ -382,11 +382,11 @@ const consultingColors = [
 
 const pricingItems = [
   { name: 'Marketing Consulting', price: 'from €90/hour' },
-  { name: 'SEO Management', price: 'from €400/month' },
   { name: 'Google Ads Management', price: 'from €400/month' },
-  { name: 'Performance Marketing', price: 'from €700/month' },
-  { name: 'Full Service Marketing', price: 'from €1,200/month' },
-  { name: 'Marketing Strategy', price: 'from €600' },
+  { name: 'Meta Ads Management', price: 'from €300/month' },
+  { name: 'SEO Optimisation', price: 'from €300' },
+  { name: 'Creatives & Graphics', price: 'from €150' },
+  { name: 'Monthly Reporting', price: 'from €100/month' },
 ];
 
 const marketingFaqs = [
@@ -400,7 +400,7 @@ const marketingFaqs = [
   },
   {
     question: 'How much does professional online marketing cost?',
-    answer: 'Marketing management starts from €400 per month, full service solutions from €1,200 per month.',
+    answer: 'Google Ads management from €400/month, Meta Ads from €300/month. Ad budget is set separately.',
   },
   {
     question: 'Which businesses are suited for online marketing?',

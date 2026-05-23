@@ -111,7 +111,7 @@ const schemaMarkup = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'How much does professional web design cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on the scope of the project. Professional websites typically start from €1,000.' } },
+        { '@type': 'Question', name: 'How much does professional web design cost?', acceptedAnswer: { '@type': 'Answer', text: 'Costs depend on the scope of the project. Landing pages start from €500, professional business websites from €1,500.' } },
         { '@type': 'Question', name: 'Why is responsive web design important?', acceptedAnswer: { '@type': 'Answer', text: 'Responsive websites work optimally on smartphones, tablets and desktop devices.' } },
         { '@type': 'Question', name: 'What does a web design agency do?', acceptedAnswer: { '@type': 'Answer', text: 'A web design agency develops modern websites, improves brand identities and optimises user experiences.' } },
         { '@type': 'Question', name: 'Does EvolaTec also offer UI/UX design?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, EvolaTec develops modern UI/UX designs for websites, apps and digital platforms.' } },
@@ -330,7 +330,7 @@ const features = [
 const faqs = [
   {
     question: 'How much does professional web design cost?',
-    answer: 'Costs depend on the scope of the project. Professional websites typically start from €1,000.',
+    answer: 'Costs depend on the scope of the project. Landing pages start from €500, professional business websites from €1,500.',
   },
   {
     question: 'Why is responsive web design important?',

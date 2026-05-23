@@ -15,11 +15,11 @@
         <p class="text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">{{ subtitle }}</p>
       </div>
 
-      <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-6">
+      <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-6 items-stretch">
         <div
           v-for="(plan, index) in pricingPlans"
           :key="plan.tier"
-          class="animate-fade-in-up"
+          class="animate-fade-in-up flex"
           :style="{ animationDelay: `${index * 100}ms` }"
         >
           <PricingCard

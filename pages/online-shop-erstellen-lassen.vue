@@ -347,7 +347,7 @@ const expertiseBlocks = [
     icon: 'price_check',
     title: 'Onlineshop erstellen lassen Kosten — was Sie wissen sollten',
     paragraphs: [
-      'Die Kosten, einen Onlineshop erstellen zu lassen, hängen von Plattform, Umfang und individuellen Anforderungen ab. Ein professioneller Shopify Shop startet bei EvolaTec ab 5.000 €, individuelle Custom-Lösungen entsprechend höher.',
+      'Die Kosten, einen Onlineshop erstellen zu lassen, hängen von Plattform, Umfang und individuellen Anforderungen ab. Ein professioneller Online Shop startet bei EvolaTec ab 3.000 €, individuelle Custom-Lösungen entsprechend höher.',
       'Zu den einmaligen Erstellungskosten kommen laufende Betriebskosten hinzu: Hosting, Plattformgebühren (z. B. Shopify ab ca. 30 € pro Monat), Gebühren von Zahlungsanbietern sowie optionale Wartungsleistungen.',
       'Wer seinen Onlineshop professionell erstellen lässt, investiert in eine Lösung, die langfristig Umsatz generiert — statt in günstige Baukastensysteme, die schnell an ihre Grenzen stoßen.',
       'EvolaTec bietet transparente Preise ohne versteckte Kosten. Bereits im ersten Gespräch erhalten Sie eine realistische Einschätzung der Kosten für Ihren individuellen Online Shop.',
@@ -463,20 +463,25 @@ const features = [
 const pricingPlans = [
   {
     tier: 'Starter',
-    price: 'ab 5.000 €',
-    features: ['Shopify Standard Setup', 'Design Anpassung', 'Grundlegende SEO', 'Support Basis'],
+    price: 'ab 3.000 €',
+    features: [
+      'Online Shop Setup',
+      'Responsives Design',
+      'Grundlegende SEO',
+      '30 Tage Support',
+    ],
     buttonText: 'Anfrage stellen',
     isHighlighted: false,
   },
   {
-    tier: 'Business Elite',
-    price: 'ab 15.000 €',
+    tier: 'Premium',
+    price: 'ab 6.000 €',
     features: [
-      'Custom Storefront',
-      'ERP & PIM Integration',
-      'Performance Hosting',
+      'Alles aus Starter',
+      'Einzigartiges Design + UI/UX',
+      'SEO Optimierung & SEO Texte',
+      'Google Ads Setup (Budget getrennt)',
       'Advanced Analytics',
-      '24/7 Monitoring',
     ],
     buttonText: 'Meistgewählt',
     isHighlighted: true,
@@ -484,7 +489,13 @@ const pricingPlans = [
   {
     tier: 'Enterprise',
     price: 'Individuell',
-    features: ['Volle Custom-Architektur', 'Multi-Shop Management', 'Globaler Rollout', 'Dedicated Team'],
+    features: [
+      'Alles aus Premium',
+      'Volle Custom-Architektur',
+      'ERP & PIM Integration',
+      'Multi-Shop Management',
+      'Dedicated Team',
+    ],
     buttonText: 'Beratung buchen',
     isHighlighted: false,
   },
