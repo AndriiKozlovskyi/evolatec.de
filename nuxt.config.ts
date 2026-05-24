@@ -103,6 +103,16 @@ export default defineNuxtConfig({
 
       link: [
         {
+          rel: 'preconnect',
+          href: 'https://consent.cookiebot.com',
+        },
+
+        {
+          rel: 'dns-prefetch',
+          href: 'https://consent.cookiebot.com',
+        },
+
+        {
           rel: 'icon',
           type: 'image/png',
           href: '/logo.png?v=1',
