@@ -10,9 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@fontsource/material-symbols-outlined": "^5.2.45",
     "@nuxt/image": "^2.0.0",
-    "nuxt": "^4.4.4",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@storyblok/nuxt": "^6.2.2",
+    "nuxt": "^4.4.4",
     "vue": "^3.5.33",
     "vue-router": "^5.0.6"
   },
