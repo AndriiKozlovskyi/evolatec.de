@@ -27,6 +27,11 @@ export default defineNuxtConfig({
       xxl: 1536,
     },
   },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+    },
+  },
   components: {
     dirs: [
       {

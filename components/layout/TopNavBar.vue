@@ -5,7 +5,7 @@
     <div class="bg-surface backdrop-blur-md border-b border-outline-variant/20 shadow-sm">
     <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
       <!-- Logo -->
-      <a :href="isEnglish ? '/en/' : '/'" class="flex flex-row gap-3 items-center hover:opacity-80 transition-opacity duration-200 brightness-[0.8]">
+      <a :href="isEnglish ? '/en' : '/'" class="flex flex-row gap-3 items-center hover:opacity-80 transition-opacity duration-200 brightness-[0.8]">
         <img src="/logo.png" alt="EvolaTec Logo" width="36" height="36" class="h-9 w-9" loading="eager" />
         <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>     
       </a>
@@ -103,7 +103,7 @@
       </div>
 
       <!-- Desktop CTA -->
-      <a :href="isEnglish ? '/en/contact/' : '/kontakt/'" class="hidden sm:inline-block">
+      <a :href="isEnglish ? '/en/contact' : '/kontakt'" class="hidden sm:inline-block">
         <BaseButton variant="primary" size="sm">{{ isEnglish ? 'Contact' : 'Anfragen' }}</BaseButton>
       </a>
     </div>
@@ -207,7 +207,7 @@
 
           <!-- CTA Button -->
           <div>
-            <a :href="isEnglish ? '/en/contact/' : '/kontakt/'" @click="mobileMenuOpen = false" class="block">
+            <a :href="isEnglish ? '/en/contact' : '/kontakt'" @click="mobileMenuOpen = false" class="block">
               <BaseButton variant="primary" size="lg" class="w-full">
                 <span class="material-symbols-outlined text-lg">rocket_launch</span>
                 {{ isEnglish ? 'Contact us' : 'Projekt anfragen' }}
@@ -261,52 +261,52 @@ const navLinks = computed(() => {
     {
       id: 2,
       label: 'Website',
-      href: en ? '/en/business-website/' : '/firmenwebsite/',
+      href: en ? '/en/business-website' : '/firmenwebsite',
       isActive: true,
       icon: 'language',
       submenu: [
-        { id: 2.1, label: en ? 'Business Website' : 'Firmenwebsite', href: en ? '/en/business-website-design/' : '/firmenwebsite-erstellen-lassen/' },
-        { id: 2.2, label: en ? 'Landing Page'     : 'Landingpage',   href: en ? '/en/landing-page-design/'    : '/landingpage-erstellen-lassen/' },
-        { id: 2.3, label: en ? 'Online Shop'       : 'Online-Shop',   href: en ? '/en/online-shop-development/': '/online-shop-erstellen-lassen/' },
+        { id: 2.1, label: en ? 'Business Website' : 'Firmenwebsite', href: en ? '/en/business-website-design' : '/firmenwebsite-erstellen-lassen' },
+        { id: 2.2, label: en ? 'Landing Page'     : 'Landingpage',   href: en ? '/en/landing-page-design'    : '/landingpage-erstellen-lassen' },
+        { id: 2.3, label: en ? 'Online Shop'       : 'Online-Shop',   href: en ? '/en/online-shop-development': '/online-shop-erstellen-lassen' },
       ],
     },
     {
       id: 3,
       label: 'SEO',
-      href: en ? '/en/seo/' : '/seo/',
+      href: en ? '/en/seo' : '/seo',
       isActive: false,
       icon: 'search_insights',
       submenu: [
-        { id: 3.1, label: en ? 'SEO Optimization' : 'SEO Optimierung',     href: en ? '/en/seo-optimization/' : '/seo-optimieren-lassen/' },
-        { id: 3.2, label: 'Local SEO',                                       href: en ? '/en/local-seo/'        : '/local-seo/' },
-        { id: 3.3, label: en ? 'Link Building'    : 'Linkbuilding',         href: en ? '/en/seo-link-building/' : '/seo-linkbuilding/' },
-        { id: 3.4, label: en ? 'SEO Audit'        : 'SEO Audit & Analyse',  href: en ? '/en/seo-audit/'        : '/seo-audit/' },
+        { id: 3.1, label: en ? 'SEO Optimization' : 'SEO Optimierung',     href: en ? '/en/seo-optimization' : '/seo-optimieren-lassen' },
+        { id: 3.2, label: 'Local SEO',                                       href: en ? '/en/local-seo'        : '/local-seo' },
+        { id: 3.3, label: en ? 'Link Building'    : 'Linkbuilding',         href: en ? '/en/seo-link-building' : '/seo-linkbuilding' },
+        { id: 3.4, label: en ? 'SEO Audit'        : 'SEO Audit & Analyse',  href: en ? '/en/seo-audit'        : '/seo-audit' },
       ],
     },
     {
       id: 4,
       label: en ? 'Design & Content' : 'Design & Content',
-      href: en ? '/en/web-design/' : '/webdesign/',
+      href: en ? '/en/web-design' : '/webdesign',
       isActive: false,
       icon: 'edit_document',
       submenu: [
-        { id: 4.1, label: en ? 'Copywriting'              : 'Content & Copywriting',      href: en ? '/en/website-copywriting/' : '/webseiten-texte-schreiben-lassen/' },
-        { id: 4.2, label: en ? 'Branding & Corporate Design' : 'Branding & Corporate Design', href: en ? '/en/design-branding/' : '/design-branding/' },
-        { id: 4.3, label: 'UI/UX Design',                                                 href: en ? '/en/ui-ux-design/'        : '/ui-ux-design/' },
+        { id: 4.1, label: en ? 'Copywriting'              : 'Content & Copywriting',      href: en ? '/en/website-copywriting' : '/webseiten-texte-schreiben-lassen' },
+        { id: 4.2, label: en ? 'Branding & Corporate Design' : 'Branding & Corporate Design', href: en ? '/en/design-branding' : '/design-branding' },
+        { id: 4.3, label: 'UI/UX Design',                                                 href: en ? '/en/ui-ux-design'        : '/ui-ux-design' },
       ],
     },
     {
       id: 5,
       label: 'Marketing',
-      href: en ? '/en/online-marketing/' : '/online-marketing/',
+      href: en ? '/en/online-marketing' : '/online-marketing',
       isActive: false,
       icon: 'campaign',
       submenu: [
-        { id: 5.1, label: 'Google Ads',  href: en ? '/en/google-ads-management/'  : '/marketing-google-ads/' },
-        { id: 5.2, label: 'Social Media', href: en ? '/en/social-media-marketing/' : '/marketing-social-media/' },
+        { id: 5.1, label: 'Google Ads',  href: en ? '/en/google-ads-management'  : '/marketing-google-ads' },
+        { id: 5.2, label: 'Social Media', href: en ? '/en/social-media-marketing' : '/marketing-social-media' },
       ],
     },
-    { id: 6, label: en ? 'Price Calculator' : 'Preise Kalkulator', href: en ? '/en/website-cost-calculator/' : '/webseite-kosten-kalkulator/', isActive: false, icon: 'price_check' },
+    { id: 6, label: en ? 'Price Calculator' : 'Preise Kalkulator', href: en ? '/en/website-cost-calculator' : '/webseite-kosten-kalkulator', isActive: false, icon: 'price_check' },
   ];
 });
 </script>
