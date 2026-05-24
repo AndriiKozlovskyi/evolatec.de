@@ -1,14 +1,6 @@
 [build]
   command = "npm run generate"
-  publish = ".output/public"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Redirect all paths without trailing slash → with trailing slash (301)
-# force = false: only fires when no static file matches directly
-[[redirects]]
-  from   = "/*"
-  to     = "/:splat/"
-  status = 301
-  force  = false

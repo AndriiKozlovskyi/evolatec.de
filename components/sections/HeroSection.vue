@@ -5,11 +5,12 @@
     class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] lg:min-h-[calc(100vh-5rem)] flex items-center overflow-hidden"
   >
     <!-- CSS gradient background -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#2d1470] via-[#1a1060] to-[#0e1a5a]">
-      <div class="absolute -top-[25%] -right-[15%] w-[65%] h-[65%] rounded-full bg-violet-400/35 blur-[110px]"></div>
-      <div class="absolute -bottom-[15%] -left-[10%] w-[55%] h-[55%] rounded-full bg-indigo-400/30 blur-[90px]"></div>
-      <div class="absolute top-[15%] left-[35%] w-[40%] h-[40%] rounded-full bg-purple-400/20 blur-[70px]"></div>
-      <div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 72px 72px;"></div>
+    <div class="absolute inset-0 bg-[#0c0a18]">
+      <div class="absolute -top-[30%] -right-[20%] w-[70%] h-[70%] rounded-full bg-primary/40 blur-[120px]"></div>
+      <div class="absolute -bottom-[20%] -left-[15%] w-[60%] h-[60%] rounded-full bg-primary/60 blur-[100px]"></div>
+      <div class="absolute top-[20%] left-[30%] w-[35%] h-[35%] rounded-full bg-primary/30 blur-[80px]"></div>
+      <div class="absolute inset-0 opacity-70" style="background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 72px 72px;"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0c0a18]/60"></div>
     </div>
 
     <!-- Content -->
