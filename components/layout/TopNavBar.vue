@@ -251,8 +251,8 @@ function toggleMobileSubmenu(linkId: number) {
 }
 
 function isLinkActive(link: { href: string; submenu?: { href: string }[] }) {
-  if (link.href !== '#' && route.path === link.href) return true;
-  return link.submenu?.some(s => route.path === s.href) ?? false;
+  if (link.href !== '#' && route.path == link.href || route.path == link.href + '/') return true;
+  return link.submenu?.some(s => route.path === s.href || route.path === s.href + '/') ?? false;
 }
 
 const navLinks = computed(() => {
