@@ -37,7 +37,7 @@ const deToEn: Record<string, string> = {
 }
 
 const enToDe: Record<string, string> = Object.entries(deToEn).reduce(
-  (acc, [de, en]) => ({ ...acc, [norm(en)]: de + '/' }),
+  (acc, [de, en]) => ({ ...acc, [norm(en)]: de.endsWith('/') ? de : de + '/' }),
   {} as Record<string, string>
 )
 
