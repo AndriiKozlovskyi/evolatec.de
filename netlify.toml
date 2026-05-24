@@ -7,14 +7,6 @@ NODE_VERSION = "20.19.0"
 NPM_VERSION = "10"
 NITRO_PRESET = "static"
 
-# Redirect all paths without trailing slash → with trailing slash (301)
-# force = false: only fires when no static file matches directly
-[[redirects]]
-  from   = "/*"
-  to     = "/:splat/"
-  status = 301
-  force  = false
-
 [[headers]]
 for = "/*.js"
 [headers.values]
