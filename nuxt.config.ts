@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/main.css',
   },
   image: {
+    provider: 'ipx',
     format: ['avif', 'webp'],
     quality: 80,
     densities: [1, 2],

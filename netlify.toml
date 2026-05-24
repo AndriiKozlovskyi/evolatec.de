@@ -1,6 +1,44 @@
 [build]
-  command = "npm run generate"
-  publish = "dist"
+command = "npm run generate"
+publish = ".output/public"
 
 [build.environment]
-  NODE_VERSION = "20"
+NODE_VERSION = "20.19.0"
+NPM_VERSION = "10"
+NITRO_PRESET = "static"
+
+# Redirect all paths without trailing slash → with trailing slash (301)
+# force = false: only fires when no static file matches directly
+[[redirects]]
+  from   = "/*"
+  to     = "/:splat/"
+  status = 301
+  force  = false
+
+[[headers]]
+for = "/*.js"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.png"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.jpg"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+Referrer-Policy = "strict-origin-when-cross-origin"
