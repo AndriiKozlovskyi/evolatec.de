@@ -4,25 +4,14 @@
     data-nav-icon="home"
     class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] lg:min-h-[calc(100vh-5rem)] flex items-center overflow-hidden"
   >
-    <!-- Background image — full opacity, cinematic crop -->
-    <!-- <NuxtPicture
-      :src="backgroundImage"
-      alt=""
-      format="avif,webp"
-      sizes="360px sm:640px md:960px lg:1280px xl:1920px"
-      :width="1920"
-      :height="1080"
-      preload
-      :img-attrs="{
-        fetchpriority: 'high',
-        loading: 'eager',
-        decoding: 'sync',
-        class: 'absolute inset-0 w-full h-full object-cover',
-      }"
-    /> -->
-
-    <!-- Dark gradient overlay: left-heavy, fades to transparent on the right -->
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/75 to-slate-900/20"></div>
+    <!-- CSS gradient background -->
+    <div class="absolute inset-0 bg-[#0c0a18]">
+      <div class="absolute -top-[30%] -right-[20%] w-[70%] h-[70%] rounded-full bg-violet-600/40 blur-[120px]"></div>
+      <div class="absolute -bottom-[20%] -left-[15%] w-[60%] h-[60%] rounded-full bg-indigo-600/60 blur-[100px]"></div>
+      <div class="absolute top-[20%] left-[30%] w-[35%] h-[35%] rounded-full bg-purple-700/30 blur-[80px]"></div>
+      <div class="absolute inset-0 opacity-100" style="background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 72px 72px;"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0c0a18]/60"></div>
+    </div>
 
     <!-- Content -->
     <div class="relative z-10 w-full max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-14 md:pb-14">
@@ -85,7 +74,7 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    backgroundImage: string;
+    backgroundImage?: string;
     badge: string;
     title: string;
     description: string;
