@@ -32,6 +32,8 @@
       image-url="/web-development-cost/features.webp"
     />
 
+    <ChecklistSection bg="container-low" :columns="brandingInfoColumns" />
+
     <PricingSection
       title="Branding & Corporate Design Pricing"
       subtitle="Transparent pricing for branding, logo development and corporate design."
@@ -267,6 +269,40 @@ const brandingTypes = [
     title: 'Rebranding Agency',
     description: 'Modernisation of existing brands and visual relaunches.',
     icon: 'refresh',
+  },
+];
+
+const brandingInfoColumns = [
+  {
+    heading: 'Corporate Design for Businesses',
+    paragraphs: [
+      'Professional corporate design ensures a consistent brand presence across all channels.',
+      'EvolaTec develops corporate designs that are modern, high-quality and flexibly applicable.',
+    ],
+    items: [
+      'Logo Design',
+      'Colour Palette',
+      'Typography',
+      'Brand Guidelines',
+      'Social Media Design',
+      'Corporate Website Design',
+      'Presentations & Documents',
+      'Advertising Materials',
+    ],
+  },
+  {
+    heading: 'Professional Logo Development',
+    paragraphs: [
+      'A great logo is the foundation of every brand.',
+      'Our logo design agency develops modern, minimalist and professional logos that clearly represent your brand.',
+    ],
+    items: [
+      'Recognition',
+      'Scalability',
+      'Modern Design',
+      'Brand Alignment',
+      'Digital & Print Use',
+    ],
   },
 ];
 

@@ -11,10 +11,10 @@
           Price Calculator
         </span>
         <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4">
-          What Does Your Project Cost?
+          Website Cost Calculator: Prices for Web, SEO &amp; Marketing
         </h1>
-        <p class="text-sm sm:text-base md:text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
-          Choose a package, calculate individually or browse our individual prices.
+        <p class="text-sm sm:text-base md:text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
+          Calculate the costs for website, SEO, online marketing and design. Transparent fixed prices, individual packages and all individual prices at a glance.
         </p>
       </div>
     </section>

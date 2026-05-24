@@ -1,30 +1,46 @@
 <template>
-  <div class="bg-surface-container-low py-12 md:py-16">
-    <div class="max-w-3xl mx-auto px-gutter">
+  <div class="bg-surface-container-low">
+
+    <!-- Header band -->
+    <section class="bg-primary text-on-primary">
+      <div class="max-w-3xl mx-auto px-gutter py-14 md:py-20 text-center">
+        <div class="inline-flex w-14 h-14 rounded-2xl bg-white/10 items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-[1.9rem]">shield_person</span>
+        </div>
+        <h1 class="font-display text-3xl md:text-4xl font-black mb-3">Privacy Policy</h1>
+        <p class="text-on-primary/70 max-w-lg mx-auto leading-relaxed">
+          Transparency about what data we process — and why. Your trust is the foundation of our work.
+        </p>
+        <span class="inline-block mt-6 text-xs font-bold uppercase tracking-[0.15em] bg-white/10 rounded-full px-4 py-1.5">
+          Last updated: May 2026
+        </span>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-3xl mx-auto px-gutter pb-16 md:pb-24 -mt-10">
       <article class="bg-white rounded-2xl border border-outline-variant/20 shadow-sm p-6 sm:p-10">
 
-        <h1 class="font-display text-3xl md:text-4xl font-black text-on-surface mb-2">
-          Privacy Policy
-        </h1>
-        <p class="text-sm text-on-surface-variant/60 mb-8">Last updated: May 2026</p>
-
         <!-- Table of contents -->
-        <nav class="bg-surface-container-low rounded-xl p-5 sm:p-6 mb-10" aria-label="Table of Contents">
-          <p class="font-bold text-on-surface text-sm mb-3">Table of Contents</p>
-          <ol class="list-decimal pl-5 space-y-1.5 text-sm text-on-surface-variant">
-            <li><a href="#overview" class="hover:text-primary transition-colors">Privacy at a Glance</a></li>
-            <li><a href="#hosting" class="hover:text-primary transition-colors">Hosting (Netlify)</a></li>
-            <li><a href="#general" class="hover:text-primary transition-colors">General Information and Mandatory Disclosures</a></li>
-            <li><a href="#datacollection" class="hover:text-primary transition-colors">Data Collection on This Website</a></li>
-            <li><a href="#analytics" class="hover:text-primary transition-colors">Google Analytics</a></li>
-            <li><a href="#googleads" class="hover:text-primary transition-colors">Google Ads &amp; Remarketing</a></li>
-            <li><a href="#plugins" class="hover:text-primary transition-colors">Plugins and Tools</a></li>
-            <li><a href="#rights" class="hover:text-primary transition-colors">Your Rights</a></li>
+        <nav class="bg-surface-container-low rounded-xl p-5 sm:p-6 mb-12" aria-label="Table of Contents">
+          <p class="font-bold text-on-surface text-sm mb-4">Table of Contents</p>
+          <ol class="grid sm:grid-cols-2 gap-x-6 gap-y-1">
+            <li v-for="(entry, i) in toc" :key="entry.id">
+              <a
+                :href="`#${entry.id}`"
+                class="group flex items-center gap-3 py-1.5 text-sm text-on-surface-variant hover:text-primary transition-colors"
+              >
+                <span class="w-6 h-6 shrink-0 rounded-md bg-white border border-outline-variant/30 text-xs font-bold text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-colors">
+                  {{ i + 1 }}
+                </span>
+                {{ entry.label }}
+              </a>
+            </li>
           </ol>
         </nav>
 
         <!-- 1 -->
-        <h2 id="overview" class="legal-h2">1. Privacy at a Glance</h2>
+        <h2 id="overview" class="legal-h2"><span class="legal-num">1</span>Privacy at a Glance</h2>
 
         <h3 class="legal-h3">General Information</h3>
         <p class="legal-p">The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally. For detailed information on the subject of data protection, please refer to our privacy policy listed below.</p>
@@ -46,25 +62,24 @@
         <p class="legal-p">When you visit this website, your browsing behaviour may be statistically analysed. This is done primarily with analysis programmes. Detailed information on these analysis programmes can be found in the following privacy policy.</p>
 
         <!-- 2 -->
-        <h2 id="hosting" class="legal-h2">2. Hosting (Netlify)</h2>
+        <h2 id="hosting" class="legal-h2"><span class="legal-num">2</span>Hosting (Netlify)</h2>
         <p class="legal-p">We host the contents of our website with the following provider:</p>
 
         <h3 class="legal-h3">Netlify</h3>
         <p class="legal-p">
           Netlify, Inc.<br>
           512 2nd Street, Suite 200<br>
-          San Francisco, CA 94107<br>
-          USA<br><br>
+          San Francisco, CA 94107, USA<br><br>
           Website: <a href="https://www.netlify.com" target="_blank" rel="noopener" class="legal-a">www.netlify.com</a><br>
-          Privacy Policy: <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener" class="legal-a">https://www.netlify.com/privacy/</a>
+          Privacy Policy: <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener" class="legal-a">netlify.com/privacy</a>
         </p>
         <p class="legal-p">This website is hosted externally. Personal data collected on this website is stored on Netlify's servers. This may include IP addresses, contact requests, meta and communication data, contract data, contact details, names, website accesses and other data generated via a website.</p>
-        <p class="legal-p">External hosting is carried out for the purpose of fulfilling contracts with our potential and existing customers (Art. 6(1)(b) GDPR) and in the interest of a secure, fast and efficient provision of our online offering by a professional provider (Art. 6(1)(f) GDPR).</p>
+        <p class="legal-p">External hosting is carried out for the purpose of fulfilling contracts with our potential and existing customers (Art. 6(1)(b) GDPR) and in the interest of a secure, fast and efficient provision of our online offering by a professional provider (Art. 6(1)(f) GDPR). Where consent has been requested, processing takes place exclusively on the basis of Art. 6(1)(a) GDPR. Consent can be revoked at any time.</p>
         <p class="legal-p">Netlify is certified under the "EU-US Data Privacy Framework" (DPF), which ensures compliance with European data protection standards for data processing in the USA.</p>
         <p class="legal-p">We have concluded a data processing agreement (DPA) with Netlify. Netlify processes your data only to the extent necessary to fulfil its service obligations.</p>
 
         <!-- 3 -->
-        <h2 id="general" class="legal-h2">3. General Information and Mandatory Disclosures</h2>
+        <h2 id="general" class="legal-h2"><span class="legal-num">3</span>General Information and Mandatory Disclosures</h2>
 
         <h3 class="legal-h3">Data Protection</h3>
         <p class="legal-p">The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.</p>
@@ -72,25 +87,42 @@
 
         <h3 class="legal-h3">Notice regarding the Responsible Party</h3>
         <p class="legal-p">The party responsible for data processing on this website is:</p>
-        <p class="legal-p">
-          Maksym Streltsov<br>
-          Desenißstraße 14<br>
-          22083 Hamburg<br>
-          Germany<br><br>
-          Telephone: <a href="tel:+491756200862" class="legal-a">+49 175 6200862</a><br>
-          E-mail: <a href="mailto:team@evolatec.de" class="legal-a">team@evolatec.de</a>
-        </p>
+        <div class="legal-card">
+          <p class="font-bold text-on-surface mb-1">Maksym Streltsov</p>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Desenißstraße 14<br>
+            22083 Hamburg, Germany
+          </p>
+          <div class="flex flex-col gap-1.5 mt-3 pt-3 border-t border-outline-variant/20">
+            <a href="tel:+491756200862" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-base">phone</span>+49 175 6200862
+            </a>
+            <a href="mailto:team@evolatec.de" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-base">mail</span>team@evolatec.de
+            </a>
+          </div>
+        </div>
+        <p class="legal-p">The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data.</p>
 
         <h3 class="legal-h3">Retention Period</h3>
-        <p class="legal-p">Unless a more specific retention period is stated within this privacy policy, your personal data will remain with us until the purpose for the data processing ceases to apply. If you make a legitimate request for deletion or revoke consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data.</p>
+        <p class="legal-p">Unless a more specific retention period is stated within this privacy policy, your personal data will remain with us until the purpose for the data processing ceases to apply. If you make a legitimate request for deletion or revoke consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g. tax or commercial law retention periods); in the latter case deletion takes place after these reasons cease to apply.</p>
 
         <h3 class="legal-h3">Legal Bases for Processing</h3>
         <p class="legal-p">Where you have given consent to data processing, we process your personal data on the basis of Art. 6(1)(a) GDPR. Where your data is required for the fulfilment of a contract, we process your data on the basis of Art. 6(1)(b) GDPR. Data processing may also be based on our legitimate interest pursuant to Art. 6(1)(f) GDPR.</p>
 
+        <h3 class="legal-h3">Recipients of Personal Data</h3>
+        <p class="legal-p">In the course of our business activities we work with various external parties. This sometimes also requires the transfer of personal data to these external parties. We only pass on personal data to external parties where this is necessary for the performance of a contract, where we are legally obliged to do so, where we have a legitimate interest pursuant to Art. 6(1)(f) GDPR in passing on the data, or where another legal basis permits the transfer.</p>
+
+        <h3 class="legal-h3">Revocation of Your Consent to Data Processing</h3>
+        <p class="legal-p">Many data processing operations are only possible with your express consent. You can revoke consent you have already given at any time. The lawfulness of data processing carried out before the revocation remains unaffected by the revocation.</p>
+
         <h3 class="legal-h3">Right to Object to Data Collection in Special Cases and to Direct Marketing (Art. 21 GDPR)</h3>
-        <div class="bg-surface-container-low rounded-xl p-5 my-4 text-xs leading-relaxed text-on-surface-variant font-medium space-y-3">
-          <p>WHERE DATA PROCESSING IS CARRIED OUT ON THE BASIS OF ART. 6(1)(E) OR (F) GDPR, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH PROCESSING IS BASED CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, RIGHTS AND FREEDOMS, OR THE PROCESSING SERVES THE ESTABLISHMENT, EXERCISE OR DEFENCE OF LEGAL CLAIMS (OBJECTION PURSUANT TO ART. 21(1) GDPR).</p>
-          <p>WHERE YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR SUCH MARKETING; THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT MARKETING PURPOSES (OBJECTION PURSUANT TO ART. 21(2) GDPR).</p>
+        <div class="legal-callout">
+          <span class="material-symbols-outlined text-primary text-xl shrink-0">gavel</span>
+          <div class="space-y-3 text-xs leading-relaxed text-on-surface-variant font-medium">
+            <p>WHERE DATA PROCESSING IS CARRIED OUT ON THE BASIS OF ART. 6(1)(E) OR (F) GDPR, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH PROCESSING IS BASED CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, RIGHTS AND FREEDOMS, OR THE PROCESSING SERVES THE ESTABLISHMENT, EXERCISE OR DEFENCE OF LEGAL CLAIMS (OBJECTION PURSUANT TO ART. 21(1) GDPR).</p>
+            <p>WHERE YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR SUCH MARKETING; THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT MARKETING PURPOSES (OBJECTION PURSUANT TO ART. 21(2) GDPR).</p>
+          </div>
         </div>
 
         <h3 class="legal-h3">Right to Lodge a Complaint with the Supervisory Authority</h3>
@@ -98,7 +130,7 @@
         <p class="legal-p">
           Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit<br>
           Ludwig-Erhard-Str. 22, 20459 Hamburg<br>
-          <a href="https://www.datenschutz.hamburg.de" target="_blank" rel="noopener" class="legal-a">www.datenschutz.hamburg.de</a>
+          <a href="https://www.datenschutz.hamburg.de" target="_blank" rel="noopener" class="legal-a">datenschutz.hamburg.de</a>
         </p>
 
         <h3 class="legal-h3">Right to Data Portability</h3>
@@ -107,8 +139,17 @@
         <h3 class="legal-h3">SSL/TLS Encryption</h3>
         <p class="legal-p">This site uses SSL/TLS encryption for security reasons. You can recognise an encrypted connection by the fact that the address line of the browser changes from "http://" to "https://" and by the lock symbol in your browser line. When SSL/TLS encryption is activated, the data you transmit to us cannot be read by third parties.</p>
 
+        <h3 class="legal-h3">Right to Restriction of Processing</h3>
+        <p class="legal-p">You have the right to request the restriction of processing of your personal data. This right exists in the following cases:</p>
+        <ul class="legal-ul">
+          <li>If you dispute the accuracy of your personal data stored by us</li>
+          <li>If the processing of your personal data was/is unlawful</li>
+          <li>If we no longer need your personal data but you require it for the exercise of legal claims</li>
+          <li>If you have lodged an objection pursuant to Art. 21(1) GDPR</li>
+        </ul>
+
         <!-- 4 -->
-        <h2 id="datacollection" class="legal-h2">4. Data Collection on This Website</h2>
+        <h2 id="datacollection" class="legal-h2"><span class="legal-num">4</span>Data Collection on This Website</h2>
 
         <h3 class="legal-h3">Cookies</h3>
         <p class="legal-p">Our websites use so-called "cookies". Cookies are small data packages and do not cause any damage to your device. They are stored either temporarily for the duration of a session (session cookies) or permanently (permanent cookies) on your device. Session cookies are automatically deleted after your visit.</p>
@@ -120,7 +161,7 @@
 
         <h3 class="legal-h3">Cookie Overview</h3>
         <p class="legal-p">The following overview, automatically generated by Cookiebot, shows all cookies used on this website:</p>
-        <CookieDeclaration />
+        <CookieDeclaration class="mt-3" />
 
         <h3 class="legal-h3">Contact Form</h3>
         <p class="legal-p">If you contact us via the contact form on our website, the following data is collected: name, e-mail address, your message and, if applicable, telephone number. This data is used exclusively to process your enquiry and is not passed on to third parties.</p>
@@ -128,10 +169,10 @@
 
         <h3 class="legal-h3">Enquiries by E-mail or Telephone</h3>
         <p class="legal-p">If you contact us by e-mail or telephone, your enquiry including all resulting personal data (name, enquiry) will be stored and processed by us for the purpose of processing your request. We will not pass on this data without your consent.</p>
-        <p class="legal-p">The processing of this data is based on Art. 6(1)(b) GDPR, where your enquiry is related to the performance of a contract, or on Art. 6(1)(f) GDPR.</p>
+        <p class="legal-p">The processing of this data is based on Art. 6(1)(b) GDPR, where your enquiry is related to the performance of a contract, or on Art. 6(1)(f) GDPR. The data remains with us until you ask us to delete it or the purpose for the data storage ceases to apply.</p>
 
         <h3 class="legal-h3">Server Log Files</h3>
-        <p class="legal-p">The provider of the pages (Netlify) automatically collects and stores information in so-called server log files, which your browser automatically transmits to us:</p>
+        <p class="legal-p">The provider of the pages (Netlify) automatically collects and stores information in so-called server log files, which your browser automatically transmits:</p>
         <ul class="legal-ul">
           <li>Browser type and version</li>
           <li>Operating system used</li>
@@ -143,52 +184,64 @@
         <p class="legal-p">This data is not combined with other data sources. The collection of this data is based on Art. 6(1)(f) GDPR. Log files are deleted after a maximum of 30 days.</p>
 
         <!-- 5 -->
-        <h2 id="analytics" class="legal-h2">5. Google Analytics</h2>
+        <h2 id="analytics" class="legal-h2"><span class="legal-num">5</span>Google Analytics</h2>
         <p class="legal-p">This website uses Google Analytics, a web analysis service provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.</p>
         <p class="legal-p">Google Analytics uses cookies that enable an analysis of your use of the website. The information generated by cookies about your use of this website is usually transmitted to a Google server in the USA and stored there. We have activated IP anonymisation so that your IP address is shortened by Google within the European Union.</p>
         <p class="legal-p">Google Analytics is only activated following your express consent via our cookie banner. You can revoke your consent at any time.</p>
         <p class="legal-p">Legal basis: Art. 6(1)(a) GDPR.<br>
-        Further information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="legal-a">https://policies.google.com/privacy</a></p>
-        <p class="legal-p">You can prevent collection by Google Analytics by installing the browser add-on: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" class="legal-a">https://tools.google.com/dlpage/gaoptout</a></p>
+        Further information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="legal-a">policies.google.com/privacy</a></p>
+        <p class="legal-p">You can prevent collection by Google Analytics by installing the browser add-on: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" class="legal-a">tools.google.com/dlpage/gaoptout</a></p>
+        <p class="legal-p">Google is certified under the "EU-US Data Privacy Framework" (DPF): <a href="https://www.dataprivacyframework.gov/participant/5780" target="_blank" rel="noopener" class="legal-a">dataprivacyframework.gov</a></p>
 
         <!-- 6 -->
-        <h2 id="googleads" class="legal-h2">6. Google Ads &amp; Remarketing</h2>
+        <h2 id="googleads" class="legal-h2"><span class="legal-num">6</span>Google Ads &amp; Remarketing</h2>
         <p class="legal-p">This website uses Google Ads, an online advertising service provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. We use Google Ads to display advertisements in Google Search and on partner websites. Google Remarketing enables us to show targeted advertising to users who have already visited our website.</p>
         <p class="legal-p">Cookies and similar technologies are used for this purpose. Google Ads and Remarketing are only activated following your express consent via our cookie banner.</p>
         <p class="legal-p">Legal basis: Art. 6(1)(a) GDPR.<br>
-        Further information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="legal-a">https://policies.google.com/privacy</a></p>
-        <p class="legal-p">You can deactivate personalised advertising in Google settings: <a href="https://adssettings.google.com" target="_blank" rel="noopener" class="legal-a">https://adssettings.google.com</a></p>
+        Further information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="legal-a">policies.google.com/privacy</a></p>
+        <p class="legal-p">You can deactivate personalised advertising in Google settings: <a href="https://adssettings.google.com" target="_blank" rel="noopener" class="legal-a">adssettings.google.com</a></p>
 
         <!-- 7 -->
-        <h2 id="plugins" class="legal-h2">7. Plugins and Tools</h2>
+        <h2 id="plugins" class="legal-h2"><span class="legal-num">7</span>Plugins and Tools</h2>
 
         <h3 class="legal-h3">Google Fonts (locally hosted)</h3>
         <p class="legal-p">This site uses Google Fonts for consistent font rendering. Google Fonts are installed locally. No connection to Google servers takes place.</p>
-        <p class="legal-p">Further information about Google Fonts can be found at <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener" class="legal-a">https://developers.google.com/fonts/faq</a>.</p>
+        <p class="legal-p">Further information about Google Fonts: <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener" class="legal-a">developers.google.com/fonts/faq</a></p>
 
         <!-- 8 -->
-        <h2 id="rights" class="legal-h2">8. Your Rights</h2>
+        <h2 id="rights" class="legal-h2"><span class="legal-num">8</span>Your Rights</h2>
         <p class="legal-p">You have the following rights with regard to your personal data:</p>
-        <ul class="legal-ul">
-          <li><strong class="text-on-surface">Access</strong> (Art. 15 GDPR) — You can request information about your stored data.</li>
-          <li><strong class="text-on-surface">Rectification</strong> (Art. 16 GDPR) — You can request the correction of inaccurate data.</li>
-          <li><strong class="text-on-surface">Erasure</strong> (Art. 17 GDPR) — You can request the deletion of your data.</li>
-          <li><strong class="text-on-surface">Restriction</strong> (Art. 18 GDPR) — You can request the restriction of processing.</li>
-          <li><strong class="text-on-surface">Data portability</strong> (Art. 20 GDPR) — You can receive your data in a common format.</li>
-          <li><strong class="text-on-surface">Objection</strong> (Art. 21 GDPR) — You can object to processing.</li>
-          <li><strong class="text-on-surface">Revocation</strong> (Art. 7(3) GDPR) — You can revoke a given consent at any time.</li>
-        </ul>
-        <p class="legal-p">To exercise your rights, please contact: <a href="mailto:team@evolatec.de" class="legal-a">team@evolatec.de</a></p>
+        <div class="grid sm:grid-cols-2 gap-3 my-4">
+          <div v-for="right in rights" :key="right.title" class="legal-card !mb-0 flex gap-3">
+            <span class="material-symbols-outlined text-primary text-xl shrink-0">{{ right.icon }}</span>
+            <div>
+              <p class="font-bold text-on-surface text-sm">{{ right.title }} <span class="font-normal text-on-surface-variant/70">· {{ right.law }}</span></p>
+              <p class="text-sm text-on-surface-variant leading-relaxed mt-0.5">{{ right.text }}</p>
+            </div>
+          </div>
+        </div>
         <p class="legal-p">
           Competent supervisory authority:<br>
           Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit<br>
           Ludwig-Erhard-Str. 22, 20459 Hamburg<br>
-          <a href="https://www.datenschutz.hamburg.de" target="_blank" rel="noopener" class="legal-a">www.datenschutz.hamburg.de</a>
+          <a href="https://www.datenschutz.hamburg.de" target="_blank" rel="noopener" class="legal-a">datenschutz.hamburg.de</a>
         </p>
 
-        <p class="text-xs text-on-surface-variant/50 mt-12 pt-6 border-t border-outline-variant/30">
-          Last updated: May 2026
-        </p>
+        <!-- Contact callout -->
+        <div class="mt-12 rounded-2xl bg-primary text-on-primary p-6 sm:p-8 text-center">
+          <span class="material-symbols-outlined text-3xl mb-2 block">support_agent</span>
+          <h3 class="font-display text-xl font-bold mb-1">Questions about data protection?</h3>
+          <p class="text-on-primary/70 text-sm mb-5 max-w-md mx-auto">
+            To exercise your rights or for any questions about your data, you can reach us at any time.
+          </p>
+          <a
+            href="mailto:team@evolatec.de"
+            class="inline-flex items-center gap-2 bg-white text-primary font-bold text-sm rounded-full px-6 py-3 hover:bg-white/90 transition-colors"
+          >
+            <span class="material-symbols-outlined text-base">mail</span>
+            team@evolatec.de
+          </a>
+        </div>
 
       </article>
     </div>
@@ -210,11 +263,34 @@ useHead({
     ...hreflangLinks.value,
   ],
 });
+
+const toc = [
+  { id: 'overview', label: 'Privacy at a Glance' },
+  { id: 'hosting', label: 'Hosting (Netlify)' },
+  { id: 'general', label: 'General Information & Obligations' },
+  { id: 'datacollection', label: 'Data Collection on This Website' },
+  { id: 'analytics', label: 'Google Analytics' },
+  { id: 'googleads', label: 'Google Ads & Remarketing' },
+  { id: 'plugins', label: 'Plugins and Tools' },
+  { id: 'rights', label: 'Your Rights' },
+];
+
+const rights = [
+  { title: 'Access', law: 'Art. 15', icon: 'info', text: 'You can request information about your stored data.' },
+  { title: 'Rectification', law: 'Art. 16', icon: 'edit', text: 'You can request the correction of inaccurate data.' },
+  { title: 'Erasure', law: 'Art. 17', icon: 'delete', text: 'You can request the deletion of your data.' },
+  { title: 'Restriction', law: 'Art. 18', icon: 'pause_circle', text: 'You can request the restriction of processing.' },
+  { title: 'Data portability', law: 'Art. 20', icon: 'sync_alt', text: 'You can receive your data in a common format.' },
+  { title: 'Objection', law: 'Art. 21', icon: 'block', text: 'You can object to the processing of your data.' },
+];
 </script>
 
 <style scoped>
 .legal-h2 {
-  @apply font-display text-lg sm:text-xl font-bold text-on-surface mt-12 pt-6 border-t border-outline-variant/30 mb-3 scroll-mt-28;
+  @apply flex items-center gap-3 font-display text-lg sm:text-xl font-bold text-on-surface mt-14 pt-7 border-t border-outline-variant/30 mb-4 scroll-mt-28;
+}
+.legal-num {
+  @apply w-8 h-8 shrink-0 rounded-lg bg-primary text-on-primary text-sm font-black flex items-center justify-center;
 }
 .legal-h3 {
   @apply font-bold text-on-surface text-base mt-8 mb-2;
@@ -226,6 +302,12 @@ useHead({
   @apply list-disc pl-5 space-y-1.5 text-sm text-on-surface-variant leading-relaxed mb-3;
 }
 .legal-a {
-  @apply text-primary hover:underline break-words;
+  @apply text-primary font-medium hover:underline break-words;
+}
+.legal-card {
+  @apply bg-surface-container-low rounded-xl p-5 my-4;
+}
+.legal-callout {
+  @apply flex gap-4 bg-surface-container-low border-l-4 border-primary rounded-xl p-5 my-4;
 }
 </style>

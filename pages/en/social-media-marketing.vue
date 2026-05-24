@@ -64,6 +64,20 @@
 
     <ProcessSection title="Our Social Media Process" :steps="socialProcess" />
 
+    <DarkBannerSection
+      image="/ecommerce/hero.webp"
+      badge="Measurable Results"
+      description="Our social media campaigns are designed for results — not likes. Clicks, leads and revenue are precisely measurable."
+      cta-text="Start Social Media Campaign"
+      :checklist="campaignResults"
+    >
+      <template #title>
+        Campaigns that
+        <span class="bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent">really</span>
+        perform
+      </template>
+    </DarkBannerSection>
+
     <IntroSection
       data-nav-label="Why Us"
       data-nav-icon="stars"
@@ -374,6 +388,13 @@ const whyEvolaTec = [
     iconColor: 'text-purple-600',
     borderColor: 'border-purple-500',
   },
+];
+
+const campaignResults = [
+  'Clear KPIs & transparent reporting',
+  'A/B-tested ads & creatives',
+  'Ongoing campaign optimisation',
+  'Focus on leads & revenue, not likes',
 ];
 
 const pricingItems = [

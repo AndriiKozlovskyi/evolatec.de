@@ -5,7 +5,7 @@
     class="relative min-h-[calc(100svh-5rem)] md:min-h-[min(85vh,820px)] lg:min-h-[calc(100vh-5rem)] flex items-center overflow-hidden"
   >
     <!-- Background image — full opacity, cinematic crop -->
-    <NuxtPicture
+    <!-- <NuxtPicture
       :src="backgroundImage"
       alt=""
       format="avif,webp"
@@ -19,7 +19,7 @@
         decoding: 'sync',
         class: 'absolute inset-0 w-full h-full object-cover',
       }"
-    />
+    /> -->
 
     <!-- Dark gradient overlay: left-heavy, fades to transparent on the right -->
     <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/75 to-slate-900/20"></div>

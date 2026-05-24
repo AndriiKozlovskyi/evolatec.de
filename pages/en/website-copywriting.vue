@@ -18,9 +18,10 @@
 
     <ProcessSection title="How Professional Website Copy Is Created" :steps="contentProcess" />
 
-    <SEOSection
+    <ChecklistSection
       title="What Content Do We Create?"
-      :features="contentTypes"
+      icon="edit_document"
+      :items="contentTypes"
     />
 
     <IntroSection
