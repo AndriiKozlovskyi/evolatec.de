@@ -1,12 +1,21 @@
+<template>
+  <div v-if="story">
+    <StoryblokComponent :blok="story.content" />
+  </div>
+</template>
+
 <script setup>
 const { slug } = useRoute().params
- 
-const story = await useAsyncStoryblok(
-  slug && slug.length > 0 && slug !== '/' ? slug.join('/') : 'home',
-  { version: useRoute().query._storyblok ? 'draft': 'published' }
-)
+const slugPath = slug && slug.length > 0 ? slug.join('/') : 'home'
+
+const { data: story } = await useAsyncData(`story-${slugPath}`, async () => {
+  try {
+    const { data } = await useStoryblokApi().get(`cdn/stories/${slugPath}`, {
+      version: useRoute().query._storyblok ? 'draft' : 'published',
+    })
+    return data?.story ?? null
+  } catch {
+    return null
+  }
+})
 </script>
- 
-<template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
-</template>
