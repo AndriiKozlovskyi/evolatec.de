@@ -329,39 +329,39 @@ const features = [
 
 const faqs = [
   {
-    question: 'How much does professional web design cost?',
-    answer:
-      'Costs depend on the scope of the project. Landing pages start from €500, professional business websites from €1,500 and online shops from €3,000. We work with transparent fixed prices and provide a detailed quote before the project starts.',
-  },
-  {
-    question: 'How long does it take to build a website?',
-    answer:
-      'A landing page is usually ready within 3–7 days, a professional business website from 7 working days and an online shop from 14 working days. The exact timeframe depends on scope and features as well as how quickly text and image content can be provided.',
-  },
-  {
     question: 'What does a web design agency do?',
     answer:
-      'A web design agency plans, designs and develops modern websites that not only look professional but are also functional, fast and SEO-optimised. EvolaTec handles the entire process from strategy and design through technical implementation to ongoing optimisation.',
+      'A web design agency conceives and designs modern websites: visual design, layout, typography, colours, imagery and user flow. The goal is a brand presence that builds trust, convinces visitors and carries the brand consistently across every page.',
   },
   {
-    question: 'Why is responsive web design important?',
+    question: 'What makes professional web design?',
     answer:
-      'A large share of website visitors today use smartphones. Responsive web design ensures your site works optimally on every device – smartphone, tablet and desktop. Google also uses mobile-first indexing, which makes responsive design crucial for strong rankings.',
+      'Professional web design combines clear structure, considered user flow, high-quality typography and colours, and a consistent design system. It is aligned with your brand and target audience and ensures visitors grasp your offering intuitively and build trust.',
   },
   {
     question: 'What is the difference between web design and web development?',
     answer:
-      'Web design focuses on visual appearance, user flow and the user interface. Web development is the technical implementation with HTML, CSS, JavaScript and backend systems. EvolaTec offers both disciplines from a single source – ensuring a consistent website without interface issues.',
+      'Web design focuses on visual appearance, layout, typography and user flow. Web development is the technical implementation with code. EvolaTec offers both disciplines from a single source – so design and implementation fit together perfectly.',
   },
   {
-    question: 'Is SEO included in web design?',
+    question: 'How does the web design process work?',
     answer:
-      'Yes, every website we build comes with basic SEO from the start: clean code structure, fast loading times, mobile optimisation and correct meta data. For deeper SEO work like keyword strategy and content optimisation we offer dedicated SEO packages.',
+      'Our web design process covers briefing & analysis, concept and wireframes, visual design and feedback rounds up to final handover. At every stage we coordinate closely with you so the result fits your brand and goals precisely.',
   },
   {
-    question: 'Which technologies do you use for web design?',
+    question: 'What is the difference between web design and UI/UX design?',
     answer:
-      'We build with modern technologies like Nuxt, Vue.js and Tailwind CSS for custom websites. For content you want to manage yourself we use Storyblok as a headless CMS. For shops we use Shopify or custom solutions.',
+      'Web design covers the creative concept of a website – look, layout and brand presence. UI/UX design goes deeper into user interface and user experience, especially for complex applications such as SaaS or apps. Both disciplines complement each other.',
+  },
+  {
+    question: 'Why is responsive web design important?',
+    answer:
+      'A large share of visitors today use smartphones. Responsive web design ensures that layout, images and content display optimally on every device – smartphone, tablet and desktop. Google also prefers mobile-optimised websites in its search results.',
+  },
+  {
+    question: 'Do you also redesign existing websites?',
+    answer:
+      'Yes, we also handle redesigns and visually rework existing websites. On request we focus purely on the new design – or combine the redesign with a technical relaunch.',
   },
 ];
 </script>

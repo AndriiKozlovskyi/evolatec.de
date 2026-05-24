@@ -107,39 +107,39 @@ const { hreflangLinks } = useLanguageSwitcher();
 
 const faqs = [
   {
-    question: 'Was kostet professionelles Webdesign?',
-    answer:
-      'Die Kosten hängen vom Umfang des Projekts ab. Landingpages starten ab 500€, professionelle Firmenwebsites ab 1.500€ und Online-Shops ab 3.000€. Wir arbeiten mit transparenten Festpreisen und erstellen vor Projektstart ein detailliertes Angebot.',
-  },
-  {
-    question: 'Wie lange dauert die Erstellung einer Website?',
-    answer:
-      'Eine Landingpage ist meist innerhalb von 3–7 Tagen fertig, eine professionelle Firmenwebsite ab 7 Arbeitstagen und ein Online-Shop ab 14 Arbeitstagen. Die genaue Dauer hängt von Umfang und Funktionen sowie der Geschwindigkeit beim Bereitstellen von Texten und Bildern ab.',
-  },
-  {
     question: 'Was macht eine Webdesign Agentur?',
     answer:
-      'Eine Webdesign Agentur konzipiert, gestaltet und entwickelt moderne Websites, die nicht nur professionell aussehen, sondern auch funktional, schnell und SEO-optimiert sind. EvolaTec übernimmt den gesamten Prozess von Strategie und Design über die technische Umsetzung bis hin zu laufender Optimierung.',
+      'Eine Webdesign Agentur konzipiert und gestaltet moderne Websites: visuelles Design, Layout, Typografie, Farben, Bildsprache und Nutzerführung. Ziel ist ein Markenauftritt, der Vertrauen schafft, Besucher überzeugt und die Marke konsistent über alle Seiten hinweg transportiert.',
   },
   {
-    question: 'Warum ist responsive Webdesign wichtig?',
+    question: 'Was macht professionelles Webdesign aus?',
     answer:
-      'Ein Großteil der Website-Besucher nutzt heute Smartphones. Responsive Webdesign sorgt dafür, dass Ihre Website auf allen Geräten – Smartphone, Tablet und Desktop – optimal funktioniert. Google nutzt zudem Mobile-First-Indexing, weshalb responsive Design für gute Rankings entscheidend ist.',
+      'Professionelles Webdesign vereint klare Struktur, durchdachte Nutzerführung, hochwertige Typografie und Farben sowie ein konsistentes Design-System. Es ist auf Ihre Marke und Zielgruppe abgestimmt und sorgt dafür, dass Besucher Ihr Angebot intuitiv erfassen und Vertrauen aufbauen.',
   },
   {
     question: 'Was ist der Unterschied zwischen Webdesign und Webentwicklung?',
     answer:
-      'Webdesign konzentriert sich auf das visuelle Erscheinungsbild, die Nutzerführung und das User Interface. Webentwicklung ist die technische Umsetzung mit HTML, CSS, JavaScript und Backend-Systemen. EvolaTec bietet beide Disziplinen aus einer Hand – so erhalten Sie eine konsistente Website ohne Schnittstellenprobleme.',
+      'Webdesign konzentriert sich auf das visuelle Erscheinungsbild, das Layout, die Typografie und die Nutzerführung. Webentwicklung ist die technische Umsetzung mit Code. EvolaTec bietet beide Disziplinen aus einer Hand – so passen Design und Umsetzung perfekt zusammen.',
   },
   {
-    question: 'Ist SEO im Webdesign enthalten?',
+    question: 'Wie läuft der Webdesign Prozess ab?',
     answer:
-      'Ja, jede von uns entwickelte Website ist von Beginn an grundlegend SEO-optimiert: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung und korrekte Meta-Daten. Für weitergehende SEO-Maßnahmen wie Keyword-Strategien und Content-Optimierung bieten wir zusätzliche SEO-Pakete an.',
+      'Unser Webdesign Prozess umfasst Briefing & Analyse, Konzept und Wireframes, visuelles Design sowie Feedback-Runden bis zur finalen Übergabe. In jeder Phase stimmen wir uns eng mit Ihnen ab, damit das Ergebnis exakt zu Ihrer Marke und Ihren Zielen passt.',
   },
   {
-    question: 'Welche Technologien nutzen Sie für Webdesign?',
+    question: 'Was ist der Unterschied zwischen Webdesign und UI/UX Design?',
     answer:
-      'Wir entwickeln mit modernen Technologien wie Nuxt, Vue.js und Tailwind CSS für individuelle Websites. Für Inhalte, die Sie selbst pflegen möchten, nutzen wir Storyblok als Headless CMS. Für Shops setzen wir auf Shopify oder maßgeschneiderte Lösungen.',
+      'Webdesign umfasst die gestalterische Konzeption einer Website – Aussehen, Layout und Markenauftritt. UI/UX Design fokussiert tiefer auf Benutzeroberfläche und Nutzererlebnis, insbesondere bei komplexen Anwendungen wie SaaS oder Apps. Beide Disziplinen ergänzen sich.',
+  },
+  {
+    question: 'Warum ist responsive Webdesign wichtig?',
+    answer:
+      'Ein Großteil der Besucher nutzt heute Smartphones. Responsive Webdesign sorgt dafür, dass Layout, Bilder und Inhalte auf allen Geräten – Smartphone, Tablet und Desktop – optimal dargestellt werden. Auch Google bevorzugt mobil optimierte Websites in den Suchergebnissen.',
+  },
+  {
+    question: 'Designen Sie auch Redesigns für bestehende Websites?',
+    answer:
+      'Ja, wir übernehmen auch Redesigns und überarbeiten bestehende Websites visuell. Auf Wunsch konzentrieren wir uns rein auf das neue Design – oder kombinieren das Redesign mit einem technischen Relaunch.',
   },
 ];
 
