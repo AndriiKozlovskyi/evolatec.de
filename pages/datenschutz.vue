@@ -160,16 +160,22 @@
         <p class="legal-p">Ihre Einwilligung können Sie jederzeit über das Cookie-Symbol bzw. den Cookie-Banner anpassen oder widerrufen.</p>
 
         <h3 class="legal-h3">Cookie-Übersicht</h3>
-        <p class="legal-p">Die folgende, automatisch durch Cookiebot erstellte Übersicht zeigt alle auf dieser Website eingesetzten Cookies:</p>
-        <CookieDeclaration class="mt-3" />
+        <p class="legal-p">Eine aktuelle Übersicht aller auf dieser Website eingesetzten Cookies finden Sie jederzeit im Cookie-Banner. Klicken Sie unten auf dieser Seite auf das Cookie-Symbol bzw. den Link „Cookies-Einstellungen“, um die Liste einzusehen, Ihre Einwilligungen anzupassen oder zu widerrufen.</p>
 
-        <h3 class="legal-h3">Kontaktformular</h3>
-        <p class="legal-p">Wenn Sie uns über das Kontaktformular auf unserer Website kontaktieren, werden folgende Daten erhoben: Name, E-Mail-Adresse, Ihre Nachricht sowie ggf. Telefonnummer. Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben.</p>
-        <p class="legal-p">Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) sowie Art. 6 Abs. 1 lit. f DSGVO. Die Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+        <h3 class="legal-h3">Kontaktformular (Netlify Forms)</h3>
+        <p class="legal-p">Wenn Sie uns über das Kontaktformular auf unserer Website kontaktieren, werden folgende Daten erhoben: Name, E-Mail-Adresse, Ihre Nachricht sowie ggf. Telefonnummer und weitere von Ihnen angegebene Informationen. Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.</p>
+        <p class="legal-p">Die Übermittlung und Verarbeitung der Formulardaten erfolgt über den Dienst „Netlify Forms“ unseres Hosting-Anbieters Netlify, Inc. (siehe Abschnitt 2). Netlify speichert die übermittelten Formulareingaben auf seinen Servern und stellt sie uns im Netlify-Dashboard zur Verfügung. Zur Spam-Abwehr nutzt das Formular ein Honeypot-Verfahren.</p>
+        <p class="legal-p">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Bearbeitung von Anfragen). Die Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Mit Netlify besteht ein Auftragsverarbeitungsvertrag (AVV).</p>
 
         <h3 class="legal-h3">Anfrage per E-Mail oder Telefon</h3>
-        <p class="legal-p">Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+        <p class="legal-p">Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage, Kontaktdaten) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
         <p class="legal-p">Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt, oder auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Die Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern oder der Zweck für die Datenspeicherung entfällt.</p>
+
+        <h3 class="legal-h3">Kontakt per WhatsApp</h3>
+        <p class="legal-p">Auf unserer Website befinden sich Verknüpfungen, über die Sie uns direkt per WhatsApp kontaktieren können. Erst beim aktiven Anklicken eines solchen Links wird eine Verbindung zu WhatsApp aufgebaut. Anbieter des Dienstes ist die WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland; übergeordnet die Meta Platforms, Inc., USA.</p>
+        <p class="legal-p">Beim Schreiben einer Nachricht über WhatsApp werden u. a. Ihre Telefonnummer, Profilinformationen sowie Inhalt und Zeitpunkt der Nachricht an WhatsApp übermittelt. Auf diese Datenverarbeitung durch WhatsApp haben wir keinen Einfluss. Eine Übermittlung in Drittländer (insbesondere USA) kann nicht ausgeschlossen werden. Meta Platforms ist nach dem „EU-US Data Privacy Framework“ (DPF) zertifiziert.</p>
+        <p class="legal-p">Rechtsgrundlage für das Anbieten des Kontaktwegs ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer schnellen und niedrigschwelligen Kontaktaufnahme). Die anschließende Kommunikation per WhatsApp erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO, die Sie durch das Schreiben der Nachricht erteilen.</p>
+        <p class="legal-p">Weitere Informationen finden Sie in der <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener" class="legal-a">Datenschutzerklärung von WhatsApp</a>.</p>
 
         <h3 class="legal-h3">Server-Log-Dateien</h3>
         <p class="legal-p">Der Provider der Seiten (Netlify) erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt:</p>
@@ -181,35 +187,22 @@
           <li>Uhrzeit der Serveranfrage</li>
           <li>IP-Adresse</li>
         </ul>
-        <p class="legal-p">Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Die Logfiles werden nach spätestens 30 Tagen gelöscht.</p>
+        <p class="legal-p">Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer technisch fehlerfreien Bereitstellung der Website).</p>
 
         <!-- 5 -->
-        <h2 id="analytics" class="legal-h2"><span class="legal-num">5</span>Google Analytics</h2>
-        <p class="legal-p">Diese Website nutzt Google Analytics, einen Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
-        <p class="legal-p">Google Analytics verwendet Cookies, die eine Analyse der Benutzung der Website ermöglichen. Die durch Cookies erzeugten Informationen über Ihre Nutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Wir haben die IP-Anonymisierung aktiviert, sodass Ihre IP-Adresse von Google innerhalb der Europäischen Union gekürzt wird.</p>
-        <p class="legal-p">Google Analytics wird nur nach Ihrer ausdrücklichen Einwilligung über unser Cookie-Banner aktiviert. Sie können Ihre Einwilligung jederzeit widerrufen.</p>
-        <p class="legal-p">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG.<br>
-        Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="legal-a">policies.google.com/privacy</a></p>
-        <p class="legal-p">Sie können die Erfassung durch Google Analytics verhindern, indem Sie das Browser-Add-on zur Deaktivierung installieren: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" class="legal-a">tools.google.com/dlpage/gaoptout</a></p>
-        <p class="legal-p">Google ist nach dem „EU-US Data Privacy Framework“ (DPF) zertifiziert: <a href="https://www.dataprivacyframework.gov/participant/5780" target="_blank" rel="noopener" class="legal-a">dataprivacyframework.gov</a></p>
+        <h2 id="schriften" class="legal-h2"><span class="legal-num">5</span>Schriften und externe Ressourcen</h2>
+
+        <h3 class="legal-h3">Google Fonts (Inter)</h3>
+        <p class="legal-p">Diese Website nutzt zur einheitlichen Darstellung von Schriftarten die Schrift „Inter“, die als Google Font extern eingebunden ist. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).</p>
+        <p class="legal-p">Beim Aufruf unserer Website lädt Ihr Browser die benötigten Schriftarten von den Google-Servern (fonts.googleapis.com und fonts.gstatic.com), um Texte und Schriftarten korrekt anzuzeigen. Zu diesem Zweck stellt der von Ihnen verwendete Browser eine Verbindung zu den Servern von Google her. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde. Eine Speicherung von Cookies findet dabei nicht statt.</p>
+        <p class="legal-p">Die Nutzung von Google Fonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Google ist nach dem „EU-US Data Privacy Framework“ (DPF) zertifiziert.</p>
+        <p class="legal-p">Weitere Informationen zu Google Fonts finden Sie unter <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener" class="legal-a">developers.google.com/fonts/faq</a> und in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="legal-a">Datenschutzerklärung von Google</a>.</p>
+
+        <h3 class="legal-h3">Material Symbols (Google)</h3>
+        <p class="legal-p">Zur Darstellung von Icons setzen wir die Icon-Bibliothek „Material Symbols Outlined“ ein, die ebenfalls von Google Ireland Limited bereitgestellt und über die Google-Server (fonts.googleapis.com und fonts.gstatic.com) extern geladen wird. Hinsichtlich der Datenverarbeitung gelten die gleichen Hinweise wie bei Google Fonts (siehe oben).</p>
 
         <!-- 6 -->
-        <h2 id="googleads" class="legal-h2"><span class="legal-num">6</span>Google Ads &amp; Remarketing</h2>
-        <p class="legal-p">Diese Website nutzt Google Ads, einen Online-Werbedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Mithilfe von Google Ads schalten wir Werbeanzeigen in der Google-Suche und auf Partnerwebsites. Google Remarketing ermöglicht es uns, Nutzern, die unsere Website bereits besucht haben, gezielt Werbung anzuzeigen.</p>
-        <p class="legal-p">Dabei werden Cookies und ähnliche Technologien eingesetzt. Google Ads und Remarketing werden nur nach Ihrer ausdrücklichen Einwilligung über unser Cookie-Banner aktiviert.</p>
-        <p class="legal-p">Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG.<br>
-        Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="legal-a">policies.google.com/privacy</a></p>
-        <p class="legal-p">Sie können personalisierte Werbung in den Google-Einstellungen deaktivieren: <a href="https://adssettings.google.com" target="_blank" rel="noopener" class="legal-a">adssettings.google.com</a></p>
-
-        <!-- 7 -->
-        <h2 id="plugins" class="legal-h2"><span class="legal-num">7</span>Plugins und Tools</h2>
-
-        <h3 class="legal-h3">Google Fonts (lokal eingebunden)</h3>
-        <p class="legal-p">Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten Google Fonts. Die Google Fonts sind lokal installiert. Eine Verbindung zu Servern von Google findet dabei nicht statt.</p>
-        <p class="legal-p">Weitere Informationen zu Google Fonts finden Sie unter <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener" class="legal-a">developers.google.com/fonts/faq</a>.</p>
-
-        <!-- 8 -->
-        <h2 id="rechte" class="legal-h2"><span class="legal-num">8</span>Ihre Rechte</h2>
+        <h2 id="rechte" class="legal-h2"><span class="legal-num">6</span>Ihre Rechte</h2>
         <p class="legal-p">Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
         <div class="grid sm:grid-cols-2 gap-3 my-4">
           <div v-for="right in rights" :key="right.title" class="legal-card !mb-0 flex gap-3">
@@ -268,9 +261,7 @@ const toc = [
   { id: 'hosting', label: 'Hosting (Netlify)' },
   { id: 'allgemein', label: 'Allgemeine Hinweise & Pflichten' },
   { id: 'datenerfassung', label: 'Datenerfassung auf dieser Website' },
-  { id: 'analytics', label: 'Google Analytics' },
-  { id: 'googleads', label: 'Google Ads & Remarketing' },
-  { id: 'plugins', label: 'Plugins und Tools' },
+  { id: 'schriften', label: 'Schriften und externe Ressourcen' },
   { id: 'rechte', label: 'Ihre Rechte' },
 ];
 
