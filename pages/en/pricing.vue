@@ -321,42 +321,42 @@ const faqs = [
   {
     question: 'How much does a professional website cost?',
     answer:
-      'Professional business websites at EvolaTec start from €1,500 including design, development, mobile optimisation and basic SEO. Larger corporate websites with multilingual content, booking systems or custom features start from €3,000. Exact costs depend on scope, page count and desired features – use our pricing calculator for a quick estimate.',
+      'Professional business websites at EvolaTec start from €1,500 including design, development and basic SEO. Exact costs depend on scope, page count and features – use our pricing calculator for a quick estimate.',
   },
   {
     question: 'How much does a landing page cost?',
     answer:
-      'A professional landing page starts from €500 and is ideal for ad campaigns (Google Ads, Meta Ads) and lead generation. Business packages with conversion optimisation start from €800, premium landing pages with SEO copy, A/B testing and tracking from €1,500. Perfect if you want to launch quickly and generate qualified leads.',
+      'A professional landing page starts from €500 and is ideal for ad campaigns and lead generation. Landing page copywriting can be added separately from €250.',
   },
   {
     question: 'How much does an online shop cost?',
     answer:
-      'Online shops start from €3,000 for a basic Shopify shop. Premium solutions with extended features and integrations cost from €6,000, and complex enterprise shops with ERP integration or B2B features from €15,000. Additional ongoing costs apply: Shopify subscription (from €30/month), payment provider fees (1.5–2.9%) and optional maintenance.',
+      'Online shops start from €3,000 as a basic shop. Premium E-Commerce with extended features from €6,000. Additional ongoing operating costs apply depending on the platform: hosting or platform fees and payment provider fees.',
   },
   {
     question: 'How much does SEO cost at EvolaTec?',
     answer:
-      'An SEO audit starts from €100, technical SEO optimisation from €300 and ongoing SEO management from €300/month. Local SEO starts from €400, link building from €100 and SEO copy from €150. Exact costs depend on industry, competition and goals – we provide a transparent quote before the project starts.',
+      'An SEO audit starts from €100, SEO optimisation from €300 and ongoing SEO management from €300/month. Local SEO starts from €400, link building from €100 and SEO copy from €150. Exact costs depend on scope and your goals.',
   },
   {
     question: 'How much does online marketing (Google Ads, Meta Ads) cost?',
     answer:
-      'Our Google Ads management starts from €400/month, Meta Ads (Facebook/Instagram) from €300/month. The advertising budget for the ads themselves is set separately and paid directly to Google or Meta – typically €300–€2,000/month depending on industry. We recommend a starting budget of at least €500/month for meaningful test results.',
+      'Our Google Ads management starts from €400/month, Meta Ads (Facebook/Instagram) from €300/month. The advertising budget for the ads themselves is set separately and paid directly to Google or Meta.',
   },
   {
     question: 'Are there fixed prices or are costs billed hourly?',
     answer:
-      'We work exclusively with transparent fixed-price quotes. You know from the start what your project will cost – no surprise additional costs during development. Optional extensions or later change requests are listed separately and can be added flexibly. We bill hourly only for ongoing management or smaller special tasks (€95/hour).',
+      'We work with transparent fixed-price quotes. You know from the start what your project will cost – no surprise additional costs during development. We bill hourly only for consulting or smaller special tasks (from €90/hour).',
   },
   {
     question: 'Is SEO included with websites?',
     answer:
-      'Yes, basic SEO is included in all web projects: clean code structure, fast loading times, mobile optimisation, structured data and correct meta tags. For deeper SEO strategies such as keyword research, content optimisation, link building and ongoing management we offer additional SEO packages from €300/month.',
+      'Yes, basic SEO is included in all web projects: clean code structure, fast loading times, mobile optimisation and correct meta data. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages.',
   },
   {
     question: 'Is maintenance and support included after launch?',
     answer:
-      '30 days of free support after launch are included in the price. For long-term maintenance, regular updates, security patches, backups and performance monitoring we offer flexible maintenance packages from €30/month. This keeps your website secure, up-to-date and high-performing long-term.',
+      'Many of our web development packages include a support phase after launch. For long-term maintenance, updates and performance monitoring we offer flexible maintenance packages on request.',
   },
 ];
 </script>

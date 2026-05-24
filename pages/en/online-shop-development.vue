@@ -162,7 +162,7 @@ const schemaMarkup = {
       '@id': 'https://evolatec.de/en/online-shop-development/#webpage',
       url: 'https://evolatec.de/en/online-shop-development',
       name: 'Online Shop Development – E-Commerce & Web Shop | EvolaTec',
-      description: 'Professional online shops and e-commerce platforms from €3,000. Shopify, WooCommerce and custom shops with SEO optimisation and high conversion rates.',
+      description: 'Professional online shops and e-commerce platforms from €3,000. Shopify and custom shops with SEO optimisation and high conversion rates.',
       isPartOf: { '@id': 'https://evolatec.de/#website' },
       about: { '@id': 'https://evolatec.de/#organization' },
       inLanguage: 'en-US',
@@ -171,7 +171,7 @@ const schemaMarkup = {
       '@type': 'Service',
       '@id': 'https://evolatec.de/en/online-shop-development/#service',
       name: 'Online Shop Development',
-      description: 'Professional e-commerce shops for businesses — Shopify, WooCommerce and custom solutions with SEO and conversion optimisation.',
+      description: 'Professional e-commerce shops for businesses — Shopify and custom solutions with SEO and conversion optimisation.',
       url: 'https://evolatec.de/en/online-shop-development',
       provider: { '@id': 'https://evolatec.de/#organization' },
       areaServed: { '@type': 'Country', name: 'Germany' },
@@ -181,7 +181,7 @@ const schemaMarkup = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'How much does it cost to build an online shop?', acceptedAnswer: { '@type': 'Answer', text: 'Professional online shop development at EvolaTec starts from €3,000 for a starter shop. Premium solutions with extended features and integrations start from €6,000.' } },
-        { '@type': 'Question', name: 'What ongoing costs are there after the shop is built?', acceptedAnswer: { '@type': 'Answer', text: 'In addition to the one-off development cost, there are monthly operating costs: Shopify subscription from approx. €30/month, hosting, payment provider fees and optional maintenance.' } },
+        { '@type': 'Question', name: 'What ongoing costs are there after the shop is built?', acceptedAnswer: { '@type': 'Answer', text: 'In addition to the one-off development cost, there are monthly operating costs depending on the platform: a Shopify plan, hosting, payment provider fees and optional maintenance.' } },
         { '@type': 'Question', name: 'How long does it take to develop an online shop?', acceptedAnswer: { '@type': 'Answer', text: 'A professional online shop can be live in as little as 14 working days at EvolaTec. More complex custom solutions typically take 6–12 weeks.' } },
         { '@type': 'Question', name: 'Which shop platform is right for my business?', acceptedAnswer: { '@type': 'Answer', text: 'Shopify is ideal for quick start and easy management. Custom solutions built with Nuxt and Storyblok are recommended for complex processes and high scalability.' } },
         { '@type': 'Question', name: 'Do you support SEO optimisation of the shop?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, every shop we develop is SEO-optimised from the ground up — with technical structure, PageSpeed optimisation, Schema.org markup and a clean URL architecture.' } },
@@ -198,11 +198,11 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Professional online shop development from €3,000. Shopify, WooCommerce and custom e-commerce solutions with SEO optimisation and high conversion rates.',
+      content: 'Professional online shop development from €3,000. Shopify and custom e-commerce solutions with SEO optimisation and high conversion rates.',
     },
     {
       name: 'keywords',
-      content: 'online shop development, e-commerce development, Shopify development, WooCommerce development, custom shop development, e-commerce agency',
+      content: 'online shop development, e-commerce development, Shopify development, custom shop development, e-commerce agency',
     },
     { property: 'og:title', content: 'Online Shop Development – E-Commerce | EvolaTec' },
     { property: 'og:description', content: 'Professional e-commerce solutions and online shops for businesses.' },
@@ -225,7 +225,7 @@ const heroStats = [
   { value: '30 Days', label: 'Support', icon: 'support_agent' },
 ];
 
-const trustCompanies = ['E-COMMERCE', 'SHOPIFY', 'WOOCOMMERCE', 'CUSTOM SHOP'];
+const trustCompanies = ['E-COMMERCE', 'SHOPIFY', 'CUSTOM SHOP'];
 
 const introPoints = [
   {
@@ -256,14 +256,6 @@ const ecommerceServices = [
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',
     borderColor: 'border-blue-500',
-  },
-  {
-    title: 'WooCommerce Development',
-    description: 'Custom WooCommerce shops on a WordPress base — flexible, extendable and SEO-optimised.',
-    icon: 'shopping_bag',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-    borderColor: 'border-purple-500',
   },
   {
     title: 'Custom Shop Development',
@@ -305,7 +297,7 @@ const expertiseBlocks = [
     title: 'Online Shop Development Costs — What You Should Know',
     paragraphs: [
       'The cost of building an online shop depends on the platform, scope and individual requirements. A professional online shop at EvolaTec starts from €3,000, with custom solutions priced accordingly.',
-      'In addition to the one-off build cost, there are ongoing operating costs: hosting, platform fees (e.g. Shopify from approx. €30/month), payment provider fees and optional maintenance.',
+      'In addition to the one-off build cost, there are ongoing operating costs: hosting or platform fees (e.g. a Shopify plan), payment provider fees and optional maintenance.',
       'Investing in a professionally built online shop means investing in a solution that generates long-term revenue — rather than low-cost website builders that quickly hit their limits.',
       'EvolaTec offers transparent pricing with no hidden costs. From the very first conversation you receive a realistic estimate for your individual online shop.',
     ],
@@ -423,42 +415,37 @@ const faqs = [
   {
     question: 'How much does it cost to build an online shop?',
     answer:
-      'A professional online shop at EvolaTec starts from €3,000 as a basic shop. Premium solutions with extended features, custom designs and integrations start from €6,000, and complex enterprise shops from €15,000. Exact costs depend on the number of products, functionality, platform and required integrations. We provide a transparent fixed-price quote before the project starts.',
+      'A professional online shop at EvolaTec starts from €3,000 as a basic shop. Premium solutions with extended features and integrations start from €6,000. Exact costs depend on the number of products, functionality and platform – we provide a transparent fixed-price quote before the project starts.',
   },
   {
     question: 'What ongoing costs are there after the shop is built?',
     answer:
-      'In addition to one-off development there are monthly operating costs: Shopify subscription from €30/month (Basic) or €90/month (Advanced), hosting from €10/month for custom solutions, payment provider fees (approx. 1.5–2.9% per transaction) plus domain and optional maintenance. A marketing budget (Google Ads, Meta Ads, SEO) should be planned separately depending on growth goals.',
+      'In addition to one-off development there are monthly operating costs depending on the platform: a Shopify plan (depending on the chosen tier), hosting for custom solutions, payment provider fees, domain and optional maintenance. A marketing budget (Google Ads, Meta Ads, SEO) should be planned separately depending on growth goals.',
   },
   {
     question: 'How long does it take to develop an online shop?',
     answer:
-      'A professional online shop can be live in as little as 14 working days at EvolaTec. Mid-sized shops with custom designs, multiple languages or integrations take 4–8 weeks. Complex custom solutions with ERP integration, B2B features or individual processes take 8–16 weeks for concept and development.',
+      'A professional online shop can be live in as little as 14 working days at EvolaTec. More complex custom solutions with individual integrations typically take 6–12 weeks for concept and development.',
   },
   {
     question: 'Which shop platform is right for my business?',
     answer:
-      'Shopify is ideal for fast market launch, easy management and internationally scalable shops. Custom solutions built with Nuxt, Storyblok and individual shop logic are recommended for complex B2B processes, high performance demands, individual booking logic or special integrations. We choose the platform based on your needs, not our preferences.',
+      'Shopify is ideal for fast market launch and easy management. Custom solutions built with Nuxt and individual shop logic are recommended for complex processes, high performance demands or special integrations. We choose the platform based on your needs.',
   },
   {
     question: 'Do you also support SEO optimisation of the online shop?',
     answer:
-      'Yes, every online shop is built SEO-optimised from the ground up: clean URL architecture, technical SEO, PageSpeed optimisation, Schema.org markup for products and correct meta data. For deeper SEO strategies such as category optimisation, product copy, link building and ongoing management we offer dedicated e-commerce SEO packages from €300/month.',
-  },
-  {
-    question: 'Which payment providers can be integrated?',
-    answer:
-      'We integrate all common payment providers: credit card (Stripe, Adyen), PayPal, Klarna (Sofort, invoice, instalments), Apple Pay, Google Pay, Amazon Pay, invoice and SEPA direct debit. Which methods make sense depends on audience and average order value – we recommend the right mix for maximum conversion.',
+      'Yes, every online shop is built SEO-optimised from the ground up: clean URL architecture, technical SEO, PageSpeed optimisation and correct meta data. For deeper SEO strategies such as category optimisation, product copy and link building we offer additional SEO packages.',
   },
   {
     question: 'Is my online shop secure and GDPR-compliant?',
     answer:
-      'Yes, every shop is delivered with SSL encryption, secure payment providers (Stripe, PayPal, Klarna) and GDPR-compliant data processing. This includes cookie consent, privacy policy, legal notice, terms of service, secure data transmission and regular security updates. Compliance is standard, not optional.',
+      'Yes, every shop is delivered with SSL encryption, secure payment providers and GDPR-compliant data processing. This includes cookie consent, privacy policy, legal notice and secure data transmission. Compliance is standard, not optional.',
   },
   {
     question: 'Does EvolaTec offer maintenance and support after launch?',
     answer:
-      '30 days of free support after launch are included in the price. Beyond that we offer maintenance packages from €50/month with updates, security patches, backups, performance monitoring and minor content changes. We can also take over marketing management, A/B testing and conversion optimisation on an ongoing basis.',
+      '30 days of support after launch are included in the price. Beyond that we offer maintenance packages on request with updates, security patches, backups and performance monitoring. We can also take over marketing management and conversion optimisation on an ongoing basis.',
   },
 ];
 </script>

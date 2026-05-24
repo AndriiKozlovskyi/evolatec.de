@@ -169,42 +169,37 @@ const faqs = [
   {
     question: 'Was kostet es, einen Onlineshop erstellen zu lassen?',
     answer:
-      'Ein professioneller Onlineshop bei EvolaTec startet bei 3.000€ als Basis-Shop. Premium-Lösungen mit erweiterten Funktionen, individuellen Designs und Integrationen beginnen ab 6.000€, komplexe Enterprise-Shops ab 15.000€. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang, Plattform und gewünschten Schnittstellen ab. Wir erstellen vor Projektstart ein transparentes Festpreisangebot ohne versteckte Kosten.',
+      'Ein professioneller Onlineshop bei EvolaTec startet ab 3.000€ als Basis-Shop. Premium-Lösungen mit erweiterten Funktionen und Integrationen beginnen ab 6.000€. Die genauen Kosten hängen von Produktanzahl, Funktionsumfang und Plattform ab – wir erstellen vor Projektstart ein transparentes Festpreisangebot.',
   },
   {
     question: 'Welche laufenden Kosten entstehen nach der Shop-Erstellung?',
     answer:
-      'Neben der einmaligen Entwicklung fallen monatliche Betriebskosten an: Shopify-Abo ab 30€/Monat (Basic) bzw. 90€/Monat (Advanced), Hosting bei eigener Lösung ab 10€/Monat, Zahlungsanbieter-Gebühren (ca. 1,5–2,9% pro Transaktion) sowie Domain und ggf. Wartungspaket. Marketing-Budget (Google Ads, Meta Ads, SEO) sollte je nach Wachstumsziel zusätzlich eingeplant werden.',
+      'Neben der einmaligen Entwicklung fallen je nach Plattform monatliche Betriebskosten an: ein Shopify-Plan (je nach gewähltem Paket), Hosting bei eigener Lösung, Gebühren der Zahlungsanbieter sowie Domain und optional Wartung. Marketing-Budget (Google Ads, Meta Ads, SEO) sollte je nach Wachstumsziel zusätzlich eingeplant werden.',
   },
   {
     question: 'Wie lange dauert die Entwicklung eines Online-Shops?',
     answer:
-      'Ein professioneller Onlineshop ist bei EvolaTec bereits ab 14 Arbeitstagen live. Mittelgroße Shops mit individuellen Designs, mehreren Sprachen oder Schnittstellen benötigen 4–8 Wochen. Komplexe Custom-Lösungen mit ERP-Anbindung, B2B-Funktionen oder individuellen Prozessen benötigen 8–16 Wochen für Konzeption und Entwicklung.',
+      'Ein professioneller Onlineshop ist bei EvolaTec bereits ab 14 Arbeitstagen live. Komplexere Custom-Lösungen mit individuellen Integrationen benötigen je nach Umfang 6–12 Wochen für Konzeption und Entwicklung.',
   },
   {
     question: 'Welche Shop-Plattform ist die richtige für mein Unternehmen?',
     answer:
-      'Shopify ist ideal für schnellen Marktstart, einfache Verwaltung und international skalierende Shops. Custom-Lösungen mit Nuxt, Storyblok und individueller Shop-Logik empfehlen wir für komplexe B2B-Prozesse, hohe Performance-Anforderungen, individuelle Buchungslogik oder spezielle Schnittstellen. Wir wählen die Plattform anhand Ihrer Anforderungen, nicht anhand unserer Vorlieben.',
+      'Shopify ist ideal für schnellen Marktstart und einfache Verwaltung. Custom-Lösungen mit Nuxt und individueller Shop-Logik empfehlen wir für komplexe Prozesse, hohe Performance-Anforderungen oder spezielle Schnittstellen. Wir wählen die Plattform anhand Ihrer Anforderungen.',
   },
   {
     question: 'Unterstützen Sie auch bei der SEO-Optimierung des Onlineshops?',
     answer:
-      'Ja, jeder Onlineshop wird von Grund auf SEO-optimiert entwickelt: saubere URL-Architektur, technisches SEO, PageSpeed-Optimierung, Schema.org Markup für Produkte und korrekte Meta-Daten. Für weitergehende SEO-Strategien wie Kategorie-Optimierung, Produkttexte, Linkbuilding und laufende Betreuung bieten wir zusätzliche SEO-Pakete für E-Commerce ab 300€/Monat an.',
-  },
-  {
-    question: 'Welche Zahlungsanbieter können integriert werden?',
-    answer:
-      'Wir integrieren alle gängigen Zahlungsanbieter: Kreditkarte (Stripe, Adyen), PayPal, Klarna (Sofortüberweisung, Rechnung, Ratenkauf), Apple Pay, Google Pay, Amazon Pay, Kauf auf Rechnung und SEPA-Lastschrift. Welche Methoden sinnvoll sind, hängt von Zielgruppe und Warenkorb-Höhe ab – wir empfehlen die passende Auswahl für maximale Conversion.',
+      'Ja, jeder Onlineshop wird von Grund auf SEO-optimiert entwickelt: saubere URL-Architektur, technisches SEO, PageSpeed-Optimierung und korrekte Meta-Daten. Für weitergehende SEO-Strategien wie Kategorie-Optimierung, Produkttexte und Linkbuilding bieten wir zusätzliche SEO-Pakete an.',
   },
   {
     question: 'Ist mein Onlineshop sicher und DSGVO-konform?',
     answer:
-      'Ja, jeder Shop wird mit SSL-Verschlüsselung, sicheren Zahlungsanbietern (Stripe, PayPal, Klarna) und DSGVO-konformer Datenverarbeitung ausgeliefert. Dazu gehören Cookie-Consent, Datenschutzerklärung, Impressum, AGB-Schnittstelle, sichere Datenübertragung sowie regelmäßige Sicherheits-Updates. Compliance ist Standard, nicht optional.',
+      'Ja, jeder Shop wird mit SSL-Verschlüsselung, sicheren Zahlungsanbietern und DSGVO-konformer Datenverarbeitung ausgeliefert. Dazu gehören Cookie-Consent, Datenschutzerklärung, Impressum sowie sichere Datenübertragung. Compliance ist Standard, nicht optional.',
   },
   {
     question: 'Bietet EvolaTec auch Wartung und Support nach dem Launch?',
     answer:
-      'Im Preis sind 30 Tage kostenloser Support nach dem Launch enthalten. Darüber hinaus bieten wir Wartungspakete ab 50€/Monat mit Updates, Sicherheits-Patches, Backups, Performance-Monitoring und kleineren inhaltlichen Anpassungen. Auch Marketing-Betreuung, A/B-Tests und Conversion-Optimierung können wir laufend übernehmen.',
+      'Im Preis sind 30 Tage Support nach dem Launch enthalten. Darüber hinaus bieten wir auf Anfrage Wartungspakete mit Updates, Sicherheits-Patches, Backups und Performance-Monitoring. Auch Marketing-Betreuung und Conversion-Optimierung können wir laufend übernehmen.',
   },
 ];
 
@@ -214,12 +209,12 @@ const schemaMarkup = buildSchema(
   pageSchema({
     url: 'https://evolatec.de/online-shop-erstellen-lassen',
     name: 'Online Shop erstellen lassen – E-Commerce & Webshop | EvolaTec',
-    description: 'Professionelle Online Shops und E-Commerce Plattformen ab 3.000€. Shopify, WooCommerce und Custom Shops mit SEO-Optimierung und hoher Conversion.',
+    description: 'Professionelle Online Shops und E-Commerce Plattformen ab 3.000€. Shopify und Custom Shops mit SEO-Optimierung und hoher Conversion.',
   }),
   serviceSchema({
     id: 'https://evolatec.de/online-shop-erstellen-lassen/#service',
     name: 'Online Shop erstellen lassen',
-    description: 'Professionelle E-Commerce Shops und Online Shops für Unternehmen — Shopify, WooCommerce und Custom Lösungen mit SEO und Conversion-Optimierung.',
+    description: 'Professionelle E-Commerce Shops und Online Shops für Unternehmen — Shopify und Custom Lösungen mit SEO und Conversion-Optimierung.',
     url: 'https://evolatec.de/online-shop-erstellen-lassen',
     serviceType: 'E-Commerce',
     minPrice: 3000,
@@ -273,7 +268,7 @@ const heroStats = [
   { value: '30 Tage',   label: 'Support',    icon: 'support_agent' },
 ];
 
-const trustCompanies = ['E-COMMERCE', 'SHOPIFY', 'WOOCOMMERCE', 'CUSTOM SHOP'];
+const trustCompanies = ['E-COMMERCE', 'SHOPIFY', 'CUSTOM SHOP'];
 
 const introPoints = [
   {
@@ -304,14 +299,6 @@ const ecommerceServices = [
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',
     borderColor: 'border-blue-500',
-  },
-  {
-    title: 'WooCommerce Entwicklung',
-    description: 'Individuelle WooCommerce Shops auf WordPress-Basis — flexibel, erweiterbar und SEO-optimiert.',
-    icon: 'shopping_bag',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-    borderColor: 'border-purple-500',
   },
   {
     title: 'Custom Shop Entwicklung',
@@ -353,7 +340,7 @@ const expertiseBlocks = [
     title: 'Onlineshop erstellen lassen Kosten — was Sie wissen sollten',
     paragraphs: [
       'Die Kosten, einen Onlineshop erstellen zu lassen, hängen von Plattform, Umfang und individuellen Anforderungen ab. Ein professioneller Online Shop startet bei EvolaTec ab 3.000 €, individuelle Custom-Lösungen entsprechend höher.',
-      'Zu den einmaligen Erstellungskosten kommen laufende Betriebskosten hinzu: Hosting, Plattformgebühren (z. B. Shopify ab ca. 30 € pro Monat), Gebühren von Zahlungsanbietern sowie optionale Wartungsleistungen.',
+      'Zu den einmaligen Erstellungskosten kommen laufende Betriebskosten hinzu: Hosting bzw. Plattformgebühren (z. B. ein Shopify-Plan), Gebühren der Zahlungsanbieter sowie optionale Wartungsleistungen.',
       'Wer seinen Onlineshop professionell erstellen lässt, investiert in eine Lösung, die langfristig Umsatz generiert — statt in günstige Baukastensysteme, die schnell an ihre Grenzen stoßen.',
       'EvolaTec bietet transparente Preise ohne versteckte Kosten. Bereits im ersten Gespräch erhalten Sie eine realistische Einschätzung der Kosten für Ihren individuellen Online Shop.',
     ],

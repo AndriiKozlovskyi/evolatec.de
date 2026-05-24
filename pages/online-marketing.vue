@@ -144,37 +144,37 @@ const marketingFaqs = [
   {
     question: 'Was macht eine Online Marketing Agentur?',
     answer:
-      'Eine Online Marketing Agentur entwickelt und setzt digitale Strategien um, die mehr Reichweite, qualifizierte Leads und planbares Umsatzwachstum erzeugen. Dazu gehören Suchmaschinenoptimierung (SEO), bezahlte Werbung (Google Ads, Meta Ads), Content Marketing, Conversion-Optimierung und Marketing-Analytics. Wir koordinieren alle Kanäle aufeinander, damit Sie das beste Verhältnis aus Werbebudget und Ergebnissen erzielen.',
+      'Eine Online Marketing Agentur entwickelt Strategien, Kampagnen und digitale Maßnahmen für Reichweite, Leads und Umsatzwachstum. Dazu gehören SEO, bezahlte Werbung (Google Ads, Meta Ads), Content Marketing und Conversion-Optimierung – aufeinander abgestimmt für das beste Verhältnis aus Budget und Ergebnissen.',
   },
   {
     question: 'Welche Marketing Leistungen bietet EvolaTec?',
     answer:
-      'EvolaTec bietet ein vollständiges Online Marketing Spektrum: Suchmaschinenoptimierung (SEO), Google Ads (Search, Display, Shopping, YouTube), Meta Ads (Instagram, Facebook), Local SEO, Content Marketing, Linkbuilding, Branding sowie Conversion- und Landingpage-Optimierung. Auf Wunsch kümmern wir uns auch um das passende Tracking, Analytics-Setup und monatliche Performance-Reports.',
+      'EvolaTec bietet SEO, Google Ads, Meta Ads, Local SEO, Linkbuilding, Branding, Content Marketing sowie Conversion- und Landingpage-Optimierung. Auf Wunsch übernehmen wir auch monatliches Performance-Reporting.',
   },
   {
     question: 'Was kostet professionelles Online Marketing?',
     answer:
-      'Unsere Marketing-Betreuung beginnt bei 300€/Monat für Meta Ads und 400€/Monat für Google Ads. SEO-Pakete starten bei 300€/Monat, eine Online-Marketing-Strategie ab 800€ einmalig. Das Werbebudget für bezahlte Kanäle wird separat festgelegt und direkt an Google bzw. Meta bezahlt – realistisch sind 500–2.000€/Monat je nach Branche und Zielmarkt.',
+      'Google Ads Betreuung ab 400€/Monat, Meta Ads ab 300€/Monat. SEO Betreuung ab 300€/Monat, einmalige Marketing Beratung ab 90€/Stunde. Das Werbebudget für bezahlte Kanäle wird separat festgelegt und direkt an Google bzw. Meta bezahlt.',
   },
   {
     question: 'Was ist der Unterschied zwischen SEO und Online Marketing?',
     answer:
-      'SEO ist ein Teilbereich des Online Marketings und konzentriert sich auf organische Google-Rankings. Online Marketing umfasst zusätzlich bezahlte Werbung (Google Ads, Meta Ads), Social Media, Content Marketing, E-Mail-Marketing und Conversion-Optimierung. SEO baut langfristig stabile Sichtbarkeit auf, bezahlte Kanäle liefern sofort Leads – die Kombination ergibt die besten Ergebnisse.',
+      'SEO ist ein Teilbereich des Online Marketings und konzentriert sich auf organische Google-Rankings. Online Marketing umfasst zusätzlich bezahlte Werbung, Social Media, Content Marketing und Conversion-Optimierung. SEO baut langfristig Sichtbarkeit auf, bezahlte Kanäle liefern sofort Leads.',
   },
   {
     question: 'Wie schnell sehe ich Ergebnisse aus Online Marketing?',
     answer:
-      'Bezahlte Kanäle wie Google Ads und Meta Ads liefern bereits in den ersten Tagen Klicks und Leads. SEO und Content Marketing zeigen erste Wirkung nach 2–3 Monaten, nachhaltige Rankings nach 6–12 Monaten. Wir empfehlen, kurzfristige (Ads) und langfristige Maßnahmen (SEO, Content) parallel zu starten, um schnell Ergebnisse zu sehen und gleichzeitig Wachstum aufzubauen.',
+      'Bezahlte Kanäle wie Google Ads und Meta Ads liefern bereits in den ersten Tagen Klicks und Leads. SEO und Content Marketing zeigen erste Wirkung in der Regel nach 2–3 Monaten. Wir empfehlen, kurzfristige und langfristige Maßnahmen parallel zu starten.',
   },
   {
     question: 'Welcher Marketing-Kanal ist der beste für mein Unternehmen?',
     answer:
-      'Das hängt von Branche, Zielgruppe und Vertriebsmodell ab. Lokale Dienstleister profitieren meist von Local SEO und Google Ads, E-Commerce von Meta Ads und Shopping Ads, B2B-Unternehmen von LinkedIn Ads und SEO. Wir analysieren Ihre Zielgruppe und empfehlen die Kanäle mit dem besten Verhältnis aus Reichweite, Kosten und Conversion.',
+      'Das hängt von Branche, Zielgruppe und Vertriebsmodell ab. Lokale Dienstleister profitieren oft von Local SEO und Google Ads, E-Commerce von Meta Ads und Shopping Ads, B2B-Unternehmen von LinkedIn Ads und SEO. Wir analysieren Ihre Zielgruppe und empfehlen die passenden Kanäle.',
   },
   {
     question: 'Für welche Unternehmen eignet sich Online Marketing?',
     answer:
-      'Online Marketing eignet sich für nahezu jedes Unternehmen, das im digitalen Raum sichtbar werden möchte: lokale Dienstleister, Onlineshops, Handwerksbetriebe, Praxen, Coaches, Startups, SaaS und B2B-Unternehmen. Entscheidend ist, dass Ihre Zielgruppe online erreichbar ist und Sie bereit sind, in den passenden Kanälen zu investieren.',
+      'Für lokale Unternehmen, Dienstleister, Onlineshops, Startups und digitale Marken. Entscheidend ist, dass Ihre Zielgruppe online erreichbar ist und Sie bereit sind, in die passenden Kanäle zu investieren.',
   },
 ];
 

@@ -471,37 +471,37 @@ const faqs = [
   {
     question: 'How much does a professional business website cost?',
     answer:
-      'Business website costs depend on scope. At EvolaTec, modern business websites start as a fixed price from €1,500 including design, development, hosting setup and basic SEO. Larger corporate websites with custom features, multilingual content or integrations are priced accordingly – we provide a transparent quote with no hidden costs before the project starts.',
+      'At EvolaTec, modern business websites start as a fixed price from €1,500 including design, development and basic SEO. Larger corporate websites with custom features or multilingual content are priced accordingly – we provide a transparent quote before the project starts.',
   },
   {
     question: 'Are there fixed prices for business websites?',
     answer:
-      'Yes, EvolaTec works exclusively with transparent fixed prices for professional business websites. You know the cost from day one – there are no surprise charges during development. Optional add-ons such as additional languages, blogs or booking systems are listed separately and can be added flexibly.',
+      'Yes, EvolaTec works with transparent fixed prices for professional business websites. You know the cost from day one – there are no hidden charges during development.',
   },
   {
     question: 'How long does it take to develop a business website?',
     answer:
-      'A professional business website can go live in as little as 7 working days at EvolaTec. Larger corporate websites with multiple languages, booking systems or integrations take 2–4 weeks. The exact timeframe depends on how quickly content, images and approvals are provided – for urgent projects we also offer express delivery.',
+      'A professional business website can go live in as little as 7 working days at EvolaTec. Larger corporate websites with multiple languages or booking systems take 2–4 weeks depending on scope. The exact timeframe depends on how quickly content, images and approvals are provided.',
   },
   {
     question: 'Are the business websites SEO-optimised?',
     answer:
-      'Yes, every business website is developed with technical SEO built in from the start – clean URL structure, optimised meta data, fast load times, mobile optimisation, structured data and semantic HTML. Your website is ready for strong Google rankings from day one. For deeper SEO strategies we offer additional SEO packages.',
+      'Yes, every business website is developed with basic SEO built in from the start – clean URL structure, optimised meta data, fast load times and semantic HTML. Your website is ready for strong Google rankings from day one. For deeper SEO strategies we offer additional packages.',
   },
   {
     question: 'Are the business websites responsive and mobile-optimised?',
     answer:
-      'Yes, all websites are developed Mobile-First and work perfectly on smartphones, tablets and desktop devices. We test every project on multiple screen sizes, browsers and operating systems. Since Google uses Mobile-First Indexing, responsive design is now a prerequisite for good rankings and non-negotiable.',
+      'Yes, all websites are developed Mobile-First and work optimally on smartphones, tablets and desktop devices. Since Google uses Mobile-First Indexing, responsive design is now a prerequisite for good rankings.',
   },
   {
     question: 'Can I maintain the business website myself later?',
     answer:
-      'Yes, on request we build your business website with a modern headless CMS like Storyblok, Strapi or Sanity so you can update text, images and blog posts yourself. Alternatively we take care of ongoing maintenance under a service agreement starting from €30/month.',
+      'Yes, on request we build your business website with Storyblok as a headless CMS so you can update text, images and blog posts yourself. Alternatively we take care of ongoing maintenance on request.',
   },
   {
     question: 'What is included after the business website launch?',
     answer:
-      'After launch you receive a short walkthrough and an optional maintenance agreement with regular updates, security patches, backups and minor content changes. We can also seamlessly take over SEO management, Google Ads campaigns or later extensions to keep your website competitive long-term.',
+      'After launch you receive 30 days of support and an optional maintenance agreement. We can also seamlessly take over SEO management, Google Ads campaigns or later extensions.',
   },
 ];
 </script>

@@ -395,37 +395,37 @@ const faqs = [
   {
     question: 'How much does it cost to get a website built?',
     answer:
-      'Website costs depend on scope and complexity. Landing pages start from €500, professional business websites from €1,500 and online shops from €3,000. More complex platforms with custom features or integrations cost accordingly. We work with transparent fixed prices and provide a detailed quote with no hidden costs before the project starts.',
+      'Costs depend on scope. Landing pages start from €500, professional business websites from €1,500 and online shops from €3,000. We work with transparent fixed prices and provide a detailed quote before the project starts.',
   },
   {
     question: 'How long does it take to build a website?',
     answer:
-      'A landing page is usually ready within 3–7 days, a business website in 2–4 weeks and an online shop in 4–8 weeks. Duration depends on the feature scope and how quickly content, images and feedback are provided. For urgent projects we also offer accelerated delivery.',
+      'A landing page is usually ready within 3–7 days, a business website from 7 working days and an online shop from 14 working days. Duration depends on the feature scope and how quickly content, images and feedback are provided.',
   },
   {
     question: 'Why is professional web development important?',
     answer:
-      'A professional website is often the first contact point with potential customers – it decides on trust and conversion. Professionally developed websites load fast, are SEO-optimised, perfectly usable on mobile and secure. DIY solutions or outdated templates usually cost more in the long run through lost enquiries, poor Google rankings and technical issues.',
+      'A professional website is often the first contact point with potential customers and decides on trust and conversion. It loads fast, is SEO-optimised, usable on mobile and secure. DIY solutions or outdated templates usually cost more in the long run through lost enquiries and poor rankings.',
   },
   {
     question: 'Which CMS or framework do you recommend?',
     answer:
-      'It depends on your needs: for custom, high-performance websites we use Nuxt, Vue.js and Tailwind CSS. If you want to manage content yourself we recommend Storyblok as a modern headless CMS – flexible, fast and with a comfortable visual editor. For online shops we use Shopify or custom e-commerce solutions. We choose technology based on your use case – not on our preference.',
+      'For custom, high-performance websites we use Nuxt, Vue.js and Tailwind CSS. If you want to manage content yourself we recommend Storyblok as a headless CMS. For online shops we use Shopify or custom solutions. We choose technology based on your use case.',
   },
   {
     question: 'Are the websites SEO-optimised?',
     answer:
-      'Yes, every website we build is SEO-optimised from the start: clean code, structured data, fast loading times, mobile optimisation, correct meta tags and a logical site structure. For deeper SEO strategies such as keyword research, content optimisation and link building we offer dedicated SEO packages.',
+      'Yes, every website we build comes with basic SEO from the start: clean code, fast loading times, mobile optimisation and correct meta data. For deeper SEO strategies such as keyword research, content optimisation and link building we offer dedicated SEO packages.',
   },
   {
     question: 'Does EvolaTec also develop online shops and web applications?',
     answer:
-      'Yes, beyond classic business websites we develop professional online shops, custom web applications, SaaS platforms, booking systems and integrations with third-party systems such as CRM, ERP or payment providers. We implement both standard solutions (Shopify, Storyblok) and tailored development.',
+      'Yes, beyond classic business websites we develop professional online shops and custom web applications. We implement both standard solutions (Shopify, Storyblok) and tailored development.',
   },
   {
     question: 'Are the websites responsive and optimised for mobile?',
     answer:
-      'Yes, all websites are developed Mobile First and optimised for smartphones, tablets and desktop. Since Google uses Mobile-First Indexing, responsive design is now mandatory – not just for users but also for your Google rankings. We test every project on multiple devices, browsers and screen sizes.',
+      'Yes, all websites are developed Mobile-First and optimised for smartphones, tablets and desktop. Since Google uses Mobile-First Indexing, responsive design is now mandatory – not just for users but also for good Google rankings.',
   },
 ];
 </script>

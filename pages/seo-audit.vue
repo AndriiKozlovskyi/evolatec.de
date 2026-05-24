@@ -72,39 +72,34 @@ const { hreflangLinks } = useLanguageSwitcher();
 
 const auditFaqs = [
   {
-    question: 'Was kostet ein professioneller SEO Audit?',
+    question: 'Was kostet ein SEO Audit?',
     answer:
-      'Eine Basis-SEO-Analyse beginnt bei EvolaTec ab 100€ und prüft die wichtigsten technischen und inhaltlichen Faktoren. Umfangreiche technische SEO Audits mit Wettbewerbsanalyse, Backlink-Check und detailliertem Maßnahmenplan starten ab 300€. Bei großen Websites oder Onlineshops mit vielen URLs kosten Enterprise-Audits ab 800€. Die Kosten hängen von Seitenanzahl, Komplexität und gewünschter Audit-Tiefe ab.',
+      'Basis SEO Analysen beginnen bei EvolaTec ab 100€. Umfangreiche technische Audits mit Wettbewerbsanalyse und detailliertem Maßnahmenplan ab 300€. Die genauen Kosten hängen vom Umfang und der Komplexität Ihrer Website ab.',
   },
   {
     question: 'Wie lange dauert eine SEO Analyse?',
     answer:
-      'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites mit über 100 Seiten, Onlineshops oder mehrsprachigen Projekten kann ein detaillierter Audit 1–2 Wochen in Anspruch nehmen. Sie erhalten am Ende einen schriftlichen Report sowie auf Wunsch eine persönliche Präsentation der Ergebnisse.',
+      'Die meisten SEO Audits dauern 2–5 Werktage. Bei umfangreichen Websites kann es etwas länger dauern. Sie erhalten am Ende einen schriftlichen Report mit allen Befunden und Empfehlungen.',
   },
   {
     question: 'Was wird bei einem SEO Audit geprüft?',
     answer:
-      'Wir prüfen über 100 Faktoren: Technik (Ladezeit, Core Web Vitals, Crawlability, Indexierung), OnPage (Meta-Daten, Überschriften, Content, interne Verlinkung), Keywords (Recherche, Suchintent, Wettbewerb), Backlinks (Profil-Qualität, Anchor-Texte, toxische Links), mobile Optimierung und strukturierte Daten. Außerdem analysieren wir Ihre 3–5 wichtigsten Wettbewerber und identifizieren Ranking-Lücken.',
+      'Wir prüfen Technik (Ladezeit, Core Web Vitals, Indexierung), OnPage (Meta-Daten, Überschriften, Content), Keywords, Backlinks, mobile Optimierung und strukturierte Daten. Außerdem analysieren wir Ihre wichtigsten Wettbewerber und identifizieren Ranking-Chancen.',
   },
   {
     question: 'Was bekomme ich nach dem SEO Audit?',
     answer:
-      'Sie erhalten einen strukturierten SEO-Report (PDF, 20–50 Seiten) mit allen Befunden, konkreten Handlungsempfehlungen und einem priorisierten Maßnahmenplan. Die Empfehlungen sind nach Aufwand und SEO-Impact gewichtet, sodass Sie sofort wissen, welche Optimierungen den größten Ranking-Hebel bieten. Auf Wunsch erläutern wir die Ergebnisse in einem persönlichen Call.',
+      'Sie erhalten einen strukturierten Bericht mit allen Befunden, konkreten Handlungsempfehlungen und einem priorisierten Maßnahmenplan. Auf Wunsch erläutern wir die Ergebnisse in einem persönlichen Gespräch.',
   },
   {
     question: 'Setzen Sie die Optimierungen nach dem Audit auch um?',
     answer:
-      'Ja, gerne übernehmen wir die Umsetzung der empfohlenen SEO-Optimierungen – technisch, inhaltlich oder beides. Alternativ unterstützen wir Ihr Team oder Ihre Entwickler bei der Implementierung mit klaren Spezifikationen. Auf Wunsch begleiten wir Sie auch laufend mit monatlicher SEO-Betreuung ab 300€/Monat.',
+      'Ja, gerne übernehmen wir die Umsetzung der empfohlenen SEO-Optimierungen oder unterstützen Sie dabei. Auf Wunsch begleiten wir Sie auch laufend mit monatlicher SEO-Betreuung ab 300€/Monat.',
   },
   {
     question: 'Wie oft sollte ein SEO Audit durchgeführt werden?',
     answer:
-      'Wir empfehlen mindestens einmal jährlich einen umfassenden SEO Audit, ergänzt durch quartalsweise Mini-Audits (Rankings, Technik, neue Wettbewerber). Bei größeren Website-Relaunches oder Google-Algorithmus-Updates ist ein zusätzlicher Audit sinnvoll, um Ranking-Verluste frühzeitig zu identifizieren und Chancen zu nutzen.',
-  },
-  {
-    question: 'Welche Tools nutzen Sie für den SEO Audit?',
-    answer:
-      'Wir kombinieren professionelle SEO-Tools wie Ahrefs, Semrush, Screaming Frog, Google Search Console, PageSpeed Insights und Lighthouse mit manueller Analyse und langjähriger Erfahrung. Tools liefern Daten – die Bewertung und Priorisierung übernehmen unsere SEO-Experten, damit Sie umsetzbare statt generischer Empfehlungen erhalten.',
+      'Wir empfehlen mindestens einmal jährlich einen umfassenden SEO Audit. Bei größeren Website-Relaunches oder spürbaren Ranking-Veränderungen ist ein zusätzlicher Audit sinnvoll, um Ursachen frühzeitig zu identifizieren.',
   },
 ];
 

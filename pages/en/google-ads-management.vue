@@ -333,37 +333,27 @@ const adsFaqs = [
   {
     question: 'What does a Google Ads agency do?',
     answer:
-      'A Google Ads agency plans, launches and optimises advertising campaigns on Google Search, Display, Shopping and YouTube. This includes keyword research, ad copy, conversion tracking, bid management and ongoing performance optimisation. The goal is to generate as many qualified clicks, leads or sales as possible with the available budget.',
+      'A Google Ads agency plans, launches and optimises advertising campaigns on Google – Search, Display, Shopping and YouTube. This includes keyword research, ad copy, conversion tracking and ongoing optimisation. The goal is to generate as many qualified clicks, leads or sales as possible with your budget.',
   },
   {
     question: 'How quickly do Google Ads work?',
     answer:
-      'Google Ads usually deliver the first clicks and visitors within 24–48 hours after campaign launch. First qualified leads or sales typically follow within the first week. Unlike SEO, Google advertising provides immediate visibility – campaigns are then continuously optimised based on performance data.',
+      'Google advertising can generate first visitors and leads within just a few days. Unlike SEO, Google Ads provide immediate visibility. Campaigns are then continuously optimised based on performance data.',
   },
   {
     question: 'How much do Google Ads campaigns cost?',
     answer:
-      'Our Google Ads management starts from €400 per month for agency services. The advertising budget (click costs) is set separately and paid directly to Google – a realistic range is €300–€2,000/month depending on industry and competition. We recommend a starting budget of at least €500/month to collect meaningful data for optimisation.',
-  },
-  {
-    question: 'How high should my Google Ads budget be?',
-    answer:
-      'The ideal Google Ads budget depends on competition in your industry and the cost per click. Local service providers often start with €300–€500/month, B2B companies with €1,000–€2,000/month, and e-commerce shops from €1,500/month depending on product range. Before launch we calculate a realistic budget recommendation based on your goals and click prices.',
+      'Our Google Ads management starts from €400/month for agency services. The advertising budget (click costs) is set separately and paid directly to Google. The budget amount depends on industry, competition and goals – we provide a recommendation before campaign launch.',
   },
   {
     question: 'What is the difference between Google Ads and SEO?',
     answer:
-      'Google Ads are paid advertisements that appear immediately above organic search results – you pay per click. SEO delivers organic rankings without click costs but takes months. In practice we combine both: ads deliver leads immediately while SEO builds stable, predictable visibility long-term.',
-  },
-  {
-    question: 'What is a good ROAS for Google Ads?',
-    answer:
-      'A good ROAS (Return on Ad Spend) depends heavily on industry and margin. For e-commerce shops 400–600% is considered solid, while for high-value B2B leads a ROAS of 200% can be profitable. For lead-based business we additionally measure cost per lead and later close rate to assess true profitability.',
+      'Google Ads are paid advertisements that appear immediately above organic search results – you pay per click. SEO delivers organic rankings without click costs but takes months. In practice both channels complement each other: ads deliver fast leads, SEO builds stable visibility long-term.',
   },
   {
     question: 'Which businesses are suited for Google Ads?',
     answer:
-      'Google Ads work for nearly every industry where potential customers actively search for solutions: local service providers (tradespeople, lawyers, doctors), online shops, B2B companies, SaaS providers and start-ups. Ads are particularly effective when your offering solves a concrete problem and click prices remain economical relative to order value.',
+      'Google Ads work for nearly every industry where potential customers actively search for solutions: local service providers, online shops, B2B companies, start-ups and service businesses. Particularly effective when your offering solves a concrete problem and click prices fit your order value.',
   },
 ];
 </script>

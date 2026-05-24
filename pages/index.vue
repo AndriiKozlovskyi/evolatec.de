@@ -341,37 +341,37 @@ const homeFaqs: FAQ[] = [
   {
     question: 'Was kostet eine professionelle Website?',
     answer:
-      'Die Preise hängen vom Projekt-Typ ab: Landingpages beginnen bei 500€, professionelle Firmenwebsites ab 1.500€, Onlineshops ab 3.000€ und komplexe Plattformen ab 6.000€. Da jedes Projekt unterschiedlich ist, erstellen wir vor Beginn ein transparentes Festpreisangebot ohne versteckte Kosten. Nutzen Sie auch unseren Preisrechner, um die Kosten für Ihr Projekt schnell zu berechnen.',
+      'Landingpages beginnen ab 500€, professionelle Firmenwebsites ab 1.500€, Onlineshops ab 3.000€ und Premium E-Commerce ab 6.000€. Da jedes Projekt unterschiedlich ist, erstellen wir vor Beginn ein transparentes Festpreisangebot. Nutzen Sie auch unseren Preisrechner für eine schnelle Schätzung.',
   },
   {
     question: 'Wie lange dauert die Erstellung einer Website?',
     answer:
-      'Landingpages sind bereits ab 3 Werktagen live, professionelle Firmenwebsites in 2–4 Wochen, Onlineshops in 4–8 Wochen und komplexe Webanwendungen in 6–16 Wochen. Der genaue Zeitrahmen hängt vom Umfang und der Geschwindigkeit der Inhaltsbereitstellung ab. Bei dringenden Projekten bieten wir auch Express-Umsetzung an.',
+      'Landingpages sind bereits ab 3 Werktagen live, Firmenwebsites ab 7 Arbeitstagen, Onlineshops ab 14 Arbeitstagen. Der genaue Zeitrahmen hängt vom Umfang und der Geschwindigkeit der Inhaltsbereitstellung ab.',
   },
   {
     question: 'Ist SEO bei der Website inklusive?',
     answer:
-      'Ja, Basis-SEO ist in jedem Projekt enthalten: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung, strukturierte Daten und korrekte Meta-Tags. So sind Ihre Websites von Beginn an für Google bereit. Für weitergehende SEO-Strategien wie Keyword-Recherche, Content-Optimierung und Linkbuilding bieten wir zusätzliche SEO-Pakete ab 300€/Monat an.',
+      'Ja, Basis-SEO ist in jedem Projekt enthalten: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung und korrekte Meta-Daten. Für weitergehende SEO-Strategien wie Keyword-Recherche, Content-Optimierung und Linkbuilding bieten wir zusätzliche SEO-Pakete ab 300€/Monat an.',
   },
   {
     question: 'Welche Leistungen bietet EvolaTec an?',
     answer:
-      'EvolaTec bietet ein vollständiges digitales Leistungsspektrum: Webdesign und Webentwicklung (Landingpages, Firmenwebsites, Onlineshops), SEO (Audit, technische Optimierung, Local SEO, Linkbuilding), Online Marketing (Google Ads, Meta Ads), Branding und Corporate Design, UI/UX Design sowie Website-Texte und Content Marketing. Alles aus einer Hand – ohne Schnittstellenprobleme zwischen verschiedenen Dienstleistern.',
+      'EvolaTec bietet Webdesign und Webentwicklung (Landingpages, Firmenwebsites, Onlineshops), SEO (Audit, technische Optimierung, Local SEO, Linkbuilding), Online Marketing (Google Ads, Meta Ads), Branding, UI/UX Design sowie Website-Texte – alles aus einer Hand.',
   },
   {
     question: 'Entwickeln Sie Shopify Shops und individuelle Onlineshops?',
     answer:
-      'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce-Lösungen mit Frameworks wie Nuxt und Storyblok. Egal ob schneller Markt-Start mit Shopify oder komplexe Custom-Lösung mit ERP-Anbindung, B2B-Funktionen oder mehrsprachigem Setup – wir wählen die Plattform, die zu Ihrem Use Case passt.',
+      'Ja, wir entwickeln moderne Shopify Shops und individuelle E-Commerce-Lösungen mit Frameworks wie Nuxt. Egal ob schneller Markt-Start mit Shopify oder komplexe Custom-Lösung – wir wählen die Plattform, die zu Ihrem Use Case passt.',
   },
   {
     question: 'Gibt es Festpreise für Websites?',
     answer:
-      'Ja, wir arbeiten ausschließlich mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine versteckten Zusatzkosten während der Entwicklung. Optionale Erweiterungen wie zusätzliche Sprachen, Buchungssysteme oder spezielle Schnittstellen werden separat ausgewiesen und können flexibel hinzugebucht werden.',
+      'Ja, wir arbeiten mit transparenten Festpreisen. Sie wissen von Anfang an, was Ihre Website kostet – es gibt keine versteckten Zusatzkosten während der Entwicklung.',
   },
   {
     question: 'Was ist nach dem Website-Launch enthalten?',
     answer:
-      'Nach dem Launch erhalten Sie 30 Tage kostenlosen Support. Anschließend bieten wir Wartungspakete ab 30€/Monat mit regelmäßigen Updates, Sicherheits-Patches, Backups und Performance-Monitoring. Auf Wunsch übernehmen wir auch laufende SEO-Betreuung, Marketing-Kampagnen und Content-Updates, damit Ihre Website langfristig wettbewerbsfähig bleibt.',
+      'Bei vielen unserer Webentwicklungs-Pakete ist eine Support-Phase nach dem Launch enthalten. Auf Wunsch bieten wir darüber hinaus laufende SEO-Betreuung, Marketing-Kampagnen und Wartung an, damit Ihre Website langfristig wettbewerbsfähig bleibt.',
   },
 ];
 

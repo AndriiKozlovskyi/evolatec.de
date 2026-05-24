@@ -268,37 +268,37 @@ const optimizationFaqs = [
   {
     question: 'How much does technical SEO optimisation cost?',
     answer:
-      'Basic SEO optimisations at EvolaTec start from €300 and fix the most important technical issues (load time, meta data, indexing). Comprehensive technical SEO packages with Core Web Vitals optimisation, Schema.org, on-page and structure rework cost €500–€1,200. For complex websites or online shops, individual projects from €2,000 are realistic. Costs depend on scope and complexity of your website.',
+      'Basic SEO optimisations at EvolaTec start from €300. More comprehensive technical SEO packages with Core Web Vitals optimisation and on-page rework cost between €500 and €1,200. Exact costs depend on the scope of your website.',
   },
   {
     question: 'How long does SEO optimisation take?',
     answer:
-      'Smaller technical optimisations are usually implemented within 3–5 working days. Larger projects such as PageSpeed optimisation, on-page rework or structural adjustments take 1–3 weeks. First improvements in Google rankings are usually visible after 4–8 weeks, once Google has indexed the changes.',
+      'Smaller optimisations are usually implemented within a few days, larger projects take 1–3 weeks. First improvements in Google rankings are usually visible once Google has indexed the changes.',
   },
   {
     question: 'Does technical SEO improve my Google rankings?',
     answer:
-      'Yes, technical SEO is the foundation for good Google rankings. A fast, technically clean website with strong Core Web Vitals is favoured by Google. Problems like slow load times, broken indexing or poor mobile optimisation lead directly to ranking losses. Without a solid technical base even the best content and backlinks deliver little.',
+      'Yes, technical SEO is the foundation for good Google rankings. A fast, technically clean website with strong Core Web Vitals is favoured by Google. Without a solid technical base even the best content and backlinks deliver little.',
   },
   {
     question: 'What are Core Web Vitals and why are they important?',
     answer:
-      'Core Web Vitals are three Google metrics for user experience: LCP (loading), INP (interactivity) and CLS (visual stability). Since 2021 they are an official ranking factor. Websites with poor Core Web Vitals lose rankings, visibility and conversions. We optimise your website for green scores in all three areas.',
+      'Core Web Vitals are Google metrics for user experience: LCP (loading), INP (interactivity) and CLS (visual stability). They are an official ranking factor – websites with poor Core Web Vitals lose visibility.',
   },
   {
     question: 'Do you also optimise existing websites?',
     answer:
-      'Yes, we optimise existing websites regardless of the CMS or framework used – Storyblok, Shopify, TYPO3, Drupal, Webflow, Nuxt, Vue, React and others. We first analyse the current state, identify the biggest issues and optimise specifically with the highest ranking leverage first.',
+      'Yes, we optimise existing websites regardless of the CMS or framework used. We first analyse the current state and prioritise the actions with the biggest ranking leverage.',
   },
   {
     question: 'Can I implement the SEO optimisations myself?',
     answer:
-      'Yes, on request we create a detailed implementation plan with concrete instructions for your team or developers. For technical questions or code changes we support you hourly (from €95/hour) or take over the full implementation if no internal capacity is available.',
+      'Yes, on request we create a detailed implementation plan for your team or developers. For technical questions we are happy to support you or take over the full implementation.',
   },
   {
     question: 'Which areas does a complete SEO optimisation cover?',
     answer:
-      'A complete SEO optimisation covers: technology (load time, Core Web Vitals, mobile, HTTPS, crawling), on-page (meta data, headings, content optimisation, internal links), structured data (Schema.org), URL structure, image optimisation (alt text, WebP, lazy loading) and indexing/XML sitemaps. On request we also add keyword strategy and content optimisation.',
+      'A complete SEO optimisation covers technology (load time, Core Web Vitals, mobile, crawling), on-page (meta data, headings, content, internal links), structured data, URL structure and image optimisation and indexing. On request we also add keyword strategy and content optimisation.',
   },
 ];
 </script>

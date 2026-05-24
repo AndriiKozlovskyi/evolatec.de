@@ -439,37 +439,37 @@ const schemaMarkup = {
         {
           '@type': 'Question',
           name: 'How much does a professional website cost?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Prices depend on project type: landing pages start from €500, professional business websites from €1,500, online shops from €3,000 and complex platforms from €6,000. Since every project is different, we provide a transparent fixed-price quote with no hidden costs before the project starts. You can also use our pricing calculator to quickly estimate the cost of your project.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Landing pages start from €500, professional business websites from €1,500, online shops from €3,000 and Premium E-Commerce from €6,000. Since every project is different, we provide a transparent fixed-price quote before the project starts. You can also use our pricing calculator for a quick estimate.' },
         },
         {
           '@type': 'Question',
           name: 'How long does website development take?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Landing pages are live from 3 working days, professional business websites in 2–4 weeks, online shops in 4–8 weeks and complex web applications in 6–16 weeks. The exact timeframe depends on scope and how quickly content is provided. For urgent projects we also offer express delivery.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Landing pages are live from 3 working days, business websites from 7 working days, online shops from 14 working days. The exact timeframe depends on scope and how quickly content is provided.' },
         },
         {
           '@type': 'Question',
           name: 'Is SEO included with the website?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, basic SEO is included in every project: clean code structure, fast loading times, mobile optimisation, structured data and correct meta tags. Your website is ready for Google from day one. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages from €300/month.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, basic SEO is included in every project: clean code structure, fast loading times, mobile optimisation and correct meta data. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages from €300/month.' },
         },
         {
           '@type': 'Question',
           name: 'Which services does EvolaTec offer?',
-          acceptedAnswer: { '@type': 'Answer', text: 'EvolaTec offers a complete digital service spectrum: web design and development (landing pages, business websites, online shops), SEO (audit, technical optimisation, Local SEO, link building), online marketing (Google Ads, Meta Ads), branding and corporate design, UI/UX design, and website copy and content marketing. Everything from a single source.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'EvolaTec offers web design and development (landing pages, business websites, online shops), SEO (audit, technical optimisation, Local SEO, link building), online marketing (Google Ads, Meta Ads), branding, UI/UX design and website copy – all from a single source.' },
         },
         {
           '@type': 'Question',
           name: 'Do you develop Shopify shops and custom online shops?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we develop modern Shopify shops and custom e-commerce solutions with frameworks like Nuxt and Storyblok. Whether fast market launch with Shopify or complex custom solutions with ERP integration, B2B features or multilingual setups – we choose the platform that fits your use case.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we develop modern Shopify shops and custom e-commerce solutions with frameworks like Nuxt. Whether fast market launch with Shopify or complex custom solutions – we choose the platform that fits your use case.' },
         },
         {
           '@type': 'Question',
           name: 'Are there fixed prices for websites?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we work exclusively with transparent fixed prices. You know from the start what your website costs – there are no hidden costs during development. Optional add-ons like additional languages, booking systems or special integrations are listed separately and can be added flexibly.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we work with transparent fixed prices. You know from the start what your website costs – there are no hidden costs during development.' },
         },
         {
           '@type': 'Question',
           name: 'What is included after the website launch?',
-          acceptedAnswer: { '@type': 'Answer', text: '30 days of free support are included after launch. After that we offer maintenance packages from €30/month with regular updates, security patches, backups and performance monitoring. On request we also handle ongoing SEO management, marketing campaigns and content updates so your website stays competitive long-term.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Many of our web development packages include a support phase after launch. On request we also handle ongoing SEO management, marketing campaigns and maintenance so your website stays competitive long-term.' },
         },
       ],
     },
@@ -636,37 +636,37 @@ const faqs = [
   {
     question: 'How much does a professional website cost?',
     answer:
-      'Prices depend on project type: landing pages start from €500, professional business websites from €1,500, online shops from €3,000 and complex platforms from €6,000. Since every project is different, we provide a transparent fixed-price quote with no hidden costs before the project starts. You can also use our pricing calculator to quickly estimate the cost of your project.',
+      'Landing pages start from €500, professional business websites from €1,500, online shops from €3,000 and Premium E-Commerce from €6,000. Since every project is different, we provide a transparent fixed-price quote before the project starts. You can also use our pricing calculator for a quick estimate.',
   },
   {
     question: 'How long does website development take?',
     answer:
-      'Landing pages are live from 3 working days, professional business websites in 2–4 weeks, online shops in 4–8 weeks and complex web applications in 6–16 weeks. The exact timeframe depends on scope and how quickly content is provided. For urgent projects we also offer express delivery.',
+      'Landing pages are live from 3 working days, business websites from 7 working days, online shops from 14 working days. The exact timeframe depends on scope and how quickly content is provided.',
   },
   {
     question: 'Is SEO included with the website?',
     answer:
-      'Yes, basic SEO is included in every project: clean code structure, fast loading times, mobile optimisation, structured data and correct meta tags. Your website is ready for Google from day one. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages from €300/month.',
+      'Yes, basic SEO is included in every project: clean code structure, fast loading times, mobile optimisation and correct meta data. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages from €300/month.',
   },
   {
     question: 'Which services does EvolaTec offer?',
     answer:
-      'EvolaTec offers a complete digital service spectrum: web design and development (landing pages, business websites, online shops), SEO (audit, technical optimisation, Local SEO, link building), online marketing (Google Ads, Meta Ads), branding and corporate design, UI/UX design, and website copy and content marketing. Everything from a single source – no interface problems between different providers.',
+      'EvolaTec offers web design and development (landing pages, business websites, online shops), SEO (audit, technical optimisation, Local SEO, link building), online marketing (Google Ads, Meta Ads), branding, UI/UX design and website copy – all from a single source.',
   },
   {
     question: 'Do you develop Shopify shops and custom online shops?',
     answer:
-      'Yes, we develop modern Shopify shops and custom e-commerce solutions with frameworks like Nuxt and Storyblok. Whether fast market launch with Shopify or complex custom solutions with ERP integration, B2B features or multilingual setups – we choose the platform that fits your use case.',
+      'Yes, we develop modern Shopify shops and custom e-commerce solutions with frameworks like Nuxt. Whether fast market launch with Shopify or complex custom solutions – we choose the platform that fits your use case.',
   },
   {
     question: 'Are there fixed prices for websites?',
     answer:
-      'Yes, we work exclusively with transparent fixed prices. You know from the start what your website costs – there are no hidden costs during development. Optional add-ons like additional languages, booking systems or special integrations are listed separately and can be added flexibly.',
+      'Yes, we work with transparent fixed prices. You know from the start what your website costs – there are no hidden costs during development.',
   },
   {
     question: 'What is included after the website launch?',
     answer:
-      '30 days of free support are included after launch. After that we offer maintenance packages from €30/month with regular updates, security patches, backups and performance monitoring. On request we also handle ongoing SEO management, marketing campaigns and content updates so your website stays competitive long-term.',
+      'Many of our web development packages include a support phase after launch. On request we also handle ongoing SEO management, marketing campaigns and maintenance so your website stays competitive long-term.',
   },
 ]
 </script>

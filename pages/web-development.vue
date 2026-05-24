@@ -193,37 +193,37 @@ const faqs = [
   {
     question: 'Was kostet es, eine Website erstellen zu lassen?',
     answer:
-      'Die Kosten für Webentwicklung hängen vom Umfang und der Komplexität ab. Landingpages beginnen bei 500€, professionelle Firmenwebsites ab 1.500€ und Onlineshops ab 3.000€. Komplexe Plattformen mit individuellen Funktionen oder Schnittstellen kosten entsprechend mehr. Wir arbeiten mit transparenten Festpreisen und erstellen vor Projektstart ein detailliertes Angebot ohne versteckte Kosten.',
+      'Die Kosten hängen vom Umfang ab. Landingpages starten ab 500€, professionelle Firmenwebsites ab 1.500€ und Onlineshops ab 3.000€. Wir arbeiten mit transparenten Festpreisen und erstellen vor Projektstart ein detailliertes Angebot.',
   },
   {
     question: 'Wie lange dauert die Webentwicklung?',
     answer:
-      'Eine Landingpage entwickeln wir in 3–7 Tagen, eine Firmenwebsite in 2–4 Wochen und einen Onlineshop in 4–8 Wochen. Komplexe Webanwendungen oder SaaS-Plattformen benötigen 6–16 Wochen. Die Dauer hängt vom Funktionsumfang und davon ab, wie schnell Texte, Bilder und Feedback bereitgestellt werden.',
+      'Eine Landingpage entwickeln wir in 3–7 Tagen, eine Firmenwebsite ab 7 Arbeitstagen und einen Onlineshop ab 14 Arbeitstagen. Die Dauer hängt vom Funktionsumfang und davon ab, wie schnell Texte, Bilder und Feedback bereitgestellt werden.',
   },
   {
     question: 'Warum ist professionelle Webentwicklung wichtig?',
     answer:
-      'Eine professionell entwickelte Website lädt schnell, ist SEO-optimiert, sicher und auf allen Geräten perfekt nutzbar. Sie ist oft der erste Kontaktpunkt mit Kunden und entscheidet über Vertrauen und Conversion. Selbstgebaute Lösungen oder veraltete Templates kosten am Ende meist mehr durch verlorene Anfragen, schlechte Rankings und Wartungsprobleme.',
+      'Eine professionell entwickelte Website lädt schnell, ist SEO-optimiert, sicher und auf allen Geräten nutzbar. Sie ist oft der erste Kontaktpunkt mit Kunden und entscheidet über Vertrauen und Conversion. Selbstgebaute Lösungen oder veraltete Templates kosten am Ende meist mehr durch verlorene Anfragen und schlechte Rankings.',
   },
   {
     question: 'Welche Technologien nutzen Sie für die Webentwicklung?',
     answer:
-      'Wir entwickeln mit modernen Technologien wie Nuxt, Vue.js, Nest.js und Tailwind CSS für individuelle Websites und Webanwendungen. Für CMS-basierte Projekte nutzen wir Storyblok, Strapi oder Sanity als Headless CMS. Für E-Commerce setzen wir auf Shopify oder maßgeschneiderte Lösungen. Die Technologiewahl richtet sich nach Ihrem Use Case – nicht nach unserer Vorliebe.',
+      'Wir entwickeln mit modernen Technologien wie Nuxt, Vue.js, Nest.js und Tailwind CSS für individuelle Websites und Webanwendungen. Für Inhalte, die Sie selbst pflegen möchten, nutzen wir Storyblok als Headless CMS. Für E-Commerce setzen wir auf Shopify oder maßgeschneiderte Lösungen.',
   },
   {
     question: 'Sind die entwickelten Websites SEO-optimiert?',
     answer:
-      'Ja, jede Website wird von Beginn an SEO-optimiert entwickelt: sauberer Code, strukturierte Daten, schnelle Ladezeiten, mobile Optimierung, korrekte Meta-Tags und logische Seitenstruktur. Für weitergehende SEO-Strategien wie Keyword-Recherche und Content-Optimierung bieten wir zusätzliche SEO-Pakete an.',
+      'Ja, jede Website wird von Beginn an grundlegend SEO-optimiert entwickelt: sauberer Code, schnelle Ladezeiten, mobile Optimierung und korrekte Meta-Daten. Für weitergehende SEO-Strategien wie Keyword-Recherche und Content-Optimierung bieten wir zusätzliche SEO-Pakete an.',
   },
   {
     question: 'Entwickelt EvolaTec auch Onlineshops und Webanwendungen?',
     answer:
-      'Ja, neben klassischen Websites entwickeln wir professionelle Onlineshops, individuelle Webanwendungen, SaaS-Plattformen, Buchungssysteme, Kundenportale und Schnittstellen zu CRM, ERP oder Zahlungsanbietern. Wir setzen sowohl Standard-Lösungen (Shopify, Storyblok) als auch maßgeschneiderte Entwicklungen um.',
+      'Ja, neben klassischen Websites entwickeln wir professionelle Onlineshops und individuelle Webanwendungen. Wir setzen sowohl Standard-Lösungen (Shopify, Storyblok) als auch maßgeschneiderte Entwicklungen um.',
   },
   {
     question: 'Sind die Websites responsive und mobil optimiert?',
     answer:
-      'Ja, alle Websites werden Mobile-First entwickelt und für Smartphones, Tablets und Desktop optimiert. Da Google Mobile-First-Indexing nutzt, ist responsive Design heute Pflicht – nicht nur für Nutzer, sondern auch für Ihre Google-Rankings. Wir testen jedes Projekt auf verschiedenen Geräten, Browsern und Bildschirmgrößen.',
+      'Ja, alle Websites werden Mobile-First entwickelt und für Smartphones, Tablets und Desktop optimiert. Da Google Mobile-First-Indexing nutzt, ist responsive Design heute Pflicht – nicht nur für Nutzer, sondern auch für gute Google-Rankings.',
   },
 ];
 

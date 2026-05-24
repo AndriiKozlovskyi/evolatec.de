@@ -267,39 +267,34 @@ const auditPricingPlans = [
 
 const auditFaqs = [
   {
-    question: 'How much does a professional SEO audit cost?',
+    question: 'How much does an SEO audit cost?',
     answer:
-      'A basic SEO analysis at EvolaTec starts from €100 and checks the most important technical and content factors. Comprehensive technical SEO audits with competitor analysis, backlink check and detailed action plan start from €300. For large websites or online shops with many URLs, enterprise audits start from €800. Costs depend on page count, complexity and the desired audit depth.',
+      'Basic SEO analyses at EvolaTec start from €100. Comprehensive technical audits with competitor analysis and a detailed action plan from €300. Exact costs depend on the scope and complexity of your website.',
   },
   {
     question: 'How long does an SEO analysis take?',
     answer:
-      'Most SEO audits take 2–5 working days. For extensive websites with more than 100 pages, online shops or multilingual projects a detailed audit can take 1–2 weeks. You receive a written report at the end and an optional personal presentation of the results.',
+      'Most SEO audits take 2–5 working days. Larger websites may take a little longer. You receive a written report at the end with all findings and recommendations.',
   },
   {
     question: 'What is checked in an SEO audit?',
     answer:
-      'We check over 100 factors: technology (load time, Core Web Vitals, crawlability, indexing), on-page (meta data, headings, content, internal linking), keywords (research, search intent, competition), backlinks (profile quality, anchor texts, toxic links), mobile optimisation and structured data. We also analyse your 3–5 most important competitors and identify ranking gaps.',
+      'We check technology (load time, Core Web Vitals, indexing), on-page (meta data, headings, content), keywords, backlinks, mobile optimisation and structured data. We also analyse your most important competitors and identify ranking opportunities.',
   },
   {
     question: 'What do I receive after the SEO audit?',
     answer:
-      'You receive a structured SEO report (PDF, 20–50 pages) with all findings, concrete action recommendations and a prioritised action plan. Recommendations are weighted by effort and SEO impact so you know immediately which optimisations offer the biggest ranking leverage. On request we walk through the results in a personal call.',
+      'You receive a structured report with all findings, concrete action recommendations and a prioritised action plan. On request we walk through the results in a personal conversation.',
   },
   {
     question: 'Do you also implement the optimisations after the audit?',
     answer:
-      'Yes, we are happy to implement the recommended SEO optimisations – technically, content-wise or both. Alternatively we support your team or developers with clear specifications. On request we also offer ongoing SEO management from €300/month.',
+      'Yes, we are happy to implement the recommended SEO optimisations or support you in doing so. On request we also offer ongoing SEO management from €300/month.',
   },
   {
     question: 'How often should an SEO audit be performed?',
     answer:
-      'We recommend a comprehensive SEO audit at least once a year, complemented by quarterly mini-audits (rankings, technology, new competitors). For larger website relaunches or Google algorithm updates an additional audit is useful to identify ranking losses early and seize opportunities.',
-  },
-  {
-    question: 'Which tools do you use for the SEO audit?',
-    answer:
-      'We combine professional SEO tools like Ahrefs, Semrush, Screaming Frog, Google Search Console, PageSpeed Insights and Lighthouse with manual analysis and years of experience. Tools provide data – assessment and prioritisation come from our SEO experts so you receive actionable rather than generic recommendations.',
+      'We recommend a comprehensive SEO audit at least once a year. For larger website relaunches or noticeable ranking changes an additional audit is useful to identify causes early.',
   },
 ];
 </script>

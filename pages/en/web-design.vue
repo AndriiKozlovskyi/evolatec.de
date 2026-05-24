@@ -331,37 +331,37 @@ const faqs = [
   {
     question: 'How much does professional web design cost?',
     answer:
-      'Web design costs depend on the scope and complexity of the project. Landing pages start from €500, professional business websites from €1,500 and custom online shops from €3,000. We work with transparent fixed prices and no hidden costs – you receive a detailed quote covering all services before the project begins.',
+      'Costs depend on the scope of the project. Landing pages start from €500, professional business websites from €1,500 and online shops from €3,000. We work with transparent fixed prices and provide a detailed quote before the project starts.',
   },
   {
     question: 'How long does it take to build a website?',
     answer:
-      'A landing page is usually ready within 3–7 days, a professional business website in 2–4 weeks and an online shop in 4–8 weeks. The exact timeframe depends on scope, features and how quickly text and image content can be provided. For urgent projects we also offer accelerated delivery.',
+      'A landing page is usually ready within 3–7 days, a professional business website from 7 working days and an online shop from 14 working days. The exact timeframe depends on scope and features as well as how quickly text and image content can be provided.',
   },
   {
     question: 'What does a web design agency do?',
     answer:
-      'A web design agency plans, designs and develops modern websites that not only look professional but are also functional, fast and SEO-optimised. EvolaTec handles the entire process from strategy and design through technical implementation to hosting, maintenance and ongoing optimisation.',
+      'A web design agency plans, designs and develops modern websites that not only look professional but are also functional, fast and SEO-optimised. EvolaTec handles the entire process from strategy and design through technical implementation to ongoing optimisation.',
   },
   {
     question: 'Why is responsive web design important?',
     answer:
-      'Over 60% of website visitors now use a smartphone. Responsive web design ensures your site works perfectly on every device – smartphone, tablet and desktop. Google also uses mobile-first indexing: a non-responsive website noticeably loses visibility and rankings.',
+      'A large share of website visitors today use smartphones. Responsive web design ensures your site works optimally on every device – smartphone, tablet and desktop. Google also uses mobile-first indexing, which makes responsive design crucial for strong rankings.',
   },
   {
     question: 'What is the difference between web design and web development?',
     answer:
-      'Web design focuses on visual appearance, user flow and the user interface of a website. Web development is the technical implementation with HTML, CSS, JavaScript and backend systems. EvolaTec offers both disciplines from a single source – ensuring a consistent website without interface issues.',
+      'Web design focuses on visual appearance, user flow and the user interface. Web development is the technical implementation with HTML, CSS, JavaScript and backend systems. EvolaTec offers both disciplines from a single source – ensuring a consistent website without interface issues.',
   },
   {
     question: 'Is SEO included in web design?',
     answer:
-      'Yes, every website we build is SEO-optimised from the start. This includes clean code structure, fast loading times, mobile optimisation, structured data and correct meta tags. For additional SEO work such as keyword strategy and content optimisation we offer dedicated SEO packages.',
+      'Yes, every website we build comes with basic SEO from the start: clean code structure, fast loading times, mobile optimisation and correct meta data. For deeper SEO work like keyword strategy and content optimisation we offer dedicated SEO packages.',
   },
   {
     question: 'Which technologies do you use for web design?',
     answer:
-      'We build with modern technologies like Nuxt, Vue.js and Tailwind CSS for custom websites, as well as Storyblok and Shopify when an easily extensible headless CMS or shop platform is desired. The choice of technology is based on your requirements – not on our preference.',
+      'We build with modern technologies like Nuxt, Vue.js and Tailwind CSS for custom websites. For content you want to manage yourself we use Storyblok as a headless CMS. For shops we use Shopify or custom solutions.',
   },
 ];
 </script>

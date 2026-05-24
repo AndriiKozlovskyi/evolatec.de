@@ -87,37 +87,37 @@ const localFaqs = [
   {
     question: 'Was ist Local SEO und wie funktioniert es?',
     answer:
-      'Local SEO ist die Suchmaschinenoptimierung für lokale Suchanfragen wie "Friseur München" oder "Anwalt in der Nähe". Ziel ist es, in Google Maps, im Local Pack (Top-3 Karten-Ergebnisse) und in lokalen organischen Rankings sichtbar zu sein. Dazu optimieren wir Google Business Profile, lokale Keywords, NAP-Daten (Name, Adresse, Telefon), Bewertungen, lokale Backlinks und strukturierte Daten.',
+      'Local SEO ist die Suchmaschinenoptimierung für lokale Suchanfragen und Google Maps. Ziel ist es, dass Sie in Ihrer Region bei Google gefunden werden. Dazu optimieren wir Ihr Google Business Profile, lokale Keywords, Bewertungen und Ihre Website-Inhalte.',
   },
   {
     question: 'Was ist der Unterschied zwischen Local SEO und normaler SEO?',
     answer:
-      'Klassische SEO zielt auf bundesweite oder internationale Rankings für allgemeine Suchanfragen. Local SEO fokussiert auf regionale Sichtbarkeit, Google Maps und das Local Pack. Wichtigste Local-SEO-Faktoren sind das Google Business Profile, Nähe zum Suchenden, Relevanz und Bewertungen. Beide Disziplinen ergänzen sich – wer lokal Kunden gewinnen möchte, braucht meist beides.',
+      'Klassische SEO zielt auf überregionale Rankings für allgemeine Suchanfragen. Local SEO fokussiert auf regionale Sichtbarkeit, Google Maps und das Local Pack. Wichtigste Local-SEO-Faktoren sind das Google Business Profile, Nähe zum Suchenden, Relevanz und Bewertungen.',
   },
   {
     question: 'Was kostet professionelles Local SEO?',
     answer:
-      'Eine Google Business Profile Optimierung beginnt bei EvolaTec ab 400€. Basis-Local-SEO inkl. lokaler Keyword-Strategie und Website-Integration ab 500€. Laufende Local-SEO-Betreuung mit Bewertungs-Management und Ranking-Monitoring ab 300€/Monat. Die Kosten hängen von Branche, Region und Wettbewerb ab – stark umkämpfte Standorte erfordern mehr Aufwand.',
+      'Local SEO beginnt bei EvolaTec ab 400€. Laufende Local-SEO-Betreuung mit Bewertungs-Management und Ranking-Monitoring ab 300€/Monat. Die genauen Kosten hängen von Branche, Region und Wettbewerb ab.',
   },
   {
     question: 'Wie lange dauert Local SEO bis zu ersten Ergebnissen?',
     answer:
-      'Erste Verbesserungen sind oft schon nach 2–4 Wochen sichtbar, vor allem bei der Google-Business-Optimierung. Solide Rankings im Local Pack entstehen nach 2–4 Monaten, nachhaltige Top-Platzierungen nach 6–12 Monaten – abhängig von Branche, Wettbewerb und Region. Local SEO wirkt oft schneller als klassische SEO, weil der Wettbewerb regional begrenzt ist.',
+      'Erste Verbesserungen sind oft schon nach wenigen Wochen sichtbar, vor allem bei der Google-Business-Optimierung. Nachhaltige Ergebnisse stellen sich über mehrere Monate hinweg ein. Local SEO wirkt oft schneller als klassische SEO, weil der Wettbewerb regional begrenzt ist.',
   },
   {
     question: 'Wie wichtig ist Google Maps für mein Unternehmen?',
     answer:
-      'Google Maps ist für lokale Unternehmen oft wichtiger als die klassische Google-Suche. Über 60% der Smartphone-Nutzer suchen nach lokalen Dienstleistern direkt über Maps. Ein optimiertes Google Business Profile mit Fotos, Öffnungszeiten, Bewertungen und korrekten Kontaktdaten kann mehr Anrufe und Anfragen generieren als die Website selbst – besonders bei Restaurants, Ärzten und Handwerksbetrieben.',
+      'Google Maps ist für lokale Unternehmen oft entscheidend. Viele lokale Kunden suchen direkt über Google Maps. Ein optimiertes Google Business Profile mit Fotos, Öffnungszeiten und Bewertungen kann mehr Anrufe und Anfragen generieren – besonders bei Restaurants, Ärzten und Handwerksbetrieben.',
   },
   {
     question: 'Wie wichtig sind Google-Bewertungen für Local SEO?',
     answer:
-      'Google-Bewertungen sind einer der stärksten Ranking-Faktoren im Local SEO. Anzahl, Aktualität und Bewertungstext beeinflussen sowohl Rankings als auch die Klick-Wahrscheinlichkeit. Wir entwickeln Strategien für aktives Bewertungs-Management: automatisierte Bewertungs-Anfragen nach Kundenkontakt, Antworten auf positive und negative Bewertungen, sowie den Umgang mit unfairen Rezensionen.',
+      'Google-Bewertungen sind ein wichtiger Ranking-Faktor im Local SEO. Anzahl, Aktualität und Inhalt der Bewertungen beeinflussen sowohl Rankings als auch die Klick-Wahrscheinlichkeit. Wir unterstützen Sie beim aktiven Bewertungs-Management.',
   },
   {
     question: 'Für welche Branchen lohnt sich Local SEO?',
     answer:
-      'Local SEO lohnt sich für jedes Unternehmen mit regionalem Einzugsgebiet: Restaurants, Cafés, Ärzte und Kliniken, Handwerker und Bauunternehmen, Anwälte und Steuerberater, Immobilienmakler, Fitnessstudios, Coaches, Einzelhandel und lokale Dienstleister. Auch Filialisten profitieren – wir optimieren auch Multi-Location-Setups mit eigenen Google Business Profilen pro Standort.',
+      'Local SEO lohnt sich für jedes Unternehmen mit regionalem Einzugsgebiet: Ärzte, Handwerker, Restaurants, Immobilienmakler, Anwälte, Einzelhandel und lokale Dienstleister. Gerne besprechen wir Ihre Branche.',
   },
 ];
 

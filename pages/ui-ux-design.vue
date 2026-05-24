@@ -85,37 +85,32 @@ const uiuxFaqs = [
   {
     question: 'Was macht eine UX Design Agentur?',
     answer:
-      'Eine UX Design Agentur entwickelt Nutzererlebnisse für Websites, Apps und digitale Produkte, die benutzerfreundlich, intuitiv und conversionsstark sind. Dazu gehören User Research, Wireframes, Prototyping, Usability-Tests, Interface-Design und die enge Zusammenarbeit mit Entwicklung. Ziel ist es, dass Nutzer Ihr Produkt gerne und erfolgreich verwenden – was unmittelbar Conversion, Kundenbindung und Umsatz steigert.',
+      'Eine UX Agentur entwickelt Nutzererlebnisse, die Websites und digitale Produkte benutzerfreundlicher, intuitiver und conversionsstärker machen. Dazu gehören User Research, Wireframes, Prototyping und Interface-Design.',
   },
   {
     question: 'Was ist der Unterschied zwischen UI und UX Design?',
     answer:
-      'UX (User Experience) beschreibt die gesamte Nutzererfahrung: Struktur, Nutzerführung, Interaktion, Logik und Funktionalität. UI (User Interface) ist die visuelle Oberfläche: Layout, Farben, Typografie, Buttons und visuelle Hierarchie. Vereinfacht: UX ist, wie es funktioniert, UI ist, wie es aussieht. Beide gehören zusammen – gutes UI ohne UX ist hübsch, aber unbrauchbar; gutes UX ohne UI ist funktional, aber wirkt unprofessionell.',
+      'UX (User Experience) beschreibt die gesamte Nutzererfahrung: Struktur, Nutzerführung, Interaktion und Funktionalität. UI (User Interface) ist die visuelle Oberfläche: Layout, Farben, Typografie und Buttons. Vereinfacht: UX ist, wie es funktioniert, UI ist, wie es aussieht.',
   },
   {
     question: 'Warum ist UX Design wichtig?',
     answer:
-      'Eine gute UX verbessert Conversion-Raten, Nutzerzufriedenheit und Kundenbindung und reduziert Absprungraten. Studien zeigen: Jeder in UX investierte Euro bringt einen ROI von 10–100€ zurück. Schlechte UX führt zu frustrierten Nutzern, verlorenen Kunden und teurem Support. Bei E-Commerce und SaaS-Produkten ist UX oft der entscheidende Wettbewerbsfaktor.',
+      'Eine gute UX verbessert Conversion-Raten, Nutzerzufriedenheit und Kundenbindung und reduziert Absprungraten. Schlechte UX führt zu frustrierten Nutzern und verlorenen Kunden. Bei E-Commerce und SaaS-Produkten ist UX oft ein entscheidender Wettbewerbsfaktor.',
   },
   {
     question: 'Was kostet professionelles UI/UX Design?',
     answer:
-      'Eine UX Analyse beginnt bei 500€, ein komplettes Website-UI/UX-Design ab 1.200€. Komplexe Projekte wie SaaS-Anwendungen, Dashboards oder mobile Apps starten ab 2.000€. Die Kosten hängen von Umfang, Anzahl der Screens, Komplexität der Nutzerflüsse und gewünschten Prototypen ab. Wir erstellen vor Projektstart ein transparentes Festpreisangebot.',
-  },
-  {
-    question: 'Wie lange dauert ein UI/UX Design Projekt?',
-    answer:
-      'Eine UX-Analyse ist meist in 1–2 Wochen abgeschlossen, ein vollständiges Website-Design in 3–6 Wochen. Komplexe Projekte wie SaaS-Plattformen oder mobile Apps benötigen 6–12 Wochen für Research, Wireframes, UI-Design und Prototyping. Die Dauer hängt von Umfang und Anzahl der Feedback-Runden ab.',
+      'UI/UX Projekte beginnen ab 500€ für eine UX Analyse und ab 1.200€ für ein komplettes Website Design. Komplexe Projekte wie SaaS Apps ab 2.000€. Die Kosten hängen von Umfang, Anzahl der Screens und Komplexität ab.',
   },
   {
     question: 'Wie läuft ein UX Design Prozess ab?',
     answer:
-      'Unser UX Design Prozess umfasst fünf Phasen: 1) Research (Zielgruppen-Analyse, Wettbewerb, User Interviews), 2) Konzept (User Flows, Informationsarchitektur), 3) Wireframes (Skizzen der Struktur), 4) UI-Design (visuelle Gestaltung), 5) Prototyping & Testing (klickbare Prototypen, Usability-Tests). Anschließend folgt die Übergabe an die Entwicklung mit detailliertem Design-System.',
+      'Unser UX Design Prozess umfasst Research (Zielgruppen-Analyse), Konzept (User Flows), Wireframes, UI-Design und Prototyping. Anschließend folgt die Übergabe an die Entwicklung mit allen notwendigen Spezifikationen.',
   },
   {
     question: 'Welche Tools nutzen Sie für UI/UX Design?',
     answer:
-      'Wir arbeiten mit Figma als zentralem Design-Tool für UI, Prototyping und Design-Systeme. Für User Research nutzen wir Tools wie Maze, Hotjar oder Google Analytics für Verhaltens-Analysen. Für die Übergabe an die Entwicklung stellen wir Design-Systeme, Komponenten-Bibliotheken und Specs bereit.',
+      'Wir arbeiten mit Figma als zentralem Design-Tool für UI, Prototyping und Design-Systeme. Für die Übergabe an die Entwicklung stellen wir Design-Systeme und Komponenten-Bibliotheken bereit.',
   },
 ];
 

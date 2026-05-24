@@ -389,37 +389,37 @@ const socialFaqs = [
   {
     question: 'What does a social media agency do?',
     answer:
-      'A social media agency develops, launches and optimises advertising campaigns on platforms such as Instagram, Facebook, TikTok and LinkedIn. This includes audience analysis, creative production, ad copy, targeting, conversion tracking and ongoing optimisation. The goal is to generate as many qualified clicks, leads, sales or new followers as possible with your ad budget.',
+      'A social media agency develops, launches and optimises advertising campaigns on platforms such as Instagram, Facebook, TikTok and LinkedIn. This includes audience analysis, creative production, ad copy, targeting and ongoing optimisation. The goal is to generate as many qualified clicks, leads or sales as possible with your ad budget.',
   },
   {
     question: 'How much do Facebook or Instagram ads cost?',
     answer:
-      'Our Meta Ads management starts from €300 per month for agency services. The advertising budget for Facebook and Instagram is set separately and paid directly to Meta – typically €300–€1,500/month depending on industry and goals. For meaningful test results we recommend a starting budget of at least €500/month.',
+      'Our Meta Ads management starts from €300/month for agency services. The advertising budget for Facebook and Instagram is set separately and paid directly to Meta. The amount depends on industry and goals – we provide a recommendation before launch.',
   },
   {
     question: 'How quickly do social media ads work?',
     answer:
-      'Social media ads usually deliver first clicks and interactions within 24–72 hours. First qualified leads or sales follow within the first week. The first 2–4 weeks are mainly used for testing different creatives and audiences – the best combinations are then scaled up.',
+      'First results can be visible within a few days. The first weeks are mainly used for testing different creatives and audiences – the best combinations are then further optimised and scaled up.',
   },
   {
     question: 'Which social media platform is right for my business?',
     answer:
-      'Instagram and Facebook work especially well for B2C, local businesses, fashion, food and lifestyle. TikTok is excellent for younger audiences and viral content. LinkedIn is the first choice for B2B and high-value services. We analyse your target audience and recommend the platform with the best reach-to-cost ratio.',
+      'Instagram and Facebook work especially well for B2C, local businesses and visually strong offers. TikTok works for younger audiences. LinkedIn is the first choice for B2B. We analyse your target audience and recommend the right platform.',
   },
   {
     question: 'What is the difference between social media marketing and Google Ads?',
     answer:
-      'Google Ads reach users who are actively searching for a solution (pull marketing). Social media ads are shown to users who match a target audience but are not actively searching (push marketing). Social media is particularly suited for brand building, new products and visual offers; Google Ads for concrete buying intent.',
+      'Google Ads reach users who are actively searching for a solution. Social media ads are shown to users who match a target audience but are not actively searching. Social media is particularly suited for brand building and visual offers; Google Ads for concrete buying intent.',
   },
   {
     question: 'Do you also handle content creation for social media?',
     answer:
-      'Yes, on request we produce creatives, videos, reels, story content and ad copy for your campaigns. With ongoing management we produce new content monthly and test different variants against each other to continuously improve performance.',
+      'Yes, on request we produce creatives, reels, story content and ad copy for your campaigns. Creatives & graphics start from €150, content production from €300.',
   },
   {
     question: 'Which businesses benefit from social media marketing?',
     answer:
-      'Social media marketing works for local service providers, e-commerce shops, restaurants, coaches, agencies, start-ups and B2B companies with longer sales cycles. It is particularly effective when your offering can be presented visually or has a clearly defined target audience.',
+      'Local businesses, service providers, e-commerce, start-ups and brand building. Particularly effective when your offering can be presented visually or has a clearly defined target audience.',
   },
 ];
 </script>

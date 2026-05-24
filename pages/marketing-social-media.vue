@@ -178,37 +178,37 @@ const socialFaqs = [
   {
     question: 'Was macht eine Social Media Agentur?',
     answer:
-      'Eine Social Media Agentur entwickelt, schaltet und optimiert Werbekampagnen auf Plattformen wie Instagram, Facebook, TikTok und LinkedIn. Dazu gehören Zielgruppen-Analyse, Creative-Erstellung, Anzeigentexte, Targeting, Conversion-Tracking und laufende Optimierung. Ziel ist es, mit dem Werbebudget möglichst viele qualifizierte Klicks, Leads, Verkäufe oder neue Follower zu generieren.',
+      'Eine Social Media Agentur entwickelt, schaltet und optimiert Werbekampagnen auf Plattformen wie Instagram, Facebook, TikTok und LinkedIn. Dazu gehören Zielgruppen-Analyse, Creative-Erstellung, Anzeigentexte, Targeting und laufende Optimierung. Ziel ist es, mit dem Werbebudget möglichst viele qualifizierte Klicks, Leads oder Verkäufe zu generieren.',
   },
   {
     question: 'Was kosten Facebook oder Instagram Ads?',
     answer:
-      'Unsere Meta Ads Betreuung beginnt bei 300€ pro Monat für Agenturleistungen. Das Werbebudget für Facebook und Instagram wird separat festgelegt und direkt an Meta bezahlt – sinnvoll sind in der Regel 300–1.500€/Monat je nach Branche und Ziel. Für aussagekräftige Test-Ergebnisse empfehlen wir ein Startbudget von mindestens 500€/Monat.',
+      'Unsere Meta Ads Betreuung beginnt ab 300€/Monat für Agenturleistungen. Das Werbebudget für Facebook und Instagram wird separat festgelegt und direkt an Meta bezahlt. Die Höhe hängt von Branche und Ziel ab – wir geben Ihnen vor Start eine Empfehlung.',
   },
   {
     question: 'Wie schnell funktionieren Social Media Ads?',
     answer:
-      'Social Media Ads liefern meist schon innerhalb von 24–72 Stunden die ersten Klicks und Interaktionen. Erste qualifizierte Leads oder Verkäufe folgen in der ersten Woche. Die ersten 2–4 Wochen dienen vor allem dem Testen verschiedener Creatives und Zielgruppen – danach werden die besten Kombinationen skaliert.',
+      'Erste Ergebnisse können bereits innerhalb weniger Tage sichtbar werden. Die ersten Wochen dienen vor allem dem Testen verschiedener Creatives und Zielgruppen – danach werden die besten Kombinationen weiter optimiert und skaliert.',
   },
   {
     question: 'Welche Social Media Plattform ist die richtige für mein Unternehmen?',
     answer:
-      'Instagram und Facebook eignen sich besonders für B2C, lokale Unternehmen, Mode, Food und Lifestyle. TikTok funktioniert hervorragend für junge Zielgruppen und virale Inhalte. LinkedIn ist die erste Wahl im B2B und für hochpreisige Dienstleistungen. Wir analysieren Ihre Zielgruppe und empfehlen die Plattform mit dem besten Verhältnis von Reichweite zu Kosten.',
+      'Instagram und Facebook eignen sich besonders für B2C, lokale Unternehmen und visuell starke Angebote. TikTok funktioniert für jüngere Zielgruppen. LinkedIn ist die erste Wahl im B2B-Bereich. Wir analysieren Ihre Zielgruppe und empfehlen die passende Plattform.',
   },
   {
     question: 'Was ist der Unterschied zwischen Social Media Marketing und Google Ads?',
     answer:
-      'Google Ads erreichen Nutzer, die aktiv nach einer Lösung suchen (Pull-Marketing). Social Media Ads werden Nutzern angezeigt, die zur passenden Zielgruppe gehören, aber nicht aktiv suchen (Push-Marketing). Social Media eignet sich besonders für Markenaufbau, neue Produkte und visuelle Angebote, Google Ads für konkrete Kaufabsichten.',
+      'Google Ads erreichen Nutzer, die aktiv nach einer Lösung suchen. Social Media Ads werden Nutzern angezeigt, die zur passenden Zielgruppe gehören, aber nicht aktiv suchen. Social Media eignet sich besonders für Markenaufbau und visuelle Angebote, Google Ads für konkrete Kaufabsichten.',
   },
   {
     question: 'Übernehmen Sie auch die Content-Erstellung für Social Media?',
     answer:
-      'Ja, wir erstellen auf Wunsch Creatives, Videos, Reels, Story-Inhalte und Anzeigentexte für Ihre Kampagnen. Bei laufender Betreuung produzieren wir monatlich neue Inhalte und testen verschiedene Varianten gegeneinander, um die Performance kontinuierlich zu steigern.',
+      'Ja, wir erstellen auf Wunsch Creatives, Reels, Story-Inhalte und Anzeigentexte für Ihre Kampagnen. Creatives & Grafiken starten ab 150€, Content-Produktion ab 300€.',
   },
   {
     question: 'Für welche Unternehmen eignet sich Social Media Marketing?',
     answer:
-      'Social Media Marketing funktioniert für lokale Dienstleister, E-Commerce-Shops, Restaurants, Coaches, Agenturen, Startups und B2B-Unternehmen mit längerem Verkaufszyklus. Besonders effektiv ist es, wenn Ihr Angebot visuell ansprechend präsentiert werden kann oder eine klar definierte Zielgruppe hat.',
+      'Für lokale Unternehmen, Dienstleister, E-Commerce, Startups und Markenaufbau. Besonders effektiv, wenn Ihr Angebot visuell ansprechend präsentiert werden kann oder eine klar definierte Zielgruppe hat.',
   },
 ];
 

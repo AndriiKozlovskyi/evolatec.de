@@ -74,37 +74,37 @@ const contentFaqs = [
   {
     question: 'Warum sind SEO Texte für die Website wichtig?',
     answer:
-      'SEO Texte verbessern Ihre Google-Rankings, weil sie relevante Keywords, klare Strukturen und nutzerorientierten Content kombinieren. Google bewertet Texte nach Relevanz, Lesbarkeit, Tiefe und Suchintent – professionelle SEO Texte erfüllen alle Kriterien. Das Ergebnis: mehr organischer Traffic, höhere Verweildauer, bessere Conversion und langfristig planbare Sichtbarkeit ohne Werbekosten.',
+      'SEO Texte verbessern Ihre Google-Rankings, weil sie relevante Keywords, klare Strukturen und nutzerorientierten Content kombinieren. Das Ergebnis: mehr organischer Traffic und langfristig planbare Sichtbarkeit ohne Werbekosten.',
   },
   {
     question: 'Was kosten professionelle Website Texte?',
     answer:
-      'Einzelne Webseiten-Texte (500 Wörter) beginnen bei EvolaTec ab 150€, conversionsstarke Landingpage-Texte ab 250€ und komplette Website-Inhalte (bis zu 5 Seiten inkl. Keyword-Strategie) ab 700€. Längere SEO-Blogartikel ab 200€ pro Artikel. Die genauen Kosten hängen von Recherchetiefe, Wortzahl und Themenkomplexität ab. Wir erstellen vor Projektstart ein transparentes Festpreisangebot.',
+      'Einzelne Webseiten-Texte (500 Wörter) beginnen bei EvolaTec ab 150€, Landingpage-Copywriting ab 250€ und komplette Website-Inhalte ab 700€. Allgemeine Texte werden mit 0,15€/Wort, SEO Texte mit 0,30€/Wort abgerechnet.',
   },
   {
     question: 'Wie lange dauert die Erstellung von Website Texten?',
     answer:
-      'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für komplette Website-Inhalte 2–4 Wochen. Die Dauer hängt von Recherche, Anzahl der Texte und Feedback-Runden ab. Bei dringenden Projekten bieten wir Express-Erstellung innerhalb von 48–72 Stunden gegen Aufpreis an.',
+      'Für einzelne Seiten benötigen wir durchschnittlich 5–10 Werktage, für größere Projekte 2–4 Wochen. Eine schnellere Umsetzung ist auf Anfrage möglich.',
   },
   {
     question: 'Schreiben Sie auch Texte für Landingpages und Werbung?',
     answer:
-      'Ja, wir erstellen conversionsstarke Texte für Landingpages, Google-Ads-Anzeigen, Meta-Ads-Creatives und E-Mail-Kampagnen. Diese Texte sind speziell auf Verkäufe und Leads optimiert – mit klaren Botschaften, starken Call-to-Actions und nachgewiesenen Copywriting-Frameworks. Auf Wunsch erstellen wir auch mehrere Varianten für A/B-Tests, um die beste Conversion-Rate zu finden.',
+      'Ja, wir erstellen conversionsstarke Texte für Landingpages und Werbekampagnen, die auf Verkäufe und Leads fokussieren. Landingpage-Copywriting startet ab 250€.',
   },
   {
     question: 'Was ist der Unterschied zwischen SEO Texten und Copywriting?',
     answer:
-      'SEO Texte sind auf Suchmaschinen optimiert: Keywords, Suchintent, Struktur und organische Rankings stehen im Vordergrund. Copywriting fokussiert auf Conversion: emotionale Botschaften, Verkaufspsychologie und starke CTAs. Gute Web-Texte verbinden beides – sie ranken bei Google UND verkaufen an den Nutzer. Wir kombinieren beide Disziplinen für maximale Wirkung.',
+      'SEO Texte sind auf Suchmaschinen optimiert: Keywords, Suchintent und organische Rankings stehen im Vordergrund. Copywriting fokussiert auf Conversion: klare Botschaften und starke CTAs. Gute Web-Texte verbinden beides – sie ranken bei Google UND überzeugen den Nutzer.',
   },
   {
     question: 'Können Inhalte mehrsprachig erstellt werden?',
     answer:
-      'Ja, wir erstellen Inhalte für deutsche, englische und internationale Projekte mit nativer Sprachkompetenz. Bei mehrsprachigen Projekten achten wir auf lokale Suchgewohnheiten, kulturelle Besonderheiten und korrekte SEO-Implementierung (hreflang, lokalisierte Keywords). So ranken Sie in jedem Zielmarkt mit überzeugenden Inhalten.',
+      'Ja, wir erstellen Inhalte für deutsche, englische und internationale Projekte. Bei mehrsprachigen Projekten achten wir auf lokale Suchgewohnheiten und korrekte SEO-Implementierung.',
   },
   {
     question: 'Wie läuft die Texterstellung ab?',
     answer:
-      'Unser Texterstellungs-Prozess umfasst vier Phasen: 1) Briefing & Recherche (Zielgruppe, Wettbewerb, Tonalität), 2) Keyword-Strategie und Themenplanung, 3) Texterstellung mit SEO-Optimierung, 4) Feedback und Feinschliff. Sie erhalten den fertigen Text in einem Word- oder Google-Dokument und können bei Bedarf zwei Korrekturrunden ohne Aufpreis nutzen.',
+      'Unser Prozess umfasst Briefing & Recherche, Keyword-Strategie, Texterstellung mit SEO-Optimierung sowie Feedback und Feinschliff. Sie erhalten den fertigen Text als Dokument zur Freigabe.',
   },
 ];
 

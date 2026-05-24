@@ -264,37 +264,32 @@ const faqs = [
   {
     question: 'How much does a professional landing page cost?',
     answer:
-      'A professional landing page at EvolaTec starts from €500 including design, development, mobile optimisation and basic SEO. Business packages with conversion optimisation start from €800, and premium landing pages with SEO copy, A/B testing and tracking from €1,500. Exact costs depend on design, features and conversion optimisation. We provide transparent fixed-price quotes with no hidden costs.',
+      'A professional landing page at EvolaTec starts from €500 including design, development, mobile optimisation and basic SEO. Exact costs depend on design, features and number of variants. We provide transparent fixed-price quotes with no hidden costs.',
   },
   {
     question: 'How long does it take to create a landing page?',
     answer:
-      'Most landing pages are live within 3–7 working days. Premium landing pages with custom design elements, tracking setup and multiple variants take 1–2 weeks. For ad campaigns that need to launch quickly we offer express delivery within 48 hours.',
+      'Most landing pages are live within 3–7 working days, depending on complexity and your requirements.',
   },
   {
     question: 'What is the difference between a landing page and a website?',
     answer:
-      'A landing page has exactly one goal – lead generation, sale or signup – and is optimised for maximum conversion. A website has multiple subpages, presents an entire company and serves multiple purposes. Landing pages are typically used for ad campaigns (Google Ads, Meta Ads) because they achieve significantly higher conversion rates than classic websites.',
+      'A landing page has exactly one goal – lead generation, sale or signup – and is optimised for maximum conversion. A website has multiple subpages, presents an entire company and serves multiple purposes. Landing pages are typically used for ad campaigns.',
   },
   {
     question: 'Is the landing page mobile optimised and responsive?',
     answer:
-      'Yes, all landing pages are fully responsive and Mobile-First developed. Since over 70% of ad clicks come from smartphones, mobile optimisation is crucial for high conversion rates. We test every landing page on multiple devices, screen sizes and browsers so users convert on any device.',
+      'Yes, all landing pages are fully responsive and Mobile-First developed. Since a large share of ad clicks come from smartphones, mobile optimisation is crucial for high conversion rates.',
   },
   {
     question: 'Is SEO included with the landing page?',
     answer:
-      'Basic SEO is included with every landing page: clean code structure, fast loading times, structured data, mobile optimisation and correct meta tags. Premium packages additionally include SEO-optimised copy, keyword strategy and Schema.org markup so the landing page also ranks organically on Google.',
+      'Basic SEO is included with every landing page: clean code structure, fast loading times, mobile optimisation and correct meta tags. For more extensive SEO copy and keyword strategy additional SEO packages can be added.',
   },
   {
     question: 'Can the landing page be used for Google Ads and advertising?',
     answer:
-      'Yes, our landing pages are specifically optimised for Google Ads, Meta Ads and social media campaigns. They load fast, have a clear message, strong calls-to-action and are designed for maximum conversion. On request we also set up conversion tracking, Google Tag Manager and Facebook Pixel so you can measure campaign success.',
-  },
-  {
-    question: 'What is a good conversion rate for a landing page?',
-    answer:
-      'Average landing pages convert at 2–5%, while well-optimised ones achieve 8–15% or more. Conversion rate depends on industry, ad-message match, offer and trust signals. With A/B testing, clear messaging and conversion optimisation the rate can be improved continuously – we analyse your data and optimise on an ongoing basis.',
+      'Yes, our landing pages are specifically optimised for Google Ads, Meta Ads and social media campaigns. They load fast, have a clear message and strong calls-to-action. On request we also set up conversion tracking so you can measure campaign success.',
   },
 ];
 </script>

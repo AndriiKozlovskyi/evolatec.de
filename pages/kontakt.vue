@@ -143,37 +143,37 @@ const faqs = [
   {
     question: 'Was passiert nach meiner Kontaktanfrage?',
     answer:
-      'Wir prüfen Ihre Anfrage und melden uns innerhalb von 24 Stunden – meist sogar am selben Tag – mit einem unverbindlichen Angebot oder Terminvorschlägen für ein Erstgespräch. Im Erstgespräch klären wir Ihre Ziele, Anforderungen und Budget. Anschließend erhalten Sie ein detailliertes Festpreis-Angebot mit Leistungsumfang, Zeitplan und transparenten Konditionen.',
+      'Wir prüfen Ihre Anfrage und melden uns innerhalb von 24 Stunden mit einem unverbindlichen Angebot oder Terminvorschlägen für ein Erstgespräch. Im Gespräch klären wir Ihre Ziele, Anforderungen und Budget – anschließend erhalten Sie ein detailliertes Festpreis-Angebot.',
   },
   {
     question: 'Ist die Erstberatung wirklich kostenlos und unverbindlich?',
     answer:
-      'Ja, das 15- bis 30-minütige Erstgespräch und das daraus resultierende Angebot sind komplett kostenlos und unverbindlich. Sie gehen keinerlei Verpflichtung ein – wenn Ihnen unser Angebot oder unsere Arbeitsweise nicht zusagt, ist das absolut in Ordnung. Wir freuen uns aber, wenn wir Ihnen einen Mehrwert in der Beratung bieten können.',
+      'Ja, das Erstgespräch und das daraus resultierende Angebot sind komplett kostenlos und unverbindlich. Sie gehen keinerlei Verpflichtung ein.',
   },
   {
     question: 'Kann ich mit einem kleinen Budget bei EvolaTec starten?',
     answer:
-      'Ja, Landingpages starten ab 500€, Firmenwebsites ab 1.500€ und SEO-Pakete ab 100€. Mit unserem Preisrechner erhalten Sie sofort eine erste Schätzung für Ihr Projekt. Falls Ihr Budget begrenzt ist, beraten wir Sie zu sinnvollen Einstiegslösungen und schrittweisem Ausbau – statt Sie zu überteuerten Komplettpaketen zu drängen.',
+      'Ja, Landingpages starten ab 500€, Firmenwebsites ab 1.500€ und SEO Audits ab 100€. Mit unserem Preisrechner erhalten Sie sofort eine erste Schätzung für Ihr Projekt.',
   },
   {
     question: 'Wie schnell antwortet EvolaTec auf Anfragen?',
     answer:
-      'Wir antworten auf Kontaktanfragen meist innerhalb weniger Stunden, spätestens jedoch innerhalb von 24 Stunden an Werktagen. Für dringende Anliegen erreichen Sie uns auch direkt per WhatsApp – dort antworten wir meist innerhalb einer Stunde. Bestehende Kunden haben einen persönlichen Ansprechpartner mit direkter Erreichbarkeit.',
+      'Wir antworten auf Kontaktanfragen meist innerhalb weniger Stunden, spätestens jedoch innerhalb von 24 Stunden an Werktagen. Für dringende Anliegen erreichen Sie uns auch direkt per WhatsApp.',
   },
   {
     question: 'Wann sind Sie erreichbar?',
     answer:
-      'Wir sind Montag bis Freitag von 9–17 Uhr telefonisch und per E-Mail erreichbar. Für dringende Anfragen außerhalb dieser Zeiten schreiben Sie uns einfach auf WhatsApp – wir antworten meist innerhalb einer Stunde. Termine für Video-Calls sind auch abends oder am Samstag flexibel möglich.',
+      'Wir sind Montag bis Freitag von 9–17 Uhr erreichbar. Für dringende Anfragen außerhalb dieser Zeiten schreiben Sie uns einfach auf WhatsApp.',
   },
   {
     question: 'In welchen Regionen ist EvolaTec aktiv?',
     answer:
-      'EvolaTec arbeitet ortsunabhängig für Kunden in ganz Deutschland, Österreich und der Schweiz. Die meisten Projekte werden komplett remote über Video-Calls, E-Mail und Projektmanagement-Tools abgewickelt. Bei Bedarf sind persönliche Termine vor Ort nach Absprache möglich. Wir betreuen sowohl lokale Unternehmen als auch international agierende Kunden.',
+      'EvolaTec arbeitet ortsunabhängig für Kunden in ganz Deutschland, Österreich und der Schweiz. Die meisten Projekte werden komplett remote über Video-Calls, E-Mail und Projektmanagement-Tools abgewickelt.',
   },
   {
     question: 'Bieten Sie Festpreise oder werden Kosten nach Aufwand abgerechnet?',
     answer:
-      'Wir arbeiten ausschließlich mit transparenten Festpreis-Angeboten. Sie wissen vor Projektstart genau, was Ihr Projekt kostet – es gibt keine überraschenden Zusatzkosten. Stundenbasierte Abrechnung nutzen wir nur bei kleineren Sonderaufgaben (95€/Stunde) oder im Rahmen laufender Betreuungsverträge.',
+      'Wir arbeiten mit transparenten Festpreis-Angeboten. Sie wissen vor Projektstart genau, was Ihr Projekt kostet – es gibt keine überraschenden Zusatzkosten. Stundenbasiert arbeiten wir nur bei Beratung oder kleineren Sonderaufgaben (ab 90€/Stunde).',
   },
 ];
 

@@ -69,37 +69,32 @@ const faqs = [
   {
     question: 'Was kostet eine professionelle Landingpage?',
     answer:
-      'Eine professionelle Landingpage bei EvolaTec startet ab 500€ inklusive Design, Entwicklung, mobiler Optimierung und Basis-SEO. Business-Pakete mit Conversion-Optimierung beginnen ab 800€, Premium-Landingpages mit SEO-Texten, A/B-Testing und Tracking ab 1.500€. Die genauen Kosten hängen von Design, Funktionen und Conversion-Optimierung ab. Wir erstellen transparente Festpreisangebote ohne versteckte Kosten.',
+      'Eine professionelle Landingpage bei EvolaTec startet ab 500€ inklusive Design, Entwicklung, mobiler Optimierung und Basis-SEO. Die genauen Kosten hängen von Design, Funktionen und Anzahl der Varianten ab. Wir erstellen transparente Festpreisangebote ohne versteckte Kosten.',
   },
   {
     question: 'Wie lange dauert die Erstellung einer Landingpage?',
     answer:
-      'Die meisten Landingpages sind innerhalb von 3–7 Werktagen live. Premium-Landingpages mit individuellen Design-Elementen, Tracking-Setup und mehreren Varianten benötigen 1–2 Wochen. Für Werbekampagnen, die kurzfristig starten müssen, bieten wir Express-Erstellung innerhalb von 48 Stunden an.',
+      'Die meisten Landingpages sind innerhalb von 3–7 Werktagen live, je nach Komplexität und Ihren Anforderungen.',
   },
   {
     question: 'Was ist der Unterschied zwischen einer Landingpage und einer Website?',
     answer:
-      'Eine Landingpage hat genau ein Ziel – Lead-Generierung, Verkauf oder Anmeldung – und ist auf maximale Conversion optimiert. Eine Website hingegen hat mehrere Unterseiten, präsentiert ein gesamtes Unternehmen und dient verschiedenen Zielen. Landingpages werden meist für Werbekampagnen (Google Ads, Meta Ads) eingesetzt, da sie deutlich höhere Conversion-Raten erzielen als klassische Websites.',
+      'Eine Landingpage hat genau ein Ziel – Lead-Generierung, Verkauf oder Anmeldung – und ist auf maximale Conversion optimiert. Eine Website hingegen hat mehrere Unterseiten, präsentiert ein gesamtes Unternehmen und dient verschiedenen Zielen. Landingpages werden meist für Werbekampagnen eingesetzt.',
   },
   {
     question: 'Ist die Landingpage mobil optimiert und responsive?',
     answer:
-      'Ja, alle Landingpages sind vollständig responsive und Mobile-First entwickelt. Da über 70% der Klicks auf Werbeanzeigen vom Smartphone kommen, ist mobile Optimierung entscheidend für hohe Conversion-Raten. Wir testen jede Landingpage auf verschiedenen Geräten, Bildschirmgrößen und Browsern, damit Nutzer auf allen Geräten überzeugt werden.',
+      'Ja, alle Landingpages sind vollständig responsive und Mobile-First entwickelt. Da ein Großteil der Klicks auf Werbeanzeigen vom Smartphone kommt, ist mobile Optimierung entscheidend für hohe Conversion-Raten.',
   },
   {
     question: 'Ist SEO bei der Landingpage inklusive?',
     answer:
-      'Basis-SEO ist in jeder Landingpage enthalten: saubere Code-Struktur, schnelle Ladezeiten, strukturierte Daten, mobile Optimierung und korrekte Meta-Tags. In Premium-Paketen sind zusätzlich SEO-optimierte Texte, Keyword-Strategie und Schema.org-Markup enthalten, sodass die Landingpage auch organisch bei Google rankt.',
+      'Basis-SEO ist in jeder Landingpage enthalten: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung und korrekte Meta-Tags. Für umfangreichere SEO-Texte und Keyword-Strategie können zusätzliche SEO-Pakete dazugebucht werden.',
   },
   {
     question: 'Kann die Landingpage für Google Ads und Werbung genutzt werden?',
     answer:
-      'Ja, unsere Landingpages sind speziell für Google Ads, Meta Ads und Social-Media-Kampagnen optimiert. Sie laden schnell, haben eine klare Botschaft, starke Call-to-Actions und sind auf maximale Conversion ausgerichtet. Auf Wunsch richten wir auch Conversion-Tracking, Google Tag Manager und Facebook Pixel ein, damit Sie den Erfolg Ihrer Kampagnen messen können.',
-  },
-  {
-    question: 'Wie hoch ist die Conversion-Rate einer guten Landingpage?',
-    answer:
-      'Durchschnittliche Landingpages konvertieren bei 2–5%, gute optimierte Landingpages erreichen 8–15% oder mehr. Die Conversion-Rate hängt von Branche, Werbe-Match, Angebot und Vertrauen ab. Mit A/B-Testing, klaren Botschaften und Conversion-Optimierung lässt sich die Rate kontinuierlich steigern – wir analysieren Ihre Daten und optimieren laufend.',
+      'Ja, unsere Landingpages sind speziell für Google Ads, Meta Ads und Social-Media-Kampagnen optimiert. Sie laden schnell, haben eine klare Botschaft und starke Call-to-Actions. Auf Wunsch richten wir auch Conversion-Tracking ein, damit Sie den Erfolg Ihrer Kampagnen messen können.',
   },
 ];
 

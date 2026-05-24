@@ -109,37 +109,37 @@ const faqs = [
   {
     question: 'Was kostet professionelles Webdesign?',
     answer:
-      'Die Kosten für Webdesign hängen vom Umfang und der Komplexität des Projekts ab. Landingpages beginnen bei 500€, professionelle Firmenwebsites ab 1.500€ und individuelle Online-Shops ab 3.000€. Wir arbeiten mit transparenten Festpreisen ohne versteckte Zusatzkosten – Sie erhalten vor Projektstart ein detailliertes Angebot mit allen Leistungen.',
+      'Die Kosten hängen vom Umfang des Projekts ab. Landingpages starten ab 500€, professionelle Firmenwebsites ab 1.500€ und Online-Shops ab 3.000€. Wir arbeiten mit transparenten Festpreisen und erstellen vor Projektstart ein detailliertes Angebot.',
   },
   {
     question: 'Wie lange dauert die Erstellung einer Website?',
     answer:
-      'Eine Landingpage ist meist innerhalb von 3–7 Tagen fertig, eine professionelle Firmenwebsite in 2–4 Wochen und ein Online-Shop in 4–8 Wochen. Die genaue Dauer hängt von Umfang, Funktionen und der Geschwindigkeit beim Bereitstellen von Texten und Bildern ab. Bei dringenden Projekten bieten wir auch beschleunigte Umsetzung an.',
+      'Eine Landingpage ist meist innerhalb von 3–7 Tagen fertig, eine professionelle Firmenwebsite ab 7 Arbeitstagen und ein Online-Shop ab 14 Arbeitstagen. Die genaue Dauer hängt von Umfang und Funktionen sowie der Geschwindigkeit beim Bereitstellen von Texten und Bildern ab.',
   },
   {
     question: 'Was macht eine Webdesign Agentur?',
     answer:
-      'Eine Webdesign Agentur konzipiert, gestaltet und entwickelt moderne Websites, die nicht nur professionell aussehen, sondern auch funktional, schnell und SEO-optimiert sind. EvolaTec übernimmt den gesamten Prozess von Strategie und Design über die technische Umsetzung bis hin zu Hosting, Wartung und laufender Optimierung.',
+      'Eine Webdesign Agentur konzipiert, gestaltet und entwickelt moderne Websites, die nicht nur professionell aussehen, sondern auch funktional, schnell und SEO-optimiert sind. EvolaTec übernimmt den gesamten Prozess von Strategie und Design über die technische Umsetzung bis hin zu laufender Optimierung.',
   },
   {
     question: 'Warum ist responsive Webdesign wichtig?',
     answer:
-      'Über 60% aller Website-Besucher kommen mittlerweile vom Smartphone. Responsive Webdesign sorgt dafür, dass Ihre Website auf allen Geräten – Smartphone, Tablet und Desktop – perfekt funktioniert. Google nutzt zudem Mobile-First-Indexing: eine nicht-responsive Website verliert spürbar an Sichtbarkeit und Rankings.',
+      'Ein Großteil der Website-Besucher nutzt heute Smartphones. Responsive Webdesign sorgt dafür, dass Ihre Website auf allen Geräten – Smartphone, Tablet und Desktop – optimal funktioniert. Google nutzt zudem Mobile-First-Indexing, weshalb responsive Design für gute Rankings entscheidend ist.',
   },
   {
     question: 'Was ist der Unterschied zwischen Webdesign und Webentwicklung?',
     answer:
-      'Webdesign konzentriert sich auf das visuelle Erscheinungsbild, die Nutzerführung und das User Interface einer Website. Webentwicklung ist die technische Umsetzung mit HTML, CSS, JavaScript und Backend-Systemen. EvolaTec bietet beide Disziplinen aus einer Hand – so erhalten Sie eine konsistente Website ohne Schnittstellenprobleme.',
+      'Webdesign konzentriert sich auf das visuelle Erscheinungsbild, die Nutzerführung und das User Interface. Webentwicklung ist die technische Umsetzung mit HTML, CSS, JavaScript und Backend-Systemen. EvolaTec bietet beide Disziplinen aus einer Hand – so erhalten Sie eine konsistente Website ohne Schnittstellenprobleme.',
   },
   {
     question: 'Ist SEO im Webdesign enthalten?',
     answer:
-      'Ja, jede von uns entwickelte Website ist von Beginn an SEO-optimiert. Dazu gehören saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung, strukturierte Daten und korrekte Meta-Tags. Für weitergehende SEO-Maßnahmen wie Keyword-Strategien und Content-Optimierung bieten wir zusätzliche SEO-Pakete an.',
+      'Ja, jede von uns entwickelte Website ist von Beginn an grundlegend SEO-optimiert: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung und korrekte Meta-Daten. Für weitergehende SEO-Maßnahmen wie Keyword-Strategien und Content-Optimierung bieten wir zusätzliche SEO-Pakete an.',
   },
   {
     question: 'Welche Technologien nutzen Sie für Webdesign?',
     answer:
-      'Wir entwickeln mit modernen Technologien wie Nuxt, Vue.js und Tailwind CSS für individuelle Websites sowie Storyblok und Shopify, wenn ein einfach erweiterbares Headless CMS oder eine Shop-Plattform gewünscht ist. Die Wahl der Technologie richtet sich nach Ihren Anforderungen – nicht nach unserer Vorliebe.',
+      'Wir entwickeln mit modernen Technologien wie Nuxt, Vue.js und Tailwind CSS für individuelle Websites. Für Inhalte, die Sie selbst pflegen möchten, nutzen wir Storyblok als Headless CMS. Für Shops setzen wir auf Shopify oder maßgeschneiderte Lösungen.',
   },
 ];
 
