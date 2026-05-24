@@ -70,8 +70,12 @@
         :aria-expanded="mobileMenuOpen"
         aria-controls="mobile-menu"
       >
-        <span class="material-symbols-outlined text-2xl" v-if="!mobileMenuOpen">menu</span>
-        <span class="material-symbols-outlined text-2xl" v-if="mobileMenuOpen">close</span>
+        <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
       </button>
 
       <!-- Language Switcher -->
@@ -110,12 +114,11 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
-    <Teleport to="body">
     <Transition name="slide-up">
       <div
         v-if="mobileMenuOpen"
         id="mobile-menu"
-        class="md:hidden fixed top-20 left-0 right-0 bottom-0 backdrop-blur-md z-[200] overflow-y-auto overscroll-contain bg-surface/95"
+        class="md:hidden fixed top-20 left-0 right-0 bottom-0 z-[200] overflow-y-auto overscroll-contain bg-surface"
       >
         <div class="max-w-container-max mx-auto px-gutter py-6 pb-32 space-y-2">
           <!-- Navigation Links -->
@@ -217,7 +220,6 @@
         </div>
       </div>
     </Transition>
-    </Teleport>
   </nav>
 </template>
 
