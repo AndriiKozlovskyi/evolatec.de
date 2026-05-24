@@ -10,7 +10,20 @@ export default defineNuxtConfig({
       cookiebotCbid: COOKIEBOT_CBID,
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss',
+    [
+    '@storyblok/nuxt',
+        {
+          accessToken: 'arFqQpzhAOmq7awnfawiQQtt',
+        apiOptions: {
+          region: 'eu' // or 'us' depending on your Storyblok space region
+        },
+        useApiClient: true,
+        enableSudoMode: false // D
+      }
+      ],
+      '@nuxt/image',
+    ],
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
   },

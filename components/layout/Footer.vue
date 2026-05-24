@@ -125,6 +125,7 @@ const serviceGroups = computed(() => {
 const legalLinks = computed(() => {
   const en = isEnglish.value;
   return [
+    { label: 'Blog',                                 href: en ? '/en/blog'           : '/blog' },
     { label: en ? 'Contact' : 'Kontakt',            href: en ? '/en/contact'        : '/kontakt' },
     { label: en ? 'Legal Notice' : 'Impressum',     href: en ? '/en/legal-notice'   : '/impressum' },
     { label: en ? 'Privacy Policy' : 'Datenschutz', href: en ? '/en/privacy-policy' : '/datenschutz' },

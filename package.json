@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/image": "^2.0.0",
     "nuxt": "^4.4.4",
+    "@storyblok/nuxt": "^6.2.2",
     "vue": "^3.5.33",
     "vue-router": "^5.0.6"
   },
