@@ -85,13 +85,3 @@ withDefaults(
   {}
 );
 </script>
-
-<style scoped>
-@keyframes bounce-slow {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(6px); }
-}
-.animate-bounce-slow {
-  animation: bounce-slow 1.8s ease-in-out infinite;
-}
-</style>

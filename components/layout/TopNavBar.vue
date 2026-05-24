@@ -32,8 +32,8 @@
               v-if="isLinkActive(link)"
               class="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full"
             />
-            <span class="material-symbols-outlined text-base leading-none">{{ link.icon }}</span>
-            <span class="hidden lg:inline text-[0.7rem]">{{ link.label }}</span>
+            <span class="material-symbols-outlined text-sm leading-none">{{ link.icon }}</span>
+            <span class="hidden lg:inline text-[0.6rem]">{{ link.label }}</span>
             <span v-if="link.submenu" class="material-symbols-outlined text-base group-hover:rotate-180 transition-transform duration-300">
               expand_more
             </span>
