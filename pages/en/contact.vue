@@ -16,7 +16,7 @@
         <!-- Tabs -->
         <div class="flex bg-surface-container-low rounded-full p-1 mb-6 max-w-md mx-auto">
           <button
-            @click="tab = 'call'"
+            @click="hasConsented ? (tab = 'call') : focusBanner()"
             :class="[
               'flex-1 py-2.5 px-3 rounded-full font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
               tab === 'call' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
@@ -41,12 +41,26 @@
         <div v-show="tab === 'call'" class="bg-white rounded-2xl shadow-md border border-outline-variant/20 p-3 sm:p-4 animate-fade-in-up">
           <div class="rounded-xl overflow-hidden border border-outline-variant/30 bg-surface-container-low">
             <iframe
+              v-if="hasConsented"
               :src="calComEmbedUrl"
               title="Book Appointment"
               loading="lazy"
               class="w-full h-[620px] sm:h-[680px] md:h-[720px] border-0 block"
               allow="payment"
             />
+            <div
+              v-else
+              class="flex flex-col items-center justify-center gap-3 p-10 text-center h-64 cursor-pointer"
+              @click="focusBanner"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl">cookie</span>
+              <p class="text-sm font-bold text-on-surface">Cookie settings required</p>
+              <p class="text-xs text-on-surface-variant max-w-xs leading-relaxed">
+                Please set your
+                <button type="button" @click.stop="focusBanner" class="text-primary font-semibold underline underline-offset-2">cookie preferences</button>
+                first to book an appointment.
+              </p>
+            </div>
           </div>
 
           <div class="grid grid-cols-2 gap-2 mt-3">
@@ -182,6 +196,7 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
+const { hasConsented, focusBanner } = useCookieConsent();
 const tab = ref<'call' | 'form'>('call');
 
 const calComUrl = 'https://cal.eu/evolatec/15min';

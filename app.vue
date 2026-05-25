@@ -16,7 +16,17 @@
     <Footer />
     <FloatingContact />
     <SectionDotNav />
-    <CookieBanner />
+    <ClientOnly>
+      <CookieBanner />
+      <button
+        v-if="hasConsented"
+        @click="openPreferences"
+        :title="isEnglish ? 'Cookie settings' : 'Cookie-Einstellungen'"
+        class="fixed bottom-5 left-5 z-[200] w-9 h-9 rounded-full bg-surface border border-outline-variant/30 shadow-md flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all duration-200"
+      >
+        <span class="material-symbols-outlined text-base">cookie</span>
+      </button>
+    </ClientOnly>
   </div>
 </template>
 
@@ -25,6 +35,7 @@ import { onMounted, watch } from 'vue';
 
 const route = useRoute();
 const { redirectToPreferred, isEnglish } = useLanguageSwitcher();
+const { hasConsented, openPreferences } = useCookieConsent();
 
 useHead(() => ({
   htmlAttrs: { lang: isEnglish.value ? 'en' : 'de' },

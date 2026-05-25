@@ -16,7 +16,7 @@
         <!-- Tabs -->
         <div class="flex bg-surface-container-low rounded-full p-1 mb-6 max-w-md mx-auto">
           <button
-            @click="tab = 'call'"
+            @click="hasConsented ? (tab = 'call') : focusBanner()"
             :class="[
               'flex-1 py-2.5 px-3 rounded-full font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]',
               tab === 'call' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
@@ -42,12 +42,26 @@
           <!-- Cal.com inline widget -->
           <div class="rounded-xl overflow-hidden border border-outline-variant/30 bg-surface-container-low">
             <iframe
+              v-if="hasConsented"
               :src="calComEmbedUrl"
               title="Termin buchen"
               loading="lazy"
               class="w-full h-[620px] sm:h-[680px] md:h-[720px] border-0 block"
               allow="payment"
             />
+            <div
+              v-else
+              class="flex flex-col items-center justify-center gap-3 p-10 text-center h-64 cursor-pointer"
+              @click="focusBanner"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl">cookie</span>
+              <p class="text-sm font-bold text-on-surface">Cookie-Einstellungen erforderlich</p>
+              <p class="text-xs text-on-surface-variant max-w-xs leading-relaxed">
+                Bitte legen Sie zunächst Ihre
+                <button type="button" @click.stop="focusBanner" class="text-primary font-semibold underline underline-offset-2">Cookie-Einstellungen</button>
+                fest, um einen Termin buchen zu können.
+              </p>
+            </div>
           </div>
 
           <!-- Fallback contact channels under the widget -->
@@ -194,6 +208,7 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
+const { hasConsented, focusBanner } = useCookieConsent();
 const tab = ref<'call' | 'form'>('call');
 
 const calComUrl = 'https://cal.eu/evolatec/15min';
