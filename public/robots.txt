@@ -1,6 +1,6 @@
 # robots.txt — EvolaTec
 # https://evolatec.de
-# Last updated: 2026-05-22
+# Last updated: 2026-05-25
 
 # ─────────────────────────────────────────────
 # Default Rules — alle Crawler dürfen die Website indexieren
@@ -82,11 +82,3 @@ Allow: /
 
 Sitemap: https://evolatec.de/sitemap.xml
 
-# ─────────────────────────────────────────────
-# LLM-Ressourcen (KI-Wissensbasis der Website)
-# ─────────────────────────────────────────────
-
-# Kompakter Index für KI-Crawler:
-LLMS: https://evolatec.de/llms.txt
-# Vollständige Wissensbasis mit allen Inhalten:
-LLMS-FULL: https://evolatec.de/llms-full.txt
