@@ -28,7 +28,7 @@
           <button
             v-for="tab in tabs"
             :key="tab.id"
-            @click="activeTab = tab.id"
+            @click="switchTab(tab.id)"
             :class="[
               'flex-1 py-2.5 px-3 rounded-full text-sm font-bold flex items-center justify-center gap-2 min-h-[44px] transition-all duration-200',
               activeTab === tab.id
@@ -41,6 +41,22 @@
             <span class="sm:hidden">{{ tab.shortLabel }}</span>
           </button>
         </div>
+
+        <!-- Consent gate -->
+        <div class="relative">
+          <div
+            v-if="!hasConsented"
+            class="absolute inset-0 z-10 rounded-2xl bg-surface/85 backdrop-blur-sm flex flex-col items-center justify-center gap-3 p-6 text-center cursor-pointer"
+            @click="focusBanner"
+          >
+            <span class="material-symbols-outlined text-primary text-5xl">cookie</span>
+            <p class="text-base font-bold text-on-surface">Cookie settings required</p>
+            <p class="text-sm text-on-surface-variant max-w-xs leading-relaxed">
+              Please set your
+              <button type="button" @click.stop="focusBanner" class="text-primary font-semibold underline underline-offset-2">cookie preferences</button>
+              first to use the price calculator.
+            </p>
+          </div>
 
         <!-- ═══ PACKAGES ═══ -->
         <div v-show="activeTab === 'packages'" class="animate-fade-in-up">
@@ -262,6 +278,7 @@
             All prices excl. VAT · Custom projects available on request
           </p>
         </div>
+        </div>
 
       </div>
     </section>
@@ -288,6 +305,7 @@
 
 <script setup lang="ts">
 const { hreflangLinks } = useLanguageSwitcher();
+const { hasConsented, focusBanner } = useCookieConsent();
 
 useHead({
   title: 'Price Calculator – Estimate Costs | EvolaTec',
@@ -325,6 +343,11 @@ function accent(i: number) {
 }
 
 const activeTab = ref<'packages' | 'calculator' | 'individual'>('packages');
+
+function switchTab(id: 'packages' | 'calculator' | 'individual') {
+  if (!hasConsented.value) { focusBanner(); return; }
+  activeTab.value = id;
+}
 
 const tabs = [
   { id: 'packages',   icon: 'package_2',  label: 'Packages',        shortLabel: 'Packages'  },

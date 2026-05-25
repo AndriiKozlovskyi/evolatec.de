@@ -16,6 +16,7 @@
     <Footer />
     <FloatingContact />
     <SectionDotNav />
+    <CookieBanner />
   </div>
 </template>
 

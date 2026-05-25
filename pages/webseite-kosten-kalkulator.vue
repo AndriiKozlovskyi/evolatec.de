@@ -28,7 +28,7 @@
           <button
             v-for="tab in tabs"
             :key="tab.id"
-            @click="activeTab = tab.id"
+            @click="switchTab(tab.id)"
             :class="[
               'flex-1 min-w-0 py-2.5 px-3 rounded-full text-sm font-bold flex items-center justify-center gap-2 whitespace-nowrap min-h-[44px] transition-all duration-200',
               activeTab === tab.id
@@ -41,6 +41,22 @@
             <span class="sm:hidden">{{ tab.shortLabel }}</span>
           </button>
         </div>
+
+        <!-- Consent gate -->
+        <div class="relative">
+          <div
+            v-if="!hasConsented"
+            class="absolute inset-0 z-10 rounded-2xl bg-surface/85 backdrop-blur-sm flex flex-col items-center justify-center gap-3 p-6 text-center cursor-pointer"
+            @click="focusBanner"
+          >
+            <span class="material-symbols-outlined text-primary text-5xl">cookie</span>
+            <p class="text-base font-bold text-on-surface">Cookie-Einstellungen erforderlich</p>
+            <p class="text-sm text-on-surface-variant max-w-xs leading-relaxed">
+              Bitte legen Sie zunächst Ihre
+              <button type="button" @click.stop="focusBanner" class="text-primary font-semibold underline underline-offset-2">Cookie-Einstellungen</button>
+              fest, um den Preisrechner zu nutzen.
+            </p>
+          </div>
 
         <!-- ═══ PAKETE ═══ -->
         <div v-show="activeTab === 'pakete'" class="animate-fade-in-up">
@@ -270,6 +286,7 @@
             Alle Preise zzgl. MwSt. · Individuelle Projekte auf Anfrage
           </p>
         </div>
+        </div>
 
       </div>
     </section>
@@ -296,6 +313,7 @@
 
 <script setup lang="ts">
 const { hreflangLinks } = useLanguageSwitcher();
+const { hasConsented, focusBanner } = useCookieConsent();
 
 useHead({
   title: 'Was kostet eine Website? Kosten & Preise berechnen | EvolaTec',
@@ -337,6 +355,11 @@ function accent(i: number) {
 
 // ── Tabs ─────────────────────────────────────────────────────────────────────
 const activeTab = ref<'pakete' | 'kalkulator' | 'einzeln'>('pakete');
+
+function switchTab(id: 'pakete' | 'kalkulator' | 'einzeln') {
+  if (!hasConsented.value) { focusBanner(); return; }
+  activeTab.value = id;
+}
 
 const tabs = [
   { id: 'pakete',     icon: 'package_2',  label: 'Pakete',       shortLabel: 'Pakete'     },

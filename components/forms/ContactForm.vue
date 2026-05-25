@@ -126,7 +126,22 @@
       </p>
     </div>
 
+    <!-- Consent notice — shown instead of the submit button until user makes a cookie choice -->
+    <div
+      v-if="!hasConsented"
+      class="flex items-start gap-2.5 p-3.5 rounded-xl bg-primary/5 border border-primary/15 cursor-pointer"
+      @click="focusBanner"
+    >
+      <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">cookie</span>
+      <p class="text-xs text-on-surface-variant leading-relaxed">
+        Bitte legen Sie zunächst Ihre
+        <button type="button" @click.stop="focusBanner" class="text-primary font-semibold underline underline-offset-2">Cookie-Einstellungen</button>
+        fest, bevor Sie das Formular absenden.
+      </p>
+    </div>
+
     <BaseButton
+      v-else
       variant="primary"
       size="md"
       class="w-full"
@@ -159,6 +174,8 @@
 </template>
 
 <script setup lang="ts">
+const { hasConsented, focusBanner } = useCookieConsent();
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const BASE_INPUT = 'w-full px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant text-sm';

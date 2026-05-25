@@ -1,17 +1,8 @@
-// Cookiebot Domain Group ID
-const COOKIEBOT_CBID = '262a7035-5608-447f-b551-e39d0be800f3';
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   devtools: {
     enabled: true,
-  },
-
-  runtimeConfig: {
-    public: {
-      cookiebotCbid: COOKIEBOT_CBID,
-    },
   },
 
   modules: [
@@ -26,7 +17,7 @@ export default defineNuxtConfig({
         },
         useApiClient: true,
         enableSudoMode: false,
-        bridge: import.meta.dev, // BE CAREFULL
+        bridge: import.meta.dev,
       },
     ],
 
@@ -90,43 +81,21 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      script: [
-        {
-          id: 'Cookiebot',
-          src: 'https://consent.cookiebot.com/uc.js',
-          'data-cbid': COOKIEBOT_CBID,
-          'data-blockingmode': 'auto',
-          type: 'text/javascript',
-          tagPosition: 'head',
-          tagPriority: 'critical',
-        },
-      ],
-
       link: [
-        {
-          rel: 'preconnect',
-          href: 'https://consent.cookiebot.com',
-        },
-
-        {
-          rel: 'dns-prefetch',
-          href: 'https://consent.cookiebot.com',
-        },
-
         {
           rel: 'icon',
           type: 'image/png',
-          href: '/logo.webp?v=1',
+          href: '/logo.png?v=1',
         },
 
         {
           rel: 'shortcut icon',
-          href: '/logo.webp?v=1',
+          href: '/logo.png?v=1',
         },
 
         {
           rel: 'apple-touch-icon',
-          href: '/logo.webp?v=1',
+          href: '/logo.png?v=1',
         },
       ],
 
