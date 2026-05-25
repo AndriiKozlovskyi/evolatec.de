@@ -26,6 +26,7 @@ export default defineNuxtConfig({
         },
         useApiClient: true,
         enableSudoMode: false,
+        bridge: import.meta.dev,
       },
     ],
 
