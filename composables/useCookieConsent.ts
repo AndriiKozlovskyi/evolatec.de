@@ -24,8 +24,10 @@ export function useCookieConsent() {
   // Shared highlight signal — used to animate the banner when a blocked action is clicked
   const bannerHighlighted = useState('cookie-banner-hl', () => false)
 
-  const showBanner       = computed(() => stored.value === null)
-  const hasConsented     = computed(() => stored.value !== null)  // any choice counts
+  const forceShowBanner  = useState('cookie-force-show', () => false)
+
+  const showBanner       = computed(() => stored.value === null || forceShowBanner.value)
+  const hasConsented     = computed(() => stored.value !== null)
   const analyticsAllowed = computed(() => stored.value?.analytics === true)
   const marketingAllowed = computed(() => stored.value?.marketing === true)
 
@@ -37,12 +39,13 @@ export function useCookieConsent() {
       analytics: choices.analytics,
       marketing: choices.marketing,
     }
+    forceShowBanner.value = false
   }
 
   const acceptAll       = () => save({ analytics: true,  marketing: true  })
   const acceptNecessary = () => save({ analytics: false, marketing: false })
   const saveCustom      = (choices: ConsentChoices) => save(choices)
-  const openPreferences = () => { stored.value = null }
+  const openPreferences = () => { forceShowBanner.value = true }
 
   /** Pulses the cookie banner to guide the user when a blocked action is attempted */
   function focusBanner() {

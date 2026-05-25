@@ -109,7 +109,7 @@
 import { ref, reactive, watch } from 'vue';
 
 const { isEnglish } = useLanguageSwitcher();
-const { showBanner, bannerHighlighted, acceptAll, acceptNecessary, saveCustom } = useCookieConsent();
+const { stored, showBanner, bannerHighlighted, acceptAll, acceptNecessary, saveCustom } = useCookieConsent();
 
 const showCustomize = ref(false);
 const draft = reactive({ analytics: false, marketing: false });
@@ -117,8 +117,8 @@ const draft = reactive({ analytics: false, marketing: false });
 watch(showBanner, (visible) => {
   if (visible) {
     showCustomize.value = false;
-    draft.analytics = false;
-    draft.marketing = false;
+    draft.analytics = stored.value?.analytics ?? false;
+    draft.marketing = stored.value?.marketing ?? false;
   }
 });
 
