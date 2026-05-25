@@ -10,8 +10,8 @@ export function organizationSchema() {
     logo: {
       '@type': 'ImageObject',
       '@id': `${BASE}/#logo`,
-      url: `${BASE}/logo.png`,
-      contentUrl: `${BASE}/logo.png`,
+      url: `${BASE}/logo.webp`,
+      contentUrl: `${BASE}/logo.webp`,
     },
     image: { '@id': `${BASE}/#logo` },
     description:

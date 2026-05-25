@@ -26,7 +26,7 @@ export default defineNuxtConfig({
         },
         useApiClient: true,
         enableSudoMode: false,
-        bridge: import.meta.dev,
+        bridge: import.meta.dev, // BE CAREFULL
       },
     ],
 
@@ -116,17 +116,17 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          href: '/logo.png?v=1',
+          href: '/logo.webp?v=1',
         },
 
         {
           rel: 'shortcut icon',
-          href: '/logo.png?v=1',
+          href: '/logo.webp?v=1',
         },
 
         {
           rel: 'apple-touch-icon',
-          href: '/logo.png?v=1',
+          href: '/logo.webp?v=1',
         },
       ],
 

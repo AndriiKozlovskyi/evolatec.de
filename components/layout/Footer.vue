@@ -6,7 +6,7 @@
         <!-- Brand Section -->
         <div class="lg:col-span-4">
           <div class="flex flex-row items-center gap-2.5">
-            <img src="/logo.png" alt="EvolaTec Logo" width="32" height="32" class="h-8 w-8" loading="lazy" />
+            <img src="/logo.webp" alt="EvolaTec Logo" width="32" height="32" class="h-8 w-8" loading="lazy" />
             <span class="font-display text-headline-md font-bold tracking-tighter text-primary">EvolaTec</span>
           </div>
 

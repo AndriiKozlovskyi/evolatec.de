@@ -330,7 +330,7 @@ const schemaMarkup = {
       url: 'https://evolatec.de',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://evolatec.de/logo.png',
+        url: 'https://evolatec.de/logo.webp',
       },
       description: 'EvolaTec is a professional web agency for website development, SEO optimization and online marketing in Europe.',
       areaServed: [
