@@ -32,6 +32,13 @@
 
     <ProcessSection title="Our Web Design Process" :steps="processSteps" />
 
+    <!-- Pricing -->
+    <PricingSection
+      title="Web Design Prices"
+      subtitle="Transparent fixed prices for professional web design — no hidden costs."
+      :pricing-plans="pricingPlans"
+    />
+
     <!-- Expertise blocks -->
     <section data-nav-label="Expertise" data-nav-icon="verified" class="relative py-section-padding bg-surface-container-low overflow-hidden">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none"></div>
@@ -327,6 +334,48 @@ const features = [
     icon: 'search_insights',
     title: 'SEO-Ready from the Start',
     description: 'Semantic HTML, clean structure and optimised content — so your website gets found on Google.',
+  },
+];
+
+const pricingPlans = [
+  {
+    tier: 'Basic',
+    price: 'from €1,000',
+    features: [
+      'Landing Page Design',
+      'Responsive Web Design',
+      'Mobile First',
+      '2 Revision Rounds',
+      'Delivery from 5 days',
+    ],
+    buttonText: 'Request Quote',
+    isHighlighted: false,
+  },
+  {
+    tier: 'Business',
+    price: 'from €2,000',
+    features: [
+      'Everything in Basic',
+      'Business Website (up to 15 pages)',
+      'UI/UX Concept',
+      'Design System',
+      '3 Revision Rounds',
+    ],
+    buttonText: 'Most Popular',
+    isHighlighted: true,
+  },
+  {
+    tier: 'Premium',
+    price: 'from €3,000',
+    features: [
+      'Everything in Business',
+      'Corporate Website Design',
+      'Brand Identity & CI',
+      'Unlimited Revisions',
+      'Priority Support',
+    ],
+    buttonText: 'Book Consultation',
+    isHighlighted: false,
   },
 ];
 

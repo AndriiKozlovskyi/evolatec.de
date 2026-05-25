@@ -38,6 +38,13 @@
     <!-- Process -->
     <ProcessSection title="Unser Webdesign Prozess" :steps="processSteps" />
 
+    <!-- Pricing -->
+    <PricingSection
+      title="Webdesign Preise & Kosten"
+      subtitle="Transparente Festpreise für professionelles Webdesign — ohne versteckte Kosten."
+      :pricing-plans="pricingPlans"
+    />
+
     <!-- Expertise blocks — 2 card columns with tags -->
     <section data-nav-label="Expertise" data-nav-icon="verified" class="relative py-section-padding bg-surface-container-low overflow-hidden">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none"></div>
@@ -342,6 +349,48 @@ const features = [
     icon: 'search_insights',
     title: 'SEO-ready von Anfang an',
     description: 'Semantisches HTML, saubere Struktur und optimierte Inhalte — damit Ihre Website bei Google gefunden wird.',
+  },
+];
+
+const pricingPlans = [
+  {
+    tier: 'Basic',
+    price: 'ab 1.000 €',
+    features: [
+      'Landing Page Design',
+      'Responsives Webdesign',
+      'Mobile First',
+      '2 Korrekturschleifen',
+      'Lieferung ab 5 Tagen',
+    ],
+    buttonText: 'Anfrage stellen',
+    isHighlighted: false,
+  },
+  {
+    tier: 'Business',
+    price: 'ab 2.000 €',
+    features: [
+      'Alles aus Basic',
+      'Firmenwebsite (bis 15 Seiten)',
+      'UI/UX Konzept',
+      'Design-System',
+      '3 Korrekturschleifen',
+    ],
+    buttonText: 'Meistgewählt',
+    isHighlighted: true,
+  },
+  {
+    tier: 'Premium',
+    price: 'ab 3.000 €',
+    features: [
+      'Alles aus Business',
+      'Corporate Website Design',
+      'Markenidentität & CI',
+      'Unbegrenzte Revisionen',
+      'Prioritäts-Support',
+    ],
+    buttonText: 'Beratung buchen',
+    isHighlighted: false,
   },
 ];
 

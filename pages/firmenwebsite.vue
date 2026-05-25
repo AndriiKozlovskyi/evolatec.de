@@ -170,6 +170,13 @@
     <!-- Why us -->
     <BenefitsSection title="Warum EvolaTec als Webagentur?" :benefits="benefits" />
 
+    <!-- Pricing -->
+    <PricingSection
+      title="Website Preise & Kosten"
+      subtitle="Transparente Festpreise für professionelle Websites — Landingpages ab 500 €, Firmenwebsites ab 1.500 €."
+      :pricing-plans="pricingPlans"
+    />
+
     <!-- FAQ -->
     <FAQSection title="Häufig gestellte Fragen" :faqs="faqs" />
 
@@ -434,6 +441,48 @@ const features = [
     icon: 'tune',
     title: 'Individuelle Anpassung & Skalierbarkeit',
     description: 'Maßgeschneiderte Lösungen, die mit Ihrem Unternehmen mitwachsen — keine Standard-Templates, sondern echte Entwicklung.',
+  },
+];
+
+const pricingPlans = [
+  {
+    tier: 'Starter',
+    price: 'ab 1.500 €',
+    features: [
+      'Firmenwebsite (3–5 Seiten)',
+      'Responsives Design',
+      'SEO-Grundlagen',
+      'Kontaktformular',
+      'Lieferung ab 7 Tagen',
+    ],
+    buttonText: 'Anfrage stellen',
+    isHighlighted: false,
+  },
+  {
+    tier: 'Business',
+    price: 'ab 3.000 €',
+    features: [
+      'Alles aus Starter',
+      'Bis 15 Seiten',
+      'Einzigartiges UI/UX Design',
+      'SEO Optimierung',
+      'CMS Integration',
+    ],
+    buttonText: 'Meistgewählt',
+    isHighlighted: true,
+  },
+  {
+    tier: 'Premium',
+    price: 'ab 5.000 €',
+    features: [
+      'Alles aus Business',
+      'Online Shop Option',
+      'Individuelle Funktionen',
+      'API-Integrationen',
+      'Kompletter SEO-Content',
+    ],
+    buttonText: 'Beratung buchen',
+    isHighlighted: false,
   },
 ];
 
