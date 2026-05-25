@@ -23,7 +23,11 @@
 import { onMounted, watch } from 'vue';
 
 const route = useRoute();
-const { redirectToPreferred } = useLanguageSwitcher();
+const { redirectToPreferred, isEnglish } = useLanguageSwitcher();
+
+useHead(() => ({
+  htmlAttrs: { lang: isEnglish.value ? 'en' : 'de' },
+}));
 
 onMounted(redirectToPreferred);
 watch(() => route.path, redirectToPreferred);
