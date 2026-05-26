@@ -33,14 +33,14 @@
 
           <!-- Description -->
           <p
-            class="text-black/50 text-sm leading-relaxed"
+            class="text-on-surface-variant text-sm leading-relaxed"
             :class="service.href ? 'mb-4' : ''"
           >{{ service.description }}</p>
 
           <!-- "Mehr erfahren" -->
           <div
             v-if="service.href"
-            class="flex items-center gap-1 mt-auto pt-1 text-primary/70 group-hover:text-primary transition-colors duration-200"
+            class="flex items-center gap-1 mt-auto pt-1 text-primary group-hover:text-primary/80 transition-colors duration-200"
             :class="variant === 'centered' ? 'justify-center' : ''"
           >
             <span class="text-xs font-semibold">Mehr erfahren</span>

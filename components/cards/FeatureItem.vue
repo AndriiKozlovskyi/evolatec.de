@@ -3,7 +3,7 @@
     <span class="material-symbols-outlined text-[32px] text-on-primary-container">{{ icon }}</span>
     <div>
       <h3 class="text-headline-md mb-1">{{ title }}</h3>
-      <p class="text-on-primary-container/70">{{ description }}</p>
+      <p class="text-on-primary-container">{{ description }}</p>
     </div>
   </div>
 </template>
