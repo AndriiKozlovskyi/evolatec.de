@@ -31,10 +31,14 @@
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="grid md:grid-cols-2 gap-stack-lg items-center">
           <div class="relative rounded-2xl overflow-hidden h-80 shadow-2xl">
-            <img
+            <NuxtImg
               src="/landing/seo.webp"
               alt="Website Performance Optimierung"
               class="w-full h-full object-cover"
+              width="840"
+              height="560"
+              sizes="100vw md:576px"
+              loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent"></div>
             <div class="absolute bottom-6 left-6 bg-white rounded-xl px-4 py-3 shadow-lg flex items-center gap-3">
