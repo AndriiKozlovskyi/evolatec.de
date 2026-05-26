@@ -11,22 +11,6 @@
       :stats="geoStats"
     />
 
-    <!-- AI Growth Stats Bar -->
-    <section class="hidden sm:flexpy-10 bg-primary text-on-primary">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x md:divide-white/20 text-center">
-          <div v-for="stat in growthStats" :key="stat.label" class="px-4">
-            <div class="flex items-center justify-center gap-2 mb-1">
-              <span class="material-symbols-outlined text-xl">{{ stat.icon }}</span>
-              <span class="text-3xl md:text-4xl font-black">{{ stat.value }}</span>
-            </div>
-            <p class="text-sm font-semibold">{{ stat.label }}</p>
-            <p class="text-xs text-on-primary-container mt-0.5">{{ stat.sublabel }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- What is GEO -->
     <section class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">

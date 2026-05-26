@@ -44,15 +44,6 @@
               </svg>
               LinkedIn
             </a>
-            <a
-              href="https://evola-tec.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors"
-            >
-              <span class="material-symbols-outlined text-base">open_in_new</span>
-              evola-tec.com
-            </a>
           </div>
         </div>
 
