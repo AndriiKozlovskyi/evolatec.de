@@ -22,9 +22,9 @@
             :src="imageUrl"
             :alt="imageAlt"
             format="avif,webp"
-            sizes="xs:100vw sm:100vw md:100vw lg:50vw xl:50vw xxl:50vw"
-            :width="1000"
-            :height="700"
+            sizes="xs:360px sm:640px md:640px lg:640px xl:640px xxl:640px"
+            :width="640"
+            :height="450"
             :img-attrs="{ loading: 'lazy', decoding: 'async', class: 'absolute inset-0 w-full h-full object-cover' }"
           />
         </div>

@@ -16,9 +16,9 @@
             :src="image"
             :alt="imageAlt"
             format="avif,webp"
-            sizes="xs:100vw sm:100vw md:50vw lg:50vw xl:50vw xxl:50vw"
-            :width="900"
-            :height="600"
+            sizes="xs:360px sm:640px md:50vw lg:640px xl:640px xxl:640px"
+            :width="640"
+            :height="427"
             :img-attrs="{
               loading: 'lazy',
               decoding: 'async',
