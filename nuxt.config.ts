@@ -42,6 +42,8 @@ export default defineNuxtConfig({
     download: true,
 
     inject: true,
+
+    fontsPath: '/fonts',
   },
 
   tailwindcss: {
@@ -82,6 +84,30 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
+        {
+          rel: 'preload',
+          href: '/fonts/Inter-normal-400-latin.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: 'anonymous',
+        },
+
+        {
+          rel: 'preload',
+          href: '/fonts/Inter-normal-800-latin.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: 'anonymous',
+        },
+
+        {
+          rel: 'preload',
+          href: '/fonts/material-symbols-outlined.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: 'anonymous',
+        },
+
         {
           rel: 'icon',
           type: 'image/png',
