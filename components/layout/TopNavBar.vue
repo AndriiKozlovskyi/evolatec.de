@@ -6,7 +6,16 @@
     <div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
       <!-- Logo -->
       <a :href="isEnglish ? '/en' : '/'" class="flex flex-row gap-3 items-center hover:opacity-80 transition-opacity duration-200 brightness-[0.8]">
-        <img src="/logo.webp" alt="EvolaTec Logo" width="36" height="36" class="h-9 w-9" loading="eager" />
+        <NuxtImg
+          src="/logo.webp"
+          width="36"
+          height="36"
+          densities="x1 x2"
+          format="webp"
+          preload
+          fetchpriority="high"
+          alt="EvolaTec Logo"
+        />        
         <span class="font-display text-headline-md font-bold tracking-tighter text-primary sm:inline">EvolaTec</span>     
       </a>
 
