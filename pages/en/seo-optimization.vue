@@ -74,7 +74,7 @@
       title="Get Your Website Professionally Optimised"
       description="Sustainably improve the speed, SEO performance and technical foundation of your website."
       primary-cta="Optimise My Website"
-      secondary-cta="Get a Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

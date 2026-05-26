@@ -90,7 +90,7 @@
       title="Professional Web Design for Your Business"
       description="EvolaTec develops modern websites, strong brand identities and conversion-focused digital experiences."
       primary-cta="Request Web Design"
-      secondary-cta="Get a Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

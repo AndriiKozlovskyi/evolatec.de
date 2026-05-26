@@ -127,7 +127,7 @@
       title="More Visibility, More Leads, More Growth"
       description="EvolaTec develops modern online marketing strategies for businesses that want to grow digitally."
       primary-cta="Start Your Marketing Project"
-      secondary-cta="Get a Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

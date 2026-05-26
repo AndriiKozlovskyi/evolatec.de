@@ -6,7 +6,7 @@
       title="Online Shop Development – Your Professional E-Commerce Store"
       description="We develop e-commerce platforms with the precision of modern architecture. Scalable, secure and optimised for maximum conversion."
       primaryCTA="Get a Free Consultation"
-      secondaryCTA="Our Solutions"
+      secondaryCTA="View Pricing"
       :stats="heroStats"
     />
 

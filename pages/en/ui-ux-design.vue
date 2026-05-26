@@ -56,7 +56,7 @@
       title="Professional UI/UX Design for Modern Digital Products"
       description="EvolaTec develops modern interfaces, strong user experiences and high-converting designs for businesses, start-ups and digital platforms."
       primary-cta="Start UI/UX Project"
-      secondary-cta="Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

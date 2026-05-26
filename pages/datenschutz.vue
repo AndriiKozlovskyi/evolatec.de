@@ -151,16 +151,23 @@
         <!-- 4 -->
         <h2 id="datenerfassung" class="legal-h2"><span class="legal-num">4</span>Datenerfassung auf dieser Website</h2>
 
-        <h3 class="legal-h3">Cookies</h3>
-        <p class="legal-p">Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht.</p>
-        <p class="legal-p">Cookies können von uns (First-Party-Cookies) oder von Drittunternehmen stammen (Third-Party-Cookies). Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Sofern eine Einwilligung zur Speicherung von Cookies abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit widerrufbar.</p>
+        <h3 class="legal-h3">Cookies und vergleichbare Speichertechnologien</h3>
+        <p class="legal-p">Unsere Website verwendet so genannte „Cookies“ sowie vergleichbare Speichertechnologien (z. B. localStorage). Cookies sind kleine Datenpakete, die auf Ihrem Endgerät gespeichert werden, und richten dort keinen Schaden an. Sie können vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) gespeichert werden.</p>
+        <p class="legal-p">Wir setzen ausschließlich First-Party-Cookies ein. Es werden keine Cookies von Drittanbietern (Third-Party-Cookies) gesetzt. Technisch notwendige Cookies werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert; alle übrigen Cookies werden nur mit Ihrer ausdrücklichen Einwilligung gesetzt (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG). Die Einwilligung ist jederzeit für die Zukunft widerrufbar.</p>
 
-        <h3 class="legal-h3">Consent-Management mit Cookiebot</h3>
-        <p class="legal-p">Diese Website nutzt den Consent-Management-Dienst Cookiebot der Usercentrics A/S, Havnegade 39, 1058 Kopenhagen, Dänemark. Beim Aufruf der Website wird Ihre Einwilligung zur Speicherung bestimmter Cookies eingeholt bzw. der Widerruf einer bereits erteilten Einwilligung ermöglicht. Cookiebot speichert hierzu einen Cookie, um Ihre Einwilligungseinstellungen zu dokumentieren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. c DSGVO sowie unser berechtigtes Interesse an einem rechtskonformen Einsatz von Cookies (Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen finden Sie in der <a href="https://www.cookiebot.com/de/privacy-policy/" target="_blank" rel="noopener" class="legal-a">Datenschutzerklärung von Cookiebot</a>.</p>
-        <p class="legal-p">Ihre Einwilligung können Sie jederzeit über das Cookie-Symbol bzw. den Cookie-Banner anpassen oder widerrufen.</p>
+        <h3 class="legal-h3">Cookie-Einwilligung &amp; Einstellungen</h3>
+        <p class="legal-p">Diese Website nutzt eine eigene, in der Website integrierte Lösung zum Einholen und Verwalten Ihrer Cookie-Einwilligung. Es handelt sich um keinen externen Drittanbieter-Dienst — sämtliche Einstellungen werden ausschließlich lokal auf Ihrem Endgerät gespeichert. Es findet keine Übermittlung Ihrer Einwilligungs-Einstellungen an Dritte statt.</p>
+        <p class="legal-p">Beim ersten Besuch der Website wird Ihnen ein Cookie-Banner angezeigt, über das Sie folgende Kategorien einzeln auswählen können:</p>
+        <ul class="legal-ul">
+          <li><strong class="text-on-surface">Notwendig</strong> – technisch erforderliche Cookies, ohne die die Website nicht funktioniert (z. B. Speicherung Ihrer Einwilligungs-Einstellungen, Sprachauswahl). Diese sind nicht abwählbar.</li>
+          <li><strong class="text-on-surface">Analyse</strong> – Cookies zur statistischen Auswertung der Websitenutzung. Derzeit kommt kein Analyse-Tool zum Einsatz; bei künftiger Aktivierung würden entsprechende Cookies nur nach Ihrer Einwilligung geladen.</li>
+          <li><strong class="text-on-surface">Marketing</strong> – Cookies zur personalisierten Werbung und zum Tracking. Derzeit kommt kein Marketing-Tool zum Einsatz; bei künftiger Aktivierung würden entsprechende Cookies nur nach Ihrer Einwilligung geladen.</li>
+        </ul>
+        <p class="legal-p">Ihre Auswahl wird in einem First-Party-Cookie (<code class="bg-surface-container-low px-1.5 py-0.5 rounded text-xs font-mono">evolatec-cookie-consent</code>) mit Zeitstempel und Versionsnummer für maximal ein Jahr gespeichert. Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Footer der Website ändern oder vollständig widerrufen. Rechtsgrundlage für die Verarbeitung der Einwilligungs-Daten ist Art. 6 Abs. 1 lit. c DSGVO (gesetzliche Nachweispflicht) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem rechtskonformen Einsatz von Cookies).</p>
 
         <h3 class="legal-h3">Cookie-Übersicht</h3>
-        <p class="legal-p">Eine aktuelle Übersicht aller auf dieser Website eingesetzten Cookies finden Sie jederzeit im Cookie-Banner. Klicken Sie unten auf dieser Seite auf das Cookie-Symbol bzw. den Link „Cookies-Einstellungen“, um die Liste einzusehen, Ihre Einwilligungen anzupassen oder zu widerrufen.</p>
+        <p class="legal-p">Die folgende Übersicht zeigt alle auf dieser Website eingesetzten Cookies sowie Ihren aktuellen Einwilligungs-Status. Über die Schaltfläche „Ändern“ können Sie Ihre Einstellungen jederzeit anpassen.</p>
+        <CookieDeclaration class="mt-3" />
 
         <h3 class="legal-h3">Kontaktformular (Netlify Forms)</h3>
         <p class="legal-p">Wenn Sie uns über das Kontaktformular auf unserer Website kontaktieren, werden folgende Daten erhoben: Name, E-Mail-Adresse, Ihre Nachricht sowie ggf. Telefonnummer und weitere von Ihnen angegebene Informationen. Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.</p>

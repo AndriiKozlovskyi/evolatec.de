@@ -528,7 +528,7 @@
       title="Get Your Website Professionally Built"
       description="Modern websites that win customers and grow your business."
       primary-cta="Get a Free Consultation"
-      secondary-cta="Discuss Your Project"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

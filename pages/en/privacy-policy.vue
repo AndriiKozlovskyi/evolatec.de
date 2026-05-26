@@ -151,16 +151,23 @@
         <!-- 4 -->
         <h2 id="datacollection" class="legal-h2"><span class="legal-num">4</span>Data Collection on This Website</h2>
 
-        <h3 class="legal-h3">Cookies</h3>
-        <p class="legal-p">Our websites use so-called "cookies". Cookies are small data packages and do not cause any damage to your device. They are stored either temporarily for the duration of a session (session cookies) or permanently (permanent cookies) on your device. Session cookies are automatically deleted after your visit.</p>
-        <p class="legal-p">Cookies may come from us (first-party cookies) or from third-party companies (third-party cookies). Cookies that are necessary for the electronic communication process (necessary cookies) are stored on the basis of Art. 6(1)(f) GDPR. If consent to the storage of cookies has been requested, processing takes place exclusively on the basis of this consent (Art. 6(1)(a) GDPR); consent can be revoked at any time.</p>
+        <h3 class="legal-h3">Cookies and Comparable Storage Technologies</h3>
+        <p class="legal-p">Our website uses so-called "cookies" and comparable storage technologies (e.g. localStorage). Cookies are small data packages stored on your device and do not cause any damage. They can be stored temporarily for the duration of a session (session cookies) or permanently (persistent cookies).</p>
+        <p class="legal-p">We use first-party cookies exclusively. No third-party cookies are set. Technically necessary cookies are stored on the basis of Art. 6(1)(f) GDPR; all other cookies are only set with your explicit consent (Art. 6(1)(a) GDPR). Consent can be revoked at any time with future effect.</p>
 
-        <h3 class="legal-h3">Consent Management with Cookiebot</h3>
-        <p class="legal-p">This website uses the consent management service Cookiebot by Usercentrics A/S, Havnegade 39, 1058 Copenhagen, Denmark. When you visit the website, your consent to the storage of certain cookies is obtained or the revocation of a previously given consent is made possible. Cookiebot stores a cookie to document your consent settings. The legal basis is Art. 6(1)(c) GDPR and our legitimate interest in the legally compliant use of cookies (Art. 6(1)(f) GDPR). Further information can be found in <a href="https://www.cookiebot.com/en/privacy-policy/" target="_blank" rel="noopener" class="legal-a">Cookiebot's privacy policy</a>.</p>
-        <p class="legal-p">You can adjust or revoke your consent at any time via the cookie icon or cookie banner.</p>
+        <h3 class="legal-h3">Cookie Consent &amp; Preferences</h3>
+        <p class="legal-p">This website uses an in-house consent solution integrated directly into the site to collect and manage your cookie consent. No external third-party service is used — all settings are stored locally on your device only. Your consent preferences are not transmitted to any third party.</p>
+        <p class="legal-p">On your first visit, a cookie banner is displayed where you can individually select the following categories:</p>
+        <ul class="legal-ul">
+          <li><strong class="text-on-surface">Necessary</strong> – technically required cookies without which the website cannot function (e.g. storing your consent settings, language selection). These cannot be deselected.</li>
+          <li><strong class="text-on-surface">Analytics</strong> – cookies for statistical analysis of website usage. No analytics tool is currently in use; if activated in the future, such cookies would only be loaded after your consent.</li>
+          <li><strong class="text-on-surface">Marketing</strong> – cookies for personalised advertising and tracking. No marketing tool is currently in use; if activated in the future, such cookies would only be loaded after your consent.</li>
+        </ul>
+        <p class="legal-p">Your selection is stored in a first-party cookie (<code class="bg-surface-container-low px-1.5 py-0.5 rounded text-xs font-mono">evolatec-cookie-consent</code>) with timestamp and version number for a maximum of one year. You can change or fully revoke your consent at any time via the "Cookie settings" link in the website footer. The legal basis for processing the consent data is Art. 6(1)(c) GDPR (statutory documentation obligation) and Art. 6(1)(f) GDPR (legitimate interest in compliant cookie usage).</p>
 
         <h3 class="legal-h3">Cookie Overview</h3>
-        <p class="legal-p">A current overview of all cookies used on this website is available at any time via the cookie banner. Click the cookie icon or "Cookie settings" link to view the list, adjust your consent or revoke it.</p>
+        <p class="legal-p">The following overview shows all cookies used on this website as well as your current consent status. Use the "Change" button to adjust your preferences at any time.</p>
+        <CookieDeclaration class="mt-3" />
 
         <h3 class="legal-h3">Contact Form (Netlify Forms)</h3>
         <p class="legal-p">If you contact us via the contact form on our website, the following data is collected: name, e-mail address, your message and, if applicable, telephone number and any other information you provide. This data is used exclusively to process your enquiry.</p>

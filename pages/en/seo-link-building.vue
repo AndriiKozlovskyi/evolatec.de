@@ -43,7 +43,7 @@
       title="Strengthen Your SEO Authority"
       description="Professional backlink building for better rankings and more visibility on Google."
       primary-cta="Start Link Building"
-      secondary-cta="Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

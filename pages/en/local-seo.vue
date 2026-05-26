@@ -72,7 +72,7 @@
       title="Win More Local Customers"
       description="Become visible in your region on Google and win more enquiries."
       primary-cta="Start Local SEO"
-      secondary-cta="Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

@@ -58,7 +58,7 @@
       title="Build a Strong Brand with EvolaTec"
       description="Professional branding, modern corporate design and strategic brand development for businesses, start-ups and digital projects."
       primary-cta="Start Branding Project"
-      secondary-cta="Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

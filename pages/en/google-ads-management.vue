@@ -91,7 +91,7 @@
       title="More Customers through Professional Google Advertising"
       description="EvolaTec develops Google Ads campaigns that create visibility, generate leads and help businesses grow."
       primary-cta="Start Google Ads"
-      secondary-cta="Get a Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

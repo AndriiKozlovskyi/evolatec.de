@@ -59,7 +59,7 @@
       title="Get Your Website Professionally Analysed"
       description="Find out why your website isn't ranking optimally on Google — and what to do about it."
       primary-cta="Request SEO Analysis"
-      secondary-cta="Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

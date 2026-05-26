@@ -50,7 +50,7 @@
       title="Professional Website Copy for More Customers & Better Rankings"
       description="Get professional website copy written that sells, builds trust and ranks on Google."
       primary-cta="Request Content"
-      secondary-cta="Free Consultation"
+      secondary-cta="View Pricing"
     />
   </div>
 </template>

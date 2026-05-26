@@ -167,7 +167,7 @@
             <BaseButton variant="secondary" size="lg">Social Media starten</BaseButton>
           </a>
           <a href="/kontakt">
-            <BaseButton variant="outline" size="lg">Kostenlos beraten lassen</BaseButton>
+            <BaseButton variant="outline" size="lg" class="!border-white/40 !text-white hover:!bg-white/10">Kostenlos beraten lassen</BaseButton>
           </a>
         </div>
       </div>

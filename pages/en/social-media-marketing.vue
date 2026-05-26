@@ -137,7 +137,7 @@
             <BaseButton variant="secondary" size="lg">Start Social Media</BaseButton>
           </NuxtLink>
           <NuxtLink to="/en/contact">
-            <BaseButton variant="outline" size="lg">Free Consultation</BaseButton>
+            <BaseButton variant="outline" size="lg" class="!border-white/40 !text-white hover:!bg-white/10">View Pricing</BaseButton>
           </NuxtLink>
         </div>
       </div>
