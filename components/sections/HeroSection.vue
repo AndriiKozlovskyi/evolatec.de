@@ -23,7 +23,7 @@
         </span>
 
         <!-- Title -->
-        <h1 class="font-display text-4xl sm:text-5xl md:text-[2.75rem] font-extrabold text-white leading-[1.1] mb-6">
+        <h1 class="font-display text-2xl sm:text-3xl md:text-[2.75rem] font-extrabold text-white leading-[1.1] mb-6">
           {{ title }}
         </h1>
 
@@ -35,10 +35,10 @@
         <!-- CTAs -->
         <div class="flex flex-col sm:flex-row gap-3 mb-14">
           <a href="/kontakt" class="w-full sm:w-auto">
-            <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">{{ primaryCTA }}</BaseButton>
+            <BaseButton variant="secondary" size="md" class="w-full sm:w-auto">{{ primaryCTA }}</BaseButton>
           </a>
           <a href="/webseite-kosten-kalkulator" class="w-full sm:w-auto">
-            <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/30 !text-white hover:!bg-white/10">
+            <BaseButton variant="outline" size="md" class="w-full sm:w-auto !border-white/30 !text-white hover:!bg-white/10">
               {{ secondaryCTA }}
             </BaseButton>
           </a>
