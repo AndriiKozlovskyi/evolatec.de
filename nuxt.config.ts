@@ -70,6 +70,19 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id: string) {
+            if (id.includes('@storyblok')) return 'vendor-storyblok';
+            if (id.includes('node_modules')) return 'vendor';
+          },
+        },
+      },
+    },
+  },
+
   components: {
     dirs: [
       {
