@@ -303,7 +303,7 @@ const navLinks = computed(() => {
     },
     {
       id: 4,
-      label: en ? 'Design & Content' : 'Design & Content',
+      label: en ? 'Design' : 'Design',
       href: en ? '/en/web-design' : '/webdesign',
       isActive: false,
       icon: 'edit_document',
@@ -315,7 +315,7 @@ const navLinks = computed(() => {
     },
     {
       id: 5,
-      label: 'Marketing',
+      label: 'Ads',
       href: en ? '/en/online-marketing' : '/online-marketing',
       isActive: false,
       icon: 'campaign',
@@ -324,7 +324,9 @@ const navLinks = computed(() => {
         { id: 5.2, label: 'Social Media', href: en ? '/en/social-media-marketing' : '/marketing-social-media' },
       ],
     },
-    { id: 6, label: en ? 'Price Calculator' : 'Preise Kalkulator', href: en ? '/en/website-cost-calculator' : '/webseite-kosten-kalkulator', isActive: false, icon: 'price_check' },
+    { id: 6, label: en ? 'Prices' : 'Preise', href: en ? '/en/website-cost-calculator' : '/webseite-kosten-kalkulator', isActive: false, icon: 'price_check' },
+    { id: 7, label: en ? 'Blog' : 'Blog', href: en ? '/en/blog' : '/blog', isActive: false, icon: 'book' },
+
   ];
 });
 </script>
