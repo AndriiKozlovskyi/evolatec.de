@@ -19,14 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
   scroll-padding-top: 5rem;
-}
-
-main > div > section,
-main > section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
 }
 
 .glass-card {
