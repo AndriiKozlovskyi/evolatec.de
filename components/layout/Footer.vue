@@ -74,7 +74,7 @@
 
       <!-- Bottom bar -->
       <div class="mt-12 pt-6 border-t border-outline-variant/30">
-        <p class="text-xs text-on-surface-variant/70 text-center sm:text-left">
+        <p class="text-xs text-on-surface-variant text-center sm:text-left">
           © {{ currentYear }} EvolaTec. Digital Architecture & Engineering.
         </p>
       </div>

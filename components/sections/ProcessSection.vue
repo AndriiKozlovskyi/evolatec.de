@@ -4,7 +4,7 @@
 
       <!-- Header -->
       <div class="text-center mb-stack-lg max-w-2xl mx-auto">
-        <span class="text-primary/60 font-semibold text-xs uppercase tracking-[0.25em] mb-3 block">Der Prozess</span>
+        <span class="text-primary font-semibold text-xs uppercase tracking-[0.25em] mb-3 block">Der Prozess</span>
         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-on-surface leading-tight">{{ title }}</h2>
       </div>
 
@@ -17,8 +17,8 @@
             class="group animate-fade-in-up flex flex-1 flex-col items-center text-center"
             :style="{ animationDelay: `${index * 70}ms` }"
           >
-            <!-- Ghost number -->
-            <span class="text-[4rem] font-black leading-none select-none tracking-tight mb-4 text-on-surface/[0.06]">
+            <!-- Ghost number (decorative only) -->
+            <span aria-hidden="true" class="text-[4rem] font-black leading-none select-none tracking-tight mb-4 text-on-surface/[0.06]">
               {{ String(index + 1).padStart(2, '0') }}
             </span>
 
@@ -26,9 +26,9 @@
             <div class="h-[2px] w-8 mb-4 rounded-full" :class="col(index).accentColor"></div>
 
             <!-- Title -->
-            <h4 class="font-semibold text-on-surface text-base mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
+            <h3 class="font-semibold text-on-surface text-base mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
               {{ step.title }}
-            </h4>
+            </h3>
 
             <!-- Description (min-height keeps each step's text block the same height across the row) -->
             <p class="text-on-surface-variant text-sm leading-relaxed lg:min-h-[4.5rem]">{{ step.description }}</p>
