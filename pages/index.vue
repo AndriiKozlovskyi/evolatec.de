@@ -352,8 +352,36 @@
           <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">Alle unsere Websites beinhalten diese Grundlagen — unabhängig vom gewählten Paket.</p>
         </div>
 
-        <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
-          <table class="w-full min-w-[560px] text-sm">
+        <!-- Mobile cards -->
+        <div class="md:hidden space-y-2.5">
+          <div v-for="(row, i) in inclusiveTable" :key="i" class="bg-white rounded-xl border border-outline-variant/30 p-4">
+            <p class="font-semibold text-on-surface text-sm mb-3">{{ row.feature }}</p>
+            <div class="grid grid-cols-3 gap-2">
+              <div class="bg-surface-container-low rounded-lg p-2.5 text-center">
+                <p class="text-[10px] font-bold uppercase tracking-wide text-on-surface-variant mb-2">Landing</p>
+                <template v-if="row.landing === true"><span class="material-symbols-outlined text-emerald-500 text-base">check_circle</span></template>
+                <template v-else-if="row.landing === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-base">remove</span></template>
+                <template v-else><span class="text-on-surface-variant text-[11px] font-medium leading-tight block">{{ row.landing }}</span></template>
+              </div>
+              <div class="bg-primary/5 rounded-lg p-2.5 text-center border border-primary/15">
+                <p class="text-[10px] font-bold uppercase tracking-wide text-primary mb-2">Firma</p>
+                <template v-if="row.firma === true"><span class="material-symbols-outlined text-emerald-500 text-base">check_circle</span></template>
+                <template v-else-if="row.firma === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-base">remove</span></template>
+                <template v-else><span class="text-primary text-[11px] font-semibold leading-tight block">{{ row.firma }}</span></template>
+              </div>
+              <div class="bg-surface-container-low rounded-lg p-2.5 text-center">
+                <p class="text-[10px] font-bold uppercase tracking-wide text-on-surface-variant mb-2">Shop</p>
+                <template v-if="row.shop === true"><span class="material-symbols-outlined text-emerald-500 text-base">check_circle</span></template>
+                <template v-else-if="row.shop === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-base">remove</span></template>
+                <template v-else><span class="text-on-surface-variant text-[11px] font-medium leading-tight block">{{ row.shop }}</span></template>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop table -->
+        <div class="hidden md:block overflow-x-auto rounded-2xl border border-outline-variant/30">
+          <table class="w-full text-sm">
             <thead>
               <tr class="bg-surface-container-low">
                 <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30 w-1/2">Leistung</th>
@@ -458,8 +486,26 @@
           <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">Wir setzen auf moderne Technologien — und das macht den messbaren Unterschied.</p>
         </div>
 
-        <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
-          <table class="w-full min-w-[480px] text-sm">
+        <!-- Mobile cards -->
+        <div class="md:hidden space-y-3">
+          <div v-for="(row, i) in techComparisonRows" :key="i" class="bg-white rounded-xl border border-outline-variant/30 p-4">
+            <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-3">{{ row.criterion }}</p>
+            <div class="grid grid-cols-2 gap-2">
+              <div class="bg-surface-container-low rounded-lg p-3 text-center">
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-on-surface-variant mb-1.5">WordPress</p>
+                <p class="text-xs text-on-surface-variant leading-snug">{{ row.wp }}</p>
+              </div>
+              <div class="bg-primary/5 rounded-lg p-3 text-center border border-primary/15">
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-primary mb-1.5">EvolaTec</p>
+                <p class="text-xs text-primary font-semibold leading-snug">{{ row.nuxt }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop table -->
+        <div class="hidden md:block overflow-x-auto rounded-2xl border border-outline-variant/30">
+          <table class="w-full text-sm">
             <thead>
               <tr class="bg-surface-container-low">
                 <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30 w-1/3">Kriterium</th>

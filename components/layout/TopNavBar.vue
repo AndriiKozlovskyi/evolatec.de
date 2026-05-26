@@ -292,14 +292,8 @@ const navLinks = computed(() => {
         { id: 3.2, label: 'Local SEO',                                       href: en ? '/en/local-seo'        : '/local-seo' },
         { id: 3.3, label: en ? 'Link Building'    : 'Linkbuilding',         href: en ? '/en/seo-link-building' : '/seo-linkbuilding' },
         { id: 3.4, label: en ? 'SEO Audit'        : 'SEO Audit & Analyse',  href: en ? '/en/seo-audit'        : '/seo-audit' },
+        { id: 3.5, label: en ? 'AI Optimierung'       : 'AI Optimization',  href: en ? '/en/ai-optimization'       : '/ai-optimierung' },
       ],
-    },
-    {
-      id: 35,
-      label: 'GEO',
-      href: en ? '/en/geo' : '/geo',
-      isActive: false,
-      icon: 'auto_awesome',
     },
     {
       id: 4,
@@ -325,8 +319,6 @@ const navLinks = computed(() => {
       ],
     },
     { id: 6, label: en ? 'Prices' : 'Preise', href: en ? '/en/website-cost-calculator' : '/webseite-kosten-kalkulator', isActive: false, icon: 'price_check' },
-    { id: 7, label: en ? 'Blog' : 'Blog', href: en ? '/en/blog' : '/blog', isActive: false, icon: 'book' },
-
   ];
 });
 </script>
