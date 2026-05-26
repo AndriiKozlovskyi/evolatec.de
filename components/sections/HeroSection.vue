@@ -23,7 +23,7 @@
         </span>
 
         <!-- Title -->
-        <h1 class="font-display text-4xl sm:text-5xl md:text-[3.75rem] font-extrabold text-white leading-[1.1] mb-6">
+        <h1 class="font-display text-4xl sm:text-5xl md:text-[2.75rem] font-extrabold text-white leading-[1.1] mb-6">
           {{ title }}
         </h1>
 
