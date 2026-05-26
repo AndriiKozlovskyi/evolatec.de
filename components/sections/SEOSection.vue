@@ -23,7 +23,15 @@
 
         <!-- Image illustration -->
         <div class="hidden md:flex justify-center items-center">
-          <img src="/seo/section.webp" alt="SEO Optimierung" class="w-full rounded-2xl object-cover" />
+          <NuxtImg
+            src="/seo/section.webp"
+            alt="SEO Optimierung"
+            class="w-full rounded-2xl object-cover"
+            width="640"
+            height="427"
+            sizes="md:50vw lg:640px xl:640px"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>

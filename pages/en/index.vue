@@ -284,12 +284,13 @@
           </div>
 
           <div class="relative">
-            <img
+            <NuxtImg
               src="/web-development/features.webp"
               alt="Laptop with professional website mockup"
               loading="lazy"
-              width="1000"
-              height="600"
+              width="640"
+              height="384"
+              sizes="100vw md:50vw lg:640px"
               class="w-full h-auto"
             />
           </div>
