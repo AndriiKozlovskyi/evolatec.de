@@ -73,17 +73,3 @@ function col(index: number) {
 }
 </script>
 
-<style scoped>
-.ghost-step {
-  height: 4rem;
-  line-height: 1;
-}
-.ghost-step::before {
-  content: attr(data-step);
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: -0.025em;
-  color: rgba(0, 0, 0, 0.06);
-  user-select: none;
-}
-</style>
