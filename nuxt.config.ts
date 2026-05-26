@@ -92,30 +92,6 @@ export default defineNuxtConfig({
 
         {
           rel: 'preload',
-          href: '/fonts/Inter-normal-500-latin.woff2',
-          as: 'font',
-          type: 'font/woff2',
-          crossorigin: 'anonymous',
-        },
-
-        {
-          rel: 'preload',
-          href: '/fonts/Inter-normal-600-latin.woff2',
-          as: 'font',
-          type: 'font/woff2',
-          crossorigin: 'anonymous',
-        },
-
-        {
-          rel: 'preload',
-          href: '/fonts/Inter-normal-700-latin.woff2',
-          as: 'font',
-          type: 'font/woff2',
-          crossorigin: 'anonymous',
-        },
-
-        {
-          rel: 'preload',
           href: '/fonts/Inter-normal-800-latin.woff2',
           as: 'font',
           type: 'font/woff2',
