@@ -5,7 +5,7 @@
       background-image="/main/hero.webp"
       badge="Web Design & Web Development Agency"
       title="Professional Website Development for Businesses"
-      description="Modern business websites, landing pages and online shops that win customers and grow your business. SEO-optimized, fast and conversion-focused."
+      description="Modern business websites, landing pages and online shops that win customers and grow your business. SEO- & GEO-optimized, fast and conversion-focused."
       primaryCTA="Get a Free Quote"
       secondaryCTA="View Pricing"
       :stats="heroStats"
@@ -41,7 +41,7 @@
 
             <div class="space-y-4 font-body-lg text-on-surface-variant leading-relaxed">
               <p>EvolaTec develops modern websites, business websites, landing pages and digital platforms for companies, startups and local service providers.</p>
-              <p>Our focus is on high-performance web development, modern UI/UX design and SEO-optimized solutions that not only look professional but deliver measurable results.</p>
+              <p>Our focus is on high-performance web development, modern UI/UX design and SEO- & GEO-optimized solutions that not only look professional but deliver measurable results.</p>
               <p>We combine modern technologies like Vue.js, Nuxt, Tailwind CSS and TypeScript to build fast, scalable and high-quality websites for modern businesses.</p>
               <p>Whether it's a business website, e-commerce platform, landing page or custom web solution — EvolaTec supports companies in their professional digital growth.</p>
             </div>
@@ -95,7 +95,7 @@
             </h2>
 
             <p class="font-body-lg text-on-surface-variant mb-10 leading-relaxed">
-              EvolaTec combines modern web design, high-performance development and SEO-optimized technologies for fast, professional and scalable websites.
+              EvolaTec combines modern web design, high-performance development and SEO- & GEO-optimized technologies for fast, professional and scalable websites.
             </p>
 
             <div class="space-y-5">
@@ -160,6 +160,22 @@
       </div>
     </section>
 
+    <!-- Proof Stats Bar -->
+    <section class="hidden sm:flex py-10 bg-primary text-on-primary">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x md:divide-white/20 text-center">
+          <div v-for="stat in proofStats" :key="stat.label" class="px-4">
+            <div class="flex items-center justify-center gap-2 mb-1">
+              <span class="material-symbols-outlined text-xl">{{ stat.icon }}</span>
+              <span class="text-3xl md:text-4xl font-black">{{ stat.value }}</span>
+            </div>
+            <p class="text-sm font-semibold">{{ stat.label }}</p>
+            <p class="text-xs text-on-primary-container mt-0.5">{{ stat.sublabel }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section data-nav-label="Services" data-nav-icon="apps" class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -192,11 +208,110 @@
       </div>
     </section>
 
+    <!-- Website Types Comparison -->
+    <section class="py-8 md:py-section-padding bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center mb-8 md:mb-stack-lg">
+          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">Which Website Solution Do I Need?</h2>
+          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">Business website, landing page or online shop — find the right solution for your goal and budget.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+          <div class="bg-white rounded-2xl p-7 border border-outline-variant/30 flex flex-col">
+            <span class="material-symbols-outlined text-primary text-[2rem] mb-4">article</span>
+            <h3 class="font-bold text-on-surface text-lg mb-2">Landing Page</h3>
+            <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">Ideal for advertising, product launches and lead generation — a focused page with a clear call to action.</p>
+            <ul class="space-y-2.5 text-sm text-on-surface-variant flex-1">
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Google Ads & Meta Ads</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Short Time-to-Market</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Maximum Conversion Rate</li>
+            </ul>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-bold text-primary">from €500</span>
+              <span class="text-xs text-on-surface-variant">from 3 days</span>
+            </div>
+          </div>
+
+          <div class="bg-primary rounded-2xl p-7 flex flex-col shadow-xl">
+            <span class="material-symbols-outlined text-white text-[2rem] mb-4">language</span>
+            <h3 class="font-bold text-white text-lg mb-2">Business Website</h3>
+            <p class="text-sm text-on-primary-container mb-5 leading-relaxed">The complete online presence for businesses — multiple pages, SEO visibility and professional design.</p>
+            <ul class="space-y-2.5 text-sm text-on-primary-container flex-1">
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Company Presentation</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Long-term SEO Visibility</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Multiple Pages & CMS</li>
+            </ul>
+            <div class="mt-6 pt-4 border-t border-white/20 flex items-center justify-between">
+              <span class="font-bold text-white">from €1,500</span>
+              <span class="text-xs text-on-primary-container">from 7 days</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-7 border border-outline-variant/30 flex flex-col">
+            <span class="material-symbols-outlined text-primary text-[2rem] mb-4">shopping_bag</span>
+            <h3 class="font-bold text-on-surface text-lg mb-2">Online Shop</h3>
+            <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">For businesses that want to sell products or services online — with Shopify or a custom shop.</p>
+            <ul class="space-y-2.5 text-sm text-on-surface-variant flex-1">
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Product Management & Variants</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Secure Payment Processing</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Shopify or Custom Solution</li>
+            </ul>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-bold text-primary">from €3,000</span>
+              <span class="text-xs text-on-surface-variant">from 14 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included? -->
+    <section class="py-8 md:py-section-padding bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center mb-8 md:mb-stack-lg">
+          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">What's Included With Every Website?</h2>
+          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">Every website we build includes these fundamentals — regardless of the package chosen.</p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
+          <table class="w-full min-w-[560px] text-sm">
+            <thead>
+              <tr class="bg-surface-container-low">
+                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30 w-1/2">Feature</th>
+                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Landing Page</th>
+                <th class="text-center p-4 font-bold text-primary bg-primary/5 border-b border-outline-variant/30">Business Website</th>
+                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Online Shop</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(row, i) in inclusiveTable" :key="i" :class="i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low/40'">
+                <td class="p-4 text-on-surface font-medium">{{ row.feature }}</td>
+                <td class="p-4 text-center">
+                  <template v-if="row.landing === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
+                  <template v-else-if="row.landing === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
+                  <template v-else><span class="text-on-surface-variant text-xs">{{ row.landing }}</span></template>
+                </td>
+                <td class="p-4 text-center bg-primary/5">
+                  <template v-if="row.firma === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
+                  <template v-else-if="row.firma === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
+                  <template v-else><span class="text-primary font-semibold text-xs">{{ row.firma }}</span></template>
+                </td>
+                <td class="p-4 text-center">
+                  <template v-if="row.shop === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
+                  <template v-else-if="row.shop === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
+                  <template v-else><span class="text-on-surface-variant text-xs">{{ row.shop }}</span></template>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- Process Section -->
     <ProcessSection
       data-nav-label="Process"
       data-nav-icon="route"
-      title="How We Work"
+      title="How We Build Your Website — 4 Steps"
       :steps="processSteps"
     />
 
@@ -255,6 +370,37 @@
       </div>
     </section>
 
+    <!-- Technology Comparison: Nuxt vs WordPress -->
+    <section class="py-8 md:py-section-padding bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center mb-8 md:mb-stack-lg">
+          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">Why Not WordPress?</h2>
+          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">We rely on modern technologies — and that makes a measurable difference.</p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
+          <table class="w-full min-w-[480px] text-sm">
+            <thead>
+              <tr class="bg-surface-container-low">
+                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30 w-1/3">Criterion</th>
+                <th class="text-center p-4 font-bold text-on-surface-variant border-b border-outline-variant/30">WordPress</th>
+                <th class="text-center p-4 font-bold text-primary bg-primary/5 border-b border-outline-variant/30">EvolaTec (Nuxt)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(row, i) in techComparisonRows" :key="i" :class="i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low/40'">
+                <td class="p-4 font-semibold text-on-surface">{{ row.criterion }}</td>
+                <td class="p-4 text-center text-on-surface-variant">{{ row.wp }}</td>
+                <td class="p-4 text-center text-primary font-semibold bg-primary/5">{{ row.nuxt }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-center text-xs text-on-surface-variant mt-4">Values based on real measurements with Google Lighthouse / PageSpeed Insights.</p>
+      </div>
+    </section>
+
     <!-- Solutions Section -->
     <section data-nav-label="Solutions" data-nav-icon="category" class="py-8 md:py-section-padding bg-surface border-y border-outline-variant/40">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -267,7 +413,7 @@
             </p>
 
             <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
-              Our websites are SEO-optimized, mobile-friendly and designed for conversion. Whether a small business website, landing page for advertising or complex online shop — we develop individual solutions for businesses across Europe.
+              Our websites are SEO- & GEO-optimized, mobile-friendly and designed for conversion. Whether a small business website, landing page for advertising or complex online shop — we develop individual solutions for businesses across Europe.
             </p>
 
             <div class="pt-6 md:pt-8 flex flex-col sm:flex-wrap sm:flex-row gap-3 sm:gap-4">
@@ -298,6 +444,75 @@
       </div>
     </section>
 
+    <!-- GEO Section -->
+    <section class="py-8 md:py-section-padding bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-stack-lg items-start">
+
+          <!-- Left: copy -->
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
+              <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+              Generative Engine Optimization
+            </span>
+
+            <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight mb-4">
+              GEO: Visible in ChatGPT, Gemini &amp; Co.
+            </h2>
+
+            <p class="text-on-surface-variant leading-relaxed mb-4">
+              Traditional SEO targets Google. <strong class="text-on-surface">GEO — Generative Engine Optimization</strong> — optimizes your website for the next generation of AI-powered search engines like ChatGPT, Google Gemini, Perplexity and Claude.
+            </p>
+
+            <p class="text-on-surface-variant leading-relaxed mb-8">
+              More and more people ask their purchase decisions directly to AI assistants. If your business doesn't appear there, you lose inquiries to competitors who are already GEO-optimized.
+            </p>
+
+            <ul class="space-y-3 mb-8">
+              <li v-for="point in geoPoints" :key="point" class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg flex-shrink-0">check_circle</span>
+                <span class="text-sm text-on-surface">{{ point }}</span>
+              </li>
+            </ul>
+
+            <div class="inline-flex items-center gap-2 text-sm font-semibold text-primary bg-primary/8 border border-primary/15 rounded-xl px-5 py-3">
+              <span class="material-symbols-outlined text-lg">verified</span>
+              GEO optimization is included with every website — no extra charge
+            </div>
+          </div>
+
+          <!-- Right: visual cards -->
+          <div class="space-y-4">
+            <div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30">
+              <p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mb-4">AI search engines we optimize for</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="ai in aiEngines"
+                  :key="ai"
+                  class="px-3 py-1.5 bg-white rounded-full border border-outline-variant/30 text-sm font-semibold text-on-surface shadow-sm"
+                >{{ ai }}</span>
+              </div>
+            </div>
+
+            <div
+              v-for="benefit in geoBenefits"
+              :key="benefit.title"
+              class="bg-white rounded-xl p-5 border border-outline-variant/20 flex items-start gap-4"
+            >
+              <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-lg">{{ benefit.icon }}</span>
+              </div>
+              <div>
+                <p class="font-semibold text-on-surface text-sm">{{ benefit.title }}</p>
+                <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">{{ benefit.desc }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ Section -->
     <FAQSection
       data-nav-label="FAQ"
@@ -319,161 +534,83 @@
 </template>
 
 <script setup lang="ts">
+import { buildSchema, organizationSchema, websiteSchema, pageSchema, serviceListSchema } from '~/composables/schema/global'
+import { faqSchema, type FAQ } from '~/composables/schema/service'
+
 const { hreflangLinks } = useLanguageSwitcher()
 
-const schemaMarkup = {
+const homeFaqs: FAQ[] = [
+  {
+    question: 'How much does a professional website cost?',
+    answer: 'Landing pages start from €500, professional business websites from €1,500, online shops from €3,000 and Premium E-Commerce from €6,000. Since every project is different, we provide a transparent fixed-price quote before the project starts. You can also use our pricing calculator for a quick estimate.',
+  },
+  {
+    question: 'How long does website development take?',
+    answer: 'Landing pages are live from 3 working days, business websites from 7 working days, online shops from 14 working days. The exact timeframe depends on scope and how quickly content is provided.',
+  },
+  {
+    question: 'Is SEO and GEO included with the website?',
+    answer: 'Yes, basic SEO and GEO optimization are included in every project: clean code structure, fast loading times, mobile optimisation, correct meta data, and structured data markup (Schema.org) for AI search engines like ChatGPT, Gemini and Perplexity. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages from €300/month.',
+  },
+  {
+    question: 'Which services does EvolaTec offer?',
+    answer: 'EvolaTec offers web design and development (landing pages, business websites, online shops), SEO & GEO optimization (audit, technical optimisation, Local SEO, link building), online marketing (Google Ads, Meta Ads), branding, UI/UX design and website copy – all from a single source.',
+  },
+  {
+    question: 'Do you develop Shopify shops and custom online shops?',
+    answer: 'Yes, we develop modern Shopify shops and custom e-commerce solutions with frameworks like Nuxt. Whether fast market launch with Shopify or complex custom solutions – we choose the platform that fits your use case.',
+  },
+  {
+    question: 'Are there fixed prices for websites?',
+    answer: 'Yes, we work with transparent fixed prices. You know from the start what your website costs – there are no hidden costs during development.',
+  },
+  {
+    question: 'What is included after the website launch?',
+    answer: 'Many of our web development packages include a support phase after launch. On request we also handle ongoing SEO management, marketing campaigns and maintenance so your website stays competitive long-term.',
+  },
+  {
+    question: 'What is the difference between a landing page and a business website?',
+    answer: "A landing page is a single, focused page with one clear goal — for example, collecting leads or promoting a product. It's ideal for ad campaigns. A business website consists of multiple pages (home, services, about, contact) and serves as your company's complete online presence. For long-term SEO visibility, the business website is the better choice; for fast conversion campaigns, the landing page.",
+  },
+  {
+    question: 'How do I choose the right web agency?',
+    answer: 'Look for: (1) proven references with measurable results, (2) transparent fixed prices without hidden costs, (3) technical expertise in performance, SEO & GEO, (4) clear communication and dedicated contacts. Agencies working with modern technologies (Vue, Nuxt, Tailwind) typically deliver faster and lower-maintenance websites than WordPress-based providers.',
+  },
+  {
+    question: 'Do I absolutely need WordPress for my website?',
+    answer: "No. WordPress is widespread, but not automatically the best choice. For many businesses, modern headless solutions like Nuxt.js with a CMS like Storyblok are superior: faster load times, better Core Web Vitals, fewer security vulnerabilities through plugins and lower maintenance effort. We're happy to advise you on which technology best fits your use case.",
+  },
+]
+
+const schemaMarkup = buildSchema(
+  organizationSchema(),
+  websiteSchema(),
+  pageSchema({
+    url: 'https://evolatec.de/en',
+    name: 'EvolaTec – Web Agency for Website, SEO & Online Marketing',
+    description: 'EvolaTec is your professional web agency for website development, SEO & GEO optimization and online marketing. Modern websites from 3 days delivery time.',
+  }),
+  serviceListSchema([
+    { name: 'Landing Page Design', description: 'Conversion-focused one-pagers for advertising and lead generation.', url: 'https://evolatec.de/en/landing-page-design', minPrice: 500 },
+    { name: 'Business Website Design', description: 'Professional company websites for local businesses and enterprises.', url: 'https://evolatec.de/en/business-website-design', minPrice: 1500 },
+    { name: 'Online Shop Development', description: 'Modern e-commerce solutions and Shopify shops.', url: 'https://evolatec.de/en/online-shop-development', minPrice: 3000 },
+    { name: 'SEO Optimization', description: 'More visibility on Google and sustainable growth.', url: 'https://evolatec.de/en/seo-optimization', minPrice: 300 },
+    { name: 'Google Ads Management', description: 'More customer inquiries through targeted advertising campaigns.', url: 'https://evolatec.de/en/google-ads-management', minPrice: 400 },
+  ]),
+  faqSchema(homeFaqs),
+)
+
+const howToSchema = {
   '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': ['Organization', 'ProfessionalService'],
-      '@id': 'https://evolatec.de/#organization',
-      name: 'EvolaTec',
-      url: 'https://evolatec.de',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://evolatec.de/logo.webp',
-      },
-      description: 'EvolaTec is a professional web agency for website development, SEO optimization and online marketing in Europe.',
-      areaServed: [
-        { '@type': 'Country', name: 'Germany' },
-        { '@type': 'Country', name: 'Austria' },
-        { '@type': 'Country', name: 'Switzerland' },
-      ],
-      contactPoint: {
-        '@type': 'ContactPoint',
-        contactType: 'customer service',
-        url: 'https://evolatec.de/en/contact',
-        availableLanguage: [
-          { '@type': 'Language', name: 'German' },
-          { '@type': 'Language', name: 'English' },
-        ],
-      },
-    },
-    {
-      '@type': 'WebSite',
-      '@id': 'https://evolatec.de/#website',
-      name: 'EvolaTec',
-      url: 'https://evolatec.de',
-      description: 'Professional web agency for website development, SEO optimization and online marketing',
-      publisher: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'en-US',
-    },
-    {
-      '@type': 'WebPage',
-      '@id': 'https://evolatec.de/en/#webpage',
-      url: 'https://evolatec.de/en',
-      name: 'EvolaTec – Web Agency for Website, SEO & Online Marketing',
-      description: 'EvolaTec is your professional web agency for website development, SEO optimization and online marketing. Modern websites from 3 days delivery time.',
-      isPartOf: { '@id': 'https://evolatec.de/#website' },
-      about: { '@id': 'https://evolatec.de/#organization' },
-      inLanguage: 'en-US',
-    },
-    {
-      '@type': 'ItemList',
-      name: 'EvolaTec Services',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          item: {
-            '@type': 'Service',
-            name: 'Landing Page Design',
-            description: 'Conversion-focused one-pagers for advertising and lead generation.',
-            url: 'https://evolatec.de/en/landing-page-design',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '500', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          item: {
-            '@type': 'Service',
-            name: 'Business Website Design',
-            description: 'Professional company websites for local businesses and enterprises.',
-            url: 'https://evolatec.de/en/business-website-design',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1500', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          item: {
-            '@type': 'Service',
-            name: 'Online Shop Development',
-            description: 'Modern e-commerce solutions and Shopify shops.',
-            url: 'https://evolatec.de/en/online-shop-development',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '3000', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          item: {
-            '@type': 'Service',
-            name: 'SEO Optimization',
-            description: 'More visibility on Google and sustainable growth.',
-            url: 'https://evolatec.de/en/seo-optimization',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '300', priceCurrency: 'EUR' } },
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 5,
-          item: {
-            '@type': 'Service',
-            name: 'Google Ads Management',
-            description: 'More customer inquiries through targeted advertising campaigns.',
-            url: 'https://evolatec.de/en/google-ads-management',
-            provider: { '@id': 'https://evolatec.de/#organization' },
-            offers: { '@type': 'Offer', priceSpecification: { '@type': 'PriceSpecification', minPrice: '400', priceCurrency: 'EUR' } },
-          },
-        },
-      ],
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'How much does a professional website cost?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Landing pages start from €500, professional business websites from €1,500, online shops from €3,000 and Premium E-Commerce from €6,000. Since every project is different, we provide a transparent fixed-price quote before the project starts. You can also use our pricing calculator for a quick estimate.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'How long does website development take?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Landing pages are live from 3 working days, business websites from 7 working days, online shops from 14 working days. The exact timeframe depends on scope and how quickly content is provided.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Is SEO included with the website?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, basic SEO is included in every project: clean code structure, fast loading times, mobile optimisation and correct meta data. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages from €300/month.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Which services does EvolaTec offer?',
-          acceptedAnswer: { '@type': 'Answer', text: 'EvolaTec offers web design and development (landing pages, business websites, online shops), SEO (audit, technical optimisation, Local SEO, link building), online marketing (Google Ads, Meta Ads), branding, UI/UX design and website copy – all from a single source.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Do you develop Shopify shops and custom online shops?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we develop modern Shopify shops and custom e-commerce solutions with frameworks like Nuxt. Whether fast market launch with Shopify or complex custom solutions – we choose the platform that fits your use case.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Are there fixed prices for websites?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we work with transparent fixed prices. You know from the start what your website costs – there are no hidden costs during development.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'What is included after the website launch?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Many of our web development packages include a support phase after launch. On request we also handle ongoing SEO management, marketing campaigns and maintenance so your website stays competitive long-term.' },
-        },
-      ],
-    },
+  '@type': 'HowTo',
+  name: 'How to Get a Professional Website: 4 Steps',
+  description: 'How professional website creation works at EvolaTec — from initial consultation to go-live.',
+  totalTime: 'P7D',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Free Consultation', text: 'We discuss your requirements, goals and budget in a no-obligation initial meeting.' },
+    { '@type': 'HowToStep', position: 2, name: 'Structure & Design', text: 'Planning the page structure and design according to modern UI/UX standards and your brand identity.' },
+    { '@type': 'HowToStep', position: 3, name: 'Development, SEO & GEO', text: 'Professional technical implementation with Vue.js, Nuxt, full on-page SEO and GEO markup for AI search engines.' },
+    { '@type': 'HowToStep', position: 4, name: 'Launch & Optimization', text: 'Thorough testing on all devices, go-live and handover with optional ongoing support.' },
   ],
 }
 
@@ -481,10 +618,10 @@ useHead({
   title: 'EvolaTec – Web Agency for Website, SEO & Online Marketing',
   htmlAttrs: { lang: 'en' },
   meta: [
-    { name: 'description', content: 'EvolaTec is your professional web agency for website development, SEO optimization and online marketing. Modern websites from 3 days delivery time.' },
-    { name: 'keywords', content: 'web agency, website development, seo agency, online marketing agency, website design, web design agency' },
+    { name: 'description', content: 'EvolaTec is your professional web agency for website development, SEO & GEO optimization and online marketing. Modern websites from 3 days delivery time.' },
+    { name: 'keywords', content: 'web agency, website development, seo agency, geo optimization, online marketing agency, website design, web design agency' },
     { property: 'og:title', content: 'EvolaTec – Web Agency for Website, SEO & Online Marketing' },
-    { property: 'og:description', content: 'Professional websites, SEO and online marketing for businesses. Modern, fast and conversion-optimized.' },
+    { property: 'og:description', content: 'Professional websites, SEO & GEO and online marketing for businesses. Modern, fast and conversion-optimized.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://evolatec.de/en' },
     { property: 'og:locale', content: 'en_US' },
@@ -494,12 +631,15 @@ useHead({
     { rel: 'canonical', href: 'https://evolatec.de/en' },
     ...hreflangLinks.value,
   ],
-  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(howToSchema) },
+  ],
 })
 
 const heroStats = [
   { value: 'from 3 Days', label: 'Delivery Time', icon: 'flash_on' },
-  { value: '100%', label: 'SEO-ready', icon: 'search_check' },
+  { value: '100%', label: 'SEO & GEO-ready', icon: 'search_check' },
   { value: 'All Devices', label: 'Responsive Design', icon: 'smartphone' },
   { value: 'Transparent', label: 'Pricing', icon: 'verified' },
 ]
@@ -545,6 +685,22 @@ const services = [
     price: 'from €400/month',
     href: '/en/google-ads-management',
   },
+  {
+    id: 6,
+    icon: 'brush',
+    title: 'Branding & UI/UX Design',
+    description: 'Professional corporate design, logo development and user interfaces that strengthen your brand.',
+    price: 'on request',
+    href: '/en/design-branding',
+  },
+  {
+    id: 7,
+    icon: 'thumb_up',
+    title: 'Social Media Marketing',
+    description: 'Reach, community building and targeted social media campaigns for your business.',
+    price: 'from €300/month',
+    href: '/en/social-media-marketing',
+  },
 ]
 
 const aboutFeatures = [
@@ -560,8 +716,8 @@ const aboutFeatures = [
   },
   {
     icon: 'search_insights',
-    title: 'SEO & Visibility',
-    description: 'Technical SEO optimization for better rankings and more organic visibility.',
+    title: 'SEO, GEO & Visibility',
+    description: 'Technical SEO & GEO optimization for better rankings in Google and AI search engines.',
   },
   {
     icon: 'auto_awesome',
@@ -578,13 +734,13 @@ const whyUsPoints = [
   },
   {
     icon: 'search_insights',
-    title: 'SEO-Optimized Development',
-    description: 'Technical SEO, clean structures, SSR rendering and mobile optimization ensure better visibility on Google.',
+    title: 'SEO & GEO Optimization',
+    description: 'Technical SEO, clean structures, SSR rendering and GEO markup ensure better visibility on Google and in AI search engines like ChatGPT and Gemini.',
   },
   {
     icon: 'design_services',
     title: 'Modern Premium Design',
-    description: 'No standard templates or outdated themes. We develop individual user interfaces with professional UI/UX design.',
+    description: "No standard templates or outdated themes. We develop individual user interfaces with professional UI/UX design.",
   },
   {
     icon: 'rocket_launch',
@@ -616,8 +772,8 @@ const processSteps = [
   },
   {
     icon: 'code',
-    title: 'Development & SEO',
-    description: 'Professional implementation with complete SEO optimization.',
+    title: 'Development, SEO & GEO',
+    description: 'Technical implementation with full SEO optimization and GEO markup — so your website is found in ChatGPT, Gemini and Perplexity too.',
   },
   {
     icon: 'rocket_launch',
@@ -633,41 +789,53 @@ const pricingTable = [
   { service: 'Premium E-Commerce', price: 'from €6,000', delivery: 'from 30 days' },
 ]
 
-const faqs = [
-  {
-    question: 'How much does a professional website cost?',
-    answer:
-      'Landing pages start from €500, professional business websites from €1,500, online shops from €3,000 and Premium E-Commerce from €6,000. Since every project is different, we provide a transparent fixed-price quote before the project starts. You can also use our pricing calculator for a quick estimate.',
-  },
-  {
-    question: 'How long does website development take?',
-    answer:
-      'Landing pages are live from 3 working days, business websites from 7 working days, online shops from 14 working days. The exact timeframe depends on scope and how quickly content is provided.',
-  },
-  {
-    question: 'Is SEO included with the website?',
-    answer:
-      'Yes, basic SEO is included in every project: clean code structure, fast loading times, mobile optimisation and correct meta data. For deeper SEO strategies such as keyword research, content optimisation and link building we offer additional SEO packages from €300/month.',
-  },
-  {
-    question: 'Which services does EvolaTec offer?',
-    answer:
-      'EvolaTec offers web design and development (landing pages, business websites, online shops), SEO (audit, technical optimisation, Local SEO, link building), online marketing (Google Ads, Meta Ads), branding, UI/UX design and website copy – all from a single source.',
-  },
-  {
-    question: 'Do you develop Shopify shops and custom online shops?',
-    answer:
-      'Yes, we develop modern Shopify shops and custom e-commerce solutions with frameworks like Nuxt. Whether fast market launch with Shopify or complex custom solutions – we choose the platform that fits your use case.',
-  },
-  {
-    question: 'Are there fixed prices for websites?',
-    answer:
-      'Yes, we work with transparent fixed prices. You know from the start what your website costs – there are no hidden costs during development.',
-  },
-  {
-    question: 'What is included after the website launch?',
-    answer:
-      'Many of our web development packages include a support phase after launch. On request we also handle ongoing SEO management, marketing campaigns and maintenance so your website stays competitive long-term.',
-  },
+const geoPoints = [
+  'Structured data (Schema.org) for AI comprehension',
+  'FAQ and HowTo markup for direct AI citations',
+  'Clear information architecture for LLM crawlers',
+  'Authoritative content that AI assistants recommend',
+  'Comparison content for purchase decision queries',
 ]
+
+const aiEngines = ['ChatGPT', 'Google Gemini', 'Perplexity', 'Claude', 'Copilot']
+
+const geoBenefits = [
+  { icon: 'smart_toy', title: 'AI Visibility', desc: 'Your website is cited and recommended by AI assistants as a source.' },
+  { icon: 'schema', title: 'Structured Data', desc: 'Schema.org markup for FAQ, HowTo, Services — machine-readable for LLMs.' },
+  { icon: 'verified', title: 'Included in Every Project', desc: "GEO is not an add-on — it's part of our development standard." },
+]
+
+const proofStats = [
+  { value: '95–100', label: 'Lighthouse Score', sublabel: 'Performance Benchmark', icon: 'speed' },
+  { value: '+180%', label: 'More Organic Traffic', sublabel: 'Average Client Result', icon: 'trending_up' },
+  { value: 'from 3 Days', label: 'Fastest Delivery', sublabel: 'Go-Live Possible', icon: 'flash_on' },
+  { value: '100%', label: 'Fixed Price', sublabel: 'No Hidden Costs', icon: 'verified' },
+]
+
+type InclusiveValue = boolean | string
+const inclusiveTable: { feature: string; landing: InclusiveValue; firma: InclusiveValue; shop: InclusiveValue }[] = [
+  { feature: 'Responsive Design (Mobile-first)', landing: true, firma: true, shop: true },
+  { feature: 'Basic SEO Optimization (Meta, Structure)', landing: true, firma: true, shop: true },
+  { feature: 'SSL & Fast Hosting Setup', landing: true, firma: true, shop: true },
+  { feature: 'Contact Form', landing: true, firma: true, shop: true },
+  { feature: 'Multiple Sub-pages', landing: false, firma: true, shop: true },
+  { feature: 'Blog / News Section', landing: false, firma: true, shop: true },
+  { feature: 'CMS Access (Edit Content Yourself)', landing: false, firma: true, shop: true },
+  { feature: 'Products & Categories', landing: false, firma: false, shop: true },
+  { feature: 'Payment Processing', landing: false, firma: false, shop: true },
+  { feature: 'GEO Optimization (ChatGPT, Gemini, Perplexity)', landing: true, firma: true, shop: true },
+  { feature: 'Delivery Time', landing: 'from 3 days', firma: 'from 7 days', shop: 'from 14 days' },
+]
+
+const techComparisonRows = [
+  { criterion: 'Load Time', wp: '3–8 seconds', nuxt: '< 1 second' },
+  { criterion: 'Lighthouse Score', wp: '40–70 / 100', nuxt: '95–100 / 100' },
+  { criterion: 'Core Web Vitals', wp: 'Often poor', nuxt: 'Excellent' },
+  { criterion: 'Security', wp: 'Plugin vulnerabilities', nuxt: 'No CMS, no attack surface' },
+  { criterion: 'SEO Foundation', wp: 'Plugin-dependent', nuxt: 'Code-deep optimized' },
+  { criterion: 'Maintenance Effort', wp: 'High (plugins, updates)', nuxt: 'Minimal' },
+  { criterion: 'Scalability', wp: 'Limited', nuxt: 'Unlimited' },
+]
+
+const faqs = homeFaqs
 </script>

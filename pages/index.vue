@@ -5,7 +5,7 @@
       background-image="/main/hero.webp"
       badge="Webdesign & Webentwicklung Agentur"
       title="Professionelle Website erstellen lassen für Unternehmen"
-      description="Moderne Firmenwebsites, Landingpages und Online Shops, die Kunden gewinnen und Ihr Unternehmen wachsen lassen. SEO-optimiert, schnell und konversionsstark."
+      description="Moderne Firmenwebsites, Landingpages und Online Shops, die Kunden gewinnen und Ihr Unternehmen wachsen lassen. SEO- & GEO-optimiert, schnell und konversionsstark."
       primaryCTA="Kostenloses Angebot erhalten"
       secondaryCTA="Preise ansehen"
       :stats="heroStats"
@@ -41,7 +41,7 @@
 
             <div class="space-y-4 font-body-lg text-on-surface-variant leading-relaxed">
               <p>EvolaTec entwickelt moderne Websites, Unternehmenswebseiten, Landingpages und digitale Plattformen für Unternehmen, Startups und lokale Dienstleister.</p>
-              <p>Unser Fokus liegt auf performanter Webentwicklung, modernem UI/UX Design und SEO-optimierten Lösungen, die nicht nur professionell aussehen, sondern auch messbare Ergebnisse liefern.</p>
+              <p>Unser Fokus liegt auf performanter Webentwicklung, modernem UI/UX Design und SEO- & GEO-optimierten Lösungen, die nicht nur professionell aussehen, sondern auch messbare Ergebnisse liefern.</p>
               <p>Wir kombinieren moderne Technologien wie Vue.js, Nuxt, Tailwind CSS und TypeScript, um schnelle, skalierbare und hochwertige Websites für moderne Unternehmen zu entwickeln.</p>
               <p>Egal ob Firmenwebsite, E-Commerce Plattform, Landingpage oder individuelle Weblösung — EvolaTec unterstützt Unternehmen beim professionellen digitalen Wachstum.</p>
             </div>
@@ -95,7 +95,7 @@
             </h2>
 
             <p class="font-body-lg text-on-surface-variant mb-10 leading-relaxed">
-              EvolaTec kombiniert modernes Webdesign, performante Entwicklung und SEO-optimierte Technologien für schnelle, professionelle und skalierbare Websites.
+              EvolaTec kombiniert modernes Webdesign, performante Entwicklung und SEO- & GEO-optimierte Technologien für schnelle, professionelle und skalierbare Websites.
             </p>
 
             <div class="space-y-5">
@@ -164,6 +164,90 @@
         </div>
       </div>
     </section>
+        <!-- GEO Section -->
+    <section class="py-8 md:py-section-padding bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-stack-lg items-start">
+
+          <!-- Left: copy -->
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
+              <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+              Generative Engine Optimization
+            </span>
+
+            <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight mb-4">
+              GEO: Sichtbar in ChatGPT, Gemini &amp; Co.
+            </h2>
+
+            <p class="text-on-surface-variant leading-relaxed mb-4">
+              Klassisches SEO optimiert für Google. <strong class="text-on-surface">GEO — Generative Engine Optimization</strong> — optimiert Ihre Website für die neue Generation von KI-Suchmaschinen wie ChatGPT, Google Gemini, Perplexity und Claude.
+            </p>
+
+            <p class="text-on-surface-variant leading-relaxed mb-8">
+              Immer mehr Menschen stellen ihre Kaufentscheidungen direkt an KI-Assistenten. Wenn Ihr Unternehmen dort nicht auftaucht, verlieren Sie Anfragen an Wettbewerber, die bereits GEO-optimiert sind.
+            </p>
+
+            <ul class="space-y-3 mb-8">
+              <li v-for="point in geoPoints" :key="point" class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg flex-shrink-0">check_circle</span>
+                <span class="text-sm text-on-surface">{{ point }}</span>
+              </li>
+            </ul>
+
+            <div class="inline-flex items-center gap-2 text-sm font-semibold text-primary bg-primary/8 border border-primary/15 rounded-xl px-5 py-3">
+              <span class="material-symbols-outlined text-lg">verified</span>
+              GEO-Optimierung ist in jeder Website inklusive — ohne Aufpreis
+            </div>
+          </div>
+
+          <!-- Right: visual cards -->
+          <div class="space-y-4">
+            <div class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30">
+              <p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant mb-4">KI-Suchmaschinen, für die wir optimieren</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="ai in aiEngines"
+                  :key="ai"
+                  class="px-3 py-1.5 bg-white rounded-full border border-outline-variant/30 text-sm font-semibold text-on-surface shadow-sm"
+                >{{ ai }}</span>
+              </div>
+            </div>
+
+            <div
+              v-for="benefit in geoBenefits"
+              :key="benefit.title"
+              class="bg-white rounded-xl p-5 border border-outline-variant/20 flex items-start gap-4"
+            >
+              <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-lg">{{ benefit.icon }}</span>
+              </div>
+              <div>
+                <p class="font-semibold text-on-surface text-sm">{{ benefit.title }}</p>
+                <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">{{ benefit.desc }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof Stats Bar -->
+    <section class="hidden sm:flex py-10 bg-primary text-on-primary">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x md:divide-white/20 text-center">
+          <div v-for="stat in proofStats" :key="stat.label" class="px-4">
+            <div class="flex items-center justify-center gap-2 mb-1">
+              <span class="material-symbols-outlined text-xl">{{ stat.icon }}</span>
+              <span class="text-3xl md:text-4xl font-black">{{ stat.value }}</span>
+            </div>
+            <p class="text-sm font-semibold">{{ stat.label }}</p>
+            <p class="text-xs text-on-primary-container mt-0.5">{{ stat.sublabel }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Services Section -->
     <section data-nav-label="Leistungen" data-nav-icon="apps" class="py-8 md:py-section-padding bg-surface">
@@ -204,11 +288,110 @@
       </div>
     </section>
 
+    <!-- Website-Typen Vergleich -->
+    <section class="py-8 md:py-section-padding bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center mb-8 md:mb-stack-lg">
+          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">Welche Website-Lösung brauche ich?</h2>
+          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">Firmenwebsite, Landingpage oder Online Shop — so finden Sie die richtige Lösung für Ihr Ziel und Budget.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+          <div class="bg-white rounded-2xl p-7 border border-outline-variant/30 flex flex-col">
+            <span class="material-symbols-outlined text-primary text-[2rem] mb-4">article</span>
+            <h3 class="font-bold text-on-surface text-lg mb-2">Landingpage</h3>
+            <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">Ideal für Werbung, Produktlaunches und Leadgenerierung — eine fokussierte Seite mit klarem Handlungsaufruf.</p>
+            <ul class="space-y-2.5 text-sm text-on-surface-variant flex-1">
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Google Ads & Meta Ads</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Kurze Time-to-Market</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Maximale Conversion-Rate</li>
+            </ul>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-bold text-primary">ab 500€</span>
+              <span class="text-xs text-on-surface-variant">ab 3 Tagen</span>
+            </div>
+          </div>
+
+          <div class="bg-primary rounded-2xl p-7 flex flex-col shadow-xl">
+            <span class="material-symbols-outlined text-white text-[2rem] mb-4">language</span>
+            <h3 class="font-bold text-white text-lg mb-2">Firmenwebsite</h3>
+            <p class="text-sm text-on-primary-container mb-5 leading-relaxed">Der vollständige Online-Auftritt für Unternehmen — mehrere Seiten, SEO-Sichtbarkeit und professionelles Design.</p>
+            <ul class="space-y-2.5 text-sm text-on-primary-container flex-1">
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Unternehmensdarstellung</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Langfristige SEO-Sichtbarkeit</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Mehrere Seiten & CMS-Pflege</li>
+            </ul>
+            <div class="mt-6 pt-4 border-t border-white/20 flex items-center justify-between">
+              <span class="font-bold text-white">ab 1.500€</span>
+              <span class="text-xs text-on-primary-container">ab 7 Tagen</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-7 border border-outline-variant/30 flex flex-col">
+            <span class="material-symbols-outlined text-primary text-[2rem] mb-4">shopping_bag</span>
+            <h3 class="font-bold text-on-surface text-lg mb-2">Online Shop</h3>
+            <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">Für Unternehmen, die Produkte oder Leistungen online verkaufen wollen — mit Shopify oder individuellem Shop.</p>
+            <ul class="space-y-2.5 text-sm text-on-surface-variant flex-1">
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Produktverwaltung & Varianten</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Sichere Zahlungsabwicklung</li>
+              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Shopify oder Custom-Lösung</li>
+            </ul>
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-bold text-primary">ab 3.000€</span>
+              <span class="text-xs text-on-surface-variant">ab 14 Tagen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Was ist inklusive? -->
+    <section class="py-8 md:py-section-padding bg-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center mb-8 md:mb-stack-lg">
+          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">Was ist bei jeder Website inklusive?</h2>
+          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">Alle unsere Websites beinhalten diese Grundlagen — unabhängig vom gewählten Paket.</p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
+          <table class="w-full min-w-[560px] text-sm">
+            <thead>
+              <tr class="bg-surface-container-low">
+                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30 w-1/2">Leistung</th>
+                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Landingpage</th>
+                <th class="text-center p-4 font-bold text-primary bg-primary/5 border-b border-outline-variant/30">Firmenwebsite</th>
+                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Online Shop</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(row, i) in inclusiveTable" :key="i" :class="i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low/40'">
+                <td class="p-4 text-on-surface font-medium">{{ row.feature }}</td>
+                <td class="p-4 text-center">
+                  <template v-if="row.landing === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="inklusive">check_circle</span></template>
+                  <template v-else-if="row.landing === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="nicht inklusive">remove</span></template>
+                  <template v-else><span class="text-on-surface-variant text-xs">{{ row.landing }}</span></template>
+                </td>
+                <td class="p-4 text-center bg-primary/5">
+                  <template v-if="row.firma === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="inklusive">check_circle</span></template>
+                  <template v-else-if="row.firma === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="nicht inklusive">remove</span></template>
+                  <template v-else><span class="text-primary font-semibold text-xs">{{ row.firma }}</span></template>
+                </td>
+                <td class="p-4 text-center">
+                  <template v-if="row.shop === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="inklusive">check_circle</span></template>
+                  <template v-else-if="row.shop === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="nicht inklusive">remove</span></template>
+                  <template v-else><span class="text-on-surface-variant text-xs">{{ row.shop }}</span></template>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- Process Section -->
     <ProcessSection
       data-nav-label="Prozess"
       data-nav-icon="route"
-      title="So arbeiten wir"
+      title="Website erstellen lassen — unser Prozess in 4 Schritten"
       :steps="processSteps"
     />
 
@@ -267,6 +450,37 @@
       </div>
     </section>
 
+    <!-- Technologie-Vergleich: Nuxt vs WordPress -->
+    <section class="py-8 md:py-section-padding bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="text-center mb-8 md:mb-stack-lg">
+          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">Warum nicht WordPress?</h2>
+          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto text-sm sm:text-base">Wir setzen auf moderne Technologien — und das macht den messbaren Unterschied.</p>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
+          <table class="w-full min-w-[480px] text-sm">
+            <thead>
+              <tr class="bg-surface-container-low">
+                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30 w-1/3">Kriterium</th>
+                <th class="text-center p-4 font-bold text-on-surface-variant border-b border-outline-variant/30">WordPress</th>
+                <th class="text-center p-4 font-bold text-primary bg-primary/5 border-b border-outline-variant/30">EvolaTec (Nuxt)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(row, i) in techComparisonRows" :key="i" :class="i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low/40'">
+                <td class="p-4 font-semibold text-on-surface">{{ row.criterion }}</td>
+                <td class="p-4 text-center text-on-surface-variant">{{ row.wp }}</td>
+                <td class="p-4 text-center text-primary font-semibold bg-primary/5">{{ row.nuxt }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-center text-xs text-on-surface-variant mt-4">Werte basieren auf realen Messungen mit Google Lighthouse / PageSpeed Insights.</p>
+      </div>
+    </section>
+
     <!-- SEO Text Section -->
     <section data-nav-label="Lösungen" data-nav-icon="category" class="py-8 md:py-section-padding bg-surface border-y border-outline-variant/40">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -280,7 +494,7 @@
             </p>
 
             <p class="text-sm sm:text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
-              Unsere Websites sind SEO-optimiert, mobilfreundlich und auf Conversion ausgelegt. Ob kleine Firmenwebsite, Landingpage für Werbung oder komplexer Online Shop — wir entwickeln individuelle Lösungen für Unternehmen in Deutschland.
+              Unsere Websites sind SEO- & GEO-optimiert, mobilfreundlich und auf Conversion ausgelegt. Ob kleine Firmenwebsite, Landingpage für Werbung oder komplexer Online Shop — wir entwickeln individuelle Lösungen für Unternehmen in Deutschland.
             </p>
 
             <div class="pt-6 md:pt-8 flex flex-col sm:flex-wrap sm:flex-row gap-3 sm:gap-4">
@@ -350,9 +564,9 @@ const homeFaqs: FAQ[] = [
       'Landingpages sind bereits ab 3 Werktagen live, Firmenwebsites ab 7 Arbeitstagen, Onlineshops ab 14 Arbeitstagen. Der genaue Zeitrahmen hängt vom Umfang und der Geschwindigkeit der Inhaltsbereitstellung ab.',
   },
   {
-    question: 'Ist SEO bei der Website inklusive?',
+    question: 'Sind SEO und GEO bei der Website inklusive?',
     answer:
-      'Ja, Basis-SEO ist in jedem Projekt enthalten: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung und korrekte Meta-Daten. Für weitergehende SEO-Strategien wie Keyword-Recherche, Content-Optimierung und Linkbuilding bieten wir zusätzliche SEO-Pakete ab 300€/Monat an.',
+      'Ja, Basis-SEO und GEO-Optimierung sind in jedem Projekt enthalten: saubere Code-Struktur, schnelle Ladezeiten, mobile Optimierung, korrekte Meta-Daten und strukturierte Daten (Schema.org) für KI-Suchmaschinen wie ChatGPT, Gemini und Perplexity. Für weitergehende SEO-Strategien wie Keyword-Recherche, Content-Optimierung und Linkbuilding bieten wir zusätzliche SEO-Pakete ab 300€/Monat an.',
   },
   {
     question: 'Welche Leistungen bietet EvolaTec an?',
@@ -374,6 +588,21 @@ const homeFaqs: FAQ[] = [
     answer:
       'Bei vielen unserer Webentwicklungs-Pakete ist eine Support-Phase nach dem Launch enthalten. Auf Wunsch bieten wir darüber hinaus laufende SEO-Betreuung, Marketing-Kampagnen und Wartung an, damit Ihre Website langfristig wettbewerbsfähig bleibt.',
   },
+  {
+    question: 'Was ist der Unterschied zwischen Landingpage und Firmenwebsite?',
+    answer:
+      'Eine Landingpage ist eine einzelne, fokussierte Seite mit einem klaren Ziel — etwa Leads sammeln oder Produkte bewerben. Sie ist ideal für Werbekampagnen. Eine Firmenwebsite besteht aus mehreren Seiten (Startseite, Leistungen, Über uns, Kontakt) und dient dem vollständigen Online-Auftritt Ihres Unternehmens. Für langfristige SEO-Sichtbarkeit ist die Firmenwebsite die bessere Wahl; für schnelle Conversion-Kampagnen die Landingpage.',
+  },
+  {
+    question: 'Wie wähle ich die richtige Webagentur aus?',
+    answer:
+      'Achten Sie auf: (1) nachweisliche Referenzen mit messbaren Ergebnissen, (2) transparente Festpreise ohne versteckte Kosten, (3) technisches Know-how bei Performance und SEO, (4) klare Kommunikation und feste Ansprechpartner. Agenturen, die mit modernen Technologien (Vue, Nuxt, Tailwind) arbeiten, liefern in der Regel schnellere und wartungsärmere Websites als WordPress-basierte Anbieter.',
+  },
+  {
+    question: 'Brauche ich für meine Website unbedingt WordPress?',
+    answer:
+      'Nein. WordPress ist verbreitet, aber nicht automatisch die beste Wahl. Für viele Unternehmen sind moderne Headless-Lösungen wie Nuxt.js mit einem CMS wie Storyblok überlegen: schnellere Ladezeiten, bessere Core Web Vitals, weniger Sicherheitslücken durch Plugins und geringerer Wartungsaufwand. Wir beraten Sie gerne, welche Technologie zu Ihrem konkreten Use Case passt.',
+  },
 ];
 
 const schemaMarkup = buildSchema(
@@ -394,6 +623,20 @@ const schemaMarkup = buildSchema(
   faqSchema(homeFaqs),
 );
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Website erstellen lassen: Der Prozess in 4 Schritten',
+  description: 'So läuft die professionelle Website-Erstellung bei EvolaTec ab — von der ersten Beratung bis zum Go-Live.',
+  totalTime: 'P7D',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Kostenlose Beratung', text: 'Wir besprechen Ihre Anforderungen, Ziele und Budget in einem unverbindlichen Erstgespräch.' },
+    { '@type': 'HowToStep', position: 2, name: 'Struktur & Design', text: 'Planung der Seitenstruktur und Gestaltung nach modernen UI/UX-Standards und Ihrer Markenidentität.' },
+    { '@type': 'HowToStep', position: 3, name: 'Entwicklung, SEO & GEO', text: 'Professionelle technische Umsetzung mit Vue.js, Nuxt, vollständiger On-Page-SEO und GEO-Markup für KI-Suchmaschinen.' },
+    { '@type': 'HowToStep', position: 4, name: 'Launch & Optimierung', text: 'Gründliches Testen auf allen Geräten, Go-Live und Übergabe mit optionaler Weiterbetreuung.' },
+  ],
+};
+
 useHead({
   title: 'EvolaTec – Webagentur für Website, SEO & Online Marketing',
   meta: [
@@ -405,12 +648,15 @@ useHead({
     { property: 'og:url', content: 'https://evolatec.de' },
   ],
   link: [{ rel: 'canonical', href: 'https://evolatec.de' }, ...hreflangLinks.value],
-  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
+  script: [
+    { type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) },
+    { type: 'application/ld+json', innerHTML: JSON.stringify(howToSchema) },
+  ],
 });
 
 const heroStats = [
   { value: 'ab 3 Tagen', label: 'Lieferzeit', icon: 'flash_on' },
-  { value: '100%', label: 'SEO-ready', icon: 'search_check' },
+  { value: '100%', label: 'SEO & GEO-ready', icon: 'search_check' },
   { value: 'Alle', label: 'Responsive Design', icon: 'smartphone' },
   { value: 'Transparent', label: 'Preise', icon: 'verified' },
 ];
@@ -456,6 +702,22 @@ const services = [
     price: 'ab 400€/Monat',
     href: '/marketing-google-ads',
   },
+  {
+    id: 6,
+    icon: 'brush',
+    title: 'Branding & UI/UX Design',
+    description: 'Professionelles Corporate Design, Logoentwicklung und Benutzeroberflächen, die Ihre Marke stärken.',
+    price: 'auf Anfrage',
+    href: '/design-branding',
+  },
+  {
+    id: 7,
+    icon: 'thumb_up',
+    title: 'Social Media Marketing',
+    description: 'Reichweite, Community-Aufbau und gezielte Social-Media-Kampagnen für Ihr Unternehmen.',
+    price: 'ab 300€/Monat',
+    href: '/marketing-social-media',
+  },
 ];
 
 const aboutFeatures = [
@@ -471,8 +733,8 @@ const aboutFeatures = [
   },
   {
     icon: 'search_insights',
-    title: 'SEO & Sichtbarkeit',
-    description: 'Technische SEO Optimierung für bessere Rankings und mehr organische Sichtbarkeit.',
+    title: 'SEO, GEO & Sichtbarkeit',
+    description: 'Technische SEO & GEO Optimierung für bessere Rankings bei Google und Sichtbarkeit in KI-Suchmaschinen.',
   },
   {
     icon: 'auto_awesome',
@@ -489,8 +751,8 @@ const whyUsPoints = [
   },
   {
     icon: 'search_insights',
-    title: 'SEO optimierte Entwicklung',
-    description: 'Technisches SEO, saubere Strukturen, SSR Rendering und mobile Optimierung sorgen für bessere Sichtbarkeit bei Google.',
+    title: 'SEO & GEO Optimierung',
+    description: 'Technisches SEO, saubere Strukturen, SSR Rendering und GEO-Markup sorgen für bessere Sichtbarkeit bei Google und in KI-Suchmaschinen wie ChatGPT und Gemini.',
   },
   {
     icon: 'design_services',
@@ -527,8 +789,8 @@ const processSteps = [
   },
   {
     icon: 'code',
-    title: 'Entwicklung & SEO',
-    description: 'Professionelle Umsetzung mit vollständiger SEO-Optimierung.',
+    title: 'Entwicklung, SEO & GEO',
+    description: 'Technische Umsetzung mit On-Page-SEO und GEO-Markup — damit Ihre Website auch in ChatGPT, Gemini und Perplexity gefunden wird.',
   },
   {
     icon: 'rocket_launch',
@@ -549,6 +811,54 @@ const results = [
   { value: '+180%', label: 'organischer Traffic' },
   { icon: 'bolt', label: 'Schnellere Ladezeiten' },
   { icon: 'trending_up', label: 'Mehr Verkäufe' },
+];
+
+const geoPoints = [
+  'Strukturierte Daten (Schema.org) für KI-Verständnis',
+  'FAQ- und HowTo-Markup für direkte KI-Zitate',
+  'Klare Informationsarchitektur für LLM-Crawler',
+  'Autoritative Inhalte, die KI-Assistenten empfehlen',
+  'Comparison-Content für Kaufentscheidungs-Anfragen',
+];
+
+const aiEngines = ['ChatGPT', 'Google Gemini', 'Perplexity', 'Claude', 'Copilot'];
+
+const geoBenefits = [
+  { icon: 'smart_toy', title: 'KI-Sichtbarkeit', desc: 'Ihre Website wird von KI-Assistenten als Quelle zitiert und empfohlen.' },
+  { icon: 'schema', title: 'Strukturierte Daten', desc: 'Schema.org-Markup für FAQ, HowTo, Services — maschinenlesbar für LLMs.' },
+  { icon: 'verified', title: 'Inklusive in jedem Projekt', desc: 'GEO ist kein Aufpreis — es ist Teil unseres Entwicklungsstandards.' },
+];
+
+const proofStats = [
+  { value: '95–100', label: 'Lighthouse Score', sublabel: 'Performance-Benchmark', icon: 'speed' },
+  { value: '+180%', label: 'Mehr organischer Traffic', sublabel: 'Durchschnittliches Kundenergebnis', icon: 'trending_up' },
+  { value: 'ab 3 Tagen', label: 'Schnellste Lieferzeit', sublabel: 'Go-Live möglich', icon: 'flash_on' },
+  { value: '100%', label: 'Festpreis', sublabel: 'Keine versteckten Kosten', icon: 'verified' },
+];
+
+type InclusiveValue = boolean | string;
+const inclusiveTable: { feature: string; landing: InclusiveValue; firma: InclusiveValue; shop: InclusiveValue }[] = [
+  { feature: 'Responsives Design (Mobile-first)', landing: true, firma: true, shop: true },
+  { feature: 'SEO-Grundoptimierung (Meta, Struktur)', landing: true, firma: true, shop: true },
+  { feature: 'SSL & schnelles Hosting-Setup', landing: true, firma: true, shop: true },
+  { feature: 'Kontaktformular', landing: true, firma: true, shop: true },
+  { feature: 'Mehrere Unterseiten', landing: false, firma: true, shop: true },
+  { feature: 'Blog / News-Bereich', landing: false, firma: true, shop: true },
+  { feature: 'CMS-Zugang (Inhalte selbst pflegen)', landing: false, firma: true, shop: true },
+  { feature: 'Produkte & Kategorien', landing: false, firma: false, shop: true },
+  { feature: 'Zahlungsabwicklung', landing: false, firma: false, shop: true },
+  { feature: 'GEO-Optimierung (ChatGPT, Gemini, Perplexity)', landing: true, firma: true, shop: true },
+  { feature: 'Lieferzeit', landing: 'ab 3 Tagen', firma: 'ab 7 Tagen', shop: 'ab 14 Tagen' },
+];
+
+const techComparisonRows = [
+  { criterion: 'Ladezeit', wp: '3–8 Sekunden', nuxt: '< 1 Sekunde' },
+  { criterion: 'Lighthouse Score', wp: '40–70 / 100', nuxt: '95–100 / 100' },
+  { criterion: 'Core Web Vitals', wp: 'Oft mangelhaft', nuxt: 'Sehr gut' },
+  { criterion: 'Sicherheit', wp: 'Plugin-Schwachstellen', nuxt: 'Kein CMS, keine Angriffsfläche' },
+  { criterion: 'SEO-Basis', wp: 'Plugin-abhängig', nuxt: 'Code-tief optimiert' },
+  { criterion: 'Wartungsaufwand', wp: 'Hoch (Plugins, Updates)', nuxt: 'Minimal' },
+  { criterion: 'Skalierbarkeit', wp: 'Eingeschränkt', nuxt: 'Unbegrenzt' },
 ];
 
 const faqs = homeFaqs;

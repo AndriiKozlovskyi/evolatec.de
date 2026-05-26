@@ -295,6 +295,13 @@ const navLinks = computed(() => {
       ],
     },
     {
+      id: 35,
+      label: 'GEO',
+      href: en ? '/en/geo' : '/geo',
+      isActive: false,
+      icon: 'auto_awesome',
+    },
+    {
       id: 4,
       label: en ? 'Design & Content' : 'Design & Content',
       href: en ? '/en/web-design' : '/webdesign',
