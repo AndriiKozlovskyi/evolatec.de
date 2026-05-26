@@ -89,6 +89,13 @@
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zu Google Ads" :faqs="adsFaqs" />
 
+    <!-- Related Services -->
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Google Ads funktionieren nur mit der richtigen Zielseite"
+      :services="relatedServices"
+    />
+
     <!-- Final CTA -->
     <CTASection
       title="Mehr Kunden durch professionelle Google Werbung"
@@ -333,6 +340,30 @@ const pricingItems = [
   { name: 'Monatliches Reporting', price: 'ab 100€/Monat' },
   { name: 'Landing Page', price: 'ab 500€' },
   { name: 'SEO Optimierung', price: 'ab 300€' },
+];
+
+const relatedServices = [
+  {
+    icon: 'article',
+    title: 'Landingpage erstellen lassen',
+    description: 'Jeder Klick kostet Geld — eine konversionsoptimierte Landingpage sorgt dafür, dass Besucher zu Anfragen werden, nicht abspringen.',
+    price: 'ab 500 €',
+    href: '/landingpage-erstellen-lassen',
+  },
+  {
+    icon: 'language',
+    title: 'Firmenwebsite erstellen lassen',
+    description: 'Ihre Ads bringen Traffic — eine professionelle Firmenwebsite macht daraus Kunden. Performance-first, SEO-ready.',
+    price: 'ab 1.500 €',
+    href: '/firmenwebsite-erstellen-lassen',
+  },
+  {
+    icon: 'shopping_bag',
+    title: 'Online-Shop erstellen lassen',
+    description: 'Google Shopping Ads und Performance Max entfalten ihr Potenzial erst mit einem schnellen, gut strukturierten Online-Shop.',
+    price: 'ab 3.000 €',
+    href: '/online-shop-erstellen-lassen',
+  },
 ];
 
 </script>

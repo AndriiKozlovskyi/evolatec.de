@@ -174,6 +174,12 @@
     <FAQSection title="Häufig gestellte Fragen" :faqs="faqs" />
 
     <!-- CTA -->
+    <RelatedServicesSection
+      eyebrow="Ergänzende Leistungen"
+      title="Ihre neue Website braucht starkes SEO und Marketing"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="Professionelle Website erstellen lassen"
       description="EvolaTec entwickelt moderne Webseiten, Firmenhomepages, Landingpages und digitale Plattformen für Unternehmen und Marken."
@@ -435,6 +441,12 @@ const features = [
     title: 'Individuelle Anpassung & Skalierbarkeit',
     description: 'Maßgeschneiderte Lösungen, die mit Ihrem Unternehmen mitwachsen — keine Standard-Templates, sondern echte Entwicklung.',
   },
+];
+
+const relatedServices = [
+  { icon: 'search_insights', title: 'SEO Optimierung', description: 'Professionelle Suchmaschinenoptimierung, die das Potenzial Ihrer neuen Website maximal ausschöpft.', price: 'ab 300 €', href: '/seo-optimieren-lassen' },
+  { icon: 'campaign', title: 'Google Ads', description: 'Mit Google Ads sofort sichtbar werden — ideal ergänzend zur organischen SEO Ihrer Website.', price: 'ab 300 €/Monat', href: '/marketing-google-ads' },
+  { icon: 'brush', title: 'Branding & Corporate Design', description: 'Eine professionelle Markenidentität als Grundlage für eine überzeugende und konsistente Website.', price: 'ab 500 €', href: '/design-branding' },
 ];
 
 </script>

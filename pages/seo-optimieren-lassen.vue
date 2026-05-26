@@ -66,6 +66,12 @@
 
     <FAQSection title="Häufig gestellte Fragen zur Website Optimierung" :faqs="optimizationFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="SEO Optimierung braucht eine solide Website als Basis"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="Lassen Sie Ihre Website professionell optimieren"
       description="Verbessern Sie Geschwindigkeit, SEO Performance und technische Basis Ihrer Website nachhaltig."
@@ -283,6 +289,12 @@ const optimizationPricingPlans = [
     buttonText: 'Beratung buchen',
     isHighlighted: false,
   },
+];
+
+const relatedServices = [
+  { icon: 'language', title: 'Firmenwebsite erstellen lassen', description: 'Eine technisch einwandfreie Firmenwebsite ist die Basis jeder erfolgreichen SEO Optimierung.', price: 'ab 1.500 €', href: '/firmenwebsite-erstellen-lassen' },
+  { icon: 'article', title: 'Landingpage erstellen lassen', description: 'Optimierte Landingpages mit sauberer technischer SEO Basis für bessere Conversions und Rankings.', price: 'ab 500 €', href: '/landingpage-erstellen-lassen' },
+  { icon: 'shopping_bag', title: 'Online-Shop erstellen lassen', description: 'E-Commerce mit eingebautem SEO-Fundament — schnell, sicher und gut bei Google.', price: 'ab 3.000 €', href: '/online-shop-erstellen-lassen' },
 ];
 
 </script>

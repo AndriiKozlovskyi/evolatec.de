@@ -40,7 +40,12 @@
             class="flex flex-col gap-2"
             :aria-label="group.title"
           >
-            <span class="font-bold text-primary mb-2 text-sm">{{ group.title }}</span>
+            <component
+              :is="group.href ? 'a' : 'span'"
+              :href="group.href || undefined"
+              class="font-bold text-primary mb-2 text-sm"
+              :class="group.href ? 'hover:text-primary/70 transition-colors' : ''"
+            >{{ group.title }}</component>
             <a
               v-for="item in group.links"
               :key="item.href"
@@ -88,15 +93,17 @@ const serviceGroups = computed(() => {
   return [
     {
       title: 'Website',
+      href: en ? '/en/business-website' : '/firmenwebsite',
       links: [
-        { label: en ? 'Business Website' : 'Firmenwebsite', href: en ? '/en/business-website-design' : '/firmenwebsite-erstellen-lassen' },
-        { label: en ? 'Landing Page'     : 'Landingpage',   href: en ? '/en/landing-page-design'     : '/landingpage-erstellen-lassen' },
-        { label: en ? 'Online Shop'      : 'Online-Shop',   href: en ? '/en/online-shop-development' : '/online-shop-erstellen-lassen' },
-        { label: en ? 'Price Calculator' : 'Preise Kalkulator', href: en ? '/en/website-cost-calculator' : '/webseite-kosten-kalkulator' },
+        { label: en ? 'Business Website'  : 'Firmenwebsite erstellen', href: en ? '/en/business-website-design' : '/firmenwebsite-erstellen-lassen' },
+        { label: en ? 'Landing Page'      : 'Landingpage erstellen',   href: en ? '/en/landing-page-design'     : '/landingpage-erstellen-lassen' },
+        { label: en ? 'Online Shop'       : 'Online-Shop erstellen',   href: en ? '/en/online-shop-development' : '/online-shop-erstellen-lassen' },
+        { label: en ? 'Web Design'        : 'Webdesign',               href: en ? '/en/web-design'              : '/webdesign' },
       ],
     },
     {
       title: 'SEO',
+      href: en ? '/en/seo' : '/seo',
       links: [
         { label: en ? 'SEO Optimization' : 'SEO Optimierung', href: en ? '/en/seo-optimization'  : '/seo-optimieren-lassen' },
         { label: 'Local SEO',                                  href: en ? '/en/local-seo'         : '/local-seo' },
@@ -106,14 +113,16 @@ const serviceGroups = computed(() => {
     },
     {
       title: 'Design & Content',
+      href: undefined,
       links: [
-        { label: en ? 'Copywriting' : 'Webtexte', href: en ? '/en/website-copywriting' : '/webseiten-texte-schreiben-lassen' },
-        { label: en ? 'Branding'    : 'Branding', href: en ? '/en/design-branding'     : '/design-branding' },
-        { label: 'UI/UX Design',                  href: en ? '/en/ui-ux-design'        : '/ui-ux-design' },
+        { label: en ? 'Copywriting'  : 'Webtexte',  href: en ? '/en/website-copywriting' : '/webseiten-texte-schreiben-lassen' },
+        { label: en ? 'Branding'     : 'Branding',  href: en ? '/en/design-branding'     : '/design-branding' },
+        { label: 'UI/UX Design',                    href: en ? '/en/ui-ux-design'        : '/ui-ux-design' },
       ],
     },
     {
       title: 'Marketing',
+      href: en ? '/en/online-marketing' : '/online-marketing',
       links: [
         { label: 'Google Ads',   href: en ? '/en/google-ads-management'  : '/marketing-google-ads' },
         { label: 'Social Media', href: en ? '/en/social-media-marketing' : '/marketing-social-media' },
@@ -125,10 +134,11 @@ const serviceGroups = computed(() => {
 const legalLinks = computed(() => {
   const en = isEnglish.value;
   return [
-    { label: 'Blog',                                 href: en ? '/en/blog'           : '/blog' },
-    { label: en ? 'Contact' : 'Kontakt',            href: en ? '/en/contact'        : '/kontakt' },
-    { label: en ? 'Legal Notice' : 'Impressum',     href: en ? '/en/legal-notice'   : '/impressum' },
-    { label: en ? 'Privacy Policy' : 'Datenschutz', href: en ? '/en/privacy-policy' : '/datenschutz' },
+    { label: 'Blog',                                        href: en ? '/en/blog'                   : '/blog' },
+    { label: en ? 'Contact'         : 'Kontakt',           href: en ? '/en/contact'                : '/kontakt' },
+    { label: en ? 'Price Calculator': 'Preise Kalkulator', href: en ? '/en/website-cost-calculator': '/webseite-kosten-kalkulator' },
+    { label: en ? 'Legal Notice'    : 'Impressum',         href: en ? '/en/legal-notice'           : '/impressum' },
+    { label: en ? 'Privacy Policy'  : 'Datenschutz',       href: en ? '/en/privacy-policy'         : '/datenschutz' },
   ];
 });
 </script>

@@ -97,6 +97,13 @@
     <!-- FAQ -->
     <FAQSection title="Häufig gestellte Fragen" :faqs="faqs" />
 
+    <!-- Related Services -->
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Gutes Design braucht eine starke technische Basis"
+      :services="relatedServices"
+    />
+
     <!-- CTA -->
     <CTASection
       title="Professionelles Webdesign für Ihr Unternehmen"
@@ -391,6 +398,30 @@ const pricingPlans = [
     ],
     buttonText: 'Beratung buchen',
     isHighlighted: false,
+  },
+];
+
+const relatedServices = [
+  {
+    icon: 'language',
+    title: 'Firmenwebsite erstellen lassen',
+    description: 'Professionelle Unternehmenswebsite mit modernem Design, SEO-Optimierung und schnellen Ladezeiten — fertig in 7 Arbeitstagen.',
+    price: 'ab 1.500 €',
+    href: '/firmenwebsite-erstellen-lassen',
+  },
+  {
+    icon: 'shopping_bag',
+    title: 'Online-Shop erstellen lassen',
+    description: 'E-Commerce-Lösungen mit individuellem Design, das Vertrauen schafft und Besucher zu Käufern macht.',
+    price: 'ab 3.000 €',
+    href: '/online-shop-erstellen-lassen',
+  },
+  {
+    icon: 'search_insights',
+    title: 'SEO Optimierung',
+    description: 'Damit Ihr neues Design auch bei Google gefunden wird — technisches SEO, das Rankings und Traffic steigert.',
+    price: 'ab 300 €',
+    href: '/seo-optimieren-lassen',
   },
 ];
 

@@ -48,6 +48,12 @@
 
     <FAQSection title="Frequently Asked Questions about SEO" :faqs="seoFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Development"
+      title="SEO Works Best with the Right Website"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="More Customers through Professional SEO"
       description="Get your website visible on Google and sustainably attract new customers."
@@ -342,5 +348,11 @@ const seoFaqs = [
     answer:
       'Yes, our SEO management contracts are flexibly cancellable. You only pay for the services you actually use and retain full cost control.',
   },
+];
+
+const relatedServices = [
+  { icon: 'language', title: 'Business Website', description: 'A technically sound business website is the foundation of every successful SEO strategy.', price: 'from €1,500', href: '/en/business-website-design' },
+  { icon: 'article', title: 'Landing Page Design', description: 'Optimised landing pages with a clean technical SEO foundation for better conversions and rankings.', price: 'from €500', href: '/en/landing-page-design' },
+  { icon: 'shopping_bag', title: 'Online Shop', description: 'E-commerce with a built-in SEO foundation — fast, secure and visible on Google.', price: 'from €3,000', href: '/en/online-shop-development' },
 ];
 </script>

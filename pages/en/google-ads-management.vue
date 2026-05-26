@@ -81,6 +81,12 @@
 
     <FAQSection title="Frequently Asked Questions about Google Ads" :faqs="adsFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Development"
+      title="Google Ads Only Work with the Right Landing Page"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="More Customers through Professional Google Advertising"
       description="EvolaTec develops Google Ads campaigns that create visibility, generate leads and help businesses grow."
@@ -355,5 +361,11 @@ const adsFaqs = [
     answer:
       'Google Ads work for nearly every industry where potential customers actively search for solutions: local service providers, online shops, B2B companies, start-ups and service businesses. Particularly effective when your offering solves a concrete problem and click prices fit your order value.',
   },
+];
+
+const relatedServices = [
+  { icon: 'article', title: 'Landing Page Design', description: 'High-converting landing pages purpose-built for Google Ads traffic — lower CPA, more leads.', price: 'from €500', href: '/en/landing-page-design' },
+  { icon: 'language', title: 'Business Website', description: 'A fast, professional business website that turns your ad clicks into real enquiries.', price: 'from €1,500', href: '/en/business-website-design' },
+  { icon: 'shopping_bag', title: 'Online Shop', description: 'E-commerce with Google Shopping integration — built for performance and maximum ROAS.', price: 'from €3,000', href: '/en/online-shop-development' },
 ];
 </script>

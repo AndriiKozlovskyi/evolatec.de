@@ -148,6 +148,13 @@
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zu Social Media Marketing" :faqs="socialFaqs" />
 
+    <!-- Related Services -->
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Social Media Werbung braucht die richtige Zielseite"
+      :services="relatedServices"
+    />
+
     <!-- Final CTA -->
     <section class="py-section-padding bg-primary text-on-primary">
       <div class="max-w-container-max mx-auto px-gutter text-center space-y-stack-md">
@@ -475,6 +482,12 @@ const pricingItems = [
   { name: 'Monatliches Reporting', price: 'ab 100€/Monat' },
   { name: 'Social Media Templates', price: 'ab 150€' },
   { name: 'Content Produktion', price: 'ab 300€' },
+];
+
+const relatedServices = [
+  { icon: 'article', title: 'Landingpage erstellen lassen', description: 'Conversion-optimierte Landingpages als Zielseiten für Ihre Social Media Kampagnen — mehr Leads, weniger Streuverlust.', price: 'ab 500 €', href: '/landingpage-erstellen-lassen' },
+  { icon: 'language', title: 'Firmenwebsite erstellen lassen', description: 'Eine professionelle Firmenwebsite als digitale Heimat, auf die Sie Ihren Social Media Traffic lenken.', price: 'ab 1.500 €', href: '/firmenwebsite-erstellen-lassen' },
+  { icon: 'shopping_bag', title: 'Online-Shop erstellen lassen', description: 'E-Commerce mit Social Commerce Integration für Verkäufe direkt aus Instagram und Facebook.', price: 'ab 3.000 €', href: '/online-shop-erstellen-lassen' },
 ];
 
 </script>

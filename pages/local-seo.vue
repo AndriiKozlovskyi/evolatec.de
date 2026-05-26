@@ -68,6 +68,12 @@
 
     <FAQSection title="Häufig gestellte Fragen zu Local SEO" :faqs="localFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Lokales SEO braucht eine professionelle Website als Basis"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="Mehr lokale Kunden gewinnen"
       description="Werden Sie in Ihrer Region bei Google sichtbar und gewinnen Sie mehr Anfragen."
@@ -289,6 +295,12 @@ const industries = [
   'Fitnessstudios & Coaches',
   'Kanzleien & Berater',
   'Einzelhandel & Shops',
+];
+
+const relatedServices = [
+  { icon: 'language', title: 'Firmenwebsite erstellen lassen', description: 'Eine lokal optimierte Firmenwebsite ist die Basis, um mehr regionale Kunden bei Google zu gewinnen.', price: 'ab 1.500 €', href: '/firmenwebsite-erstellen-lassen' },
+  { icon: 'article', title: 'Landingpage erstellen lassen', description: 'Lokale Landingpages für einzelne Standorte oder Leistungen — für mehr regionale Sichtbarkeit und Anfragen.', price: 'ab 500 €', href: '/landingpage-erstellen-lassen' },
+  { icon: 'shopping_bag', title: 'Online-Shop erstellen lassen', description: 'Lokaler E-Commerce mit Google Shopping und regionaler SEO — mehr Umsatz aus Ihrer Region.', price: 'ab 3.000 €', href: '/online-shop-erstellen-lassen' },
 ];
 
 </script>

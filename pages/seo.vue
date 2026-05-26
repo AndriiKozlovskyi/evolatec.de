@@ -57,12 +57,21 @@
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zur SEO Optimierung" :faqs="seoFaqs" />
 
+    <!-- Related Services -->
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="SEO entfaltet seine Wirkung erst mit der richtigen Website"
+      :services="relatedServices"
+    />
+
     <!-- CTA Section -->
     <CTASection
       title="Mehr Kunden durch professionelle SEO"
       description="Lassen Sie Ihre Website bei Google sichtbar werden und gewinnen Sie nachhaltig neue Kunden."
       primary-cta="Kostenloses SEO Gespräch"
       secondary-cta="SEO Preise ansehen"
+      primary-href="/kontakt"
+      secondary-href="/webseite-kosten-kalkulator"
     />
   </div>
 </template>
@@ -348,6 +357,30 @@ const seoChecklist = [
   'Lokale SEO & Google Maps Optimierung',
   'Linkbuilding & Domain Autorität',
   'Monatliche Reports & Ranking Monitoring',
+];
+
+const relatedServices = [
+  {
+    icon: 'language',
+    title: 'Firmenwebsite erstellen lassen',
+    description: 'Eine SEO-optimierte Firmenwebsite, die bei Google rankt und Besucher in Anfragen verwandelt. Performance-first, individuell entwickelt.',
+    price: 'ab 1.500 €',
+    href: '/firmenwebsite-erstellen-lassen',
+  },
+  {
+    icon: 'article',
+    title: 'Landingpage erstellen lassen',
+    description: 'Conversion-optimierte Landingpages für Werbung und Leadgenerierung — mit technischem SEO von Anfang an.',
+    price: 'ab 500 €',
+    href: '/landingpage-erstellen-lassen',
+  },
+  {
+    icon: 'shopping_bag',
+    title: 'Online-Shop erstellen lassen',
+    description: 'Schnelle, sichere E-Commerce-Lösungen mit eingebautem SEO-Fundament für mehr organischen Traffic.',
+    price: 'ab 3.000 €',
+    href: '/online-shop-erstellen-lassen',
+  },
 ];
 
 </script>

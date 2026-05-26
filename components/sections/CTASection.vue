@@ -12,10 +12,10 @@
         <p class="text-base sm:text-lg md:text-headline-md opacity-90 max-w-2xl mx-auto leading-relaxed">{{ description }}</p>
 
         <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-6 md:pt-8">
-          <a href="/kontakt" class="w-full sm:w-auto">
+          <a :href="primaryHref" class="w-full sm:w-auto">
             <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">{{ primaryCta }}</BaseButton>
           </a>
-          <a href="/webseite-kosten-kalkulator" class="w-full sm:w-auto">
+          <a :href="secondaryHref" class="w-full sm:w-auto">
             <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/30 !text-white hover:!bg-white/10">{{ secondaryCta }}</BaseButton>
           </a>
         </div>
@@ -25,11 +25,16 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+withDefaults(defineProps<{
   title: string;
   description: string;
   primaryCta: string;
   secondaryCta: string;
-}>();
+  primaryHref?: string;
+  secondaryHref?: string;
+}>(), {
+  primaryHref: '/kontakt',
+  secondaryHref: '/webseite-kosten-kalkulator',
+});
 </script>
 

@@ -59,6 +59,13 @@
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zum Branding" :faqs="brandingFaqs" />
 
+    <!-- Related Services -->
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Ihre Marke braucht eine professionelle digitale Heimat"
+      :services="relatedServices"
+    />
+
     <!-- Final CTA -->
     <CTASection
       title="Entwickeln Sie eine starke Marke mit EvolaTec"
@@ -377,6 +384,30 @@ const brandingPricingPlans = [
     ],
     buttonText: 'Rebranding buchen',
     isHighlighted: false,
+  },
+];
+
+const relatedServices = [
+  {
+    icon: 'language',
+    title: 'Firmenwebsite erstellen lassen',
+    description: 'Ihre neue Markenidentität verdient eine professionelle Website — individuell entwickelt, SEO-optimiert und conversion-stark.',
+    price: 'ab 1.500 €',
+    href: '/firmenwebsite-erstellen-lassen',
+  },
+  {
+    icon: 'article',
+    title: 'Landingpage erstellen lassen',
+    description: 'Setzen Sie Ihr neues Branding auf einer konversionsoptimierten Landingpage in Szene — fertig ab 3 Tagen.',
+    price: 'ab 500 €',
+    href: '/landingpage-erstellen-lassen',
+  },
+  {
+    icon: 'palette',
+    title: 'Webdesign',
+    description: 'Professionelles UI/UX-Design, das Ihre Marke visuell erlebbar macht und Besucher zu Kunden konvertiert.',
+    price: 'ab 1.000 €',
+    href: '/webdesign',
   },
 ];
 

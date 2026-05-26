@@ -55,6 +55,12 @@
 
     <FAQSection title="Häufig gestellte Fragen zur SEO Analyse" :faqs="auditFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Nach dem Audit: Website neu aufbauen oder optimieren lassen"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="Lassen Sie Ihre Website professionell analysieren"
       description="Finden Sie heraus, warum Ihre Website nicht optimal bei Google rankt — und was dagegen zu tun ist."
@@ -273,6 +279,12 @@ const auditPricingPlans = [
     buttonText: 'Beratung buchen',
     isHighlighted: false,
   },
+];
+
+const relatedServices = [
+  { icon: 'language', title: 'Firmenwebsite erstellen lassen', description: 'Nutzen Sie die Erkenntnisse des Audits und starten Sie mit einer technisch einwandfreien Firmenwebsite.', price: 'ab 1.500 €', href: '/firmenwebsite-erstellen-lassen' },
+  { icon: 'article', title: 'Landingpage erstellen lassen', description: 'Conversion-optimierte Landingpages, die von Anfang an technisch korrekt und SEO-ready sind.', price: 'ab 500 €', href: '/landingpage-erstellen-lassen' },
+  { icon: 'shopping_bag', title: 'Online-Shop erstellen lassen', description: 'E-Commerce mit solider SEO Basis — entwickelt nach den Erkenntnissen Ihrer Analyse.', price: 'ab 3.000 €', href: '/online-shop-erstellen-lassen' },
 ];
 
 </script>

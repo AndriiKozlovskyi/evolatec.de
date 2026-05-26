@@ -48,6 +48,12 @@
 
     <FAQSection title="Frequently Asked Questions about Branding" :faqs="brandingFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Development"
+      title="Your Brand Needs a Professional Digital Home"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="Build a Strong Brand with EvolaTec"
       description="Professional branding, modern corporate design and strategic brand development for businesses, start-ups and digital projects."
@@ -404,5 +410,11 @@ const brandingFaqs = [
     answer:
       'Brand guidelines include logo variants, colour palette, typography system, imagery, application examples and dos & don\'ts. This way you and your service providers can apply your brand consistently across all channels.',
   },
+];
+
+const relatedServices = [
+  { icon: 'language', title: 'Business Website', description: 'A professionally built business website that brings your brand identity to life online.', price: 'from €1,500', href: '/en/business-website-design' },
+  { icon: 'article', title: 'Landing Page Design', description: 'On-brand landing pages designed to convert visitors into customers from day one.', price: 'from €500', href: '/en/landing-page-design' },
+  { icon: 'edit_document', title: 'Web Design', description: 'Bespoke web design that translates your brand values into a compelling digital experience.', price: 'from €800', href: '/en/web-design' },
 ];
 </script>

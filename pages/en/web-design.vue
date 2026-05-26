@@ -80,6 +80,12 @@
 
     <FAQSection title="Frequently Asked Questions" :faqs="faqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Development"
+      title="Great Design Needs a Strong Technical Foundation"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="Professional Web Design for Your Business"
       description="EvolaTec develops modern websites, strong brand identities and conversion-focused digital experiences."
@@ -415,5 +421,11 @@ const faqs = [
     answer:
       'Yes, we also handle redesigns and visually rework existing websites. On request we focus purely on the new design – or combine the redesign with a technical relaunch.',
   },
+];
+
+const relatedServices = [
+  { icon: 'language', title: 'Business Website', description: 'A professionally designed and developed business website — built to rank, convert and impress.', price: 'from €1,500', href: '/en/business-website-design' },
+  { icon: 'shopping_bag', title: 'Online Shop', description: 'E-commerce with a design-first approach — beautiful, fast and optimised for sales.', price: 'from €3,000', href: '/en/online-shop-development' },
+  { icon: 'article', title: 'Landing Page Design', description: 'Focused landing pages that combine striking design with conversion optimisation.', price: 'from €500', href: '/en/landing-page-design' },
 ];
 </script>

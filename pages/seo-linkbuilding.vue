@@ -39,6 +39,12 @@
 
     <FAQSection title="Häufig gestellte Fragen zu Linkbuilding" :faqs="linkBuildingFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Starke Backlinks brauchen eine starke Website als Ziel"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="Stärken Sie Ihre SEO Autorität"
       description="Professioneller Backlink Aufbau für bessere Rankings und mehr Sichtbarkeit bei Google."
@@ -242,6 +248,12 @@ const linkBuildingPricingPlans = [
     buttonText: 'Betreuung buchen',
     isHighlighted: false,
   },
+];
+
+const relatedServices = [
+  { icon: 'language', title: 'Firmenwebsite erstellen lassen', description: 'Backlinks entfalten ihre Wirkung nur bei einer technisch sauberen, schnellen Firmenwebsite.', price: 'ab 1.500 €', href: '/firmenwebsite-erstellen-lassen' },
+  { icon: 'article', title: 'Landingpage erstellen lassen', description: 'Professionelle Landingpages als Linkziele — für maximale Conversion und SEO Wirkung.', price: 'ab 500 €', href: '/landingpage-erstellen-lassen' },
+  { icon: 'shopping_bag', title: 'Online-Shop erstellen lassen', description: 'E-Commerce mit starkem SEO-Fundament — für Backlinks, die zu mehr Umsatz führen.', price: 'ab 3.000 €', href: '/online-shop-erstellen-lassen' },
 ];
 
 </script>

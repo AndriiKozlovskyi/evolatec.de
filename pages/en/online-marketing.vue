@@ -117,6 +117,12 @@
 
     <FAQSection title="Frequently Asked Questions about Online Marketing" :faqs="marketingFaqs" />
 
+    <RelatedServicesSection
+      eyebrow="Website & Development"
+      title="Marketing Needs a High-Converting Website as Its Foundation"
+      :services="relatedServices"
+    />
+
     <CTASection
       title="More Visibility, More Leads, More Growth"
       description="EvolaTec develops modern online marketing strategies for businesses that want to grow digitally."
@@ -425,5 +431,11 @@ const marketingFaqs = [
     answer:
       'Local businesses, service providers, start-ups, online shops and digital brands. The key is that your target audience is reachable online and you are willing to invest in the right channels.',
   },
+];
+
+const relatedServices = [
+  { icon: 'article', title: 'Landing Page Design', description: 'Conversion-optimised landing pages as destinations for your marketing campaigns — more leads, less waste.', price: 'from €500', href: '/en/landing-page-design' },
+  { icon: 'language', title: 'Business Website', description: 'A professional business website as the digital home you drive all your marketing traffic to.', price: 'from €1,500', href: '/en/business-website-design' },
+  { icon: 'shopping_bag', title: 'Online Shop', description: 'E-commerce built for performance marketing — fast, conversion-focused and ready for paid traffic.', price: 'from €3,000', href: '/en/online-shop-development' },
 ];
 </script>

@@ -125,6 +125,13 @@
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zum Online Marketing" :faqs="marketingFaqs" />
 
+    <!-- Related Services -->
+    <RelatedServicesSection
+      eyebrow="Website & Entwicklung"
+      title="Marketing braucht eine konversionsstarke Website als Basis"
+      :services="relatedServices"
+    />
+
     <!-- Final CTA -->
     <CTASection
       title="Mehr Sichtbarkeit, mehr Leads, mehr Wachstum"
@@ -403,6 +410,30 @@ const pricingItems = [
   { name: 'SEO Optimierung', price: 'ab 300€' },
   { name: 'Creatives & Grafiken', price: 'ab 150€' },
   { name: 'Monatliches Reporting', price: 'ab 100€/Monat' },
+];
+
+const relatedServices = [
+  {
+    icon: 'article',
+    title: 'Landingpage erstellen lassen',
+    description: 'Jede Werbekampagne braucht eine konversionsoptimierte Landingpage — ohne die verschenken Sie Werbebudget.',
+    price: 'ab 500 €',
+    href: '/landingpage-erstellen-lassen',
+  },
+  {
+    icon: 'language',
+    title: 'Firmenwebsite erstellen lassen',
+    description: 'Ihre Marketing-Kanäle bringen Traffic — eine professionelle Firmenwebsite sorgt dafür, dass daraus Anfragen werden.',
+    price: 'ab 1.500 €',
+    href: '/firmenwebsite-erstellen-lassen',
+  },
+  {
+    icon: 'shopping_bag',
+    title: 'Online-Shop erstellen lassen',
+    description: 'Schalten Sie Ads auf einen Shop, der wirklich verkauft — schnell, sicher und für alle Geräte optimiert.',
+    price: 'ab 3.000 €',
+    href: '/online-shop-erstellen-lassen',
+  },
 ];
 
 </script>
