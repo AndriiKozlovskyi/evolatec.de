@@ -41,9 +41,7 @@ export default defineNuxtConfig({
 
     download: true,
 
-    inject: true,
-
-    fontsPath: '/fonts',
+    inject: false,
   },
 
   tailwindcss: {
