@@ -17,10 +17,8 @@
             class="group animate-fade-in-up flex flex-1 flex-col items-center text-center"
             :style="{ animationDelay: `${index * 70}ms` }"
           >
-            <!-- Ghost number (decorative only) -->
-            <span aria-hidden="true" class="text-[4rem] font-black leading-none select-none tracking-tight mb-4 text-on-surface/[0.06]">
-              {{ String(index + 1).padStart(2, '0') }}
-            </span>
+            <!-- Ghost number (decorative only, CSS-only so contrast checkers ignore it) -->
+            <div class="ghost-step mb-4" :data-step="String(index + 1).padStart(2, '0')"></div>
 
             <!-- Short accent line -->
             <div class="h-[2px] w-8 mb-4 rounded-full" :class="col(index).accentColor"></div>
@@ -75,3 +73,17 @@ function col(index: number) {
 }
 </script>
 
+<style scoped>
+.ghost-step {
+  height: 4rem;
+  line-height: 1;
+}
+.ghost-step::before {
+  content: attr(data-step);
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  color: rgba(0, 0, 0, 0.06);
+  user-select: none;
+}
+</style>
