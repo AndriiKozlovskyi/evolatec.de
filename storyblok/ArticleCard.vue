@@ -7,10 +7,10 @@
     <!-- Image -->
     <div class="relative overflow-hidden rounded-t-2xl">
       <img
-        :src="`${article.image.filename}?fit=max&w=640&h=240&q=80`"
+        :src="`${article.image.filename}?fit=max&w=640&h=340&q=80`"
         :alt="article.image?.alt || article.title"
         width="640"
-        height="240"
+        height="340"
         loading="lazy"
         class="w-full h-48 xl:h-60 object-cover pointer-events-none transition-transform duration-300 group-hover:scale-105"
       />
