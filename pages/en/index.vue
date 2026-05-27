@@ -685,6 +685,14 @@ const services = [
     price: 'from €300/month',
     href: '/en/social-media-marketing',
   },
+  {
+    id: 8,
+    icon: 'auto_awesome',
+    title: 'GEO / AI Optimization',
+    description: 'Visibility in ChatGPT, Gemini and Perplexity — through structured data, Schema.org and AI-readable content.',
+    price: 'Included',
+    href: '/en/geo',
+  },
 ]
 
 const aboutFeatures = [

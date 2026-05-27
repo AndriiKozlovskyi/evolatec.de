@@ -748,6 +748,14 @@ const services = [
     price: 'ab 300€/Monat',
     href: '/marketing-social-media',
   },
+  {
+    id: 8,
+    icon: 'auto_awesome',
+    title: 'GEO / AI-Optimierung',
+    description: 'Sichtbarkeit in ChatGPT, Gemini und Perplexity — durch strukturierte Daten, Schema.org und KI-lesbare Inhalte.',
+    price: 'Inklusive',
+    href: '/geo',
+  },
 ];
 
 const aboutFeatures = [
