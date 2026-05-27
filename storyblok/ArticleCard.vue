@@ -2,49 +2,53 @@
   <NuxtLink
     :to="'/' + slug"
     v-editable="article"
-    class="card-premium group flex flex-col w-full h-full overflow-hidden text-left no-underline"
+    class="group flex flex-col w-full h-full overflow-hidden text-left no-underline bg-white rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
   >
     <!-- Image -->
-    <div class="relative overflow-hidden rounded-t-2xl">
+    <div class="relative overflow-hidden rounded-t-2xl aspect-[16/9]">
       <img
-        :src="`${article.image.filename}?fit=max&w=640&h=340&q=80`"
+        :src="`${article.image.filename}/m/640x360/`"
         :alt="article.image?.alt || article.title"
         width="640"
-        height="340"
+        height="360"
         loading="lazy"
-        class="w-full h-48 xl:h-60 object-cover pointer-events-none transition-transform duration-300 group-hover:scale-105"
+        class="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
       />
-      <!-- subtle orange tint overlay on hover -->
-      <div class="absolute inset-0 bg-[#f05b04] opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
+      <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
     </div>
 
     <!-- Content -->
     <div class="flex flex-col flex-1 p-5">
+
       <!-- Author row -->
-      <div class="flex items-center gap-2 mb-3">
-        <span class="icon-dot flex-shrink-0"></span>
-        <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--accent);">{{ article.author }}</span>
+      <div class="flex items-center gap-1.5 mb-3">
+        <span class="material-symbols-outlined text-[18px] text-primary leading-none">person</span>
+        <span class="text-xs font-semibold uppercase tracking-widest text-primary">{{ article.author }}</span>
       </div>
 
-      <h2 class="text-lg font-black leading-snug mb-3 transition-colors duration-200 group-hover:text-[#f05b04]" style="color: var(--text-1); letter-spacing: -0.02em;">
+      <!-- Title -->
+      <h2 class="text-base font-black leading-snug mb-2 text-on-surface tracking-tight group-hover:text-primary transition-colors duration-200">
         {{ article.title }}
       </h2>
 
-      <p class="text-sm leading-relaxed line-clamp-3 flex-1" style="color: var(--text-2);">
+      <!-- Excerpt -->
+      <p class="text-sm leading-relaxed line-clamp-3 flex-1 text-on-surface-variant">
         {{ article.description }}
       </p>
 
-      <!-- Read more indicator -->
-      <div class="mt-4 flex items-center gap-1.5 text-xs font-semibold" style="color: var(--accent);">
-        <span>Read more</span>
-        <svg class="w-2 h-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
+      <!-- Read more -->
+      <div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+        <span class="text-xs font-semibold text-primary flex items-center gap-1">
+          {{ isEnglish ? 'Read more' : 'Weiterlesen' }}
+          <span class="material-symbols-outlined text-[16px] leading-none transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+        </span>
       </div>
+
     </div>
   </NuxtLink>
 </template>
 
 <script setup>
+const { isEnglish } = useLanguageSwitcher()
 defineProps({ article: Object, slug: String })
 </script>
