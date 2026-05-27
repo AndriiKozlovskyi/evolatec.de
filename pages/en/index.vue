@@ -691,7 +691,7 @@ const services = [
     title: 'GEO / AI Optimization',
     description: 'Visibility in ChatGPT, Gemini and Perplexity — through structured data, Schema.org and AI-readable content.',
     price: 'Included',
-    href: '/en/geo',
+    href: '/en/ai-optimization',
   },
 ]
 

@@ -317,6 +317,22 @@
     </image:image>
   </url>
 
+  <!-- ── GEO / AI Optimierung ────────────────────────────────────────── -->
+  <url>
+    <loc>https://evolatec.de/ai-optimierung/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/ai-optimierung/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/ai-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/ai-optimierung/"/>
+    <image:image>
+      <image:loc>https://evolatec.de/seo/hero.webp</image:loc>
+      <image:title>GEO / AI Optimierung — Sichtbarkeit in ChatGPT, Gemini & Perplexity</image:title>
+      <image:caption>Generative Engine Optimization für Unternehmen — Website sichtbar in ChatGPT, Google Gemini, Perplexity und Co. Inklusive bei jeder EvolaTec Website.</image:caption>
+    </image:image>
+  </url>
+
   <!-- ── Web Development ───────────────────────────────────────────────── -->
   <url>
     <loc>https://evolatec.de/web-development/</loc>
