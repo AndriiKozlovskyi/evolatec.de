@@ -30,13 +30,13 @@
             </p>
           </div>
 
-          <!-- Social & related -->
-          <div class="mt-5 flex flex-col gap-2.5">
+          <!-- Social -->
+          <div class="mt-5">
             <a
               href="https://www.linkedin.com/company/121004478"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors"
+              class="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium text-white bg-[#0a66c2] hover:bg-[#004182] transition-colors duration-200"
               :aria-label="isEnglish ? 'EvolaTec on LinkedIn' : 'EvolaTec auf LinkedIn'"
             >
               <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -72,16 +72,16 @@
             </a>
           </nav>
 
-          <!-- Legal -->
-          <nav class="flex flex-col gap-2" :aria-label="isEnglish ? 'Legal' : 'Rechtliches'">
-            <span class="font-bold text-primary mb-2 text-sm">{{ isEnglish ? 'Legal' : 'Rechtliches' }}</span>
+          <!-- Company -->
+          <nav class="flex flex-col gap-2" :aria-label="isEnglish ? 'Company' : 'Unternehmen'">
+            <span class="font-bold text-primary mb-2 text-sm">{{ isEnglish ? 'Company' : 'Unternehmen' }}</span>
             <a
-              v-for="legal in legalLinks"
-              :key="legal.href"
-              :href="legal.href"
+              v-for="link in companyLinks"
+              :key="link.href"
+              :href="link.href"
               class="text-on-surface-variant hover:text-primary transition-colors text-sm leading-snug"
             >
-              {{ legal.label }}
+              {{ link.label }}
             </a>
           </nav>
         </div>
@@ -89,10 +89,20 @@
       </div>
 
       <!-- Bottom bar -->
-      <div class="mt-12 pt-6 border-t border-outline-variant/30">
-        <p class="text-xs text-on-surface-variant text-center sm:text-left">
+      <div class="mt-12 pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <p class="text-xs text-on-surface-variant">
           © {{ currentYear }} EvolaTec. Digital Architecture & Engineering.
         </p>
+        <div class="flex gap-4">
+          <a
+            v-for="legal in legalLinks"
+            :key="legal.href"
+            :href="legal.href"
+            class="text-xs text-on-surface-variant hover:text-primary transition-colors"
+          >
+            {{ legal.label }}
+          </a>
+        </div>
       </div>
     </div>
   </footer>
@@ -125,6 +135,7 @@ const serviceGroups = computed(() => {
         { label: 'Local SEO',                                  href: en ? '/en/local-seo'         : '/local-seo' },
         { label: en ? 'Link Building'    : 'Linkbuilding',     href: en ? '/en/seo-link-building' : '/seo-linkbuilding' },
         { label: 'SEO Audit',                                  href: en ? '/en/seo-audit'         : '/seo-audit' },
+        { label: en ? 'GEO / AI Search'  : 'GEO / KI-Suche',  href: en ? '/en/ai-optimization'   : '/ai-optimierung' },
       ],
     },
     {
@@ -147,14 +158,20 @@ const serviceGroups = computed(() => {
   ];
 });
 
+const companyLinks = computed(() => {
+  const en = isEnglish.value;
+  return [
+    { label: 'Blog',                                       href: en ? '/en/blog'                    : '/blog' },
+    { label: en ? 'Contact'         : 'Kontakt',          href: en ? '/en/contact'                 : '/kontakt' },
+    { label: en ? 'Price Calculator': 'Preiskalkulator',  href: en ? '/en/website-cost-calculator' : '/webseite-kosten-kalkulator' },
+  ];
+});
+
 const legalLinks = computed(() => {
   const en = isEnglish.value;
   return [
-    { label: 'Blog',                                        href: en ? '/en/blog'                   : '/blog' },
-    { label: en ? 'Contact'         : 'Kontakt',           href: en ? '/en/contact'                : '/kontakt' },
-    { label: en ? 'Price Calculator': 'Preise Kalkulator', href: en ? '/en/website-cost-calculator': '/webseite-kosten-kalkulator' },
-    { label: en ? 'Legal Notice'    : 'Impressum',         href: en ? '/en/legal-notice'           : '/impressum' },
-    { label: en ? 'Privacy Policy'  : 'Datenschutz',       href: en ? '/en/privacy-policy'         : '/datenschutz' },
+    { label: en ? 'Legal Notice'  : 'Impressum',   href: en ? '/en/legal-notice'   : '/impressum' },
+    { label: en ? 'Privacy Policy': 'Datenschutz', href: en ? '/en/privacy-policy' : '/datenschutz' },
   ];
 });
 </script>
