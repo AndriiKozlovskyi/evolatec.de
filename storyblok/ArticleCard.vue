@@ -6,9 +6,13 @@
   >
     <!-- Image -->
     <div class="relative overflow-hidden rounded-t-2xl">
-      <img
+      <NuxtImg
         :src="article.image"
         :alt="article.image.alt"
+        width="640"
+        height="240"
+        sizes="100vw sm:50vw lg:33vw xl:400px"
+        loading="lazy"
         class="w-full h-48 xl:h-60 object-cover pointer-events-none transition-transform duration-300 group-hover:scale-105"
       />
       <!-- subtle orange tint overlay on hover -->
