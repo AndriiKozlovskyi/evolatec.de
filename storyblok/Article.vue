@@ -43,7 +43,7 @@
 
       <!-- Article content -->
       <div
-        v-html="renderedContent"
+        v-html="blok.content"
         class="prose prose-invert prose-sm sm:prose-base max-w-none
                prose-headings:font-black prose-headings:tracking-tight
                prose-a:text-[#f05b04] prose-a:no-underline hover:prose-a:underline
@@ -58,12 +58,9 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { renderRichText } from '@storyblok/vue'
+
 
 const props = defineProps({ blok: Object })
-
-const renderedContent = computed(() => renderRichText(props.blok.content))
 </script>
 
 <style scoped>
