@@ -370,17 +370,6 @@
     </image:image>
   </url>
 
-  <!-- ── Pricing ───────────────────────────────────────────────────────── -->
-  <url>
-    <loc>https://evolatec.de/preise/</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="de"        href="https://evolatec.de/preise/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://evolatec.de/en/pricing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://evolatec.de/preise/"/>
-  </url>
-
   <!-- ── Contact ───────────────────────────────────────────────────────── -->
   <url>
     <loc>https://evolatec.de/kontakt/</loc>
