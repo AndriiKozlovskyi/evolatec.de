@@ -42,19 +42,14 @@
       </div>
 
       <!-- Article content -->
-      <div v-html="renderedContent" class="article-body"></div>
+      <div v-html="blok.content" class="article-body"></div>
 
     </div>
   </article>
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { renderRichText } from '@storyblok/vue'
-
-const props = defineProps({ blok: Object })
-
-const renderedContent = computed(() => renderRichText(props.blok.content))
+defineProps({ blok: Object })
 </script>
 
 <style scoped>
