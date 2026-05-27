@@ -67,6 +67,7 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
       failOnError: false,
+      routes: ['/blog-sitemap.xml'],
     },
   },
 
