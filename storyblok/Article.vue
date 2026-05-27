@@ -44,13 +44,6 @@
       <!-- Article content -->
       <div
         v-html="renderedContent"
-        class="prose prose-invert prose-sm sm:prose-base max-w-none
-               prose-headings:font-black prose-headings:tracking-tight
-               prose-a:text-[#f05b04] prose-a:no-underline hover:prose-a:underline
-               prose-strong:text-white
-               prose-code:text-[#f05b04] prose-code:bg-white/5 prose-code:rounded prose-code:px-1
-               prose-blockquote:border-l-[#f05b04] prose-blockquote:text-[#8fa3bb]
-               prose-hr:border-white/10"
       ></div>
 
     </div>
