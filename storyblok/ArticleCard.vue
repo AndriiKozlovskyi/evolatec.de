@@ -37,7 +37,7 @@
       <!-- Read more indicator -->
       <div class="mt-4 flex items-center gap-1.5 text-xs font-semibold" style="color: var(--accent);">
         <span>Read more</span>
-        <svg class="w-1 h-1 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <svg class="w-2 h-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
         </svg>
       </div>
