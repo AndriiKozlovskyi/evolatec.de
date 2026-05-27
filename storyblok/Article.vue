@@ -2,18 +2,19 @@
   <article v-editable="blok" class="pt-20 pb-section-padding bg-surface min-h-screen">
 
     <!-- Hero image -->
-    <div v-if="blok.image?.filename" class="relative w-full h-[420px] md:h-[520px] overflow-hidden">
-      <img
-        :src="`${blok.image.filename}?fit=max&w=1400&h=800&q=80`"
-        :alt="blok.image.alt || blok.title"
-        class="w-full h-full object-cover"
-        loading="eager"
-      />
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/10 to-surface"></div>
+    <div v-if="blok.image?.filename" class="max-w-3xl mx-auto px-gutter pt-8">
+      <div class="relative overflow-hidden rounded-2xl aspect-[16/9]">
+        <img
+          :src="`${blok.image.filename}/m/1280x720/`"
+          :alt="blok.image.alt || blok.title"
+          class="w-full h-full object-cover"
+          loading="eager"
+        />
+      </div>
     </div>
 
     <!-- Article body -->
-    <div class="max-w-3xl mx-auto px-gutter" :class="blok.image?.filename ? '-mt-12 relative z-10' : 'pt-16'">
+    <div class="max-w-3xl mx-auto px-gutter" :class="blok.image?.filename ? 'pt-8' : 'pt-16'">
 
       <!-- Badge -->
       <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1.5 rounded-full mb-6">
