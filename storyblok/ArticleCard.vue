@@ -7,7 +7,7 @@
     <!-- Image -->
     <div class="relative overflow-hidden rounded-t-2xl">
       <NuxtImg
-        :src="typeof article.image === 'object' ? article.image.filename : article.image"
+        :src="`${article.image.filename}`"
         :alt="article.image?.alt || article.title"
         width="640"
         height="240"
