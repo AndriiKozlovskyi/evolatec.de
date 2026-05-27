@@ -26,6 +26,7 @@ const deToEn: Record<string, string> = {
   '/seo-audit': '/en/seo-audit',
   '/local-seo': '/en/local-seo',
   '/seo-linkbuilding': '/en/seo-link-building',
+  '/ai-optimierung': '/en/ai-optimization',
   '/online-marketing': '/en/online-marketing',
   '/marketing-google-ads': '/en/google-ads-management',
   '/marketing-social-media': '/en/social-media-marketing',
