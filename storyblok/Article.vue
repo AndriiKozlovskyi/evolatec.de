@@ -1,6 +1,17 @@
 <template>
   <article v-editable="blok" class="pt-20 pb-section-padding bg-surface min-h-screen">
 
+    <!-- Back link -->
+    <div class="max-w-3xl mx-auto px-gutter pt-6">
+      <a
+        :href="isEnglish ? '/en/blog' : '/blog'"
+        class="inline-flex items-center gap-1.5 text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors duration-200"
+      >
+        <span class="material-symbols-outlined text-[18px] leading-none">arrow_back</span>
+        {{ isEnglish ? 'All articles' : 'Alle Artikel' }}
+      </a>
+    </div>
+
     <!-- Hero image -->
     <div v-if="blok.image?.filename" class="max-w-3xl mx-auto px-gutter pt-8">
       <div class="relative overflow-hidden rounded-2xl aspect-[16/9]">
@@ -50,6 +61,7 @@
 </template>
 
 <script setup>
+const { isEnglish } = useLanguageSwitcher()
 defineProps({ blok: Object })
 </script>
 
