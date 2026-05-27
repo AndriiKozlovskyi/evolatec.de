@@ -7,7 +7,7 @@
     <!-- Image -->
     <div class="relative overflow-hidden rounded-t-2xl">
       <img
-        :src="`${article.image.filename}/m/640x240/`"
+        :src="`${article.image.filename}?fit=max&w=640&h=240&q=80`"
         :alt="article.image?.alt || article.title"
         width="640"
         height="240"
