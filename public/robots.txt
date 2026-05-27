@@ -9,11 +9,6 @@
 User-agent: *
 Allow: /
 
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
-Disallow: /netlify-forms.html
-
 # ─────────────────────────────────────────────
 # AI / LLM Crawlers — bewusst erlaubt für Sichtbarkeit
 # in KI-Suche und KI-Assistenten
