@@ -42,25 +42,19 @@
       </div>
 
       <!-- Article content -->
-      <div
-        v-html="blok.content"
-        class="prose prose-invert prose-sm sm:prose-base max-w-none
-               prose-headings:font-black prose-headings:tracking-tight
-               prose-a:text-[#f05b04] prose-a:no-underline hover:prose-a:underline
-               prose-strong:text-white
-               prose-code:text-[#f05b04] prose-code:bg-white/5 prose-code:rounded prose-code:px-1
-               prose-blockquote:border-l-[#f05b04] prose-blockquote:text-[#8fa3bb]
-               prose-hr:border-white/10"
-      ></div>
+      <div v-html="renderedContent" class="article-body"></div>
 
     </div>
   </article>
 </template>
 
 <script setup>
-
+import { computed } from 'vue'
+import { renderRichText } from '@storyblok/vue'
 
 const props = defineProps({ blok: Object })
+
+const renderedContent = computed(() => renderRichText(props.blok.content))
 </script>
 
 <style scoped>
@@ -144,5 +138,50 @@ const props = defineProps({ blok: Object })
   max-width: 100%;
   height: auto;
   margin: 1.5rem 0;
+}
+.article-body :deep(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-size: 0.9375rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #e2dff0;
+}
+.article-body :deep(thead) {
+  background: #f3f0fa;
+}
+.article-body :deep(th) {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  color: #1c1b25;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid #e2dff0;
+}
+.article-body :deep(td) {
+  padding: 0.75rem 1rem;
+  color: #48444f;
+  border-bottom: 1px solid #ede9f7;
+  vertical-align: top;
+  line-height: 1.5;
+}
+.article-body :deep(tr:last-child td) {
+  border-bottom: none;
+}
+.article-body :deep(tr:nth-child(even)) {
+  background: #f9f7fd;
+}
+.article-body :deep(td code),
+.article-body :deep(th code) {
+  font-size: 0.8125rem;
+}
+.article-body :deep(ul) {
+  list-style-type: disc;
+}
+.article-body :deep(ol) {
+  list-style-type: decimal;
 }
 </style>
