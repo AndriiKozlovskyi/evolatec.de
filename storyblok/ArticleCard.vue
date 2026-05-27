@@ -6,12 +6,11 @@
   >
     <!-- Image -->
     <div class="relative overflow-hidden rounded-t-2xl">
-      <NuxtImg
-        :src="`${article.image.filename}`"
+      <img
+        :src="`${article.image.filename}/m/640x240/`"
         :alt="article.image?.alt || article.title"
         width="640"
         height="240"
-        sizes="100vw sm:50vw lg:33vw xl:400px"
         loading="lazy"
         class="w-full h-48 xl:h-60 object-cover pointer-events-none transition-transform duration-300 group-hover:scale-105"
       />
