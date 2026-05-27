@@ -11,6 +11,9 @@
       :stats="geoStats"
     />
 
+    <!-- Trust Section -->
+    <TrustSection :companies="trustCompanies" />
+
     <!-- What is GEO -->
     <section class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -85,44 +88,8 @@
     <FeaturesSection
       title="What GEO Does for Your Business"
       :features="features"
-      image-url="/web-development/seo.webp"
+      image-url="/web-development/geoimg.webp"
     />
-
-    <!-- AI Search Platforms Statistics -->
-    <section class="py-8 md:py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center mb-8 md:mb-stack-lg">
-          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">AI Search Engines Are Growing Fast</h2>
-          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto">The numbers speak for themselves: AI-powered search is not a trend — it's the new reality.</p>
-        </div>
-        <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
-          <table class="w-full min-w-[600px] text-sm">
-            <thead>
-              <tr class="bg-surface-container-low">
-                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30">Platform</th>
-                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Monthly Users</th>
-                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Growth</th>
-                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30">GEO Relevance</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(row, i) in aiStatsRows" :key="i" :class="i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low/40'">
-                <td class="p-4 font-semibold text-on-surface">{{ row.platform }}</td>
-                <td class="p-4 text-center text-on-surface-variant">{{ row.users }}</td>
-                <td class="p-4 text-center">
-                  <span class="inline-flex items-center gap-1 text-emerald-600 font-semibold">
-                    <span class="material-symbols-outlined text-sm">trending_up</span>
-                    {{ row.growth }}
-                  </span>
-                </td>
-                <td class="p-4 text-on-surface-variant">{{ row.relevance }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="text-center text-xs text-on-surface-variant mt-4">Sources: Statista, OpenAI, Google Trends 2024/2025. Figures are estimates.</p>
-      </div>
-    </section>
 
     <!-- GEO Elements -->
     <ServicesSection
@@ -142,6 +109,13 @@
     <BenefitsSection
       title="Benefits of GEO for Your Business"
       :benefits="benefits"
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+      title="GEO Optimization Pricing"
+      subtitle="Transparent pricing for professional AI visibility."
+      :pricing-plans="geoPricingPlans"
     />
 
     <!-- GEO Checklist -->
@@ -257,18 +231,13 @@ useHead({
 })
 
 const geoStats = [
-  { value: '200M+', label: 'ChatGPT Users/Week', icon: 'smart_toy' },
-  { value: '+300%', label: 'AI Search Queries YoY', icon: 'trending_up' },
-  { value: '5 Engines', label: 'AI Platforms', icon: 'search' },
+  { value: 'AI Search', label: 'Growing fast', icon: 'trending_up' },
+  { value: '5+', label: 'AI Platforms', icon: 'search' },
   { value: 'Included', label: 'With Every Website', icon: 'verified' },
+  { value: 'Future', label: 'Of Search', icon: 'auto_awesome' },
 ]
 
-const growthStats = [
-  { value: '200M+', label: 'ChatGPT Users / Week', sublabel: 'OpenAI, 2024', icon: 'smart_toy' },
-  { value: '+300%', label: 'AI Search Queries', sublabel: 'Growth 2023–2025', icon: 'trending_up' },
-  { value: '40%', label: 'of Searches', sublabel: 'Use AI Overviews (Google)', icon: 'search' },
-  { value: '2026', label: 'AI Search Becomes Standard', sublabel: 'Analyst estimate', icon: 'calendar_today' },
-]
+const trustCompanies = ['CHATGPT OPTIMIZED', 'GOOGLE GEMINI', 'PERPLEXITY', 'MICROSOFT COPILOT', 'SCHEMA.ORG']
 
 const seoVsGeoRows = [
   { criterion: 'Goal', seo: 'Google Search Results (SERPs)', geo: 'AI Answers & Direct Citations' },
@@ -281,13 +250,6 @@ const seoVsGeoRows = [
   { criterion: 'Status 2026', seo: 'Established, still important', geo: 'Growing, competitive advantage' },
 ]
 
-const aiStatsRows = [
-  { platform: 'ChatGPT (OpenAI)', users: '200M+ / Week', growth: '+100% YoY', relevance: 'Direct queries, product comparisons, recommendations' },
-  { platform: 'Google AI Overviews', users: '1B+ Searches / Day', growth: 'New 2024', relevance: 'Shows sources directly above the search results' },
-  { platform: 'Perplexity', users: '15M+ / Month', growth: '+200% YoY', relevance: 'Cites websites by name as sources' },
-  { platform: 'Microsoft Copilot', users: '100M+ / Month', growth: '+150% YoY', relevance: 'Business search & Office integration' },
-  { platform: 'Claude (Anthropic)', users: '50M+ / Month', growth: 'Strongly growing', relevance: 'Text-based research & deep analysis' },
-]
 
 const features = [
   {
@@ -392,14 +354,53 @@ const benefits = [
     title: 'Sustainable Competitive Advantage',
     description: 'Early GEO investment secures a strong AI visibility position before the competition catches up.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: '/web-development/seo.webp',
+    image: '/web-development/geoai.webp',
   },
   {
     icon: 'person_add',
     title: 'Qualified Leads',
     description: 'Users who find your business through AI answers are already informed and ready to buy.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: '/landing/seo.webp',
+    image: '/web-development/geohandshake.webp',
+  },
+]
+
+const geoPricingPlans = [
+  {
+    tier: 'GEO Basic',
+    price: 'Included',
+    features: [
+      'FAQ & Service Schema Markup',
+      'Semantic content architecture',
+      'Organization Schema',
+      'AI-readable metadata',
+    ],
+    buttonText: 'Request website',
+    isHighlighted: false,
+  },
+  {
+    tier: 'GEO Optimization',
+    price: 'from €300',
+    features: [
+      'Everything in Basic',
+      'Content architecture audit',
+      'HowTo & FAQ expansion',
+      'AI visibility check',
+    ],
+    buttonText: 'Choose package',
+    isHighlighted: true,
+  },
+  {
+    tier: 'GEO Management',
+    price: 'from €300/month',
+    features: [
+      'Ongoing optimization',
+      'Content updates',
+      'Monthly monitoring',
+      'Support & consulting',
+    ],
+    buttonText: 'Book consultation',
+    isHighlighted: false,
   },
 ]
 

@@ -11,6 +11,9 @@
       :stats="geoStats"
     />
 
+    <!-- Trust Section -->
+    <TrustSection :companies="trustCompanies" />
+
     <!-- Was ist GEO -->
     <section class="py-8 md:py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
@@ -104,67 +107,8 @@
     <FeaturesSection
       title="Was GEO für Ihr Unternehmen bewirkt"
       :features="features"
-      image-url="/web-development/seo.webp"
+      image-url="/web-development/geoimg.webp"
     />
-
-    <!-- AI Search Platforms Statistics -->
-    <section class="py-8 md:py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <div class="text-center mb-8 md:mb-stack-lg">
-          <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">KI-Suchmaschinen wachsen rasant</h2>
-          <p class="text-on-surface-variant mt-3 max-w-2xl mx-auto">Die Zahlen zeigen: AI-gestützte Suche ist kein Trend — sie ist die neue Realität.</p>
-        </div>
-
-        <!-- Mobile cards -->
-        <div class="md:hidden space-y-3">
-          <div v-for="(row, i) in aiStatsRows" :key="i" class="bg-white rounded-xl border border-outline-variant/30 p-4">
-            <p class="font-bold text-on-surface mb-3">{{ row.platform }}</p>
-            <div class="flex justify-between items-center text-sm mb-2">
-              <span class="text-on-surface-variant text-xs">Monatliche Nutzer</span>
-              <span class="text-on-surface font-semibold text-xs">{{ row.users }}</span>
-            </div>
-            <div class="flex justify-between items-center text-sm mb-3">
-              <span class="text-on-surface-variant text-xs">Wachstum</span>
-              <span class="inline-flex items-center gap-1 text-emerald-600 font-semibold text-xs">
-                <span class="material-symbols-outlined text-sm">trending_up</span>
-                {{ row.growth }}
-              </span>
-            </div>
-            <div class="pt-2.5 border-t border-outline-variant/20">
-              <p class="text-xs text-on-surface-variant leading-snug">{{ row.relevance }}</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Desktop table -->
-        <div class="hidden md:block overflow-x-auto rounded-2xl border border-outline-variant/30">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="bg-surface-container-low">
-                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30">Plattform</th>
-                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Monatliche Nutzer</th>
-                <th class="text-center p-4 font-bold text-on-surface border-b border-outline-variant/30">Wachstum</th>
-                <th class="text-left p-4 font-bold text-on-surface border-b border-outline-variant/30">GEO-Relevanz</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(row, i) in aiStatsRows" :key="i" :class="i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low/40'">
-                <td class="p-4 font-semibold text-on-surface">{{ row.platform }}</td>
-                <td class="p-4 text-center text-on-surface-variant">{{ row.users }}</td>
-                <td class="p-4 text-center">
-                  <span class="inline-flex items-center gap-1 text-emerald-600 font-semibold">
-                    <span class="material-symbols-outlined text-sm">trending_up</span>
-                    {{ row.growth }}
-                  </span>
-                </td>
-                <td class="p-4 text-on-surface-variant">{{ row.relevance }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="text-center text-xs text-on-surface-variant mt-4">Quellen: Statista, OpenAI, Google Trends 2024/2025. Angaben sind Schätzwerte.</p>
-      </div>
-    </section>
 
     <!-- GEO Elements -->
     <ServicesSection
@@ -184,6 +128,13 @@
     <BenefitsSection
       title="Vorteile von GEO für Ihr Unternehmen"
       :benefits="benefits"
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+      title="GEO Optimierung Preise"
+      subtitle="Transparente Preise für professionelle KI-Sichtbarkeit."
+      :pricing-plans="geoPricingPlans"
     />
 
     <!-- GEO Checklist -->
@@ -299,18 +250,13 @@ useHead({
 })
 
 const geoStats = [
-  { value: '200M+', label: 'ChatGPT Nutzer/Woche', icon: 'smart_toy' },
-  { value: '+300%', label: 'AI-Suchanfragen YoY', icon: 'trending_up' },
-  { value: '5 Engines', label: 'KI-Plattformen', icon: 'search' },
+  { value: 'KI-Suche', label: 'Wächst rasant', icon: 'trending_up' },
+  { value: '5+', label: 'KI-Plattformen', icon: 'search' },
   { value: 'Inklusive', label: 'Bei jeder Website', icon: 'verified' },
+  { value: 'Zukunft', label: 'Der Suche', icon: 'auto_awesome' },
 ]
 
-const growthStats = [
-  { value: '200M+', label: 'ChatGPT Nutzer / Woche', sublabel: 'OpenAI, 2024', icon: 'smart_toy' },
-  { value: '+300%', label: 'AI-Suchanfragen', sublabel: 'Wachstum 2023–2025', icon: 'trending_up' },
-  { value: '40%', label: 'Suchanfragen', sublabel: 'Nutzen AI Overviews (Google)', icon: 'search' },
-  { value: '2026', label: 'KI-Suche wird Standard', sublabel: 'Analystenschätzung', icon: 'calendar_today' },
-]
+const trustCompanies = ['CHATGPT OPTIMIERT', 'GOOGLE GEMINI', 'PERPLEXITY', 'MICROSOFT COPILOT', 'SCHEMA.ORG']
 
 const seoVsGeoRows = [
   { criterion: 'Ziel', seo: 'Google Suchergebnisse (SERPs)', geo: 'KI-Antworten & direkte Zitate' },
@@ -323,13 +269,6 @@ const seoVsGeoRows = [
   { criterion: 'Status 2026', seo: 'Etabliert, weiter wichtig', geo: 'Wachsend, Wettbewerbsvorteil' },
 ]
 
-const aiStatsRows = [
-  { platform: 'ChatGPT (OpenAI)', users: '200 Mio.+ / Woche', growth: '+100% YoY', relevance: 'Direktanfragen, Produktvergleiche, Empfehlungen' },
-  { platform: 'Google AI Overviews', users: '1 Mrd.+ Suchen / Tag', growth: 'Neu 2024', relevance: 'Zeigt Quellen direkt über der Suchergebnisliste' },
-  { platform: 'Perplexity', users: '15 Mio.+ / Monat', growth: '+200% YoY', relevance: 'Zitiert Websites namentlich als Quellen' },
-  { platform: 'Microsoft Copilot', users: '100 Mio.+ / Monat', growth: '+150% YoY', relevance: 'Business-Suche & Office-Integration' },
-  { platform: 'Claude (Anthropic)', users: '50 Mio.+ / Monat', growth: 'Stark wachsend', relevance: 'Textbasierte Recherche & tiefe Analysen' },
-]
 
 const features = [
   {
@@ -434,14 +373,53 @@ const benefits = [
     title: 'Nachhaltiger Wettbewerbsvorteil',
     description: 'Frühe GEO-Investitionen sichern eine starke Position in der KI-Sichtbarkeit, bevor der Wettbewerb aufholt.',
     bg: 'bg-gradient-to-br from-blue-600 to-blue-800',
-    image: '/web-development/seo.webp',
+    image: '/web-development/geoai.webp',
   },
   {
     icon: 'person_add',
     title: 'Qualifizierte Anfragen',
     description: 'Nutzer, die über KI-Antworten auf Ihr Unternehmen stoßen, sind bereits informiert und kaufbereit.',
     bg: 'bg-gradient-to-br from-emerald-600 to-teal-800',
-    image: '/landing/seo.webp',
+    image: '/web-development/geohandshake.webp',
+  },
+]
+
+const geoPricingPlans = [
+  {
+    tier: 'GEO Grundpaket',
+    price: 'Inklusive',
+    features: [
+      'FAQ & Service Schema Markup',
+      'Semantische Inhaltsarchitektur',
+      'Organization Schema',
+      'KI-lesbare Metadaten',
+    ],
+    buttonText: 'Website anfragen',
+    isHighlighted: false,
+  },
+  {
+    tier: 'GEO Optimierung',
+    price: 'ab 300 €',
+    features: [
+      'Alles aus Grundpaket',
+      'Content-Architektur Analyse',
+      'HowTo & FAQ Erweiterung',
+      'KI-Sichtbarkeits-Check',
+    ],
+    buttonText: 'Paket wählen',
+    isHighlighted: true,
+  },
+  {
+    tier: 'GEO Betreuung',
+    price: 'ab 300 €/Monat',
+    features: [
+      'Laufende Optimierung',
+      'Content Updates',
+      'Monatliches Monitoring',
+      'Support & Beratung',
+    ],
+    buttonText: 'Beratung buchen',
+    isHighlighted: false,
   },
 ]
 
