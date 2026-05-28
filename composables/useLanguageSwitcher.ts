@@ -12,6 +12,7 @@ function norm(path: string) {
  */
 const deToEn: Record<string, string> = {
   '/': '/en',
+  '/blog': '/en/blog',
   '/firmenwebsite': '/en/business-website',
   '/firmenwebsite-erstellen-lassen': '/en/business-website-design',
   '/landingpage-erstellen-lassen': '/en/landing-page-design',
@@ -48,13 +49,17 @@ export function useLanguageSwitcher() {
   const isEnglish = computed(() => route.path.startsWith('/en'))
   const currentLang = computed(() => (isEnglish.value ? 'en' : 'de'))
 
-  const deHref = computed(() =>
-    isEnglish.value ? (enToDe[norm(route.path)] ?? '/') : norm(route.path)
-  )
+  const deHref = computed(() => {
+    const p = norm(route.path)
+    if (p.startsWith('/en/blog/')) return p.replace('/en/blog/', '/blog/')
+    return isEnglish.value ? (enToDe[p] ?? '/') : p
+  })
 
-  const enHref = computed(() =>
-    isEnglish.value ? norm(route.path) : (deToEn[norm(route.path)] ?? '/en')
-  )
+  const enHref = computed(() => {
+    const p = norm(route.path)
+    if (p.startsWith('/blog/')) return p.replace('/blog/', '/en/blog/')
+    return isEnglish.value ? p : (deToEn[p] ?? '/en')
+  })
 
   /** The canonical URL of the current page on evolatec.de */
   const canonicalUrl = computed(() => `https://evolatec.de${norm(route.path)}`)
