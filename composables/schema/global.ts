@@ -23,13 +23,13 @@ export function organizationSchema() {
       postalCode: '22083',
       addressCountry: 'DE',
     },
-    telephone: '+49 175 6200862',
+    telephone: '+491756200862',
     email: 'team@evolatec.de',
     areaServed: { '@type': 'Country', name: 'Germany' },
     knowsLanguage: ['German', 'English'],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+49 175 6200862',
+      telephone: '+491756200862',
       contactType: 'sales',
       email: 'team@evolatec.de',
       availableLanguage: ['German', 'English'],
@@ -39,8 +39,10 @@ export function organizationSchema() {
       '@type': 'Person',
       name: 'Maksym Streltsov',
     },
-    // Uncomment and fill when social profiles are live:
-    // sameAs: ['https://linkedin.com/company/evolatec', 'https://facebook.com/evolatec', 'https://instagram.com/evolatec'],
+    sameAs: [
+      'https://www.linkedin.com/company/121004478',
+      'https://maps.app.goo.gl/FJK4FwbshzvdbYxWA',
+    ],
   }
 }
 
