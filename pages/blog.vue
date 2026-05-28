@@ -47,7 +47,7 @@ import { breadcrumbSchema } from '~/composables/schema/service'
 
 const { hreflangLinks } = useLanguageSwitcher()
 
-const articles = ref([])
+const articles = ref<any[]>([])
 const storyblokApi = useStoryblokApi()
 
 try {

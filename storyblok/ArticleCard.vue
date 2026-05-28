@@ -49,6 +49,7 @@
 </template>
 
 <script setup>
-const { isEnglish } = useLanguageSwitcher()
-defineProps({ article: Object, slug: String })
+const { isEnglish: routeIsEnglish } = useLanguageSwitcher()
+const props = defineProps({ article: Object, slug: String, lang: String })
+const isEnglish = computed(() => props.lang ? props.lang === 'en' : routeIsEnglish.value)
 </script>

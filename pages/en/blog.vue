@@ -27,6 +27,7 @@
             :key="article.uuid"
             :article="article.content"
             :slug="article.full_slug"
+            lang="en"
           />
         </div>
       </div>
@@ -47,7 +48,7 @@ import { breadcrumbSchema } from '~/composables/schema/service'
 
 const { hreflangLinks } = useLanguageSwitcher()
 
-const articles = ref([])
+const articles = ref<any[]>([])
 const storyblokApi = useStoryblokApi()
 
 try {
