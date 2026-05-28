@@ -43,7 +43,6 @@
       :paragraphs="whyEvolaTecParagraphs"
       image="/landing/leads.webp"
       image-alt="Google Ads Performance Marketing EvolaTec"
-      :badge="whyEvolaTecBadge"
       :usps="whyEvolaTec"
     />
 
@@ -179,13 +178,6 @@ const whyEvolaTecParagraphs = [
   'Entscheidend sind Strategie, Nutzererfahrung, Landingpages und kontinuierliche Optimierung.',
   'EvolaTec kombiniert Google Ads, <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Conversion Optimierung und modernes Webdesign zu leistungsstarken Marketing Systemen.',
 ];
-
-const whyEvolaTecBadge = {
-  icon: 'ads_click',
-  title: '+340% ROI',
-  subtitle: 'aus Kampagnen',
-  iconBg: 'bg-gradient-to-br from-orange-500 to-red-500',
-};
 
 const adsStats = [
   { value: 'Sofort', label: 'Sichtbar', icon: 'visibility' },

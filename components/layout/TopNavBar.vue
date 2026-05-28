@@ -292,7 +292,7 @@ const navLinks = computed(() => {
         { id: 3.2, label: 'Local SEO',                                       href: en ? '/en/local-seo'        : '/local-seo' },
         { id: 3.3, label: en ? 'Link Building'    : 'Linkbuilding',         href: en ? '/en/seo-link-building' : '/seo-linkbuilding' },
         { id: 3.4, label: en ? 'SEO Audit'        : 'SEO Audit & Analyse',  href: en ? '/en/seo-audit'        : '/seo-audit' },
-        { id: 3.5, label: en ? 'AI Optimierung'       : 'AI Optimization',  href: en ? '/en/ai-optimization'       : '/ai-optimierung' },
+        { id: 3.5, label: en ? 'AI Optimization' : 'AI Optimierung',  href: en ? '/en/ai-optimization' : '/ai-optimierung' },
       ],
     },
     {
