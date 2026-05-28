@@ -44,13 +44,23 @@
       </p>
 
       <!-- Author + meta -->
-      <div class="flex items-center gap-3 pb-8 mb-8 border-b border-outline-variant/30">
-        <div class="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0">
-          <span class="material-symbols-outlined text-sm text-primary">person</span>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 pb-8 mb-8 border-b border-outline-variant/30">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-sm text-primary">person</span>
+          </div>
+          <span class="text-sm text-on-surface-variant">
+            By <strong class="text-on-surface font-semibold">{{ blok.author }}</strong>
+          </span>
         </div>
-        <span class="text-sm text-on-surface-variant">
-          By <strong class="text-on-surface font-semibold">{{ blok.author }}</strong>
-        </span>
+        <div v-if="publishedDate" class="flex items-center gap-1.5 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-[16px] leading-none">calendar_today</span>
+          {{ publishedDate }}
+        </div>
+        <div class="flex items-center gap-1.5 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-[16px] leading-none">schedule</span>
+          {{ readTime }} {{ isEnglish ? 'min read' : 'Min. Lesezeit' }}
+        </div>
       </div>
 
       <!-- Article content -->
@@ -62,7 +72,23 @@
 
 <script setup>
 const { isEnglish } = useLanguageSwitcher()
-defineProps({ blok: Object })
+const props = defineProps({ blok: Object })
+
+const publishedDate = computed(() => {
+  if (!props.blok?._publishedAt) return null
+  return new Intl.DateTimeFormat(isEnglish.value ? 'en-GB' : 'de-DE', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(new Date(props.blok._publishedAt))
+})
+
+const readTime = computed(() => {
+  const html = props.blok?.content ?? ''
+  const text = html.replace(/<[^>]*>/g, ' ')
+  const words = text.trim().split(/\s+/).filter(Boolean).length
+  return Math.max(1, Math.ceil(words / 200))
+})
 </script>
 
 <style scoped>

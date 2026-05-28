@@ -1,6 +1,6 @@
 <template>
   <div v-if="story">
-    <StoryblokComponent :blok="story.content" />
+    <StoryblokComponent :blok="augmentedBlok" />
   </div>
 </template>
 
@@ -16,6 +16,14 @@ const { data: story } = await useAsyncData(`story-${slugPath}`, async () => {
     return data?.story ?? null
   } catch {
     return null
+  }
+})
+
+const augmentedBlok = computed(() => {
+  if (!story.value?.content) return null
+  return {
+    ...story.value.content,
+    _publishedAt: story.value.first_published_at || story.value.published_at,
   }
 })
 </script>
