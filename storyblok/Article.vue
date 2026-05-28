@@ -44,7 +44,7 @@
       </p>
 
       <!-- Author + meta -->
-      <div class="flex flex-wrap items-center gap-x-5 gap-y-2 pb-8 mb-8 border-b border-outline-variant/30">
+      <div class="flex flex-col justify-center gap-x-5 space-y-3 pb-8 mb-8 border-b border-outline-variant/30">
         <div class="flex items-center gap-2">
           <div class="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0">
             <span class="material-symbols-outlined text-sm text-primary">person</span>
@@ -67,12 +67,39 @@
       <div v-html="blok.content" class="article-body"></div>
 
     </div>
+
+    <!-- More articles -->
+    <section v-if="moreArticles.length" class="mt-16 pt-12 border-t border-outline-variant/20 bg-surface-container-low">
+      <div class="max-w-container-max mx-auto px-gutter py-section-padding">
+        <h2 class="font-display text-2xl sm:text-3xl font-black text-on-surface tracking-tight mb-8">
+          {{ isEnglish ? 'More articles' : 'Weitere Artikel' }}
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ArticleCard
+            v-for="article in moreArticles"
+            :key="article.uuid"
+            :article="article.content"
+            :slug="article.full_slug"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <CTASection
+      :title="isEnglish ? 'Ready to grow your business?' : 'Bereit für Ihr nächstes Projekt?'"
+      :description="isEnglish ? 'Let\'s build a website that works for your business — fast, SEO-ready and conversion-focused.' : 'Wir entwickeln moderne Websites, die Kunden gewinnen und Ihr Unternehmen wachsen lassen.'"
+      :primary-cta="isEnglish ? 'Get a free quote' : 'Kostenloses Angebot'"
+      :secondary-cta="isEnglish ? 'View pricing' : 'Preise ansehen'"
+    />
+
   </article>
 </template>
 
 <script setup>
 const { isEnglish } = useLanguageSwitcher()
 const props = defineProps({ blok: Object })
+const route = useRoute()
 
 const publishedDate = computed(() => {
   if (!props.blok?._publishedAt) return null
@@ -89,6 +116,28 @@ const readTime = computed(() => {
   const words = text.trim().split(/\s+/).filter(Boolean).length
   return Math.max(1, Math.ceil(words / 200))
 })
+
+const currentSlug = computed(() => route.path.replace(/^\//, '').replace(/\/$/, ''))
+
+const { data: allArticles } = await useAsyncData(`more-${currentSlug.value}`, async () => {
+  try {
+    const { data } = await useStoryblokApi().get('cdn/stories', {
+      version: route.query._storyblok ? 'draft' : 'published',
+      starts_with: 'blog',
+      is_startpage: false,
+      per_page: 4,
+    })
+    return data?.stories ?? []
+  } catch {
+    return []
+  }
+})
+
+const moreArticles = computed(() =>
+  (allArticles.value ?? [])
+    .filter(s => s.full_slug !== currentSlug.value)
+    .slice(0, 3)
+)
 </script>
 
 <style scoped>
