@@ -41,13 +41,6 @@
               loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent"></div>
-            <div class="absolute bottom-6 left-6 bg-white rounded-xl px-4 py-3 shadow-lg flex items-center gap-3">
-              <span class="material-symbols-outlined text-emerald-500 text-2xl">speed</span>
-              <div>
-                <div class="font-bold text-primary text-sm">+40% schneller</div>
-                <div class="text-on-surface-variant text-xs">Ladezeiten verbessert</div>
-              </div>
-            </div>
           </div>
           <div>
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">Häufige technische SEO Probleme</h2>

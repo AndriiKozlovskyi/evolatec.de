@@ -35,7 +35,6 @@
     <!-- UX & UI Info Section -->
     <ChecklistSection
       :columns="uiuxInfoColumns"
-      :items="uiDesignItems"
       icon="design_services"
     />
 
@@ -304,6 +303,7 @@ const uiuxInfoColumns = [
       'Professionelles User Experience Design optimisiert die Interaktion zwischen Nutzern und digitalen Produkten.',
       'Eine gute UX reduziert Frustration, verbessert Orientierung und sorgt dafür, dass Besucher schneller die gewünschten Informationen finden.',
     ],
+    items: ['Modernes Webdesign', 'Design Systeme', 'Dashboard UI', 'E-Commerce UI'],
   },
   {
     heading: 'Modernes User Interface Design',
@@ -311,6 +311,7 @@ const uiuxInfoColumns = [
       'UI Design bestimmt, wie ein digitales Produkt aussieht und wahrgenommen wird.',
       'Unsere UI/UX Agentur entwickelt minimalistische, moderne und konversionsstarke Benutzeroberflächen für Unternehmen, Startups und digitale Plattformen.',
     ],
+    items: ['Mobile First Design', 'SaaS Interfaces', 'Landingpage Design', 'Corporate Interfaces'],
   },
 ];
 

@@ -124,7 +124,6 @@ const serviceGroups = computed(() => {
         { label: en ? 'Business Website'  : 'Firmenwebsite erstellen', href: en ? '/en/business-website-design' : '/firmenwebsite-erstellen-lassen' },
         { label: en ? 'Landing Page'      : 'Landingpage erstellen',   href: en ? '/en/landing-page-design'     : '/landingpage-erstellen-lassen' },
         { label: en ? 'Online Shop'       : 'Online-Shop erstellen',   href: en ? '/en/online-shop-development' : '/online-shop-erstellen-lassen' },
-        { label: en ? 'Web Design'        : 'Webdesign',               href: en ? '/en/web-design'              : '/webdesign' },
       ],
     },
     {
@@ -142,6 +141,7 @@ const serviceGroups = computed(() => {
       title: 'Design & Content',
       href: undefined,
       links: [
+        { label: en ? 'Web Design'   : 'Webdesign',  href: en ? '/en/web-design'          : '/webdesign' },
         { label: en ? 'Copywriting'  : 'Webtexte',  href: en ? '/en/website-copywriting' : '/webseiten-texte-schreiben-lassen' },
         { label: en ? 'Branding'     : 'Branding',  href: en ? '/en/design-branding'     : '/design-branding' },
         { label: 'UI/UX Design',                    href: en ? '/en/ui-ux-design'        : '/ui-ux-design' },
