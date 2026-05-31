@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+  <div class="bg-surface text-on-surface font-body-md overflow-x-clip">
     <form name="contact-form" data-netlify="true" netlify data-netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact-form" />
       <input name="bot-field" type="text" />
@@ -15,6 +15,7 @@
     </main>
     <Footer />
     <ClientOnly>
+      <template #fallback><span class="hidden" aria-hidden="true" /></template>
       <FloatingContact />
       <SectionDotNav />
       <CookieBanner />
