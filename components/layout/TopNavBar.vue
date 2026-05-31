@@ -240,18 +240,22 @@ const mobileMenuOpen = ref(false);
 const expandedMenus = ref<number[]>([]);
 const route = useRoute();
 
-if (import.meta.client) {
-  watch(mobileMenuOpen, (open) => {
+watch(mobileMenuOpen, (open) => {
+  if (import.meta.client) {
     document.body.style.overflow = open ? 'hidden' : '';
-    if (!open) expandedMenus.value = [];
-  });
-  watch(() => route.path, () => {
-    mobileMenuOpen.value = false;
-  });
-  onBeforeUnmount(() => {
+  }
+  if (!open) expandedMenus.value = [];
+});
+
+watch(() => route.path, () => {
+  mobileMenuOpen.value = false;
+});
+
+onBeforeUnmount(() => {
+  if (import.meta.client) {
     document.body.style.overflow = '';
-  });
-}
+  }
+});
 
 function toggleMobileSubmenu(linkId: number) {
   if (expandedMenus.value.includes(linkId)) {
