@@ -14,9 +14,9 @@
       <NuxtPage />
     </main>
     <Footer />
-    <FloatingContact />
-    <SectionDotNav />
     <ClientOnly>
+      <FloatingContact />
+      <SectionDotNav />
       <CookieBanner />
       <button
         v-if="hasConsented"

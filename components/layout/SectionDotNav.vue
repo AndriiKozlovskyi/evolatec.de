@@ -99,17 +99,25 @@ function scrollTo(i: number) {
 
 function scheduleRescan() {
   if (rescanTimer) clearTimeout(rescanTimer);
-  rescanTimer = setTimeout(scanSections, 50);
+  rescanTimer = setTimeout(scanSections, 300);
 }
 
 onMounted(() => {
-  nextTick(scanSections);
-  const main = document.querySelector('main');
-  if (main) {
-    mutationObserver = new MutationObserver(scheduleRescan);
-    mutationObserver.observe(main, { childList: true, subtree: true });
-  }
-  window.addEventListener('resize', scheduleRescan);
+  // Initial scan deferred so it doesn't compete with page paint
+  setTimeout(scanSections, 100);
+
+  // MutationObserver set up after a further idle gap so it doesn't
+  // fire on post-hydration DOM settling from ClientOnly components
+  const idle = (window as any).requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 300));
+  idle(() => {
+    const main = document.querySelector('main');
+    if (main) {
+      mutationObserver = new MutationObserver(scheduleRescan);
+      mutationObserver.observe(main, { childList: true, subtree: true });
+    }
+  });
+
+  window.addEventListener('resize', scheduleRescan, { passive: true });
 });
 
 watch(() => route.path, () => {
