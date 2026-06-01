@@ -32,7 +32,7 @@
             ]"
           >{{ para }}</p>
 
-          <div v-if="col.items?.length" class="grid grid-cols-2 gap-2 mt-auto">
+          <div v-if="col.items?.length" class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-auto">
             <div
               v-for="item in col.items"
               :key="item"
