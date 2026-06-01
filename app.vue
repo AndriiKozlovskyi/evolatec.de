@@ -32,9 +32,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from 'vue';
+import { onMounted } from 'vue';
 
-const route = useRoute();
 const { redirectToPreferred, isEnglish } = useLanguageSwitcher();
 const { hasConsented, openPreferences } = useCookieConsent();
 
@@ -43,5 +42,4 @@ useHead(() => ({
 }));
 
 onMounted(redirectToPreferred);
-watch(() => route.path, redirectToPreferred);
 </script>

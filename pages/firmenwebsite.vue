@@ -356,7 +356,7 @@ const developmentServices = [
     iconBg: 'bg-cyan-100',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-500',
-    href: '/preise',
+    href: '/webseite-kosten-kalkulator',
   },
 ];
 
