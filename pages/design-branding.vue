@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Intro Section -->
     <IntroSection
@@ -141,7 +140,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['LOGO DESIGN', 'CORPORATE DESIGN', 'BRAND STRATEGY', 'REBRANDING'];
 
 const introParagraphs = [
   'Starkes Branding entscheidet darüber, wie Kunden Ihr Unternehmen wahrnehmen. Eine professionelle Markenidentität schafft Vertrauen, sorgt für Wiedererkennung und positioniert Ihr Unternehmen im Markt.',

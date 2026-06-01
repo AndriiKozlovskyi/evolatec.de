@@ -30,7 +30,7 @@
     <section data-nav-label="Problems" data-nav-icon="bug_report" class="py-section-padding bg-surface">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="grid md:grid-cols-2 gap-stack-lg items-center">
-          <div class="relative rounded-2xl overflow-hidden h-80 shadow-2xl">
+          <div class="relative rounded-2xl overflow-hidden aspect-[3/2] md:aspect-auto md:h-80 shadow-2xl order-2 md:order-1">
             <NuxtImg
               src="/landing/seo.webp"
               alt="Website Performance Optimisation"
@@ -49,7 +49,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="order-1 md:order-2">
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">Common Technical SEO Problems</h2>
             <div class="space-y-3">
               <div v-for="problem in commonProblems" :key="problem" class="flex gap-3 items-center p-3 rounded-lg border border-black/10 glass-card">

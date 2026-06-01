@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Intro Section -->
     <IntroSection
@@ -135,7 +134,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['UI DESIGN', 'UX RESEARCH', 'PROTOTYPING', 'CONVERSION'];
 
 const introParagraphs = [
   'Moderne Websites und digitale Produkte müssen nicht nur ansprechend gestaltet sein, sondern auch intuitiv bedienbar.',

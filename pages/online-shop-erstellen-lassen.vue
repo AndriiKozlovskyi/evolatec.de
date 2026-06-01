@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Intro — 2-col with keyword-rich content -->
     <section data-nav-label="Intro" data-nav-icon="storefront" class="relative py-section-padding bg-surface overflow-hidden">
@@ -268,7 +267,6 @@ const heroStats = [
   { value: '30 Tage',   label: 'Support',    icon: 'support_agent' },
 ];
 
-const trustCompanies = ['E-COMMERCE', 'SHOPIFY', 'CUSTOM SHOP'];
 
 const introPoints = [
   {

@@ -10,7 +10,6 @@
       :stats="heroStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <IntroSection
       heading="Modern Websites for Businesses, Brands and Digital Products"
@@ -162,7 +161,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['WEB DESIGN', 'UI/UX', 'BRANDING', 'RESPONSIVE'];
 
 const introParagraphs = [
   'As a professional web design agency, EvolaTec develops modern, fast and conversion-focused websites for businesses, start-ups and local service providers.',

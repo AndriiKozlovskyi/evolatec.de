@@ -11,7 +11,7 @@
         class="grid md:grid-cols-2 gap-stack-lg items-center"
         :class="usps?.length ? 'mb-stack-lg' : ''"
       >
-        <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
+        <div class="relative rounded-3xl overflow-hidden aspect-[3/2] md:h-96 md:aspect-auto order-2 md:order-1">
           <NuxtPicture
             :src="image"
             :alt="imageAlt"
@@ -45,7 +45,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="order-1 md:order-2">
           <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">{{ heading }}</h2>
           <p
             v-for="(p, i) in paragraphs"

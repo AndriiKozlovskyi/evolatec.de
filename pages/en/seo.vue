@@ -10,7 +10,6 @@
       :stats="seoStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <ServicesSection
       title="Our SEO Services"
@@ -137,7 +136,6 @@ const seoStats = [
   { value: 'Visible', label: 'To Customers', icon: 'visibility' },
 ];
 
-const trustCompanies = ['GOOGLE PARTNER', 'SEO CERTIFIED', 'DIGITAL LEADERS', 'GROWTH FOCUSED'];
 
 const benefits = [
   {

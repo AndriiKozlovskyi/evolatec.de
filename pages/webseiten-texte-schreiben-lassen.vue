@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Services Section -->
     <ServicesSection title="Unsere Content & Copywriting Leistungen" variant="centered" :services="contentServices" />
@@ -130,7 +129,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['SEO CONTENT', 'COPYWRITING', 'WEB TEXTE', 'CONVERSION'];
 
 const introParagraphs = [
   'Gute Webseiten Texte entscheiden darüber, ob Besucher zu Kunden werden.',

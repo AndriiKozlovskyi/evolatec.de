@@ -10,7 +10,6 @@
       :stats="contentStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <ServicesSection title="Our Content & Copywriting Services" variant="centered" :services="contentServices" />
 
@@ -120,7 +119,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['SEO CONTENT', 'COPYWRITING', 'WEB COPY', 'CONVERSION'];
 
 const introParagraphs = [
   'Good website copy determines whether visitors become customers.',

@@ -36,7 +36,7 @@
           <div
             v-for="platform in socialPlatforms"
             :key="platform.name"
-            class="group relative rounded-3xl overflow-hidden h-72 cursor-pointer"
+            class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer"
             :class="platform.bg"
           >
             <!-- Background image overlay -->

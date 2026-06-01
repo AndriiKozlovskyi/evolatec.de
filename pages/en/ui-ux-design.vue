@@ -10,7 +10,6 @@
       :stats="uiuxStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <IntroSection
       heading="Why Good UI/UX Design Is Critical"
@@ -126,7 +125,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['UI DESIGN', 'UX RESEARCH', 'PROTOTYPING', 'CONVERSION'];
 
 const introParagraphs = [
   'Modern websites and digital products must not only look great — they must also be intuitive to use.',

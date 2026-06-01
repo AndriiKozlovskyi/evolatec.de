@@ -10,7 +10,6 @@
       :stats="localStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Stats Cards -->
     <section data-nav-label="Why Local" data-nav-icon="location_on" class="py-section-padding bg-surface">
@@ -149,7 +148,6 @@ const localStats = [
   { value: 'More Customers', label: 'Locally', icon: 'trending_up' },
 ];
 
-const trustCompanies = ['GOOGLE MAPS', 'LOCAL SEARCH', 'REGIONAL SEO', 'GOOGLE BUSINESS'];
 
 const benefits = [
   {

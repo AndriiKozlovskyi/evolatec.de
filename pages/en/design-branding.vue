@@ -10,7 +10,6 @@
       :stats="brandingStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <IntroSection
       heading="Why Professional Branding Is Essential"
@@ -128,7 +127,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['LOGO DESIGN', 'CORPORATE DESIGN', 'BRAND STRATEGY', 'REBRANDING'];
 
 const introParagraphs = [
   'Strong branding determines how customers perceive your business. A professional brand identity builds trust, ensures recognition and positions your company in the market.',

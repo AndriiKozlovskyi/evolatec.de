@@ -12,7 +12,6 @@
     />
 
     <!-- Trust -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Intro -->
     <IntroSection
@@ -178,7 +177,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['WEB DESIGN', 'UI/UX', 'BRANDING', 'RESPONSIVE'];
 
 const introParagraphs = [
   'Als professionelle Webdesign Agentur entwickelt EvolaTec moderne, schnelle und konversionsstarke Websites für Unternehmen, Startups und lokale Dienstleister.',
