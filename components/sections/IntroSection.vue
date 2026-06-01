@@ -27,22 +27,6 @@
           />
           <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
 
-          <!-- Floating badge -->
-          <div
-            v-if="badge"
-            class="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3"
-          >
-            <div
-              class="w-10 h-10 rounded-xl flex items-center justify-center"
-              :class="badge.iconBg || 'bg-gradient-to-br from-primary to-primary-container'"
-            >
-              <span class="material-symbols-outlined text-white text-xl">{{ badge.icon }}</span>
-            </div>
-            <div>
-              <div class="font-bold text-primary text-sm">{{ badge.title }}</div>
-              <div class="text-on-surface-variant text-xs">{{ badge.subtitle }}</div>
-            </div>
-          </div>
         </div>
 
         <div class="order-1 md:order-2">

@@ -17,7 +17,6 @@
       :paragraphs="introParagraphs"
       image="/smm/meta.webp"
       image-alt="Social Media Marketing EvolaTec"
-      :badge="introBadge"
     />
 
     <!-- Platforms Visual Section -->
@@ -102,7 +101,6 @@
       :paragraphs="whyEvolaTecParagraphs"
       image="/main/seo.webp"
       image-alt="Social Media Marketing Agentur EvolaTec"
-      :badge="whyEvolaTecBadge"
       :usps="whyEvolaTec"
     />
 
@@ -262,12 +260,6 @@ const introParagraphs = [
   'Als Social Media Agentur entwickelt EvolaTec Kampagnen, die Reichweite, Interaktionen, Leads und Umsatz generieren — ergänzt durch <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> und <a href="/marketing-google-ads" class="text-primary font-semibold hover:underline">Google Ads</a>.',
 ];
 
-const introBadge = {
-  icon: 'thumb_up',
-  title: 'Mehr Reichweite',
-  subtitle: 'Auf Meta',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-pink-500',
-};
 
 const whyEvolaTecParagraphs = [
   'Erfolgreiches Social Media Marketing benötigt mehr als nur schöne Beiträge.',
@@ -275,12 +267,6 @@ const whyEvolaTecParagraphs = [
   'EvolaTec verbindet Social Media Werbung, <a href="/online-marketing" class="text-primary font-semibold hover:underline">Performance Marketing</a>, Webdesign und <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> zu leistungsstarken Marketing Systemen.',
 ];
 
-const whyEvolaTecBadge = {
-  icon: 'groups',
-  title: 'Meta Ads',
-  subtitle: 'Strategie & Setup',
-  iconBg: 'bg-gradient-to-br from-pink-500 to-purple-600',
-};
 
 const socialStats = [
   { value: 'Facebook', label: 'Instagram & Meta', icon: 'groups' },

@@ -19,7 +19,6 @@
       :paragraphs="introParagraphs"
       image="/design-ui-ux/features.webp"
       image-alt="UI/UX Design Agentur"
-      :badge="introBadge"
     />
 
     <!-- Services Section -->
@@ -141,12 +140,6 @@ const introParagraphs = [
   'Als UI/UX Design Agentur entwickelt EvolaTec moderne Benutzeroberflächen, digitale Experiences und performante Interfaces für Websites, SaaS Plattformen, Landingpages und E-Commerce Projekte.',
 ];
 
-const introBadge = {
-  icon: 'design_services',
-  title: 'Bessere UX',
-  subtitle: 'Mehr Conversion',
-  iconBg: 'bg-gradient-to-br from-purple-500 to-pink-500',
-};
 
 const uiuxStats = [
   { value: 'Modern', label: 'UI Design', icon: 'design_services' },

@@ -16,7 +16,6 @@
       :paragraphs="introParagraphs"
       image="/web-development/design.webp"
       image-alt="Professional Web Design"
-      :badge="introBadge"
     />
 
     <FeaturesSection
@@ -168,12 +167,6 @@ const introParagraphs = [
   'Our web agency combines modern UI/UX design, SEO-optimised structures and high-performance development for lasting success online.',
 ];
 
-const introBadge = {
-  icon: 'palette',
-  title: 'Modern Design',
-  subtitle: 'Brand-strong',
-  iconBg: 'bg-gradient-to-br from-primary to-primary-container',
-};
 
 const expertiseBlocks = [
   {

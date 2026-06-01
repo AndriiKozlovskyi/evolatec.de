@@ -19,7 +19,6 @@
       :paragraphs="introParagraphs"
       image="/design-branding/features.webp"
       image-alt="Professionelles Branding und Corporate Design"
-      :badge="introBadge"
     />
 
     <!-- Services Section -->
@@ -147,12 +146,6 @@ const introParagraphs = [
   'Als Branding Agentur entwickelt EvolaTec moderne Markenauftritte für Unternehmen, Startups, Dienstleister und digitale Marken.',
 ];
 
-const introBadge = {
-  icon: 'palette',
-  title: 'Starkes Branding',
-  subtitle: 'Mehr Vertrauen',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const brandingStats = [
   { value: 'Einzigartig', label: 'Marken', icon: 'star' },

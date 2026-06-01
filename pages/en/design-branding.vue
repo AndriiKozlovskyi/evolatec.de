@@ -16,7 +16,6 @@
       :paragraphs="introParagraphs"
       image="/design-branding/features.webp"
       image-alt="Professional Branding and Corporate Design"
-      :badge="introBadge"
     />
 
     <ServicesSection title="Our Branding & Corporate Design Services" variant="centered" :services="brandingServices" />
@@ -134,12 +133,6 @@ const introParagraphs = [
   'As a branding agency, EvolaTec develops modern brand presences for businesses, start-ups, service providers and digital brands.',
 ];
 
-const introBadge = {
-  icon: 'palette',
-  title: 'Strong Branding',
-  subtitle: 'More Trust',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const brandingStats = [
   { value: 'Unique', label: 'Brands', icon: 'star' },

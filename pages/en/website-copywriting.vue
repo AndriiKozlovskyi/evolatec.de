@@ -28,7 +28,6 @@
       :paragraphs="introParagraphs"
       image="/design-content/copywriting.webp"
       image-alt="SEO Copywriting EvolaTec"
-      :badge="introBadge"
     />
 
     <PricingSection
@@ -126,12 +125,6 @@ const introParagraphs = [
   'EvolaTec creates SEO-optimised copy that search engines understand and users find convincing.',
 ];
 
-const introBadge = {
-  icon: 'edit_document',
-  title: 'SEO Copy',
-  subtitle: 'That Ranks',
-  iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-600',
-};
 
 const contentStats = [
   { value: 'SEO', label: 'Optimised', icon: 'trending_up' },

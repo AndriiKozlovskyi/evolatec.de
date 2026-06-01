@@ -15,7 +15,6 @@
       :paragraphs="introParagraphs"
       image="/landing/advertising.webp"
       image-alt="Google Ads Campaigns EvolaTec"
-      :badge="introBadge"
     />
 
     <ServicesSection title="Our Google Ads Services" variant="centered" :services="adsServices" />
@@ -36,7 +35,6 @@
       :paragraphs="whyEvolaTecParagraphs"
       image="/landing/leads.webp"
       image-alt="Google Ads Performance Marketing EvolaTec"
-      :badge="whyEvolaTecBadge"
       :usps="whyEvolaTec"
     />
 
@@ -160,12 +158,6 @@ const introParagraphs = [
   'As a Google Ads agency, EvolaTec develops data-driven campaigns that increase reach, generate leads and grow revenue. Learn more about our <a href="/en/online-marketing" class="text-primary font-semibold hover:underline">online marketing services</a>.',
 ];
 
-const introBadge = {
-  icon: 'campaign',
-  title: 'Instantly visible',
-  subtitle: 'on Google',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const whyEvolaTecParagraphs = [
   'Successful Google advertising is about more than just ads.',
@@ -173,12 +165,6 @@ const whyEvolaTecParagraphs = [
   'EvolaTec combines Google Ads, <a href="/en/seo" class="text-primary font-semibold hover:underline">SEO</a>, conversion optimisation and modern web design into high-performance marketing systems.',
 ];
 
-const whyEvolaTecBadge = {
-  icon: 'ads_click',
-  title: '+340% ROI',
-  subtitle: 'from campaigns',
-  iconBg: 'bg-gradient-to-br from-orange-500 to-red-500',
-};
 
 const adsStats = [
   { value: 'Instant', label: 'Visibility', icon: 'visibility' },

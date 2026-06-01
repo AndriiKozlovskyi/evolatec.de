@@ -15,7 +15,6 @@
       :paragraphs="introParagraphs"
       image="/marketing/hero.webp"
       image-alt="Online Marketing Agency EvolaTec"
-      :badge="introBadge"
     />
 
     <ServicesSection title="Our Online Marketing Services" variant="centered" :services="marketingServices" />
@@ -36,7 +35,6 @@
       :paragraphs="whyEvolaTecParagraphs"
       image="/landing/leads.webp"
       image-alt="Online Marketing Agency EvolaTec"
-      :badge="whyEvolaTecBadge"
       :usps="whyEvolaTec"
     />
 
@@ -196,12 +194,6 @@ const introParagraphs = [
   'EvolaTec combines <a href="/en/seo" class="text-primary font-semibold hover:underline">SEO</a>, web development, performance marketing and digital strategies for measurable results.',
 ];
 
-const introBadge = {
-  icon: 'campaign',
-  title: 'More Reach',
-  subtitle: 'Visible Online',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const whyEvolaTecParagraphs = [
   'Many marketing agencies focus solely on advertising.',
@@ -209,12 +201,6 @@ const whyEvolaTecParagraphs = [
   'The result: websites and marketing strategies that not only look great, but deliver real results.',
 ];
 
-const whyEvolaTecBadge = {
-  icon: 'campaign',
-  title: '+180% Leads',
-  subtitle: 'more enquiries',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const marketingStats = [
   { value: 'Full Service', label: 'Marketing', icon: 'campaign' },

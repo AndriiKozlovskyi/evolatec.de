@@ -19,7 +19,6 @@
       :paragraphs="introParagraphs"
       image="/web-development/design.webp"
       image-alt="Professionelles Webdesign"
-      :badge="introBadge"
     />
 
     <!-- Features -->
@@ -184,12 +183,6 @@ const introParagraphs = [
   'Unsere Webagentur kombiniert modernes UI/UX Design, SEO-optimierte Strukturen und performante Entwicklung für nachhaltigen Erfolg im Internet.',
 ];
 
-const introBadge = {
-  icon: 'palette',
-  title: 'Modernes Design',
-  subtitle: 'Markenstark',
-  iconBg: 'bg-gradient-to-br from-primary to-primary-container',
-};
 
 const expertiseBlocks = [
   {
