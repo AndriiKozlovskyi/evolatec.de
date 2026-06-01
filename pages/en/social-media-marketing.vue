@@ -130,12 +130,12 @@
         <p class="font-body-lg max-w-2xl mx-auto opacity-80">
           EvolaTec develops social media campaigns that create visibility, win customers and help businesses grow.
         </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <NuxtLink to="/en/contact">
-            <BaseButton variant="secondary" size="lg">Start Social Media</BaseButton>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 pt-6">
+          <NuxtLink to="/en/contact" class="w-full sm:w-auto">
+            <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">Start Social Media</BaseButton>
           </NuxtLink>
-          <NuxtLink to="/en/contact">
-            <BaseButton variant="outline" size="lg" class="!border-white/40 !text-white hover:!bg-white/10">View Pricing</BaseButton>
+          <NuxtLink to="/en/website-cost-calculator" class="w-full sm:w-auto">
+            <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/40 !text-white hover:!bg-white/10">View Pricing</BaseButton>
           </NuxtLink>
         </div>
       </div>
