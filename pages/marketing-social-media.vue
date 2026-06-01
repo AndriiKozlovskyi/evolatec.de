@@ -160,12 +160,12 @@
         <p class="font-body-lg max-w-2xl mx-auto opacity-80">
           EvolaTec entwickelt Social Media Kampagnen, die sichtbar machen, Kunden gewinnen und Unternehmen wachsen lassen.
         </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <a href="/kontakt">
-            <BaseButton variant="secondary" size="lg">Social Media starten</BaseButton>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 pt-6">
+          <a href="/kontakt" class="w-full sm:w-auto">
+            <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">Social Media starten</BaseButton>
           </a>
-          <a href="/kontakt">
-            <BaseButton variant="outline" size="lg" class="!border-white/40 !text-white hover:!bg-white/10">Kostenlos beraten lassen</BaseButton>
+          <a href="/webseite-kosten-kalkulator" class="w-full sm:w-auto">
+            <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/40 !text-white hover:!bg-white/10">Alle Preise ansehen</BaseButton>
           </a>
         </div>
       </div>
@@ -357,36 +357,6 @@ const socialServices = [
   },
 ];
 
-const socialBenefits = [
-  {
-    title: 'Präzises Targeting',
-    description: 'Anzeigen erreichen genau die richtige Zielgruppe.',
-    icon: 'my_location',
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-600',
-  },
-  {
-    title: 'Markenbekanntheit',
-    description: 'Aufbau einer starken Marke in sozialen Netzwerken.',
-    icon: 'campaign',
-    iconBg: 'bg-pink-100',
-    iconColor: 'text-pink-600',
-  },
-  {
-    title: 'Mehr Leads & Verkäufe',
-    description: 'Conversion optimierte Kampagnen steigern Umsatz und Anfragen.',
-    icon: 'trending_up',
-    iconBg: 'bg-emerald-100',
-    iconColor: 'text-emerald-600',
-  },
-  {
-    title: 'Skalierbares Wachstum',
-    description: 'Erfolgreiche Kampagnen können kontinuierlich erweitert werden.',
-    icon: 'stacked_line_chart',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-  },
-];
 
 const socialProcess = [
   {

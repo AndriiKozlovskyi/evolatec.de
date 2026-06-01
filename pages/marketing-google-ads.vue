@@ -99,7 +99,7 @@
       title="Mehr Kunden durch professionelle Google Werbung"
       description="EvolaTec entwickelt Google Ads Kampagnen, die sichtbar machen, Leads generieren und Unternehmen wachsen lassen."
       primary-cta="Google Ads starten"
-      secondary-cta="Kostenlos beraten lassen"
+      secondary-cta="Alle Preise ansehen"
     />
   </div>
 </template>
