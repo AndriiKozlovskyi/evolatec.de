@@ -15,7 +15,6 @@
       :paragraphs="introParagraphs"
       image="/smm/meta.webp"
       image-alt="Social Media Marketing EvolaTec"
-      :badge="introBadge"
     />
 
     <!-- Platforms Visual Section -->
@@ -29,7 +28,7 @@
           <div
             v-for="platform in socialPlatforms"
             :key="platform.name"
-            class="group relative rounded-3xl overflow-hidden h-72 cursor-pointer"
+            class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer"
             :class="platform.bg"
           >
             <NuxtPicture
@@ -85,7 +84,6 @@
       :paragraphs="whyEvolaTecParagraphs"
       image="/main/seo.webp"
       image-alt="Social Media Marketing Agency EvolaTec"
-      :badge="whyEvolaTecBadge"
       :usps="whyEvolaTec"
     />
 
@@ -107,12 +105,12 @@
         <p class="font-body-lg max-w-2xl mx-auto opacity-80">
           EvolaTec develops social media campaigns that create visibility, win customers and help businesses grow.
         </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <NuxtLink to="/en/contact">
-            <BaseButton variant="secondary" size="lg">Start Social Media</BaseButton>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 pt-6">
+          <NuxtLink to="/en/contact" class="w-full sm:w-auto">
+            <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">Start Social Media</BaseButton>
           </NuxtLink>
-          <NuxtLink to="/en/contact">
-            <BaseButton variant="outline" size="lg" class="!border-white/40 !text-white hover:!bg-white/10">View Pricing</BaseButton>
+          <NuxtLink to="/en/website-cost-calculator" class="w-full sm:w-auto">
+            <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/40 !text-white hover:!bg-white/10">View Pricing</BaseButton>
           </NuxtLink>
         </div>
       </div>
@@ -190,12 +188,6 @@ const introParagraphs = [
   'As a social media agency, EvolaTec develops campaigns that generate reach, engagement, leads and revenue — complemented by SEO and Google Ads.',
 ];
 
-const introBadge = {
-  icon: 'thumb_up',
-  title: 'More Reach',
-  subtitle: 'On Meta',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-pink-500',
-};
 
 const whyEvolaTecParagraphs = [
   'Successful social media marketing requires more than just attractive posts.',
@@ -203,12 +195,6 @@ const whyEvolaTecParagraphs = [
   'EvolaTec combines social media advertising, performance marketing, web design and SEO into powerful marketing systems.',
 ];
 
-const whyEvolaTecBadge = {
-  icon: 'groups',
-  title: 'Meta Ads',
-  subtitle: 'Strategy & Setup',
-  iconBg: 'bg-gradient-to-br from-pink-500 to-purple-600',
-};
 
 const socialStats = [
   { value: 'Facebook', label: 'Instagram & Meta', icon: 'groups' },

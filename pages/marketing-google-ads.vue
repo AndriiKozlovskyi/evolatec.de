@@ -17,7 +17,6 @@
       :paragraphs="introParagraphs"
       image="/landing/advertising.webp"
       image-alt="Google Ads Kampagnen EvolaTec"
-      :badge="introBadge"
     />
 
     <!-- Services Section -->
@@ -71,7 +70,7 @@
       title="Mehr Kunden durch professionelle Google Werbung"
       description="EvolaTec entwickelt Google Ads Kampagnen, die sichtbar machen, Leads generieren und Unternehmen wachsen lassen."
       primary-cta="Google Ads starten"
-      secondary-cta="Kostenlos beraten lassen"
+      secondary-cta="Alle Preise ansehen"
     />
   </div>
 </template>
@@ -137,12 +136,6 @@ const introParagraphs = [
   'Als Google Ads Agentur entwickelt EvolaTec datenbasierte Kampagnen, die Reichweite, Leads und Umsatz steigern. Erfahren Sie mehr über unsere <a href="/online-marketing" class="text-primary font-semibold hover:underline">Online Marketing Leistungen</a>.',
 ];
 
-const introBadge = {
-  icon: 'campaign',
-  title: 'Sofort sichtbar',
-  subtitle: 'bei Google',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const whyEvolaTecParagraphs = [
   'Erfolgreiche Google Werbung besteht nicht nur aus Anzeigen.',

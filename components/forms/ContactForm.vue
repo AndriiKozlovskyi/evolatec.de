@@ -90,7 +90,7 @@
         v-model="form.message"
         placeholder="Erzählen Sie uns kurz von Ihrem Projekt..."
         rows="4"
-        class="w-full px-4 py-2.5 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant resize-none text-sm"
+        class="w-full px-4 py-2.5 rounded-lg border border-surface-container-high focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant resize-none text-base"
       ></textarea>
     </div>
 
@@ -178,7 +178,7 @@ const { hasConsented, focusBanner } = useCookieConsent();
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const BASE_INPUT = 'w-full px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant text-sm';
+const BASE_INPUT = 'w-full px-4 py-2.5 rounded-lg border focus:outline-none focus:ring-2 focus:border-transparent transition-all duration-200 text-on-surface placeholder:text-on-surface-variant text-base';
 
 const form = ref({
   name: '',

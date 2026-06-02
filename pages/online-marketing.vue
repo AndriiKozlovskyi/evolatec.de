@@ -17,7 +17,6 @@
       :paragraphs="introParagraphs"
       image="/marketing/hero.webp"
       image-alt="Online Marketing Agentur EvolaTec"
-      :badge="introBadge"
     />
 
     <!-- Services Section -->
@@ -43,7 +42,6 @@
       :paragraphs="whyEvolaTecParagraphs"
       image="/landing/leads.webp"
       image-alt="Online Marketing Agentur EvolaTec"
-      :badge="whyEvolaTecBadge"
       :usps="whyEvolaTec"
     />
 
@@ -66,7 +64,7 @@
             </a>
           </div>
 
-          <div class="grid grid-cols-2 gap-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div
               v-for="(item, index) in consultingItems"
               :key="item.label"
@@ -184,12 +182,6 @@ const introParagraphs = [
   'EvolaTec kombiniert <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a>, Webentwicklung, Performance Marketing und digitale Strategien zu messbaren Ergebnissen.',
 ];
 
-const introBadge = {
-  icon: 'campaign',
-  title: 'Mehr Reichweite',
-  subtitle: 'Online sichtbar',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const whyEvolaTecParagraphs = [
   'Viele Marketing Agenturen konzentrieren sich nur auf Werbung.',
@@ -197,12 +189,6 @@ const whyEvolaTecParagraphs = [
   'So entstehen Websites und Marketingstrategien, die nicht nur gut aussehen, sondern auch echte Ergebnisse liefern.',
 ];
 
-const whyEvolaTecBadge = {
-  icon: 'campaign',
-  title: '+180% Leads',
-  subtitle: 'mehr Anfragen',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const marketingStats = [
   { value: 'Full Service', label: 'Marketing', icon: 'campaign' },

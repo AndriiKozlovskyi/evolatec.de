@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+  <div class="bg-surface text-on-surface font-body-md overflow-x-clip">
     <form name="contact-form" data-netlify="true" netlify data-netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact-form" />
       <input name="bot-field" type="text" />
@@ -14,9 +14,10 @@
       <NuxtPage />
     </main>
     <Footer />
-    <FloatingContact />
-    <SectionDotNav />
     <ClientOnly>
+      <template #fallback><span class="hidden" aria-hidden="true" /></template>
+      <FloatingContact />
+      <SectionDotNav />
       <CookieBanner />
       <button
         v-if="hasConsented"
@@ -31,9 +32,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from 'vue';
+import { onMounted } from 'vue';
 
-const route = useRoute();
 const { redirectToPreferred, isEnglish } = useLanguageSwitcher();
 const { hasConsented, openPreferences } = useCookieConsent();
 
@@ -42,5 +42,4 @@ useHead(() => ({
 }));
 
 onMounted(redirectToPreferred);
-watch(() => route.path, redirectToPreferred);
 </script>

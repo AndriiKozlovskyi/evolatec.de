@@ -10,14 +10,12 @@
       :stats="heroStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <IntroSection
       heading="Modern Websites for Businesses, Brands and Digital Products"
       :paragraphs="introParagraphs"
       image="/web-development/design.webp"
       image-alt="Professional Web Design"
-      :badge="introBadge"
     />
 
     <FeaturesSection
@@ -130,7 +128,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['WEB DESIGN', 'UI/UX', 'BRANDING', 'RESPONSIVE'];
 
 const introParagraphs = [
   'As a professional web design agency, EvolaTec develops modern, fast and conversion-focused websites for businesses, start-ups and local service providers.',
@@ -138,12 +135,6 @@ const introParagraphs = [
   'Our web agency combines modern UI/UX design, SEO-optimised structures and high-performance development for lasting success online.',
 ];
 
-const introBadge = {
-  icon: 'palette',
-  title: 'Modern Design',
-  subtitle: 'Brand-strong',
-  iconBg: 'bg-gradient-to-br from-primary to-primary-container',
-};
 
 const expertiseBlocks = [
   {

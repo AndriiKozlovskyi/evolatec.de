@@ -11,7 +11,7 @@
         class="grid md:grid-cols-2 gap-stack-lg items-center"
         :class="usps?.length ? 'mb-stack-lg' : ''"
       >
-        <div class="relative rounded-3xl overflow-hidden h-80 md:h-96">
+        <div class="relative rounded-3xl overflow-hidden aspect-[3/2] md:h-96 md:aspect-auto order-2 md:order-1">
           <NuxtPicture
             :src="image"
             :alt="imageAlt"
@@ -27,25 +27,9 @@
           />
           <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
 
-          <!-- Floating badge -->
-          <div
-            v-if="badge"
-            class="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3"
-          >
-            <div
-              class="w-10 h-10 rounded-xl flex items-center justify-center"
-              :class="badge.iconBg || 'bg-gradient-to-br from-primary to-primary-container'"
-            >
-              <span class="material-symbols-outlined text-white text-xl">{{ badge.icon }}</span>
-            </div>
-            <div>
-              <div class="font-bold text-primary text-sm">{{ badge.title }}</div>
-              <div class="text-on-surface-variant text-xs">{{ badge.subtitle }}</div>
-            </div>
-          </div>
         </div>
 
-        <div>
+        <div class="order-1 md:order-2">
           <h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">{{ heading }}</h2>
           <p
             v-for="(p, i) in paragraphs"

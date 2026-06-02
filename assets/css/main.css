@@ -17,7 +17,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
+  background-color: #faf9ff;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }

@@ -9,7 +9,7 @@
           <div
             v-for="benefit in benefits"
             :key="benefit.title"
-            class="group relative rounded-3xl overflow-hidden h-72 cursor-pointer"
+            class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer"
           >
             <NuxtPicture
               :src="benefit.image"

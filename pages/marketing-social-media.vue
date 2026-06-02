@@ -17,7 +17,6 @@
       :paragraphs="introParagraphs"
       image="/smm/meta.webp"
       image-alt="Social Media Marketing EvolaTec"
-      :badge="introBadge"
     />
 
     <!-- Platforms Visual Section -->
@@ -36,7 +35,7 @@
           <div
             v-for="platform in socialPlatforms"
             :key="platform.name"
-            class="group relative rounded-3xl overflow-hidden h-72 cursor-pointer"
+            class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer"
             :class="platform.bg"
           >
             <!-- Background image overlay -->
@@ -102,7 +101,6 @@
       :paragraphs="whyEvolaTecParagraphs"
       image="/main/seo.webp"
       image-alt="Social Media Marketing Agentur EvolaTec"
-      :badge="whyEvolaTecBadge"
       :usps="whyEvolaTec"
     />
 
@@ -133,12 +131,12 @@
         <p class="font-body-lg max-w-2xl mx-auto opacity-80">
           EvolaTec entwickelt Social Media Kampagnen, die sichtbar machen, Kunden gewinnen und Unternehmen wachsen lassen.
         </p>
-        <div class="flex flex-wrap justify-center gap-6 pt-6">
-          <a href="/kontakt">
-            <BaseButton variant="secondary" size="lg">Social Media starten</BaseButton>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 pt-6">
+          <a href="/kontakt" class="w-full sm:w-auto">
+            <BaseButton variant="secondary" size="lg" class="w-full sm:w-auto">Social Media starten</BaseButton>
           </a>
-          <a href="/kontakt">
-            <BaseButton variant="outline" size="lg" class="!border-white/40 !text-white hover:!bg-white/10">Kostenlos beraten lassen</BaseButton>
+          <a href="/webseite-kosten-kalkulator" class="w-full sm:w-auto">
+            <BaseButton variant="outline" size="lg" class="w-full sm:w-auto !border-white/40 !text-white hover:!bg-white/10">Alle Preise ansehen</BaseButton>
           </a>
         </div>
       </div>
@@ -233,12 +231,6 @@ const introParagraphs = [
   'Als Social Media Agentur entwickelt EvolaTec Kampagnen, die Reichweite, Interaktionen, Leads und Umsatz generieren — ergänzt durch <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> und <a href="/marketing-google-ads" class="text-primary font-semibold hover:underline">Google Ads</a>.',
 ];
 
-const introBadge = {
-  icon: 'thumb_up',
-  title: 'Mehr Reichweite',
-  subtitle: 'Auf Meta',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-pink-500',
-};
 
 const whyEvolaTecParagraphs = [
   'Erfolgreiches Social Media Marketing benötigt mehr als nur schöne Beiträge.',
@@ -246,12 +238,6 @@ const whyEvolaTecParagraphs = [
   'EvolaTec verbindet Social Media Werbung, <a href="/online-marketing" class="text-primary font-semibold hover:underline">Performance Marketing</a>, Webdesign und <a href="/seo" class="text-primary font-semibold hover:underline">SEO</a> zu leistungsstarken Marketing Systemen.',
 ];
 
-const whyEvolaTecBadge = {
-  icon: 'groups',
-  title: 'Meta Ads',
-  subtitle: 'Strategie & Setup',
-  iconBg: 'bg-gradient-to-br from-pink-500 to-purple-600',
-};
 
 const socialStats = [
   { value: 'Facebook', label: 'Instagram & Meta', icon: 'groups' },
@@ -342,36 +328,6 @@ const socialServices = [
   },
 ];
 
-const socialBenefits = [
-  {
-    title: 'Präzises Targeting',
-    description: 'Anzeigen erreichen genau die richtige Zielgruppe.',
-    icon: 'my_location',
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-600',
-  },
-  {
-    title: 'Markenbekanntheit',
-    description: 'Aufbau einer starken Marke in sozialen Netzwerken.',
-    icon: 'campaign',
-    iconBg: 'bg-pink-100',
-    iconColor: 'text-pink-600',
-  },
-  {
-    title: 'Mehr Leads & Verkäufe',
-    description: 'Conversion optimierte Kampagnen steigern Umsatz und Anfragen.',
-    icon: 'trending_up',
-    iconBg: 'bg-emerald-100',
-    iconColor: 'text-emerald-600',
-  },
-  {
-    title: 'Skalierbares Wachstum',
-    description: 'Erfolgreiche Kampagnen können kontinuierlich erweitert werden.',
-    icon: 'stacked_line_chart',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-600',
-  },
-];
 
 const socialProcess = [
   {

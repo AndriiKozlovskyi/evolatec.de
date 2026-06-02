@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- SEO Services Navigation -->
     <ServicesSection
@@ -184,7 +183,6 @@ const seoStats = [
   { value: 'Sichtbar', label: 'Bei Kunden', icon: 'visibility' },
 ];
 
-const trustCompanies = ['GOOGLE PARTNER', 'SEO CERTIFIED', 'DIGITAL LEADERS', 'GROWTH FOCUSED'];
 
 const benefits = [
   {

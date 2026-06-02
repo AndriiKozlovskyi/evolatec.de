@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- What is GEO -->
     <section class="py-8 md:py-section-padding bg-surface">
@@ -237,7 +236,6 @@ const geoStats = [
   { value: 'Future', label: 'Of Search', icon: 'auto_awesome' },
 ]
 
-const trustCompanies = ['CHATGPT OPTIMIZED', 'GOOGLE GEMINI', 'PERPLEXITY', 'MICROSOFT COPILOT', 'SCHEMA.ORG']
 
 const seoVsGeoRows = [
   { criterion: 'Goal', seo: 'Google Search Results (SERPs)', geo: 'AI Answers & Direct Citations' },

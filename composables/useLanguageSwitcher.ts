@@ -31,7 +31,6 @@ const deToEn: Record<string, string> = {
   '/online-marketing': '/en/online-marketing',
   '/marketing-google-ads': '/en/google-ads-management',
   '/marketing-social-media': '/en/social-media-marketing',
-  '/preise': '/en/pricing',
   '/webseite-kosten-kalkulator': '/en/website-cost-calculator',
   '/kontakt': '/en/contact',
   '/datenschutz': '/en/privacy-policy',

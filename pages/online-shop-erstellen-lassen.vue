@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Intro — 2-col with keyword-rich content -->
     <section data-nav-label="Intro" data-nav-icon="storefront" class="relative py-section-padding bg-surface overflow-hidden">
@@ -41,9 +40,9 @@
                 <p class="font-body-lg text-on-surface-variant flex-1 pt-1">{{ point.text }}</p>
               </div>
             </div>
-            <div class="grid grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30 text-center">
+            <div class="grid grid-cols-3 gap-2 sm:gap-6 pt-8 border-t border-outline-variant/30 text-center">
               <div v-for="stat in introStats" :key="stat.label">
-                <div class="font-display text-3xl text-primary font-black leading-none">{{ stat.value }}</div>
+                <div class="font-display text-xl sm:text-3xl text-primary font-black leading-none">{{ stat.value }}</div>
                 <div class="text-[0.7rem] uppercase tracking-widest text-on-surface-variant font-bold mt-2">{{ stat.label }}</div>
               </div>
             </div>
@@ -239,7 +238,6 @@ const heroStats = [
   { value: '30 Tage',   label: 'Support',    icon: 'support_agent' },
 ];
 
-const trustCompanies = ['E-COMMERCE', 'SHOPIFY', 'CUSTOM SHOP'];
 
 const introPoints = [
   {

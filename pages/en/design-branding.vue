@@ -10,14 +10,12 @@
       :stats="brandingStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <IntroSection
       heading="Why Professional Branding Is Essential"
       :paragraphs="introParagraphs"
       image="/design-branding/features.webp"
       image-alt="Professional Branding and Corporate Design"
-      :badge="introBadge"
     />
 
     <ServicesSection title="Our Branding & Corporate Design Services" variant="centered" :services="brandingServices" />
@@ -128,7 +126,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['LOGO DESIGN', 'CORPORATE DESIGN', 'BRAND STRATEGY', 'REBRANDING'];
 
 const introParagraphs = [
   'Strong branding determines how customers perceive your business. A professional brand identity builds trust, ensures recognition and positions your company in the market.',
@@ -136,12 +133,6 @@ const introParagraphs = [
   'As a branding agency, EvolaTec develops modern brand presences for businesses, start-ups, service providers and digital brands.',
 ];
 
-const introBadge = {
-  icon: 'palette',
-  title: 'Strong Branding',
-  subtitle: 'More Trust',
-  iconBg: 'bg-gradient-to-br from-blue-500 to-indigo-600',
-};
 
 const brandingStats = [
   { value: 'Unique', label: 'Brands', icon: 'star' },

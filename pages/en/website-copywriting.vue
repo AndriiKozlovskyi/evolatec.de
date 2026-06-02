@@ -10,7 +10,6 @@
       :stats="contentStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <ServicesSection title="Our Content & Copywriting Services" variant="centered" :services="contentServices" />
 
@@ -29,7 +28,6 @@
       :paragraphs="introParagraphs"
       image="/design-content/copywriting.webp"
       image-alt="SEO Copywriting EvolaTec"
-      :badge="introBadge"
     />
 
     <PricingSection
@@ -120,7 +118,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['SEO CONTENT', 'COPYWRITING', 'WEB COPY', 'CONVERSION'];
 
 const introParagraphs = [
   'Good website copy determines whether visitors become customers.',
@@ -128,12 +125,6 @@ const introParagraphs = [
   'EvolaTec creates SEO-optimised copy that search engines understand and users find convincing.',
 ];
 
-const introBadge = {
-  icon: 'edit_document',
-  title: 'SEO Copy',
-  subtitle: 'That Ranks',
-  iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-600',
-};
 
 const contentStats = [
   { value: 'SEO', label: 'Optimised', icon: 'trending_up' },

@@ -10,7 +10,6 @@
       :stats="auditStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <BenefitsSection
       title="Why a Professional SEO Audit Is Essential"
@@ -136,7 +135,6 @@ const auditStats = [
   { value: 'Clear', label: 'SEO Report', icon: 'description' },
 ];
 
-const trustCompanies = ['TECHNICAL ANALYSIS', 'ON-PAGE CHECK', 'KEYWORD AUDIT', 'SEO REPORT'];
 
 const benefits = [
   {

@@ -10,14 +10,12 @@
       :stats="uiuxStats"
     />
 
-    <TrustSection :companies="trustCompanies" />
 
     <IntroSection
       heading="Why Good UI/UX Design Is Critical"
       :paragraphs="introParagraphs"
       image="/design-ui-ux/features.webp"
       image-alt="UI/UX Design Agency"
-      :badge="introBadge"
     />
 
     <ServicesSection title="Our UI/UX Design Services" variant="centered" :services="uiuxServices" />
@@ -126,7 +124,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['UI DESIGN', 'UX RESEARCH', 'PROTOTYPING', 'CONVERSION'];
 
 const introParagraphs = [
   'Modern websites and digital products must not only look great — they must also be intuitive to use.',
@@ -134,12 +131,6 @@ const introParagraphs = [
   'As a UI/UX design agency, EvolaTec develops modern interfaces, digital experiences and performant UIs for websites, SaaS platforms, landing pages and e-commerce projects.',
 ];
 
-const introBadge = {
-  icon: 'design_services',
-  title: 'Better UX',
-  subtitle: 'More Conversion',
-  iconBg: 'bg-gradient-to-br from-purple-500 to-pink-500',
-};
 
 const uiuxStats = [
   { value: 'Modern', label: 'UI Design', icon: 'design_services' },

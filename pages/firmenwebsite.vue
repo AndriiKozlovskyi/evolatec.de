@@ -44,9 +44,9 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-6 pt-8 border-t border-outline-variant/30">
+            <div class="grid grid-cols-3 gap-2 sm:gap-6 pt-8 border-t border-outline-variant/30">
               <div v-for="stat in introStats" :key="stat.label">
-                <div class="font-display text-3xl text-primary font-black leading-none">{{ stat.value }}</div>
+                <div class="font-display text-xl sm:text-3xl text-primary font-black leading-none">{{ stat.value }}</div>
                 <div class="text-[0.7rem] uppercase tracking-widest text-on-surface-variant font-bold mt-2">{{ stat.label }}</div>
               </div>
             </div>
@@ -317,7 +317,7 @@ const developmentServices = [
     iconBg: 'bg-cyan-100',
     iconColor: 'text-cyan-600',
     borderColor: 'border-cyan-500',
-    href: '/preise',
+    href: '/webseite-kosten-kalkulator',
   },
 ];
 

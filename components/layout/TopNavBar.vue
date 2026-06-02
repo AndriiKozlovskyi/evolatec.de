@@ -233,25 +233,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, onBeforeUnmount } from 'vue';
+import { ref, watch, watchEffect, onBeforeUnmount } from 'vue';
 
 const { currentLang, isEnglish, deHref, enHref, savePreference } = useLanguageSwitcher();
 const mobileMenuOpen = ref(false);
 const expandedMenus = ref<number[]>([]);
 const route = useRoute();
 
-if (import.meta.client) {
-  watch(mobileMenuOpen, (open) => {
+watch(mobileMenuOpen, (open) => {
+  if (import.meta.client) {
     document.body.style.overflow = open ? 'hidden' : '';
-    if (!open) expandedMenus.value = [];
-  });
-  watch(() => route.path, () => {
-    mobileMenuOpen.value = false;
-  });
-  onBeforeUnmount(() => {
+  }
+  if (!open) expandedMenus.value = [];
+});
+
+watch(() => route.path, () => {
+  mobileMenuOpen.value = false;
+});
+
+onBeforeUnmount(() => {
+  if (import.meta.client) {
     document.body.style.overflow = '';
-  });
-}
+  }
+});
 
 function toggleMobileSubmenu(linkId: number) {
   if (expandedMenus.value.includes(linkId)) {
@@ -266,8 +270,7 @@ function isLinkActive(link: { href: string; submenu?: { href: string }[] }) {
   return link.submenu?.some(s => route.path === s.href || route.path === s.href + '/') ?? false;
 }
 
-const navLinks = computed(() => {
-  const en = isEnglish.value;
+function buildNavLinks(en: boolean) {
   return [
     {
       id: 2,
@@ -320,7 +323,10 @@ const navLinks = computed(() => {
     },
     { id: 6, label: en ? 'Prices' : 'Preise', href: en ? '/en/website-cost-calculator' : '/webseite-kosten-kalkulator', isActive: false, icon: 'price_check' },
   ];
-});
+}
+
+const navLinks = ref(buildNavLinks(isEnglish.value));
+watchEffect(() => { navLinks.value = buildNavLinks(isEnglish.value); });
 </script>
 
 <style scoped>

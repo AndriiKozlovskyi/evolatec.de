@@ -12,7 +12,6 @@
     />
 
     <!-- Trust Section -->
-    <TrustSection :companies="trustCompanies" />
 
     <!-- Services Section -->
     <ServicesSection title="Unsere Content & Copywriting Leistungen" variant="centered" :services="contentServices" />
@@ -35,7 +34,6 @@
       :paragraphs="introParagraphs"
       image="/design-content/copywriting.webp"
       image-alt="SEO Copywriting EvolaTec"
-      :badge="introBadge"
     />
 
     <!-- Pricing Section -->
@@ -130,7 +128,6 @@ useHead({
   script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schemaMarkup) }],
 });
 
-const trustCompanies = ['SEO CONTENT', 'COPYWRITING', 'WEB TEXTE', 'CONVERSION'];
 
 const introParagraphs = [
   'Gute Webseiten Texte entscheiden darüber, ob Besucher zu Kunden werden.',
@@ -138,12 +135,6 @@ const introParagraphs = [
   'EvolaTec erstellt SEO optimierte Texte, die Suchmaschinen verstehen und Nutzer überzeugen.',
 ];
 
-const introBadge = {
-  icon: 'edit_document',
-  title: 'SEO Texte',
-  subtitle: 'Die ranken',
-  iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-600',
-};
 
 const contentStats = [
   { value: 'SEO', label: 'Optimiert', icon: 'trending_up' },

@@ -17,7 +17,7 @@
         </div>
 
         <!-- Right Image -->
-        <div class="relative min-h-[500px] rounded-xl overflow-hidden shadow-2xl">
+        <div class="relative aspect-[3/2] lg:aspect-auto lg:min-h-[500px] rounded-xl overflow-hidden shadow-2xl">
           <NuxtPicture
             :src="imageUrl"
             :alt="imageAlt"
