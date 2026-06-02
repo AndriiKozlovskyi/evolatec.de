@@ -40,44 +40,15 @@
       :usps="whyEvolaTec"
     />
 
-    <!-- Pricing Table Section -->
-    <section class="py-section-padding bg-surface-container-low">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4">
-          Google Ads Management Pricing
-        </h2>
-        <p class="text-center font-body-lg text-on-surface-variant mb-stack-lg">
-          Transparent pricing for Google advertising, SEA management and performance marketing.
-        </p>
-
-        <div class="max-w-2xl mx-auto overflow-x-auto">
-          <table class="w-full">
-            <thead>
-              <tr class="border-b-2 border-primary">
-                <th class="text-left py-4 px-6 font-headline-md text-primary">Service</th>
-                <th class="text-right py-4 px-6 font-headline-md text-primary">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                v-for="item in pricingItems"
-                :key="item.name"
-                class="border-b border-outline-variant/20 hover:bg-surface transition-colors"
-              >
-                <td class="py-4 px-6 font-body-md text-on-surface">{{ item.name }}</td>
-                <td class="py-4 px-6 font-body-md text-primary font-bold text-right">{{ item.price }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="text-center mt-10">
-          <a href="/en/website-cost-calculator">
-            <BaseButton variant="outline" size="md">View All Pricing</BaseButton>
-          </a>
-        </div>
-      </div>
-    </section>
+    <PricingTableSection
+      title="Google Ads Management Pricing"
+      description="Transparent pricing for Google advertising, SEA management and performance marketing."
+      service-label="Service"
+      price-label="Price"
+      cta-label="View All Pricing"
+      cta-href="/en/website-cost-calculator"
+      :items="pricingItems"
+    />
 
     <FAQSection title="Frequently Asked Questions about Google Ads" :faqs="adsFaqs" />
 

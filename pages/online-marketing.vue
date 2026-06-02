@@ -83,44 +83,15 @@
       </div>
     </section>
 
-    <!-- Pricing Table Section -->
-    <section class="py-section-padding bg-surface">
-      <div class="max-w-container-max mx-auto px-gutter">
-        <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-stack-lg">
-          Preise für Online Marketing Leistungen
-        </h2>
-        <p class="text-center font-body-lg text-on-surface-variant mb-stack-lg">
-          Transparente Preise für digitales Marketing, SEO und Performance Kampagnen.
-        </p>
-
-        <div class="max-w-2xl mx-auto overflow-x-auto">
-          <table class="w-full">
-            <thead>
-              <tr class="border-b-2 border-primary">
-                <th class="text-left py-4 px-6 font-headline-md text-primary">Leistung</th>
-                <th class="text-right py-4 px-6 font-headline-md text-primary">Preis</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                v-for="item in pricingItems"
-                :key="item.name"
-                class="border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors"
-              >
-                <td class="py-4 px-6 font-body-md text-on-surface">{{ item.name }}</td>
-                <td class="py-4 px-6 font-body-md text-primary font-bold text-right">{{ item.price }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="text-center mt-10">
-          <a href="/webseite-kosten-kalkulator">
-            <BaseButton variant="outline" size="md">Alle Preise ansehen</BaseButton>
-          </a>
-        </div>
-      </div>
-    </section>
+    <PricingTableSection
+      title="Preise für Online Marketing Leistungen"
+      description="Transparente Preise für digitales Marketing, SEO und Performance Kampagnen."
+      service-label="Leistung"
+      price-label="Preis"
+      cta-label="Alle Preise ansehen"
+      cta-href="/webseite-kosten-kalkulator"
+      :items="pricingItems"
+    />
 
     <!-- FAQ Section -->
     <FAQSection title="Häufig gestellte Fragen zum Online Marketing" :faqs="marketingFaqs" />

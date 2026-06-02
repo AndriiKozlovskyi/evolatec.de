@@ -104,41 +104,12 @@
       image-url="/web-development/features.webp"
     />
 
-    <!-- Expertise blocks -->
-    <section data-nav-label="Expertise" data-nav-icon="verified" class="relative py-section-padding bg-surface-container-low overflow-hidden">
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none"></div>
-      <div class="relative max-w-container-max mx-auto px-gutter">
-        <div class="text-center max-w-2xl mx-auto mb-stack-lg">
-          <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-5">
-            <span class="material-symbols-outlined text-[18px]">verified</span>
-            Web Development from One Source
-          </span>
-          <h2 class="font-headline-lg text-primary leading-tight">Modern Websites — from Concept to Launch</h2>
-        </div>
-        <div class="grid lg:grid-cols-2 gap-8">
-          <div
-            v-for="block in expertiseBlocks"
-            :key="block.title"
-            class="group relative bg-surface rounded-3xl p-10 border border-outline-variant/30 ambient-shadow hover:shadow-2xl hover:border-primary/20 transition-all duration-500 overflow-hidden"
-          >
-            <div class="absolute top-0 left-10 right-10 h-1 bg-gradient-to-r from-primary to-primary-container rounded-b-full"></div>
-            <div class="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-primary/5 blur-[60px] pointer-events-none"></div>
-            <div class="relative">
-              <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary/15 transition-all duration-300">
-                <span class="material-symbols-outlined text-primary text-2xl">{{ block.icon }}</span>
-              </div>
-              <h3 class="font-headline-lg text-primary mb-5 leading-tight">{{ block.title }}</h3>
-              <div class="space-y-4 mb-7">
-                <p v-for="(para, i) in block.paragraphs" :key="i" class="font-body-lg text-on-surface-variant">{{ para }}</p>
-              </div>
-              <div class="flex flex-wrap gap-2 pt-6 border-t border-outline-variant/20">
-                <span v-for="tag in block.tags" :key="tag" class="px-3 py-1.5 rounded-full bg-primary/8 text-primary text-xs font-semibold">{{ tag }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ExpertiseCardsSection
+      eyebrow="Web Development from One Source"
+      eyebrow-icon="verified"
+      title="Modern Websites — from Concept to Launch"
+      :blocks="expertiseBlocks"
+    />
 
     <BenefitsSection title="Why Choose EvolaTec as Your Web Agency?" :benefits="benefits" />
 
