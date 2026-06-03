@@ -97,9 +97,59 @@
 </template>
 
 <script setup>
-const { isEnglish } = useLanguageSwitcher()
+const { isEnglish, hreflangLinks } = useLanguageSwitcher()
 const props = defineProps({ blok: Object })
 const route = useRoute()
+
+const canonicalUrl = computed(() => `https://evolatec.de${route.path}`)
+const ogImage = computed(() => {
+  const f = props.blok?.image?.filename
+  return f ? `${f}/m/1200x630/` : 'https://evolatec.de/og-default.jpg'
+})
+
+useHead(() => ({
+  title: props.blok?.title ? `${props.blok.title} | EvolaTec` : 'Blog | EvolaTec',
+  meta: [
+    { name: 'description', content: props.blok?.description ?? '' },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:title', content: props.blok?.title ?? 'EvolaTec Blog' },
+    { property: 'og:description', content: props.blok?.description ?? '' },
+    { property: 'og:image', content: ogImage.value },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    { property: 'og:url', content: canonicalUrl.value },
+    { property: 'og:site_name', content: 'EvolaTec' },
+    { property: 'article:published_time', content: props.blok?._publishedAt ?? '' },
+    { property: 'article:author', content: props.blok?.author ?? 'EvolaTec' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: props.blok?.title ?? 'EvolaTec Blog' },
+    { name: 'twitter:description', content: props.blok?.description ?? '' },
+    { name: 'twitter:image', content: ogImage.value },
+  ],
+  link: [
+    { rel: 'canonical', href: canonicalUrl.value },
+    ...hreflangLinks.value,
+  ],
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: props.blok?.title ?? '',
+      description: props.blok?.description ?? '',
+      image: ogImage.value,
+      author: { '@type': 'Person', name: props.blok?.author ?? 'EvolaTec' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'EvolaTec',
+        logo: { '@type': 'ImageObject', url: 'https://evolatec.de/logo.webp' },
+      },
+      datePublished: props.blok?._publishedAt ?? '',
+      url: canonicalUrl.value,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl.value },
+    }),
+  }],
+}))
 
 const publishedDate = computed(() => {
   if (!props.blok?._publishedAt) return null

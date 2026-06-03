@@ -42,6 +42,10 @@
           {{ isEnglish ? 'Read more' : 'Weiterlesen' }}
           <span class="material-symbols-outlined text-[16px] leading-none transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
         </span>
+        <span v-if="formattedDate" class="flex items-center gap-1 text-xs text-on-surface-variant/60">
+          <span class="material-symbols-outlined text-[13px] leading-none">calendar_today</span>
+          {{ formattedDate }}
+        </span>
       </div>
 
     </div>
@@ -50,6 +54,15 @@
 
 <script setup>
 const { isEnglish: routeIsEnglish } = useLanguageSwitcher()
-const props = defineProps({ article: Object, slug: String, lang: String })
+const props = defineProps({ article: Object, slug: String, lang: String, date: String })
 const isEnglish = computed(() => props.lang ? props.lang === 'en' : routeIsEnglish.value)
+
+const formattedDate = computed(() => {
+  if (!props.date) return ''
+  return new Intl.DateTimeFormat(isEnglish.value ? 'en-GB' : 'de-DE', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(new Date(props.date))
+})
 </script>
