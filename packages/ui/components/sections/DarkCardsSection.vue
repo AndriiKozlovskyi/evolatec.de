@@ -2,7 +2,6 @@
   <section data-nav-icon="dashboard" class="py-section-padding bg-gradient-to-br from-primary/90 via-primary to-primary/90 text-on-primary">
     <div class="max-w-container-max mx-auto px-gutter">
       <h2 class="font-headline-lg text-headline-lg text-white text-center mb-stack-lg">{{ title }}</h2>
-
       <div :class="gridClass">
         <component
           :is="card.href ? 'a' : 'div'"
@@ -23,30 +22,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+interface Card { title: string; description: string; icon: string; href?: string }
 
-interface Card {
-  title: string;
-  description: string;
-  icon: string;
-  href?: string;
-}
+const props = withDefaults(defineProps<{ title: string; cards: Card[]; columns?: 2 | 3 | 4 }>(), { columns: 4 })
 
-const props = withDefaults(
-  defineProps<{
-    title: string;
-    cards: Card[];
-    columns?: 2 | 3 | 4;
-  }>(),
-  { columns: 4 }
-);
-
-const gridClass = computed(() => {
-  const map: Record<number, string> = {
-    2: 'grid md:grid-cols-2 gap-gutter',
-    3: 'grid md:grid-cols-3 gap-gutter',
-    4: 'grid md:grid-cols-2 lg:grid-cols-4 gap-gutter',
-  };
-  return map[props.columns];
-});
+const gridClass = computed(() => ({ 2: 'grid md:grid-cols-2 gap-gutter', 3: 'grid md:grid-cols-3 gap-gutter', 4: 'grid md:grid-cols-2 lg:grid-cols-4 gap-gutter' })[props.columns])
 </script>

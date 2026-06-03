@@ -3,26 +3,15 @@
     <div class="max-w-container-max mx-auto px-gutter">
       <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-stack-lg text-center leading-tight">{{ title }}</h2>
       <div class="grid grid-cols-1 gap-stack-md" :class="gridCols">
-
-        <!-- Image card variant -->
         <template v-if="hasImages">
-          <div
-            v-for="benefit in benefits"
-            :key="benefit.title"
-            class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer"
-          >
+          <div v-for="benefit in benefits" :key="benefit.title" class="group relative rounded-3xl overflow-hidden h-72 cursor-pointer">
             <NuxtPicture
               :src="benefit.image"
               :alt="benefit.title"
               format="avif,webp"
               sizes="xs:100vw sm:100vw md:50vw lg:25vw xl:25vw xxl:25vw"
-              :width="600"
-              :height="450"
-              :img-attrs="{
-                loading: 'lazy',
-                decoding: 'async',
-                class: 'absolute inset-0 w-full h-full object-cover transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform',
-              }"
+              :width="600" :height="450"
+              :img-attrs="{ loading: 'lazy', decoding: 'async', class: 'absolute inset-0 w-full h-full object-cover transition-opacity duration-500 scale-105 group-hover:scale-110 transition-transform' }"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/10"></div>
             <div class="relative h-full flex flex-col justify-between p-6">
@@ -36,20 +25,13 @@
             </div>
           </div>
         </template>
-
-        <!-- Default glass card variant -->
         <template v-else>
-          <div
-            v-for="benefit in benefits"
-            :key="benefit.title"
-            class="flex flex-col border border-black/20 items-center text-center p-8 rounded-xl glass-card backdrop-blur-sm hover:shadow-lg transition-all duration-300 group"
-          >
+          <div v-for="benefit in benefits" :key="benefit.title" class="flex flex-col border border-black/20 items-center text-center p-8 rounded-xl glass-card backdrop-blur-sm hover:shadow-lg transition-all duration-300 group">
             <span class="material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">{{ benefit.icon }}</span>
             <h3 class="text-headline-md font-bold mb-3">{{ benefit.title }}</h3>
             <p class="text-body-md">{{ benefit.description }}</p>
           </div>
         </template>
-
       </div>
     </div>
   </section>
@@ -57,16 +39,10 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  title: string;
-  benefits: Array<{
-    icon: string;
-    title: string;
-    description: string;
-    image?: string;
-    bg?: string;
-  }>;
-}>();
+  title: string
+  benefits: Array<{ icon: string; title: string; description: string; image?: string }>
+}>()
 
-const hasImages = computed(() => props.benefits.some(b => b.image));
-const gridCols = computed(() => props.benefits.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3');
+const hasImages = computed(() => props.benefits.some(b => b.image))
+const gridCols = computed(() => props.benefits.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3')
 </script>

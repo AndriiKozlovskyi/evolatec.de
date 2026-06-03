@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+  extends: ['./packages/ui'],
+
   compatibilityDate: '2025-07-15',
 
   devtools: {
@@ -46,6 +48,7 @@ export default defineNuxtConfig({
 
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
+    configPath: './packages/ui/tailwind.config',
   },
 
   image: {

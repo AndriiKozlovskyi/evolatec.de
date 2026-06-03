@@ -17,10 +17,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  title: string;
-  faqs: Array<{
-    question: string;
-    answer: string;
-  }>;
-}>();
+  title: string
+  faqs: Array<{ question: string; answer: string }>
+}>()
 </script>
