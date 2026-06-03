@@ -9,6 +9,7 @@
       <textarea name="message"></textarea>
       <input name="privacy" type="checkbox" />
     </form>
+    <PageLoader />
     <TopNavBar />
     <main class="pt-20">
       <NuxtPage />
@@ -32,14 +33,10 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
-
-const { redirectToPreferred, isEnglish } = useLanguageSwitcher();
+const { isEnglish } = useLanguageSwitcher();
 const { hasConsented, openPreferences } = useCookieConsent();
 
 useHead(() => ({
   htmlAttrs: { lang: isEnglish.value ? 'en' : 'de' },
 }));
-
-onMounted(redirectToPreferred);
 </script>

@@ -82,6 +82,11 @@ body {
   animation: fade-in 0.5s ease-out forwards;
 }
 
+.page-reveal-enter-active { transition: opacity 0.3s ease; }
+.page-reveal-leave-active { transition: opacity 0.15s ease; }
+.page-reveal-enter-from,
+.page-reveal-leave-to    { opacity: 0; }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
