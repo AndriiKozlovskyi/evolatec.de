@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-surface-container-low border-t border-outline-variant/30">
+  <section class="py-section-padding bg-surface-container border-t border-outline-variant/30">
     <div class="max-w-container-max mx-auto px-gutter">
       <div class="text-center mb-stack-lg">
         <span class="inline-block text-xs font-bold uppercase tracking-[0.25em] text-primary mb-3">{{ eyebrow }}</span>

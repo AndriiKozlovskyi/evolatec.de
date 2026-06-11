@@ -1,5 +1,5 @@
 <template>
-  <section data-nav-icon="verified" class="relative py-section-padding bg-surface-container-low overflow-hidden">
+  <section data-nav-icon="verified" class="relative py-section-padding bg-surface overflow-hidden">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.04] blur-[120px] pointer-events-none"></div>
 
     <div class="relative max-w-container-max mx-auto px-gutter">

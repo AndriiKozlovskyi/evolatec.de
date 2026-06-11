@@ -1,5 +1,5 @@
 <template>
-  <section class="py-section-padding bg-surface">
+  <section class="py-section-padding bg-surface-container">
     <div class="max-w-container-max mx-auto px-gutter">
       <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4">{{ title }}</h2>
       <p v-if="description" class="text-center font-body-lg text-on-surface-variant mb-stack-lg">{{ description }}</p>

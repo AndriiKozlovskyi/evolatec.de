@@ -110,6 +110,7 @@
     <PricingSection
       title="Online Shop Kosten & Preise"
       subtitle="Transparente Preise ohne versteckte Kosten. Onlineshop erstellen lassen ab 3.000 €."
+      bg="container-low"
       :pricing-plans="pricingPlans"
     />
 

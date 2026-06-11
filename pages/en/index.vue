@@ -70,7 +70,7 @@
     <section
       data-nav-label="Why Us"
       data-nav-icon="stars"
-      class="relative py-section-padding bg-surface overflow-hidden"
+      class="relative py-section-padding bg-surface-container overflow-hidden"
     >
       <div class="absolute top-20 -right-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
       <div class="absolute bottom-0 -left-32 w-[400px] h-[400px] rounded-full bg-primary-container/20 blur-[100px] pointer-events-none"></div>
@@ -249,7 +249,7 @@
     </section>
 
     <!-- What's Included? -->
-    <section class="py-8 md:py-section-padding bg-surface">
+    <section class="py-8 md:py-section-padding bg-surface-container">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-8 md:mb-stack-lg">
           <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">What's Included With Every Website?</h2>
@@ -355,7 +355,7 @@
     </section>
 
     <!-- Technology Comparison: Nuxt vs WordPress -->
-    <section class="py-8 md:py-section-padding bg-surface-container-low">
+    <section class="py-8 md:py-section-padding bg-surface-container">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center mb-8 md:mb-stack-lg">
           <h2 class="font-display text-3xl sm:text-4xl font-black text-on-surface leading-tight">Why Not WordPress?</h2>
@@ -429,7 +429,7 @@
     </section>
 
     <!-- GEO Section -->
-    <section class="py-8 md:py-section-padding bg-surface">
+    <section class="py-8 md:py-section-padding bg-surface-container">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-stack-lg items-start">
 

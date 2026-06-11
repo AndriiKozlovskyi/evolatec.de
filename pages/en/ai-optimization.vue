@@ -114,6 +114,7 @@
     <PricingSection
       title="GEO Optimization Pricing"
       subtitle="Transparent pricing for professional AI visibility."
+      bg="container-low"
       :pricing-plans="geoPricingPlans"
     />
 

@@ -20,7 +20,7 @@
     />
 
     <!-- Platforms Visual Section -->
-    <section class="py-section-padding bg-surface-container-low">
+    <section class="py-section-padding bg-surface-container">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="text-center max-w-2xl mx-auto mb-stack-lg">
           <h2 class="font-headline-lg text-headline-lg text-primary mb-4">

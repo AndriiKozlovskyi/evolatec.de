@@ -1,5 +1,5 @@
 <template>
-  <section data-nav-label="Process" data-nav-icon="route" class="py-section-padding bg-surface-container-low text-on-surface">
+  <section data-nav-label="Process" data-nav-icon="route" class="py-section-padding bg-surface text-on-surface">
     <div class="max-w-container-max mx-auto px-gutter">
       <div class="text-center mb-stack-lg max-w-2xl mx-auto">
         <span v-if="eyebrow" class="text-primary font-semibold text-xs uppercase tracking-[0.25em] mb-3 block">{{ eyebrow }}</span>

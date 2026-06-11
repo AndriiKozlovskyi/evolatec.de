@@ -135,6 +135,7 @@
     <PricingSection
       title="Website Preise & Kosten"
       subtitle="Transparente Festpreise für professionelle Websites — Landingpages ab 500 €, Firmenwebsites ab 1.500 €."
+      bg="surface"
       :pricing-plans="pricingPlans"
     />
 

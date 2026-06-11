@@ -1,5 +1,5 @@
 <template>
-  <section data-nav-label="Preise" data-nav-icon="sell" class="py-section-padding bg-gradient-to-b from-surface to-surface/95 relative overflow-hidden">
+  <section data-nav-label="Preise" data-nav-icon="sell" :class="['py-section-padding relative overflow-hidden', bg === 'surface' ? 'bg-surface' : bg === 'container-low' ? 'bg-surface-container-low' : 'bg-surface-container']">
     <!-- Background decoration -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div class="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
@@ -39,6 +39,7 @@
 defineProps<{
   title: string;
   subtitle: string;
+  bg?: 'container' | 'container-low' | 'surface';
   pricingPlans: Array<{
     tier: string;
     price: string;

@@ -133,6 +133,7 @@
     <PricingSection
       title="GEO Optimierung Preise"
       subtitle="Transparente Preise für professionelle KI-Sichtbarkeit."
+      bg="container-low"
       :pricing-plans="geoPricingPlans"
     />
 

@@ -105,6 +105,7 @@
     <PricingSection
       title="Online Shop Pricing"
       subtitle="Transparent pricing with no hidden costs. Online shop development from €3,000."
+      bg="container-low"
       :pricing-plans="pricingPlans"
     />
 
