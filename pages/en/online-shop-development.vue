@@ -133,7 +133,7 @@ const schemaMarkup = {
       '@id': 'https://evolatec.de/en/online-shop-development/#webpage',
       url: 'https://evolatec.de/en/online-shop-development',
       name: 'Online Shop Development – E-Commerce & Web Shop | EvolaTec',
-      description: 'Professional online shops and e-commerce platforms from €3,000. Shopify and custom shops with SEO optimisation and high conversion rates.',
+      description: 'Professional online shops and e-commerce platforms from €3,000. Custom-built Nuxt shops with SEO optimisation and high conversion rates.',
       isPartOf: { '@id': 'https://evolatec.de/#website' },
       about: { '@id': 'https://evolatec.de/#organization' },
       inLanguage: 'en-US',
@@ -142,7 +142,7 @@ const schemaMarkup = {
       '@type': 'Service',
       '@id': 'https://evolatec.de/en/online-shop-development/#service',
       name: 'Online Shop Development',
-      description: 'Professional e-commerce shops for businesses — Shopify and custom solutions with SEO and conversion optimisation.',
+      description: 'Professional e-commerce shops for businesses — Nuxt-based custom solutions with SEO and conversion optimisation.',
       url: 'https://evolatec.de/en/online-shop-development',
       provider: { '@id': 'https://evolatec.de/#organization' },
       areaServed: { '@type': 'Country', name: 'Germany' },
@@ -152,9 +152,9 @@ const schemaMarkup = {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'How much does it cost to build an online shop?', acceptedAnswer: { '@type': 'Answer', text: 'Professional online shop development at EvolaTec starts from €3,000 for a starter shop. Premium solutions with extended features and integrations start from €6,000.' } },
-        { '@type': 'Question', name: 'What ongoing costs are there after the shop is built?', acceptedAnswer: { '@type': 'Answer', text: 'In addition to the one-off development cost, there are monthly operating costs depending on the platform: a Shopify plan, hosting, payment provider fees and optional maintenance.' } },
+        { '@type': 'Question', name: 'What ongoing costs are there after the shop is built?', acceptedAnswer: { '@type': 'Answer', text: 'In addition to the one-off development cost, there are monthly operating costs depending on the platform: hosting, payment provider fees and optional maintenance.' } },
         { '@type': 'Question', name: 'How long does it take to develop an online shop?', acceptedAnswer: { '@type': 'Answer', text: 'A professional online shop can be live in as little as 14 working days at EvolaTec. More complex custom solutions typically take 6–12 weeks.' } },
-        { '@type': 'Question', name: 'Which shop platform is right for my business?', acceptedAnswer: { '@type': 'Answer', text: 'Shopify is ideal for quick start and easy management. Custom solutions built with Nuxt and Storyblok are recommended for complex processes and high scalability.' } },
+        { '@type': 'Question', name: 'Which shop platform is right for my business?', acceptedAnswer: { '@type': 'Answer', text: 'We build online shops with Nuxt for maximum performance, flexibility and custom processes. We recommend the right architecture based on your requirements — from a fast standard shop to a full custom platform.' } },
         { '@type': 'Question', name: 'Do you support SEO optimisation of the shop?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, every shop we develop is SEO-optimised from the ground up — with technical structure, PageSpeed optimisation, Schema.org markup and a clean URL architecture.' } },
         { '@type': 'Question', name: 'Is my online shop secure?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every shop we develop is delivered with SSL encryption, secure payment providers (Stripe, PayPal, Klarna) and GDPR-compliant data processing.' } },
         { '@type': 'Question', name: 'Does EvolaTec offer maintenance and support after launch?', acceptedAnswer: { '@type': 'Answer', text: '30 days of free support after launch are included. Beyond that, we offer maintenance packages with monthly support, updates and performance monitoring.' } },
@@ -169,11 +169,11 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Professional online shop development from €3,000. Shopify and custom e-commerce solutions with SEO optimisation and high conversion rates.',
+      content: 'Professional online shop development from €3,000. Custom Nuxt-based e-commerce solutions with SEO optimisation and high conversion rates.',
     },
     {
       name: 'keywords',
-      content: 'online shop development, e-commerce development, Shopify development, custom shop development, e-commerce agency',
+      content: 'online shop development, e-commerce development, Nuxt shop development, custom shop development, e-commerce agency',
     },
     { property: 'og:title', content: 'Online Shop Development – E-Commerce | EvolaTec' },
     { property: 'og:description', content: 'Professional e-commerce solutions and online shops for businesses.' },
@@ -220,8 +220,8 @@ const introStats = [
 
 const ecommerceServices = [
   {
-    title: 'Shopify Shop Development',
-    description: 'Professional Shopify shops with custom design, fast setup and optimised conversion rates.',
+    title: 'Nuxt Online Shop Development',
+    description: 'Professional Nuxt-powered online shops with custom design, fast setup and optimised conversion rates.',
     icon: 'storefront',
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',
@@ -267,11 +267,11 @@ const expertiseBlocks = [
     title: 'Online Shop Development Costs — What You Should Know',
     paragraphs: [
       'The cost of building an online shop depends on the platform, scope and individual requirements. A professional online shop at EvolaTec starts from €3,000, with custom solutions priced accordingly.',
-      'In addition to the one-off build cost, there are ongoing operating costs: hosting or platform fees (e.g. a Shopify plan), payment provider fees and optional maintenance.',
+      'In addition to the one-off build cost, there are ongoing operating costs: hosting or platform fees, payment provider fees and optional maintenance.',
       'Investing in a professionally built online shop means investing in a solution that generates long-term revenue — rather than low-cost website builders that quickly hit their limits.',
       'EvolaTec offers transparent pricing with no hidden costs. From the very first conversation you receive a realistic estimate for your individual online shop.',
     ],
-    tags: ['Shop Costs', 'Transparent', 'Shopify', 'Custom Shop'],
+    tags: ['Shop Costs', 'Transparent', 'Nuxt', 'Custom Shop'],
   },
   {
     icon: 'verified_user',
@@ -390,7 +390,7 @@ const faqs = [
   {
     question: 'What ongoing costs are there after the shop is built?',
     answer:
-      'In addition to one-off development there are monthly operating costs depending on the platform: a Shopify plan (depending on the chosen tier), hosting for custom solutions, payment provider fees, domain and optional maintenance. A marketing budget (Google Ads, Meta Ads, SEO) should be planned separately depending on growth goals.',
+      'In addition to one-off development there are monthly operating costs depending on the platform: hosting, payment provider fees, domain and optional maintenance. A marketing budget (Google Ads, Meta Ads, SEO) should be planned separately depending on growth goals.',
   },
   {
     question: 'How long does it take to develop an online shop?',
@@ -400,7 +400,7 @@ const faqs = [
   {
     question: 'Which shop platform is right for my business?',
     answer:
-      'Shopify is ideal for fast market launch and easy management. Custom solutions built with Nuxt and individual shop logic are recommended for complex processes, high performance demands or special integrations. We choose the platform based on your needs.',
+      'We build online shops with Nuxt and individual shop logic — for maximum performance, flexibility and custom processes. We recommend the right architecture based on your requirements, from a fast standard shop to a full custom platform.',
   },
   {
     question: 'Do you also support SEO optimisation of the online shop?',

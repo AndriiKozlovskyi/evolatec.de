@@ -145,7 +145,7 @@ const faqs = [
   {
     question: 'Welche laufenden Kosten entstehen nach der Shop-Erstellung?',
     answer:
-      'Neben der einmaligen Entwicklung fallen je nach Plattform monatliche Betriebskosten an: ein Shopify-Plan (je nach gewähltem Paket), Hosting bei eigener Lösung, Gebühren der Zahlungsanbieter sowie Domain und optional Wartung. Marketing-Budget (Google Ads, Meta Ads, SEO) sollte je nach Wachstumsziel zusätzlich eingeplant werden.',
+      'Neben der einmaligen Entwicklung fallen je nach Plattform monatliche Betriebskosten an: Hosting, Gebühren der Zahlungsanbieter sowie Domain und optional Wartung. Marketing-Budget (Google Ads, Meta Ads, SEO) sollte je nach Wachstumsziel zusätzlich eingeplant werden.',
   },
   {
     question: 'Wie lange dauert die Entwicklung eines Online-Shops?',
@@ -155,7 +155,7 @@ const faqs = [
   {
     question: 'Welche Shop-Plattform ist die richtige für mein Unternehmen?',
     answer:
-      'Shopify ist ideal für schnellen Marktstart und einfache Verwaltung. Custom-Lösungen mit Nuxt und individueller Shop-Logik empfehlen wir für komplexe Prozesse, hohe Performance-Anforderungen oder spezielle Schnittstellen. Wir wählen die Plattform anhand Ihrer Anforderungen.',
+      'Wir entwickeln Online Shops mit Nuxt und individueller Shop-Logik — für maximale Performance, Flexibilität und individuelle Prozesse. Je nach Anforderungen empfehlen wir die passende Architektur: vom schnellen Standard-Shop bis zur komplexen Custom-Plattform.',
   },
   {
     question: 'Unterstützen Sie auch bei der SEO-Optimierung des Onlineshops?',
@@ -180,12 +180,12 @@ const schemaMarkup = buildSchema(
   pageSchema({
     url: 'https://evolatec.de/online-shop-erstellen-lassen',
     name: 'Online Shop erstellen lassen – E-Commerce & Webshop | EvolaTec',
-    description: 'Professionelle Online Shops und E-Commerce Plattformen ab 3.000€. Shopify und Custom Shops mit SEO-Optimierung und hoher Conversion.',
+    description: 'Professionelle Online Shops und E-Commerce Plattformen ab 3.000€. Maßgeschneiderte Nuxt-Shops mit SEO-Optimierung und hoher Conversion.',
   }),
   serviceSchema({
     id: 'https://evolatec.de/online-shop-erstellen-lassen/#service',
     name: 'Online Shop erstellen lassen',
-    description: 'Professionelle E-Commerce Shops und Online Shops für Unternehmen — Shopify und Custom Lösungen mit SEO und Conversion-Optimierung.',
+    description: 'Professionelle E-Commerce Shops und Online Shops für Unternehmen — individuelle Nuxt-basierte Lösungen mit SEO und Conversion-Optimierung.',
     url: 'https://evolatec.de/online-shop-erstellen-lassen',
     serviceType: 'E-Commerce',
     minPrice: 3000,
@@ -203,11 +203,11 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'E-Commerce Shops & Online Shops erstellen lassen. Professionelle Shopify und Custom Shop Entwicklung mit SEO-Optimierung und hohen Conversion-Raten.'
+      content: 'E-Commerce Shops & Online Shops erstellen lassen. Professionelle Nuxt-basierte Online Shop Entwicklung mit SEO-Optimierung und hohen Conversion-Raten.'
     },
     {
       name: 'keywords',
-      content: 'online shop erstellen lassen, e-commerce shop, shopify shop erstellen, webshop erstellen lassen, online shop entwicklung'
+      content: 'online shop erstellen lassen, e-commerce shop, nuxt shop erstellen, webshop erstellen lassen, online shop entwicklung'
     },
     {
       property: 'og:title',
@@ -263,8 +263,8 @@ const introStats = [
 
 const ecommerceServices = [
   {
-    title: 'Shopify Shop erstellen lassen',
-    description: 'Professionelle Shopify Shops mit individuellem Design, schnellem Setup und optimierten Conversion-Raten.',
+    title: 'Nuxt Online Shop erstellen lassen',
+    description: 'Professionelle Online Shops mit Nuxt, individuellem Design, schnellem Setup und optimierten Conversion-Raten.',
     icon: 'storefront',
     iconBg: 'bg-blue-100',
     iconColor: 'text-blue-600',
@@ -310,11 +310,11 @@ const expertiseBlocks = [
     title: 'Onlineshop erstellen lassen Kosten — was Sie wissen sollten',
     paragraphs: [
       'Die Kosten, einen Onlineshop erstellen zu lassen, hängen von Plattform, Umfang und individuellen Anforderungen ab. Ein professioneller Online Shop startet bei EvolaTec ab 3.000 €, individuelle Custom-Lösungen entsprechend höher.',
-      'Zu den einmaligen Erstellungskosten kommen laufende Betriebskosten hinzu: Hosting bzw. Plattformgebühren (z. B. ein Shopify-Plan), Gebühren der Zahlungsanbieter sowie optionale Wartungsleistungen.',
+      'Zu den einmaligen Erstellungskosten kommen laufende Betriebskosten hinzu: Hosting bzw. Plattformgebühren, Gebühren der Zahlungsanbieter sowie optionale Wartungsleistungen.',
       'Wer seinen Onlineshop professionell erstellen lässt, investiert in eine Lösung, die langfristig Umsatz generiert — statt in günstige Baukastensysteme, die schnell an ihre Grenzen stoßen.',
       'EvolaTec bietet transparente Preise ohne versteckte Kosten. Bereits im ersten Gespräch erhalten Sie eine realistische Einschätzung der Kosten für Ihren individuellen Online Shop.',
     ],
-    tags: ['Shop Kosten', 'Transparent', 'Shopify', 'Custom Shop'],
+    tags: ['Shop Kosten', 'Transparent', 'Nuxt', 'Custom Shop'],
   },
   {
     icon: 'verified_user',
@@ -371,8 +371,8 @@ const portfolioItems = [
   {
     id: 2,
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBn-m2_Q4aVXB1Vq6Q9oOdIfqtJHp55Il-CTwUimx_-8yMxKfYo0zwGi9hnpt6vu4dgBKh0Weeq9WTu9yX3ASHyL04v5N8njjbFYGtZDzkpFaP1SXLcyA76WGUkws_MxbnzZK3c_BO3qklxTcrdTA94JDlvGExPOrFtOp9i23GzDAh6lR620nf-cCi5jG6YCnjOO6zIgAPtQi6_f27wRrIGlXLj4a_8mfBfqC-KNCmEzPQrgyl6sBfmV2d_cwB9yqY3hketM8m-AR3z',
-    title: 'Shopify Excellence',
-    description: 'Schneller Markteintritt mit professionellen Shopify-Setups.',
+    title: 'Online Shop Excellence',
+    description: 'Schneller Markteintritt mit professionellen Online Shop Setups.',
     isLarge: false,
   },
   {
