@@ -73,7 +73,7 @@
             </p>
             <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div v-for="feature in landingFeatures" :key="feature" class="flex items-start gap-3 group">
-                <span class="material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
                 <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
@@ -112,7 +112,7 @@
             </p>
             <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div v-for="feature in websiteFeatures" :key="feature" class="flex items-start gap-3 group">
-                <span class="material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
                 <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>
@@ -135,7 +135,7 @@
             </p>
             <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div v-for="feature in ecommerceFeatures" :key="feature" class="flex items-start gap-3 group">
-                <span class="material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg md:text-xl flex-shrink-0">check_circle</span>
                 <span class="text-sm sm:text-body-md text-on-surface">{{ feature }}</span>
               </div>
             </div>

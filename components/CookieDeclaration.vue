@@ -4,7 +4,7 @@
     <!-- Current consent status -->
     <div v-if="stored" class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
       <div class="flex items-start gap-3">
-        <span class="material-symbols-outlined text-emerald-600 text-xl flex-shrink-0 mt-0.5">verified</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-emerald-600 text-xl flex-shrink-0 mt-0.5">verified</span>
         <div class="flex-1 min-w-0 space-y-1">
           <p class="text-sm font-semibold text-emerald-800">
             {{ isEnglish ? 'Consent given' : 'Einwilligung erteilt' }}
@@ -47,7 +47,7 @@
 
     <div v-else class="p-4 rounded-xl bg-amber-50 border border-amber-200">
       <div class="flex items-start gap-3">
-        <span class="material-symbols-outlined text-amber-600 text-xl flex-shrink-0">info</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-amber-600 text-xl flex-shrink-0">info</span>
         <div class="flex-1">
           <p class="text-sm font-semibold text-amber-800">
             {{ isEnglish ? 'No consent recorded' : 'Keine Einwilligung gespeichert' }}

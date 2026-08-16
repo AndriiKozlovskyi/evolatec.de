@@ -13,7 +13,7 @@
           <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
           <div v-if="badge" class="absolute bottom-6 left-6 bg-white rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
             <div class="w-10 h-10 rounded-xl flex items-center justify-center" :class="badge.iconBg || 'bg-gradient-to-br from-primary to-primary-container'">
-              <span class="material-symbols-outlined text-white text-xl">{{ badge.icon }}</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-white text-xl">{{ badge.icon }}</span>
             </div>
             <div>
               <div class="font-bold text-primary text-sm">{{ badge.title }}</div>
@@ -29,7 +29,7 @@
       <div v-if="usps?.length" class="grid md:grid-cols-3 gap-gutter">
         <div v-for="usp in usps" :key="usp.title" class="glass-card ambient-shadow bg-white/60 p-8 text-center border-t-4 transition-all duration-300 hover:scale-105" :class="usp.borderColor">
           <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" :class="usp.iconBg">
-            <span class="material-symbols-outlined text-2xl" :class="usp.iconColor">{{ usp.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-2xl" :class="usp.iconColor">{{ usp.icon }}</span>
           </div>
           <h3 class="font-headline-md text-primary mb-3">{{ usp.title }}</h3>
           <p class="font-body-md text-on-surface-variant">{{ usp.description }}</p>

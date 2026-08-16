@@ -58,7 +58,7 @@
                 i < stats.length - 1 ? 'sm:border-r sm:border-white/[0.12]' : '',
               ]"
             >
-              <span class="material-symbols-outlined text-[1.1rem] leading-none text-white">{{ stat.icon }}</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[1.1rem] leading-none text-white">{{ stat.icon }}</span>
               <div class="font-black text-[1rem] leading-none text-white">
                 {{ stat.value }}
               </div>

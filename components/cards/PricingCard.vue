@@ -35,7 +35,7 @@
           class="flex items-start gap-3 text-sm transition-all duration-300 opacity-0 animate-fade-in"
           :style="{ animationDelay: `${index * 50}ms` }"
         >
-          <span :class="['material-symbols-outlined text-base flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300', isHighlighted ? 'text-white' : 'text-primary']">check_circle</span>
+          <span translate="no" :class="['notranslate material-symbols-outlined text-base flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300', isHighlighted ? 'text-white' : 'text-primary']">check_circle</span>
           <span :class="isHighlighted ? 'text-white/95' : 'text-on-surface'">{{ feature }}</span>
         </li>
       </ul>

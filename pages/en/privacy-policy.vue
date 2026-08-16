@@ -5,7 +5,7 @@
     <section class="bg-primary text-on-primary">
       <div class="max-w-3xl mx-auto px-gutter py-14 md:py-20 text-center">
         <div class="inline-flex w-14 h-14 rounded-2xl bg-white/10 items-center justify-center mb-5">
-          <span class="material-symbols-outlined text-[1.9rem]">shield_person</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-[1.9rem]">shield_person</span>
         </div>
         <h1 class="font-display text-3xl md:text-4xl font-black mb-3">Privacy Policy</h1>
         <p class="text-on-primary/70 max-w-lg mx-auto leading-relaxed">
@@ -95,10 +95,10 @@
           </p>
           <div class="flex flex-col gap-1.5 mt-3 pt-3 border-t border-outline-variant/20">
             <a href="tel:+491756200862" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-base">phone</span>+49 175 6200862
+              <span translate="no" class="notranslate material-symbols-outlined text-base">phone</span>+49 175 6200862
             </a>
             <a href="mailto:team@evolatec.de" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-base">mail</span>team@evolatec.de
+              <span translate="no" class="notranslate material-symbols-outlined text-base">mail</span>team@evolatec.de
             </a>
           </div>
         </div>
@@ -118,7 +118,7 @@
 
         <h3 class="legal-h3">Right to Object to Data Collection in Special Cases and to Direct Marketing (Art. 21 GDPR)</h3>
         <div class="legal-callout">
-          <span class="material-symbols-outlined text-primary text-xl shrink-0">gavel</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-primary text-xl shrink-0">gavel</span>
           <div class="space-y-3 text-xs leading-relaxed text-on-surface-variant font-medium">
             <p>WHERE DATA PROCESSING IS CARRIED OUT ON THE BASIS OF ART. 6(1)(E) OR (F) GDPR, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH PROCESSING IS BASED CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, RIGHTS AND FREEDOMS, OR THE PROCESSING SERVES THE ESTABLISHMENT, EXERCISE OR DEFENCE OF LEGAL CLAIMS (OBJECTION PURSUANT TO ART. 21(1) GDPR).</p>
             <p>WHERE YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR SUCH MARKETING; THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT MARKETING PURPOSES (OBJECTION PURSUANT TO ART. 21(2) GDPR).</p>
@@ -213,7 +213,7 @@
         <p class="legal-p">You have the following rights with regard to your personal data:</p>
         <div class="grid sm:grid-cols-2 gap-3 my-4">
           <div v-for="right in rights" :key="right.title" class="legal-card !mb-0 flex gap-3">
-            <span class="material-symbols-outlined text-primary text-xl shrink-0">{{ right.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-primary text-xl shrink-0">{{ right.icon }}</span>
             <div>
               <p class="font-bold text-on-surface text-sm">{{ right.title }} <span class="font-normal text-on-surface-variant/70">· {{ right.law }}</span></p>
               <p class="text-sm text-on-surface-variant leading-relaxed mt-0.5">{{ right.text }}</p>
@@ -229,7 +229,7 @@
 
         <!-- Contact callout -->
         <div class="mt-12 rounded-2xl bg-primary text-on-primary p-6 sm:p-8 text-center">
-          <span class="material-symbols-outlined text-3xl mb-2 block">support_agent</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-3xl mb-2 block">support_agent</span>
           <h3 class="font-display text-xl font-bold mb-1">Questions about data protection?</h3>
           <p class="text-on-primary/70 text-sm mb-5 max-w-md mx-auto">
             To exercise your rights or for any questions about your data, you can reach us at any time.
@@ -238,7 +238,7 @@
             href="mailto:team@evolatec.de"
             class="inline-flex items-center gap-2 bg-white text-primary font-bold text-sm rounded-full px-6 py-3 hover:bg-white/90 transition-colors"
           >
-            <span class="material-symbols-outlined text-base">mail</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-base">mail</span>
             team@evolatec.de
           </a>
         </div>

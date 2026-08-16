@@ -19,7 +19,7 @@
         <div class="grid lg:grid-cols-[1.15fr_1fr] gap-stack-lg items-center">
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[18px]">shopping_cart</span>
               Professional Online Shop
             </span>
             <h2 class="font-headline-xl text-headline-xl text-primary mb-8 leading-[1.1]">
@@ -33,7 +33,7 @@
             <div class="space-y-5 mb-10">
               <div v-for="(point, i) in introPoints" :key="i" class="flex gap-4 items-start">
                 <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span class="material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
+                  <span translate="no" class="notranslate material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
                 </div>
                 <p class="font-body-lg text-on-surface-variant flex-1 pt-1">{{ point.text }}</p>
               </div>
@@ -49,7 +49,7 @@
             <div class="relative aspect-square max-w-md mx-auto">
               <div class="absolute inset-6 rounded-[2rem] bg-gradient-to-br from-primary/85 via-primary-container to-primary/60 ambient-shadow"></div>
               <div class="absolute top-0 right-8 w-20 h-20 rounded-2xl bg-white shadow-xl flex items-center justify-center rotate-[8deg]">
-                <span class="material-symbols-outlined text-primary text-[40px]">storefront</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-[40px]">storefront</span>
               </div>
               <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
                 <div class="text-[0.65rem] uppercase tracking-widest font-bold text-on-surface-variant mb-3">Fixed Price</div>

@@ -20,17 +20,17 @@
         </div>
         <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-gutter">
           <div class="glass-card border border-black/10 p-10 text-center rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 group">
-            <span class="material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">phone</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">phone</span>
             <div class="font-display text-[3rem] font-black text-primary mb-3">80%</div>
             <p class="font-body-md text-on-surface-variant">of local search queries lead to a contact being made.</p>
           </div>
           <div class="glass-card border border-black/10 p-10 text-center rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 group">
-            <span class="material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">location_on</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">location_on</span>
             <div class="font-display text-[2rem] font-black text-primary mb-3">Google Maps</div>
             <p class="font-body-md text-on-surface-variant">is crucial for local visibility and winning new customers.</p>
           </div>
           <div class="glass-card border border-black/10 p-10 text-center rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 group">
-            <span class="material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">verified_user</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">verified_user</span>
             <div class="font-display text-[2rem] font-black text-primary mb-3">More Trust</div>
             <p class="font-body-md text-on-surface-variant">through local rankings and positive customer reviews.</p>
           </div>

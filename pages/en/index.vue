@@ -26,7 +26,7 @@
           <!-- Left: copy -->
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <span class="material-symbols-outlined text-[18px]">info</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[18px]">info</span>
               About EvolaTec
             </span>
 
@@ -55,7 +55,7 @@
               class="bg-white rounded-2xl p-6 border border-outline-variant/30 ambient-shadow hover:shadow-xl hover:-translate-y-1 hover:border-primary/20 transition-all duration-300"
             >
               <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <span class="material-symbols-outlined text-primary text-[22px]">{{ card.icon }}</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-[22px]">{{ card.icon }}</span>
               </div>
               <h3 class="font-display font-bold text-on-surface mb-2 leading-tight">{{ card.title }}</h3>
               <p class="font-body-md text-on-surface-variant leading-relaxed">{{ card.description }}</p>
@@ -81,7 +81,7 @@
           <!-- Text column -->
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <span class="material-symbols-outlined text-[18px]">stars</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[18px]">stars</span>
               Why EvolaTec?
             </span>
 
@@ -101,7 +101,7 @@
             <div class="space-y-5">
               <div v-for="(point, i) in whyUsPoints" :key="i" class="flex gap-4 items-start">
                 <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span class="material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
+                  <span translate="no" class="notranslate material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
                 </div>
                 <div class="flex-1">
                   <h3 class="font-display font-bold text-on-surface mb-1 leading-tight">{{ point.title }}</h3>
@@ -117,7 +117,7 @@
               <div class="absolute inset-6 rounded-[2rem] bg-gradient-to-br from-primary/85 via-primary-container to-primary/60 ambient-shadow"></div>
 
               <div class="absolute top-0 right-8 w-20 h-20 rounded-2xl bg-white shadow-xl flex items-center justify-center rotate-[8deg]">
-                <span class="material-symbols-outlined text-primary text-[40px]">code_blocks</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-[40px]">code_blocks</span>
               </div>
 
               <div class="absolute top-20 left-0 bg-white rounded-2xl p-5 shadow-xl rotate-[-5deg]">
@@ -175,7 +175,7 @@
             :style="{ animationDelay: `${index * 100}ms` }"
           >
             <div class="w-12 sm:w-16 h-12 sm:h-16 rounded-lg md:rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-gradient-to-br group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
-              <span class="material-symbols-outlined text-xl sm:text-[2rem] text-primary group-hover:scale-110 transition-transform duration-300">{{ service.icon }}</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-xl sm:text-[2rem] text-primary group-hover:scale-110 transition-transform duration-300">{{ service.icon }}</span>
             </div>
             <h3 class="text-base sm:text-headline-md font-bold text-on-surface mb-2 sm:mb-3">{{ service.title }}</h3>
             <p class="text-sm sm:text-body-md text-on-surface-variant mb-4 sm:mb-6 line-clamp-3">{{ service.description }}</p>
@@ -185,7 +185,7 @@
               class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all duration-300 text-sm sm:text-base py-2 min-h-[44px]"
             >
               Learn more
-              <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-lg">arrow_forward</span>
             </a>
           </div>
         </div>
@@ -201,13 +201,13 @@
         </div>
         <div class="grid md:grid-cols-3 gap-5">
           <div class="bg-white rounded-2xl p-7 border border-outline-variant/30 flex flex-col">
-            <span class="material-symbols-outlined text-primary text-[2rem] mb-4">article</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-primary text-[2rem] mb-4">article</span>
             <h3 class="font-bold text-on-surface text-lg mb-2">Landing Page</h3>
             <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">Ideal for advertising, product launches and lead generation — a focused page with a clear call to action.</p>
             <ul class="space-y-2.5 text-sm text-on-surface-variant flex-1">
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Google Ads & Meta Ads</li>
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Short Time-to-Market</li>
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Maximum Conversion Rate</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Google Ads & Meta Ads</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Short Time-to-Market</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Maximum Conversion Rate</li>
             </ul>
             <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
               <span class="font-bold text-primary">from €500</span>
@@ -216,13 +216,13 @@
           </div>
 
           <div class="bg-primary rounded-2xl p-7 flex flex-col shadow-xl">
-            <span class="material-symbols-outlined text-white text-[2rem] mb-4">language</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-white text-[2rem] mb-4">language</span>
             <h3 class="font-bold text-white text-lg mb-2">Business Website</h3>
             <p class="text-sm text-on-primary-container mb-5 leading-relaxed">The complete online presence for businesses — multiple pages, SEO visibility and professional design.</p>
             <ul class="space-y-2.5 text-sm text-on-primary-container flex-1">
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Company Presentation</li>
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Long-term SEO Visibility</li>
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Multiple Pages & CMS</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Company Presentation</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Long-term SEO Visibility</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-white text-base flex-shrink-0 mt-0.5">check_circle</span>Multiple Pages & CMS</li>
             </ul>
             <div class="mt-6 pt-4 border-t border-white/20 flex items-center justify-between">
               <span class="font-bold text-white">from €1,500</span>
@@ -231,13 +231,13 @@
           </div>
 
           <div class="bg-white rounded-2xl p-7 border border-outline-variant/30 flex flex-col">
-            <span class="material-symbols-outlined text-primary text-[2rem] mb-4">shopping_bag</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-primary text-[2rem] mb-4">shopping_bag</span>
             <h3 class="font-bold text-on-surface text-lg mb-2">Online Shop</h3>
             <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">For businesses that want to sell products or services online — with Shopify or a custom shop.</p>
             <ul class="space-y-2.5 text-sm text-on-surface-variant flex-1">
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Product Management & Variants</li>
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Secure Payment Processing</li>
-              <li class="flex gap-2 items-start"><span class="material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Shopify or Custom Solution</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Product Management & Variants</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Secure Payment Processing</li>
+              <li class="flex gap-2 items-start"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-base flex-shrink-0 mt-0.5">check_circle</span>Shopify or Custom Solution</li>
             </ul>
             <div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between">
               <span class="font-bold text-primary">from €3,000</span>
@@ -270,18 +270,18 @@
               <tr v-for="(row, i) in inclusiveTable" :key="i" :class="i % 2 === 0 ? 'bg-white' : 'bg-surface-container-low/40'">
                 <td class="p-4 text-on-surface font-medium">{{ row.feature }}</td>
                 <td class="p-4 text-center">
-                  <template v-if="row.landing === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
-                  <template v-else-if="row.landing === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
+                  <template v-if="row.landing === true"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
+                  <template v-else-if="row.landing === false"><span translate="no" class="notranslate material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
                   <template v-else><span class="text-on-surface-variant text-xs">{{ row.landing }}</span></template>
                 </td>
                 <td class="p-4 text-center bg-primary/5">
-                  <template v-if="row.firma === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
-                  <template v-else-if="row.firma === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
+                  <template v-if="row.firma === true"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
+                  <template v-else-if="row.firma === false"><span translate="no" class="notranslate material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
                   <template v-else><span class="text-primary font-semibold text-xs">{{ row.firma }}</span></template>
                 </td>
                 <td class="p-4 text-center">
-                  <template v-if="row.shop === true"><span class="material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
-                  <template v-else-if="row.shop === false"><span class="material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
+                  <template v-if="row.shop === true"><span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-lg" aria-label="included">check_circle</span></template>
+                  <template v-else-if="row.shop === false"><span translate="no" class="notranslate material-symbols-outlined text-on-surface-variant/40 text-lg" aria-label="not included">remove</span></template>
                   <template v-else><span class="text-on-surface-variant text-xs">{{ row.shop }}</span></template>
                 </td>
               </tr>
@@ -318,7 +318,7 @@
             <div class="min-w-0 flex-1">
               <p class="font-bold text-on-surface text-base leading-tight">{{ item.service }}</p>
               <p class="text-on-surface-variant text-xs mt-1 flex items-center gap-1">
-                <span class="material-symbols-outlined text-sm">schedule</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-sm">schedule</span>
                 {{ item.delivery }}
               </p>
             </div>
@@ -436,7 +436,7 @@
           <!-- Left: copy -->
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[18px]">auto_awesome</span>
               Generative Engine Optimization
             </span>
 
@@ -454,13 +454,13 @@
 
             <ul class="space-y-3 mb-8">
               <li v-for="point in geoPoints" :key="point" class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary text-lg flex-shrink-0">check_circle</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg flex-shrink-0">check_circle</span>
                 <span class="text-sm text-on-surface">{{ point }}</span>
               </li>
             </ul>
 
             <div class="inline-flex items-center gap-2 text-sm font-semibold text-primary bg-primary/8 border border-primary/15 rounded-xl px-5 py-3">
-              <span class="material-symbols-outlined text-lg">verified</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-lg">verified</span>
               GEO optimization is included with every website — no extra charge
             </div>
           </div>
@@ -484,7 +484,7 @@
               class="bg-white rounded-xl p-5 border border-outline-variant/20 flex items-start gap-4"
             >
               <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-primary text-lg">{{ benefit.icon }}</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg">{{ benefit.icon }}</span>
               </div>
               <div>
                 <p class="font-semibold text-on-surface text-sm">{{ benefit.title }}</p>

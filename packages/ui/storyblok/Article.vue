@@ -7,7 +7,7 @@
         :href="isEnglish ? '/en/blog' : '/blog'"
         class="inline-flex items-center gap-1.5 text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors duration-200"
       >
-        <span class="material-symbols-outlined text-[18px] leading-none">arrow_back</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-[18px] leading-none">arrow_back</span>
         {{ isEnglish ? 'All articles' : 'Alle Artikel' }}
       </a>
     </div>
@@ -29,7 +29,7 @@
 
       <!-- Badge -->
       <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1.5 rounded-full mb-6">
-        <span class="material-symbols-outlined text-sm leading-none">article</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-sm leading-none">article</span>
         Blog
       </span>
 
@@ -47,18 +47,18 @@
       <div class="flex flex-col justify-center gap-x-5 space-y-3 pb-8 mb-8 border-b border-outline-variant/30">
         <div class="flex items-center gap-2">
           <div class="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-sm text-primary">person</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-sm text-primary">person</span>
           </div>
           <span class="text-sm text-on-surface-variant">
             By <strong class="text-on-surface font-semibold">{{ blok.author }}</strong>
           </span>
         </div>
         <div v-if="publishedDate" class="flex items-center gap-1.5 text-sm text-on-surface-variant">
-          <span class="material-symbols-outlined text-[16px] leading-none">calendar_today</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-[16px] leading-none">calendar_today</span>
           {{ publishedDate }}
         </div>
         <div class="flex items-center gap-1.5 text-sm text-on-surface-variant">
-          <span class="material-symbols-outlined text-[16px] leading-none">schedule</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-[16px] leading-none">schedule</span>
           {{ readTime }} {{ isEnglish ? 'min read' : 'Min. Lesezeit' }}
         </div>
       </div>

@@ -20,7 +20,7 @@
             <p class="text-on-surface-variant text-sm leading-relaxed lg:min-h-[4.5rem]">{{ step.description }}</p>
             <div class="mt-auto pt-4">
               <div class="w-9 h-9 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" :class="col(index).iconBg">
-                <span class="material-symbols-outlined text-[1.1rem]" :class="col(index).iconColor">{{ step.icon }}</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-[1.1rem]" :class="col(index).iconColor">{{ step.icon }}</span>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@
     <div class="relative max-w-container-max mx-auto px-gutter">
       <div v-if="eyebrow || title" class="text-center max-w-2xl mx-auto mb-stack-lg">
         <span v-if="eyebrow" class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-5">
-          <span v-if="eyebrowIcon" class="material-symbols-outlined text-[18px]">{{ eyebrowIcon }}</span>
+          <span v-if="eyebrowIcon" translate="no" class="notranslate material-symbols-outlined text-[18px]">{{ eyebrowIcon }}</span>
           {{ eyebrow }}
         </span>
         <h2 v-if="title" class="font-headline-lg text-primary leading-tight">{{ title }}</h2>
@@ -22,7 +22,7 @@
 
           <div class="relative">
             <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary/15 transition-all duration-300">
-              <span class="material-symbols-outlined text-primary text-2xl">{{ block.icon }}</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-primary text-2xl">{{ block.icon }}</span>
             </div>
 
             <h3 class="font-headline-lg text-primary mb-5 leading-tight">{{ block.title }}</h3>

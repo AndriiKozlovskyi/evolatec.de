@@ -46,7 +46,7 @@
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">Häufige technische SEO Probleme</h2>
             <div class="space-y-3">
               <div v-for="problem in commonProblems" :key="problem" class="flex gap-3 items-center p-3 rounded-lg border border-black/10 glass-card">
-                <span class="material-symbols-outlined text-red-400 text-xl flex-shrink-0">cancel</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-red-400 text-xl flex-shrink-0">cancel</span>
                 <span class="font-body-md text-on-surface">{{ problem }}</span>
               </div>
             </div>

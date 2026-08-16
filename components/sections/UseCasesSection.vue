@@ -11,7 +11,7 @@
           :style="{ animationDelay: `${index * 80}ms` }"
         >
           <div class="flex items-center justify-center mb-4">
-            <span class="material-symbols-outlined text-[2.5rem] text-primary group-hover:scale-125 transition-transform duration-300">check_circle</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-[2.5rem] text-primary group-hover:scale-125 transition-transform duration-300">check_circle</span>
           </div>
           <p class="text-headline-sm font-bold text-on-surface">{{ useCase }}</p>
         </div>

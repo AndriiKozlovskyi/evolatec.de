@@ -11,7 +11,7 @@
           class="group bg-white/[0.04] rounded-2xl p-8 border border-white/[0.08] hover:bg-blue-500/10 hover:border-blue-400/25 transition-all duration-300 hover:scale-[1.03] block"
         >
           <div class="w-14 h-14 rounded-2xl bg-blue-500/15 flex items-center justify-center mb-6 group-hover:bg-blue-500/25 group-hover:scale-110 transition-all duration-300">
-            <span class="material-symbols-outlined text-white text-2xl">{{ card.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-white text-2xl">{{ card.icon }}</span>
           </div>
           <h3 class="font-headline-md text-white mb-3">{{ card.title }}</h3>
           <p class="font-body-md text-white/55 leading-relaxed">{{ card.description }}</p>

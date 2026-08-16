@@ -39,7 +39,7 @@
             :key="problem"
             class="flex gap-4 items-center glass-card p-4 rounded-xl border border-black/10"
           >
-            <span class="material-symbols-outlined text-xl flex-shrink-0" :class="problemColors[index % 4]">error</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-xl flex-shrink-0" :class="problemColors[index % 4]">error</span>
             <p class="font-body-md text-on-surface">{{ problem }}</p>
           </div>
         </div>

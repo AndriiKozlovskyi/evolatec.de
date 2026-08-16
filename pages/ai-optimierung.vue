@@ -20,7 +20,7 @@
           <!-- Left: copy -->
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[18px]">auto_awesome</span>
               Was ist GEO?
             </span>
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-on-surface leading-tight mb-6">Was ist Generative Engine Optimization?</h2>
@@ -43,7 +43,7 @@
             />
             <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl border border-outline-variant/20">
               <div class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary text-2xl">verified</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-2xl">verified</span>
                 <div>
                   <p class="font-bold text-on-surface text-sm">GEO Inklusive</p>
                   <p class="text-xs text-on-surface-variant">Bei jeder Website von EvolaTec</p>

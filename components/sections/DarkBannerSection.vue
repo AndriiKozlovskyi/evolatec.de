@@ -31,7 +31,7 @@
             :key="item"
             class="flex items-center gap-3 rounded-xl bg-white/[0.07] border border-white/10 backdrop-blur-sm px-4 py-3 transition-colors duration-300 hover:bg-white/[0.12]"
           >
-            <span class="material-symbols-outlined text-xl text-blue-300 flex-shrink-0">check_circle</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-xl text-blue-300 flex-shrink-0">check_circle</span>
             <span class="text-white/90 text-sm font-body-md leading-snug">{{ item }}</span>
           </li>
         </ul>

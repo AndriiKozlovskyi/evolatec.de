@@ -16,7 +16,7 @@
             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/10"></div>
             <div class="relative h-full flex flex-col justify-between p-6">
               <div class="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span class="material-symbols-outlined text-white text-2xl">{{ benefit.icon }}</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-white text-2xl">{{ benefit.icon }}</span>
               </div>
               <div class="[text-shadow:0_1px_3px_rgba(0,0,0,0.55)]">
                 <h3 class="font-headline-md font-bold text-white mb-1">{{ benefit.title }}</h3>
@@ -27,7 +27,7 @@
         </template>
         <template v-else>
           <div v-for="benefit in benefits" :key="benefit.title" class="flex flex-col border border-black/20 items-center text-center p-8 rounded-xl glass-card backdrop-blur-sm hover:shadow-lg transition-all duration-300 group">
-            <span class="material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">{{ benefit.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-[3.5rem] mb-4 text-primary group-hover:scale-110 transition-transform duration-300">{{ benefit.icon }}</span>
             <h3 class="text-headline-md font-bold mb-3">{{ benefit.title }}</h3>
             <p class="text-body-md">{{ benefit.description }}</p>
           </div>

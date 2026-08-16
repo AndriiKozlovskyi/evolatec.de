@@ -5,7 +5,7 @@
     <section class="bg-primary text-on-primary">
       <div class="max-w-3xl mx-auto px-gutter py-14 md:py-20 text-center">
         <div class="inline-flex w-14 h-14 rounded-2xl bg-white/10 items-center justify-center mb-5">
-          <span class="material-symbols-outlined text-[1.9rem]">verified_user</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-[1.9rem]">verified_user</span>
         </div>
         <h1 class="font-display text-3xl md:text-4xl font-black mb-3">Impressum</h1>
         <p class="text-on-primary/70 max-w-lg mx-auto leading-relaxed">
@@ -34,7 +34,7 @@
               class="flex items-center gap-3 rounded-xl bg-white border border-outline-variant/30 p-3.5 hover:border-primary/40 transition-colors group"
             >
               <span class="w-9 h-9 shrink-0 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                <span class="material-symbols-outlined text-lg">phone</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-lg">phone</span>
               </span>
               <span>
                 <span class="block text-[0.7rem] uppercase tracking-wide text-on-surface-variant/60 font-bold">Telefon</span>
@@ -46,7 +46,7 @@
               class="flex items-center gap-3 rounded-xl bg-white border border-outline-variant/30 p-3.5 hover:border-primary/40 transition-colors group"
             >
               <span class="w-9 h-9 shrink-0 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                <span class="material-symbols-outlined text-lg">mail</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-lg">mail</span>
               </span>
               <span>
                 <span class="block text-[0.7rem] uppercase tracking-wide text-on-surface-variant/60 font-bold">E-Mail</span>
@@ -108,7 +108,7 @@
         <!-- Privacy link callout -->
         <div class="mt-12 rounded-2xl bg-surface-container-low p-6 flex flex-col sm:flex-row sm:items-center gap-4">
           <span class="w-12 h-12 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-            <span class="material-symbols-outlined text-2xl">shield_person</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-2xl">shield_person</span>
           </span>
           <div class="flex-1">
             <p class="font-bold text-on-surface">Wie wir mit Ihren Daten umgehen</p>
@@ -119,7 +119,7 @@
             class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-bold text-sm rounded-full px-5 py-3 hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
             Datenschutz ansehen
-            <span class="material-symbols-outlined text-base">arrow_forward</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-base">arrow_forward</span>
           </NuxtLink>
         </div>
 

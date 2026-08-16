@@ -45,7 +45,7 @@
               :key="stat.label"
               :class="['flex flex-col gap-1.5 py-2 px-3 sm:px-6 sm:first:pl-0', i < stats.length - 1 ? 'sm:border-r sm:border-white/[0.12]' : '']"
             >
-              <span class="material-symbols-outlined text-[1.1rem] leading-none text-white">{{ stat.icon }}</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[1.1rem] leading-none text-white">{{ stat.icon }}</span>
               <div class="font-black text-[1rem] leading-none text-white">{{ stat.value }}</div>
               <div class="text-white/40 text-[0.65rem] uppercase tracking-widest">{{ stat.label }}</div>
             </div>

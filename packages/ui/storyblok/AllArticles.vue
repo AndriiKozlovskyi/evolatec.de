@@ -26,7 +26,7 @@
         <!-- Decorative divider -->
         <div class="flex items-center justify-center gap-3 mt-6 mb-5">
           <div class="h-px w-16 bg-gradient-to-r from-transparent to-primary/30"></div>
-          <span class="material-symbols-outlined text-primary/40 text-[18px] leading-none">auto_awesome</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-primary/40 text-[18px] leading-none">auto_awesome</span>
           <div class="h-px w-16 bg-gradient-to-l from-transparent to-primary/30"></div>
         </div>
 
@@ -41,7 +41,7 @@
 
       <!-- Empty state -->
       <div v-if="!articles.length" class="text-center py-16 text-on-surface-variant">
-        <span class="material-symbols-outlined text-5xl mb-4 block">article</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-5xl mb-4 block">article</span>
         <p>{{ isEnglish ? 'No articles yet.' : 'Noch keine Artikel.' }}</p>
       </div>
 
@@ -67,7 +67,7 @@
           <!-- Content -->
           <div class="flex flex-col justify-center gap-5 p-8 xl:p-12">
             <span class="inline-flex items-center gap-1.5 w-fit text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1.5 rounded-full">
-              <span class="material-symbols-outlined text-sm leading-none">star</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-sm leading-none">star</span>
               {{ isEnglish ? 'Featured' : 'Empfohlen' }}
             </span>
 
@@ -81,18 +81,18 @@
 
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-on-surface-variant">
               <span class="flex items-center gap-1.5">
-                <span class="material-symbols-outlined text-[16px] leading-none text-primary">person</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-[16px] leading-none text-primary">person</span>
                 <strong class="font-semibold text-on-surface">{{ featured.content.author }}</strong>
               </span>
               <span v-if="featured.first_published_at" class="flex items-center gap-1.5">
-                <span class="material-symbols-outlined text-[16px] leading-none">calendar_today</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-[16px] leading-none">calendar_today</span>
                 {{ formatDate(featured.first_published_at) }}
               </span>
             </div>
 
             <span class="inline-flex items-center gap-2 text-sm font-semibold text-primary">
               {{ isEnglish ? 'Read article' : 'Artikel lesen' }}
-              <span class="material-symbols-outlined text-[18px] leading-none transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[18px] leading-none transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
             </span>
           </div>
         </NuxtLink>
@@ -117,7 +117,7 @@
           class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl border-2 border-primary text-primary font-semibold text-sm hover:bg-primary hover:text-on-primary transition-all duration-200"
         >
           {{ isEnglish ? 'View all articles' : 'Alle Artikel ansehen' }}
-          <span class="material-symbols-outlined text-[18px] leading-none">arrow_forward</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-[18px] leading-none">arrow_forward</span>
         </NuxtLink>
       </div>
 

@@ -22,7 +22,7 @@
               tab === 'call' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
             ]"
           >
-            <span class="material-symbols-outlined text-lg">event</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-lg">event</span>
             Termin buchen
           </button>
           <button
@@ -32,7 +32,7 @@
               tab === 'form' ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:text-primary',
             ]"
           >
-            <span class="material-symbols-outlined text-lg">mail</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-lg">mail</span>
             Anfrage senden
           </button>
         </div>
@@ -54,7 +54,7 @@
               class="flex flex-col items-center justify-center gap-3 p-10 text-center h-64 cursor-pointer"
               @click="focusBanner"
             >
-              <span class="material-symbols-outlined text-primary text-4xl">cookie</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-primary text-4xl">cookie</span>
               <p class="text-sm font-bold text-on-surface">Cookie-Einstellungen erforderlich</p>
               <p class="text-xs text-on-surface-variant max-w-xs leading-relaxed">
                 Bitte legen Sie zunächst Ihre
@@ -70,7 +70,7 @@
               href="tel:+491756200862"
               class="group flex items-center gap-2 bg-surface-container-low rounded-lg p-3 hover:bg-primary/5 transition-colors"
             >
-              <span class="material-symbols-outlined text-primary text-lg">phone</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg">phone</span>
               <span class="text-xs sm:text-sm font-semibold text-on-surface truncate">Anrufen</span>
             </a>
             <a
@@ -79,7 +79,7 @@
               rel="noopener"
               class="group flex items-center gap-2 bg-surface-container-low rounded-lg p-3 hover:bg-primary/5 transition-colors"
             >
-              <span class="material-symbols-outlined text-primary text-lg">chat</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg">chat</span>
               <span class="text-xs sm:text-sm font-semibold text-on-surface">WhatsApp</span>
             </a>
           </div>
@@ -114,7 +114,7 @@
 
         <div class="flex flex-wrap gap-2 justify-center mt-5">
           <span v-for="chip in trustChips" :key="chip" class="inline-flex items-center gap-1.5 bg-primary/5 border border-primary/10 rounded-full px-3 py-1 text-xs sm:text-sm text-on-surface font-medium">
-            <span class="material-symbols-outlined text-base text-primary">check</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-base text-primary">check</span>
             {{ chip }}
           </span>
         </div>
@@ -130,14 +130,14 @@
         >
           <div class="flex items-center gap-4 min-w-0">
             <div class="w-11 h-11 rounded-lg bg-white/15 flex items-center justify-center flex-shrink-0">
-              <span class="material-symbols-outlined">calculate</span>
+              <span translate="no" class="notranslate material-symbols-outlined">calculate</span>
             </div>
             <div class="min-w-0">
               <p class="text-xs uppercase tracking-wider text-white/70 font-semibold">Schnell-Check</p>
               <p class="text-sm sm:text-base font-bold">Berechnen Sie sofort Ihren Preis</p>
             </div>
           </div>
-          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          <span translate="no" class="notranslate material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
         </a>
       </div>
     </section>

@@ -28,7 +28,7 @@
           @input="clearError('name')"
         />
         <p v-if="fieldErrors.name" role="alert" class="mt-1.5 text-xs text-red-600 flex items-center gap-1">
-          <span class="material-symbols-outlined text-sm leading-none">error</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-sm leading-none">error</span>
           {{ fieldErrors.name }}
         </p>
       </div>
@@ -48,7 +48,7 @@
           @input="clearError('email')"
         />
         <p v-if="fieldErrors.email" role="alert" class="mt-1.5 text-xs text-red-600 flex items-center gap-1">
-          <span class="material-symbols-outlined text-sm leading-none">error</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-sm leading-none">error</span>
           {{ fieldErrors.email }}
         </p>
       </div>
@@ -74,7 +74,7 @@
         <option value="beratung">Kostenlose Beratung</option>
       </select>
       <p v-if="fieldErrors.service" role="alert" class="mt-1.5 text-xs text-red-600 flex items-center gap-1">
-        <span class="material-symbols-outlined text-sm leading-none">error</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-sm leading-none">error</span>
         {{ fieldErrors.service }}
       </p>
     </div>
@@ -121,7 +121,7 @@
         </label>
       </div>
       <p v-if="fieldErrors.privacy" role="alert" class="mt-1.5 text-xs text-red-600 flex items-center gap-1">
-        <span class="material-symbols-outlined text-sm leading-none">error</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-sm leading-none">error</span>
         {{ fieldErrors.privacy }}
       </p>
     </div>
@@ -132,7 +132,7 @@
       class="flex items-start gap-2.5 p-3.5 rounded-xl bg-primary/5 border border-primary/15 cursor-pointer"
       @click="focusBanner"
     >
-      <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">cookie</span>
+      <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">cookie</span>
       <p class="text-xs text-on-surface-variant leading-relaxed">
         Bitte legen Sie zunächst Ihre
         <button type="button" @click.stop="focusBanner" class="text-primary font-semibold underline underline-offset-2">Cookie-Einstellungen</button>
@@ -157,7 +157,7 @@
       role="status"
       class="p-3 bg-green-50 border border-green-200 rounded-lg text-green-800 flex items-start gap-2 text-sm"
     >
-      <span class="material-symbols-outlined text-lg flex-shrink-0">check_circle</span>
+      <span translate="no" class="notranslate material-symbols-outlined text-lg flex-shrink-0">check_circle</span>
       <span>Vielen Dank! Wir melden uns innerhalb von 24 Stunden.</span>
     </div>
 
@@ -167,7 +167,7 @@
       role="alert"
       class="p-3 bg-error/10 border border-error/30 rounded-lg text-error flex items-start gap-2 text-sm"
     >
-      <span class="material-symbols-outlined text-lg flex-shrink-0">error</span>
+      <span translate="no" class="notranslate material-symbols-outlined text-lg flex-shrink-0">error</span>
       <span>{{ errorMessage }}</span>
     </div>
   </form>

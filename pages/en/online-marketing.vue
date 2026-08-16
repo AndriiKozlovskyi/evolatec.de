@@ -64,7 +64,7 @@
               class="flex items-center gap-3 bg-surface rounded-xl p-4 border border-outline-variant/20"
             >
               <span
-                class="material-symbols-outlined text-xl flex-shrink-0"
+                translate="no" class="notranslate material-symbols-outlined text-xl flex-shrink-0"
                 :class="consultingColors[index % consultingColors.length]"
               >{{ item.icon }}</span>
               <span class="font-body-md text-on-surface text-sm font-medium">{{ item.label }}</span>

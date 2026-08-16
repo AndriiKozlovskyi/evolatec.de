@@ -42,7 +42,7 @@
             />
             <div class="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent"></div>
             <div class="absolute bottom-6 left-6 bg-white rounded-xl px-4 py-3 shadow-lg flex items-center gap-3">
-              <span class="material-symbols-outlined text-emerald-500 text-2xl">speed</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-emerald-500 text-2xl">speed</span>
               <div>
                 <div class="font-bold text-primary text-sm">+40% faster</div>
                 <div class="text-on-surface-variant text-xs">Load times improved</div>
@@ -53,7 +53,7 @@
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-6 leading-tight">Common Technical SEO Problems</h2>
             <div class="space-y-3">
               <div v-for="problem in commonProblems" :key="problem" class="flex gap-3 items-center p-3 rounded-lg border border-black/10 glass-card">
-                <span class="material-symbols-outlined text-red-400 text-xl flex-shrink-0">cancel</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-red-400 text-xl flex-shrink-0">cancel</span>
                 <span class="font-body-md text-on-surface">{{ problem }}</span>
               </div>
             </div>

@@ -57,7 +57,7 @@
             <!-- Content -->
             <div class="relative h-full flex flex-col justify-between p-6">
               <div class="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span class="material-symbols-outlined text-white text-2xl">{{ platform.icon }}</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-white text-2xl">{{ platform.icon }}</span>
               </div>
               <div>
                 <h3 class="font-headline-md text-white mb-1">{{ platform.name }}</h3>

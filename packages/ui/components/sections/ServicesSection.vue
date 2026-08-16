@@ -16,7 +16,7 @@
           :class="variant === 'centered' ? 'text-center flex flex-col items-center' : 'flex flex-col'"
         >
           <div class="w-11 h-11 rounded-xl bg-primary/80 flex items-center justify-center mb-5 flex-shrink-0 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
-            <span class="material-symbols-outlined text-xl text-white">{{ service.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-xl text-white">{{ service.icon }}</span>
           </div>
           <h3 class="font-semibold text-black text-base mb-2 leading-snug">{{ service.title }}</h3>
           <p class="text-on-surface-variant text-sm leading-relaxed" :class="service.href ? 'mb-4' : ''">{{ service.description }}</p>
@@ -26,7 +26,7 @@
             :class="variant === 'centered' ? 'justify-center' : ''"
           >
             <span class="text-xs font-semibold">{{ learnMoreLabel }}</span>
-            <span class="material-symbols-outlined text-xs group-hover:translate-x-0.5 transition-transform duration-200">arrow_forward</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-xs group-hover:translate-x-0.5 transition-transform duration-200">arrow_forward</span>
           </div>
         </component>
       </div>

@@ -23,7 +23,7 @@
           class="group relative w-12 h-12 md:w-13 md:h-13 rounded-full bg-white shadow-lg border border-outline-variant/30 flex items-center justify-center hover:scale-110 hover:shadow-xl transition-all duration-200"
         >
           <component v-if="channel.svg" :is="channel.svg" />
-          <span v-else class="material-symbols-outlined text-primary text-[22px]" :style="channel.color ? { color: channel.color } : undefined">{{ channel.icon }}</span>
+          <span v-else translate="no" class="notranslate material-symbols-outlined text-primary text-[22px]" :style="channel.color ? { color: channel.color } : undefined">{{ channel.icon }}</span>
 
           <!-- Hover label -->
           <span class="absolute right-full mr-3 whitespace-nowrap bg-primary text-on-primary text-xs font-bold px-3 py-1.5 rounded-lg shadow-md opacity-0 -translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">
@@ -46,7 +46,7 @@
         <span class="absolute inset-0 rounded-full bg-primary/30 animate-ping pointer-events-none" style="animation-delay: 0.6s"></span>
       </template>
 
-      <span class="material-symbols-outlined text-[26px] relative z-10 transition-transform duration-300" :class="open ? 'rotate-90' : ''">
+      <span translate="no" class="notranslate material-symbols-outlined text-[26px] relative z-10 transition-transform duration-300" :class="open ? 'rotate-90' : ''">
         {{ open ? 'close' : 'forum' }}
       </span>
     </button>

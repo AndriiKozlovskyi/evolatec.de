@@ -24,7 +24,7 @@
           <div v-if="!showCustomize" class="px-5 py-5 sm:px-6 space-y-4">
             <div class="flex items-start gap-3">
               <div class="flex-shrink-0 w-9 h-9 rounded-xl bg-primary/8 flex items-center justify-center">
-                <span class="material-symbols-outlined text-primary text-[1.2rem]">cookie</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-[1.2rem]">cookie</span>
               </div>
               <div>
                 <p id="cookie-banner-title" class="text-sm font-bold text-on-surface">
@@ -70,7 +70,7 @@
                 @click="showCustomize = false"
                 class="text-on-surface-variant hover:text-primary transition-colors p-1 -ml-1"
               >
-                <span class="material-symbols-outlined text-xl">arrow_back</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-xl">arrow_back</span>
               </button>
               <p id="cookie-prefs-title" class="text-sm font-bold text-on-surface">
                 {{ t('prefsTitle') }}

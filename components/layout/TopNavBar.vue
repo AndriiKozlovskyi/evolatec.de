@@ -41,9 +41,9 @@
               v-if="isLinkActive(link)"
               class="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full"
             />
-            <span class="material-symbols-outlined text-sm leading-none">{{ link.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-sm leading-none">{{ link.icon }}</span>
             <span class="hidden lg:inline text-[0.6rem]">{{ link.label }}</span>
-            <span v-if="link.submenu" class="material-symbols-outlined text-base group-hover:rotate-180 transition-transform duration-300">
+            <span v-if="link.submenu" translate="no" class="notranslate material-symbols-outlined text-base group-hover:rotate-180 transition-transform duration-300">
               expand_more
             </span>
           </a>
@@ -146,7 +146,7 @@
                 @click="mobileMenuOpen = false"
                 class="flex items-center gap-4 px-4 py-3 flex-1 touch-target"
               >
-                <span class="material-symbols-outlined text-xl flex-shrink-0">{{ link.icon }}</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-xl flex-shrink-0">{{ link.icon }}</span>
                 <span>{{ link.label }}</span>
               </a>
               <button
@@ -155,7 +155,7 @@
                 :aria-label="`${link.label} Untermenü ${expandedMenus.includes(link.id) ? 'schließen' : 'öffnen'}`"
               >
                 <span
-                  class="material-symbols-outlined text-lg transition-transform duration-300"
+                  translate="no" class="notranslate material-symbols-outlined text-lg transition-transform duration-300"
                   :class="{ 'rotate-180': expandedMenus.includes(link.id) }"
                 >
                   expand_more
@@ -168,7 +168,7 @@
               @click="mobileMenuOpen = false"
               class="flex items-center gap-4 px-4 py-3 rounded-lg text-on-surface hover:bg-primary/10 hover:text-primary transition-all duration-200 font-semibold touch-target"
             >
-              <span class="material-symbols-outlined text-xl flex-shrink-0">{{ link.icon }}</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-xl flex-shrink-0">{{ link.icon }}</span>
               <span>{{ link.label }}</span>
             </a>
 
@@ -196,7 +196,7 @@
 
           <!-- Language Switcher -->
           <div class="flex items-center gap-2 px-4 py-2">
-            <span class="material-symbols-outlined text-base text-on-surface-variant">language</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-base text-on-surface-variant">language</span>
             <a
               :href="deHref"
               @click="savePreference('de'); mobileMenuOpen = false"
@@ -221,7 +221,7 @@
           <div>
             <a :href="isEnglish ? '/en/contact' : '/kontakt'" @click="mobileMenuOpen = false" class="block">
               <BaseButton variant="primary" size="lg" class="w-full">
-                <span class="material-symbols-outlined text-lg">rocket_launch</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-lg">rocket_launch</span>
                 {{ isEnglish ? 'Contact us' : 'Projekt anfragen' }}
               </BaseButton>
             </a>

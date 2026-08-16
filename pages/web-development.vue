@@ -22,7 +22,7 @@
           <!-- Text column -->
           <div>
             <span class="inline-flex items-center gap-2 rounded-full bg-primary/8 border border-primary/15 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <span class="material-symbols-outlined text-[18px]">code</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[18px]">code</span>
               Professionelle Webentwicklung
             </span>
 
@@ -38,7 +38,7 @@
             <div class="space-y-5 mb-10">
               <div v-for="(point, i) in introPoints" :key="i" class="flex gap-4 items-start">
                 <div class="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span class="material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
+                  <span translate="no" class="notranslate material-symbols-outlined text-primary text-[18px]">{{ point.icon }}</span>
                 </div>
                 <p class="font-body-lg text-on-surface-variant flex-1 pt-1">{{ point.text }}</p>
               </div>
@@ -59,7 +59,7 @@
 
               <!-- Code icon badge top-right -->
               <div class="absolute top-0 right-8 w-20 h-20 rounded-2xl bg-white shadow-xl flex items-center justify-center rotate-[8deg]">
-                <span class="material-symbols-outlined text-primary text-[40px]">code_blocks</span>
+                <span translate="no" class="notranslate material-symbols-outlined text-primary text-[40px]">code_blocks</span>
               </div>
 
               <!-- Tech stack card -->

@@ -38,7 +38,7 @@
               :key="item"
               class="flex items-center gap-2.5 rounded-xl bg-surface-container-low px-3.5 py-2.5 hover:bg-primary/5 transition-colors duration-200"
             >
-              <span class="material-symbols-outlined text-primary text-base leading-none flex-shrink-0">
+              <span translate="no" class="notranslate material-symbols-outlined text-primary text-base leading-none flex-shrink-0">
                 {{ col.icon || icon }}
               </span>
               <span class="text-sm font-medium text-on-surface">{{ item }}</span>
@@ -57,7 +57,7 @@
           :key="item"
           class="flex items-center gap-3.5 rounded-xl bg-white px-5 py-3.5 border border-black/[0.05] shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-200"
         >
-          <span class="material-symbols-outlined text-primary text-lg leading-none flex-shrink-0">
+          <span translate="no" class="notranslate material-symbols-outlined text-primary text-lg leading-none flex-shrink-0">
             {{ icon }}
           </span>
           <span class="text-sm font-semibold text-on-surface">{{ item }}</span>

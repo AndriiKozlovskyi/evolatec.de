@@ -5,7 +5,7 @@
     <section class="bg-primary text-on-primary">
       <div class="max-w-3xl mx-auto px-gutter py-14 md:py-20 text-center">
         <div class="inline-flex w-14 h-14 rounded-2xl bg-white/10 items-center justify-center mb-5">
-          <span class="material-symbols-outlined text-[1.9rem]">shield_person</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-[1.9rem]">shield_person</span>
         </div>
         <h1 class="font-display text-3xl md:text-4xl font-black mb-3">Datenschutzerklärung</h1>
         <p class="text-on-primary/70 max-w-lg mx-auto leading-relaxed">
@@ -95,10 +95,10 @@
           </p>
           <div class="flex flex-col gap-1.5 mt-3 pt-3 border-t border-outline-variant/20">
             <a href="tel:+491756200862" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-base">phone</span>+49 175 6200862
+              <span translate="no" class="notranslate material-symbols-outlined text-base">phone</span>+49 175 6200862
             </a>
             <a href="mailto:team@evolatec.de" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-base">mail</span>team@evolatec.de
+              <span translate="no" class="notranslate material-symbols-outlined text-base">mail</span>team@evolatec.de
             </a>
           </div>
         </div>
@@ -118,7 +118,7 @@
 
         <h3 class="legal-h3">Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>
         <div class="legal-callout">
-          <span class="material-symbols-outlined text-primary text-xl shrink-0">gavel</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-primary text-xl shrink-0">gavel</span>
           <div class="space-y-3 text-xs leading-relaxed text-on-surface-variant font-medium">
             <p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).</p>
             <p>WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>
@@ -213,7 +213,7 @@
         <p class="legal-p">Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
         <div class="grid sm:grid-cols-2 gap-3 my-4">
           <div v-for="right in rights" :key="right.title" class="legal-card !mb-0 flex gap-3">
-            <span class="material-symbols-outlined text-primary text-xl shrink-0">{{ right.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-primary text-xl shrink-0">{{ right.icon }}</span>
             <div>
               <p class="font-bold text-on-surface text-sm">{{ right.title }} <span class="font-normal text-on-surface-variant/70">· {{ right.law }}</span></p>
               <p class="text-sm text-on-surface-variant leading-relaxed mt-0.5">{{ right.text }}</p>
@@ -229,7 +229,7 @@
 
         <!-- Contact callout -->
         <div class="mt-12 rounded-2xl bg-primary text-on-primary p-6 sm:p-8 text-center">
-          <span class="material-symbols-outlined text-3xl mb-2 block">support_agent</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-3xl mb-2 block">support_agent</span>
           <h3 class="font-display text-xl font-bold mb-1">Fragen zum Datenschutz?</h3>
           <p class="text-on-primary/70 text-sm mb-5 max-w-md mx-auto">
             Zur Ausübung Ihrer Rechte oder bei Fragen rund um Ihre Daten erreichen Sie uns jederzeit.
@@ -238,7 +238,7 @@
             href="mailto:team@evolatec.de"
             class="inline-flex items-center gap-2 bg-white text-primary font-bold text-sm rounded-full px-6 py-3 hover:bg-white/90 transition-colors"
           >
-            <span class="material-symbols-outlined text-base">mail</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-base">mail</span>
             team@evolatec.de
           </a>
         </div>

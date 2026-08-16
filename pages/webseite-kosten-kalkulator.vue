@@ -7,7 +7,7 @@
 
       <div class="relative max-w-container-max mx-auto px-gutter pt-10 pb-12 md:pt-20 md:pb-20 text-center">
         <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.25em] text-white/70 mb-4">
-          <span class="material-symbols-outlined text-base">calculate</span>
+          <span translate="no" class="notranslate material-symbols-outlined text-base">calculate</span>
           Preisrechner
         </span>
         <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4">
@@ -36,7 +36,7 @@
                 : 'text-on-surface-variant hover:text-primary',
             ]"
           >
-            <span class="material-symbols-outlined text-lg">{{ tab.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-lg">{{ tab.icon }}</span>
             <span class="hidden sm:inline">{{ tab.label }}</span>
             <span class="sm:hidden">{{ tab.shortLabel }}</span>
           </button>
@@ -49,7 +49,7 @@
             class="absolute inset-0 z-10 rounded-2xl bg-surface/85 backdrop-blur-sm flex flex-col items-center justify-center gap-3 p-6 text-center cursor-pointer"
             @click="focusBanner"
           >
-            <span class="material-symbols-outlined text-primary text-5xl">cookie</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-primary text-5xl">cookie</span>
             <p class="text-base font-bold text-on-surface">Cookie-Einstellungen erforderlich</p>
             <p class="text-sm text-on-surface-variant max-w-xs leading-relaxed">
               Bitte legen Sie zunächst Ihre
@@ -78,7 +78,7 @@
                 <p class="text-xs text-on-surface-variant mb-6">einmalig, zzgl. MwSt.</p>
                 <ul class="space-y-2.5 mb-6 flex-1">
                   <li v-for="feat in pkg.features" :key="feat" class="flex items-start gap-2 text-sm text-on-surface">
-                    <span class="material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">check_circle</span>
+                    <span translate="no" class="notranslate material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">check_circle</span>
                     {{ feat }}
                   </li>
                 </ul>
@@ -122,7 +122,8 @@
                 >
                   <span
                     v-if="calc.cat?.id === cat.id"
-                    class="absolute top-2 right-2 material-symbols-outlined text-primary text-lg"
+                    translate="no"
+                    class="absolute top-2 right-2 notranslate material-symbols-outlined text-primary text-lg"
                   >check_circle</span>
                   <div
                     :class="[
@@ -130,7 +131,7 @@
                       calc.cat?.id === cat.id ? 'bg-primary text-on-primary' : accent(i).bg + ' ' + accent(i).text,
                     ]"
                   >
-                    <span class="material-symbols-outlined text-xl">{{ cat.icon }}</span>
+                    <span translate="no" class="notranslate material-symbols-outlined text-xl">{{ cat.icon }}</span>
                   </div>
                   <p class="font-bold text-sm text-on-surface leading-tight break-words hyphens-auto w-full">{{ cat.name }}</p>
                   <p class="text-xs text-on-surface-variant mt-1 leading-snug break-words hyphens-auto w-full">{{ cat.desc }}</p>
@@ -167,7 +168,7 @@
                         calc.type?.id === type.id ? 'bg-primary text-on-primary' : 'bg-primary/10 text-primary',
                       ]"
                     >
-                      <span class="material-symbols-outlined text-lg">{{ type.icon }}</span>
+                      <span translate="no" class="notranslate material-symbols-outlined text-lg">{{ type.icon }}</span>
                     </div>
                     <div class="flex-1 min-w-0">
                       <p class="font-bold text-sm text-on-surface leading-tight break-words hyphens-auto">{{ type.name }}</p>
@@ -205,7 +206,7 @@
                         : 'border-outline-variant/40 bg-white text-on-surface hover:border-primary/40 hover:bg-primary/5',
                     ]"
                   >
-                    <span class="material-symbols-outlined text-base">{{ isExtraSel(extra) ? 'check' : extra.icon }}</span>
+                    <span translate="no" class="notranslate material-symbols-outlined text-base">{{ isExtraSel(extra) ? 'check' : extra.icon }}</span>
                     {{ extra.name }}
                     <span :class="isExtraSel(extra) ? 'text-white/85' : 'text-on-surface-variant'" class="text-xs font-bold">+€{{ fmt(extra.price) }}</span>
                   </button>
@@ -230,7 +231,7 @@
                   <a href="/kontakt" class="w-full sm:w-auto">
                     <BaseButton variant="secondary" size="md" class="w-full sm:w-auto">
                       Angebot anfordern
-                      <span class="material-symbols-outlined text-base">arrow_forward</span>
+                      <span translate="no" class="notranslate material-symbols-outlined text-base">arrow_forward</span>
                     </BaseButton>
                   </a>
                 </div>
@@ -261,7 +262,7 @@
                     class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                     :class="accent(sIdx).bg + ' ' + accent(sIdx).text"
                   >
-                    <span class="material-symbols-outlined text-xl">{{ section.icon }}</span>
+                    <span translate="no" class="notranslate material-symbols-outlined text-xl">{{ section.icon }}</span>
                   </div>
                   <h3 class="font-display text-xl sm:text-2xl font-black text-on-surface leading-tight">{{ section.title }}</h3>
                 </div>
@@ -302,7 +303,7 @@
         </p>
         <a href="/kontakt" class="inline-block">
           <BaseButton variant="primary" size="lg">
-            <span class="material-symbols-outlined text-lg">event</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-lg">event</span>
             Termin buchen
           </BaseButton>
         </a>

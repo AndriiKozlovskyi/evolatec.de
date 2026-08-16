@@ -21,7 +21,7 @@
           <template #action>
             <a class="mt-4 inline-flex items-center text-white font-bold group" href="#">
               Details ansehen
-              <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
+              <span translate="no" class="notranslate material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_forward</span>
             </a>
           </template>
         </PortfolioCard>

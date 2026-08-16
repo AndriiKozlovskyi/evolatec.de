@@ -17,15 +17,15 @@
           <!-- Direct contact -->
           <div class="mt-6 flex flex-col gap-2.5">
             <a href="tel:+491756200862" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-base">phone</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-base">phone</span>
               +49 175 620 0862
             </a>
             <a href="mailto:team@evolatec.de" class="inline-flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
-              <span class="material-symbols-outlined text-base">mail</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-base">mail</span>
               team@evolatec.de
             </a>
             <p class="inline-flex items-center gap-2 text-sm text-on-surface-variant">
-              <span class="material-symbols-outlined text-base">location_on</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-base">location_on</span>
               Hamburg, Deutschland
             </p>
           </div>

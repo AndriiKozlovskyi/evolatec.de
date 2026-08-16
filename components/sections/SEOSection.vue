@@ -11,7 +11,7 @@
 
           <div class="space-y-4">
             <div v-for="feature in features" :key="feature" class="flex items-start gap-4 group">
-              <span class="material-symbols-outlined text-[1.5rem] flex-shrink-0 text-on-primary-container group-hover:scale-125 transition-transform duration-300">check_circle</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-[1.5rem] flex-shrink-0 text-on-primary-container group-hover:scale-125 transition-transform duration-300">check_circle</span>
               <span class="text-body-md pt-1">{{ feature }}</span>
             </div>
           </div>

@@ -26,7 +26,7 @@
         :title="isEnglish ? 'Cookie settings' : 'Cookie-Einstellungen'"
         class="fixed bottom-5 left-5 z-[200] w-9 h-9 rounded-full bg-surface border border-outline-variant/30 shadow-md flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all duration-200"
       >
-        <span class="material-symbols-outlined text-base">cookie</span>
+        <span translate="no" class="notranslate material-symbols-outlined text-base">cookie</span>
       </button>
     </ClientOnly>
   </div>

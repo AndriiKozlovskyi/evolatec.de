@@ -13,7 +13,7 @@
           class="group bg-white rounded-2xl p-6 border border-outline-variant/20 hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
         >
           <div class="w-12 h-12 rounded-xl bg-primary/8 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors duration-300">
-            <span class="material-symbols-outlined text-primary text-[24px]">{{ service.icon }}</span>
+            <span translate="no" class="notranslate material-symbols-outlined text-primary text-[24px]">{{ service.icon }}</span>
           </div>
           <h3 class="font-display font-bold text-on-surface mb-2 leading-tight group-hover:text-primary transition-colors duration-200">{{ service.title }}</h3>
           <p class="text-sm text-on-surface-variant leading-relaxed flex-1 mb-4">{{ service.description }}</p>
@@ -21,7 +21,7 @@
             <span class="text-sm font-bold text-primary">{{ service.price }}</span>
             <span class="inline-flex items-center gap-1 text-xs font-semibold text-primary group-hover:gap-2 transition-all duration-200">
               {{ cta }}
-              <span class="material-symbols-outlined text-base">arrow_forward</span>
+              <span translate="no" class="notranslate material-symbols-outlined text-base">arrow_forward</span>
             </span>
           </div>
         </a>
